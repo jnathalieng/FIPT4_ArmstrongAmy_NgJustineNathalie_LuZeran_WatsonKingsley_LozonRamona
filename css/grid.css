@@ -1,0 +1,257 @@
+/* Tailwind and Bootstrap use px for media queries, with foundation using em
+for this library we will stick with pixels */
+
+/* ---General rules - scales images, videos to size of container--- */
+img, embed, object, video, picture {
+  max-width: 100%; 
+}
+
+/* ---Change the way the box model works, tells the browser to account for any border and padding in the values you specify for an element's width and height.--- */
+
+html {
+  box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; 
+}
+
+/* ---Mini CSS reset--- */
+
+body, p, h1, h2, h3, h4, h5 {
+   margin: 0px; 
+   padding: 0px;
+}
+
+/* ---Utility Classes--- */
+
+.hidden {
+   display: none;
+}
+
+.box {
+   background-color: powderblue;
+   color: rgb(27, 27, 27);
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom:10px;
+ }
+
+/* ---Mobile Library Grid Styles--- */
+
+/* Note if you are using a grid size of 1920, you need to change the value of 1200px to 1920px on line 50 and 57 */
+
+.full-width-grid-con {
+   /* set this container as a grid, with 3 columns
+   the other grid will sit in the middle column, this allows for overlapping content */
+   display: grid; 
+	grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
+}
+
+ .grid-con { 
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   grid-column-gap: 30px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+/* A keyword indicating that the property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1. */
+.col-auto {grid-column: auto;}
+.col-span-1	{grid-column: span 1 / span 1;}
+.col-span-2	{grid-column: span 2 / span 2;}
+.col-span-3	{grid-column: span 3 / span 3;}
+.col-span-4	{grid-column: span 4 / span 4;}
+.col-span-full {grid-column: 1 / -1;}
+
+.col-start-1	{grid-column-start: 1;}
+.col-start-2	{grid-column-start: 2;}
+.col-start-3	{grid-column-start: 3;}
+.col-start-4	{grid-column-start: 4;}
+.col-start-auto {grid-column-start: auto;}
+
+.col-end-1	{grid-column-end: 1;}
+.col-end-2	{grid-column-end: 2;}
+.col-end-3	{grid-column-end: 3;}
+.col-end-4	{grid-column-end: 4;}
+.col-end-5	{grid-column-end: 5;}
+.col-end-auto	{grid-column-end: auto;}
+
+/* ---Tablet Library Grid Styles--- */
+
+@media screen and (min-width: 768px) { 
+   
+   .grid-con { 
+      display: grid; 
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-gap: 20px;
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+
+   .m-col-auto {grid-column: auto;}
+   .m-col-span-1	{grid-column: span 1 / span 1;}
+   .m-col-span-2	{grid-column: span 2 / span 2;}
+   .m-col-span-3	{grid-column: span 3 / span 3;}
+   .m-col-span-4	{grid-column: span 4 / span 4;}
+   .m-col-span-5	{grid-column: span 5 / span 5;}
+   .m-col-span-6	{grid-column: span 6 / span 6;}
+   .m-col-span-7	{grid-column: span 7 / span 7;}
+   .m-col-span-8	{grid-column: span 8 / span 8;}
+   .m-col-span-9	{grid-column: span 9 / span 9;}
+   .m-col-span-10 {grid-column: span 10 / span 10;}
+   .m-col-span-11 {grid-column: span 11 / span 11;}
+   .m-col-span-12 {grid-column: span 12 / span 12;}
+   .m-col-span-full {grid-column: 1 / -1;}
+
+   .m-col-start-1	{grid-column-start: 1;}
+   .m-col-start-2	{grid-column-start: 2;}
+   .m-col-start-3	{grid-column-start: 3;}
+   .m-col-start-4	{grid-column-start: 4;}
+   .m-col-start-5	{grid-column-start: 5;}
+   .m-col-start-6	{grid-column-start: 6;}
+   .m-col-start-7	{grid-column-start: 7;}
+   .m-col-start-8	{grid-column-start: 8;}
+   .m-col-start-9	{grid-column-start: 9;}
+   .m-col-start-10	{grid-column-start: 10;}
+   .m-col-start-11	{grid-column-start: 11;}
+   .m-col-start-12	{grid-column-start: 12;}
+   .m-col-start-13	{grid-column-start: 13;}
+   .m-col-start-auto {grid-column-start: auto;}
+
+   .m-col-end-1	{grid-column-end: 1;}
+   .m-col-end-2	{grid-column-end: 2;}
+   .m-col-end-3	{grid-column-end: 3;}
+   .m-col-end-4	{grid-column-end: 4;}
+   .m-col-end-5	{grid-column-end: 5;}
+   .m-col-end-6	{grid-column-end: 6;}
+   .m-col-end-7	{grid-column-end: 7;}
+   .m-col-end-8	{grid-column-end: 8;}
+   .m-col-end-9	{grid-column-end: 9;}
+   .m-col-end-10	{grid-column-end: 10;}
+   .m-col-end-11	{grid-column-end: 11;}
+   .m-col-end-12	{grid-column-end: 12;}
+   .m-col-end-13	{grid-column-end: 13;}
+   .m-col-end-auto	{grid-column-end: auto;}
+
+}
+
+/* ---Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1200px) { 
+
+   .grid-con { 
+      display: grid; 
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-gap: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .l-col-auto {grid-column: auto;}
+   .l-col-span-1	{grid-column: span 1 / span 1;}
+   .l-col-span-2	{grid-column: span 2 / span 2;}
+   .l-col-span-3	{grid-column: span 3 / span 3;}
+   .l-col-span-4	{grid-column: span 4 / span 4;}
+   .l-col-span-5	{grid-column: span 5 / span 5;}
+   .l-col-span-6	{grid-column: span 6 / span 6;}
+   .l-col-span-7	{grid-column: span 7 / span 7;}
+   .l-col-span-8	{grid-column: span 8 / span 8;}
+   .l-col-span-9	{grid-column: span 9 / span 9;}
+   .l-col-span-10 {grid-column: span 10 / span 10;}
+   .l-col-span-11 {grid-column: span 11 / span 11;}
+   .l-col-span-12 {grid-column: span 12 / span 12;}
+   .l-col-span-full {grid-column: 1 / -1;}
+
+   .l-col-start-1	{grid-column-start: 1;}
+   .l-col-start-2	{grid-column-start: 2;}
+   .l-col-start-3	{grid-column-start: 3;}
+   .l-col-start-4	{grid-column-start: 4;}
+   .l-col-start-5	{grid-column-start: 5;}
+   .l-col-start-6	{grid-column-start: 6;}
+   .l-col-start-7	{grid-column-start: 7;}
+   .l-col-start-8	{grid-column-start: 8;}
+   .l-col-start-9	{grid-column-start: 9;}
+   .l-col-start-10	{grid-column-start: 10;}
+   .l-col-start-11	{grid-column-start: 11;}
+   .l-col-start-12	{grid-column-start: 12;}
+   .l-col-start-13	{grid-column-start: 13;}
+   .l-col-start-auto {grid-column-start: auto;}
+
+   .l-col-end-1	{grid-column-end: 1;}
+   .l-col-end-2	{grid-column-end: 2;}
+   .l-col-end-3	{grid-column-end: 3;}
+   .l-col-end-4	{grid-column-end: 4;}
+   .l-col-end-5	{grid-column-end: 5;}
+   .l-col-end-6	{grid-column-end: 6;}
+   .l-col-end-7	{grid-column-end: 7;}
+   .l-col-end-8	{grid-column-end: 8;}
+   .l-col-end-9	{grid-column-end: 9;}
+   .l-col-end-10	{grid-column-end: 10;}
+   .l-col-end-11	{grid-column-end: 11;}
+   .l-col-end-12	{grid-column-end: 12;}
+   .l-col-end-13	{grid-column-end: 13;}
+   .l-col-end-auto	{grid-column-end: auto;}
+}
+
+/* ---X-Large Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1920px) { 
+
+   .grid-con { 
+      display: grid; 
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-gap: 34px;
+      padding-left: 17px;
+      padding-right: 17px;
+   }
+
+   .xl-col-auto {grid-column: auto;}
+   .xl-col-span-1	{grid-column: span 1 / span 1;}
+   .xl-col-span-2	{grid-column: span 2 / span 2;}
+   .xl-col-span-3	{grid-column: span 3 / span 3;}
+   .xl-col-span-4	{grid-column: span 4 / span 4;}
+   .xl-col-span-5	{grid-column: span 5 / span 5;}
+   .xl-col-span-6	{grid-column: span 6 / span 6;}
+   .xl-col-span-7	{grid-column: span 7 / span 7;}
+   .xl-col-span-8	{grid-column: span 8 / span 8;}
+   .xl-col-span-9	{grid-column: span 9 / span 9;}
+   .xl-col-span-10 {grid-column: span 10 / span 10;}
+   .xl-col-span-11 {grid-column: span 11 / span 11;}
+   .xl-col-span-12 {grid-column: span 12 / span 12;}
+   .xl-col-span-full {grid-column: 1 / -1;}
+
+   .xl-col-start-1	{grid-column-start: 1;}
+   .xl-col-start-2	{grid-column-start: 2;}
+   .xl-col-start-3	{grid-column-start: 3;}
+   .xl-col-start-4	{grid-column-start: 4;}
+   .xl-col-start-5	{grid-column-start: 5;}
+   .xl-col-start-6	{grid-column-start: 6;}
+   .xl-col-start-7	{grid-column-start: 7;}
+   .xl-col-start-8	{grid-column-start: 8;}
+   .xl-col-start-9	{grid-column-start: 9;}
+   .xl-col-start-10	{grid-column-start: 10;}
+   .xl-col-start-11	{grid-column-start: 11;}
+   .xl-col-start-12	{grid-column-start: 12;}
+   .xl-col-start-13	{grid-column-start: 13;}
+   .xl-col-start-auto {grid-column-start: auto;}
+
+   .xl-col-end-1	{grid-column-end: 1;}
+   .xl-col-end-2	{grid-column-end: 2;}
+   .xl-col-end-3	{grid-column-end: 3;}
+   .xl-col-end-4	{grid-column-end: 4;}
+   .xl-col-end-5	{grid-column-end: 5;}
+   .xl-col-end-6	{grid-column-end: 6;}
+   .xl-col-end-7	{grid-column-end: 7;}
+   .xl-col-end-8	{grid-column-end: 8;}
+   .xl-col-end-9	{grid-column-end: 9;}
+   .xl-col-end-10	{grid-column-end: 10;}
+   .xl-col-end-11	{grid-column-end: 11;}
+   .xl-col-end-12	{grid-column-end: 12;}
+   .xl-col-end-13	{grid-column-end: 13;}
+   .xl-col-end-auto	{grid-column-end: auto;}
+}
