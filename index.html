@@ -8,70 +8,97 @@
     <link type="text/css" href="css/grid.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="hidden">Aviation Museum Homepage</h1>
+    <header class="grid-con">
+        <button id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </button>
 
-    <nav>
-        <ul>
-            <li>
-                Home
+        <div class="overlay" id="menu">
+
+            <button id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#C59898"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+
+            <nav>
                 <ul>
                     <li>
-                        Battle of Britain
+                        <a href="index.html">LOGO</a>
                     </li>
                     <li>
-                        Book of Remeberances
+                        Home
+                        <ul>
+                            <li>
+                                <a href="BOB.html">Battle of Britain</a>
+                            </li>
+                            <li>
+                                <a href="BOR.html">Book of Remeberances</a>
+                            </li>
+                            <li>
+                                <a href="timeline.html">Timeline</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        Timeline
+                        Aviation
+                        <ul>
+                            <li>
+                                <a href="school.html">
+                                School</a>
+                            </li>
+                            <li>
+                                <a href="canteen.html">
+                                Canteen</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="wartime_exp.html">Wartime Experiences</a>
+                    </li>
+                    <li>
+                        <a href="events.html">
+                        Events</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                        Contact</a>
                     </li>
                 </ul>
-            </li>
-            <li>
-                Aviation
-                <ul>
-                    <li>
-                        School
-                    </li>
-                    <li>
-                        Canteen
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Wartime Experiences
-            </li>
-            <li>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="hidden">Aviation Museum Homepage</h1>
+
+<!-- HERO SECTION -->
+
+        <div id="hero-selection">
+            <section id="BOR-hero-card">
+                Book of Remeberances
+            </section>
+            <section id="BOB-hero-card">
+                Battle of Britain
+            </section>    
+            <section id="TIME-hero-card">
+                Historic Timeline
+            </section>
+        </div>
+
+<!-- HERO SECTION -->
+
+        <div id="page-selection">
+            <section id="events-card">
                 Events
-            </li>
-            <li>
-                Contact
-            </li>
-        </ul>
-    </nav>
+            </section>
+            <section id="WT-card">
+                Wartime Experiences
+            </section>
+            <section id="TB-card">
+                Training Bases
+            </section>
+        </div>
 
-    <div id="hero-selection">
-        <section id="BOR-hero-card">
-            Book of Remeberances
-        </section>
-        <section id="BOB-hero-card">
-            Battle of Britain
-        </section>    
-        <section id="TIME-hero-card">
-            Historic Timeline
-        </section>
-    </div>
-
-    <div id="page-selection">
-        <section id="events-card">
-            Events
-        </section>
-        <section id="WT-card">
-            Wartime Experiences
-        </section>
-        <section id="TB-card">
-            Training Bases
-        </section>
-    </div>
+    </main>
 
     <footer>
 
