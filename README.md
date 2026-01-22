@@ -37,6 +37,9 @@ Role: Front-End Developer
 5. Lozon, Ramona
 Role: Back-End Developer
 
+6. Patel, Aastha
+Role: UI/ UX Designer
+
 ## ✨ Features
 1. Responsive layout across mobile, tablet, and desktop
 2. Multi-page museum-style website structure
