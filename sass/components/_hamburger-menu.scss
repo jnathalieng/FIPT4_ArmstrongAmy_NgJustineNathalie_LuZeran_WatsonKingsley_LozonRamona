@@ -39,7 +39,7 @@ ul, li {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    // transform: translateX(100%);
+    transform: translateX(100%);
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 1000;
@@ -47,7 +47,7 @@ ul, li {
 
 .overlay-primary.open {
     opacity: 1;
-    // transform: translateX(0);
+    transform: translateX(0);
     pointer-events: auto;
     background-color: black;
     backdrop-filter: blur(4px);
@@ -60,7 +60,7 @@ ul, li {
 }
 
 .overlay-primary nav {
-    background-color: white;
+    background-color: black;
 }
 
 .overlay-primary ul {
