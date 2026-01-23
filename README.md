@@ -67,6 +67,37 @@ To run this project locally:
 4. Import the provided database (if applicable)
 5. Open the project in your browser via localhost
 
+## Site Structure
+
+The website will include and home page with links to all other pages, we plan to create an Events page, a London Aviation History page, a Wartime Experience page, a Battle of Britain page, a map with the local training bases, and a “Book of Remembrance”  page which will show all the service members who served in the 427 wing in the first world war. We intend to have an administrator dashboard built to be user friendly and accessible, this dashboard will require a login and will allow the site administrator to change the information and photos on the Events page and add to the Book of Remembrance.
+
+## Home Page
+
+The home page of the website will include links to all other pages, these links will be large card-style elements that will have interactive hover states.
+
+## Events Page
+
+The events page of the website will display upcoming events at the museum, and we intend to make this page easily editable for the site administrators. 
+
+## London Aviation History Page
+
+The aviation history page will include facts regarding the history of the museum, we will include a section on the canteen
+
+## Wartime Experiences Page
+
+uh
+
+## Battle of Britain Page
+
+The battle of britain page we have designed to be dynamic and interactive, the hero section of the page will include a quote from Winston Churchill regarding the Battle of Britain, and as the user scrolls down elements reminiscent of paper folders will take up the screen, with several folders corresponding to each month of the battle. As the user scrolls down text will begin to appear as if typed by a typewriter, going into detail of the events of each month, starting in july and ending in October. After this section another page similar to the hero page will appear, listing the Casualties of the battle and another quote from Winston Churchill. Beyond that, as the user scrolls down they will be introduced to the participants of the battle belonging to the 427 wing, with details regarding each service member and the aircraft they piloted during the battle.  
+
+## Maps & Navigation Page
+
+Map of full tour, including Jet Aircraft Museum and Radio Swarm Museum
+Pictures of 427 hall from road?
+map of all training bases in ontario
+
+
 ## Site Database Structure
 
 this Entity Relationship Diagram outlines how data will be stored and referenced by the website. the database will allow for dynamic content to be displayed, and it will allow a site administrator to add, remove and edit certain pages through a Client Management System.
