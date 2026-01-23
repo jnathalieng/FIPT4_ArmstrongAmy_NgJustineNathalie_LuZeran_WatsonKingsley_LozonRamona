@@ -1,0 +1,126 @@
+@use '../abstracts';
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#hamburger {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+#hamburger, #close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#hamburger:hover, #close:hover {
+    background-color: abstracts.$accent-color;
+    transition: 1s ease;
+}
+
+#hamburger:active, #close:active {
+    background-color: abstracts.$primary-color;
+    transition: 0.3s ease;
+}
+
+.overlay-primary {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    color: abstracts.$body-text-color;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    // transform: translateX(100%);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.overlay-primary.open {
+    opacity: 1;
+    // transform: translateX(0);
+    pointer-events: auto;
+    background-color: black;
+    backdrop-filter: blur(4px);
+}
+
+#close {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+}
+
+.overlay-primary nav {
+    background-color: white;
+}
+
+.overlay-primary ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.overlay-primary li {
+    margin-top: clamp(20px, 30px, 40px);
+    margin-bottom: clamp(20px, 30px, 40px);
+}
+
+.overlay-primary a {
+    font-size: clamp(16px, 18px, 20px);
+    text-decoration: none;
+    color: abstracts.$body-text-color;
+}
+
+.overlay-primary a:hover {
+    color: abstracts.$accent-color;
+    transition: 0.5s ease;
+}
+
+.overlay-primary a:active {
+    color: abstracts.$secondary-color;
+    transition: 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+
+    #hamburger, #close {
+        display: none;
+    }
+
+    .overlay-primary {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: none;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+    }
+
+    .overlay-primary nav {
+        width: 100%;
+        box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .overlay-primary nav ul {
+        background-color: abstracts.$primary-color;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .overlay-primary li {
+        margin-top: clamp(10px, 20px, 30px);
+        margin-bottom: clamp(10px, 20px, 30px);
+        margin-right: clamp(20px, 30px, 40px);
+    }
+}
