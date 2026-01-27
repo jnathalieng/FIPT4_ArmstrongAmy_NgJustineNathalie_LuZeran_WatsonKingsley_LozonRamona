@@ -1,0 +1,33 @@
+@use '../abstracts';
+
+html {
+    background-color: #333;
+}
+
+// #hero-selection {
+//     margin-top: 20%;
+//     // NOTE** This is to evade the nav overlay, fix this later
+// }
+
+.hero-card-con {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-card {
+    background-color: black;
+    color: white;
+    padding: 300px 100px;
+}
+
+.selection-card-con {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.selection-card {
+    background-color: #666;
+    color: white;
+    padding: 100px;
+}
