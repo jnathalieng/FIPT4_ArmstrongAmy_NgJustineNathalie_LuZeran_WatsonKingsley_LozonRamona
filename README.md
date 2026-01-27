@@ -71,20 +71,19 @@ To run this project locally:
 The website will include and home page with links to all other pages, we plan to create an Events page, a London Aviation History page, a Wartime Experience page, a Battle of Britain page, a map with the local training bases, and a “Book of Remembrance”  page which will show all the service members who served in the 427 wing in the first world war. We intend to have an administrator dashboard built to be user friendly and accessible, this dashboard will require a login and will allow the site administrator to change the information and photos on the Events page and add to the Book of Remembrance.
 
 ## Home Page
-
 The home page of the website will include links to all other pages, these links will be large card-style elements that will have interactive hover states.
 
 ## Events (dynamic)
 
 The events page of the website will display upcoming events at the museum, and we intend to make this page easily editable for the site administrators. 
 
-##Timeline
+## Timeline
 
-The timeline 
+The timeline will have an interactive vertical timeline with specific events, the Users can hover or clock on each event identifier on the timeline to open an attached bubble that will offer information about that specific event. at the bottom of the page there will be a link to the Wartime Experiences Page.
 
 ## Wartime Experiences
 
-The wartime experiences page
+The wartime experiences page, which will be a historical page talking about the history of aviation training in southwestern Ontario, what they learned, the risks of training, and what the average airman had to deal with throughout history. at the bottom of this page will be a link to the Battle Of Britain page.
 
 ## Battle of britain
 
@@ -92,44 +91,40 @@ The battle of britain page we have designed to be dynamic and interactive, the h
 
 ## Maps Page
 
-The Maps Page have a map of all training bases in ontario, and a map of wartime bases, there will be a legend
+The Maps Page have a map of all training bases in Ontario, and a map of wartime bases, there will be a legend
 
-## Book of remembrance (dynamic)
+## Book of remembrance (Dynamic)
 
 The book of remembrance will have a carousel of different individuals with a search function. this page will be dynamic and managed by the client management system through the dashboard.
 
-The 427 Wing Page
+## The 427 Wing Page
 
-Training grounds, aircrafts and hangers, daily life at the base, teamwork unlimited, exhibits, gift shop
-
-## Aviation school (external link)
-
-This will not be a page, but will be information about the aviation program the 427 wing runs and how to get in contect with them.
+This page will include a description of the museum written by the Client, and will contain details about the history of the Training grounds, aircrafts and hangars, and daily life at the base. It will also contain images of the Museum itself and will show the exhibits in the Museum and details about the gift shop. There will also be a section regarding the Flying school at the museum and its history. at the bottom of the page there will be a link to the Airman's Canteen page.
 
 ## Airman's Canteen Page
 
-Building History, why it matters, then vs now photos
+this page will describe the History of the Canteen, and will have a section comparing old photos and new photos and will be designed in a "then vs now" fashion. at the bottom of this page will be a link to the Cafe page.
 
 ## Cafe Page
 
-This page will have details about the cafe in the museum. it will contain details about the cafe and its history, the hours it is open, and any special weekly promotions that the Cafe will have. it will show the menu at the Cafe, and at the bottom of the page will be a form that can be filled out by a Uasr if they want to rent out the space, when a form is sent by a user it will be sent to a specific email address.
+This page will have details about the cafe in the museum. It will contain details about the cafe and its history, the hours it is open, and any special weekly promotions that the Cafe will have. It will show the menu at the Cafe, and at the bottom of the page will be a form that can be filled out by a User if they want to rent out the space, when a form is sent by a user it will be sent to a specific email address.
 
 ## Blog (dynamic)
 
-the blog can be managed through the client management system via the dashboard by those with appropriate access.
+The blog can be managed through the client management system via the dashboard by those with appropriate access.
 
 ## Hall Rentals Page
 
-this page will allow users to contact the Museum specifically if they want to rent out the hall. they simply fill a form and hit send, and an email will be sent to a specific address.
+This page will allow users to contact the Museum specifically if they want to rent out the hall. they simply fill a form and hit send, and an email will be sent to a specific address.
 
 ## Contact Page
 
-the contact page will have a form fill to allow people to mail the 427 wing. Once a User sends the message, an email will be sent to a specific address.
+The contact page will have a form fill to allow people to mail the 427 wing. Once a User sends the message, an email will be sent to a specific address.
 
 ## Site flow
 
-The website will be divided into sections when it comes to how it will flow. the main page will feature links to all other page, and will be placed in order following the nav bar in terms of organization. the nav bar will be minimalist, with the logo and sitename to the left and 4 links sticking to the right side of the page. events will lead to the events page, the other nav links have a drop down when hovered on by a mouse, and will lead to an additional nav page that can be backed out of on mobile. There will be: History, Museum, and Contact with drop down menus and the pages listed within each drop down will be a section with its own flow. For example "History" will lead the User through a Timeline Page, Wartime Experiances Page, a Battle of Britain page, a Maps page, and it will end on the Book of Remembrance page. each page will have a link to the next page at the bottom, above the footer. This will allow Users to learn in an order that provides context, and leads them on a journey. If the User wants to they can access the NavBar at any time to jump to whatever page they want. The "Museum" drop down will take the user through a figurative tour of the base, starting with the history of the base and ending with the Cafe Page. The content drop down will contain a Hall Rentals page and a Contact page. each will contain forms that can be filled and each one will send an email to a specific email address when the form is filled out by a User. The Footer will contain three columns of links and the Museum Logo links to the top of each section and the contact page, the right side of the footer will include links to their social media. 
-
+The website will be divided into sections when it comes to how it will flow. The main page will feature links to all other page, and will be placed in order following the nav bar in terms of organization. The nav bar will be minimalist, with the logo and sitename to the left and 4 links sticking to the right side of the page. events will lead to the events page, the other nav links have a drop down when hovered on by a mouse, and will lead to an additional nav page that can be backed out of on mobile. There will be: History, Museum, and Contact with drop down menus and the pages listed within each drop down will be a section with its own flow. For example "History" will lead the User through a Timeline Page, Wartime Experiences Page, a Battle of Britain page, a Maps page, and it will end on the Book of Remembrance page. Each page will have a link to the next page at the bottom, above the footer. This will allow Users to learn in an order that provides context, and leads them on a journey. If the User wants to, they can access the NavBar at any time to jump to whatever page they want. The "Museum" drop down will take the user through a figurative tour of the base, starting with the history of the base and ending with the Cafe Page. The content drop down will contain a Hall Rentals page and a Contact page. Each will contain forms that can be filled and each one will send an email to a specific email address when the form is filled out by a User. The Footer will contain three columns of links and the Museum Logo links to the top of each section and the contact page, the right side of the footer will include links to their social media. 
+ 
 ## Site Flow Chart
 
 ![Site Flow Chart](/images/fip_site_map-02.jpg)
