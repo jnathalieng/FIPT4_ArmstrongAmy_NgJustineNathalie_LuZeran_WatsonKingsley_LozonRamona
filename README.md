@@ -91,7 +91,7 @@ The battle of britain page we have designed to be dynamic and interactive, the h
 
 ## Maps Page
 
-The Maps Page have a map of all training bases in Ontario, and a map of wartime bases, there will be a legend
+The Maps Page have a map of all training bases in ontario currently, and a map of wartime bases during the world wars, there will be a legend attatched to each map to allow Users to understand them better. the maps will be static, but if users hovers or clicks on any of the dots that represent a base, a blurb will wappear giving the user more information about that location. at the bottom of the page will be a link to the Book of Remembrance page.
 
 ## Book of remembrance (Dynamic)
 
