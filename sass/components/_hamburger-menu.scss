@@ -88,6 +88,11 @@ ul, li {
     margin-bottom: clamp(20px, 30px, 40px);
 }
 
+.overlay-primary li:first-child {
+    margin-right: auto;
+    margin-left: 2em;
+}
+
 .overlay-primary a {
     font-size: clamp(16px, 18px, 20px);
     text-decoration: none;
