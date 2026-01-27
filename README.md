@@ -90,28 +90,41 @@ The wartime experiences page
 
 The battle of britain page we have designed to be dynamic and interactive, the hero section of the page will include a quote from Winston Churchill regarding the Battle of Britain, and as the user scrolls down elements reminiscent of paper folders will take up the screen, with several folders corresponding to each month of the battle. As the user scrolls down text will begin to appear as if typed by a typewriter, going into detail of the events of each month, starting in july and ending in October. After this section another page similar to the hero page will appear, listing the Casualties of the battle and another quote from Winston Churchill. Beyond that, as the user scrolls down they will be introduced to the participants of the battle belonging to the 427 wing, with details regarding each service member and the aircraft they piloted during the battle.
 
+## Maps Page
+
+The Maps Page have a map of all training bases in ontario, and a map of wartime bases, there will be a legend
+
 ## Book of remembrance (dynamic)
 
 The book of remembrance will have a carousel of different individuals with a search function. this page will be dynamic and managed by the client management system through the dashboard.
 
+The 427 Wing Page
+
+Training grounds, aircrafts and hangers, daily life at the base, teamwork unlimited, exhibits, gift shop
+
 ## Aviation school (external link)
 
-This page will focus on the aviation school that the 427 wing runs.
+This will not be a page, but will be information about the aviation program the 427 wing runs and how to get in contect with them.
 
-## Training Bases/maps
+## Airman's Canteen Page
 
-Map of full tour, including Jet Aircraft Museum and Radio Swarm Museum
-Pictures of 427 hall from road?
-map of all training bases in ontario.
+Building History, why it matters, then vs now photos
+
+## Cafe Page
+
+the cafe
 
 ## Blog (dynamic)
 
 the blog can be managed through the client management system via the dashboard by those with appropriate access.
 
-## Contact
+## Hall Rentals Page
+
+the hall rentals page
+
+## Contact Pages
 
 the contact page will have a form fill to allow people to mail the 427 wing. it will connect to a php file that will send a message to a specific email.
-
 
 ## Site Database Structure
 
