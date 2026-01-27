@@ -112,7 +112,7 @@ Building History, why it matters, then vs now photos
 
 ## Cafe Page
 
-the cafe
+This page will have details about the cafe in the museum. it will contain details about the cafe and its history, the hours it is open, and any special weekly promotions that the Cafe will have. it will show the menu at the Cafe, and at the bottom of the page will be a form that can be filled out by a Uasr if they want to rent out the space, when a form is sent by a user it will be sent to a specific email address.
 
 ## Blog (dynamic)
 
@@ -120,11 +120,19 @@ the blog can be managed through the client management system via the dashboard b
 
 ## Hall Rentals Page
 
-the hall rentals page
+this page will allow users to contact the Museum specifically if they want to rent out the hall. they simply fill a form and hit send, and an email will be sent to a specific address.
 
-## Contact Pages
+## Contact Page
 
-the contact page will have a form fill to allow people to mail the 427 wing. it will connect to a php file that will send a message to a specific email.
+the contact page will have a form fill to allow people to mail the 427 wing. Once a User sends the message, an email will be sent to a specific address.
+
+## Site flow
+
+The website will be divided into sections when it comes to how it will flow. the main page will feature links to all other page, and will be placed in order following the nav bar in terms of organization. the nav bar will be minimalist, with the logo and sitename to the left and 4 links sticking to the right side of the page. events will lead to the events page, the other nav links have a drop down when hovered on by a mouse, and will lead to an additional nav page that can be backed out of on mobile. There will be: History, Museum, and Contact with drop down menus and the pages listed within each drop down will be a section with its own flow. For example "History" will lead the User through a Timeline Page, Wartime Experiances Page, a Battle of Britain page, a Maps page, and it will end on the Book of Remembrance page. each page will have a link to the next page at the bottom, above the footer. This will allow Users to learn in an order that provides context, and leads them on a journey. If the User wants to they can access the NavBar at any time to jump to whatever page they want. The "Museum" drop down will take the user through a figurative tour of the base, starting with the history of the base and ending with the Cafe Page. The content drop down will contain a Hall Rentals page and a Contact page. each will contain forms that can be filled and each one will send an email to a specific email address when the form is filled out by a User. The Footer will contain three columns of links and the Museum Logo links to the top of each section and the contact page, the right side of the footer will include links to their social media. 
+
+## Site Flow Chart
+
+![Site Flow Chart](/images/fip_site_map-02.jpg)
 
 ## Site Database Structure
 
