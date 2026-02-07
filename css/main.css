@@ -1,1 +1,137 @@
-ul,li{margin:0;padding:0}#hamburger{position:fixed;top:3%;right:3%}#hamburger,#close{background:none;border:none;cursor:pointer;z-index:1000}#hamburger:hover,#close:hover{background-color:#c99641;transition:1s ease}#hamburger:active,#close:active{background-color:#8f2929;transition:.3s ease}.overlay-primary{display:flex;position:fixed;top:0;right:0;width:75%;height:100%;color:#fff;justify-content:center;align-items:center;opacity:0;transform:translateX(100%);pointer-events:none;transition:opacity .3s ease,transform .3s ease;z-index:1000}.overlay-primary.open{opacity:1;transform:translateX(0);pointer-events:auto;background-color:none;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.overlay-secondary{z-index:500;opacity:0;transform:translateY(100%);transition:opacity .3s ease,transform .3s ease;display:flex;flex-direction:column}.overlay-secondary:hover{opacity:1;transform:translateY(0);transition:opacity .3s ease,transform .3s ease}#close{position:absolute;top:3%;right:4%}.overlay-primary nav{background-color:none}.overlay-primary ul{list-style-type:none;text-align:left}.overlay-primary li{margin-top:30px;margin-bottom:30px}.overlay-primary li:first-child{margin-right:auto;margin-left:2em}.overlay-primary a{font-size:18px;text-decoration:none;color:#fff}.overlay-primary a:hover{color:#c99641;transition:.5s ease}.overlay-primary a:active{color:#1a2b6f;transition:.3s ease}@media screen and (min-width: 768px){#hamburger,#close{display:none}.overlay-primary{display:flex;height:auto;width:100%;background-color:none;opacity:1;transform:none;pointer-events:auto}.overlay-primary nav{width:100%}.overlay-primary nav ul{background-color:none;width:100%;display:flex;justify-content:flex-end;align-items:center}.overlay-primary li{margin-top:20px;margin-bottom:20px;margin-right:30px}}html{background-color:#333}.hero-card-con{display:flex;justify-content:space-around}.hero-card{background-color:#000;color:#fff;padding:300px 100px}.selection-card-con{margin:100px 0;display:flex;justify-content:space-evenly}.selection-card{background-color:#666;color:#fff;padding:100px}/*# sourceMappingURL=main.css.map */
+.m-l-nav-item {
+  display: none;
+}
+
+nav {
+  background-color: darkblue;
+}
+nav .mobile-nav-element {
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+nav .mobile-nav-element a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #eee;
+  min-height: 50px;
+}
+
+#hamburger {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+#hamburger:hover {
+  background-color: pink;
+}
+
+.mobile-dropdown {
+  position: relative;
+}
+
+.hamburger-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: darkblue;
+  min-width: 170px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.open {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
+  nav {
+    background-color: darkblue;
+  }
+  nav #nav-elements {
+    list-style: none;
+  }
+  nav #nav-elements li {
+    display: block;
+    text-align: center;
+  }
+  nav #nav-elements li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #eee;
+    min-height: 50px;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: darkblue;
+    max-width: inherit;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu li {
+    border-bottom: 1px solid #eee;
+  }
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .dropdown-menu a:hover {
+    background-color: red;
+  }
+  .overlay-primary {
+    display: flex;
+    flex-direction: row;
+  }
+}
+html {
+  background-color: #333;
+}
+
+.hero-card-con {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-card {
+  background-color: black;
+  color: white;
+  padding: 300px 100px;
+}
+
+.selection-card-con {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selection-card {
+  background-color: #666;
+  color: white;
+  padding: 100px;
+}/*# sourceMappingURL=main.css.map */
