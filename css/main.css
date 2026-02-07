@@ -1,44 +1,16 @@
-ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-#hamburger {
-  position: fixed;
-  top: 3%;
-  right: 3%;
-}
-
-#hamburger, #close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-#hamburger:hover, #close:hover {
-  background-color: #c99641;
-  transition: 1s ease;
-}
-
-#hamburger:active, #close:active {
-  background-color: #8F2929;
-  transition: 0.3s ease;
+.m-l-nav-item {
+  display: none;
 }
 
 nav {
   background-color: darkblue;
 }
-nav #nav-elements {
+nav .mobile-nav-element {
   list-style: none;
-  top: 0;
-  position: sticky;
-  z-index: 10;
-}
-nav #nav-elements li {
+  display: block;
   text-align: center;
 }
-nav #nav-elements li a {
+nav .mobile-nav-element a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,11 +19,20 @@ nav #nav-elements li a {
   min-height: 50px;
 }
 
-.dropdown {
+#hamburger {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+#hamburger:hover {
+  background-color: pink;
+}
+
+.mobile-dropdown {
   position: relative;
 }
 
-.dropdown-menu {
+.hamburger-dropdown {
   display: none;
   position: absolute;
   top: 100%;
@@ -64,28 +45,8 @@ nav #nav-elements li a {
   margin: 0;
 }
 
-.dropdown:hover .dropdown-menu {
+.open {
   display: block;
-}
-
-.dropdown-menu li {
-  border-bottom: 1px solid #eee;
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: white;
-}
-
-.dropdown-menu a:hover {
-  background-color: red;
-}
-
-.overlay-primary {
-  display: flex;
-  flex-direction: row;
 }
 
 @media (min-width: 768px) {
@@ -94,6 +55,58 @@ nav #nav-elements li a {
   }
   #close {
     display: none;
+  }
+  nav {
+    background-color: darkblue;
+  }
+  nav #nav-elements {
+    list-style: none;
+  }
+  nav #nav-elements li {
+    display: block;
+    text-align: center;
+  }
+  nav #nav-elements li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #eee;
+    min-height: 50px;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: darkblue;
+    max-width: inherit;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu li {
+    border-bottom: 1px solid #eee;
+  }
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .dropdown-menu a:hover {
+    background-color: red;
+  }
+  .overlay-primary {
+    display: flex;
+    flex-direction: row;
   }
 }
 html {

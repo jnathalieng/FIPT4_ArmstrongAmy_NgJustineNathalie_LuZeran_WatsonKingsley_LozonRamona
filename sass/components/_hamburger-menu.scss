@@ -1,32 +1,32 @@
 @use '../abstracts';
 
-ul, li {
-    margin: 0;
-    padding: 0;
-}
+// ul, li {
+//     margin: 0;
+//     padding: 0;
+// }
 
-#hamburger {
-    position: fixed;
-    top: 3%;
-    right: 3%;
-}
+// #hamburger {
+//     position: fixed;
+//     top: 3%;
+//     right: 3%;
+// }
 
-#hamburger, #close {
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
+// #hamburger, #close {
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     z-index: 1000;
+// }
 
-#hamburger:hover, #close:hover {
-    background-color: abstracts.$accent-color;
-    transition: 1s ease;
-}
+// #hamburger:hover, #close:hover {
+//     background-color: abstracts.$accent-color;
+//     transition: 1s ease;
+// }
 
-#hamburger:active, #close:active {
-    background-color: abstracts.$primary-color;
-    transition: 0.3s ease;
-}
+// #hamburger:active, #close:active {
+//     background-color: abstracts.$primary-color;
+//     transition: 0.3s ease;
+// }
 
 // .overlay-primary {
 //     display: flex;
