@@ -1,37 +1,59 @@
 @use '../abstracts/fonts';
 @use '../abstracts/mixins';
-@use '../abstracts/variables';
+@use '../abstracts/variables' as v;
 @use '../base/typography';
+
+.hidden {
+    display: none;
+}
+
+.hover-item {
+    color: white;
+    background-color: v.$menu-element-color;
+}
+
+.hover-item:hover {
+    color: v.$menu-element-color;
+    background-color: white;
+}
 
 .m-l-nav-item {
     display: none;
 }
 
+header {
+    top:0;
+    position: sticky;
+    z-index: 100;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: v.$menu-element-color;
 .mobile-nav-element {
     list-style: none;
     display: block;
-    text-align: center;
             a {
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: left;
                 text-decoration: none;
-                color: #eee;
                 min-height: 50px;
             }
     }
 }
 
 #hamburger {
-    background-color: rgba(0,0,0,0);
-    border: none;
-}
+     border: none;
+     border-radius: 15px;
+ }
 
-#hamburger:hover {
-    background-color: pink;
-}
+#close {
+     border: none;
+     border-radius: 15px;
+     svg {
+     max-width: 40px;
+     max-height: 40px;
+}}
 
 .mobile-dropdown {
     position: relative;
@@ -41,17 +63,70 @@ nav {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: darkblue;
+    left: -70%;
+    background-color: v.$menu-element-color;
     min-width: 170px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 10px 0 10px;
+        li {
+              border-bottom: 1px solid white; 
+              a{
+              max-width: 150px; 
+              }}
+}
+
+.opening {
+    display: block;
+    animation: slide-out 0.25s forwards;
+}
+
+.closing {
+    display: block;
+    animation: slide-back 0.25s forwards;
+}
+
+@keyframes slide-out {
+    0% {left:120%;}
+    100% {left:-70%}
+}
+
+@keyframes slide-back {
+    0% {left:-70%;}
+    100% {left:120%}
 }
 
 .open {
     display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: v.$menu-element-color;
+    max-width: inherit;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    //transform: translateY(-100%);
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid white;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
 }
 
 //tablet and larger screen width styles
@@ -67,7 +142,6 @@ nav {
 
     //navbar styles
 nav {
-    background-color: darkblue;
 #nav-elements {
     list-style: none;
         li {
@@ -78,52 +152,26 @@ nav {
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
-                color: #eee;
                 min-height: 50px;
             }
         }
     }
 }
 
-//history dropdown menu styles 
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
+.open {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: darkblue;
-    max-width: inherit;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
+//history dropdown menu styles 
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown-menu li {
-    border-bottom: 1px solid #eee;
-}
 
-.dropdown-menu a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-}
-
-.dropdown-menu a:hover {
-    background-color: red;
-}
 
 .overlay-primary {
     display: flex;
     flex-direction: row;
 }
+
 }
