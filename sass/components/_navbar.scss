@@ -29,6 +29,8 @@ header {
 
 nav {
     background-color: v.$menu-element-color;
+    display: flex;
+    flex-direction: row;
 .mobile-nav-element {
     list-style: none;
     display: block;
@@ -40,6 +42,19 @@ nav {
                 min-height: 50px;
             }
     }
+}
+
+#logo {
+    display: block;
+    text-align: center;
+    width: 100px;
+            a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            min-height: 50px;
+            }
 }
 
 #hamburger {
@@ -57,22 +72,24 @@ nav {
 
 .mobile-dropdown {
     position: relative;
+    margin: 0 20px 0 auto;
 }
 
 .hamburger-dropdown {
     display: none;
     position: absolute;
     top: 100%;
-    left: -70%;
+    left: -220%;
     background-color: v.$menu-element-color;
     min-width: 170px;
     list-style: none;
     padding: 0;
-    margin: 0 10px 0 10px;
+    margin: 0 100px 0 10px;
         li {
               border-bottom: 1px solid white; 
               a{
-              max-width: 150px; 
+              max-width: 150px;
+              padding: 0 0 0 10px 
               }}
 }
 
@@ -88,11 +105,11 @@ nav {
 
 @keyframes slide-out {
     0% {left:120%;}
-    100% {left:-70%}
+    100% {left:-220%}
 }
 
 @keyframes slide-back {
-    0% {left:-70%;}
+    0% {left:-220%;}
     100% {left:120%}
 }
 
@@ -140,23 +157,36 @@ nav {
         display: none;
     }
 
+.mobile-dropdown {
+    margin-left: 0;
+}
+
+#history-nav {
+    margin-left: auto;
+}
+
+.m-l-nav-item {
+    display: block;
+    text-align: center;
+    width: 170px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            min-height: 50px;
+            }
+}
+
     //navbar styles
 nav {
-#nav-elements {
-    list-style: none;
-        li {
+        div {
             display: block;
-            text-align: center;
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                min-height: 50px;
-            }
+
+
         }
     }
-}
+
 
 .open {
     display: none;
