@@ -127,7 +127,7 @@ nav .mobile-nav-element a {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: -400%;
   left: 0;
   background-color: rgb(37, 37, 37);
   max-width: inherit;
@@ -135,9 +135,18 @@ nav .mobile-nav-element a {
   list-style: none;
   padding: 0;
   margin: 0;
-  z-index: 1;
+  z-index: -1;
+  animation: dropDown 0.25s forwards;
 }
 
+@keyframes dropDown {
+  0% {
+    top: -400%;
+  }
+  100% {
+    top: 100%;
+  }
+}
 .dropdown-menu li {
   border-bottom: 1px solid white;
 }
