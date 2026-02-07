@@ -124,7 +124,7 @@ nav {
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: -400%;
     left: 0;
     background-color: v.$menu-element-color;
     max-width: inherit;
@@ -132,8 +132,13 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    //transform: translateY(-100%);
-    z-index: 1;
+    z-index: -1;
+    animation: dropDown 0.25s forwards;
+}
+
+@keyframes dropDown {
+    0% {top:-400%}
+    100% {top: 100%}
 }
 
 .dropdown-menu li {
