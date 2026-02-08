@@ -1,10 +1,18 @@
-.hidden {
+Header {
+  position: sticky;
+}
+
+.m-l-nav-item {
   display: none;
+}
+.m-l-nav-item a {
+  text-decoration: none;
+  padding: 10px;
 }
 
 .hover-item {
   color: white;
-  background-color: rgb(37, 37, 37);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .hover-item:hover {
@@ -12,20 +20,13 @@
   background-color: white;
 }
 
-.m-l-nav-item {
-  display: none;
-}
-
-header {
-  top: 0;
-  position: sticky;
-  z-index: 100;
-}
-
 nav {
   background-color: rgb(37, 37, 37);
   display: flex;
   flex-direction: row;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid white;
 }
 nav .mobile-nav-element {
   list-style: none;
@@ -52,11 +53,6 @@ nav .mobile-nav-element a {
   min-height: 50px;
 }
 
-#hamburger {
-  border: none;
-  border-radius: 15px;
-}
-
 #close {
   border: none;
   border-radius: 15px;
@@ -71,72 +67,89 @@ nav .mobile-nav-element a {
   margin: 0 20px 0 auto;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  margin: 0 20px 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #1A2B6F;
+  border-radius: 2px;
+}
+
 .hamburger-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
-  left: -220%;
-  background-color: rgb(37, 37, 37);
-  min-width: 170px;
-  list-style: none;
-  padding: 0;
-  margin: 0 100px 0 10px;
+  background-color: #8F2929;
+  padding: 10px;
+  top: 24px;
+  right: -100%;
+  width: 120px;
+  border-left: 1px solid #1A2B6F;
+  border-bottom: 1px solid #1A2B6F;
 }
-.hamburger-dropdown li {
-  border-bottom: 1px solid white;
-}
-.hamburger-dropdown li a {
-  max-width: 150px;
-  padding: 0 0 0 10px;
+.hamburger-dropdown a {
+  text-decoration: none;
 }
 
-.opening {
+.open {
   display: block;
+}
+
+.slide-out {
   animation: slide-out 0.25s forwards;
 }
 
-.closing {
-  display: block;
+.slide-back {
   animation: slide-back 0.25s forwards;
 }
 
 @keyframes slide-out {
   0% {
-    left: 120%;
+    right: -100%;
   }
   100% {
-    left: -220%;
+    right: 0%;
   }
 }
 @keyframes slide-back {
   0% {
-    left: -220%;
+    right: 0%;
   }
   100% {
-    left: 120%;
+    right: -100%;
   }
 }
 .open {
   display: block;
 }
 
-.dropdown {
-  position: relative;
+.hamburger.X span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  position: absolute;
 }
 
-.dropdown-menu {
-  display: none;
+.hamburger.X span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.X span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
   position: absolute;
-  top: -400%;
-  left: 0;
-  background-color: rgb(37, 37, 37);
-  max-width: inherit;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  z-index: -1;
-  animation: dropDown 0.25s forwards;
+}
+
+.dropdown {
+  position: relative;
 }
 
 @keyframes dropDown {
@@ -158,14 +171,11 @@ nav .mobile-nav-element a {
 }
 
 @media (min-width: 768px) {
-  #hamburger {
+  .hamburger {
     display: none;
   }
-  #close {
+  .hamburger-dropdown {
     display: none;
-  }
-  .mobile-dropdown {
-    margin-left: 0;
   }
   #history-nav {
     margin-left: auto;
