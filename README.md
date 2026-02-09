@@ -117,7 +117,7 @@ The website will be divided into sections when it comes to how it will flow. The
 
 ## Site Flow Chart
 
-![Site Flow Chart](/images/fip_site_map-02.jpg)
+![Site Flow Chart](/images/fip_site_map-03.jpg)
 
 ## Site Database Structure
 
