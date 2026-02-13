@@ -1,0 +1,100 @@
+@use '../abstracts';
+
+#BOB-page {
+    color: white;
+    text-align: center;
+    background-image: url(../../images/BOB-images/bob-hero-placeholder.png);
+}
+
+.dossier-con {
+    background-color: green;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.dossier {
+    background-image: url(../../images/BOB-images/dossier-placeholder.png);
+}
+
+.dossier-tag {
+    position: absolute;
+    top: 0;
+    height: 2rem; //must match padding-top of .dossier-con
+    
+    padding: 0 1rem 0 1rem;
+    border-radius: 1rem 1rem 0 0;
+
+    background-image: url(../../images/BOB-images/dossier-placeholder.png);
+}
+
+#july-tag {
+    left: 0%
+}
+
+#aug-tag {
+    left: 25%
+}
+
+#sept-tag {
+    left: 50%
+}
+
+#oct-tag {
+    left: 75%;
+}
+
+.deaths-section {
+    background-image: url(../../images/BOB-images/bob-losses-placeholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 2rem;
+
+    h2, p {
+        margin: 2rem;
+    }
+
+    p {
+        font-size: 150%;
+    }
+}
+
+.deaths-info-con {
+    text-align: left;
+    display: flex;
+}
+
+.deaths-info-bot {
+    text-align: left;
+}
+
+.canadian-pilots-section {
+    background-color: #666;
+
+    .canadian-pilots-card {
+        padding: 5rem;
+    }
+
+    .pilots-card-content {
+        display: flex;
+        padding: 5rem;
+        background-color: #333;
+        height: 50vh;
+
+        .pilots-card-img-con {
+            width: 50%;
+            background-color: red;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .pilots-card-text-con {
+            width: 50%;
+            background-color: blue;
+        }
+    }
+}
+
