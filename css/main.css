@@ -1,5 +1,6 @@
 Header {
   position: sticky;
+  top: 0;
 }
 
 .m-l-nav-item {
@@ -130,6 +131,11 @@ nav .mobile-nav-element a {
   position: absolute;
 }
 
+.drop-down-wrap {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -176,12 +182,13 @@ nav .mobile-nav-element a {
   }
   #history-nav {
     margin-left: auto;
+    overflow: visible;
   }
   .m-l-nav-item {
     display: block;
     text-align: center;
     width: 150px;
-    height: 150px;
+    height: 100px;
     clip-path: polygon(0 0, 100% 100%, 100% 0);
   }
   .m-l-nav-item a {
@@ -201,7 +208,7 @@ nav .mobile-nav-element a {
   .open {
     display: none;
   }
-  .dropdown:hover .dropdown-menu {
+  .drop-down-wrap:hover .dropdown-menu {
     display: block;
   }
   .overlay-primary {

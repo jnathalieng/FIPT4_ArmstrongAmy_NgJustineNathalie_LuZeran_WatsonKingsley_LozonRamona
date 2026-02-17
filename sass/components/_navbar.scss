@@ -5,6 +5,7 @@
 
 Header {
     position: sticky;
+    top: 0;
 }
 
 .m-l-nav-item {
@@ -131,6 +132,12 @@ nav {
 
 
 //desktop dropdown menu
+
+.drop-down-wrap {
+    position: relative;
+    margin: 0 0 0 auto
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -178,13 +185,14 @@ nav {
 
 #history-nav {
     margin-left: auto;
+    overflow: visible;
 }
 
 .m-l-nav-item {
     display: block;
     text-align: center;
     width: 150px;
-    height: 150px;
+    height: 100px;
     clip-path: polygon(0 0, 100% 100%, 100% 0);
         a {
             display: block;
@@ -216,7 +224,7 @@ nav {
 }
 
 //history dropdown menu styles 
-.dropdown:hover .dropdown-menu {
+.drop-down-wrap:hover .dropdown-menu {
     display: block;
 }
 
