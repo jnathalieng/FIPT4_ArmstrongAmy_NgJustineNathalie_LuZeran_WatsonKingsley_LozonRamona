@@ -24,13 +24,13 @@ if(empty($email)) {
 
 if(empty($errors)) {
     // Use prepared statements for safety
-    $stmt = $connect->prepare("INSERT INTO contacts (name, org, email, msg) VALUES(?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $name, $email, $msg);
+    $stmt = $connect->prepare("INSERT INTO contacts (name, email, msg) VALUES(?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $msg);
 
     if($stmt->execute()) {
         // Send email
-        $to = 'lozonramona@gmail.com';
-        $subject = 'Message from your Portfolio site!';
+        $to = ' ';
+        $subject = 'Message from the London Aircraft Museum Website';
         $message = "You have received a new contact form submission:\n\n";
         $message .= "Name: " . $name . "\n";
         $message .= "Email: " . $email . "\n\n";
