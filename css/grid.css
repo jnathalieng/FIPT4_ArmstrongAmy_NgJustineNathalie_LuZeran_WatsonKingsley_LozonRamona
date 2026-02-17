@@ -81,6 +81,26 @@ body, p, h1, h2, h3, h4, h5 {
 .col-end-5	{grid-column-end: 5;}
 .col-end-auto	{grid-column-end: auto;}
 
+.r-start-1 {grid-row-start: 1;}
+.r-start-2 {grid-row-start: 2;}
+.r-start-3 {grid-row-start: 3;}
+.r-start-4 {grid-row-start: 4;}
+
+.r-span-1  {grid-row: span 1 ;}
+.r-span-2  {grid-row: span 2 ;}
+.r-span-3  {grid-row: span 3 ;}
+.r-span-4  {grid-row: span 4 ;}
+.r-span-full {grid-row: 1/ -1;}
+
+.r-end-1 {grid-row-end: 1;}
+.r-end-2 {grid-row-end: 2;}
+.r-end-3 {grid-row-end: 3;}
+.r-end-4 {grid-row-end: 4;}
+.r-end-5 {grid-row-end: 5;}
+.r-end-6 {grid-row-end: 6;}
+.r-end-7 {grid-row-end: 7;}
+.r-end-8 {grid-row-end: 8;}  
+
 /* ---Tablet Library Grid Styles--- */
 
 @media screen and (min-width: 768px) { 
