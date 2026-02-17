@@ -8,6 +8,130 @@
     <link type="text/css" href="css/grid.css" rel="stylesheet">
 </head>
 <body>
-    
+
+    <header>
+    <!-- navbar -->
+        <nav>
+                <div id="logo"><a href="index.html" class="hover-item">LOGO</a></div>
+                <div class="drop-down-wrap">
+                <div class="m-l-nav-item" id="history-nav"><a>History</a></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="timeline.html">London Aviation History Timeline</a></li>
+                        <li><a href="training_bases.html">Flying Schools and Training Bases</a></li>
+                        <li><a href="canteen.html">Airman's Canteen</a></li>
+                        <li><a href="commemoration.html">Commemoration Page</a></li>
+                    </ul>
+
+                </div>
+                <div class="m-l-nav-item"><a href="BOB.html">Battle of<br>Britain</a></div>
+                <!-- <div class="m-l-nav-item"><a href="BOR.html" class="hover-item">Book of Remembrance</a></div> -->
+                <div class="m-l-nav-item"><a href="events.html">Events</a></div>
+
+            <!-- mobile hamburger menu -->
+                    <div class="hamburger hover-item">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="hamburger-dropdown">
+                        <li><a class="hover-item" href="timeline.html">London Aviation History Timeline</a></li>
+                        <li><a class="hover-item" href="training_bases.html">Flying Schools and Training Bases</a></li>
+                        <li><a class="hover-item" href="canteen.html">Airman's Canteen</a></li>
+                        <li><a class="hover-item" href="commemoration.html">Commemoration Page</a></li>
+                        <li><a class="hover-item" href="BOB.html">Battle of Britain</a></li>
+                        <li><a class="hover-item" href="BOR.html">Book of Remembrance</a></li>
+                        <li><a class="hover-item" href="events.html">Events</a></li>
+                    </ul>
+
+        </nav>
+    </header>
+
+    <main>
+            <!-- contact -->
+            <article id="contact-section" class="col-span-full">
+                <h3 class="text underline main-title " id="contactTitle">Contact</h3>
+            <!--Buttons-->
+            <form class="input-form" id="contactForm" method="post" action="sendmail.php">
+
+                <input  class="form-box" 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="name" 
+                        action="sendmail.php">
+                <br>
+                <br>
+                <input 
+                        class="form-box" 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="email" 
+                        action="sendmail.php">
+                <br>
+                <br>
+                <textarea   class="form-box" 
+                            name="msg" 
+                            id="msg" 
+                            placeholder="message" 
+                            action="sendmail.php">
+                </textarea>
+                <br>
+                <br>
+                
+                <div id="feedback"></div>
+
+                <input  class="button" 
+                        id="send-button" 
+                        type="submit" 
+                        value="Submit">
+            </form>
+
+        </article>
+
+    </main>
+
+        <footer class="grid-con">
+        <!-- logo -->
+         <div class="col-start-1">
+            <a href="index.html">Logo</a>
+        </div>
+        <div class="col-start-1">
+            <a href="contact.html">Contact</a>
+        </div>
+        <!--footer nav-->
+        <div class="col-start-2 col-end-4">
+            <a href="events.html">Events</a>
+        </div>
+        <div class="col-start-2 col-end-4">
+            <a href="timeline.html">London Aviation History</a>
+        </div>
+        <div class="col-start-2 col-end-4">  
+            <a href="training_bases.html">Flying Schools and Training Bases</a>
+        </div>
+        <div class="col-start-2 col-end-4">  
+            <a href="commemoration.html">Commemmoration</a>
+        </div>
+        <div class="col-start-2 col-end-4">  
+            <a href="BOB.html">Battle of Britain</a>
+        </div>
+        <div class="col-start-2 col-end-4">    
+            <a href="blog.html">Blog</a>
+        </div>
+
+
+                  <!-- return to top -->
+          <div class="button col-start-4 r-start-2">
+            <a href="index.html">Top</a>
+          </div>
+                  <!-- socials -->
+        <div class="col-start-4 r-start-3">
+            <a href="">Facebook</a>
+        </div>
+        <div class="col-start-4 r-start-4">    
+            <a href="">YouTube</a>
+        </div>
+    </footer>
 </body>
 </html>
