@@ -5,6 +5,7 @@
 
 Header {
     position: sticky;
+    top: 0;
 }
 
 .m-l-nav-item {
@@ -26,12 +27,11 @@ Header {
 }
 
 nav {
-    background-color: v.$menu-element-color;
+    background-color: rgba(0,0,0,0);
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: auto;
     align-items: center;
-    border-bottom: 1px solid white;
 .mobile-nav-element {
     list-style: none;
     display: block;
@@ -132,6 +132,12 @@ nav {
 
 
 //desktop dropdown menu
+
+.drop-down-wrap {
+    position: relative;
+    margin: 0 0 0 auto
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -179,20 +185,29 @@ nav {
 
 #history-nav {
     margin-left: auto;
+    overflow: visible;
 }
 
 .m-l-nav-item {
     display: block;
     text-align: center;
-    width: 170px;
+    width: 150px;
+    height: 100px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
         a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: block;
+            text-align: right;
+            padding-right: 20px;
             text-decoration: none;
             min-height: 50px;
+            color: white;
             }
 }
+
+.m-l-nav-item:hover {
+    background-color: red;
+}
+
 
     //navbar styles
 nav {
@@ -209,7 +224,7 @@ nav {
 }
 
 //history dropdown menu styles 
-.dropdown:hover .dropdown-menu {
+.drop-down-wrap:hover .dropdown-menu {
     display: block;
 }
 
