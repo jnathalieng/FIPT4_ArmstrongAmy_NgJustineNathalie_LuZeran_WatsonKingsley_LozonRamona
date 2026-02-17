@@ -141,9 +141,8 @@ nav .mobile-nav-element a {
   position: absolute;
   top: -400%;
   left: 0;
-  background-color: rgb(37, 37, 37);
+  background-color: rgba(0, 0, 0, 0);
   max-width: inherit;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -164,7 +163,20 @@ nav .mobile-nav-element a {
   }
 }
 .dropdown-menu li {
-  border-bottom: 1px solid white;
+  text-decoration: none;
+  text-align: right;
+  clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%);
+}
+.dropdown-menu li a {
+  color: white;
+}
+
+.dropdown-menu li:hover {
+  text-decoration: none;
+  background-color: red;
+}
+.dropdown-menu li:hover a {
+  color: white;
 }
 
 .dropdown-menu a {
