@@ -8,7 +8,6 @@ export function contactForm() {
 
         const formdata = 
             "name=" + thisform.elements.name.value +
-            "&org=" + thisform.elements.org.value +
             "&email=" + thisform.elements.email.value +
             "&msg=" + thisform.elements.msg.value;
 
