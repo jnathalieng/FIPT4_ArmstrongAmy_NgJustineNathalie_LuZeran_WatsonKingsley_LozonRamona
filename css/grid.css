@@ -303,10 +303,10 @@ body, p, h1, h2, h3, h4, h5 {
     .l-r-end-7	{grid-row-end: 7;}
     .l-r-end-8	{grid-row-end: 8;}
     .l-r-end-9	{grid-row-end: 9;}
-    .l-r-end-10	{grid-row-end: 10;}
-    .l-r-end-11	{grid-row-end: 11;}
-    .l-r-end-12	{grid-row-end: 12;}
-    .l-r-end-13	{grid-row-end: 13;}
+    .l-r-end-10{grid-row-end: 10;}
+    .l-r-end-11{grid-row-end: 11;}
+    .l-r-end-12{grid-row-end: 12;}
+    .l-r-end-13{grid-row-end: 13;}
 }
 
 /* ---X-Large Desktop Library Grid Styles--- */

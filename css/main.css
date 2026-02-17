@@ -216,6 +216,22 @@ nav .mobile-nav-element a {
     flex-direction: row;
   }
 }
+footer {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+footer div {
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+}
+footer div a {
+  text-decoration: none;
+  color: white;
+}
+footer div a:hover {
+  color: red;
+}
+
 html {
   background-color: black;
 }
