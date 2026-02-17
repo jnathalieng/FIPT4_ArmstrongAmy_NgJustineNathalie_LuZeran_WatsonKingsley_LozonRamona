@@ -1,0 +1,16 @@
+footer {
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+    div {
+        border-bottom: 1px solid white;
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: red;
+        }
+    }
+}
