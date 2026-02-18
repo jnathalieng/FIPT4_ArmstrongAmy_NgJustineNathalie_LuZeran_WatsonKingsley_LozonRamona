@@ -1,5 +1,6 @@
 import { navbar_showhide } from "./modules/hamburger.js";
 import { contactForm } from "./modules/contactForm.js";
+import { mapScroll } from "./modules/mapScroll.js";
 
 
 navbar_showhide();
@@ -12,6 +13,7 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
+    mapScroll();
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
