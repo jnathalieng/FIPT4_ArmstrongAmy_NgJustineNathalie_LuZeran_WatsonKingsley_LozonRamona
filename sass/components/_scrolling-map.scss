@@ -1,0 +1,28 @@
+@use '../abstracts';
+
+.map-svg-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.scroll-container {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.scroll-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
