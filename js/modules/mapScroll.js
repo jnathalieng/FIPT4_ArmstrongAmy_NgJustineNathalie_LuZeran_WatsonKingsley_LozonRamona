@@ -28,6 +28,8 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const targetId = entry.target.dataset.target;
             zoomToBase(targetId);
+
+            svg.classList.add('active');
             // "isIntersecting is a property that is set by "IntersectionObserver", this property tells the watcher what and when it is watching something
         }
     });
@@ -55,6 +57,8 @@ function zoomToBase(targetId) {
 
 window.addEventListener('load', () => {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+
+    svg.classList.remove('active');
 });
 
 }
