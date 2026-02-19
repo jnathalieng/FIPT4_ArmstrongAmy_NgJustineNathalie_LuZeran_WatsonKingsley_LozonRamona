@@ -6,6 +6,7 @@
 Header {
     position: sticky;
     top: 0;
+    z-index: 3000;
 }
 
 .m-l-nav-item {
@@ -27,11 +28,13 @@ Header {
 }
 
 nav {
+    position: sticky;
     background-color: rgba(0,0,0,0.1);
     display: flex;
     flex-direction: row;
     height: auto;
     align-items: center;
+    z-index: 9000;
 .mobile-nav-element {
     list-style: none;
     display: block;
@@ -49,6 +52,7 @@ nav {
     display: block;
     text-align: center;
     width: 100px;
+    margin: 0 auto 0 0;
             a {
             display: flex;
             align-items: center;
@@ -135,8 +139,12 @@ nav {
 
 .drop-down-wrap {
     position: relative;
-    margin: 0 0 0 auto;
     height: 80px;
+}
+
+#history-nav {
+    position: relative;
+    z-index: 9000;
 }
 
 .dropdown {
@@ -159,7 +167,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: -1;
+    z-index: 4000;
     animation: dropDown 0.25s forwards;
 
     //li within the dropdown ul
