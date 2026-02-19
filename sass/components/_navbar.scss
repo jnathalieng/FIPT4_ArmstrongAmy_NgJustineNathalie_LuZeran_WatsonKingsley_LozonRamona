@@ -27,7 +27,7 @@ Header {
 }
 
 nav {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.1);
     display: flex;
     flex-direction: row;
     height: auto;
@@ -135,9 +135,20 @@ nav {
 
 .drop-down-wrap {
     position: relative;
-    margin: 0 0 0 auto
+    margin: 0 0 0 auto;
+    height: 80px;
 }
 
+.dropdown {
+    position: relative;
+}
+
+@keyframes dropDown {
+    0% {top:-400%}
+    100% {top: 100%}
+}
+
+//tablet/desktop dropdown menu styles
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -150,31 +161,40 @@ nav {
     margin: 0;
     z-index: -1;
     animation: dropDown 0.25s forwards;
-}
 
-.dropdown {
+    //li within the dropdown ul
+    li {
     position: relative;
-}
-
-@keyframes dropDown {
-    0% {top:-400%}
-    100% {top: 100%}
-}
-
-.dropdown-menu li {
     text-decoration: none;
     text-align: right;
-    clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%);
+    height: 80px;
+    width: 150px;
+    background-color: rgba(0,0,0,0);
+    filter: drop-shadow(-20px 10px 30px black);
+
+    //triangle element within the dropdown menu
+    div{    
+        position: absolute;
+        inset: 0;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+    }
+
+    //link within the list item
     a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        inset: 0;
         color: white;
+        z-index: 12;
+        position: absolute;
+    }
     }
 }
 
 .dropdown-menu li:hover {
-    text-decoration: none;
+    div {
     background-color: red;
-    a {
-        color: white;
     }
 }
 
@@ -204,20 +224,31 @@ nav {
     display: block;
     text-align: center;
     width: 150px;
-    height: 100px;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
+        div {
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+        height: 80px;
+        width: 150px;
+        top: 0;
+        position: absolute;
+        }    
+
         a {
             display: block;
             text-align: right;
             padding-right: 20px;
             text-decoration: none;
-            min-height: 50px;
+            height: 80px;
+            width: 150px;
             color: white;
+            position: absolute;
+            top: 0;
             }
 }
 
 .m-l-nav-item:hover {
+    div {
     background-color: red;
+    }
 }
 
 
