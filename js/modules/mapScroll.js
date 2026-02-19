@@ -53,7 +53,18 @@ function zoomToBase(targetId) {
     svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
 }
 
+function resetMap() {
+    svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
+    svg.classList.remove('active');
+}
+
+const returnButton = document.querySelector("#return-map-button");
+
+returnButton.addEventListener('click', () => {
+    resetMap();
+    console.log("map reset");
+})
 
 window.addEventListener('load', () => {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
