@@ -1,1 +1,508 @@
-.title-text{font-family:"Monserrat",sans-serif;font-size:64}.header-text{font-family:"Monserrat",sans-serif;font-size:55}.button-text{font-family:"Monserrat",sans-serif;font-size:39}.body-text{font-family:"Monserrat",sans-serif;font-size:24}Header{position:sticky;top:0}.m-l-nav-item{display:none}.m-l-nav-item a{text-decoration:none;padding:10px}.hover-item{color:#fff;background-color:rgba(0,0,0,0)}.hover-item:hover{color:#252525;background-color:#fff}nav{background-color:rgba(0,0,0,0);display:flex;flex-direction:row;height:auto;align-items:center}nav .mobile-nav-element{list-style:none;display:block}nav .mobile-nav-element a{display:flex;align-items:center;justify-content:left;text-decoration:none;min-height:50px}#logo{display:block;text-align:center;width:100px}#logo a{display:flex;align-items:center;justify-content:center;text-decoration:none;min-height:50px}.hamburger{display:flex;flex-direction:column;justify-content:space-between;width:30px;height:20px;margin:0 20px 0 auto;position:relative;cursor:pointer}.hamburger span{display:block;width:100%;height:2px;background-color:#fff;border-radius:2px}.hamburger-dropdown{display:none;position:absolute;background-color:#252525;padding:10px;top:34px;right:-100%;width:200px;list-style:none;border-left:1px solid #fff;border-bottom:1px solid #fff}.hamburger-dropdown a{text-decoration:none}.slide-out{animation:slide-out .25s forwards}.slide-back{animation:slide-back .25s forwards}@keyframes slide-out{0%{right:-100%}100%{right:0%}}@keyframes slide-back{0%{right:0%}100%{right:-100%}}.open{display:block}.hamburger.X span:nth-child(1){transform:rotate(45deg);top:10px;position:absolute}.hamburger.X span:nth-child(2){opacity:0}.hamburger.X span:nth-child(3){transform:rotate(-45deg);top:10px;position:absolute}.drop-down-wrap{position:relative;margin:0 0 0 auto}.dropdown-menu{display:none;position:absolute;top:-400%;left:0;background-color:rgba(0,0,0,0);max-width:inherit;list-style:none;padding:0;margin:0;z-index:-1;animation:dropDown .25s forwards}.dropdown{position:relative}@keyframes dropDown{0%{top:-400%}100%{top:100%}}.dropdown-menu li{text-decoration:none;text-align:right;clip-path:polygon(0 0, 75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%)}.dropdown-menu li a{color:#fff}.dropdown-menu li:hover{text-decoration:none;background-color:red}.dropdown-menu li:hover a{color:#fff}.dropdown-menu a{display:block;padding:10px 15px;text-decoration:none}@media(min-width: 768px){.hamburger{display:none}.hamburger-dropdown{display:none}#history-nav{margin-left:auto;overflow:visible}.m-l-nav-item{display:block;text-align:center;width:150px;height:100px;clip-path:polygon(0 0, 100% 100%, 100% 0)}.m-l-nav-item a{display:block;text-align:right;padding-right:20px;text-decoration:none;min-height:50px;color:#fff}.m-l-nav-item:hover{background-color:red}nav div{display:block}.open{display:none}.drop-down-wrap:hover .dropdown-menu{display:block}.overlay-primary{display:flex;flex-direction:row}}footer{padding-top:30px;padding-bottom:100px}footer div{border-bottom:1px solid #fff;padding-top:10px}footer div a{text-decoration:none;color:#fff}footer div a:hover{color:red}.map-svg-element{position:fixed;top:0;left:0;width:100vw;z-index:-1;pointer-events:none;touch-action:none}.map-svg-element.active{height:100vh}.scroll-container{position:relative;z-index:1;padding:2rem}.scroll-section{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;scroll-snap-align:start}html{background-color:#000}.hero-card-con{display:flex;justify-content:space-around}.hero-card{background-color:#000;color:#fff;padding:300px 100px}.selection-card-con{margin:100px 0;display:flex;justify-content:space-evenly}.selection-card{background-color:#666;color:#fff;padding:100px}#canteen-page{color:#fff}.gallery-container{display:flex;justify-content:space-evenly;align-items:center}.img-caption{font-size:.5rem;text-align:center}.img-con{width:100%}.img-con img:hover{transform:scale(110%);transition:.3s ease-in}.foreg{z-index:2}.backg{z-index:1}#quad-container{display:flex;flex-wrap:wrap}.gallery-quad{flex:0 0 calc(50% - 1rem);background-image:url(../../images/canteen-images/canteen-placeholder-7.png);background-size:cover;padding:2rem}#timeline-page{color:#fff}#commemoration-page{color:#fff}#commemoration-page .hero{background-image:url(/images/comm-images/comm-hero-placeholder.png);background-size:cover;background-position:center;min-height:100vh}#commemoration-page .hero h2,#commemoration-page .hero p{top:50%;text-align:center}.comm-mini{background-color:#8f2929;padding:1rem}.comm-mini h2,.comm-mini p{margin:1rem;text-align:center}.comm-card{display:flex;background-color:#666;max-height:50vh;justify-content:space-between}.comm-card .comm-card-info{margin:auto;background-color:#333}.comm-card .comm-img-card img{height:100%}#BOB-page{color:#fff;text-align:center;background-image:url(../../images/BOB-images/bob-hero-placeholder.png)}.dossier-con{background-color:green;padding-top:2rem;position:relative}.dossier{background-image:url(../../images/BOB-images/dossier-placeholder.png)}.dossier-tag{position:absolute;top:0;height:2rem;padding:0 1rem 0 1rem;border-radius:1rem 1rem 0 0;background-image:url(../../images/BOB-images/dossier-placeholder.png)}#july-tag{left:0%}#aug-tag{left:25%}#sept-tag{left:50%}#oct-tag{left:75%}.deaths-section{background-image:url(../../images/BOB-images/bob-losses-placeholder.png);background-size:cover;background-repeat:no-repeat;background-position:center;padding:2rem}.deaths-section h2,.deaths-section p{margin:2rem}.deaths-section p{font-size:150%}.deaths-info-con{text-align:left;display:flex}.deaths-info-bot{text-align:left}.canadian-pilots-section{background-color:#666}.canadian-pilots-section .canadian-pilots-card{padding:5rem}.canadian-pilots-section .pilots-card-content{display:flex;padding:5rem;background-color:#333;height:50vh}.canadian-pilots-section .pilots-card-content .pilots-card-img-con{width:50%;background-color:red}.canadian-pilots-section .pilots-card-content .pilots-card-img-con img{height:100%}.canadian-pilots-section .pilots-card-content .pilots-card-text-con{width:50%;background-color:blue}#bases-page{color:#fff;overflow-x:hidden}/*# sourceMappingURL=main.css.map */
+.title-text {
+  font-family: "Monserrat", sans-serif;
+  font-size: 64;
+}
+
+.header-text {
+  font-family: "Monserrat", sans-serif;
+  font-size: 55;
+}
+
+.button-text {
+  font-family: "Monserrat", sans-serif;
+  font-size: 39;
+}
+
+.body-text {
+  font-family: "Monserrat", sans-serif;
+  font-size: 24;
+}
+
+Header {
+  position: sticky;
+  top: 0;
+}
+
+.m-l-nav-item {
+  display: none;
+}
+.m-l-nav-item a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hover-item {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hover-item:hover {
+  color: rgb(37, 37, 37);
+  background-color: white;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+}
+nav .mobile-nav-element {
+  list-style: none;
+  display: block;
+}
+nav .mobile-nav-element a {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  min-height: 50px;
+}
+
+#logo {
+  display: block;
+  text-align: center;
+  width: 100px;
+}
+#logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-height: 50px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  margin: 0 20px 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.hamburger-dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(37, 37, 37);
+  padding: 10px;
+  top: 34px;
+  right: -100%;
+  width: 200px;
+  list-style: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.hamburger-dropdown a {
+  text-decoration: none;
+}
+
+.slide-out {
+  animation: slide-out 0.25s forwards;
+}
+
+.slide-back {
+  animation: slide-back 0.25s forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@keyframes slide-back {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+.open {
+  display: block;
+}
+
+.hamburger.X span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  position: absolute;
+}
+
+.hamburger.X span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.X span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+  position: absolute;
+}
+
+.drop-down-wrap {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+
+.dropdown {
+  position: relative;
+}
+
+@keyframes dropDown {
+  0% {
+    top: -400%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: -400%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  max-width: inherit;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  animation: dropDown 0.25s forwards;
+}
+.dropdown-menu li {
+  position: relative;
+  text-decoration: none;
+  text-align: right;
+  height: 80px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.dropdown-menu li div {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  color: white;
+  z-index: 12;
+  position: absolute;
+}
+
+.dropdown-menu li:hover {
+  filter: drop-shadow(0 0 20px black) div;
+  filter-background-color: red;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .hamburger-dropdown {
+    display: none;
+  }
+  #history-nav {
+    margin-left: auto;
+    overflow: visible;
+  }
+  .m-l-nav-item {
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+  }
+  .m-l-nav-item a {
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    text-decoration: none;
+    min-height: 50px;
+    color: white;
+  }
+  .m-l-nav-item:hover {
+    background-color: red;
+  }
+  nav div {
+    display: block;
+  }
+  .open {
+    display: none;
+  }
+  .drop-down-wrap:hover .dropdown-menu {
+    display: block;
+  }
+  .overlay-primary {
+    display: flex;
+    flex-direction: row;
+  }
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+footer div {
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+}
+footer div a {
+  text-decoration: none;
+  color: white;
+}
+footer div a:hover {
+  color: red;
+}
+
+.map-svg-element {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.map-svg-element.active {
+  height: 100vh;
+}
+
+.scroll-container {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+html {
+  background-color: black;
+}
+
+.hero-card-con {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-card {
+  background-color: black;
+  color: white;
+  padding: 300px 100px;
+}
+
+.selection-card-con {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selection-card {
+  background-color: #666;
+  color: white;
+  padding: 100px;
+}
+
+#canteen-page {
+  color: white;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-caption {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.img-con {
+  width: 100%;
+}
+.img-con img:hover {
+  transform: scale(110%);
+  transition: 0.3s ease-in;
+}
+
+.foreg {
+  z-index: 2;
+}
+
+.backg {
+  z-index: 1;
+}
+
+#quad-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-quad {
+  flex: 0 0 calc(50% - 1rem);
+  background-image: url(../../images/canteen-images/canteen-placeholder-7.png);
+  background-size: cover;
+  padding: 2rem;
+}
+
+#timeline-page {
+  color: white;
+}
+
+#commemoration-page {
+  color: white;
+}
+#commemoration-page .hero {
+  background-image: url(/images/comm-images/comm-hero-placeholder.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+#commemoration-page .hero h2, #commemoration-page .hero p {
+  top: 50%;
+  text-align: center;
+}
+
+.comm-mini {
+  background-color: #8F2929;
+  padding: 1rem;
+}
+.comm-mini h2, .comm-mini p {
+  margin: 1rem;
+  text-align: center;
+}
+
+.comm-card {
+  display: flex;
+  background-color: #666;
+  max-height: 50vh;
+  justify-content: space-between;
+}
+.comm-card .comm-card-info {
+  margin: auto;
+  background-color: #333;
+}
+.comm-card .comm-img-card img {
+  height: 100%;
+}
+
+#BOB-page {
+  color: white;
+  text-align: center;
+  background-image: url(../../images/BOB-images/bob-hero-placeholder.png);
+}
+
+.dossier-con {
+  background-color: green;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.dossier {
+  background-image: url(../../images/BOB-images/dossier-placeholder.png);
+}
+
+.dossier-tag {
+  position: absolute;
+  top: 0;
+  height: 2rem;
+  padding: 0 1rem 0 1rem;
+  border-radius: 1rem 1rem 0 0;
+  background-image: url(../../images/BOB-images/dossier-placeholder.png);
+}
+
+#july-tag {
+  left: 0%;
+}
+
+#aug-tag {
+  left: 25%;
+}
+
+#sept-tag {
+  left: 50%;
+}
+
+#oct-tag {
+  left: 75%;
+}
+
+.deaths-section {
+  background-image: url(../../images/BOB-images/bob-losses-placeholder.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+}
+.deaths-section h2, .deaths-section p {
+  margin: 2rem;
+}
+.deaths-section p {
+  font-size: 150%;
+}
+
+.deaths-info-con {
+  text-align: left;
+  display: flex;
+}
+
+.deaths-info-bot {
+  text-align: left;
+}
+
+.canadian-pilots-section {
+  background-color: #666;
+}
+.canadian-pilots-section .canadian-pilots-card {
+  padding: 5rem;
+}
+.canadian-pilots-section .pilots-card-content {
+  display: flex;
+  padding: 5rem;
+  background-color: #333;
+  height: 50vh;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-img-con {
+  width: 50%;
+  background-color: red;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-img-con img {
+  height: 100%;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-text-con {
+  width: 50%;
+  background-color: blue;
+}
+
+#bases-page {
+  color: white;
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */

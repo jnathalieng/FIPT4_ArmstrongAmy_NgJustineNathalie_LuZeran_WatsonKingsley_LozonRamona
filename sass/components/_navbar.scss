@@ -135,9 +135,19 @@ nav {
 
 .drop-down-wrap {
     position: relative;
-    margin: 0 0 0 auto
+    margin: 0 0 0 auto;
 }
 
+.dropdown {
+    position: relative;
+}
+
+@keyframes dropDown {
+    0% {top:-400%}
+    100% {top: 100%}
+}
+
+//tablet/desktop dropdown menu styles
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -150,31 +160,40 @@ nav {
     margin: 0;
     z-index: -1;
     animation: dropDown 0.25s forwards;
-}
 
-.dropdown {
+    //li within the dropdown ul
+    li {
     position: relative;
-}
-
-@keyframes dropDown {
-    0% {top:-400%}
-    100% {top: 100%}
-}
-
-.dropdown-menu li {
     text-decoration: none;
     text-align: right;
-    clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%);
-    a {
-        color: white;
+    height: 80px;
+    width: 150px;
+    background-color: rgba(0,0,0,0.0);
+
+    //triangle element within the dropdown menu
+    div{    
+        position: absolute;
+        inset: 0;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
     }
-}
+
+    //link within the list item
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        inset: 0;
+        color: white;
+        z-index: 12;
+        position: absolute;
+    }
+}}
 
 .dropdown-menu li:hover {
-    text-decoration: none;
-    background-color: red;
-    a {
-        color: white;
+    filter: drop-shadow(0 0 20px black)
+    //background-color: black;
+    div {
+    background-color: red;;
     }
 }
 
