@@ -35,8 +35,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, {threshold: 0.5}); //this means the detector is 'detects' when there the new "scroll-section" is 50% visible
 
-// tells the browser to watch all the "scroll-sections" created by forEach loop, this variable is being created for each of the new created "entry" in the list of "entries", this information tells the browser to scroll to the appropriate sections based on the appropriate bases in sequence.
-
 let observerActive = false;
 window.addEventListener('scroll', () => {
     if (!observerActive) {
@@ -46,7 +44,7 @@ window.addEventListener('scroll', () => {
         });
         console.log("observer activated");
     }
-}, {once: true});
+});
 
 function zoomToBase(targetId) {
     const target = baseCoordinates[targetId];
@@ -62,11 +60,16 @@ function zoomToBase(targetId) {
 }
 
 function resetMap() {
+
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
     svg.classList.remove('active');
 
     observerActive = false;
+
+    document.querySelectorAll('.scroll-section').forEach(section => {
+        observer.unobserve(section);
+    });
 }
 
 const returnButton = document.querySelector("#return-map-button");
