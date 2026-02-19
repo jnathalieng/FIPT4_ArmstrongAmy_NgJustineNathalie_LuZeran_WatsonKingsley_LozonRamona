@@ -68,13 +68,16 @@ To run this project locally:
 5. Open the project in your browser via localhost
 
 ## SITE STRUCTURE
-The website will include and home page with links to all other pages, we plan to create an Events page, a London Aviation History page, a Wartime Experience page, a Battle of Britain page, a map with the local training bases, and a “Book of Remembrance”  page which will show all the service members who served in the 427 wing in the first world war. We intend to have an administrator dashboard built to be user friendly and accessible, this dashboard will require a login and will allow the site administrator to change the information and photos on the Events page and add to the Book of Remembrance.
+The website will include and home page with links to all other pages, including an About page, a London Aviation History page, a London Aviation History Timeline Page, a Flying School & Training Bases Page, an Airman's Canteen Page, a Commemmoration page, Battle of Britain page, a Blog page, an Events page and a Contact page. The administrator dashboard is built to be user friendly and accessible, dashboard requires a login and will allow the site administrator to change the information and photos on the Events page and the Commemmoration page, and add entries to the blog page.
 
 ## HOME PAGE
 The home page of the website will include links to all other pages, these links will be large card-style elements that will have interactive hover states. This page will feature basic greensock animations in order to make the site more visually engaging and sleek in composition. 
 
 ## EVENTS PAGE (DYNAMIC)
 The events page of the website will display upcoming events at the museum, and we intend to make this page easily editable for the site administrators. 
+
+## ABOUT PAGE
+The about page will include an introduction to the site and the purpose of the site, and a call to action.
 
 ## LONDON AVIATION HISTORY TIMELINE PAGE
 This page will list the major events throughout the history of the London aircraft history museum in order to give users a visually pleasing and engaging way of learning the museum’s history. The page will have an interactive vertical timeline with specific events, the Users can hover or click on each event identifier on the timeline to open an attached bubble that will offer information about that specific event. at the bottom of the page there will be a link to the Wartime Experiences Page. This will be done using a parallax scrolling feature utilizing native CSS/HTML, implementing methods like
