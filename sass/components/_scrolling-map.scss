@@ -5,10 +5,13 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
     z-index: -1;
     pointer-events: none;
     touch-action: none;
+}
+
+.map-svg-element.active {
+    height: 100vh;
 }
 
 .scroll-container {
