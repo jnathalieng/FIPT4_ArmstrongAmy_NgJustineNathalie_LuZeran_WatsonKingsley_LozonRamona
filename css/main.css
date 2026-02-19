@@ -42,7 +42,7 @@ Header {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
   height: auto;
@@ -154,6 +154,7 @@ nav .mobile-nav-element a {
 .drop-down-wrap {
   position: relative;
   margin: 0 0 0 auto;
+  height: 80px;
 }
 
 .dropdown {
@@ -188,6 +189,7 @@ nav .mobile-nav-element a {
   height: 80px;
   width: 150px;
   background-color: rgba(0, 0, 0, 0);
+  filter: drop-shadow(-20px 10px 30px black);
 }
 .dropdown-menu li div {
   position: absolute;
@@ -204,9 +206,8 @@ nav .mobile-nav-element a {
   position: absolute;
 }
 
-.dropdown-menu li:hover {
-  filter: drop-shadow(0 0 20px black) div;
-  filter-background-color: red;
+.dropdown-menu li:hover div {
+  background-color: red;
 }
 
 .dropdown-menu a {
@@ -230,18 +231,26 @@ nav .mobile-nav-element a {
     display: block;
     text-align: center;
     width: 150px;
-    height: 100px;
+  }
+  .m-l-nav-item div {
     clip-path: polygon(0 0, 100% 100%, 100% 0);
+    height: 80px;
+    width: 150px;
+    top: 0;
+    position: absolute;
   }
   .m-l-nav-item a {
     display: block;
     text-align: right;
     padding-right: 20px;
     text-decoration: none;
-    min-height: 50px;
+    height: 80px;
+    width: 150px;
     color: white;
+    position: absolute;
+    top: 0;
   }
-  .m-l-nav-item:hover {
+  .m-l-nav-item:hover div {
     background-color: red;
   }
   nav div {
