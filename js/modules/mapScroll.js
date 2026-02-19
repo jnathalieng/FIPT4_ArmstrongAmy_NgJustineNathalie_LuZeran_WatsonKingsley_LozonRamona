@@ -57,6 +57,8 @@ function resetMap() {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
     svg.classList.remove('active');
+
+    observer.disconnect();
 }
 
 const returnButton = document.querySelector("#return-map-button");
