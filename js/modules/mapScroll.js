@@ -59,6 +59,16 @@ function resetMap() {
     svg.classList.remove('active');
 
     observer.disconnect();
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'
+    })
+
+    document.querySelectorAll('.scroll-section').forEach(section => {
+        observer.observe(section);
+    });
 }
 
 const returnButton = document.querySelector("#return-map-button");
