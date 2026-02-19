@@ -72,12 +72,22 @@ function resetMap() {
     });
 }
 
+function resetScrollSection() {
+    const firstSection = document.querySelector('#scroll-section-1');
+
+    firstSection.scrollIntoView({
+            behavior: 'instant'
+        });
+    }
+
 const returnButton = document.querySelector("#return-map-button");
 
 returnButton.addEventListener('click', () => {
     resetMap();
     console.log("map reset");
-})
+    resetScrollSection();
+    console.log("reset section content");
+});
 
 window.addEventListener('load', () => {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
