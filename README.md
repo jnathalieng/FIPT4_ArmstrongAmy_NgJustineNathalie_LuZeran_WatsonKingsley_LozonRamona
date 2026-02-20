@@ -126,7 +126,7 @@ The website will be divided into sections when it comes to how it will flow. The
 
 this Entity Relationship Diagram outlines how data will be stored and referenced by the website. the database will allow for dynamic content to be displayed, and it will allow a site administrator to add, remove and edit certain pages through a Client Management System.
 
-![Entity Relationship Diagram](/images/FIP_ERD.jpg)
+![Entity Relationship Diagram](/images/fip_ERD.jpg)
 
 ## License
 This project is licensed under the [MIT License](LICENSE)

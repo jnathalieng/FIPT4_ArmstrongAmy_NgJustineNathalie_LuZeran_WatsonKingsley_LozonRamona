@@ -6,7 +6,6 @@
     left: 0;
     width: 100vw;
     z-index: -1;
-    pointer-events: none;
     touch-action: none;
 }
 
@@ -31,6 +30,6 @@
 
 #about-bases {
     color: white;
-    display: block;
-    padding: 20rem;
+    background-color: black;
+    opacity: 1;
 }
