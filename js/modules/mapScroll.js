@@ -30,12 +30,14 @@ const observer = new IntersectionObserver((entries) => {
             
             if (targetId === 'full-view') {
 
-                svg.classList.add('active');
-
                 svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+
+                svg.classList.remove('active');
 
             } else {
                 zoomToBase(targetId);
+
+                svg.classList.add('active');
             }
         }
     });

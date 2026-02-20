@@ -5,27 +5,12 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 0;
     z-index: -1;
     touch-action: none;
-    opacity: 0;
-    transition: all 1s ease;
 }
 
 .map-svg-element.active {
     height: 100vh;
-    opacity: 1;
-}
-
-#about-bases {
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    scroll-snap-align: start;
 }
 
 .scroll-container {
@@ -43,11 +28,8 @@
     scroll-snap-align: start;
 }
 
-<<<<<<< HEAD
 #about-bases {
     color: white;
     background-color: black;
     opacity: 1;
 }
-=======
->>>>>>> parent of d6fda33 (Merge pull request #73 from jnathalieng/dev.zl.scroll-up-big-view)
