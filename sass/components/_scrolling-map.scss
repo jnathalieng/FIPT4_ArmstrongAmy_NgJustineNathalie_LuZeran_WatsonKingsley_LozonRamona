@@ -5,13 +5,27 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: 0;
     z-index: -1;
-    pointer-events: none;
     touch-action: none;
+    opacity: 0;
+    transition: all 1s ease;
 }
 
 .map-svg-element.active {
     height: 100vh;
+    opacity: 1;
+}
+
+#about-bases {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    scroll-snap-align: start;
 }
 
 .scroll-container {
