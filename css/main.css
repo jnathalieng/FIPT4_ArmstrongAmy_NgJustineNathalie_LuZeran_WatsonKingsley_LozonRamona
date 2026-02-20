@@ -421,7 +421,7 @@ html {
   width: 100%;
   margin: 0px auto 100px auto;
 }
-#mobile-intro div {
+#mobile-intro #intro-title-con {
   position: relative;
   top: 80px;
   width: 80vw;
@@ -431,6 +431,13 @@ html {
   margin: 0px auto 10px auto;
 }
 #mobile-intro #mobile-intro-content {
+  position: relative;
+  top: 80px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0px auto 10px auto;
   background-color: rgba(60, 60, 60, 0.5);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
 }
@@ -454,12 +461,28 @@ html {
   display: none;
 }
 
+@media (min-width: 650px) {
+  #mobile-intro {
+    background-size: cover;
+  }
+}
 @media (min-width: 768px) {
   .hero-card-con {
     flex-direction: row;
   }
   .hero-card {
     width: 34vw;
+  }
+  #page-selection {
+    display: flex;
+  }
+  #mobile-intro #intro-title-con {
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0 auto 20px 10vw;
+  }
+  #mobile-intro #intro-title-con h3 {
+    border-bottom: solid 5px red;
   }
 }
 @media (min-width: 1200px) {
