@@ -39,6 +39,33 @@ html {
     background-repeat: no-repeat;
 }
 
+#mobile-intro {
+    background-image: url(../../images/homepage-images/mobile/m-homepage-intro.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    width: 100%;
+    margin: 0px auto 100px auto;
+    div {
+        position: relative;
+        top: 80px;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0px auto 10px auto;
+    }
+    
+    #mobile-intro-content {
+        background-color: rgba(v.$dark-background, 0.5);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+
+        p {
+            padding: 10px;
+        }
+    }
+}
+
 .selection-card-con {
     margin: 100px 0;
     display: flex;
@@ -49,6 +76,10 @@ html {
     background-color: #666;
     color: white;
     padding: 100px;
+}
+
+#page-selection {
+    display: none;
 }
 
 @media (min-width: 768px) {
