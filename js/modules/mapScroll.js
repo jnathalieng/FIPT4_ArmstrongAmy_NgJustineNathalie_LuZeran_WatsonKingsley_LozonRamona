@@ -27,10 +27,16 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const targetId = entry.target.dataset.target;
-            zoomToBase(targetId);
+            
+            if (targetId === 'full-view') {
+                svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
-            svg.classList.add('active');
-            // "isIntersecting is a property that is set by "IntersectionObserver", this property tells the watcher what and when it is watching something
+                svg.classList.remove('active');
+            } else {
+                zoomToBase(targetId);
+
+                svg.classList.add('active');
+            }
         }
     });
 }, {threshold: 0.5}); //this means the detector is 'detects' when there the new "scroll-section" is 50% visible
@@ -73,9 +79,9 @@ function resetMap() {
 }
 
 function resetScrollSection() {
-    const firstSection = document.querySelector('#scroll-section-1');
+    const fullViewSection = document.querySelector('#full-view');
 
-    firstSection.scrollIntoView({
+    fullViewSection.scrollIntoView({
             behavior: 'instant'
         });
     }
