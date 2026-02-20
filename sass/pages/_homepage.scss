@@ -6,13 +6,37 @@ html {
 
 .hero-card-con {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
 .hero-card {
+    display: flex;
+    align-items: end;
+    justify-content: baseline;
     background-color: black;
     color: white;
-    padding: 300px 100px;
+    height: 400px;
+    width: 400px;
+    h3 {
+        margin: auto auto 50px 10vw;
+    }
+}
+
+#com-hero-card {
+    background-image: url(../../images/homepage-images/mobile/m-bg-homepage-commemoration.png);
+    background-repeat: no-repeat;
+}
+
+#BOB-hero-card {
+    background-image: url(../../images/homepage-images/mobile/m-bg-homepage-bob.png);
+    background-repeat: no-repeat;
+}
+
+#TIME-hero-card {
+    background-image: url(../../images/homepage-images/mobile/m-bg-homepage-history.png);
+    background-repeat: no-repeat;
 }
 
 .selection-card-con {
@@ -25,4 +49,36 @@ html {
     background-color: #666;
     color: white;
     padding: 100px;
+}
+
+@media (min-width: 768px) {
+    .hero-card-con {
+        flex-direction: row;
+    }
+    .hero-card {
+        width: 34vw;
+    }
+}
+
+@media (min-width: 1200px) {
+
+.hero-card {
+    height: 1200px;
+    h3 {
+        margin: auto;
+        font-size: 50;
+    }
+}
+
+#com-hero-card {
+    background-image: url(../../images/homepage-images/desktop/d-bg-homepage-commemoration.png);
+}
+
+#BOB-hero-card {
+    background-image: url(../../images/homepage-images/desktop/d-bg-homepage-bob.png);
+}
+
+#TIME-hero-card {
+    background-image: url(../../images/homepage-images/desktop/d-bg-homepage-history.png);
+}
 }
