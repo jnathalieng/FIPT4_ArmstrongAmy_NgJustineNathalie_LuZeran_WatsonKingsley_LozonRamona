@@ -1,8 +1,8 @@
 <?php
 session_start();
-require '.../includes/connect.php'
+require '../includes/connect.php';
 
-if (!isset($_SESSION['user_id'])) {
+if (isset($_SESSION['user_id'])) {
     header('Location: dashboard.html');
     exit;
 }
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 data-page="dashboard"
 style="
 background-color: rgb(48, 48, 48);
-height: min-100vh;">
+height: 100vh;">
 
 <header
 style="
