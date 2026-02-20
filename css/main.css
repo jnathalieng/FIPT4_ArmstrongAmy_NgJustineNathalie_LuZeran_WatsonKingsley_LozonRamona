@@ -1,10 +1,12 @@
 .title-text {
   font-family: "Monserrat", sans-serif;
+  color: #fff;
   font-size: 64;
 }
 
 .header-text {
   font-family: "Monserrat", sans-serif;
+  color: #fff;
   font-size: 55;
 }
 
@@ -15,6 +17,7 @@
 
 .body-text {
   font-family: "Monserrat", sans-serif;
+  color: #fff;
   font-size: 24;
 }
 
@@ -372,7 +375,7 @@ footer div h3 {
 }
 
 html {
-  background-color: black;
+  background-color: #3c3c3c;
 }
 
 .hero-card-con {
@@ -573,4 +576,21 @@ html {
 #bases-page {
   color: white;
   overflow-x: hidden;
+}
+
+#about-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+#about-hero div h2 {
+  margin: 10px auto 10px 10vw;
+}
+#about-hero div p {
+  margin: 10px auto 10px 10vw;
+}
+
+.about-body div p {
+  margin: 10px 10vw 10px 10vw;
 }/*# sourceMappingURL=main.css.map */
