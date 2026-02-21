@@ -6,11 +6,21 @@ export function typeWriter() {
         type: 'chars'
     });
 
-    gsap.from(typedText.chars, {
+    const skipBtn = document.querySelector('#skipQuote');
+
+    const typeTL = gsap.timeline();
+
+    typeTL.from(typedText.chars, {
         duration: 0.1,
         opacity: 0,
         stagger: 0.05,
         y: -1,
         ease: 'back.inOut'
     })
+
+    if (skipBtn) {
+        skipBtn.addEventListener('click', () => {
+            typeTL.progress(1);
+        })
+    }
 }
