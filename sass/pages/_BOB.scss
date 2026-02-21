@@ -41,6 +41,9 @@
 }
 
 .dossier-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: transparent;
     padding-top: 2rem;
     position: relative;
@@ -48,22 +51,68 @@
 
 .dossier {
     background-image: url(../../images/BOB-images/folder-texture.png);
-
     text-align: center;
+    box-shadow: -5px -5px 5px black;
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+}
+
+.dossier:hover {
+animation: up .25s forwards;
+}
+
+.dossier:hover ~ .dossier {
+animation: down .25s forwards;
+}
+
+@keyframes up {
+    0%{transform:translateY(0%);}
+    100%{transform:translateY(-40px);}
+}
+
+@keyframes down {
+    0%{transform:translateY(0%);}
+    100%{transform:translateY(30px);}
 }
 
 .dossier-tag {
     position: absolute;
-    top: 0;
-    height: 2rem; //must match padding-top of .dossier-con
-    
+    box-shadow: -5px -5px 5px black;
+    height: 2rem; 
+    left: 20px;
     padding: 0 1rem 0 1rem;
     border-radius: 1rem 1rem 0 0;
-
     background-image: url(../../images/BOB-images/folder-texture.png);
+    top: -30px;
 }
 
+
+
+#july {
+    z-index: 50;
+    top: -80px;
+}
+
+#august {
+    z-index: 60;
+    top:-20px;
+
+}
+
+#september {
+    z-index: 70;
+    top: 40px;
+}
+
+#october {
+    z-index: 80;
+    top: 100px;
+}
+
+
 #cover {
+    display: none;
     background-color: transparent;
     z-index: 6;
     position: absolute;
