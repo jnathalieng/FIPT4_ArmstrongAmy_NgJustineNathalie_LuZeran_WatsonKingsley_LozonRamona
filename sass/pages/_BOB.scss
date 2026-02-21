@@ -3,17 +3,35 @@
 #BOB-page {
     color: white;
     text-align: center;
-    background-image: url(../../images/BOB-images/bob-hero-placeholder.png);
+    background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
+    
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20rem 10rem;
+
+        h2 {
+            font-size: 200%;
+            padding-bottom: 2rem;
+        }
+
+        p {
+            text-align: left;
+            margin: 2rem;
+            font-size: 150%;
+        }
+    }
 }
 
 .dossier-con {
-    background-color: green;
+    background-color: transparent;
     padding-top: 2rem;
     position: relative;
 }
 
 .dossier {
-    background-image: url(../../images/BOB-images/dossier-placeholder.png);
+    background-image: url(../../images/BOB-images/folder-texture.png);
 }
 
 .dossier-tag {
@@ -24,7 +42,7 @@
     padding: 0 1rem 0 1rem;
     border-radius: 1rem 1rem 0 0;
 
-    background-image: url(../../images/BOB-images/dossier-placeholder.png);
+    background-image: url(../../images/BOB-images/folder-texture.png);
 }
 
 #july-tag {
@@ -44,10 +62,10 @@
 }
 
 .deaths-section {
-    background-image: url(../../images/BOB-images/bob-losses-placeholder.png);
+    background-image: url(../../images/BOB-images/desktop/d-bob-losses-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 
     padding: 2rem;
 
