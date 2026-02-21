@@ -7,9 +7,10 @@ export function typeWriter() {
     });
 
     gsap.from(typedText.chars, {
-        duration: 0.5,
+        duration: 0.1,
         opacity: 0,
-        stagger: 0.5,
-        ease: 'none'
+        stagger: 0.05,
+        y: -1,
+        ease: 'back.inOut'
     })
 }
