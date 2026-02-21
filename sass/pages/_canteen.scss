@@ -15,15 +15,27 @@
     }
 }
 
+#canteen-about-section {
+    margin: auto;
+
+    p {
+        margin: 2rem;
+        text-align: left;
+    }
+}
+
 .gallery-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.img-caption {
-    font-size: 0.5rem;
-    text-align: center;
+.squadBox {
+
+    p {
+        text-align: center;
+        font-size: 0.75rem;
+    }
 }
 
 .img-con {
