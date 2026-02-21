@@ -3,6 +3,16 @@
 #canteen-page {
     color: white;
     text-align: center;
+    
+    .hero {
+        position: relative;
+        width: 100%;
+        top: 0;
+
+        video {
+            object-fit: contain;
+        }
+    }
 }
 
 .gallery-container {
