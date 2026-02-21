@@ -2,6 +2,7 @@ import { navbar_showhide } from "./modules/hamburger.js";
 import { contactForm } from "./modules/contactForm.js";
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
+import { typeWriter } from "./modules/typeWriter.js";
 
 
 navbar_showhide();
@@ -18,6 +19,7 @@ else if(document.body.dataset.page === "trainingBases") {
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
+    typeWriter();
     dossierOpen();
 }
 else if(document.body.dataset.page === "canteen") {
