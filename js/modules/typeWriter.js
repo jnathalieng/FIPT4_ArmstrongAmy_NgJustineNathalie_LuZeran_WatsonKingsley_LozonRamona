@@ -20,6 +20,7 @@ export function typeWriter() {
 
     skipBtn.addEventListener('click', () => {
         typeTL.progress(1);
+        console.log("skipped");
     })
 
     window.addEventListener('scroll', () => {

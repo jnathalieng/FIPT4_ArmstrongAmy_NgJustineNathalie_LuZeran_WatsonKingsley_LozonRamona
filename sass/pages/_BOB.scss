@@ -9,6 +9,7 @@
         background-repeat: no-repeat;
         background-position: center;
         padding: 20rem 10rem;
+        text-align: right; //this affects the button
 
         h2 {
             font-size: 200%;
@@ -20,6 +21,21 @@
             text-align: left;
             margin: 2rem;
             font-size: 150%;
+        }
+
+        #skipQuote {
+            background-color: transparent;
+            border: none;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        #skipQuote:hover {
+            transform: scale(150%);
+        }
+
+        #skipQuote:active {
+            transform: scale(90%);
         }
     }
 }
