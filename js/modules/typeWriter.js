@@ -18,9 +18,13 @@ export function typeWriter() {
         ease: 'back.inOut'
     })
 
-    if (skipBtn) {
-        skipBtn.addEventListener('click', () => {
+    skipBtn.addEventListener('click', () => {
+        typeTL.progress(1);
+    })
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
             typeTL.progress(1);
-        })
-    }
+        }
+    })
 }
