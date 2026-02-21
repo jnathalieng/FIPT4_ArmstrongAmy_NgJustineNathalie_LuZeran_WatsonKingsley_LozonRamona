@@ -1,6 +1,7 @@
 export function typeWriter() {
     
     gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollToPlugin);
 
     const typedText = new SplitText('.typewriter-quote', {
         type: 'chars'
@@ -20,6 +21,15 @@ export function typeWriter() {
 
     skipBtn.addEventListener('click', () => {
         typeTL.progress(1);
+
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: {
+                y: '.dossier-con',
+                offsetY: 100
+            },
+            ease: 'power2.inOut'
+        })
         console.log("skipped");
     })
 
