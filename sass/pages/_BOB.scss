@@ -2,7 +2,6 @@
 
 #BOB-page {
     color: white;
-    text-align: center;
     background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
     
     .hero {
@@ -14,6 +13,7 @@
         h2 {
             font-size: 200%;
             padding-bottom: 2rem;
+            text-align: center;
         }
 
         p {
@@ -32,6 +32,8 @@
 
 .dossier {
     background-image: url(../../images/BOB-images/folder-texture.png);
+
+    text-align: center;
 }
 
 .dossier-tag {
@@ -46,19 +48,23 @@
 }
 
 #july-tag {
-    left: 0%
+    left: 0%;
+    z-index: 5;
 }
 
 #aug-tag {
-    left: 25%
+    left: 25%;
+    z-index: 4;
 }
 
 #sept-tag {
     left: 50%;
+    z-index: 3;
 }
 
 #oct-tag {
     left: 75%;
+    z-index: 2;
 }
 
 .deaths-section {
@@ -66,6 +72,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    text-align: center;
 
     padding: 2rem;
 
