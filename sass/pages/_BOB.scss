@@ -47,6 +47,19 @@
     background-image: url(../../images/BOB-images/folder-texture.png);
 }
 
+#cover {
+    background-color: transparent;
+    z-index: 6;
+    position: absolute;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#cover.hideCover {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
 #july-tag {
     left: 0%;
     z-index: 5;
