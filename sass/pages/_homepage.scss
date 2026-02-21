@@ -18,25 +18,25 @@ html {
     background-color: black;
     color: white;
     height: 400px;
-    width: 400px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     h3 {
         margin: auto auto 50px 10vw;
+        text-decoration: none;
     }
 }
 
 #com-hero-card {
     background-image: url(../../images/homepage-images/mobile/m-bg-homepage-commemoration.png);
-    background-repeat: no-repeat;
 }
 
 #BOB-hero-card {
     background-image: url(../../images/homepage-images/mobile/m-bg-homepage-bob.png);
-    background-repeat: no-repeat;
 }
 
 #TIME-hero-card {
     background-image: url(../../images/homepage-images/mobile/m-bg-homepage-history.png);
-    background-repeat: no-repeat;
 }
 
 #mobile-intro {
@@ -74,21 +74,58 @@ html {
     }
 }
 
-.selection-card-con {
-    margin: 100px 0;
+#page-selection {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.selection-card-con {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    display: flex;
+    width: 100vw;
 }
 
 .selection-card {
-    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100vw;
+    text-decoration: none;
 }
 
-#page-selection {
-    display: none;
+#events-card {
+    background-image: url(../../images/homepage-images/mobile/m-homepage-events.png);
 }
+
+#WT-card {
+    background-image: url(../../images/homepage-images/mobile/m-homepage-war.png);
+}
+
+#TB-card {
+        background-image: url(../../images/homepage-images/mobile/m-homepage-bases.png);
+}
+
+#canteen-card {
+            background-image: url(../../images/homepage-images/mobile/m-homepage-canteen.png);
+}
+
+#school-card {
+            background-image: url(../../images/homepage-images/mobile/m-homepage-flight.png);
+}
+#contact-card {
+            background-image: url(../../images/homepage-images/mobile/m-homepage-contact.png);
+}
+
 
 @media (min-width: 650px) {
     #mobile-intro {
@@ -117,6 +154,11 @@ html {
             border-bottom: solid 5px red;
             }
         }
+    }
+
+    .selection-card {
+        width: auto;
+        height: 300px;
     }
 
 }
