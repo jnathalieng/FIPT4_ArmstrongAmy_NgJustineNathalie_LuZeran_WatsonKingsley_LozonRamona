@@ -1,12 +1,38 @@
 #hero-selection {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
 }
 
-.CTA-con button {
-    cursor: pointer;
+.hero-card {
+    position: relative;
+}
+
+.hero-card h3 {
+    position: absolute;
+    bottom: 12.5%;
+    left: 5%;
+    font-size: 200%;
+}
+
+.hero-card-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.CTA-con {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    h4 {
+        display: none;
+    }
+
+    svg {
+        right: 5%;
+    }
 }
 
 @media screen and (min-width: 768px) {
