@@ -13,6 +13,7 @@
 
 .hero-card {
     position: relative;
+    overflow: hidden;
 }
 
 .hero-card h3 {
@@ -20,6 +21,7 @@
     bottom: 12.5%;
     left: 5%;
     font-size: 200%;
+    z-index: 2;
 }
 
 .hero-card-image {
@@ -27,6 +29,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
+    z-index: 1;
 }
 
 .CTA-con {
@@ -85,4 +88,13 @@
         }
     }
 
+    .hero-card h3 {
+        font-size: 400%;
+        max-width: 50%;
+    }
+
+    .hero-card-image:hover {
+        transition: m.$t-time;
+        transform: m.$scale-up;
+    }
 }
