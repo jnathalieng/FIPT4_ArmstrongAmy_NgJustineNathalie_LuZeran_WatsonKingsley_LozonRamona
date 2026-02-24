@@ -1,5 +1,5 @@
 @use '../abstracts/fonts';
-@use '../abstracts/mixins';
+@use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 @use '../base/typography';
 
@@ -17,14 +17,19 @@ Header {
     }
 } 
 
-.hover-item {
-    color: white;
-    background-color: rgba(0,0,0,0);
-}
+// .hover-item {
+//     color: white;
+//     background-color: rgba(0,0,0,0);
+// }
 
 .hover-item:hover {
     color: v.$menu-element-color;
-    background-color: white;
+    transform: m.$scale-up;
+    transition: m.$t-time;
+}
+
+.hover-item:active {
+    transform: m.$scale-down;
 }
 
 nav {
@@ -51,14 +56,14 @@ nav {
 #logo {
     display: block;
     text-align: center;
-    width: 100px;
-    margin: 0 auto 0 0;
+    width: 15vw;
+    margin: 1rem auto 1rem 1rem;
             a {
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            min-height: 50px;
+            min-height: 10vh;
             }
 }
 
