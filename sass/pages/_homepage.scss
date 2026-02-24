@@ -15,7 +15,6 @@ html {
     display: flex;
     align-items: end;
     justify-content: baseline;
-    background-color: black;
     color: white;
     height: 400px;
     width: 100vw;
@@ -42,7 +41,7 @@ html {
 #mobile-intro {
     background-image: url(../../images/homepage-images/mobile/m-homepage-intro.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position-x: center;
     width: 100%;
     margin: 0px auto 100px auto;
@@ -165,7 +164,7 @@ html {
 
 @media (min-width: 1200px) {
 
-.hero-card {
+.hero-card-a {
     height: 1200px;
     h3 {
         margin: auto;
