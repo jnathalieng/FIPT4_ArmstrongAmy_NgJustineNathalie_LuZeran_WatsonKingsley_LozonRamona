@@ -13,7 +13,7 @@
         justify-content: right;
         align-items: center;
         text-decoration: none;
-        background-color: v.$primary-color;
+        border-bottom: 0.5rem solid v.$primary-color;
 
         h4 {
             color: v.$white;

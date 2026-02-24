@@ -12,6 +12,19 @@
 
     p {
         color: v.$black;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #home-intro {
+        h3 {
+            font-size: 300%;
+        }
+
+        p {
+            margin-bottom: 4rem;
+        }
     }
 }
 
