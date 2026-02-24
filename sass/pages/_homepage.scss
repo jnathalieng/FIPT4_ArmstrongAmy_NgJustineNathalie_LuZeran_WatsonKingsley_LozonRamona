@@ -1,186 +1,187 @@
 @use '../abstracts' as v;
 
-html {
-    background-color: v.$dark-background;
-}
 
-.hero-card-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
+// html {
+//     background-color: v.$dark-background;
+// }
 
-.hero-card {
-    display: flex;
-    align-items: end;
-    justify-content: baseline;
-    color: white;
-    height: 400px;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    h3 {
-        margin: auto auto 50px 10vw;
-        text-decoration: none;
-    }
-}
+// .hero-card-con {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-around;
+// }
 
-#com-hero-card {
-    background-image: url(../../images/homepage-images/mobile/m-bg-homepage-commemoration.png);
-}
+// .hero-card {
+//     display: flex;
+//     align-items: end;
+//     justify-content: baseline;
+//     color: white;
+//     height: 400px;
+//     width: 100vw;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     h3 {
+//         margin: auto auto 50px 10vw;
+//         text-decoration: none;
+//     }
+// }
 
-#BOB-hero-card {
-    background-image: url(../../images/homepage-images/mobile/m-bg-homepage-bob.png);
-}
+// #com-hero-card {
+//     background-image: url(../../images/homepage-images/mobile/m-bg-homepage-commemoration.png);
+// }
 
-#TIME-hero-card {
-    background-image: url(../../images/homepage-images/mobile/m-bg-homepage-history.png);
-}
+// #BOB-hero-card {
+//     background-image: url(../../images/homepage-images/mobile/m-bg-homepage-bob.png);
+// }
 
-#mobile-intro {
-    background-image: url(../../images/homepage-images/mobile/m-homepage-intro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-    width: 100%;
-    margin: 0px auto 100px auto;
+// #TIME-hero-card {
+//     background-image: url(../../images/homepage-images/mobile/m-bg-homepage-history.png);
+// }
 
-    #intro-title-con {
-        position: relative;
-        top: 80px;
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0px auto 10px auto;
-    }
+// #mobile-intro {
+//     background-image: url(../../images/homepage-images/mobile/m-homepage-intro.png);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position-x: center;
+//     width: 100%;
+//     margin: 0px auto 100px auto;
+
+//     #intro-title-con {
+//         position: relative;
+//         top: 80px;
+//         width: 80vw;
+//         display: flex;
+//         justify-content: center;
+//         text-align: center;
+//         margin: 0px auto 10px auto;
+//     }
     
-    #mobile-intro-content {
-        position: relative;
-        top: 80px;
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0px auto 10px auto;
-        background-color: rgba(v.$dark-background, 0.5);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+//     #mobile-intro-content {
+//         position: relative;
+//         top: 80px;
+//         width: 80vw;
+//         display: flex;
+//         justify-content: center;
+//         text-align: center;
+//         margin: 0px auto 10px auto;
+//         background-color: rgba(v.$dark-background, 0.5);
+//         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
 
-        p {
-            padding: 10px;
-        }
-    }
-}
+//         p {
+//             padding: 10px;
+//         }
+//     }
+// }
 
-#page-selection {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+// #page-selection {
+//     display: flex;
+//     justify-content: center;
+//     width: 100vw;
 
-}
+// }
 
-.selection-card-con {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 10px 0;
-    display: flex;
-    width: 100vw;
-}
+// .selection-card-con {
+//     display: flex;
+//     justify-content: center;
+//     margin: 10px 0 10px 0;
+//     display: flex;
+//     width: 100vw;
+// }
 
-.selection-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 100vw;
-    text-decoration: none;
-}
+// .selection-card {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     color: white;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     height: 200px;
+//     width: 100vw;
+//     text-decoration: none;
+// }
 
-#events-card {
-    background-image: url(../../images/homepage-images/mobile/m-homepage-events.png);
-}
+// #events-card {
+//     background-image: url(../../images/homepage-images/mobile/m-homepage-events.png);
+// }
 
-#WT-card {
-    background-image: url(../../images/homepage-images/mobile/m-homepage-war.png);
-}
+// #WT-card {
+//     background-image: url(../../images/homepage-images/mobile/m-homepage-war.png);
+// }
 
-#TB-card {
-        background-image: url(../../images/homepage-images/mobile/m-homepage-bases.png);
-}
+// #TB-card {
+//         background-image: url(../../images/homepage-images/mobile/m-homepage-bases.png);
+// }
 
-#canteen-card {
-            background-image: url(../../images/homepage-images/mobile/m-homepage-canteen.png);
-}
+// #canteen-card {
+//             background-image: url(../../images/homepage-images/mobile/m-homepage-canteen.png);
+// }
 
-#school-card {
-            background-image: url(../../images/homepage-images/mobile/m-homepage-flight.png);
-}
-#contact-card {
-            background-image: url(../../images/homepage-images/mobile/m-homepage-contact.png);
-}
+// #school-card {
+//             background-image: url(../../images/homepage-images/mobile/m-homepage-flight.png);
+// }
+// #contact-card {
+//             background-image: url(../../images/homepage-images/mobile/m-homepage-contact.png);
+// }
 
 
-@media (min-width: 650px) {
-    #mobile-intro {
-        background-size: cover;
-    }
-}
+// @media (min-width: 650px) {
+//     #mobile-intro {
+//         background-size: cover;
+//     }
+// }
 
-@media (min-width: 768px) {
-    .hero-card-con {
-        flex-direction: row;
-    }
-    .hero-card {
-        width: 34vw;
-    }
+// @media (min-width: 768px) {
+//     .hero-card-con {
+//         flex-direction: row;
+//     }
+//     .hero-card {
+//         width: 34vw;
+//     }
 
-    #page-selection {
-    display: flex;
-    }
+//     #page-selection {
+//     display: flex;
+//     }
 
-    #mobile-intro {
-        #intro-title-con {
-            justify-content:flex-start;
-            text-align: left;
-            margin: 0 auto 20px 10vw;
-            h3 {
-            border-bottom: solid 5px red;
-            }
-        }
-    }
+//     #mobile-intro {
+//         #intro-title-con {
+//             justify-content:flex-start;
+//             text-align: left;
+//             margin: 0 auto 20px 10vw;
+//             h3 {
+//             border-bottom: solid 5px red;
+//             }
+//         }
+//     }
 
-    .selection-card {
-        width: auto;
-        height: 300px;
-    }
+//     .selection-card {
+//         width: auto;
+//         height: 300px;
+//     }
 
-}
+// }
 
-@media (min-width: 1200px) {
+// @media (min-width: 1200px) {
 
-.hero-card-a {
-    height: 1200px;
-    h3 {
-        margin: auto;
-        font-size: 50;
-    }
-}
+// .hero-card-a {
+//     height: 1200px;
+//     h3 {
+//         margin: auto;
+//         font-size: 50;
+//     }
+// }
 
-#com-hero-card {
-    background-image: url(../../images/homepage-images/desktop/d-bg-homepage-commemoration.png);
-}
+// #com-hero-card {
+//     background-image: url(../../images/homepage-images/desktop/d-bg-homepage-commemoration.png);
+// }
 
-#BOB-hero-card {
-    background-image: url(../../images/homepage-images/desktop/d-bg-homepage-bob.png);
-}
+// #BOB-hero-card {
+//     background-image: url(../../images/homepage-images/desktop/d-bg-homepage-bob.png);
+// }
 
-#TIME-hero-card {
-    background-image: url(../../images/homepage-images/desktop/d-bg-homepage-history.png);
-}
-}
+// #TIME-hero-card {
+//     background-image: url(../../images/homepage-images/desktop/d-bg-homepage-history.png);
+// }
+// }
