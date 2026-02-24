@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.CTA-con {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    a {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        text-decoration: none;
+        background-color: v.$primary-color;
+
+        h4 {
+            color: v.$white;
+        }
+    }
+}
