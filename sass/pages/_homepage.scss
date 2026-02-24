@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as v;
 
+// Intro
+
 #home-intro {
     background-color: #cecccd;
     padding: 4rem;
@@ -16,6 +18,26 @@
     }
 }
 
+// D&B Section
+
+#dynamic-date {
+    background-color: v.$secondary-color;
+    padding: 1rem;
+}
+
+#dynamic-blog {
+    background-color: v.$white;
+    padding: 2rem;
+
+    p {
+        margin-top: 1rem;
+    }
+}
+
+#blog-con {
+    background-color: v.$secondary-color;
+}
+
 @media screen and (min-width: 768px) {
     #home-intro {
         h3 {
@@ -24,6 +46,33 @@
 
         p {
             margin-bottom: 4rem;
+        }
+    }
+
+    #dynamic-date {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        h3, p {
+            position: relative;
+            left: 10%; 
+            font-size: 150%;
+            margin: 0.5rem;
+        }
+    }
+
+    #dynamic-blog {
+        
+        h2 {
+            font-size: 200%;
+            position: relative;
+            left: 10%; 
+        }
+
+        p {
+            position: relative;
+            left: 10%; 
         }
     }
 }
