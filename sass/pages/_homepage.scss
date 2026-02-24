@@ -20,6 +20,10 @@
 
 // D&B Section
 
+#date-and-blog-section {
+    position: relative;
+}
+
 #dynamic-date {
     background-color: v.$secondary-color;
     padding: 1rem;
@@ -57,7 +61,7 @@
     aspect-ratio: 1 / 1;
     text-align: center;
     align-items: center;
-    border: 2px solid v.$dark-background;
+    border: 1px solid v.$dark-background;
 
     svg {
         padding: 4rem;
