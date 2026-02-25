@@ -1,8 +1,13 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 
+
+// Selection Boxes
+
+
 footer {
     width: 100%;
+    background-color: v.$primary-color;
 }
 
 .footer-selection-con {
@@ -41,6 +46,29 @@ footer {
         flex: 1;
     }
 }
+
+
+// Footer Logo
+
+.footer-logo-con {
+    padding: 2rem 8rem 0 8rem;
+}
+
+.footer-text-con {
+    text-align: center;
+
+    p {
+        margin: 1rem;
+    }
+
+    p:nth-child(2) {
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+}
+// Footer 
+
+
 // footer {
 //     padding-top: 30px;
 //     padding-bottom: 100px;
