@@ -94,7 +94,30 @@ footer {
     color: v.$white;
 }
 
+// Footer Socials Section
 
+.footer-socials-con {
+    text-align: center;
+
+    h3 {
+        font-size: 200%;
+        margin: 2rem;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+.footer-socials-icons-con {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.icons-con {
+    flex: 1;
+}
 
 // footer {
 //     padding-top: 30px;
