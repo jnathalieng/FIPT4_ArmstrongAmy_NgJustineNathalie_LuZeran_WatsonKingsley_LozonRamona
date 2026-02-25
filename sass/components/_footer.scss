@@ -6,6 +6,7 @@
 footer {
     width: 100%;
     background-color: v.$primary-color;
+    padding-bottom: 2rem;
 }
 
 .footer-selection-con {
@@ -148,6 +149,47 @@ footer {
     flex: 1;
 }
 
+.footer-closing-text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-desktop-flex-con {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .footer-desktop-flex-section {
+        flex: 1;
+    }
+
+    .footer-logo-con {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .footer-text-con {
+        
+        p:nth-child(1) {
+            margin: 0;
+        }
+
+        p {
+            margin: 2rem;
+        }
+    }
+
+    .footer-nav-links {
+        margin-top: 4rem;
+        h4 {
+            font-size: 150%;
+        }
+    }
+
+}
 // footer {
 //     padding-top: 30px;
 //     padding-bottom: 100px;
