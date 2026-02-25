@@ -94,6 +94,35 @@ footer {
     color: v.$white;
 }
 
+.footer-search-con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    h3 {
+        font-size: 200%;
+        margin: 2rem;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+#footer-search-bar {
+    width: 80%;
+    border: 2px solid v.$white;
+    border-radius: 1rem;
+    background-color: transparent;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+#footer-search-bar::placeholder {
+    color: v.$white;
+}
+
 // Footer Socials Section
 
 .footer-socials-con {
