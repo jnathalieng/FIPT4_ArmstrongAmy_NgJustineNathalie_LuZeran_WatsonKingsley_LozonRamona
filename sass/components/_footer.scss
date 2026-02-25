@@ -1,25 +1,68 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
 footer {
-    padding-top: 30px;
-    padding-bottom: 100px;
+    width: 100%;
+}
+
+.footer-selection-con {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-selection-box {
+    position: relative;
+}
+
+.footer-selection-a {
+
+    h3 {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        font-size: 300%;
+        max-width: 40%;
+    }
+}
+
+.footer-selection-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-selection-con {
+        flex-direction: row;
+    }
+
+    .footer-selection-box {
+        flex: 1;
+    }
+}
+// footer {
+//     padding-top: 30px;
+//     padding-bottom: 100px;
 
     
 
-    .f-left-col:hover {
-        text-decoration: underline red;
-    }
+//     .f-left-col:hover {
+//         text-decoration: underline red;
+//     }
 
-    div {
-        padding: 10px;
-        a {
-            text-decoration: none;
-            color: white;
-        }
-        a:hover {
-            color: red;
-        }
+//     div {
+//         padding: 10px;
+//         a {
+//             text-decoration: none;
+//             color: white;
+//         }
+//         a:hover {
+//             color: red;
+//         }
 
-        h3 {
-            color: white;
-        }
-    }
-}
+//         h3 {
+//             color: white;
+//         }
+//     }
+// }
