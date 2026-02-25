@@ -1,9 +1,7 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 
-
 // Selection Boxes
-
 
 footer {
     width: 100%;
@@ -47,12 +45,13 @@ footer {
     }
 }
 
-
 // Footer Logo
 
 .footer-logo-con {
     padding: 2rem 8rem 0 8rem;
 }
+
+// Footer Text Con 
 
 .footer-text-con {
     text-align: center;
@@ -66,7 +65,35 @@ footer {
         margin-top: 2rem;
     }
 }
-// Footer 
+
+// Footer Nav Links Section
+
+.footer-nav-links-con {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-nav-links {
+    width: 50%;
+    margin: 1rem;
+
+    h4 {
+        display: inline-block;
+        font-size: 200%;
+        padding: 0.25rem;
+        border-bottom: 4px solid v.$accent-color;
+    }
+}
+
+.footer-cta-con a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-family: 'Monserrat', sans-serif;
+    color: v.$white;
+}
+
 
 
 // footer {
