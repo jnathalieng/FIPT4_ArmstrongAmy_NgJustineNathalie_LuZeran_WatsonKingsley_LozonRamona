@@ -1,0 +1,11 @@
+@use '../abstracts/fonts';
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as v;
+@use '../base/typography';
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+}
