@@ -679,126 +679,36 @@ footer {
   padding: 2rem;
 }
 
-.contact-hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100vw;
-  background-image: url("../../images/canteen-images/mobile/m-airmans-building.png");
-  background-size: cover;
-  height: 300px;
-}
-.contact-hero .contact-triangle {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #91B8D9;
-  opacity: 0.8;
-  display: flex;
-  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
-}
-.contact-hero .get-in-touch {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
-}
-.contact-hero .get-in-touch .contact-title {
-  display: flex;
-}
-.contact-hero .get-in-touch .contact-title p {
-  font-size: 50px;
-  font-weight: bold;
-}
-.contact-hero .get-in-touch .contact-subtitle {
-  display: flex;
-}
-.contact-hero .get-in-touch .contact-subtitle p {
-  color: #B3262E;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.contact-message {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.contact-message .contact-mission {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-}
-.contact-message .contact-mission p {
-  color: #B3262E;
-  font-weight: bold;
-  font-style: italic;
-}
-.contact-message .contact-question {
-  position: relative;
-  display: flex;
-  margin: 10px;
-}
-.contact-message .contact-question p {
-  color: black;
-}
-
-.contact-addresses {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #91B8D9;
-  height: 150px;
-  justify-content: center;
-}
-.contact-addresses .phone-number {
-  position: relative;
-  display: flex;
-  margin: 5px;
-}
-.contact-addresses .phone-number p {
-  position: relative;
-  display: flex;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-.contact-addresses .address {
-  position: relative;
-  display: flex;
-  margin: 5px;
-}
-.contact-addresses .address p {
-  position: relative;
-  display: flex;
-  text-align: center;
-  line-height: 35px;
-  color: black;
-  font-weight: bold;
-}
-
 .form-con {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0.5;
+  width: 100vw;
+}
+.form-con .input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  background-color: rgba(60, 60, 60, 0.5);
+  border: solid 2px #3c3c3c;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .form-box {
-  background-color: rgba(0, 0, 0, 0);
-  color: #B3262E;
+  background-color: white;
+  color: black;
   font-weight: bold;
-  border: solid 3px #B3262E;
-  text-align: center;
-  margin: 10px auto 20px auto;
+  border: solid 0px;
+  border-radius: 5px;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 20px;
   padding: 10px;
-  width: 250px;
+  width: 100%;
 }
 
 @keyframes blink {
@@ -809,12 +719,6 @@ footer {
     color: rgba(0, 0, 0, 0);
   }
 }
-.input-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #date-and-blog-section {
   position: relative;
 }
@@ -1228,9 +1132,107 @@ footer {
     margin: 2rem 0;
   }
 }
-#contact-section {
+.contact-hero {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 100vw;
-  height: 400px;
+  background-image: url("../../images/canteen-images/mobile/m-airmans-building.png");
+  background-size: cover;
+  height: 300px;
+}
+.contact-hero .contact-triangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #91B8D9;
+  opacity: 0.8;
+  display: flex;
+  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
+}
+.contact-hero .get-in-touch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+.contact-hero .get-in-touch .contact-title {
+  display: flex;
+}
+.contact-hero .get-in-touch .contact-title p {
+  font-size: 50px;
+  font-weight: bold;
+}
+.contact-hero .get-in-touch .contact-subtitle {
+  display: flex;
+}
+.contact-hero .get-in-touch .contact-subtitle p {
+  color: #B3262E;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-message .contact-mission {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.contact-message .contact-mission p {
+  color: #B3262E;
+  font-weight: bold;
+  font-style: italic;
+}
+.contact-message .contact-question {
+  position: relative;
+  display: flex;
+  margin: 10px;
+}
+.contact-message .contact-question p {
+  color: black;
+}
+
+.contact-addresses {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #91B8D9;
+  height: 150px;
+  justify-content: center;
+}
+.contact-addresses .phone-number {
+  position: relative;
+  display: flex;
+  margin: 5px;
+}
+.contact-addresses .phone-number p {
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.contact-addresses .address {
+  position: relative;
+  display: flex;
+  margin: 5px;
+}
+.contact-addresses .address p {
+  position: relative;
+  display: flex;
+  text-align: center;
+  line-height: 35px;
+  color: black;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
