@@ -719,11 +719,32 @@ footer .footer-closing-text {
   margin-bottom: 1rem;
 }
 
+.text-con-b {
+  background-color: #fff;
+  padding: 2rem;
+  position: relative;
+  font-family: "Monserrat", sans-serif;
+}
+.text-con-b h3 {
+  color: #B3262E;
+  margin: 2rem 0;
+}
+.text-con-b p {
+  color: #000;
+  margin: 2rem 0;
+}
+
 @media screen and (min-width: 768px) {
   .text-con h3 {
     font-size: 300%;
   }
   .text-con p {
+    margin-bottom: 4rem;
+  }
+  .text-con-b h3 {
+    font-size: 300%;
+  }
+  .text-con-b p {
     margin-bottom: 4rem;
   }
 }
