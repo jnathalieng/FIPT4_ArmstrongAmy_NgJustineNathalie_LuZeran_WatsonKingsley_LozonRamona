@@ -3,139 +3,40 @@
 @use '../abstracts/variables' as v;
 @use '../base/typography';
 
-.contact-hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100vw;
-    background-image: url("../../images/canteen-images/mobile/m-airmans-building.png");
-    background-size: cover;
-    height: 300px;
-    .contact-triangle {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: v.$secondary-color;
-        opacity: .8;
-        display: flex;
-        clip-path: polygon(100% 40%, 0% 100%, 100% 100%); 
-    }
-    .get-in-touch {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 20px;
-
-        .contact-title {
-            display: flex;
-            p {
-                font-size: 50px;
-                font-weight: bold;
-            }
-        }
-        .contact-subtitle {
-            display: flex;
-            p {
-            color: v.$primary-color;
-            font-size: 20px;
-            font-weight: bold;
-            }
-        }
-        }
-    }
-
-    .contact-message {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        .contact-mission {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px;
-            p {
-                color: v.$primary-color;
-                font-weight: bold;
-                font-style: italic;
-            }
-        }
-
-        .contact-question {
-            position: relative;
-            display: flex;
-            margin: 10px;
-            p {
-                color: black;
-            }
-        }
-    }
-
-.contact-addresses {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: v.$secondary-color;
-    height: 150px;
-    justify-content: center;
-    .phone-number {
-        position: relative;
-        display: flex;
-        margin: 5px;
-        p {
-           position: relative;
-           display: flex;
-           text-align: center;
-           color: black;
-           font-weight: bold; 
-        }
-    }
-    .address {
-        position: relative;
-        display: flex;
-        margin: 5px;
-        p {
-            position: relative;
-            display: flex;
-            text-align: center;
-            line-height: 35px;
-            color: black;
-            font-weight: bold;
-        }
-    }
-}
-
 .form-con {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: .5;
+    width: 100vw;
+    .input-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        background-color: rgba(v.$dark-background, 0.5);
+        border: solid 2px v.$dark-background;
+        border-radius: 5px;
+        padding: 20px;
+    }
 }
 
 .form-box {
-    background-color: rgba(0, 0, 0, 0.0);
-    color: v.$primary-color;
+    background-color: white;
+    color: black;
     font-weight: bold;
-    border: solid 3px v.$primary-color;
-    text-align: center;
-    margin: 10px auto 20px auto;
+    border: solid 0px;
+    border-radius: 5px;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 20px;
     padding: 10px;
-    width:250px;
+    width:100%;
     //animation: blink 1.5s step-start infinite;
 }
 
 @keyframes blink {
   0%, 100% {opacity: 1}
     50% {color: rgba(0, 0, 0, 0.0);}
-}
-
-.input-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
