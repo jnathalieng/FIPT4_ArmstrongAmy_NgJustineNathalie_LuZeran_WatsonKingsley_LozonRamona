@@ -147,6 +147,12 @@ footer {
 
 .icons-con {
     flex: 1;
+    a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    }
+
 }
 
 .footer-closing-text {
@@ -190,28 +196,3 @@ footer {
     }
 
 }
-// footer {
-//     padding-top: 30px;
-//     padding-bottom: 100px;
-
-    
-
-//     .f-left-col:hover {
-//         text-decoration: underline red;
-//     }
-
-//     div {
-//         padding: 10px;
-//         a {
-//             text-decoration: none;
-//             color: white;
-//         }
-//         a:hover {
-//             color: red;
-//         }
-
-//         h3 {
-//             color: white;
-//         }
-//     }
-// }
