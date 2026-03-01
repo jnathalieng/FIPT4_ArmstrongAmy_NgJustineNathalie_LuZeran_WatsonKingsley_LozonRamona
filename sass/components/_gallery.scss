@@ -1,0 +1,91 @@
+@use '../abstracts' as a;
+
+.dynamic-gallery-con {
+    position: relative;
+}
+
+.dynamic-gallery-box {
+    background-color: a.$secondary-color;
+
+}
+
+.dynamic-gallery-text-content {
+    background-color: a.$white;
+    padding: 2rem;
+
+    h2, p {
+        margin: 1rem 2rem;
+    }
+
+    h2 {
+        color: a.$primary-color;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        color: a.$black;
+    }
+}
+
+.gallery-box-con {
+    background-color: a.$secondary-color;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-box:nth-child(2),
+.gallery-box:nth-child(3) {
+    display: none;
+}
+
+.gallery-box {
+    background-color: a.$white;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    align-items: center;
+    border: 1px solid a.$dark-background;
+
+    svg {
+        padding: 4rem;
+        height: auto;
+    }
+
+    p {
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .dynamic-gallery-text-content {
+        
+        h2 {
+            font-size: 200%;
+            position: relative;
+            left: 10%; 
+        }
+
+        p {
+            position: relative;
+            left: 10%; 
+        }
+    }
+
+    .gallery-box:nth-child(2),
+    .gallery-box:nth-child(3) {
+        display: block;
+    }
+
+    .gallery-box-con {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .gallery-box {
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+}
