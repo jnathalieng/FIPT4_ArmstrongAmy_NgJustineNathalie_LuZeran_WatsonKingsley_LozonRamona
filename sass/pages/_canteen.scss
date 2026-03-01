@@ -1,41 +1,23 @@
 @use '../abstracts';
 
-#canteen-page {
-    color: white;
-    text-align: center;
-    
-    .hero {
-        position: relative;
-        width: 100%;
-        top: 0;
+#canteen-hero {
 
-        video {
-            object-fit: contain;
-        }
+    video {
+        filter: brightness(100%);
     }
 }
 
 #canteen-about-section {
-    margin: auto;
-
+    
     p {
-        margin: 2rem;
-        text-align: left;
+        margin: 2rem 0;
     }
 }
 
-.gallery-container {
+.canteen-gallery-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.squadBox {
-
-    p {
-        text-align: center;
-        font-size: 0.75rem;
-    }
 }
 
 .img-con {
@@ -53,6 +35,7 @@
 
 .backg {
     z-index: 1;
+    width: 50%;
 }
 
 #quad-container {
@@ -65,4 +48,10 @@
     background-image: url(../../images/canteen-images/desktop/d-airmans-gallery-1.png);
     background-size: cover;
     padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .backg {
+        width: 100%;
+    }
 }

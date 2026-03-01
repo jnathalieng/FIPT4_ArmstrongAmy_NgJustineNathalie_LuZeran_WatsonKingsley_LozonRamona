@@ -1042,36 +1042,18 @@ footer .footer-closing-text {
     margin-bottom: 2rem;
   }
 }
-#canteen-page {
-  color: white;
-  text-align: center;
-}
-#canteen-page .hero {
-  position: relative;
-  width: 100%;
-  top: 0;
-}
-#canteen-page .hero video {
-  object-fit: contain;
+#canteen-hero video {
+  filter: brightness(100%);
 }
 
-#canteen-about-section {
-  margin: auto;
-}
 #canteen-about-section p {
-  margin: 2rem;
-  text-align: left;
+  margin: 2rem 0;
 }
 
-.gallery-container {
+.canteen-gallery-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.squadBox p {
-  text-align: center;
-  font-size: 0.75rem;
 }
 
 .img-con {
@@ -1088,6 +1070,7 @@ footer .footer-closing-text {
 
 .backg {
   z-index: 1;
+  width: 50%;
 }
 
 #quad-container {
@@ -1102,6 +1085,11 @@ footer .footer-closing-text {
   padding: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .backg {
+    width: 100%;
+  }
+}
 #timeline-page {
   color: white;
 }
@@ -1487,4 +1475,4 @@ footer .footer-closing-text {
   line-height: 35px;
   color: black;
   font-weight: bold;
-}
+}/*# sourceMappingURL=main.css.map */
