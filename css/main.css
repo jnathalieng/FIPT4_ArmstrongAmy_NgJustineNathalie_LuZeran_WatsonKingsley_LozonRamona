@@ -410,26 +410,124 @@ footer .footer-selection-con .footer-selection-box .footer-selection-a h3 {
   font-size: 300%;
   max-width: 40%;
 }
+footer .footer-desktop-flex-con .footer-desktop-flex-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-logo-con {
   position: relative;
+  display: flex;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  height: 120px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-logo-con a {
+  display: flex;
+  height: 100px;
+  max-width: 80%;
+  margin: 10px;
 }
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-text-con {
   position: relative;
+  text-align: center;
+  margin: 10px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-text-con p {
+  margin: 8px;
 }
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con .footer-nav-discover {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con .footer-nav-discover h4 {
+  display: flex;
+  align-self: center;
+  margin-top: 20px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con .footer-cta-con {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20vw;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con .footer-cta-con a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
 }
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links h4 {
+  display: flex;
+  align-self: center;
+  margin-top: 20px;
 }
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con {
   position: relative;
+  margin: 20px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con h3 {
+  margin: 10px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con p {
+  margin: 10px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con #footer-search-bar {
+  width: 80%;
+  border: 2px solid #fff;
+  color: white;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 1rem;
+  margin: 2rem;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con h3 {
+  margin: 10px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con p {
+  margin: 10px;
 }
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con .footer-socials-icons-con {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con .footer-socials-icons-con .icons-con {
   position: relative;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  margin: 6px;
+}
+footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con .footer-socials-icons-con .icons-con a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+footer .footer-closing-text {
+  width: 80vw;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  font-size: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -503,12 +601,7 @@ footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con
     font-style: italic;
   }
   footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con #footer-search-bar {
-    width: 80%;
-    border: 2px solid #fff;
-    border-radius: 1rem;
-    background-color: transparent;
-    padding: 1rem;
-    margin: 2rem;
+    position: relative;
   }
   footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con #footer-search-bar::placeholder {
     color: #fff;

@@ -7,7 +7,7 @@ footer {
     padding-bottom: 2rem;
 
     .footer-selection-con {
-                display: flex;
+        display: flex;
         flex-direction: column;
 
         .footer-selection-box {
@@ -36,30 +36,127 @@ footer {
     .footer-desktop-flex-con {
         
         .footer-desktop-flex-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             .footer-logo-con {
                 position: relative;
+                display: flex;
+                height: 50px;
+                text-align: center;
+                justify-content: center;
+                height: 120px;
+                a {
+                    display: flex;
+                    height: 100px;
+                    max-width: 80%;
+                    margin: 10px;
+                }
             }
             .footer-text-con {
                 position: relative;
+                text-align: center;
+                margin: 10px;
+                p {
+                    margin: 8px;
+                }
             }
             .footer-nav-links-con {
                 position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .footer-nav-discover {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100vw;
+                    h4 {
+                    display: flex;
+                    align-self: center;
+                    margin-top: 20px;
+                    }
+                }
+                .footer-cta-con {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 20vw;
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        text-align: left;
+                    }
+                }
             }
             .footer-nav-links {
                 position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                    h4 {
+                        display: flex;
+                        align-self: center;
+                        margin-top: 20px;
+                    }
             }
             .footer-search-con {
                 position: relative;
+                margin: 20px;
+                h3 {
+                    margin: 10px;
+                }
+                p {
+                    margin: 10px;
+                }
+                #footer-search-bar {
+                    width: 80%;
+                    border: 2px solid v.$white;
+                    color: white;
+                    border-radius: 1rem;
+                    background-color: transparent;
+                    padding: 1rem;
+                    margin: 2rem;
+                }
             }
             .footer-socials-con {
+                h3 {
+                    margin: 10px;
+                }
+                p {
+                    margin: 10px;
+                }
                 .footer-socials-icons-con {
                     position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
                     .icons-con {
                         position: relative;
+                        display: flex;
+                        height: 40px;
+                        width: 40px;
+                        margin: 6px;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
                 }
             }
         }
+
+    }
+        .footer-closing-text {
+        width: 80vw;
+        margin: 10px auto 10px auto;
+        text-align: center;
+        font-size: 80%;
     }
 }
 
@@ -148,12 +245,7 @@ footer {
                     font-style: italic;
                 }
                 #footer-search-bar {
-                    width: 80%;
-                    border: 2px solid v.$white;
-                    border-radius: 1rem;
-                    background-color: transparent;
-                    padding: 1rem;
-                    margin: 2rem;
+                    position: relative;
                 }
                 #footer-search-bar::placeholder {
                     color: v.$white;
