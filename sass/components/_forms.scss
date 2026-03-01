@@ -47,6 +47,34 @@
         }
     }
 
+    .contact-message {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .contact-mission {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            p {
+                color: v.$primary-color;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+
+        .contact-question {
+            position: relative;
+            display: flex;
+            margin: 10px;
+            p {
+                color: black;
+            }
+        }
+    }
 
 .form-con {
     display: flex;

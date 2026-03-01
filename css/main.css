@@ -692,6 +692,33 @@ footer {
   font-weight: bold;
 }
 
+.contact-message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-message .contact-mission {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.contact-message .contact-mission p {
+  color: #B3262E;
+  font-weight: bold;
+  font-style: italic;
+}
+.contact-message .contact-question {
+  position: relative;
+  display: flex;
+  margin: 10px;
+}
+.contact-message .contact-question p {
+  color: black;
+}
+
 .form-con {
   display: flex;
   flex-direction: column;
