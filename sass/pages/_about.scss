@@ -1,25 +1,2 @@
 @use '../abstracts/' as v;
 
-#about-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
-    div {
-        h2 {
-            margin: 10px auto 10px 10vw;
-        }
-
-        p {
-            margin: 10px auto 10px 10vw;
-        }
-    }
-}
-    .about-body {
-        div {
-            p {
-                margin: 10px 10vw 10px 10vw
-            }
-        }
-        }
-    

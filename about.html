@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+
+    <script type="module" defer src="js/main.js"></script>
+
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <link type="text/css" href="css/grid.css" rel="stylesheet">
-    <script type="module" defer src="js/main.js"></script>
 </head>
 <body data-page="about">
 
@@ -77,37 +79,53 @@
     
 <main>
 
-    <section id="about-hero">
-        <div id="about-her-title">
-            <h2 class="title-text">About Us</h2>
-        </div>
+    <section class="hero" id="about-hero">
+        <h1 class="hidden">Airman's Canteen Page</h1>
 
-        <div id="about-hero-subtitle">
-            <p class="header-text">A project of 427 Wing (London),<br>Royal Canadian Air Force Association.</p>
-        </div>
+        <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback">
+            <source src="videos/hero-videos/canteen-vid.mp4" type="video/mp4">
+        </video>
+
+        <p class="hero-h1">
+            About us
+        </p>
+
+        <p class="hero-h2">
+            A project of 427 Wing (London),
+            <br>
+            Royal Canadian Air Force Association.
+        </p>
+
     </section>
 
-    <section class="about-body">
+    <section class="text-con" id="about-body">
+        
         <div>
+            <h3>Know More About Us</h3>
+
             <p class="body-text">
-                427 Wing’s museum is housed in a 1943 airmen’s canteen at the London International Airport. 
+                427 Wing's museum is housed in a 1943 airmen's canteen at the London International Airport. 
                 The canteen is the last surviving building from the British Commonwealth Air Training Plan 
-                (BCATP) base that existed at London’s airport during World War Two. It is a London landmark 
-                and is listed in the city’s Register of Cultural Heritage Resources. The museum commemorates 
+                (BCATP) base that existed at London's airport during World War Two. It is a London landmark 
+                and is listed in the city's Register of Cultural Heritage Resources. The museum commemorates 
                 the thousands of Canadian and Commonwealth airmen who trained at this site, as well as the 
                 military and civilian personnel who supported and instructed them. It will also commemorate 
                 the nearly 250 London men who lost their lives while serving with the RCAF during World War Two.
             </p>
-        </div>
 
-        <div>
             <p class="body-text">
               The museum is currently installing a permanent exhibition illustrating the history of military 
               and civilian aviation in the London region in the main hall of the canteen building. It will 
-              focus primarily on the two BCAPT training schools - a navigator’s school and an elementary 
+              focus primarily on the two BCAPT training schools - a navigator's school and an elementary 
               flying school. The exhibit will incorporate uniforms, a variety of artifacts, historic images 
-              and a number of model aircraft from the museum’s collection, including a Spitfire and a Lancaster. 
+              and a number of model aircraft from the museum's collection, including a Spitfire and a Lancaster. 
               The exhibition is slated to open in the fall of 2026.  
+            </p>
+
+            <h3>Statement of Intent</h3>
+
+            <p>
+                The London Aviation Museum was founded to preserve and interpret London's aviation history, both civilian and military; to commemorate those Londoners who gave their lives in the defence of freedom while serving in the RCAF or the RAF; to commemorate those lost while training at RCAF Station London; and to commemorate London veterans of the RCAF and RAF.
             </p>
         </div>
     </section>

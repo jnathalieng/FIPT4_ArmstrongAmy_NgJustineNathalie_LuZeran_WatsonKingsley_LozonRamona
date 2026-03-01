@@ -1,23 +1,5 @@
 @use '../abstracts/variables' as v;
 
-// Intro
-
-#home-intro {
-    background-color: #cecccd;
-    padding: 4rem;
-    position: relative;
-
-    h3 {
-        color: v.$primary-color;
-        margin: 2rem 0;
-    }
-
-    p {
-        color: v.$black;
-        margin-bottom: 1rem;
-    }
-}
-
 // D&B Section
 
 #date-and-blog-section {
@@ -74,15 +56,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    #home-intro {
-        h3 {
-            font-size: 300%;
-        }
-
-        p {
-            margin-bottom: 4rem;
-        }
-    }
 
     #dynamic-date {
         display: flex;

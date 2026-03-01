@@ -1,0 +1,33 @@
+@use '../abstracts' as a;
+
+// Intro
+
+.text-con {
+    background-color: #cecccd;
+    padding: 4rem;
+    position: relative;
+    font-family: "Monserrat", sans-serif;
+
+    h3 {
+        color: a.$primary-color;
+        margin: 2rem 0;
+    }
+
+    p {
+        color: a.$black;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+        .text-con {
+        h3 {
+            font-size: 300%;
+        }
+
+        p {
+            margin-bottom: 4rem;
+        }
+    }
+}
