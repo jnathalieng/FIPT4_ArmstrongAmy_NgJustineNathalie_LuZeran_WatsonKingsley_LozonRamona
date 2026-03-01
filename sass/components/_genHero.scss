@@ -1,0 +1,49 @@
+@use '../abstracts' as a;
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    text-align: right;
+}
+
+//  change to img later when we have hero images
+.hero video {
+    display: block;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+.hero-h1 {
+    position: absolute;
+    font-size: 500%;
+    max-width: 80%;
+    font-weight: bold;
+    bottom: 20%;
+    right: 10%;
+}
+
+.hero-h2 {
+    color: a.$primary-color;
+    position: absolute;
+    font-size: 100%;
+    font-weight: bold;
+    max-width: 80%;
+    bottom: 10%;
+    right: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-h1 {
+        font-size: 1000%;
+        bottom: 20%;
+        right: 5%;
+    }
+
+    .hero-h2 {
+        font-size: 200%;
+        bottom: 10%;
+        right: 5%;
+    }
+}
