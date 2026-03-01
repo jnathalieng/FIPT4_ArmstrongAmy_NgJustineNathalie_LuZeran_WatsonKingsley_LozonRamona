@@ -547,6 +547,7 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
+  text-align: right;
 }
 .CTA-con a {
   display: flex;
@@ -1156,6 +1157,12 @@ footer {
 @media screen and (min-width: 768px) {
   #about-video-section h2, #about-video-section p {
     margin: 2rem 0;
+  }
+  #about-mike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
   }
 }
 .contact-hero {
