@@ -1148,6 +1148,11 @@ footer {
   padding: 1rem;
 }
 
+#about-mike {
+  background-color: #91B8D9;
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   #about-video-section h2, #about-video-section p {
     margin: 2rem 0;
