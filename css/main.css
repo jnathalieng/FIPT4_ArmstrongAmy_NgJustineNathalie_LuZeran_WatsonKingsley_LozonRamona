@@ -634,6 +634,21 @@ footer {
   padding: 0;
 }
 
+.quote {
+  font-style: italic;
+  font-weight: bold;
+  color: #B3262E;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    font-size: 150%;
+  }
+}
 .map-svg-element {
   position: fixed;
   top: 0;
