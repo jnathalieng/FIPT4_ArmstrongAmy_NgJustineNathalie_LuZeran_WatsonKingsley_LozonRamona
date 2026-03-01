@@ -28,6 +28,14 @@
     padding: 1rem;
 }
 
+#about-mike {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     
     #about-video-section {

@@ -1,6 +1,15 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
+// <div class="CTA-con">
+//     <a href="about.html">
+//         <h4>Discover More</h4>
+//         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+//     </a>
+// </div>
+
+
+
 .CTA-con {
 
     position: absolute;
