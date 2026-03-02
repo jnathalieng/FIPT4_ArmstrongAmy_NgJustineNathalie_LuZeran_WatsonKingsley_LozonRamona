@@ -920,12 +920,14 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  border-bottom: solid 6px #B3262E;
 }
 .form-con .input-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80vw;
+  max-width: 600px;
   margin: 10% 0px 10% 0px;
   background-color: rgba(60, 60, 60, 0.3);
   border: solid 1px #3c3c3c;
@@ -1401,6 +1403,7 @@ footer .footer-closing-text p {
 }
 .contact-hero .get-in-touch .contact-title {
   display: flex;
+  text-align: end;
 }
 .contact-hero .get-in-touch .contact-title p {
   font-size: 50px;
@@ -1437,6 +1440,7 @@ footer .footer-closing-text p {
   position: relative;
   display: flex;
   margin: 10px;
+  justify-content: center;
 }
 .contact-message .contact-question p {
   color: black;
@@ -1475,4 +1479,31 @@ footer .footer-closing-text p {
   line-height: 35px;
   color: black;
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media (min-width: 500px) {
+  .contact-hero {
+    background-image: url("../../images/canteen-images/desktop/d-airmans-building.png");
+  }
+}
+@media (min-width: 768px) {
+  .contact-hero .get-in-touch {
+    margin-right: 10vw;
+  }
+  .contact-hero .get-in-touch .contact-title {
+    display: flex;
+    text-align: start;
+  }
+  .contact-hero .get-in-touch .contact-title p {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .contact-hero .get-in-touch .contact-subtitle {
+    display: flex;
+  }
+  .contact-hero .get-in-touch .contact-subtitle p {
+    color: #B3262E;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
