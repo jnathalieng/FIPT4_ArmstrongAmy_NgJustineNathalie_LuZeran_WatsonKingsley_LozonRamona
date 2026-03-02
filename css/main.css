@@ -760,18 +760,6 @@ footer .footer-closing-text p {
   right: 10%;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-h1 {
-    font-size: 1000%;
-    bottom: 20%;
-    right: 5%;
-  }
-  .hero-h2 {
-    font-size: 200%;
-    bottom: 10%;
-    right: 5%;
-  }
-}
 .hero-section {
   position: relative;
   display: flex;
@@ -817,6 +805,18 @@ footer .footer-closing-text p {
   font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-h1 {
+    font-size: 1000%;
+    bottom: 20%;
+    right: 5%;
+  }
+  .hero-h2 {
+    font-size: 200%;
+    bottom: 10%;
+    right: 5%;
+  }
+}
 .caption {
   text-align: center;
   font-size: 75%;
