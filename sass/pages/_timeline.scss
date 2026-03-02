@@ -35,10 +35,6 @@
     align-items: center;
     justify-content: center;
 
-    background-color: a.$tertiary-color;
-    margin: 10%;
-    padding: 10%;
-
     h2 {
         font-size: 800%;
     }
@@ -56,6 +52,16 @@
     }
 }
 
+.tl-beta-text-con {
+    background-color: a.$tertiary-color;
+    margin: 10%;
+    padding: 10%;
+
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     
     .tl-beta-con {
@@ -67,6 +73,13 @@
     .tl-graphic-con {
         svg {
             width: 2rem;
+        }
+    }
+
+    .tl-beta-text-con {
+
+        p {
+            font-size: 150%;
         }
     }
 }
