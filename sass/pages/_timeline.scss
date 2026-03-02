@@ -22,6 +22,9 @@
     padding: 2rem;
 }
 
+// TIMELINE TIME CON STYLING
+
+// AlphaCon styling
 .tl-alpha-con {
     display: flex;
     flex-direction: column;
@@ -29,6 +32,7 @@
     justify-content: center;
 }
 
+// BetaCon styling
 .tl-beta-con {
     display: flex;
     flex-direction: column;
@@ -43,8 +47,25 @@
         text-align: center;
         margin: 5%;
     }
+
+    .tl-graphic-con {
+        svg {
+            width: 2rem;
+        }
+    }
+
+    .tl-beta-text-con {
+        background-color: a.$tertiary-color;
+        margin: 10%;
+        padding: 10%;
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
+// GammaCon styling
 .tl-gamma-con {
     display: flex;
     flex-direction: column;
@@ -90,12 +111,10 @@
         z-index: 3;
     }
 
-    .gamma-img:hover {
-        transform: translate(-2rem, -5rem);
-    }
-
     // adding #timeline-section for specificity
     .gamma-p {
+        transition: transform 1s ease;
+
         position: absolute;
         bottom: 0;
         padding: 1rem;
@@ -104,27 +123,27 @@
     }
 
     .gamma-bg {
+        transition: transform 1s ease;
+
         position: absolute;
         inset: 0;
         z-index: 1;
         background-color: a.$primary-color;
     }
-}
 
-.tl-graphic-con {
-    
-    svg {
-        width: 2rem;
+    // HOVER EFFECTS
+
+    .gamma-img-box:hover .gamma-img {
+        transform: translate(-2rem, -5rem);
     }
-}
 
-.tl-beta-text-con {
-    background-color: a.$tertiary-color;
-    margin: 10%;
-    padding: 10%;
+    .gamma-img-box:hover .gamma-bg {
+        transform: translateY(20%);
+    }
 
-    p {
-        margin-bottom: 2rem;
+    .gamma-img-box:hover .gamma-p {
+        transform: translateY(calc(20% + 2rem));
+        // + 2rem to match the padding: 1rem value of gamma-p's styling
     }
 }
 
