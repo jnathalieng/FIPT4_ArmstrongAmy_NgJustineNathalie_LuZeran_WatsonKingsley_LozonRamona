@@ -715,6 +715,7 @@ footer .footer-closing-text p {
   bottom: 0;
   left: 0;
   text-align: right;
+  z-index: 99;
 }
 .read-more .read-more-button {
   background-color: #B3262E;
@@ -1423,33 +1424,37 @@ footer .footer-closing-text p {
 .comm-beta-con {
   position: relative;
 }
-.comm-beta-con h2, .comm-beta-con h3 {
+.comm-beta-con .comm-beta-headers h2, .comm-beta-con .comm-beta-headers h3 {
   color: #B3262E;
   margin: 2rem;
   z-index: 2;
 }
-.comm-beta-con p {
-  color: #000;
-  margin: 2rem;
-  z-index: 2;
-}
 .comm-beta-con .comm-beta-img-box {
+  position: relative;
+}
+.comm-beta-con .comm-beta-img-box picture {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
-.comm-beta-con .comm-beta-img-box .comm-beta-img {
+.comm-beta-con .comm-beta-img-box picture img {
+  width: 50%;
+  height: auto;
   z-index: 2;
 }
-.comm-beta-con .comm-beta-bg {
-  z-index: 1;
+.comm-beta-con .comm-beta-img-box .comm-beta-p {
+  position: block;
+  color: #000;
+  padding: 2rem 1rem;
+  z-index: 2;
+}
+.comm-beta-con .comm-beta-img-box .comm-beta-bg {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background-color: #cecccd;
-}
-.comm-beta-con .comm-beta-bg .comm-beta-p {
-  padding: 2rem;
 }
 
 #BOB-page {
