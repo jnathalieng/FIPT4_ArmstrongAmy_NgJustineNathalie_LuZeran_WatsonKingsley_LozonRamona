@@ -684,10 +684,8 @@ footer .footer-closing-text p {
 }
 
 #timeline-CTA {
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 0;
-  right: 0;
   text-align: right;
   border-top: 0.5rem solid #B3262E;
 }
@@ -1173,6 +1171,12 @@ footer .footer-closing-text p {
 }
 #timeline-section p {
   color: #000;
+}
+
+#timeline-intro-con {
+  position: relative;
+  margin: 2em 0;
+  padding: 2rem;
 }
 
 #commemoration-page {
