@@ -44,15 +44,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        .featured-title {
-            border-bottom: solid 5px v.$primary-color;
-            width: 80vw;
-                    margin: 80px 0px 50px 0px;
-            h1 {
-                font-weight: bold;
-                color: v.$primary-color;
-            }
-        }
         .events-work-box {
             width: 80vw;
             height: 50vw;
@@ -78,6 +69,41 @@
         }
     }
 
+
+    .underline-title {
+            border-bottom: solid 8px v.$primary-color;
+            width: 80vw;
+                    margin: 80px auto 50px auto;
+            h1 {
+                font-weight: bold;
+                font-size: 60px;
+                color: v.$primary-color;
+            }
+    }
+
+    .read-more {
+        position: relative;
+        border-top: solid 10px v.$primary-color;
+        margin-top: 50px; 
+        .read-more-button {
+                background-color: v.$primary-color;
+                position: absolute;
+                font-size: 40px;
+                display: flex;
+                z-index: 100;
+                right: 0px;
+                top: -63px;
+                height: 60px;
+                width: 33vw;
+                clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+                color: white;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                cursor: pointer;
+        }
+    }
+
     .card-carousel {
         display: flex;
         flex-direction: column;
@@ -91,7 +117,7 @@
             z-index: -1;
             background-color: v.$secondary-color;
             height: 370px;
-            width: 100vw;
+            width: 100%;
         }
         .carousel {
             display: flex;

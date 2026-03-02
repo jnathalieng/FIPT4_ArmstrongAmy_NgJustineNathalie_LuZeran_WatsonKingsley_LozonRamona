@@ -1665,15 +1665,6 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: center;
 }
-.events-featured-work .featured-title {
-  border-bottom: solid 5px #B3262E;
-  width: 80vw;
-  margin: 80px 0px 50px 0px;
-}
-.events-featured-work .featured-title h1 {
-  font-weight: bold;
-  color: #B3262E;
-}
 .events-featured-work .events-work-box {
   width: 80vw;
   height: 50vw;
@@ -1698,6 +1689,40 @@ footer .footer-closing-text p {
   margin: 10px;
 }
 
+.underline-title {
+  border-bottom: solid 8px #B3262E;
+  width: 80vw;
+  margin: 80px auto 50px auto;
+}
+.underline-title h1 {
+  font-weight: bold;
+  font-size: 60px;
+  color: #B3262E;
+}
+
+.read-more {
+  position: relative;
+  border-top: solid 10px #B3262E;
+  margin-top: 50px;
+}
+.read-more .read-more-button {
+  background-color: #B3262E;
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  z-index: 100;
+  right: 0px;
+  top: -63px;
+  height: 60px;
+  width: 33vw;
+  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
 .card-carousel {
   display: flex;
   flex-direction: column;
@@ -1711,7 +1736,7 @@ footer .footer-closing-text p {
   z-index: -1;
   background-color: #91B8D9;
   height: 370px;
-  width: 100vw;
+  width: 100%;
 }
 .card-carousel .carousel {
   display: flex;
