@@ -772,6 +772,49 @@ footer .footer-closing-text p {
     right: 5%;
   }
 }
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100vw;
+  background-size: cover;
+  height: 300px;
+}
+.hero-section .hero-triangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #91B8D9;
+  opacity: 0.8;
+  display: flex;
+  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
+}
+.hero-section .hero-title-con {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+.hero-section .hero-title-con .hero-title {
+  display: flex;
+  text-align: end;
+}
+.hero-section .hero-title-con .hero-title p {
+  font-size: 50px;
+  font-weight: bold;
+}
+.hero-section .hero-title-con .hero-subtitle {
+  display: flex;
+}
+.hero-section .hero-title-con .hero-subtitle p {
+  color: #B3262E;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .caption {
   text-align: center;
   font-size: 75%;
@@ -1521,48 +1564,8 @@ footer .footer-closing-text p {
     font-weight: bold;
   }
 }
-.hero-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100vw;
-  background-image: url("../../images/");
-  background-size: cover;
-  height: 300px;
-}
-.hero-section .hero-triangle {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #91B8D9;
-  opacity: 0.8;
-  display: flex;
-  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
-}
-.hero-section .hero-title-con {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
-}
-.hero-section .hero-title-con .hero-title {
-  display: flex;
-  text-align: end;
-}
-.hero-section .hero-title-con .hero-title p {
-  font-size: 50px;
-  font-weight: bold;
-}
-.hero-section .hero-title-con .hero-subtitle {
-  display: flex;
-}
-.hero-section .hero-title-con .hero-subtitle p {
-  color: #B3262E;
-  font-size: 20px;
-  font-weight: bold;
+#event-hero-section {
+  background-image: url("/images/canteen-images/desktop/d-airmans-420-squad.png");
 }
 
 .event-updates {
