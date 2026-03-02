@@ -753,19 +753,13 @@ footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con
 }
 
 .gallery-box {
-  background-color: #fff;
+  margin: 2rem;
   width: 100%;
-  aspect-ratio: 1/1;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #3c3c3c;
 }
-.gallery-box svg {
-  padding: 4rem;
-  height: auto;
-}
-.gallery-box p {
-  font-size: 200%;
+
+.gallery-image {
+  width: 100%;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -788,7 +782,7 @@ footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-socials-con
   }
   .gallery-box {
     flex: 1;
-    margin-bottom: 2rem;
+    margin: 4rem 0;
   }
 }
 .map-svg-element {
