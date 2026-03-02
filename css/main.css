@@ -1219,9 +1219,12 @@ footer .footer-closing-text p {
   margin: 0;
 }
 .tl-gamma-con .gamma-img-con {
-  padding: 15%;
+  padding: 10%;
   position: relative;
-  overflow: hidden;
+}
+.tl-gamma-con .gamma-img-box {
+  position: relative;
+  display: block;
 }
 .tl-gamma-con .gamma-img {
   transition: transform 1s ease;
@@ -1229,9 +1232,23 @@ footer .footer-closing-text p {
   position: relative;
   width: 100%;
   height: auto;
+  z-index: 3;
 }
 .tl-gamma-con .gamma-img:hover {
-  transform: translate(-1rem, -1rem);
+  transform: translate(-2rem, -5rem);
+}
+.tl-gamma-con .gamma-p {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  z-index: 2;
+  color: #fff;
+}
+.tl-gamma-con .gamma-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: #B3262E;
 }
 
 .tl-graphic-con svg {

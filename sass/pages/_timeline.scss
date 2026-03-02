@@ -70,9 +70,14 @@
     }
 
     .gamma-img-con {
-        padding: 15%;
+        padding: 10%;
         position: relative;
-        overflow: hidden;
+    }
+
+    // this styling makes gamma-bg fit to the size of the image
+    .gamma-img-box {
+        position: relative;
+        display: block;
     }
 
     .gamma-img {
@@ -82,10 +87,26 @@
         position: relative;
         width: 100%;
         height: auto;
+        z-index: 3;
     }
 
     .gamma-img:hover {
-        transform: translate(-1rem, -1rem);
+        transform: translate(-2rem, -5rem);
+    }
+
+    .gamma-p {
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        z-index: 2;
+        color: a.$white;
+    }
+
+    .gamma-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-color: a.$primary-color;
     }
 }
 
