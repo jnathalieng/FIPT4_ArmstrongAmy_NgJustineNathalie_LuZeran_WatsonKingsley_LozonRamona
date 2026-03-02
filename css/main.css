@@ -1160,16 +1160,16 @@ footer .footer-closing-text p {
     width: 100%;
   }
 }
-#timeline-section {
+.timeline-section {
   background-color: #fff;
 }
-#timeline-section h1, #timeline-section h2 {
+.timeline-section h1, .timeline-section h2 {
   color: #B3262E;
 }
-#timeline-section h3, #timeline-section h4 {
+.timeline-section h3, .timeline-section h4 {
   color: #91B8D9;
 }
-#timeline-section p {
+.timeline-section p {
   color: #000;
 }
 
