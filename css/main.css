@@ -941,6 +941,103 @@ footer .footer-closing-text p {
   color: white;
 }
 
+.card-carousel {
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+}
+.card-carousel .carousel-background {
+  position: absolute;
+  transform: translateY(100px);
+  z-index: -1;
+  background-color: #91B8D9;
+  height: 80px;
+  width: 100%;
+}
+.card-carousel .carousel {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  animation: scroll-left 60s linear infinite;
+}
+.card-carousel .carousel:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.card-carousel .carousel .event-card {
+  background-color: white;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  width: 180px;
+  height: 180px;
+  box-shadow: 2px 2px 2px black;
+  margin: 10px;
+  flex-direction: column;
+  border: solid 1px rgba(60, 60, 60, 0.3);
+  container-type: inline-size;
+}
+.card-carousel .carousel .event-card .sub-card {
+  background-color: #B3262E;
+  position: absolute;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card-carousel .carousel .event-card .sub-card span {
+  font-size: 12px;
+  font-weight: bold;
+}
+.card-carousel .carousel .event-card h1 {
+  display: flex;
+  color: black;
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  left: 10%;
+}
+.card-carousel .carousel .event-card .card-text {
+  color: black;
+  position: absolute;
+  top: 60%;
+  font-size: 14px;
+  left: 10%;
+  white-space: normal;
+}
+.card-carousel .carousel .event-card .card-text p {
+  width: 80%;
+  height: 20% px;
+  font-size: 12px;
+}
+.card-carousel .carousel .event-card .card-button {
+  background-color: #B3262E;
+  position: absolute;
+  display: flex;
+  right: 0px;
+  bottom: 0px;
+  height: 16%;
+  width: 70%;
+  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
 .map-svg-element {
   position: fixed;
   top: 0;
@@ -1721,103 +1818,6 @@ footer .footer-closing-text p {
   justify-content: flex-end;
   padding: 20px;
   cursor: pointer;
-}
-
-.card-carousel {
-  display: flex;
-  flex-direction: column;
-  overflow-x: scroll;
-  width: 100%;
-  white-space: nowrap;
-}
-.card-carousel .carousel-background {
-  position: absolute;
-  transform: translateY(100px);
-  z-index: -1;
-  background-color: #91B8D9;
-  height: 80px;
-  width: 100%;
-}
-.card-carousel .carousel {
-  display: flex;
-  flex-direction: row;
-  width: max-content;
-  animation: scroll-left 60s linear infinite;
-}
-.card-carousel .carousel:hover {
-  animation-play-state: paused;
-}
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.card-carousel .carousel .event-card {
-  background-color: white;
-  position: relative;
-  z-index: 100;
-  display: flex;
-  width: 180px;
-  height: 180px;
-  box-shadow: 2px 2px 2px black;
-  margin: 10px;
-  flex-direction: column;
-  border: solid 1px rgba(60, 60, 60, 0.3);
-  container-type: inline-size;
-}
-.card-carousel .carousel .event-card .sub-card {
-  background-color: #B3262E;
-  position: absolute;
-  width: 33%;
-  height: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.card-carousel .carousel .event-card .sub-card span {
-  font-size: 12px;
-  font-weight: bold;
-}
-.card-carousel .carousel .event-card h1 {
-  display: flex;
-  color: black;
-  position: absolute;
-  font-size: 15px;
-  top: 50%;
-  left: 10%;
-}
-.card-carousel .carousel .event-card .card-text {
-  color: black;
-  position: absolute;
-  top: 60%;
-  font-size: 14px;
-  left: 10%;
-  white-space: normal;
-}
-.card-carousel .carousel .event-card .card-text p {
-  width: 80%;
-  height: 20% px;
-  font-size: 12px;
-}
-.card-carousel .carousel .event-card .card-button {
-  background-color: #B3262E;
-  position: absolute;
-  display: flex;
-  right: 0px;
-  bottom: 0px;
-  height: 16%;
-  width: 70%;
-  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
-  color: white;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 10px;
-  font-size: 14px;
 }
 
 .sign-up-box {
