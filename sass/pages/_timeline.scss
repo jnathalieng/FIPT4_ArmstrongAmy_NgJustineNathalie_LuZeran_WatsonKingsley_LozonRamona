@@ -1,5 +1,5 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
 #timeline-page {
-    color: white;
+    background-color: red;
 }
