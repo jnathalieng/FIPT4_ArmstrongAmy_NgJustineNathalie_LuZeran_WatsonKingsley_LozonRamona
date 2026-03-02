@@ -1,0 +1,18 @@
+@use '../abstracts/fonts';
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as v;
+@use '../base/typography';
+
+.button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: v.$primary-color;
+    color: white;
+}
