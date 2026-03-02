@@ -739,6 +739,7 @@ footer .footer-closing-text p {
   padding: 4rem;
   position: relative;
   font-family: "Monserrat", sans-serif;
+  border-bottom: solid 10px #B3262E;
 }
 .text-con h3 {
   color: #B3262E;
