@@ -600,17 +600,12 @@ footer .footer-closing-text p {
     padding: 0.25rem;
     border-bottom: 4px solid #FFC000;
   }
-  footer .footer-desktop-flex-con #desk-center {
-    margin: 0px auto;
-  }
-  footer .footer-desktop-flex-con #desk-center .footer-nav-links-con .footer-nav-discover {
-    margin-right: 6vw;
-  }
-  footer .footer-desktop-flex-con #desk-center .footer-nav-links-con .footer-nav-legacy {
-    margin-left: 5vw;
+  footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links .footer-cta-con {
+    margin-left: 12vw;
   }
   footer .footer-desktop-flex-con #flex-section-end {
     flex-direction: column;
+    margin-right: 5vw;
   }
   footer .footer-desktop-flex-con #flex-section-end .footer-search-con .footer-search-bar-con #footer-search-bar {
     margin: 10px;
@@ -620,13 +615,16 @@ footer .footer-closing-text p {
     height: 40px;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   footer .footer-desktop-flex-con {
     display: flex;
     flex-direction: row;
     width: 100vw;
     align-items: center;
     justify-content: center;
+  }
+  footer .footer-desktop-flex-con #logo-and-info {
+    margin-left: 3vw;
   }
   footer .footer-desktop-flex-con .footer-desktop-flex-section {
     display: flex;
@@ -638,6 +636,21 @@ footer .footer-closing-text p {
   }
   footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con {
     width: 100%;
+  }
+  footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con .footer-nav-links {
+    width: auto;
+  }
+  footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links-con .footer-nav-links .footer-cta-con {
+    margin-left: 0vw;
+  }
+  footer .footer-desktop-flex-con #desk-center {
+    margin: 0px auto;
+  }
+  footer .footer-desktop-flex-con #desk-center .footer-nav-links-con .footer-nav-discover {
+    margin-right: 6vw;
+  }
+  footer .footer-desktop-flex-con #desk-center .footer-nav-links-con .footer-nav-legacy {
+    margin-left: 5vw;
   }
   footer .footer-desktop-flex-con #flex-section-end .footer-search-con .header-text {
     font-size: 25px;
