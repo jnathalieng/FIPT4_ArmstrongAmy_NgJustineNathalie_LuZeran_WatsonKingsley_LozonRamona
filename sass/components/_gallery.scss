@@ -41,21 +41,13 @@
 }
 
 .gallery-box {
-    background-color: a.$white;
+    margin: 2rem;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    text-align: center;
-    align-items: center;
-    border: 1px solid a.$dark-background;
+}
 
-    svg {
-        padding: 4rem;
-        height: auto;
-    }
-
-    p {
-        font-size: 200%;
-    }
+.gallery-image {
+    width: 100%;
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,6 +78,6 @@
 
     .gallery-box {
         flex: 1;
-        margin-bottom: 2rem;
+        margin: 4rem 0;
     }
 }
