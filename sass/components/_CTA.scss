@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts' as a;
+
 
 // <div class="CTA-con">
 //     <a href="about.html">
@@ -21,10 +21,33 @@
         justify-content: right;
         align-items: center;
         text-decoration: none;
-        border-bottom: 0.5rem solid v.$primary-color;
+        border-bottom: 0.5rem solid a.$primary-color;
 
         h4 {
-            color: v.$white;
+            color: a.$white;
+        }
+    }
+}
+
+#timeline-CTA {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    border-top: 0.5rem solid a.$primary-color;
+
+    a {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        text-decoration: none;
+        background-color: a.$primary-color;
+        width: 50%;
+        margin-left: auto;
+
+        h4 {
+            color: a.$white;
         }
     }
 }
