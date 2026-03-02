@@ -707,11 +707,39 @@ footer .footer-closing-text p {
   color: #fff;
 }
 
+.read-more {
+  position: absolute;
+  border-top: solid 10px #B3262E;
+  margin-top: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+}
+.read-more .read-more-button {
+  background-color: #B3262E;
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  z-index: 100;
+  right: 0px;
+  top: -43px;
+  height: 30px;
+  min-width: 200px;
+  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  cursor: pointer;
+}
+
 .text-con {
   background-color: #cecccd;
   padding: 4rem;
   position: relative;
   font-family: "Monserrat", sans-serif;
+  border-bottom: solid 10px #B3262E;
 }
 .text-con h3 {
   color: #B3262E;
@@ -1895,29 +1923,6 @@ footer .footer-closing-text p {
   color: #B3262E;
 }
 
-.read-more {
-  position: relative;
-  border-top: solid 10px #B3262E;
-  margin-top: 50px;
-}
-.read-more .read-more-button {
-  background-color: #B3262E;
-  position: absolute;
-  font-size: 20px;
-  display: flex;
-  z-index: 100;
-  right: 0px;
-  top: -43px;
-  height: 30px;
-  min-width: 200px;
-  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
-  color: white;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 20px;
-  cursor: pointer;
-}
-
 .sign-up-box {
   display: flex;
   flex-direction: column;
@@ -2030,4 +2035,42 @@ footer .footer-closing-text p {
   .event-updates .events-buttons-list #latest-news-button {
     font-size: 20px;
   }
-}
+  .card-carousel .carousel-background {
+    position: absolute;
+    transform: translateY(100px);
+    height: 300px;
+  }
+  .card-carousel .carousel .event-card {
+    width: 500px;
+    height: 500px;
+    box-shadow: 2px 2px 2px black;
+    margin: 10px;
+  }
+  .card-carousel .carousel .event-card .sub-card {
+    width: 33%;
+    height: 33%;
+  }
+  .card-carousel .carousel .event-card .sub-card span {
+    font-size: 20px;
+  }
+  .card-carousel .carousel .event-card h1 {
+    font-size: 24px;
+    top: 65%;
+    left: 10%;
+  }
+  .card-carousel .carousel .event-card .card-text {
+    top: 75%;
+    left: 10%;
+  }
+  .card-carousel .carousel .event-card .card-text p {
+    width: 80%;
+    height: 20% px;
+    font-size: 20px;
+  }
+  .card-carousel .carousel .event-card .card-button {
+    height: 12%;
+    width: 60%;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
