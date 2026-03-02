@@ -62,7 +62,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background-color: v.$secondary-color;
+        background-color: a.$secondary-color;
         opacity: .8;
         display: flex;
         clip-path: polygon(100% 40%, 0% 100%, 100% 100%); 
@@ -85,7 +85,7 @@
         .hero-subtitle {
             display: flex;
             p {
-            color: v.$primary-color;
+            color: a.$primary-color;
             font-size: 20px;
             font-weight: bold;
             }
