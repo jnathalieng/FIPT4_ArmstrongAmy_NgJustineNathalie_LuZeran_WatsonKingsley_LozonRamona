@@ -1497,11 +1497,17 @@ footer .footer-closing-text p {
   .tl-beta-con h2 {
     font-size: 1000%;
   }
-  .tl-graphic-con svg {
+  .tl-beta-con .tl-graphic-con svg {
     width: 2rem;
   }
-  .tl-beta-text-con p {
+  .tl-beta-con .tl-beta-text-con p {
     font-size: 150%;
+  }
+  .tl-gamma-con h2 {
+    font-size: 600%;
+  }
+  .tl-gamma-con h3 {
+    font-size: 200%;
   }
 }
 #commemoration-hero .hero-h1 {
@@ -2089,4 +2095,4 @@ footer .footer-closing-text p {
   .event-updates .events-buttons-list #latest-news-button {
     font-size: 20px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
