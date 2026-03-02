@@ -707,6 +707,29 @@ footer .footer-closing-text p {
   color: #fff;
 }
 
+.read-more {
+  position: relative;
+  border-top: solid 10px #B3262E;
+  margin-top: 50px;
+}
+.read-more .read-more-button {
+  background-color: #B3262E;
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  z-index: 100;
+  right: 0px;
+  top: -43px;
+  height: 30px;
+  min-width: 200px;
+  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  cursor: pointer;
+}
+
 .text-con {
   background-color: #cecccd;
   padding: 4rem;
@@ -1800,29 +1823,6 @@ footer .footer-closing-text p {
   font-weight: bold;
   font-size: 25px;
   color: #B3262E;
-}
-
-.read-more {
-  position: relative;
-  border-top: solid 10px #B3262E;
-  margin-top: 50px;
-}
-.read-more .read-more-button {
-  background-color: #B3262E;
-  position: absolute;
-  font-size: 20px;
-  display: flex;
-  z-index: 100;
-  right: 0px;
-  top: -43px;
-  height: 30px;
-  min-width: 200px;
-  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
-  color: white;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 20px;
-  cursor: pointer;
 }
 
 .sign-up-box {

@@ -81,29 +81,6 @@
             }
     }
 
-    .read-more {
-        position: relative;
-        border-top: solid 10px v.$primary-color;
-        margin-top: 50px; 
-        .read-more-button {
-                background-color: v.$primary-color;
-                position: absolute;
-                font-size: 20px;
-                display: flex;
-                z-index: 100;
-                right: 0px;
-                top: -43px;
-                height: 30px;
-                min-width: 200px;
-                clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
-                color: white;
-                align-items: center;
-                justify-content: flex-end;
-                padding: 20px;
-                cursor: pointer;
-        }
-    }
-
     .sign-up-box {
         display: flex;
         flex-direction: column;
