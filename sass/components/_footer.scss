@@ -18,7 +18,7 @@ footer {
                 picture {
                     .footer-selection-image {
                         width: 100%;
-                        height: 100%;
+                        height: 400px;
                         display: block;
                         object-fit: cover;
                     }
@@ -210,6 +210,19 @@ footer {
 @media screen and (min-width: 768px) {
 
 footer {
+
+   .footer-selection-con {
+        flex-direction: row;
+        .footer-selection-box {
+            .footer-selection-a {
+                picture {
+                    .footer-selection-image {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
 
     .footer-desktop-flex-con {
 
