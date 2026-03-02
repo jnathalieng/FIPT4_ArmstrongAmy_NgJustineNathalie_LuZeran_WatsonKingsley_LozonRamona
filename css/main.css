@@ -1521,7 +1521,7 @@ footer .footer-closing-text p {
     font-weight: bold;
   }
 }
-.events-hero {
+.hero-section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1532,7 +1532,7 @@ footer .footer-closing-text p {
   background-size: cover;
   height: 300px;
 }
-.events-hero .events-triangle {
+.hero-section .hero-triangle {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1541,25 +1541,25 @@ footer .footer-closing-text p {
   display: flex;
   clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
 }
-.events-hero .news-and-events-con {
+.hero-section .hero-title-con {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 20px;
 }
-.events-hero .news-and-events-con .events-title {
+.hero-section .hero-title-con .hero-title {
   display: flex;
   text-align: end;
 }
-.events-hero .news-and-events-con .events-title p {
+.hero-section .hero-title-con .hero-title p {
   font-size: 50px;
   font-weight: bold;
 }
-.events-hero .news-and-events-con .events-subtitle {
+.hero-section .hero-title-con .hero-subtitle {
   display: flex;
 }
-.events-hero .news-and-events-con .events-subtitle p {
+.hero-section .hero-title-con .hero-subtitle p {
   color: #B3262E;
   font-size: 20px;
   font-weight: bold;
