@@ -111,7 +111,6 @@
         z-index: 3;
     }
 
-    // adding #timeline-section for specificity
     .gamma-p {
         transition: transform 1s ease;
 
@@ -149,22 +148,36 @@
 
 @media screen and (min-width: 768px) {
     
+    // BETACON
     .tl-beta-con {
         h2 {
             font-size: 1000%;
         }
-    }
 
-    .tl-graphic-con {
-        svg {
-            width: 2rem;
+        
+        .tl-graphic-con {
+            svg {
+                width: 2rem;
+            }
+        }
+
+        .tl-beta-text-con {
+
+            p {
+                font-size: 150%;
+            }
         }
     }
 
-    .tl-beta-text-con {
 
-        p {
-            font-size: 150%;
+    // GAMMACON
+    .tl-gamma-con {
+        h2 {
+            font-size: 600%;
+        }
+
+        h3 {
+            font-size: 200%;
         }
     }
 }
