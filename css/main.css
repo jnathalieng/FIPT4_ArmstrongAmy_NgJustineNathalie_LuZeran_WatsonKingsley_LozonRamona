@@ -1644,7 +1644,7 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: row;
   width: max-content;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 60s linear infinite;
 }
 .card-carousel .carousel:hover {
   animation-play-state: paused;
@@ -1716,4 +1716,52 @@ footer .footer-closing-text p {
   color: white;
   align-items: center;
   justify-content: center;
+}
+
+.sign-up-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  background-color: #91B8D9;
+}
+.sign-up-box .sign-up-title {
+  color: #B3262E;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 900;
+}
+.sign-up-box .sign-up-subtitle {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+.sign-up-box .form-con-sign-up {
+  margin-top: 35px;
+}
+.sign-up-box .form-con-sign-up .sign-up-form {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-box .form-con-sign-up .sign-up-form .form-box-sign-up {
+  border: solid 3px rgba(60, 60, 60, 0.3);
+  min-width: 30vw;
+  height: 80px;
+  font-size: 30px;
+  text-align: center;
+}
+.sign-up-box .form-con-sign-up .sign-up-form .sign-up-button {
+  background-color: #B3262E;
+  color: white;
+  height: 80px;
+  min-width: 16vw;
+  margin-left: 25px;
+  font-size: 30px;
 }
