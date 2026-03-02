@@ -1281,41 +1281,13 @@ footer .footer-closing-text p {
     font-size: 150%;
   }
 }
-#commemoration-page {
-  color: white;
+#commemoration-hero .hero-h1 {
+  font-size: 300%;
 }
-#commemoration-page .hero {
-  background-image: url(/images/comm-images/comm-hero-placeholder.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-#commemoration-page .hero h2, #commemoration-page .hero p {
-  top: 50%;
-  text-align: center;
-}
-
-.comm-mini {
-  background-color: #B3262E;
-  padding: 1rem;
-}
-.comm-mini h2, .comm-mini p {
-  margin: 1rem;
-  text-align: center;
-}
-
-.comm-card {
-  display: flex;
-  background-color: #666;
-  max-height: 50vh;
-  justify-content: space-between;
-}
-.comm-card .comm-card-info {
-  margin: auto;
-  background-color: #333;
-}
-.comm-card .comm-img-card img {
-  height: 100%;
+@media screen and (min-width: 768px) {
+  #commemoration-hero .hero-h1 {
+    font-size: 800%;
+  }
 }
 
 #BOB-page {
@@ -2036,4 +2008,4 @@ footer .footer-closing-text p {
     padding-right: 10px;
     font-size: 20px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
