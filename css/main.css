@@ -1549,6 +1549,24 @@ footer .footer-closing-text p {
   background-color: #cecccd;
 }
 
+@media screen and (min-width: 768px) {
+  .comm-beta-con .comm-beta-headers h2, .comm-beta-con .comm-beta-headers h3 {
+    margin: 4rem 4rem 0 4rem;
+  }
+  .comm-beta-con .comm-beta-img-box picture {
+    flex-direction: row;
+  }
+  .comm-beta-con .comm-beta-img-box picture img {
+    width: 30%;
+    margin: 6rem;
+  }
+  .comm-beta-con .comm-beta-img-box .comm-beta-p {
+    font-size: 150%;
+  }
+  .comm-beta-con .comm-beta-img-box .comm-beta-bg {
+    inset: 30% 0;
+  }
+}
 #BOB-page {
   color: white;
   background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
