@@ -1420,6 +1420,38 @@ footer .footer-closing-text p {
   }
 }
 
+.comm-beta-con {
+  position: relative;
+}
+.comm-beta-con h2, .comm-beta-con h3 {
+  color: #B3262E;
+  margin: 2rem;
+  z-index: 2;
+}
+.comm-beta-con p {
+  color: #000;
+  margin: 2rem;
+  z-index: 2;
+}
+.comm-beta-con .comm-beta-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.comm-beta-con .comm-beta-img-box .comm-beta-img {
+  z-index: 2;
+}
+.comm-beta-con .comm-beta-bg {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background-color: #cecccd;
+}
+.comm-beta-con .comm-beta-bg .comm-beta-p {
+  padding: 2rem;
+}
+
 #BOB-page {
   color: white;
   background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
