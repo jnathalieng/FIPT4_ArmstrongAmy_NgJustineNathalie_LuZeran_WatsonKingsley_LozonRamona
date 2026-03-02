@@ -1,5 +1,17 @@
 @use '../abstracts' as a;
 
-#timeline-page {
-    background-color: red;
+#timeline-section {
+    background-color: a.$white;
+
+    h1, h2, h3 {
+        color: a.$primary-color;
+    }
+
+    h4 {
+        color: a.$secondary-color;
+    }
+
+    p {
+        color: a.$black;
+    }
 }
