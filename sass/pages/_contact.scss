@@ -3,50 +3,10 @@
 @use '../abstracts/variables' as v;
 @use '../base/typography';
 
-.contact-hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100vw;
-    background-image: url("../../images/canteen-images/mobile/m-airmans-building.png");
-    background-size: cover;
-    height: 300px;
-    .contact-triangle {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: v.$secondary-color;
-        opacity: .8;
-        display: flex;
-        clip-path: polygon(100% 40%, 0% 100%, 100% 100%); 
-    }
-    .get-in-touch {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 20px;
 
-        .contact-title {
-            display: flex;
-            text-align: end;
-            p {
-                font-size: 50px;
-                font-weight: bold;
-            }
-        }
-        .contact-subtitle {
-            display: flex;
-            p {
-            color: v.$primary-color;
-            font-size: 20px;
-            font-weight: bold;
-            }
-        }
-        }
-    }
+#contact-hero {
+     background-image: url("../../images/canteen-images/mobile/m-airmans-building.png");
+}
 
     .contact-message {
         position: relative;
@@ -114,7 +74,7 @@
 }
 
 @media (min-width: 500px) {
-    .contact-hero {
+    #contact-hero {
     background-image: url("../../images/canteen-images/desktop/d-airmans-building.png");
     }
 }

@@ -780,6 +780,8 @@ footer .footer-closing-text p {
   justify-content: flex-end;
   width: 100vw;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 300px;
 }
 .hero-section .hero-triangle {
@@ -1421,48 +1423,8 @@ footer .footer-closing-text p {
     padding: 0 10rem;
   }
 }
-.contact-hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100vw;
+#contact-hero {
   background-image: url("../../images/canteen-images/mobile/m-airmans-building.png");
-  background-size: cover;
-  height: 300px;
-}
-.contact-hero .contact-triangle {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #91B8D9;
-  opacity: 0.8;
-  display: flex;
-  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
-}
-.contact-hero .get-in-touch {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
-}
-.contact-hero .get-in-touch .contact-title {
-  display: flex;
-  text-align: end;
-}
-.contact-hero .get-in-touch .contact-title p {
-  font-size: 50px;
-  font-weight: bold;
-}
-.contact-hero .get-in-touch .contact-subtitle {
-  display: flex;
-}
-.contact-hero .get-in-touch .contact-subtitle p {
-  color: #B3262E;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 .contact-message {
@@ -1529,7 +1491,7 @@ footer .footer-closing-text p {
 }
 
 @media (min-width: 500px) {
-  .contact-hero {
+  #contact-hero {
     background-image: url("../../images/canteen-images/desktop/d-airmans-building.png");
   }
 }
