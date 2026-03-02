@@ -62,3 +62,34 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .comm-beta-con {
+        
+        .comm-beta-headers {
+            // BetaText Styling
+            h2, h3 {
+                margin: 4rem 4rem 0 4rem;
+            }
+        }
+
+        .comm-beta-img-box {
+
+            picture {
+                flex-direction: row;
+                img {
+                    width: 30%;
+                    // internal margin between img and p
+                    margin: 6rem;
+                }
+            }
+
+            .comm-beta-p {
+                font-size: 150%;
+            }
+
+            .comm-beta-bg {
+                inset: 30% 0;
+            }
+        }
+    }
+}
