@@ -31,6 +31,7 @@
 
         .contact-title {
             display: flex;
+            text-align: end;
             p {
                 font-size: 50px;
                 font-weight: bold;
@@ -70,6 +71,7 @@
             position: relative;
             display: flex;
             margin: 10px;
+            justify-content: center;
             p {
                 color: black;
             }
@@ -107,6 +109,37 @@
             line-height: 35px;
             color: black;
             font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .contact-hero {
+    background-image: url("../../images/canteen-images/desktop/d-airmans-building.png");
+    }
+}
+
+@media (min-width:768px) {
+    .contact-hero {
+
+    .get-in-touch {
+        margin-right: 10vw;
+        .contact-title {
+            display: flex;
+            text-align: start;
+            p {
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+        .contact-subtitle {
+            display: flex;
+            p {
+            color: v.$primary-color;
+            font-size: 20px;
+            font-weight: bold;
+            }
+        }
         }
     }
 }
