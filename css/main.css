@@ -1179,6 +1179,51 @@ footer .footer-closing-text p {
   padding: 2rem;
 }
 
+.tl-alpha-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tl-beta-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tl-beta-con h2 {
+  font-size: 800%;
+}
+.tl-beta-con h3 {
+  text-align: center;
+  margin: 5%;
+}
+
+.tl-graphic-con svg {
+  width: 1rem;
+}
+
+.tl-beta-text-con {
+  background-color: #cecccd;
+  margin: 10%;
+  padding: 10%;
+}
+.tl-beta-text-con p {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tl-beta-con h2 {
+    font-size: 1000%;
+  }
+  .tl-graphic-con svg {
+    width: 2rem;
+  }
+  .tl-beta-text-con p {
+    font-size: 150%;
+  }
+}
 #commemoration-page {
   color: white;
 }
