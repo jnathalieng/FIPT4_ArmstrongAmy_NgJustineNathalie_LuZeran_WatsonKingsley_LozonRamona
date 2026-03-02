@@ -1,6 +1,6 @@
 @use '../abstracts' as a;
 
-#timeline-section {
+.timeline-section {
     background-color: a.$white;
 
     h1, h2 {
@@ -94,6 +94,7 @@
         transform: translate(-2rem, -5rem);
     }
 
+    // adding #timeline-section for specificity
     .gamma-p {
         position: absolute;
         bottom: 0;
