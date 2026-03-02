@@ -1034,7 +1034,20 @@ footer .footer-closing-text p {
   font-size: 12px;
   font-weight: bold;
 }
-.card-carousel .carousel .event-card h1 {
+.card-carousel .carousel .event-card .card-image-con {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card-carousel .carousel .event-card .card-image-con .carousel-card-image {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 60%;
+  top: 15%;
+  left: 20%;
+}
+.card-carousel .carousel .event-card .card-title {
   display: flex;
   color: black;
   position: absolute;
@@ -1071,6 +1084,86 @@ footer .footer-closing-text p {
   font-size: 14px;
 }
 
+@media (min-width: 768px) {
+  .card-carousel .carousel-background {
+    position: absolute;
+    transform: translateY(100px);
+    height: 120px;
+  }
+  .card-carousel .carousel .event-card {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 2px black;
+    margin: 10px;
+  }
+  .card-carousel .carousel .event-card .sub-card {
+    width: 33%;
+    height: 33%;
+  }
+  .card-carousel .carousel .event-card .sub-card span {
+    font-size: 12px;
+  }
+  .card-carousel .carousel .event-card .card-title {
+    font-size: 15px;
+    top: 55%;
+    left: 10%;
+  }
+  .card-carousel .carousel .event-card .card-text {
+    top: 65%;
+    left: 10%;
+  }
+  .card-carousel .carousel .event-card .card-text p {
+    width: 80%;
+    height: 20% px;
+    font-size: 15px;
+  }
+  .card-carousel .carousel .event-card .card-button {
+    height: 16%;
+    width: 60%;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-carousel .carousel-background {
+    position: absolute;
+    transform: translateY(100px);
+    height: 300px;
+  }
+  .card-carousel .carousel .event-card {
+    width: 500px;
+    height: 500px;
+    box-shadow: 2px 2px 2px black;
+    margin: 10px;
+  }
+  .card-carousel .carousel .event-card .sub-card {
+    width: 33%;
+    height: 33%;
+  }
+  .card-carousel .carousel .event-card .sub-card span {
+    font-size: 20px;
+  }
+  .card-carousel .carousel .event-card .card-title {
+    font-size: 24px;
+    top: 65%;
+    left: 10%;
+  }
+  .card-carousel .carousel .event-card .card-text {
+    top: 75%;
+    left: 10%;
+  }
+  .card-carousel .carousel .event-card .card-text p {
+    width: 80%;
+    height: 20% px;
+    font-size: 20px;
+  }
+  .card-carousel .carousel .event-card .card-button {
+    height: 12%;
+    width: 60%;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+}
 .map-svg-element {
   position: fixed;
   top: 0;
@@ -1894,44 +1987,6 @@ footer .footer-closing-text p {
     font-size: 14px;
   }
   .event-updates .events-buttons-list #latest-news-button {
-    font-size: 14px;
-  }
-  .card-carousel .carousel-background {
-    position: absolute;
-    transform: translateY(100px);
-    height: 120px;
-  }
-  .card-carousel .carousel .event-card {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 2px black;
-    margin: 10px;
-  }
-  .card-carousel .carousel .event-card .sub-card {
-    width: 33%;
-    height: 33%;
-  }
-  .card-carousel .carousel .event-card .sub-card span {
-    font-size: 12px;
-  }
-  .card-carousel .carousel .event-card h1 {
-    font-size: 15px;
-    top: 55%;
-    left: 10%;
-  }
-  .card-carousel .carousel .event-card .card-text {
-    top: 65%;
-    left: 10%;
-  }
-  .card-carousel .carousel .event-card .card-text p {
-    width: 80%;
-    height: 20% px;
-    font-size: 15px;
-  }
-  .card-carousel .carousel .event-card .card-button {
-    height: 16%;
-    width: 60%;
-    padding-right: 10px;
     font-size: 14px;
   }
 }

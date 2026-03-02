@@ -152,49 +152,6 @@
             }
         }
         }
-
-            .card-carousel {
-        .carousel-background {
-            position: absolute;
-            transform: translateY(100px);
-            height: 120px;
-        }
-        .carousel {
-            .event-card {
-                width: 250px;
-                height: 250px;
-                box-shadow: 2px 2px 2px black;
-                margin: 10px;
-
-                .sub-card {
-                    width: 33%;
-                    height: 33%;
-                    span {
-                        font-size: 12px;
-                    }
-                }
-                h1 {
-                        font-size: 15px;
-                        top: 55%;
-                        left: 10%;
-                    }
-                .card-text {
-                    top: 65%;
-                    left: 10%;
-                    p {
-                    width: 80%;
-                    height: 20%px;
-                    font-size: 15px;
-                }}
-                .card-button {
-                    height: 16%;
-                    width: 60%;
-                    padding-right: 10px;
-                    font-size: 14px;
-                }           
-            }
-        }
-    }
     }
 
    .sign-up-box {
@@ -248,49 +205,6 @@
             }
         }
         }
-
-            .card-carousel {
-        .carousel-background {
-            position: absolute;
-            transform: translateY(100px);
-            height: 300px;
-        }
-        .carousel {
-            .event-card {
-                width: 500px;
-                height: 500px;
-                box-shadow: 2px 2px 2px black;
-                margin: 10px;
-
-                .sub-card {
-                    width: 33%;
-                    height: 33%;
-                    span {
-                        font-size: 20px;
-                    }
-                }
-                h1 {
-                        font-size: 24px;
-                        top: 65%;
-                        left: 10%;
-                    }
-                .card-text {
-                    top: 75%;
-                    left: 10%;
-                    p {
-                    width: 80%;
-                    height: 20%px;
-                    font-size: 20px;
-                }}
-                .card-button {
-                    height: 12%;
-                    width: 60%;
-                    padding-right: 10px;
-                    font-size: 20px;
-                }           
-            }
-        }
-    }
     }
 
 
