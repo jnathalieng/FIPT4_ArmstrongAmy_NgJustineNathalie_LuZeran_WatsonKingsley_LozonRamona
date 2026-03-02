@@ -1216,17 +1216,22 @@ footer .footer-closing-text p {
 }
 .tl-gamma-con .gamma-graphic-con svg {
   width: 1rem;
+  margin: 0;
 }
 .tl-gamma-con .gamma-img-con {
   padding: 15%;
   position: relative;
+  overflow: hidden;
 }
 .tl-gamma-con .gamma-img {
-  transition: 1s ease;
+  transition: transform 1s ease;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 .tl-gamma-con .gamma-img:hover {
-  position: absolute;
-  transform: translate(-5, -5);
+  transform: translate(-1rem, -1rem);
 }
 
 .tl-graphic-con svg {
