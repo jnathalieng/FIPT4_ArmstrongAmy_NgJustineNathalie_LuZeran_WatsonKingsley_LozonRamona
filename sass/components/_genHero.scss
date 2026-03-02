@@ -34,20 +34,7 @@
     right: 10%;
 }
 
-@media screen and (min-width: 768px) {
-    .hero-h1 {
-        font-size: 1000%;
-        bottom: 20%;
-        right: 5%;
-    }
-
-    .hero-h2 {
-        font-size: 200%;
-        bottom: 10%;
-        right: 5%;
-    }
-}
-
+//blue triangle hero styles
 .hero-section {
     position: relative;
     display: flex;
@@ -95,3 +82,17 @@
         }
         }
     }
+
+@media screen and (min-width: 768px) {
+    .hero-h1 {
+        font-size: 1000%;
+        bottom: 20%;
+        right: 5%;
+    }
+
+    .hero-h2 {
+        font-size: 200%;
+        bottom: 10%;
+        right: 5%;
+    }
+}
