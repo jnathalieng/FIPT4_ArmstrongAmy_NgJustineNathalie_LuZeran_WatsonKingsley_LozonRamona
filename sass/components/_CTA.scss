@@ -37,6 +37,8 @@
     text-align: right;
     border-top: 0.5rem solid a.$primary-color;
 
+    // make adjustments to general CTA based on the position and width values of timeline-CTA
+
     a {
         display: flex;
         justify-content: right;
