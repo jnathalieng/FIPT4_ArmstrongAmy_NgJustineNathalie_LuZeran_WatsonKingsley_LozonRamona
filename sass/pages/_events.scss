@@ -123,7 +123,7 @@
             display: flex;
             flex-direction: row;
             width: max-content;
-            animation: scroll-left 30s linear infinite;
+            animation: scroll-left 60s linear infinite;
 
             &:hover {
                 animation-play-state: paused;
@@ -192,6 +192,54 @@
                     align-items: center;
                     justify-content: center;
                 }           
+            }
+        }
+    }
+
+    .sign-up-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+        height: 500px;
+        background-color: v.$secondary-color;
+        .sign-up-title {
+            color: v.$primary-color;
+            font-size: 35px;
+            text-align: center;
+            font-weight: 900;
+        }
+        .sign-up-subtitle {
+            color: black;
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+        .form-con-sign-up {
+            margin-top: 35px;
+            .sign-up-form {
+                display: flex;
+                flex-direction: row;
+                width: 70vw;
+                align-items: center;
+                justify-content: center;
+                .form-box-sign-up {
+                    border: solid 3px rgba(v.$dark-background, 0.3);
+                    min-width: 30vw;
+                    height: 80px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .sign-up-button {
+                    background-color: v.$primary-color;
+                    color: white;
+                    height: 80px;
+                    min-width: 16vw;
+                    margin-left: 25px;
+                    font-size: 30px;
+                }
             }
         }
     }
