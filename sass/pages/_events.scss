@@ -47,3 +47,36 @@
         }
         }
     }
+
+    .event-updates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(v.$dark-background, 0.3);
+        padding: 10px;
+
+        .updates-text {
+            display: flex;
+            text-align: center;
+            margin: 10px;
+            p {
+                display: flex;
+                font-weight: bold;
+                color: black;
+            }
+        }
+        .events-buttons-list {
+            display: flex;
+            flex-direction: column;
+            margin: 5px 5px 20px 5px;
+            #upcoming-events-button {
+                display: flex;
+            }
+            #latest-blogs-button {
+                display: flex;
+            }
+            #latest-news-button {
+                display: flex;
+            }
+        }
+    }
