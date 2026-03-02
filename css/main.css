@@ -1142,7 +1142,7 @@ footer .footer-closing-text p {
   }
 }
 #timeline-page {
-  color: white;
+  background-color: red;
 }
 
 #commemoration-page {
@@ -1550,4 +1550,4 @@ footer .footer-closing-text p {
 }
 .event-updates .events-buttons-list #latest-news-button {
   display: flex;
-}
+}/*# sourceMappingURL=main.css.map */
