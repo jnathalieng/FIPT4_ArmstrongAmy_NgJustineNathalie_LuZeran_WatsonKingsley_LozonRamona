@@ -21,3 +21,52 @@
     margin: 2em 0;
     padding: 2rem;
 }
+
+.tl-alpha-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-beta-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: a.$tertiary-color;
+    margin: 10%;
+    padding: 10%;
+
+    h2 {
+        font-size: 800%;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 5%;
+    }
+}
+
+.tl-graphic-con {
+    
+    svg {
+        width: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .tl-beta-con {
+        h2 {
+            font-size: 1000%;
+        }
+    }
+
+    .tl-graphic-con {
+        svg {
+            width: 2rem;
+        }
+    }
+}

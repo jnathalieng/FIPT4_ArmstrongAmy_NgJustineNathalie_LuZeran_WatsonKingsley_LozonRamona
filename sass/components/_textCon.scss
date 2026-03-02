@@ -1,7 +1,7 @@
 @use '../abstracts' as a;
 
 .text-con {
-    background-color: #cecccd;
+    background-color: a.$tertiary-color;
     padding: 4rem;
     position: relative;
     font-family: "Monserrat", sans-serif;
