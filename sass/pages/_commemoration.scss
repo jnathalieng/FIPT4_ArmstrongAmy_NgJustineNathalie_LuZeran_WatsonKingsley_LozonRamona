@@ -1,44 +1,57 @@
 @use '../abstracts';
 
-#commemoration-page {
-    color: white;
+#commemoration-hero {
 
-    .hero {
-        background-image: url(/images/comm-images/comm-hero-placeholder.png);
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
+    .hero-h1 {
+        font-size: 300%;
     }
 
-    .hero h2, .hero p {
-        top: 50%;
-        text-align: center;
+    @media screen and (min-width: 768px) {
+        .hero-h1 {
+            font-size: 800%;
+        }
     }
 }
 
-.comm-mini {
-    background-color: abstracts.$primary-color;
-    padding: 1rem;
+// #commemoration-page {
+//     color: white;
 
-    h2, p {
-        margin: 1rem;
-        text-align: center;
-    }
-}
+//     .hero {
+//         background-image: url(/images/comm-images/comm-hero-placeholder.png);
+//         background-size: cover;
+//         background-position: center;
+//         min-height: 100vh;
+//     }
 
-.comm-card {
-    display: flex;
-    background-color: #666;
-    max-height: 50vh;
-    justify-content: space-between;
+//     .hero h2, .hero p {
+//         top: 50%;
+//         text-align: center;
+//     }
+// }
 
-    .comm-card-info {
-        margin: auto;
-        background-color: #333;
-    }
+// .comm-mini {
+//     background-color: abstracts.$primary-color;
+//     padding: 1rem;
 
-    .comm-img-card img {
-        height: 100%;
-    }
-}
+//     h2, p {
+//         margin: 1rem;
+//         text-align: center;
+//     }
+// }
+
+// .comm-card {
+//     display: flex;
+//     background-color: #666;
+//     max-height: 50vh;
+//     justify-content: space-between;
+
+//     .comm-card-info {
+//         margin: auto;
+//         background-color: #333;
+//     }
+
+//     .comm-img-card img {
+//         height: 100%;
+//     }
+// }
 
