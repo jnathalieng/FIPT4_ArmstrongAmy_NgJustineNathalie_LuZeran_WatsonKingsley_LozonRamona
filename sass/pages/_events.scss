@@ -52,7 +52,7 @@
         .event-title {
             color: v.$primary-color;
             font-weight: 800;
-            font-size: 30px;
+            font-size: 20px;
             width: 80vw;
             margin:10px;
         }
@@ -76,7 +76,7 @@
                     margin: 80px auto 50px auto;
             h1 {
                 font-weight: bold;
-                font-size: 60px;
+                font-size: 25px;
                 color: v.$primary-color;
             }
     }
@@ -88,17 +88,17 @@
         .read-more-button {
                 background-color: v.$primary-color;
                 position: absolute;
-                font-size: 40px;
+                font-size: 20px;
                 display: flex;
                 z-index: 100;
                 right: 0px;
-                top: -63px;
-                height: 60px;
-                width: 33vw;
+                top: -43px;
+                height: 30px;
+                min-width: 200px;
                 clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
                 color: white;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-end;
                 padding: 20px;
                 cursor: pointer;
         }
@@ -116,7 +116,7 @@
             transform: translateY(100px);
             z-index: -1;
             background-color: v.$secondary-color;
-            height: 370px;
+            height: 80px;
             width: 100%;
         }
         .carousel {
@@ -138,10 +138,10 @@
                 position: relative;
                 z-index: 100;
                 display: flex;
-                width: 580px;
-                height: 580px;
+                width: 180px;
+                height: 180px;
                 box-shadow: 2px 2px 2pc black;
-                margin: 40px;
+                margin: 10px;
                 flex-direction: column;
                 border: solid 1px rgba(v.$dark-background, 0.3);
                 container-type: inline-size;
@@ -149,15 +149,15 @@
                 .sub-card {
                     background-color: v.$primary-color;
                     position: absolute;
-                    width: 170px;
-                    height: 240px;
+                    width: 33%;
+                    height: 33%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
                     span {
-                        font-size: 40px;
+                        font-size: 12px;
                         font-weight: bold;
                     }
                 }
@@ -165,19 +165,21 @@
                         display: flex;
                         color: black;
                         position: absolute;
-                        top: 420px;
-                        left: 20px;
+                        font-size: 15px;
+                        top: 50%;
+                        left: 10%;
                     }
                 .card-text {
                     color: black;
                     position: absolute;
-                    top: 470px;
-                    font-size: 25px;
-                    left: 20px;
+                    top: 60%;
+                    font-size: 14px;
+                    left: 10%;
                     white-space: normal;
                     p {
-                    width: 80%px;
-                    height: 100px;
+                    width: 80%;
+                    height: 20%px;
+                    font-size: 12px;
                 }}
                 .card-button {
                     background-color: v.$primary-color;
@@ -185,12 +187,14 @@
                     display: flex;
                     right: 0px;
                     bottom: 0px;
-                    height: 40px;
-                    width: 300px;
+                    height: 16%;
+                    width: 70%;
                     clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
                     color: white;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-end;
+                    padding-right: 10px;
+                    font-size: 14px;
                 }           
             }
         }
@@ -207,15 +211,18 @@
         background-color: v.$secondary-color;
         .sign-up-title {
             color: v.$primary-color;
-            font-size: 35px;
+            font-size: 14px;
             text-align: center;
             font-weight: 900;
         }
         .sign-up-subtitle {
+            display: flex;
             color: black;
-            font-size: 40px;
+            font-size: 12px;
             font-weight: 700;
             margin-top: 25px;
+            align-items: center;
+            justify-content: center;
         }
         .form-con-sign-up {
             margin-top: 35px;
@@ -241,6 +248,28 @@
                     font-size: 30px;
                 }
             }
+        }
+    }
+
+    @media (min-width:768px) {
+
+        .event-updates {
+
+            .updates-text {
+                font-size: 20px;
+            }
+            .events-buttons-list {
+            flex-direction: row;
+            #upcoming-events-button {
+                font-size: 14px;
+            }
+            #latest-blogs-button {
+                font-size: 14px;
+            }
+            #latest-news-button {
+                font-size: 14px;
+            }
+        }
         }
     }
 
