@@ -94,11 +94,19 @@
             width: 100vw;
         }
         .carousel {
-            z-index: 10;
             display: flex;
             flex-direction: row;
-            width: 2000px;
+            width: max-content;
+            animation: scroll-left 30s linear infinite;
 
+            &:hover {
+                animation-play-state: paused;
+            }
+
+                    @keyframes scroll-left {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
             .event-card {
                 background-color: white;
                 position: relative;
@@ -106,10 +114,11 @@
                 display: flex;
                 width: 580px;
                 height: 580px;
-                box-shadow: 5px 5px 5pc black;
+                box-shadow: 2px 2px 2pc black;
                 margin: 40px;
                 flex-direction: column;
                 border: solid 1px rgba(v.$dark-background, 0.3);
+                container-type: inline-size;
 
                 .sub-card {
                     background-color: v.$primary-color;
@@ -133,13 +142,17 @@
                         top: 420px;
                         left: 20px;
                     }
-                p {
+                .card-text {
                     color: black;
                     position: absolute;
                     top: 470px;
                     font-size: 25px;
                     left: 20px;
-                }
+                    white-space: normal;
+                    p {
+                    width: 80%px;
+                    height: 100px;
+                }}
                 .card-button {
                     background-color: v.$primary-color;
                     position: absolute;
