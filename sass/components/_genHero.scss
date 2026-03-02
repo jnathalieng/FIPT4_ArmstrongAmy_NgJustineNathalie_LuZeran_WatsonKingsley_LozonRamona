@@ -56,8 +56,11 @@
     justify-content: flex-end;
     width: 100vw;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
-    //add background image to this
+    //attach image as background using id, 
+    //change to desktop on media breakpoint
     .hero-triangle {
         position: absolute;
         height: 100%;
