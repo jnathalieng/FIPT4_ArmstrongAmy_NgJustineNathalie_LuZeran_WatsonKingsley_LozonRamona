@@ -45,10 +45,48 @@
     }
 }
 
+.tl-gamma-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: auto;
+    margin: auto;
+
+    h2 {
+        font-size: 300%;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+
+    .gamma-graphic-con {
+        svg {
+            width: 1rem;
+        }
+    }
+
+    .gamma-img-con {
+        padding: 15%;
+        position: relative;
+    }
+
+    .gamma-img {
+        transition: 1s ease;
+    }
+
+    .gamma-img:hover {
+        position: absolute;
+        transform: translate(-5, -5);
+    }
+}
+
 .tl-graphic-con {
     
     svg {
-        width: 1rem;
+        width: 2rem;
     }
 }
 
