@@ -708,9 +708,8 @@ footer .footer-closing-text p {
 }
 
 .read-more {
-  position: absolute;
+  position: relative;
   border-top: solid 10px #B3262E;
-  margin-top: 50px;
   width: 100%;
   bottom: 0;
   left: 0;
