@@ -65,21 +65,27 @@
     .gamma-graphic-con {
         svg {
             width: 1rem;
+            margin: 0
         }
     }
 
     .gamma-img-con {
         padding: 15%;
         position: relative;
+        overflow: hidden;
     }
 
     .gamma-img {
-        transition: 1s ease;
+        transition: transform 1s ease;
+
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
     }
 
     .gamma-img:hover {
-        position: absolute;
-        transform: translate(-5, -5);
+        transform: translate(-1rem, -1rem);
     }
 }
 
