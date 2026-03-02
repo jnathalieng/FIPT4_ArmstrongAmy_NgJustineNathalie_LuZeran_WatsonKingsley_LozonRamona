@@ -683,6 +683,25 @@ footer .footer-closing-text p {
   color: #fff;
 }
 
+#timeline-CTA {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  border-top: 0.5rem solid #B3262E;
+}
+#timeline-CTA a {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-decoration: none;
+  background-color: #B3262E;
+  width: 50%;
+  margin-left: auto;
+}
+#timeline-CTA a h4 {
+  color: #fff;
+}
+
 .text-con {
   background-color: #cecccd;
   padding: 4rem;
@@ -876,19 +895,13 @@ footer .footer-closing-text p {
 }
 
 .gallery-box {
-  background-color: #fff;
+  margin: 2rem;
   width: 100%;
-  aspect-ratio: 1/1;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #3c3c3c;
 }
-.gallery-box svg {
-  padding: 4rem;
-  height: auto;
-}
-.gallery-box p {
-  font-size: 200%;
+
+.gallery-image {
+  width: 100%;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -911,7 +924,7 @@ footer .footer-closing-text p {
   }
   .gallery-box {
     flex: 1;
-    margin-bottom: 2rem;
+    margin: 4rem 0;
   }
 }
 .button {
@@ -1134,16 +1147,12 @@ footer .footer-closing-text p {
   width: 50%;
 }
 
-#quad-container {
-  display: flex;
-  flex-wrap: wrap;
+.canteen-image-con {
+  text-align: center;
 }
 
-.gallery-quad {
-  flex: 0 0 calc(50% - 1rem);
-  background-image: url(../../images/canteen-images/desktop/d-airmans-gallery-1.png);
-  background-size: cover;
-  padding: 2rem;
+#canteen-today-section {
+  border-bottom: 8px solid #B3262E;
 }
 
 @media screen and (min-width: 768px) {
@@ -1151,10 +1160,99 @@ footer .footer-closing-text p {
     width: 100%;
   }
 }
-#timeline-page {
-  color: white;
+#timeline-section {
+  background-color: #fff;
+}
+#timeline-section h1, #timeline-section h2 {
+  color: #B3262E;
+}
+#timeline-section h3, #timeline-section h4 {
+  color: #91B8D9;
+}
+#timeline-section p {
+  color: #000;
 }
 
+#timeline-intro-con {
+  position: relative;
+  margin: 2em 0;
+  padding: 2rem;
+}
+
+.tl-alpha-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tl-beta-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tl-beta-con h2 {
+  font-size: 800%;
+}
+.tl-beta-con h3 {
+  text-align: center;
+  margin: 5%;
+}
+
+.tl-gamma-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+}
+.tl-gamma-con h2 {
+  font-size: 300%;
+}
+.tl-gamma-con h3 {
+  font-size: 100%;
+}
+.tl-gamma-con .gamma-graphic-con svg {
+  width: 1rem;
+}
+.tl-gamma-con .gamma-img-con {
+  padding: 15%;
+  position: relative;
+}
+.tl-gamma-con .gamma-img {
+  transition: 1s ease;
+}
+.tl-gamma-con .gamma-img:hover {
+  position: absolute;
+  transform: translate(-5, -5);
+}
+
+.tl-graphic-con svg {
+  width: 2rem;
+}
+
+.tl-beta-text-con {
+  background-color: #cecccd;
+  margin: 10%;
+  padding: 10%;
+}
+.tl-beta-text-con p {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tl-beta-con h2 {
+    font-size: 1000%;
+  }
+  .tl-graphic-con svg {
+    width: 2rem;
+  }
+  .tl-beta-text-con p {
+    font-size: 150%;
+  }
+}
 #commemoration-page {
   color: white;
 }
@@ -1765,3 +1863,4 @@ footer .footer-closing-text p {
   margin-left: 25px;
   font-size: 30px;
 }
+}/*# sourceMappingURL=main.css.map */
