@@ -38,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 20;
 
     h2 {
         font-size: 800%;
@@ -67,10 +68,13 @@
 
 // GammaCon styling
 .tl-gamma-con {
-    display: flex;
+    // for toggle class
+    display: none;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 10;
     
     padding: auto;
     margin: auto;
@@ -144,6 +148,11 @@
         transform: translateY(calc(20% + 2rem));
         // + 2rem to match the padding: 1rem value of gamma-p's styling
     }
+}
+
+.tl-gamma-con.tlShowHide {
+    // for toggle class
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {

@@ -1433,6 +1433,7 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 20;
 }
 .tl-beta-con h2 {
   font-size: 800%;
@@ -1454,10 +1455,11 @@ footer .footer-closing-text p {
 }
 
 .tl-gamma-con {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   padding: auto;
   margin: auto;
 }
@@ -1510,6 +1512,10 @@ footer .footer-closing-text p {
 }
 .tl-gamma-con .gamma-img-box:hover .gamma-p {
   transform: translateY(calc(20% + 2rem));
+}
+
+.tl-gamma-con.tlShowHide {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
