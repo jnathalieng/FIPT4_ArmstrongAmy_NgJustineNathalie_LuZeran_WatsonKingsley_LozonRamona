@@ -13,9 +13,10 @@ export function tlShowHide() {
                 gammaCon.classList.toggle('tlShowHide');
 
                 if (gammaCon.classList.contains('tlShowHide')) {
-                    gammaCon.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    window.scrollBy({
+                        // static value right now, make dyanmic later
+                        top: 400,
+                        behavior: 'smooth'
                     })
                 }
             });
