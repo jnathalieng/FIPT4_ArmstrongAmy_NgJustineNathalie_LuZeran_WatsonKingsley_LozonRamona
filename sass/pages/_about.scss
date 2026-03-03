@@ -1,31 +1,35 @@
 @use '../abstracts/' as a;
 
-#about-video-section {
+// #about-video-section {
     
-    margin: 1rem;
+//     margin: 1rem;
 
-    h2 {
-        color: a.$primary-color;
+//     h2 {
+//         color: a.$primary-color;
 
-        margin: 1rem;
-    }
+//         margin: 1rem;
+//     }
 
-    p {
-        color: a.$black;
+//     p {
+//         color: a.$black;
 
-        margin: 1rem;
-    }
-}
+//         margin: 1rem;
+//     }
+// }
 
-#about-video-con {
-    border-radius: a.$borderrad;
-    border: 1px solid a.$black;
-    overflow: hidden;
-}
+// #about-video-con {
+//     border-radius: a.$borderrad;
+//     border: 1px solid a.$black;
+//     overflow: hidden;
+// }
 
-#about-video {
-    border-radius: a.$borderrad;
-    padding: 1rem;
+// #about-video {
+//     border-radius: a.$borderrad;
+//     padding: 1rem;
+// }
+
+#about-hero {
+    background-image: url("/images/timeline-images/desktop/d-timeline-1940-december-17.png");
 }
 
 #about-mike {
