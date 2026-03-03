@@ -2043,6 +2043,7 @@ footer .footer-closing-text p {
   }
 }
 #bases-page {
+  background-color: rgba(60, 60, 60, 0.5);
   color: white;
   overflow-x: hidden;
 }
@@ -2050,6 +2051,40 @@ footer .footer-closing-text p {
 #base-hero-section {
   background-image: url("/images/bases-images/map.svg");
   height: 100vh;
+}
+
+.scroll-section h2 {
+  color: white;
+  margin-bottom: 20px;
+  background-color: rgba(60, 60, 60, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 3px black;
+}
+.scroll-section .map-content-box {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.scroll-section .map-content-box p {
+  color: white;
+  background-color: rgba(60, 60, 60, 0.5);
+  padding: 10px;
+  width: 33vw;
+  border-radius: 10px;
+  border: solid 3px black;
+}
+.scroll-section .map-content-box .map-image {
+  width: 33vw;
+  height: 33vw;
+  margin-left: auto;
+  background-color: rgba(60, 60, 60, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 3px black;
+  background-image: url("/images/general-images/AboutHero_Mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #about-hero {
