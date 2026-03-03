@@ -61,7 +61,7 @@ nav {
     display: block;
     text-align: center;
     width: 200px;
-    height: 100px;
+    height: 90px;
     margin: 5px auto 5px 5px;
             a {
             display: flex;
@@ -319,11 +319,21 @@ nav {
 
 .m-l-nav-item:hover {
     div {
-    background-color: v.$secondary-color;
+    animation: fadeBlue 0.5s forwards;
     }
 }
 
 .m-l-nav-item:has(.button-text:hover) {
-    background-color: rgba(white, 0.7);
+animation: fadeWhite 0.5s forwards;
+}
+
+@keyframes fadeBlue {
+    0% {background-color: initial;}
+    100% {background-color: v.$secondary-color;}
+}
+
+@keyframes fadeWhite {
+    0% {background-color: initial;}
+    100% {background-color: rgba(white, 0.7)}
 }
 }
