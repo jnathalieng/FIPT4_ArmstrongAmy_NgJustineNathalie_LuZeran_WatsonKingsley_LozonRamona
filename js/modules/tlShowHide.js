@@ -1,19 +1,25 @@
 export function tlShowHide() {
-    const tlToggleButton = document.querySelector('.tl-toggle-btn');
-    const gammaCons = document.querySelectorAll('.tl-gamma-con');
 
-    tlToggleButton.addEventListener('click', function() {
-        gammaCons.forEach(gammaCon => {
-            gammaCon.classList.toggle('tlShowHide');
-            
-            if (gammaCon.classList.contains('tlShowHide')) {
-                gammaCon.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+    document.querySelectorAll('.tl-toggle-btn').forEach(button => {
         
-        console.log("button clicked");
+        button.addEventListener('click', function() {
+            
+            // apply the "closest" method to specify parent element of the "this"
+            const betaCon = this.closest('.tl-beta-con');
+            // select all gamma-con's (sibling elements of "this") inside the parent beta-con's ^^
+            const gammaCons = betaCon.querySelectorAll('.tl-gamma-con');
+
+            gammaCons.forEach(gammaCon => {
+                gammaCon.classList.toggle('tlShowHide');
+
+                if (gammaCon.classList.contains('tlShowHide')) {
+                    gammaCon.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    })
+                }
+            });
+            console.log("button clicked");
+        })
     })
 }
