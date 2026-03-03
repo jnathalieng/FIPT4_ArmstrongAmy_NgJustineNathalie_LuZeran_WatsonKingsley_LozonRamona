@@ -1,6 +1,4 @@
 export function dossierOpen() {
-
-    // ── set the exact top position you want each dossier to land at ──
     const liftConfig = {
         july: {
             mobile:  -890,
@@ -23,8 +21,6 @@ export function dossierOpen() {
             desktop: -140
         }
     };
-    // ─────────────────────────────────────────────────────────────────
-
     function getBreakpoint() {
         const w = window.innerWidth;
         if (w < 768)  return 'mobile';
@@ -72,18 +68,15 @@ export function dossierOpen() {
                 });
             }
 
-            // measure content height
             gsap.set(dossier, { height: 'auto' });
             const contentHeight = dossier.scrollHeight;
             gsap.set(dossier, { height: 200 });
 
-            // bottom of the stack
             const lastDossier = document.querySelector('#october');
             const lastRect = lastDossier.getBoundingClientRect();
             const conRect = dossierCon.getBoundingClientRect();
             const bottomEdge = lastRect.bottom - conRect.top;
 
-            // targetTop is now taken directly from liftConfig
             const targetTop = getLift(dossier);
             const totalHeight = bottomEdge - targetTop;
 

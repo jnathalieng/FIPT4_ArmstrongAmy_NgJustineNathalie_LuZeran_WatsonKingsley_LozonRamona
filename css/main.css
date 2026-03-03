@@ -1247,7 +1247,7 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: column;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
   width: 80%;
   margin-top: 8px;
@@ -1847,6 +1847,24 @@ footer .footer-closing-text p {
   z-index: 2;
 }
 
+.big-red {
+  position: relative;
+  z-index: 130;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B3262E;
+  height: 100px;
+}
+.big-red .big-red-text {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 0px;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
 .deaths-section {
   position: relative;
   z-index: 120;
@@ -1854,19 +1872,39 @@ footer .footer-closing-text p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  text-align: center;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .deaths-section h2, .deaths-section p {
-  margin: 2rem;
+  width: 90vw;
+  margin-top: 20px;
+  font-size: 20px;
 }
 .deaths-section p {
-  font-size: 150%;
+  font-size: 20px;
+  width: 90vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .deaths-info-con {
   text-align: left;
   display: flex;
+  flex-direction: column;
+}
+.deaths-info-con .deaths-info {
+  width: 90vw;
+}
+.deaths-info-con .deaths-info h3 {
+  width: 100%;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.deaths-info-con .deaths-info p {
+  width: 100%;
+  font-size: 16px;
 }
 
 .deaths-info-bot {
@@ -1874,35 +1912,66 @@ footer .footer-closing-text p {
 }
 
 .canadian-pilots-section {
-  background-color: #666;
+  border-top: solid 5px #B3262E;
 }
 .canadian-pilots-section .canadian-pilots-card {
-  padding: 5rem;
+  width: 100vw;
+  margin: 20px 0px;
 }
 .canadian-pilots-section .pilots-card-content {
   display: flex;
-  padding: 2rem;
-  background-color: #333;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(60, 60, 60, 0.3);
   height: fit-content;
+  align-items: center;
+}
+.canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
+  width: 90%;
+  color: #B3262E;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
+  margin-left: 10%;
+  padding: 10px 0px;
+  border-bottom: solid 5px #91B8D9;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #B3262E;
+  font-size: 20px;
 }
 .canadian-pilots-section .pilots-card-content .pilots-card-img-con {
-  width: 50%;
-  background-color: black;
+  display: flex;
+  width: 75%;
+  height: 90vw;
   text-align: center;
-  padding: 2rem;
+  background-size: cover;
 }
-.canadian-pilots-section .pilots-card-content .pilots-card-img-con img {
-  height: fit-content;
+.canadian-pilots-section .pilots-card-content #ross-smither {
+  background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
+}
+.canadian-pilots-section .pilots-card-content #hugh-riley {
+  background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
+}
+.canadian-pilots-section .pilots-card-content #robert-grassik {
+  background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
+}
+.canadian-pilots-section .pilots-card-content #niel-campbell {
+  background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
+}
+.canadian-pilots-section .pilots-card-content #robert-smith {
+  background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
 }
 .canadian-pilots-section .pilots-card-content .pilots-card-text-con {
-  width: 50%;
+  width: 90%;
   align-items: center;
   margin: auto;
-  padding: 2rem;
 }
 .canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
   margin: 2rem;
   font-size: 120%;
+  color: black;
 }
 
 #bases-page {
