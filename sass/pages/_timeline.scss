@@ -40,6 +40,9 @@
     justify-content: center;
     z-index: 20;
 
+    // border styling
+    border-top: 4px solid a.$primary-color;
+
     h2 {
         font-size: 800%;
     }
@@ -56,9 +59,11 @@
     }
 
     .tl-beta-text-con {
+        display: flex;
+        flex-direction: column;
         background-color: a.$tertiary-color;
-        margin: 10%;
-        padding: 10%;
+        margin: 5%;
+        padding: 5%;
 
         p {
             margin-bottom: 2rem;
@@ -164,6 +169,7 @@
     background-color: transparent;
     fill: a.$primary-color;
     transition: a.$t-time;
+    margin-left: auto;
 }
 
 .tl-toggle-btn:hover {

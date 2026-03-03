@@ -1505,6 +1505,7 @@ footer .footer-closing-text p {
   align-items: center;
   justify-content: center;
   z-index: 20;
+  border-top: 4px solid #B3262E;
 }
 .tl-beta-con h2 {
   font-size: 800%;
@@ -1517,9 +1518,11 @@ footer .footer-closing-text p {
   width: 2rem;
 }
 .tl-beta-con .tl-beta-text-con {
+  display: flex;
+  flex-direction: column;
   background-color: #cecccd;
-  margin: 10%;
-  padding: 10%;
+  margin: 5%;
+  padding: 5%;
 }
 .tl-beta-con .tl-beta-text-con p {
   margin-bottom: 2rem;
@@ -1596,6 +1599,7 @@ footer .footer-closing-text p {
   background-color: transparent;
   fill: #B3262E;
   transition: all 0.3s ease;
+  margin-left: auto;
 }
 
 .tl-toggle-btn:hover {
