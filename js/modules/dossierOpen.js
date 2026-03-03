@@ -1,4 +1,43 @@
 export function dossierOpen() {
+
+    // ── set the exact top position you want each dossier to land at ──
+    const liftConfig = {
+        july: {
+            mobile:  -890,
+            tablet:  -500,
+            desktop: -340
+        },
+        august: {
+            mobile:  -500,
+            tablet:  -300,
+            desktop: -240
+        },
+        september: {
+            mobile:  -500,
+            tablet:  -200,
+            desktop: -140
+        },
+        october: {
+            mobile:  -300,
+            tablet:  -200,
+            desktop: -140
+        }
+    };
+    // ─────────────────────────────────────────────────────────────────
+
+    function getBreakpoint() {
+        const w = window.innerWidth;
+        if (w < 768)  return 'mobile';
+        if (w < 1200) return 'tablet';
+        return 'desktop';
+    }
+
+    function getLift(dossier) {
+        const config = liftConfig[dossier.id];
+        if (!config) return -400;
+        return config[getBreakpoint()];
+    }
+
     const dossiers = document.querySelectorAll('.dossier');
     const dossierCon = document.querySelector('.dossier-con');
     let activeDossier = null;
@@ -13,7 +52,6 @@ export function dossierOpen() {
     dossiers.forEach(dossier => {
         dossier.addEventListener('click', () => {
 
-            // close if already open
             if (activeDossier === dossier) {
                 gsap.to(dossier, {
                     top: originalPositions[dossier.id],
@@ -25,7 +63,6 @@ export function dossierOpen() {
                 return;
             }
 
-            // close previously open dossier
             if (activeDossier) {
                 gsap.to(activeDossier, {
                     top: originalPositions[activeDossier.id],
@@ -35,19 +72,24 @@ export function dossierOpen() {
                 });
             }
 
-            // measure the natural content height
+            // measure content height
             gsap.set(dossier, { height: 'auto' });
-            const fullHeight = dossier.scrollHeight;
-            gsap.set(dossier, { height: 200 }); // reset before animating
+            const contentHeight = dossier.scrollHeight;
+            gsap.set(dossier, { height: 200 });
 
-            // calculate how far up it needs to go so it doesn't overflow
+            // bottom of the stack
+            const lastDossier = document.querySelector('#october');
+            const lastRect = lastDossier.getBoundingClientRect();
             const conRect = dossierCon.getBoundingClientRect();
-            const currentTop = originalPositions[dossier.id];
-            const targetTop = currentTop - fullHeight + 200; // slide up by the extra height needed
+            const bottomEdge = lastRect.bottom - conRect.top;
+
+            // targetTop is now taken directly from liftConfig
+            const targetTop = getLift(dossier);
+            const totalHeight = bottomEdge - targetTop;
 
             gsap.to(dossier, {
                 top: targetTop,
-                height: fullHeight,
+                height: totalHeight,
                 duration: 0.4,
                 ease: 'power2.inOut'
             });
@@ -56,17 +98,19 @@ export function dossierOpen() {
         });
     });
 
-    // recalculate on resize if a dossier is open
     window.addEventListener('resize', () => {
         if (activeDossier) {
-            gsap.set(activeDossier, { height: 'auto' });
-            const fullHeight = activeDossier.scrollHeight;
-            const currentTop = originalPositions[activeDossier.id];
-            const targetTop = currentTop - fullHeight + 200;
+            const lastDossier = document.querySelector('#october');
+            const lastRect = lastDossier.getBoundingClientRect();
+            const conRect = dossierCon.getBoundingClientRect();
+            const bottomEdge = lastRect.bottom - conRect.top;
+
+            const targetTop = getLift(activeDossier);
+            const totalHeight = bottomEdge - targetTop;
 
             gsap.set(activeDossier, {
-                height: fullHeight,
-                top: targetTop
+                top: targetTop,
+                height: totalHeight
             });
         }
     });

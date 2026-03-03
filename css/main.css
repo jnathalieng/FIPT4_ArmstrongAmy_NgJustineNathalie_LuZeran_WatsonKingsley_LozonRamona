@@ -1722,9 +1722,11 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 150px;
   background-color: transparent;
-  padding-top: 2rem;
+  padding-top: 40px;
   position: relative;
+  background-image: url(/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
@@ -1740,7 +1742,6 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .dossier-content {
@@ -1762,14 +1763,17 @@ footer .footer-closing-text p {
 .dossier-tag {
   position: absolute;
   box-shadow: -5px -5px 5px black;
-  height: 60px;
+  height: 40px;
+  width: 150px;
   left: 20px;
   padding: 0 1rem 0 1rem;
   border-radius: 1rem 1rem 0 0;
   background-image: url(../../images/BOB-images/folder-texture.png);
-  top: -60px;
-  font-size: 40px;
+  top: -40px;
+  font-size: 20px;
   color: black;
+  text-align: center;
+  padding-top: 5px;
 }
 
 #july {
@@ -1778,17 +1782,17 @@ footer .footer-closing-text p {
 }
 
 #august {
-  z-index: 60;
+  z-index: 55;
   top: -20px;
 }
 
 #september {
-  z-index: 70;
+  z-index: 60;
   top: 40px;
 }
 
 #october {
-  z-index: 80;
+  z-index: 65;
   top: 100px;
 }
 
@@ -1807,26 +1811,28 @@ footer .footer-closing-text p {
 }
 
 #july-tag {
-  left: 0%;
+  left: 5%;
   z-index: 5;
 }
 
 #aug-tag {
-  left: 25%;
+  left: 20%;
   z-index: 4;
 }
 
 #sept-tag {
-  left: 50%;
+  left: 40%;
   z-index: 3;
 }
 
 #oct-tag {
-  left: 75%;
+  left: 60%;
   z-index: 2;
 }
 
 .deaths-section {
+  position: relative;
+  z-index: 120;
   background-image: url(../../images/BOB-images/desktop/d-bob-losses-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
