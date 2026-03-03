@@ -1,6 +1,7 @@
-    export function navbar_showhide() {
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector(".hamburger-dropdown");
+export function navbar_showhide() {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector(".hamburger-dropdown");
+  const header = document.querySelector(".header");
 
 function closeMenu() {
     if (menu.classList.contains('open')) {
@@ -38,4 +39,24 @@ function closeMenu() {
     }
 }
     hamburger.addEventListener('click', toggleMenu);
+
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const current = window.scrollY;
+
+  if (current > lastScroll && current > 80) {
+    header.classList.add('slideUp');
+  } else if (current < lastScroll) {
+    header.classList.remove('slideUp');
+  }
+
+  lastScroll = current;
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (e.clientY < 80) {   
+    header.classList.remove('slideUp');
+  }
+});
     }
