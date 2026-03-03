@@ -38,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 20;
 
     h2 {
         font-size: 800%;
@@ -67,10 +68,13 @@
 
 // GammaCon styling
 .tl-gamma-con {
-    display: flex;
+    // for toggle class
+    display: none;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 10;
     
     padding: auto;
     margin: auto;
@@ -111,7 +115,6 @@
         z-index: 3;
     }
 
-    // adding #timeline-section for specificity
     .gamma-p {
         transition: transform 1s ease;
 
@@ -147,24 +150,43 @@
     }
 }
 
+.tl-gamma-con.tlShowHide {
+    // for toggle class
+    display: flex;
+}
+
 @media screen and (min-width: 768px) {
     
+    // BETACON
     .tl-beta-con {
         h2 {
             font-size: 1000%;
         }
-    }
 
-    .tl-graphic-con {
-        svg {
-            width: 2rem;
+        
+        .tl-graphic-con {
+            svg {
+                width: 2rem;
+            }
+        }
+
+        .tl-beta-text-con {
+
+            p {
+                font-size: 150%;
+            }
         }
     }
 
-    .tl-beta-text-con {
 
-        p {
-            font-size: 150%;
+    // GAMMACON
+    .tl-gamma-con {
+        h2 {
+            font-size: 600%;
+        }
+
+        h3 {
+            font-size: 200%;
         }
     }
 }
