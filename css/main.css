@@ -1640,13 +1640,8 @@ footer .footer-closing-text p {
     font-size: 200%;
   }
 }
-#commemoration-hero .hero-h1 {
-  font-size: 300%;
-}
-@media screen and (min-width: 768px) {
-  #commemoration-hero .hero-h1 {
-    font-size: 800%;
-  }
+#comm-hero {
+  background-image: url("/images/timeline-images/desktop/d-timeline-1940-june-24.png");
 }
 
 .comm-beta-con {
