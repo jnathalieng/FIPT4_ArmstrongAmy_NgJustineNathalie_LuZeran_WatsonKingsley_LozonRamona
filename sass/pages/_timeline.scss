@@ -158,6 +158,24 @@
     }
 }
 
+// Toggle Button Styling
+.tl-toggle-btn {
+    border: none;
+    background-color: transparent;
+    fill: a.$primary-color;
+    transition: a.$t-time;
+}
+
+.tl-toggle-btn:hover {
+    transform: a.$scale-up;
+    fill: a.$secondary-color;
+}
+
+.tl-toggle-btn:active {
+    transform: a.$scale-down;
+    fill: a.$primary-color;
+}
+
 .tl-gamma-con.tlShowHide {
     // for toggle class
     visibility: visible;

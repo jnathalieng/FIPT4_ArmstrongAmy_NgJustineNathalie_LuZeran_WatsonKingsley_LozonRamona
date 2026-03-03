@@ -1591,6 +1591,23 @@ footer .footer-closing-text p {
   transform: translateY(calc(20% + 2rem));
 }
 
+.tl-toggle-btn {
+  border: none;
+  background-color: transparent;
+  fill: #B3262E;
+  transition: all 0.3s ease;
+}
+
+.tl-toggle-btn:hover {
+  transform: scale(110%);
+  fill: #91B8D9;
+}
+
+.tl-toggle-btn:active {
+  transform: scale(90%);
+  fill: #B3262E;
+}
+
 .tl-gamma-con.tlShowHide {
   visibility: visible;
   height: auto;
@@ -2266,4 +2283,4 @@ footer .footer-closing-text p {
   #wartime-hero {
     background-image: url("/images/canteen-images/desktop/d-airmans-gallery-4.png");
   }
-}
+}/*# sourceMappingURL=main.css.map */
