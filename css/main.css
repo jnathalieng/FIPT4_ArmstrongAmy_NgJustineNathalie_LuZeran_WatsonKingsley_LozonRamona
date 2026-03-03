@@ -1680,14 +1680,19 @@ footer .footer-closing-text p {
 }
 #BOB-page {
   color: white;
-  background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
 }
 #BOB-page .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20rem 10rem;
+  padding: 200px 5px;
+  background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
   text-align: right;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 #BOB-page .hero h2 {
   font-size: 200%;
@@ -1696,8 +1701,9 @@ footer .footer-closing-text p {
 }
 #BOB-page .hero p {
   text-align: left;
-  margin: 2rem;
+  margin: 5px;
   font-size: 150%;
+  width: 90vw;
 }
 #BOB-page .hero #skipQuote {
   background-color: transparent;
@@ -1727,42 +1733,43 @@ footer .footer-closing-text p {
   box-shadow: -5px -5px 5px black;
   position: absolute;
   width: 100vw;
-  height: 200px;
+  height: fit-content;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.dossier-content {
+  color: black;
+  width: 90%;
+  font-size: 18px;
 }
 
 .dossier:hover {
-  animation: up 0.25s forwards;
+  transform: translateY(-40px);
+  transition: all 0.5s ease;
 }
 
 .dossier:hover ~ .dossier {
-  animation: down 0.25s forwards;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
 }
 
-@keyframes up {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-40px);
-  }
-}
-@keyframes down {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(30px);
-  }
-}
 .dossier-tag {
   position: absolute;
   box-shadow: -5px -5px 5px black;
-  height: 2rem;
+  height: 60px;
   left: 20px;
   padding: 0 1rem 0 1rem;
   border-radius: 1rem 1rem 0 0;
   background-image: url(../../images/BOB-images/folder-texture.png);
-  top: -30px;
+  top: -60px;
+  font-size: 40px;
+  color: black;
 }
 
 #july {
