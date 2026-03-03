@@ -2048,27 +2048,8 @@ footer .footer-closing-text p {
   overflow-x: hidden;
 }
 
-#about-video-section {
-  margin: 1rem;
-}
-#about-video-section h2 {
-  color: #B3262E;
-  margin: 1rem;
-}
-#about-video-section p {
-  color: #000;
-  margin: 1rem;
-}
-
-#about-video-con {
-  border-radius: 2rem;
-  border: 1px solid #000;
-  overflow: hidden;
-}
-
-#about-video {
-  border-radius: 2rem;
-  padding: 1rem;
+#about-hero {
+  background-image: url("/images/timeline-images/desktop/d-timeline-1940-december-17.png");
 }
 
 #about-mike {
