@@ -1,17 +1,9 @@
 @use '../abstracts' as a;
 
-#commemoration-hero {
-
-    .hero-h1 {
-        font-size: 300%;
-    }
-
-    @media screen and (min-width: 768px) {
-        .hero-h1 {
-            font-size: 800%;
-        }
-    }
+#comm-hero {
+    background-image: url("/images/timeline-images/desktop/d-timeline-1940-june-24.png");
 }
+
 
 // EXPANDABLE SELECTION STYLING
 
