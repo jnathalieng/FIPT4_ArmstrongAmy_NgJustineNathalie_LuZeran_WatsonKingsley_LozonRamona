@@ -734,6 +734,7 @@ footer .footer-closing-text p {
   bottom: 0;
   left: 0;
   text-align: right;
+  z-index: 99;
 }
 .read-more .read-more-button {
   background-color: #B3262E;
@@ -1482,6 +1483,7 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 20;
 }
 .tl-beta-con h2 {
   font-size: 800%;
@@ -1503,10 +1505,11 @@ footer .footer-closing-text p {
 }
 
 .tl-gamma-con {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   padding: auto;
   margin: auto;
 }
@@ -1561,15 +1564,25 @@ footer .footer-closing-text p {
   transform: translateY(calc(20% + 2rem));
 }
 
+.tl-gamma-con.tlShowHide {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .tl-beta-con h2 {
     font-size: 1000%;
   }
-  .tl-graphic-con svg {
+  .tl-beta-con .tl-graphic-con svg {
     width: 2rem;
   }
-  .tl-beta-text-con p {
+  .tl-beta-con .tl-beta-text-con p {
     font-size: 150%;
+  }
+  .tl-gamma-con h2 {
+    font-size: 600%;
+  }
+  .tl-gamma-con h3 {
+    font-size: 200%;
   }
 }
 #commemoration-hero .hero-h1 {
@@ -1581,6 +1594,60 @@ footer .footer-closing-text p {
   }
 }
 
+.comm-beta-con {
+  position: relative;
+}
+.comm-beta-con .comm-beta-headers h2, .comm-beta-con .comm-beta-headers h3 {
+  color: #B3262E;
+  margin: 2rem;
+  z-index: 2;
+}
+.comm-beta-con .comm-beta-img-box {
+  position: relative;
+}
+.comm-beta-con .comm-beta-img-box picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.comm-beta-con .comm-beta-img-box picture img {
+  width: 50%;
+  height: auto;
+  z-index: 2;
+}
+.comm-beta-con .comm-beta-img-box .comm-beta-p {
+  position: block;
+  color: #000;
+  padding: 2rem 1rem;
+  z-index: 2;
+}
+.comm-beta-con .comm-beta-img-box .comm-beta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: #cecccd;
+}
+
+@media screen and (min-width: 768px) {
+  .comm-beta-con .comm-beta-headers h2, .comm-beta-con .comm-beta-headers h3 {
+    margin: 4rem 4rem 0 4rem;
+  }
+  .comm-beta-con .comm-beta-img-box picture {
+    flex-direction: row;
+  }
+  .comm-beta-con .comm-beta-img-box picture img {
+    width: 30%;
+    margin: 6rem;
+  }
+  .comm-beta-con .comm-beta-img-box .comm-beta-p {
+    font-size: 150%;
+  }
+  .comm-beta-con .comm-beta-img-box .comm-beta-bg {
+    inset: 30% 0;
+  }
+}
 #BOB-page {
   color: white;
   background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
@@ -2156,3 +2223,4 @@ footer .footer-closing-text p {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+}/*# sourceMappingURL=main.css.map */

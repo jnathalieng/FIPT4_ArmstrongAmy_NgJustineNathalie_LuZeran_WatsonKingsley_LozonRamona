@@ -1,4 +1,4 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
 #commemoration-hero {
 
@@ -13,45 +13,83 @@
     }
 }
 
-// #commemoration-page {
-//     color: white;
+// EXPANDABLE SELECTION STYLING
 
-//     .hero {
-//         background-image: url(/images/comm-images/comm-hero-placeholder.png);
-//         background-size: cover;
-//         background-position: center;
-//         min-height: 100vh;
-//     }
+.comm-beta-con {
+    position: relative;
+    
+    .comm-beta-headers {
+        // BetaText Styling
+        h2, h3 {
+            color: a.$primary-color;
+            margin: 2rem;
+            z-index: 2;
+        }
+    }
 
-//     .hero h2, .hero p {
-//         top: 50%;
-//         text-align: center;
-//     }
-// }
+    .comm-beta-img-box {
+        position: relative;
 
-// .comm-mini {
-//     background-color: abstracts.$primary-color;
-//     padding: 1rem;
+        picture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-//     h2, p {
-//         margin: 1rem;
-//         text-align: center;
-//     }
-// }
+            // adjust this for image padding
+            padding: 2rem;
 
-// .comm-card {
-//     display: flex;
-//     background-color: #666;
-//     max-height: 50vh;
-//     justify-content: space-between;
+            img {
+                width: 50%;
+                height: auto;
+                z-index: 2;
+            }
+        }
 
-//     .comm-card-info {
-//         margin: auto;
-//         background-color: #333;
-//     }
+        .comm-beta-p {
+            position: block;
+            color: a.$black;
+            padding: 2rem 1rem;    
+            z-index: 2;
+        }
 
-//     .comm-img-card img {
-//         height: 100%;
-//     }
-// }
+        .comm-beta-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background-color: a.$tertiary-color;
+        }
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .comm-beta-con {
+        
+        .comm-beta-headers {
+            // BetaText Styling
+            h2, h3 {
+                margin: 4rem 4rem 0 4rem;
+            }
+        }
+
+        .comm-beta-img-box {
+
+            picture {
+                flex-direction: row;
+                img {
+                    width: 30%;
+                    // internal margin between img and p
+                    margin: 6rem;
+                }
+            }
+
+            .comm-beta-p {
+                font-size: 150%;
+            }
+
+            .comm-beta-bg {
+                inset: 30% 0;
+            }
+        }
+    }
+}
