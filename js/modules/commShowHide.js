@@ -13,7 +13,8 @@ export function commShowHide() {
                 commGamma.classList.toggle('commShowHide');
 
                 if (commGamma.classList.contains('commShowHide')) {
-                    commGamma.scrollIntoView({
+                    window.scrollBy({
+                        top: 200,
                         behavior: 'smooth'
                     })
                 }
