@@ -7,7 +7,7 @@ export function commShowHide() {
             const commBeta = this.closest('.comm-beta-con');
 
             // reference closest parent ^^ again
-            const commGammaCons = commBeta.querySelectorAll('.comm-gamma-con');
+            const commGammaCons = commBeta.querySelectorAll('.comm-gamma-con, .comm-delta-con-wrapper');
 
             commGammaCons.forEach(commGamma => {
                 commGamma.classList.toggle('commShowHide');

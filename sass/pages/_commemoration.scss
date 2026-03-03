@@ -99,11 +99,65 @@
     }
 }
 
+// DeltaCon Styling
+.comm-delta-con-wrapper {
+    display: none;
+
+    h2 {
+        color: a.$primary-color;
+        margin: 5%;
+        border-top: 2px solid a.$primary-color;
+    }
+}
+
+.comm-delta-con {
+    
+    // formatting
+    background-color: a.$tertiary-color;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 4rem;
+
+    .comm-delta-img-con {
+        width: 60%;
+        .comm-delta-img {
+            width: 100%;
+        }
+    }
+
+    .comm-delta-text-con {
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+
+        .title-span, h2, h3 {
+            color: a.$primary-color;
+        }
+
+        .label-span {
+            font-weight: bold;
+        }
+
+        h2 {
+            border-bottom: 2px solid a.$secondary-color;
+            width: fit-content;
+        }
+
+        p {
+            color: a.$black;
+        }
+    }
+}
+
 .comm-gamma-con.commShowHide {
     display: flex;
 }
 
-
+.comm-delta-con-wrapper.commShowHide  {
+    display: block;
+}
 
 @media screen and (min-width: 768px) {
     // BetaCon styling
@@ -154,6 +208,33 @@
         }
 
         .comm-gamma-text-con {
+            margin: 5%;
+
+            h3 {
+                font-size: 150%;
+                margin: 1rem 0;
+            }
+
+            p {
+                margin: 0.25rem 0;
+            }
+        }
+    }
+
+    // DeltaCon styling
+    .comm-delta-con {
+        display: flex;
+        flex-direction: row;
+        padding: 5% 10%;
+
+        .comm-delta-img-con {
+            width: 30%;
+            .comm-delta-img {
+                width: 100%;
+            }
+        }
+
+        .comm-delta-text-con {
             margin: 5%;
 
             h3 {
