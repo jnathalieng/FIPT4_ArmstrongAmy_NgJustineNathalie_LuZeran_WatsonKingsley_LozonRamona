@@ -1486,6 +1486,10 @@ footer .footer-closing-text p {
   color: #000;
 }
 
+#timeline-hero {
+  background-image: url("/images/general-images/LondonAirAge_Desktop.png");
+}
+
 #timeline-intro-con {
   position: relative;
   margin: 2em 0;
@@ -2049,7 +2053,7 @@ footer .footer-closing-text p {
 }
 
 #about-hero {
-  background-image: url("/images/timeline-images/desktop/d-timeline-1940-december-17.png");
+  background-image: url("/images/general-images/AboutHero_Desktop.png");
 }
 
 #about-mike {
@@ -2162,7 +2166,8 @@ footer .footer-closing-text p {
   }
 }
 #event-hero-section {
-  background-image: url("/images/canteen-images/desktop/d-airmans-420-squad.png");
+  background-position: top;
+  background-image: url("/images/general-images/News&Events_Desktop.png");
 }
 
 .event-updates {
