@@ -4,6 +4,7 @@ import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
 import { tlShowHide } from "./modules/tlShowHide.js";
+import { commShowHide } from "./modules/commShowHide.js";
 
 navbar_showhide();
 
@@ -28,6 +29,7 @@ else if(document.body.dataset.page === "canteen") {
 }
 else if(document.body.dataset.page === "commemmoration") {
     console.log('lest we forget');
+    commShowHide();
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
