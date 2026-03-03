@@ -57,6 +57,16 @@
 
 // GammaCon Styling
 .comm-gamma-con {
+
+    // toggle class style
+    visibility: hidden;
+    height: 0;
+    transform: translateY(-20%);
+    opacity: 0;
+    overflow: hidden;
+    transition: a.$t-time;
+
+    // formatting
     background-color: a.$tertiary-color;
     display: flex;
     flex-direction: column;
@@ -94,6 +104,14 @@
             color: a.$black;
         }
     }
+}
+
+.comm-gamma-con.commShowHide {
+    // toggle class styling
+    visibility: visible;
+    height: auto;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
