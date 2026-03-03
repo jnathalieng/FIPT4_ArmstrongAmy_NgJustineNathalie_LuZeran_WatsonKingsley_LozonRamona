@@ -3,10 +3,6 @@
 @use '../abstracts/variables' as v;
 @use '../base/typography';
 
-#wartime-hero {
-    background-image: url("/images/comm-images/desktop/d-comm-plane.png");
-}
-
 .gray-content-box {
     position: relative;
     display: flex;
