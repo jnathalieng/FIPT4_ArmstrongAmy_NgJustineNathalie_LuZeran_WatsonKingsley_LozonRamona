@@ -3,7 +3,7 @@ import { contactForm } from "./modules/contactForm.js";
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
-
+import { tlShowHide } from "./modules/tlShowHide.js";
 
 navbar_showhide();
 
@@ -12,6 +12,7 @@ if(document.body.dataset.page === "home") {
 }
 else if(document.body.dataset.page === "timeline") {
     console.log('a journey through time!');
+    tlShowHide();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
