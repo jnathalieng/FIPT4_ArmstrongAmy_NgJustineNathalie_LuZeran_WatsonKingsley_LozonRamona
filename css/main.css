@@ -2047,6 +2047,11 @@ footer .footer-closing-text p {
   overflow-x: hidden;
 }
 
+#base-hero-section {
+  background-image: url("/images/bases-images/map.svg");
+  height: 100vh;
+}
+
 #about-hero {
   background-image: url("/images/general-images/AboutHero_Desktop.png");
 }
