@@ -1978,6 +1978,92 @@ footer .footer-closing-text p {
   color: black;
 }
 
+.read-more #view-remembrance {
+  min-width: 320px;
+  font-size: 16px;
+}
+
+#discover-aircraft-cta {
+  border-bottom: solid 50px #91B8D9;
+}
+
+#explore-aircraft-button {
+  font-size: 18px;
+}
+
+#aircraft-carousel {
+  padding-bottom: 100px;
+}
+
+@media (min-width: 1000px) {
+  .canadian-pilots-section {
+    border-top: solid 5px #B3262E;
+  }
+  .canadian-pilots-section .canadian-pilots-card {
+    width: 100vw;
+    margin: 20px 0px;
+  }
+  .canadian-pilots-section .pilots-card-content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgba(60, 60, 60, 0.3);
+    height: fit-content;
+    align-items: center;
+  }
+  .canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
+    display: none;
+  }
+  .canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
+    display: none;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-img-con {
+    display: flex;
+    width: 40%;
+    height: 33vw;
+    text-align: center;
+    background-size: cover;
+  }
+  .canadian-pilots-section .pilots-card-content #ross-smither {
+    background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
+  }
+  .canadian-pilots-section .pilots-card-content #hugh-riley {
+    background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
+  }
+  .canadian-pilots-section .pilots-card-content #robert-grassik {
+    background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
+  }
+  .canadian-pilots-section .pilots-card-content #niel-campbell {
+    background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
+  }
+  .canadian-pilots-section .pilots-card-content #robert-smith {
+    background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con {
+    width: 90%;
+    margin: 0px 5% 30px 5%;
+    align-items: center;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con .pilot-card-rank-desk {
+    width: 100%;
+    margin: 30px 0% 30px 0%;
+    color: #B3262E;
+    font-size: 24px;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con .pilot-card-name-desk {
+    margin: 30px 0% 30px 0%;
+    padding-bottom: 20px;
+    border-bottom: solid 5px #91B8D9;
+    width: 90%;
+    color: #B3262E;
+    font-size: 60px;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
+    margin: 0px;
+    font-size: 120%;
+    color: black;
+  }
+}
 #bases-page {
   color: white;
   overflow-x: hidden;
