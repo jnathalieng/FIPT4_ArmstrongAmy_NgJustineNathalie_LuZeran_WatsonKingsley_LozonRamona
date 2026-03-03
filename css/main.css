@@ -745,7 +745,7 @@ footer .footer-closing-text p {
   right: 0px;
   top: -43px;
   height: 30px;
-  min-width: 200px;
+  min-width: 250px;
   clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
   color: white;
   align-items: center;
@@ -1184,7 +1184,7 @@ footer .footer-closing-text p {
     font-size: 20px;
   }
 }
-.gray-content-box {
+.color-content-box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1192,8 +1192,15 @@ footer .footer-closing-text p {
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 100px;
-  background-color: rgba(60, 60, 60, 0.3);
   border-bottom: solid 5px #B3262E;
+}
+
+.gray-background {
+  background-color: rgba(60, 60, 60, 0.3);
+}
+
+.white-background {
+  background-color: white;
 }
 
 .content-box-title {
@@ -1223,8 +1230,6 @@ footer .footer-closing-text p {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: black;
   font-size: 18px;
   font-weight: bolder;
@@ -2185,16 +2190,53 @@ footer .footer-closing-text p {
 }
 
 #training-pic {
+  position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
+  border-bottom: solid 5px #B3262E;
 }
 
 .blurry-backdrop {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/);
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/general-images/1939-1940 Group of Provisional Pilot Officers (RCAF) Ron Nelson A18-016-027.jpg");
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.focused-pic {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background-image: url("/images/general-images/1939-1940 Group of Provisional Pilot Officers (RCAF) Ron Nelson A18-016-027.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wte-map {
+  background-image: url("/images/bases-images/map.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 60vw;
+  width: 100vw;
+}
+
+#explore-remembrance {
+  width: 500px;
 }
 
 @media (min-width: 768px) {
