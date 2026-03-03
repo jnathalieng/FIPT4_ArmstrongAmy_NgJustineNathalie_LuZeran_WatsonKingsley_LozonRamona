@@ -2172,55 +2172,24 @@ footer .footer-closing-text p {
   }
 }
 #wartime-hero {
-  background-image: url("/images/comm-images/desktop/d-comm-plane.png");
+  background-image: url("/images/canteen-images/mobile/m-airmans-gallery-4.png");
 }
 
-.gray-content-box {
+#training-pic {
+  width: 100vw;
+  height: 80vh;
+}
+
+.blurry-backdrop {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 100px;
-  background-color: rgba(60, 60, 60, 0.3);
-  border-bottom: solid 5px #B3262E;
+  background-image: url(/images/);
 }
 
-.content-box-title {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #B3262E;
-  width: 80%;
-  margin-top: 30px;
-  margin-bottom: 20px;
+@media (min-width: 768px) {
+  #wartime-hero {
+    background-image: url("/images/canteen-images/desktop/d-airmans-gallery-4.png");
+  }
 }
-
-.content-box-subtitle {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #B3262E;
-  width: 80%;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-
-.content-box-text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-size: 18px;
-  font-weight: bolder;
-  width: 80%;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-}/*# sourceMappingURL=main.css.map */
