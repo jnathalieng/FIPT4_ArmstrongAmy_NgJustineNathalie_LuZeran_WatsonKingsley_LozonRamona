@@ -68,9 +68,17 @@
 
 // GammaCon styling
 .tl-gamma-con {
-    // for toggle class
-    display: none;
 
+    // animation styling
+    visibility: hidden;
+    height: 0;
+    transform: translateY(-20%);
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+
+    // formatting styling
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -152,7 +160,10 @@
 
 .tl-gamma-con.tlShowHide {
     // for toggle class
-    display: flex;
+    visibility: visible;
+    height: auto;
+    transform: translateY(0);
+    opacity: 1;    
 }
 
 @media screen and (min-width: 768px) {

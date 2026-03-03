@@ -1505,7 +1505,13 @@ footer .footer-closing-text p {
 }
 
 .tl-gamma-con {
-  display: none;
+  visibility: hidden;
+  height: 0;
+  transform: translateY(-20%);
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1565,7 +1571,10 @@ footer .footer-closing-text p {
 }
 
 .tl-gamma-con.tlShowHide {
-  display: flex;
+  visibility: visible;
+  height: auto;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
