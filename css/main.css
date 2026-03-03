@@ -1681,8 +1681,8 @@ footer .footer-closing-text p {
 }
 
 .comm-gamma-con {
+  display: none;
   background-color: #cecccd;
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 4rem 0;
@@ -1714,7 +1714,7 @@ footer .footer-closing-text p {
 }
 
 .comm-gamma-con.commShowHide {
-  display: none;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {

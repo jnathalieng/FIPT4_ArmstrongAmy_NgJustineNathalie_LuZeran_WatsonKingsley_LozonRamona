@@ -57,10 +57,11 @@
 
 // GammaCon Styling
 .comm-gamma-con {
+
+    display: none;
     
     // formatting
     background-color: a.$tertiary-color;
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 4rem 0;
@@ -99,8 +100,10 @@
 }
 
 .comm-gamma-con.commShowHide {
-    display: none;
+    display: flex;
 }
+
+
 
 @media screen and (min-width: 768px) {
     // BetaCon styling
