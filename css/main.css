@@ -1681,12 +1681,6 @@ footer .footer-closing-text p {
 }
 
 .comm-gamma-con {
-  visibility: hidden;
-  height: 0;
-  transform: translateY(-20%);
-  opacity: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
   background-color: #cecccd;
   display: flex;
   flex-direction: column;
@@ -1720,10 +1714,7 @@ footer .footer-closing-text p {
 }
 
 .comm-gamma-con.commShowHide {
-  visibility: visible;
-  height: auto;
-  transform: translateY(0);
-  opacity: 1;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

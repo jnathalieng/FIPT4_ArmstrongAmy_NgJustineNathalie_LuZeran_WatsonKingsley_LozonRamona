@@ -57,15 +57,7 @@
 
 // GammaCon Styling
 .comm-gamma-con {
-
-    // toggle class style
-    visibility: hidden;
-    height: 0;
-    transform: translateY(-20%);
-    opacity: 0;
-    overflow: hidden;
-    transition: a.$t-time;
-
+    
     // formatting
     background-color: a.$tertiary-color;
     display: flex;
@@ -107,11 +99,7 @@
 }
 
 .comm-gamma-con.commShowHide {
-    // toggle class styling
-    visibility: visible;
-    height: auto;
-    transform: translateY(0);
-    opacity: 1;
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
