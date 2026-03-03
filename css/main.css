@@ -2065,6 +2065,7 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: row;
   width: 100vw;
+  margin-left: 3vw;
 }
 .scroll-section .map-content-box p {
   color: white;
@@ -2078,6 +2079,7 @@ footer .footer-closing-text p {
   width: 33vw;
   height: 33vw;
   margin-left: auto;
+  margin-right: 3vw;
   background-color: rgba(60, 60, 60, 0.5);
   padding: 20px;
   border-radius: 10px;
