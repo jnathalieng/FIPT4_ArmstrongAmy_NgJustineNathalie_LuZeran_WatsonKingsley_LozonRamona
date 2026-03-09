@@ -1,35 +1,46 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
-.timeline-section {
-    position: relative;
+
+@keyframes stacking {
+    0% {
+        transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+    }
+
+    33% {
+        transform: translateY(20%) translateZ(-20%) rotateX(90deg) scale(0.5);
+    }
+
+    66% {
+        transform: translateY(10%) translateZ(-10%) rotateX(45deg) scale(0.75);
+    }
+
+    100% {
+        transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+    }
 }
 
-.tl-alpha-con {
-    max-height: 100vh;
-    overflow-y: auto;
-    scroll-timeline-name: --tl-scroll;
-    scroll-timeline-axis: block;
-    position: relative;
-    // add some possible padding
-    background-color: red;
+// Specific Beta Scrolling Index
+
+#tl-beta-1 {
+    --beta-i: 1;
 }
 
-#tl-scroll-prog-con {
-    position: sticky;
-    
+#tl-beta-2 {
+    --beta-i: 2;
 }
 
-#tl-scroll-prog-fill {
-    color: black;
-    background-color: red;
+#tl-beta-3 {
+    --beta-i: 3;
 }
 
-#tl-scroll-markers-con {
-    background-color: blue;
+#tl-beta-4 {
+    --beta-i: 4
 }
 
-.tl-marker {
-    background-color: yellow;
-    color: black;
-    text-decoration: none;
+#tl-beta-5 {
+    --beta-i: 5;
+}
+
+#tl-beta-6 {
+    --beta-i: 6;
 }

@@ -1347,36 +1347,42 @@ footer .footer-closing-text p {
   z-index: 100;
 }
 
-.timeline-section {
-  position: relative;
+@keyframes stacking {
+  0% {
+    transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+  }
+  33% {
+    transform: translateY(20%) translateZ(-20%) rotateX(90deg) scale(0.5);
+  }
+  66% {
+    transform: translateY(10%) translateZ(-10%) rotateX(45deg) scale(0.75);
+  }
+  100% {
+    transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+  }
+}
+#tl-beta-1 {
+  --beta-i: 1;
 }
 
-.tl-alpha-con {
-  max-height: 100vh;
-  overflow-y: auto;
-  scroll-timeline-name: --tl-scroll;
-  scroll-timeline-axis: block;
-  position: relative;
-  background-color: red;
+#tl-beta-2 {
+  --beta-i: 2;
 }
 
-#tl-scroll-prog-con {
-  position: sticky;
+#tl-beta-3 {
+  --beta-i: 3;
 }
 
-#tl-scroll-prog-fill {
-  color: black;
-  background-color: red;
+#tl-beta-4 {
+  --beta-i: 4 ;
 }
 
-#tl-scroll-markers-con {
-  background-color: blue;
+#tl-beta-5 {
+  --beta-i: 5;
 }
 
-.tl-marker {
-  background-color: yellow;
-  color: black;
-  text-decoration: none;
+#tl-beta-6 {
+  --beta-i: 6;
 }
 
 #date-and-blog-section {
@@ -1533,6 +1539,10 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #91B8D9;
+  perspective: 1200px;
+  view-timeline-name: --scrolling-stack;
+  view-timeline-axis: block;
 }
 
 .tl-beta-con {
@@ -1541,7 +1551,10 @@ footer .footer-closing-text p {
   align-items: center;
   justify-content: center;
   z-index: 20;
-  border-top: 4px solid #B3262E;
+  background-color: #fff;
+  border: 4px solid #B3262E;
+  border-radius: 2rem;
+  width: 90%;
 }
 .tl-beta-con h2 {
   font-size: 800%;
@@ -1562,6 +1575,16 @@ footer .footer-closing-text p {
 }
 .tl-beta-con .tl-beta-text-con p {
   margin-bottom: 2rem;
+}
+.tl-beta-con {
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 50vh;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  animation: stacking 1s linear both;
+  animation-timeline: --scrolling-stack;
+  animation-range: entry 0% exit 50%;
 }
 
 .tl-gamma-con {
