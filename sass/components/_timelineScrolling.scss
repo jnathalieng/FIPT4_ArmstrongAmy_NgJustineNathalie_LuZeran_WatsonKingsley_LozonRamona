@@ -16,9 +16,20 @@
 
 #tl-scroll-prog-con {
     position: sticky;
+    
 }
 
 #tl-scroll-prog-fill {
     color: black;
     background-color: red;
+}
+
+#tl-scroll-markers-con {
+    background-color: blue;
+}
+
+.tl-marker {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
 }
