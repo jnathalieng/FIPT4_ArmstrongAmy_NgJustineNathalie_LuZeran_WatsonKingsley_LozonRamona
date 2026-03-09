@@ -56,13 +56,13 @@
 .tl-alpha-con {
     perspective: 1200px;
 
-    view-timeline-name: --scrollling-stack;
+    view-timeline-name: --scrolling-stack;
     view-timeline-axis: block;
 }
 
 .tl-beta-con {
     position: sticky;
-    top: 2rem;
+    top: calc(var(--beta-i) * 2rem);
 
     overflow: hidden;
     transform-style: preserve-3d;
@@ -88,4 +88,30 @@
     100% {
         transform: translateY(0) translateZ(0) rotateX(0) scale(1);
     }
+}
+
+// Specific Beta Scrolling Index
+
+#1909-beta {
+    --beta-i: 1;
+}
+
+#1918-beta {
+    --beta-i: 2;
+}
+
+#1927-beta {
+    --beta-i: 3;
+}
+
+#1928-beta {
+    --beta-i: 4
+}
+
+#1930-beta {
+    --beta-i: 5;
+}
+
+#1940-beta {
+    --beta-i: 6;
 }
