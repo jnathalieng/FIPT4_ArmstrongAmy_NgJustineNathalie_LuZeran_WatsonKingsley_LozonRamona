@@ -1347,23 +1347,6 @@ footer .footer-closing-text p {
   z-index: 100;
 }
 
-.tl-alpha-con {
-  perspective: 1200px;
-  view-timeline-name: --scrolling-stack;
-  view-timeline-axis: block;
-}
-
-.tl-beta-con {
-  position: sticky;
-  top: 8rem;
-  margin-bottom: 50vh;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  animation: stacking 1s linear both;
-  animation-timeline: --scrolling-stack;
-  animation-range: entry 0% exit 50%;
-}
-
 @keyframes stacking {
   0% {
     transform: translateY(0) translateZ(0) rotateX(0) scale(1);
@@ -1557,6 +1540,9 @@ footer .footer-closing-text p {
   align-items: center;
   justify-content: center;
   background-color: #91B8D9;
+  perspective: 1200px;
+  view-timeline-name: --scrolling-stack;
+  view-timeline-axis: block;
 }
 
 .tl-beta-con {
@@ -1589,6 +1575,16 @@ footer .footer-closing-text p {
 }
 .tl-beta-con .tl-beta-text-con p {
   margin-bottom: 2rem;
+}
+.tl-beta-con {
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 50vh;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  animation: stacking 1s linear both;
+  animation-timeline: --scrolling-stack;
+  animation-range: entry 0% exit 50%;
 }
 
 .tl-gamma-con {
