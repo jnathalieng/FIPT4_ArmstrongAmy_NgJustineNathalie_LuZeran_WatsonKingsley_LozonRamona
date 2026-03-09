@@ -1,4 +1,4 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
 .timeline-section {
     position: relative;
@@ -16,12 +16,18 @@
 
 #tl-scroll-prog-con {
     position: sticky;
-    
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
 #tl-scroll-prog-fill {
-    color: black;
-    background-color: red;
+    width: 1rem;
+    height: 100%;
+    background-color: cyan;
+    border-radius: a.$borderrad;
 }
 
 #tl-scroll-markers-con {
