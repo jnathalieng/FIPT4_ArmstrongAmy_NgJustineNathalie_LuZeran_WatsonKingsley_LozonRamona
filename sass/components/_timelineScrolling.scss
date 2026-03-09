@@ -1,41 +1,91 @@
 @use '../abstracts' as a;
 
-.timeline-section {
-    position: relative;
-}
+// .timeline-section {
+//     position: relative;
+// }
 
+// .tl-alpha-con {
+//     max-height: 100vh;
+//     overflow-y: auto;
+//     scroll-timeline-name: --tl-scroll;
+//     scroll-timeline-axis: block;
+//     position: relative;
+//     // add some possible padding
+//     background-color: red;
+// }
+
+// #tl-scroll-prog-con {
+//     position: sticky;
+//     z-index: 100;
+//     display: flex;
+//     flex-direction: column;
+//     height: 100px;
+//     background-color: pink;
+//     top: 20px;
+// }
+
+// @keyframes tl-scroll-progress {
+//     from {
+//         transform: scaleY(0);
+//     } to {
+//         transform: scaleY(1);
+//     }
+// }
+
+// #tl-scroll-prog-fill {
+
+//     width: 1rem;
+//     height: 100%;
+//     background-color: cyan;
+//     border-radius: a.$borderrad;
+
+//     transform-origin: top center;
+//     animation-timeline: --tl-scroll;
+//     animation: tl-scroll-progress linear forwards;
+// }
+
+// #tl-scroll-markers-con {
+//     background-color: blue;
+// }
+
+// .tl-marker {
+//     background-color: yellow;
+//     color: black;
+//     text-decoration: none;
+// }
 .tl-alpha-con {
-    max-height: 100vh;
-    overflow-y: auto;
-    scroll-timeline-name: --tl-scroll;
-    scroll-timeline-axis: block;
-    position: relative;
-    // add some possible padding
-    background-color: red;
+    perspective: 1200px;
+
+    view-timeline-name: --scrollling-stack;
+    view-timeline-axis: block;
 }
 
-#tl-scroll-prog-con {
+.tl-beta-con {
     position: sticky;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    top: 2rem;
+
+    overflow: hidden;
+    transform-style: preserve-3d;
+    animation: stacking 1s linear both;
+
+    animation-timeline: --scrolling-stack;
+    animation-range: entry 0% exit 50%;
 }
 
-#tl-scroll-prog-fill {
-    width: 1rem;
-    height: 100%;
-    background-color: cyan;
-    border-radius: a.$borderrad;
-}
+@keyframes stacking {
+    0% {
+        transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+    }
 
-#tl-scroll-markers-con {
-    background-color: blue;
-}
+    33% {
+        transform: translateY(20%) translateZ(-20%) rotateX(90deg) scale(0.5);
+    }
 
-.tl-marker {
-    background-color: yellow;
-    color: black;
-    text-decoration: none;
+    66% {
+        transform: translateY(10%) translateZ(-10%) rotateX(45deg) scale(0.75);
+    }
+
+    100% {
+        transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+    }
 }
