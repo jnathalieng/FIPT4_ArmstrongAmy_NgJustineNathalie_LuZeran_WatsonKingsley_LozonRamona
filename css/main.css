@@ -1349,13 +1349,14 @@ footer .footer-closing-text p {
 
 .tl-alpha-con {
   perspective: 1200px;
-  view-timeline-name: --scrollling-stack;
+  view-timeline-name: --scrolling-stack;
   view-timeline-axis: block;
 }
 
 .tl-beta-con {
   position: sticky;
   top: 2rem;
+  margin-bottom: 60vh;
   overflow: hidden;
   transform-style: preserve-3d;
   animation: stacking 1s linear both;
@@ -1377,6 +1378,30 @@ footer .footer-closing-text p {
     transform: translateY(0) translateZ(0) rotateX(0) scale(1);
   }
 }
+#tl-beta-1 {
+  --beta-i: 1;
+}
+
+#tl-beta-2 {
+  --beta-i: 2;
+}
+
+#tl-beta-3 {
+  --beta-i: 3;
+}
+
+#tl-beta-4 {
+  --beta-i: 4 ;
+}
+
+#tl-beta-5 {
+  --beta-i: 5;
+}
+
+#tl-beta-6 {
+  --beta-i: 6;
+}
+
 #date-and-blog-section {
   position: relative;
 }

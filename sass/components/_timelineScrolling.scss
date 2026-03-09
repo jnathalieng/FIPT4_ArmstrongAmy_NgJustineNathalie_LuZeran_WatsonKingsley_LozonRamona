@@ -62,7 +62,8 @@
 
 .tl-beta-con {
     position: sticky;
-    top: calc(var(--beta-i) * 2rem);
+    top: 2rem;
+    margin-bottom: 60vh;
 
     overflow: hidden;
     transform-style: preserve-3d;
@@ -92,26 +93,26 @@
 
 // Specific Beta Scrolling Index
 
-#1909-beta {
+#tl-beta-1 {
     --beta-i: 1;
 }
 
-#1918-beta {
+#tl-beta-2 {
     --beta-i: 2;
 }
 
-#1927-beta {
+#tl-beta-3 {
     --beta-i: 3;
 }
 
-#1928-beta {
+#tl-beta-4 {
     --beta-i: 4
 }
 
-#1930-beta {
+#tl-beta-5 {
     --beta-i: 5;
 }
 
-#1940-beta {
+#tl-beta-6 {
     --beta-i: 6;
 }
