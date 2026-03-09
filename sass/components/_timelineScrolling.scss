@@ -1,0 +1,24 @@
+@use '../abstracts';
+
+.timeline-section {
+    position: relative;
+}
+
+.tl-alpha-con {
+    max-height: 100vh;
+    overflow-y: auto;
+    scroll-timeline-name: --tl-scroll;
+    scroll-timeline-axis: block;
+    position: relative;
+    // add some possible padding
+    background-color: red;
+}
+
+#tl-scroll-prog-con {
+    position: sticky;
+}
+
+#tl-scroll-prog-fill {
+    color: black;
+    background-color: red;
+}
