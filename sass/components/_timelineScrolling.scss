@@ -1,105 +1,36 @@
 @use '../abstracts' as a;
 
-// Scroll-Indicator
-
 #tl-scroll-prog-con {
     position: sticky;
-    top: 2rem;
-    height: 80vh;
+    top: 0;
+    width: 25%;
+    height: 100vh;
     display: flex;
-    width: 4rem;
-    margin-left: 2rem;
-    flex-direction: column;
     align-items: center;
-    z-index: 100;
-
-    background-color: red;
 }
 
 #tl-scroll-prog-fill {
-
     width: 1rem;
     height: 100%;
+    margin-left: 20%;
+    background: a.$secondary-color;
+    opacity: 75%;
     
     transform-origin: bottom;
     transform: scaleY(0);
     animation: scrollProgress linear both;
-
     animation-timeline: --tl-progress;
-    animation-duration: 1ms;
-
-    background-color: blue;
-}
-
-@keyframes scrollProgress {
-    to {
-        transform: scaleY(1);
-    }
-}
-
-.tl-scroll-markers-con {
-    position: relative;
-    height: 100%;
-
-    z-index: 101;
 }
 
 .tl-marker {
-    position: absolute;
-    left: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: -1.5rem;
-    border-radius: a.$borderrad;
-    background-color: a.$white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     text-decoration: none;
     color: a.$primary-color;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 60% 0;
 }
 
-
-// @keyframes stacking {
-//     0% {
-//         transform: translateY(0) translateZ(0) rotateX(0) scale(1);
-//     }
-
-//     33% {
-//         transform: translateY(20%) translateZ(-20%) rotateX(90deg) scale(0.5);
-//     }
-
-//     66% {
-//         transform: translateY(10%) translateZ(-10%) rotateX(45deg) scale(0.75);
-//     }
-
-//     100% {
-//         transform: translateY(0) translateZ(0) rotateX(0) scale(1);
-//     }
-// }
-
-// // Specific Beta Scrolling Index
-
-// #tl-beta-1 {
-//     --beta-i: 1;
-// }
-
-// #tl-beta-2 {
-//     --beta-i: 2;
-// }
-
-// #tl-beta-3 {
-//     --beta-i: 3;
-// }
-
-// #tl-beta-4 {
-//     --beta-i: 4
-// }
-
-// #tl-beta-5 {
-//     --beta-i: 5;
-// }
-
-// #tl-beta-6 {
-//     --beta-i: 6;
-// }
+@keyframes scrollProgress {
+    to { transform: scaleY(1); }
+}
