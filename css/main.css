@@ -1362,10 +1362,6 @@ footer .footer-closing-text p {
   margin-left: 20%;
   background: #91B8D9;
   opacity: 75%;
-  transform-origin: bottom;
-  transform: scaleY(0);
-  animation: scrollProgress linear both;
-  animation-timeline: --tl-progress;
 }
 
 .tl-marker {
@@ -1381,11 +1377,6 @@ footer .footer-closing-text p {
   margin-top: 20vh;
 }
 
-@keyframes scrollProgress {
-  to {
-    transform: scaleY(1);
-  }
-}
 #date-and-blog-section {
   position: relative;
 }
@@ -1537,8 +1528,6 @@ footer .footer-closing-text p {
 
 .tl-alpha-con {
   background-color: #91B8D9;
-  scroll-timeline-name: --tl-progress;
-  scroll-timeline-axis: block;
 }
 
 .tl-beta-con {
