@@ -30,18 +30,17 @@
 
 // AlphaCon styling
 .tl-alpha-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     background-color: a.$secondary-color;
 
     // Animation
-    perspective: 1200px;
+    // perspective: 1200px;
 
-    view-timeline-name: --scrolling-stack;
-    view-timeline-axis: block;
+    // view-timeline-name: --scrolling-stack;
+    // view-timeline-axis: block;
+
+    // Scroll-Indication
+    scroll-timeline-name: --tl-progress;
+    scroll-timeline-axis: block;
 }
 
 // BetaCon styling
@@ -87,16 +86,16 @@
     }
 
     // Animation
-    position: sticky;
-    top: 8rem;
-    margin-bottom: 50vh;
+    // position: sticky;
+    // top: 8rem;
+    // margin-bottom: 50vh;
 
-    overflow: hidden;
-    transform-style: preserve-3d;
-    animation: stacking 1s linear both;
+    // overflow: hidden;
+    // transform-style: preserve-3d;
+    // animation: stacking 1s linear both;
 
-    animation-timeline: --scrolling-stack;
-    animation-range: entry 0% exit 50%;
+    // animation-timeline: --scrolling-stack;
+    // animation-range: entry 0% exit 50%;
 }
 
 // GammaCon styling
