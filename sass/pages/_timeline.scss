@@ -30,11 +30,6 @@
 
 // AlphaCon styling
 .tl-alpha-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     background-color: a.$secondary-color;
 
     // Animation
@@ -42,6 +37,13 @@
 
     // view-timeline-name: --scrolling-stack;
     // view-timeline-axis: block;
+
+    // Scroll-Indication
+    height: 100vh;
+    overflow-y: auto;
+
+    scroll-timeline-name: --tl-progress;
+    scroll-timeline-axis: block;
 }
 
 // BetaCon styling
