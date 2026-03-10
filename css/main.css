@@ -1374,7 +1374,11 @@ footer .footer-closing-text p {
   color: #B3262E;
   font-size: 200%;
   font-weight: bold;
-  margin: 60% 0;
+  margin: 8vh 0;
+}
+
+.tl-marker:first-child {
+  margin-top: 20vh;
 }
 
 @keyframes scrollProgress {
