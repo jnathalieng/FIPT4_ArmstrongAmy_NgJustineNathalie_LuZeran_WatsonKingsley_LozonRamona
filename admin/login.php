@@ -1,45 +1,16 @@
 <?php
-session_start();
-require '../includes/connect.php';
+//session_start();
 
-if (isset($_SESSION['user_id'])) {
-    header('Location: dashboard.html');
-    exit;
-}
-
-$error = '';
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = trim($_POST['userName'] ?? '');
-    $password = trim($_POST['Password'] ?? '');
-
-    if (empty($username) || empty($password)) {
-        $error = 'Please enter both a username and password.';
-    } else {
-        $stmt = $connect->prepare('SELECT user_id, password FROM users WHERE username = ?');
-        $stmt->bind_param('s', $username);
-        $stmt->execute();
-        $stmt->store_result();
-
-        if ($stmt->num_rows === 1) {
-            $stmt->bind_result($user_id, $hashed_password);
-            $stmt->fetch();
-
-            if (password_verify($password, $hashed_password)) {
-                $_SESSION['user_id']  = $user_id;
-                $_SESSION['username'] = $username;
-
-                header('Location: dashboard.html');
-                exit;
-            } else {
-                $error = 'Incorrect username or password.';
-            }
-        } else {
-            $error = 'Incorrect username or password.';
-        }
-
-        $stmt->close();
-    }
-}
+spl_autoload_register(function ($class) {
+    $class = str_replace('LAM\\', '', $class);
+    $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
+    $filepath = __DIR__ . '/../includes/classes/' . $class . '.php';
+    $filepath = str_replace("/", DIRECTORY_SEPARATOR, $filepath);
+    
+    require_once $filepath;
+});
+require_once '../includes/scripts/login-function.php';
+use LAM\database;
 ?>
 
 <!DOCTYPE html>
