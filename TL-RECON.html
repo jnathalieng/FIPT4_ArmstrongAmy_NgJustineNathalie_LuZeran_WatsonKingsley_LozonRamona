@@ -6,11 +6,14 @@
     <title>Timeline Reconstruction</title>
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <link type="text/css" href="css/grid.css" rel="stylesheet">
-
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- Module -->
     <script type="module" defer src="js/main.js"></script>
 </head>
 
-<body data-page="TIMELINE-RECON">
+<body id="tl-body" data-page="TIMELINE-RECON">
 
     <header class="header">
     <!-- navbar -->
@@ -84,6 +87,48 @@
     
     <main>
 
+        <!-- HERO -->
+        <section class="hero-section" id="timeline-hero">
+            <div class="hero-triangle"></div>
+            <div class="hero-title-con">
+                <div class="hero-title"><p>Remembrance</p></div>
+                <div class="hero-subtitle"><p>Legacy of the Fallen</p></div>
+            </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section>
+            <!-- TIMELINE PROGRESS -->
+            <div id="tl-scroll-prog-con">
+                <div id="tl-scroll-prog-fill">
+                    
+                </div>
+
+                <div id="tl-scroll-markers-con">
+                    <a href="#" class="tl-marker">1909</a>
+                    <a href="#" class="tl-marker">1918</a>
+                    <a href="#" class="tl-marker">1927</a>
+                    <a href="#" class="tl-marker">1928</a>
+                    <a href="#" class="tl-marker">1930</a>
+                    <a href="#" class="tl-marker">1940</a>
+                </div>
+            </div>
+
+            <!-- TL-INTRO -->
+             
+        <!-- INTRO -->
+            <div id="timeline-intro-con">
+                <h2>
+                    Defining Moments
+                </h2>
+                <h3>
+                    The London Aviation Timeline
+                </h3>
+                <p>
+                    Scroll to explore key moments in London's aviation history.
+                </p>
+            </div>
+        </section>
     </main>
 
 </body>
