@@ -257,7 +257,7 @@ nav .mobile-nav-element a {
 }
 
 .dropdown-menu li:hover div {
-  background-color: #91B8D9;
+  background-color: #a87375;
 }
 
 .dropdown-menu a {
@@ -327,7 +327,7 @@ nav .mobile-nav-element a {
       background-color: initial;
     }
     100% {
-      background-color: #91B8D9;
+      background-color: #a87375;
     }
   }
   @keyframes fadeWhite {
@@ -645,7 +645,7 @@ footer .footer-closing-text p {
     display: inline-block;
     font-size: 200%;
     padding: 0.25rem;
-    border-bottom: 4px solid #91B8D9;
+    border-bottom: 4px solid #a87375;
   }
   footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-nav-links .footer-cta-con {
     margin-left: 12vw;
@@ -864,7 +864,7 @@ footer .footer-closing-text p {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #91B8D9;
+  background-color: #a87375;
   opacity: 0.8;
   display: flex;
   clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
@@ -932,7 +932,7 @@ footer .footer-closing-text p {
 }
 
 .dynamic-gallery-box {
-  background-color: #91B8D9;
+  background-color: #a87375;
 }
 
 .dynamic-gallery-text-content {
@@ -951,7 +951,7 @@ footer .footer-closing-text p {
 }
 
 .gallery-box-con {
-  background-color: #91B8D9;
+  background-color: #a87375;
   padding-top: 6rem;
   padding-bottom: 4rem;
   display: flex;
@@ -1021,7 +1021,7 @@ footer .footer-closing-text p {
   position: absolute;
   transform: translateY(100px);
   z-index: -1;
-  background-color: #91B8D9;
+  background-color: #a87375;
   height: 80px;
   width: 100%;
 }
@@ -1360,7 +1360,7 @@ footer .footer-closing-text p {
   width: 1rem;
   height: 100%;
   margin-left: 20%;
-  background: #91B8D9;
+  background: #a87375;
   opacity: 75%;
 }
 
@@ -1382,7 +1382,7 @@ footer .footer-closing-text p {
 }
 
 #dynamic-date {
-  background-color: #91B8D9;
+  background-color: #a87375;
   padding: 1rem;
 }
 
@@ -1397,7 +1397,7 @@ footer .footer-closing-text p {
 }
 
 #blog-con {
-  background-color: #91B8D9;
+  background-color: #a87375;
   padding-top: 6rem;
   padding-bottom: 4rem;
   display: flex;
@@ -1510,7 +1510,7 @@ footer .footer-closing-text p {
   color: #B3262E;
 }
 .timeline-section h3, .timeline-section h4 {
-  color: #91B8D9;
+  color: #a87375;
 }
 .timeline-section p {
   color: #000;
@@ -1527,7 +1527,7 @@ footer .footer-closing-text p {
 }
 
 .tl-alpha-con {
-  background-color: #91B8D9;
+  background-color: #a87375;
 }
 
 .tl-beta-con {
@@ -1638,7 +1638,7 @@ footer .footer-closing-text p {
 
 .tl-toggle-btn:hover {
   transform: scale(110%);
-  fill: #91B8D9;
+  fill: #a87375;
 }
 
 .tl-toggle-btn:active {
@@ -1736,7 +1736,7 @@ footer .footer-closing-text p {
   font-weight: bold;
 }
 .comm-gamma-con .comm-gamma-text-con h2 {
-  border-bottom: 2px solid #91B8D9;
+  border-bottom: 2px solid #a87375;
   width: fit-content;
 }
 .comm-gamma-con .comm-gamma-text-con p {
@@ -1777,7 +1777,7 @@ footer .footer-closing-text p {
   font-weight: bold;
 }
 .comm-delta-con .comm-delta-text-con h2 {
-  border-bottom: 2px solid #91B8D9;
+  border-bottom: 2px solid #a87375;
   width: fit-content;
 }
 .comm-delta-con .comm-delta-text-con p {
@@ -2094,7 +2094,7 @@ footer .footer-closing-text p {
 .canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
   margin-left: 10%;
   padding: 10px 0px;
-  border-bottom: solid 5px #91B8D9;
+  border-bottom: solid 5px #a87375;
   margin-bottom: 10px;
   width: 100%;
   color: #B3262E;
@@ -2139,7 +2139,7 @@ footer .footer-closing-text p {
 }
 
 #discover-aircraft-cta {
-  border-bottom: solid 50px #91B8D9;
+  border-bottom: solid 50px #a87375;
 }
 
 #explore-aircraft-button {
@@ -2208,7 +2208,7 @@ footer .footer-closing-text p {
   .canadian-pilots-section .pilots-card-content .pilots-card-text-con .pilot-card-name-desk {
     margin: 30px 0% 30px 0%;
     padding-bottom: 20px;
-    border-bottom: solid 5px #91B8D9;
+    border-bottom: solid 5px #a87375;
     width: 90%;
     color: #B3262E;
     font-size: 60px;
@@ -2271,7 +2271,7 @@ footer .footer-closing-text p {
 }
 
 #about-mike {
-  background-color: #91B8D9;
+  background-color: #a87375;
   position: relative;
 }
 
@@ -2323,7 +2323,7 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #91B8D9;
+  background-color: #a87375;
   height: 150px;
   justify-content: center;
 }
@@ -2464,7 +2464,7 @@ footer .footer-closing-text p {
   position: relative;
   width: 100vw;
   height: 500px;
-  background-color: #91B8D9;
+  background-color: #a87375;
 }
 .sign-up-box .sign-up-title {
   color: #B3262E;
