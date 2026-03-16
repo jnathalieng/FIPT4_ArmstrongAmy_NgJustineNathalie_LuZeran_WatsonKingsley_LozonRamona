@@ -1,3 +1,19 @@
 #tl-body {
     color: black;
 }
+
+#timeline-section {
+    position: relative;
+}
+
+#timeline-intro-con {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+
+    h2 {
+        width: 50%;
+        margin: auto;
+    }
+}

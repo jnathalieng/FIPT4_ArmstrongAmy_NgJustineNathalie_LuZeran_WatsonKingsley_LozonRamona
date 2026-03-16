@@ -854,7 +854,7 @@ footer .footer-closing-text p {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  width: 100vw;
+  max-width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2463,4 +2463,19 @@ footer .footer-closing-text p {
 }
 #tl-body {
   color: black;
+}
+
+#timeline-section {
+  position: relative;
+}
+
+#timeline-intro-con {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+#timeline-intro-con h2 {
+  width: 50%;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
