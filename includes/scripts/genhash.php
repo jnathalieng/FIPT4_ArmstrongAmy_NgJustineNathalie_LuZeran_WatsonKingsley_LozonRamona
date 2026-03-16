@@ -1,6 +1,13 @@
 <?php
-require '../includes/connect.php';
 
+spl_autoload_register(function ($class) {
+    $class = str_replace('LAM\\', '', $class);
+    $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
+    $filepath = __DIR__ . '/../includes/classes/' . $class . '.php';
+    $filepath = str_replace("/", DIRECTORY_SEPARATOR, $filepath);
+    
+    require_once $filepath;
+});
 //refer to this to find the password and username for mike
 $username = 'mikeBaker';
 $email    = 'bakermike612@gmail.com';

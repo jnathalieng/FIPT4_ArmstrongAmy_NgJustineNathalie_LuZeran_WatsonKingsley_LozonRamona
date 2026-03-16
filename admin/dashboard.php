@@ -1,3 +1,14 @@
+<?php
+spl_autoload_register(function ($class) {
+    $class = str_replace('LAM\\', '', $class);
+    $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
+    $filepath = __DIR__ . '/../includes/classes/' . $class . '.php';
+    $filepath = str_replace("/", DIRECTORY_SEPARATOR, $filepath);
+    
+    require_once $filepath;
+});
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,120 +26,101 @@ style="
 background-color: rgb(48, 48, 48);
 height: 100vh;">
 
-<header
-style="
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100vw;
-height: 50px;
-border-bottom: solid 1px black;
-margin-bottom: 10px;
-background-color: rgb(156, 156, 156);
-font-family: Arial, Helvetica, sans-serif;
-font-size: larger;">
-    <h4>London Aircraft Museum CMS</h4>
-</header>
+    <header class="header">
+    <!-- navbar -->
+        <nav>
+                <div id="logo"><a href="index.html" class="hover-item"></a></div>
+                
+                <div class="m-l-nav-item">
+                <!-- <div></div> -->
+                    <a class="button-text" href="">Events Manager</a>
+                </div>
+                <div class="button-text m-l-nav-item">
+                    <!-- <div></div> -->
+                    <a class="button-text" href="">Blog<br>Manager</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <!-- <div></div> -->
+                    <a class="button-text" href="">Commemoration<br>Manager</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <!-- <div></div> -->
+                    <a class="button-text" href="">Gallery<br>Manager</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <!-- <div></div> -->
+                    <a class="button-text" href="">Social Media<br>Manager</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <!-- <div></div> -->
+                    <a class="button-text" href="">Logout</a>
+                </div>
+
+            <!-- mobile hamburger menu -->
+                    <div class="hamburger hover-item">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="hamburger-dropdown">
+                        <li><a class="button-text hover-item" href="index.html">Events</a></li>
+                        <li><a class="button-text hover-item" href="about.html">Blog</a></li>             
+                        <li><a class="button-text hover-item" href="timeline.html">Commemmoration</a></li>
+                        <li><a class="button-text hover-item" href="wartime_experience.html">Gallery</a></li>
+                        <li><a class="button-text hover-item" href="training_bases.html">Social Media</a></li>
+                        <li><a class="button-text hover-item" href="canteen.html">Logout</a></li>
+                    </ul>
+
+        </nav>
+    </header>
 
     <main>
-        <section
-        style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        height: 100vw;">
-            <div>
-                <a 
-                href="event_editor.html"
-                    style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        width: 300px;
-                        height: 80px;
-                        border: solid 1px black;
-                        border-radius: 10px;
-                        box-shadow: 10px 10px 0 black;
-                        margin: 10px;
-                        text-decoration: none;
-                        color: black;
-                        background-color: rgb(156, 156, 156);
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: larger;
-                        ">
-                    Create and Edit Events</a>
-            </div>
 
-            <div>
-                <a 
-                href="blog_editor.html"
-                                    style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        width: 300px;
-                        height: 80px;
-                        border: solid 1px black;
-                        border-radius: 10px;
-                        box-shadow: 10px 10px 0 black;
-                        margin: 10px;
-                        text-decoration: none;
-                        color: black;
-                        background-color: rgb(156, 156, 156);
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: larger;
-                        ">Blog Manager</a>
-            </div>
+    <section>
+        <div>
+            <h3>Dashboard</h3>
+        </div>
+        <div>
+            <h3>Welcome Back, Admin</h3>
+        </div>
+        <div>
+            <p>Manage Events, Blog Posts, and other Museum Contents.
+        </div>
+    </section>
 
+    <section class="tally-bar-con">
+        <article class="tally-bar">
+            <div></div>
+            <div class="tall-bar-card">
+                <h3 class="tally-bar-title">Total Events</h3>
+                <p class="tally-bar-number">12</p>               
+            <div class="tall-bar-card">
+            <hr class="dash-vert">
             <div>
-                <a href="comm_editor.html"
-                                    style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-                        justify-content: center;
-                        width: 300px;
-                        height: 80px;
-                        border: solid 1px black;
-                        border-radius: 10px;
-                        box-shadow: 10px 10px 0 black;
-                        margin: 10px;
-                        text-decoration: none;
-                        color: black;
-                        background-color: rgb(156, 156, 156);
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: larger;
-                        ">Create & Edit<br>Commommorations</a>
+                <h3 class="tally-bar-title">Blog Posts</h3>
+                <p class="tally-bar-number">28</p>               
+            <div class="tall-bar-card">        
+            <hr class="dash-vert">
+            <div class="tall-bar-card">
+                <h3 class="tally-bar-title">commemmoration</h3>
+                <p class="tally-bar-number">9</p>               
             </div>
+            <hr class="dash-vert">
+            <div class="tall-bar-card">
+                <h3 class="tally-bar-title">Social Posts</h3>
+                <p class="tally-bar-number">34</p>               
+            </div>    
+        </article>
+    </section>
 
-            <div>
-                <a href="logout.php"
-                                    style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-                        justify-content: center;
-                        width: 300px;
-                        height: 80px;
-                        border: solid 1px black;
-                        border-radius: 10px;
-                        box-shadow: 10px 10px 0 black;
-                        margin: 10px;
-                        text-decoration: none;
-                        color: black;
-                        background-color: rgb(156, 156, 156);
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: larger;
-                        ">Logout</a>
-            </div>
-        </section>
+    <section>
+        <article>
+
+        </article>
+    </section>
+        
+
     </main>
 
 </body>
