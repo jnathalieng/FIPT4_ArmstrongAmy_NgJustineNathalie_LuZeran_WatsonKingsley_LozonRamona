@@ -15,6 +15,10 @@ else if(document.body.dataset.page === "timeline") {
     console.log('a journey through time!');
     tlShowHide();
 }
+else if(document.body.dataset.page === "TIMELINE-RECON") {
+    console.log('recon page');
+    
+}
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
     mapScroll();
