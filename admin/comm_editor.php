@@ -1,3 +1,15 @@
+<?php
+spl_autoload_register(function ($class) {
+    $class = str_replace('LAM\\', '', $class);
+    $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
+    $filepath = __DIR__ . '/../includes/classes/' . $class . '.php';
+    $filepath = str_replace("/", DIRECTORY_SEPARATOR, $filepath);
+    
+    require_once $filepath;
+    require_once '../includes/scripts/add-comm.php';
+});
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,6 +108,89 @@ margin: 0 10px 0 10px;">
 </header>
 
     <main>
+
+ <form class="input-form" id="addCommForm" method="POST" action="../includes/scripts/add-comm.php">
+
+                <label>Name</label>
+                <input  class="form-box-dash"
+                        type="text" 
+                        name="name" 
+                        id="heroImage" 
+                        placeholder=" ">
+                <br>
+                <br>
+                <label>Service Number</label>
+                <input  class="form-box-dash" 
+                        type="text" 
+                        name="project" 
+                        id="projectBox" 
+                        placeholder="project">
+                <br>
+                <br>
+                <label>Rank</label>
+                <input  class="form-box-dash" 
+                        type="text" 
+                        name="proposition" 
+                        id="propBox" 
+                        placeholder="proposition">
+                <br>
+                <br>
+                <label>Age</label>
+                <input  class="form-box-dash"
+                        type="text" 
+                        name="prop_ex" 
+                        id="propImage" 
+                        placeholder="Proposition Image">
+                <br>
+                <br>
+                <label>birth</label>
+                <input  class="form-box-dash" 
+                        type="text" 
+                        name="prop_caption" 
+                        id="propCaption" 
+                        placeholder="Proposition Image Caption">
+                <br>
+                <br>
+                <label>Death</label>
+                <input 
+                        class="form-box-dash" 
+                        type="text" 
+                        name="deliverables" 
+                        id="delivBox" 
+                        placeholder="deliverables">
+                <br>
+                <br>
+                <label>Enlist</label>
+                <input  class="form-box-dash" 
+                        type="text" 
+                        name="work_ex" 
+                        id="workImage" 
+                        placeholder="Work Image">
+                <br>
+                <br>
+                <label>Details</label>
+                <input  class="form-box-dash"
+                        type="text" 
+                        name="work_caption" 
+                        id="workCaption" 
+                        placeholder="Work Image Caption">
+                <br>
+                <br>
+                <label>Picture</label>
+                <input  class="form-box-dash" 
+                        type="text" 
+                        name="product_ex" 
+                        id="prodImage" 
+                        placeholder="Product Image">
+                <br>
+                <br>
+                <div id="feedback"></div>
+
+                <input  class="form-box-dash"
+                        id="send-button" 
+                        type="submit" 
+                        value="Submit">
+            </form>
 
     </main>
 

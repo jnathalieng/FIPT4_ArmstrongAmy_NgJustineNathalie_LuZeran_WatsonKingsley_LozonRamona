@@ -56,14 +56,14 @@ font-size: larger;">
                 font-size: larger;
                 margin: 30px;">Sign In</h3>
             <!--Buttons-->
-            <form class="input-form" id="sign-in-form" method="POST" action="login.php">
+            <form class="input-form" id="sign-in-form" method="POST" action="../includes/scripts/login-function.php">
 
                 <input  class="form-box"
                         type="text" 
                         name="userName" 
                         id="userName" 
                         placeholder="Username" 
-                        action=" ">
+                        Required>
                 <br>
                 <br>
                 <input 
@@ -71,8 +71,8 @@ font-size: larger;">
                         type="text" 
                         name="Password" 
                         id="Password" 
-                        placeholder="Password" 
-                        action="sendmail.php">
+                        placeholder="Password"
+                        Required>
                 
                 <div id="feedback">
                 <?php if (!empty($error)) echo '<p style="color: red;">' . htmlspecialchars($error) . '</p>'; ?>
