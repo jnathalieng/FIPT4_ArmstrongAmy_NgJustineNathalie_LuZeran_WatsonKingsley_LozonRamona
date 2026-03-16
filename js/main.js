@@ -6,6 +6,8 @@ import { typeWriter } from "./modules/typeWriter.js";
 import { tlShowHide } from "./modules/tlShowHide.js";
 import { commShowHide } from "./modules/commShowHide.js";
 
+import { tlShowSticky } from "./modules/tlShowSticky.js";
+
 navbar_showhide();
 
 if(document.body.dataset.page === "home") {
@@ -17,7 +19,7 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
-    
+    tlShowSticky();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');

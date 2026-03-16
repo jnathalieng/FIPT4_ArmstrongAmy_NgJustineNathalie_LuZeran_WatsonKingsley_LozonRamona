@@ -1354,14 +1354,6 @@ footer .footer-closing-text p {
   height: 100vh;
   display: flex;
   align-items: center;
-  opacity: 0;
-  transform: translateY(100vh);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-#tl-scroll-prog-con.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 #tl-scroll-prog-fill {
