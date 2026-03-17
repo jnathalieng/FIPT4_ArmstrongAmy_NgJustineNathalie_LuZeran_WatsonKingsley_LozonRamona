@@ -1,3 +1,5 @@
 assets/
 **/.DS_Store
 css/main.css.map
+.env
+vendor/
