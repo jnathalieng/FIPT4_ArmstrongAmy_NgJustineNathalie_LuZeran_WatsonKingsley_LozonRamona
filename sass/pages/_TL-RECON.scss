@@ -1,3 +1,5 @@
+@use '../abstracts' as a;
+
 #tl-body {
     color: black;
 }
@@ -16,4 +18,50 @@
         width: 50%;
         margin: auto;
     }
+}
+
+// TLS-HEADERS STYLING
+.tls-header-accent {
+    background-color: a.$primary-color;
+    height: 5vh;
+}
+
+.tls-header-text-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tls-header-headings {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: red;
+    }
+}
+
+
+// TLS-SECTION STYLING
+.tls-sticky-bg {
+    font-size: 3000%;
+
+    pointer-events: none;
+    color: a.$tertiary-color;
+    text-align: center;
+}
+
+.tls-content-con {
+    border: 1px solid black;
+    border-radius: a.$borderrad;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.parallax-con {
+    border: 1px solid red;
+    border-radius: a.$borderrad;
+    margin: 1rem;
+    padding: 1rem;
 }

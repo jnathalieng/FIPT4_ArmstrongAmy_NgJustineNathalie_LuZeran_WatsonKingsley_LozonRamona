@@ -2478,4 +2478,45 @@ footer .footer-closing-text p {
 #timeline-intro-con h2 {
   width: 50%;
   margin: auto;
+}
+
+.tls-header-accent {
+  background-color: #B3262E;
+  height: 5vh;
+}
+
+.tls-header-text-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tls-header-headings {
+  display: flex;
+  flex-direction: column;
+}
+.tls-header-headings a {
+  color: red;
+}
+
+.tls-sticky-bg {
+  font-size: 3000%;
+  pointer-events: none;
+  color: #cecccd;
+  text-align: center;
+}
+
+.tls-content-con {
+  border: 1px solid black;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.parallax-con {
+  border: 1px solid red;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
 }/*# sourceMappingURL=main.css.map */
