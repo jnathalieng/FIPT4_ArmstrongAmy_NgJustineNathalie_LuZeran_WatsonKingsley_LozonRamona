@@ -21,6 +21,14 @@
 }
 
 // TLS-HEADERS STYLING
+.tls-header {
+    text-align: center;
+    
+    h3 {
+        font-size: 100%;
+    }
+}
+
 .tls-header-accent {
     background-color: a.$primary-color;
     height: 5vh;
@@ -30,7 +38,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
 }
 
 .tls-header-headings {
@@ -47,6 +54,7 @@
 .tls-sticky-bg {
     font-size: 3000%;
 
+    z-index: -1;
     pointer-events: none;
     color: a.$tertiary-color;
     text-align: center;
@@ -59,7 +67,9 @@
     padding: 1rem;
 }
 
-.parallax-con {
+
+// PARALLAX CONTENT STYLING
+.parallax-con-text {
     border: 1px solid red;
     border-radius: a.$borderrad;
     margin: 1rem;

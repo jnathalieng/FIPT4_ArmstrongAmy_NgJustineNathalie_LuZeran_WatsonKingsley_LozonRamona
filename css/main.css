@@ -2480,6 +2480,13 @@ footer .footer-closing-text p {
   margin: auto;
 }
 
+.tls-header {
+  text-align: center;
+}
+.tls-header h3 {
+  font-size: 100%;
+}
+
 .tls-header-accent {
   background-color: #B3262E;
   height: 5vh;
@@ -2489,7 +2496,6 @@ footer .footer-closing-text p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 
 .tls-header-headings {
@@ -2502,6 +2508,7 @@ footer .footer-closing-text p {
 
 .tls-sticky-bg {
   font-size: 3000%;
+  z-index: -1;
   pointer-events: none;
   color: #cecccd;
   text-align: center;
@@ -2514,7 +2521,7 @@ footer .footer-closing-text p {
   padding: 1rem;
 }
 
-.parallax-con {
+.parallax-con-text {
   border: 1px solid red;
   border-radius: 2rem;
   margin: 1rem;
