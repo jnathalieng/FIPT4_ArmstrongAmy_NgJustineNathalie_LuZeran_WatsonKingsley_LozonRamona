@@ -3,3 +3,4 @@ assets/
 css/main.css.map
 .env
 vendor/
+node_modules/
