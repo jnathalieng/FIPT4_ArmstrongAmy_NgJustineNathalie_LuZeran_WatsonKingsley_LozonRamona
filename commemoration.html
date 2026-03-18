@@ -7,7 +7,13 @@
 
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <link type="text/css" href="css/grid.css" rel="stylesheet">
-
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
     <script type="module" defer src="js/main.js"></script>
 </head>
 <body id="commemoration-page" data-page="commemmoration">
@@ -145,13 +151,48 @@
 
                 </div>
 
+
+                <div id="app">
+    <!-- Your existing sections stay the same until... -->
+    
+    <!-- BetaCon 1 - 420 Squadron -->
+    <div class="comm-beta-con">
+        <!-- Your existing headers and image section stay the same -->
+        
+        <!-- Replace all the placeholder divs with this: -->
+        <div v-for="person in comm420Data" :key="person.id" class="comm-gamma-con">
+            <div class="comm-gamma-img-con">
+                <picture>
+                    <source media="(min-width: 768px)" :srcset="'images/comm-images/desktop/' + person.picture">
+                    <img class="comm-gamma-img" :src="'images/comm-images/mobile/' + person.picture" :alt="person.name">
+                </picture>
+            </div>
+            <div class="comm-gamma-text-con">
+                <span class="title-span">{{ person.rank }}</span>
+                <h2>{{ person.name }}</h2>
+                <p>{{ person.info }}</p>
+                <h3>MILITARY SERVICE</h3>
+                
+                <p class="service-number"><span class="label-span">SERVICE NUMBER: </span>{{ person.service_number }}</p>
+                <p class="age"><span class="label-span">AGE: </span>{{ person.age }}</p>
+                <p class="rank"><span class="label-span">RANK: </span>{{ person.rank }}</p>
+                <p class="force"><span class="label-span">FORCE: </span>{{ person.force }}</p>
+                <p class="unit-regiment"><span class="label-span">UNIT/REGIMENT: </span> {{ person.regiment }}</p>
+                <p class="birth"><span class="label-span">BIRTH: </span>{{ person.birth }}</p>
+                <p class="enlistment"><span class="label-span">ENLISTMENT: </span>{{ person.enlist }}</p>
+                <p class="death"><span class="label-span">DEATH: </span>{{ person.death }}</p>
+                <p class="burial-info"><span class="label-span">BURIAL/MEMORIAL INFORMATION GRAVE REFERENCE: </span>{{ person.info }}</p>
+            </div>
+        </div>
+    </div>
+</div>
                 <!-- GammaCon 420 Placeholder 1 -->
-                <div class="comm-gamma-con">
+                <!-- <div class="comm-gamma-con">
                     <div class="comm-gamma-img-con">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="images/comm-images/desktop/d-comm-grant-thomas-stewart.png">
+                            <source media="(min-width: 768px)" srcset="images/comm-images/desktop/d-comm-grant-thomas-stewart.png"> -->
                             <!-- NEEDS BOTH IMAGES -->
-                            <img  class="comm-gamma-img" src="images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="placeholder of pilots">
+                            <!-- <img  class="comm-gamma-img" src="images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="placeholder of pilots">
                         </picture>
                     </div>
 
@@ -176,7 +217,7 @@
 
                         <p class="burial-info"><span class="label-span">BURIAL/MEMORIAL INFORMATION GRAVE REFERENCE: </span>Grave 3, Lot 59, Plot A,</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- GammaCon 420 Placeholder 2 -->
                 <div class="comm-gamma-con">

@@ -26,3 +26,9 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return file_get_contents(base_path('contact.html'));
 });
+Route::get('/commemoration.html', function () {
+    return response()->file(base_path('commemoration.html'));
+});
+Route::get('/commemoration', function () {
+    return response()->file(base_path('commemoration.html'));
+});

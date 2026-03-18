@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;  
-
+use App\Http\Controllers\CommController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('/contact', [ContactController::class, 'store']);
+Route::get('/comm', [CommController::class, 'index']);
+Route::get('/comm/{id}', [CommController::class, 'show']);
