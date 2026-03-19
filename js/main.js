@@ -1,3 +1,4 @@
+console.log('Main.js loaded!');
 import { navbar_showhide } from "./modules/hamburger.js";
 import contactForm from "./modules/contactForm.js";
 import commemoration from "./modules/commemoration.js";
@@ -8,9 +9,6 @@ import { typeWriter } from "./modules/typeWriter.js";
 import { tlShowHide } from "./modules/tlShowHide.js";
 import { commShowHide } from "./modules/commShowHide.js";
 import { tlShowSticky } from "./modules/tlShowSticky.js";
-
-console.log('Main.js loaded!');
-console.log('Page data attribute:', document.body.dataset.page);
 
 navbar_showhide();
 
@@ -41,7 +39,7 @@ else if(document.body.dataset.page === "commemmoration") {
     console.log('lest we forget');
     const app = createApp(commemoration);
     app.mount('#app');
-    commShowHide();
+    //commShowHide();
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
