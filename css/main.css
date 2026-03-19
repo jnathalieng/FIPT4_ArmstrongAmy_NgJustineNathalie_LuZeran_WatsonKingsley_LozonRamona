@@ -2515,17 +2515,15 @@ footer .footer-closing-text p {
 .tls-content-con {
   border: 1px solid black;
   border-radius: 2rem;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1%;
   display: grid;
-  grid-template-columns: repeat(8, 20vw);
-  grid-template-rows: repeat(6, 20vw);
+  grid-template-columns: repeat(8, minmax(10vw, 20vw));
+  grid-template-rows: repeat(6, minmax(10vh, 20vh));
+  gap: 1%;
 }
 
 .parallax-con-text {
   border: 1px solid red;
   border-radius: 2rem;
-  margin: 1rem;
-  padding: 1rem;
   aspect-ratio: 3/2;
 }/*# sourceMappingURL=main.css.map */

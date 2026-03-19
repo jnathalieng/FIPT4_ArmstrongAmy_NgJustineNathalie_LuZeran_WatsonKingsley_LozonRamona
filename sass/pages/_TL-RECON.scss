@@ -63,13 +63,13 @@
 .tls-content-con {
     border: 1px solid black;
     border-radius: a.$borderrad;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1%;
 
     // GRID SETUP
     display: grid;
-    grid-template-columns: repeat(8, 20vw);
-    grid-template-rows: repeat(6, 20vw);
+    grid-template-columns: repeat(8, minmax(10vw, 20vw));
+    grid-template-rows: repeat(6, minmax(10vh, 20vh));
+    gap: 1%;
 }
 
 
@@ -77,8 +77,6 @@
 .parallax-con-text {
     border: 1px solid red;
     border-radius: a.$borderrad;
-    margin: 1rem;
-    padding: 1rem;
 
     // GRID STLING
     aspect-ratio: 3 / 2;
