@@ -7,6 +7,7 @@ import { tlShowHide } from "./modules/tlShowHide.js";
 import { commShowHide } from "./modules/commShowHide.js";
 
 import { tlShowSticky } from "./modules/tlShowSticky.js";
+import { parallaxObj } from "./modules/tlParallaxObj.js";
 
 navbar_showhide();
 
@@ -19,7 +20,8 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
-    tlShowSticky();
+    parallaxObj();
+    // tlShowSticky();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
