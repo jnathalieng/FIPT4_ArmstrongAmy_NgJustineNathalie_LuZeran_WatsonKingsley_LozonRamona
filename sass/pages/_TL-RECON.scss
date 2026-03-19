@@ -20,44 +20,18 @@
     }
 }
 
-// TLS-HEADERS STYLING
-.tls-header {
-    text-align: center;
-    
-    h3 {
-        font-size: 100%;
-    }
-}
-
-.tls-header-accent {
-    background-color: a.$primary-color;
-    height: 5vh;
-}
-
-.tls-header-text-con {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tls-header-headings {
-    display: flex;
-    flex-direction: column;
-
-    a {
-        color: red;
-    }
-}
-
 
 // TLS-SECTION STYLING
 .tls-sticky-bg {
     font-size: 3000%;
-
     z-index: -1;
     pointer-events: none;
     color: a.$tertiary-color;
     text-align: center;
+
+    // Parallax settings
+    position: sticky;
+    top: 0;
 }
 
 .tls-content-con {

@@ -2478,38 +2478,14 @@ footer .footer-closing-text p {
   margin: auto;
 }
 
-.tls-header {
-  text-align: center;
-}
-.tls-header h3 {
-  font-size: 100%;
-}
-
-.tls-header-accent {
-  background-color: #B3262E;
-  height: 5vh;
-}
-
-.tls-header-text-con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tls-header-headings {
-  display: flex;
-  flex-direction: column;
-}
-.tls-header-headings a {
-  color: red;
-}
-
 .tls-sticky-bg {
   font-size: 3000%;
   z-index: -1;
   pointer-events: none;
   color: #cecccd;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .tls-content-con {
