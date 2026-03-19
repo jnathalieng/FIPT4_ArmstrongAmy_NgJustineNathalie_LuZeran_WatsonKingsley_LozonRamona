@@ -48,6 +48,8 @@
 
 
 // PARALLAX CONTENT STYLING
+
+// TEXT CONTAINERS
 .parallax-con-text {
     border: 1px solid red;
     border-radius: a.$borderrad;
@@ -80,4 +82,54 @@
 .tbox-a5 {
     grid-column: 2 / span 3;
     grid-row: 9 / span 1;
+}
+
+// IMG CONTAINERS
+
+.parallax-con-img {
+    background-color: red;
+}
+
+.tl-ibox-text-con {
+    display: flex;
+    justify-content: space-evenly   ;
+}
+
+.tl-ibox-img-con {
+    position: relative;
+    display: block;
+}
+
+.tl-ibox-img {
+    transition: transform 1s ease;
+
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.tl-ibox-p {
+    transition: transform 1s ease;
+
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 2;
+    color: a.$white;
+}
+
+.tl-ibox-bg {
+    transition: transform 1s ease;
+
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: a.$primary-color;
+}
+
+.ibox-a1 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
 }
