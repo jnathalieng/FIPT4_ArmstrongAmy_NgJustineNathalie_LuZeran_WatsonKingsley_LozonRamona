@@ -8,6 +8,7 @@ import { commShowHide } from "./modules/commShowHide.js";
 
 import { tlShowSticky } from "./modules/tlShowSticky.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
+import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 
 navbar_showhide();
 
@@ -21,6 +22,7 @@ else if(document.body.dataset.page === "timeline") {
 else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
     parallaxObj();
+    tlImgTextReveal();
     // tlShowSticky();
 }
 else if(document.body.dataset.page === "trainingBases") {
