@@ -4,8 +4,8 @@ export function parallaxObj() {
     // function to get y translation values based on container height
     const getY = (element) => {
         const height = element.clientHeight;
-        const maxScrollSpeed = -300;
-        const minScrollSpeed = -200;
+        const maxScrollSpeed = -500;
+        const minScrollSpeed = -10;
         const referenceHeight = 500;
 
         // function to adjust velocities based on heights relative to reference height
@@ -15,6 +15,7 @@ export function parallaxObj() {
         return speedFactor;
     };
 
+    // Text Containers
     document.querySelectorAll(".parallax-con-text").forEach((textBox) => {
         gsap.to(textBox, {
             y: getY(textBox),
@@ -28,4 +29,17 @@ export function parallaxObj() {
         });
     });
 
+    // Image containers
+    document.querySelectorAll(".parallax-con-img").forEach((imageBox) => {
+        gsap.to(imageBox, {
+            y: getY(imageBox),
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: imageBox,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5
+            }
+        });
+    });
 }
