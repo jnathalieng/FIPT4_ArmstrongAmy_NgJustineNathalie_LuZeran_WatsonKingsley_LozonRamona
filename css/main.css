@@ -2470,8 +2470,6 @@ footer .footer-closing-text p {
 }
 
 #timeline-intro-con {
-  position: absolute;
-  top: 0;
   text-align: center;
   width: 100%;
 }
@@ -2519,6 +2517,9 @@ footer .footer-closing-text p {
   border-radius: 2rem;
   margin: 1rem;
   padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 20vw);
+  grid-template-rows: repeat(6, 20vw);
 }
 
 .parallax-con-text {
@@ -2526,4 +2527,5 @@ footer .footer-closing-text p {
   border-radius: 2rem;
   margin: 1rem;
   padding: 1rem;
+  aspect-ratio: 3/2;
 }/*# sourceMappingURL=main.css.map */
