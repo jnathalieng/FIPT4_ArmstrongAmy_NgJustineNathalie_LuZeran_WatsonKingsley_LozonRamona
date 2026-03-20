@@ -17,12 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//public api route
-// Route::get('/contact', function () {
-//     return file_get_contents(public_path('contact.html'));
-// });
-
-//base directory api route
 Route::get('/contact', function () {
-    return file_get_contents(base_path('contact.html'));
+    return file_get_contents(public_path('contact.html'));
+});
+
+Route::get('/commemoration', function () {
+    return file_get_contents(public_path('commemoration.html'));
 });
