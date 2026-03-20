@@ -6,8 +6,8 @@ import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
 import { tlShowHide } from "./modules/tlShowHide.js";
 import { commShowHide } from "./modules/commShowHide.js";
-
-import { tlShowSticky } from "./modules/tlShowSticky.js";
+import { parallaxObj } from "./modules/tlParallaxObj.js";
+import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 
 navbar_showhide();
 
@@ -20,7 +20,8 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
-    tlShowSticky();
+    parallaxObj();
+    tlImgTextReveal();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
@@ -34,7 +35,7 @@ else if(document.body.dataset.page === "BOB") {
 else if(document.body.dataset.page === "canteen") {
     console.log('drink up!');
 }
-else if(document.body.dataset.page === "commemmoration") {
+else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
     commShowHide();
 }
