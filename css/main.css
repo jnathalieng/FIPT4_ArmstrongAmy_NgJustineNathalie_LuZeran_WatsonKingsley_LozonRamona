@@ -2634,5 +2634,77 @@ footer .footer-closing-text p {
 }
 
 .tbox-b11 {
+  grid-column: 5/span 10;
+}
+
+.tbox-c1 {
+  grid-column: 5/span 4;
+}
+
+.tbox-c2 {
+  grid-column: 7/span 4;
+}
+
+.tbox-c3 {
+  grid-column: 8/span 4;
+}
+
+.tbox-c4 {
+  grid-column: 5/span 5;
+}
+
+.tbox-d1 {
+  grid-column: 3/span 5;
+}
+
+.tbox-d2 {
+  grid-column: 4/span 5;
+}
+
+.tbox-d3 {
+  grid-column: 5/span 5;
+}
+
+.tbox-d4 {
+  grid-column: 6/span 5;
+}
+
+.tbox-d5 {
+  grid-column: 7/span 5;
+}
+
+.tbox-d6 {
+  grid-column: 8/span 5;
+}
+
+.tbox-d7 {
+  grid-column: 7/span 5;
+}
+
+.tbox-e1 {
+  grid-column: 3/span 8;
+}
+
+.tbox-f1 {
+  grid-column: 3/span 4;
+}
+
+.tbox-f2 {
+  grid-column: 5/span 4;
+}
+
+.tbox-f3 {
+  grid-column: 7/span 5;
+}
+
+.tbox-f4 {
+  grid-column: 5/span 5;
+}
+
+.tbox-f5 {
+  grid-column: 3/span 4;
+}
+
+.tbox-f6 {
   grid-column: 5/span 4;
 }/*# sourceMappingURL=main.css.map */
