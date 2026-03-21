@@ -45,6 +45,6 @@ else if(document.body.dataset.page === "events") {
 else if(document.body.dataset.page === "contact") {
     console.log('Contact us!');
     const app = createApp(contactForm);
-    app.mount('#app');
+    app.mount('#contact-form');
     console.log('Vue app mounted!');
 }

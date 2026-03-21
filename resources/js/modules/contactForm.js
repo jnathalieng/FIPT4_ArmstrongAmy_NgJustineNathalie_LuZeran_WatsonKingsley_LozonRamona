@@ -4,54 +4,61 @@ export default {
       formData: {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        honeypot: '',
+        testAnswer: ''
       },
-      feedbackMessage: '',
-      feedbackClass: ''
-    };
+      responseMessage: '',
+      errors: {},
+      buttonText: "Submit Message",
+      submitted: false
+    }
   },
   methods: {
+    emptyForm() {
+      return {
+        name: '',
+        email: '',
+        message: '',
+        honeypot: '',
+        testAnswer: ''
+      };
+    },
     regForm(event) {
-      const formdata = 
-        "name=" + this.formData.name +
-        "&email=" + this.formData.email +
-        "&message=" + this.formData.message;
+      event.preventDefault();
+      this.submitForm();
+    },
+    submitForm() {
+      const csrfMeta = document.querySelector('meta[name="csrf-token"]');
+      const csrfToken = csrfMeta ? csrfMeta.getAttribute('content') : '';
       
-      console.log(formdata);
-      fetch('/api/contact', {
+      fetch('/contact', { 
         method: 'POST',
-        body: formdata,
-        headers: { 
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-TOKEN': csrfToken
+        },
+        body: JSON.stringify(this.formData)
       })
-      .then(response => {
-        console.log('Status:', response.status);
-        return response.json();
-      })
+      .then(res => res.json())
       .then(data => {
-        console.log('Response:', data);
-        if(data.status === 'success') {
-          this.feedbackMessage = data.message;
-          this.feedbackClass = 'success';
-          this.formData = { name: '', email: '', message: '' };
-        } else {
-          this.feedbackMessage = data.message;
-          this.feedbackClass = 'error';
+        if(data.errors) {
+          this.errors = data.errors;
+          this.responseMessage = '';
+          return
         }
-      })
-      .then(response => {
-        console.log('Status:', response.status);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
+        this.errors = {};
+        this.responseMessage = data.message;
+        this.formData = this.emptyForm();
+        this.submitted = true;
       })
       .catch(error => {
-        this.feedbackMessage = 'Something went wrong!';
-        this.feedbackClass = 'error';
-        console.error('Fetch error:', error);
-      });
+        console.log(error);
+        this.errors = {
+          general: "It seems you have lost your internet connection. Please try again later"
+        };
+        this.responseMessage = '';
+      })
     }
   }
-};
+}

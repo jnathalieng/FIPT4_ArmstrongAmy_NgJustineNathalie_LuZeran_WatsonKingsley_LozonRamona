@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
         <script type="importmap">
       {
         "imports": {
@@ -12,6 +9,10 @@
         }
       }
     </script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
@@ -124,35 +125,50 @@
             </div>
         </section>
 
-<article class="form-con" id="app">
+
+        <!-- CONTACT FORM -->
+<article class="form-con" id="contact-form">
   <form @submit.prevent="regForm" class="input-form" id="contactForm">
-    <div>
-      <label>Name:</label>
-      <input  v-model="formData.name" 
-              class="form-box"
-              id="name"
-              type="text" 
-              name="name" 
-              required />
-    </div>
-      <div>
-        <label>Email:</label>
+
+        <label for="name" >Name:<span class="required">*</span></label>
+        <p class="field-error" v-if="errors.name">@{{errors.name}}</p>
+        <input  v-model="formData.name" 
+                class="form-box"
+                id="name"
+                type="text" 
+                name="name" 
+                placeholder="i.e. John Doe"/>
+
+        <label for="email" >Email:<span class="required">*</span></label>
+        <p class="field-error" v-if="errors.email">@{{errors.email}}</p>
         <input  v-model="formData.email" 
                 class="form-box"
                 id="email"
                 type="email" 
                 name="email" 
-                required />
-      </div>
-      <div>
-        <label>Message:</label>
+                placeholder="JohnDoe@gmail.com"/>
+
+        <label for="message">Message: <span class="required">*</span></label>
+        <p class="field-error" v-if="errors.message">@{{errors.message}}</p>
         <textarea   v-model="formData.message" 
                     class="form-box"
                     id="msg"
-                    name="message" 
-                    required></textarea>
+                    name="message">
+        </textarea>
+
+        <label for="testAnswer">What is 4+4 (Type the number) <span class="required">*</span></label>
+        <p class="field-error" v-if="errors.testAnswer">@{{errors.testAnswer}}</p>
+        <input placeholder="0" type="number" id="testAnswer" v-model="formData.testAnswer">                    
+
+        <input type="text" id="honeypot" v-model="formData.honeypot">
+
       </div>
-      <button type="submit">Send</button>
+      <button class="send-button" type="submit">Send</button>
+
+        <p class="field-error" v-if="errors.general">@{{errors.general}}</p>
+        <div v-if="responseMessage">
+          @{{responseMessage}}
+        </div>
     </form>
 </article>
 

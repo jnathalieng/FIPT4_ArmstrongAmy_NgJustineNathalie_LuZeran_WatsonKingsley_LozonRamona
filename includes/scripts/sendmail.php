@@ -3,47 +3,59 @@
 ini_set('display_errors', 0);
 error_reporting(E_ALL);     
 header('Content-Type: application/json');
-
-
 require_once('includes/connect.php');
 
-$name  = trim($_POST['name']);
-$email = trim($_POST['email']);
-$msg   = trim($_POST['msg']);
+$name       = trim(htmlspecialchars($_POST['name'] ?? '', ENT_QUOTES, 'UTF-8'));
+$email      = filter_var($_POST['email'] ?? '', FILTER_VALIDATE_EMAIL);
+$message    = trim(htmlspecialchars($_POST['message'] ?? '', ENT_QUOTES, 'UTF-8'));
+$testAnswer = filter_var($_POST['testAnswer'] ?? '', FILTER_VALIDATE_INT);
+$honeypot   = trim($_POST['honeypot'] ?? '');
+
 
 $errors = [];
 
-if(empty($name))  $errors['name']  = 'Name field cannot be empty';
-if(empty($msg))   $errors['msg']   = 'Message field cannot be empty';
-
-if(empty($email)) {
-    $errors['email'] = 'You must provide an email';
-} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors['email'] = 'You must provide a valid email';
+if (!empty($honeypot)) {
+    $errors['honeypot'] = 'Spam detected.';
 }
 
-if(empty($errors)) {
-    // Use prepared statements for safety
-    $stmt = $connect->prepare("INSERT INTO contacts (name, email, msg) VALUES(?, ?, ?)");
-    $stmt->bind_param("sss", $name, $email, $msg);
+$correctAnswer = 8;
+if ($testAnswer !== $correctAnswer) {
+    $errors['testAnswer'] = 'Incorrect answer to the test question.';
+}
+
+if (!$name) {
+    $errors['name'] = 'Name is required.';
+}
+
+if (!$email) {
+    $errors['email'] = 'Valid email is required.';
+}
+
+if (!$message) {
+    $errors['message'] = 'Message is required.';
+}
+
+if (!empty($errors)) {
+    echo json_encode(['errors' => $errors]);
+    exit;
+}
+
+$stmt = $connect->prepare("INSERT INTO contacts (name, email, message) VALUES(?, ?, ?)");
+$stmt->bind_param("sss", $name, $email, $message);
 
     if($stmt->execute()) {
         // Send email
         $to = ' ';
         $subject = 'Message from the London Aircraft Museum Website';
-        $message = "You have received a new contact form submission:\n\n";
-        $message .= "Name: " . $name . "\n";
-        $message .= "Email: " . $email . "\n\n";
-        $message .= "Message: " . $msg;
+        $emailBody = "You have received a new contact form submission:\n\n";
+        $emailBody .= "Name: " . $name . "\n";
+        $emailBody .= "Email: " . $email . "\n\n";
+        $emailBody .= "Message: " . $message;
 
-        mail($to, $subject, $message);
+        mail($to, $subject, $emailBody);
 
         echo json_encode(['status' => 'success', 'message' => 'Message sent successfully!']);
     } else {
         echo json_encode(['status' => 'error', 'message' => 'Database error, please try again']);
     }
-} else {
-    // Return errors as JSON
-    echo json_encode(['status' => 'error', 'message' => implode(', ', $errors)]);
-}
 ?>

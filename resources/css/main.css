@@ -1310,14 +1310,17 @@ footer .footer-closing-text p {
 .form-con .input-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   width: 80vw;
   max-width: 600px;
   margin: 10% 0px 10% 0px;
-  background-color: rgba(60, 60, 60, 0.3);
+  background-color: rgba(60, 60, 60, 0.5);
   border: solid 1px #3c3c3c;
   border-radius: 5px;
   padding: 20px;
+}
+.form-con .input-form label {
+  color: white;
 }
 .form-con .input-form .form-box {
   background-color: white;
@@ -1345,6 +1348,36 @@ footer .footer-closing-text p {
   opacity: 1;
   cursor: pointer;
   z-index: 100;
+  margin-top: 20px;
+}
+
+.field-error {
+  color: #d93025;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field-error::before {
+  content: "!";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  color: black;
+  background-color: #d93025;
+  border-radius: 50%;
+}
+
+#contactForm #honeypot {
+  display: none;
+}
+
+.required {
+  color: firebrick;
 }
 
 #tl-scroll-prog-con {
@@ -2572,4 +2605,4 @@ footer .footer-closing-text p {
 .ibox-a1 {
   grid-column: 1/span 4;
   grid-row: 5;
-}/*# sourceMappingURL=main.css.map */
+}

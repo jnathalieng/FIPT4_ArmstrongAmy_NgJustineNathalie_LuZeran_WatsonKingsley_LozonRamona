@@ -7,7 +7,11 @@ export default defineConfig({
         host: '127.0.0.1',
         port: 5173
     },
-
+    resolve: {
+        alias: {
+            'vue': 'vue/dist/vue.esm-bundler.js',
+        }
+    },
     plugins: [
         laravel({
             input: ['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'

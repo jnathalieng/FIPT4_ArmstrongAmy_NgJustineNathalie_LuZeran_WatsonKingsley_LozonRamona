@@ -144,6 +144,7 @@
                     </div>
 
                 </div>
+                <!-- list of 420 squad airmen -->
 
                 <!-- GammaCon 420 Placeholder 1 -->
                 <div class="comm-gamma-con">
@@ -157,13 +158,13 @@
 
                     <div class="comm-gamma-text-con">
                         <span class="title-span">PLACEHOLDER</span>
-                        <h2>GRANT THOMAS STEWART</h2>
+                        <h2>PLACEHOLDER</h2>
 
                         <p>
-                            Killed when his P-51 Mustang broke up in mid-air and crashed near Walkerton, 25 October 1952.
+                            PLACEHOLDER
                         </p>
 
-                        <h3>MILITARY SERVICE</h3>
+                        <h3>PLACEHOLDER</h3>
                         
                         <p class="service-number"><span class="label-span">SERVICE NUMBER: </span>130234</p>
                         <p class="age"><span class="label-span">AGE: </span>23</p>
