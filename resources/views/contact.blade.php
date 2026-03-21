@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <link rel="stylesheet" href="{{ asset('build/assets/main-aAoD0HnP.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/grid-DqR4TeWH.css') }}"> 
-    <script src="{{ asset('build/assets/main-B5nEAxxQ.js') }}"></script>
+    @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
         <script type="importmap">
       {
         "imports": {

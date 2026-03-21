@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battle of Britain</title>
-    <link rel="stylesheet" href="{{ asset('build/assets/main-aAoD0HnP.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/grid-DqR4TeWH.css') }}"> 
-    <script src="{{ asset('build/assets/main-B5nEAxxQ.js') }}"></script>
+    @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
