@@ -15,8 +15,9 @@ export function tlShowSticky() {
             duration: 1,
             ease: "power2.out",
             scrollTrigger: {
-                trigger: "#timeline-intro-con",
-                start: "top 10%"
+                trigger: "#tl-1909-section",
+                start: "top 50%",
+                toggleActions: "play none none reverse"
             }
         });
 }

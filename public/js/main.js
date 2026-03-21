@@ -22,6 +22,7 @@ else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
     parallaxObj();
     tlImgTextReveal();
+    tlShowSticky();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
