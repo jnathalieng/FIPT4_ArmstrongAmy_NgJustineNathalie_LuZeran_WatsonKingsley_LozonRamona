@@ -2478,6 +2478,13 @@ footer .footer-closing-text p {
   margin: auto;
 }
 
+.tl-content-break {
+  background-color: #B3262E;
+  text-align: center;
+  font-size: 1000%;
+  height: 100vh;
+}
+
 .tls-sticky-bg {
   font-size: 3000%;
   z-index: -1;
@@ -2489,8 +2496,6 @@ footer .footer-closing-text p {
 }
 
 .tls-content-con {
-  border: 1px solid black;
-  border-radius: 2rem;
   margin: 1%;
   display: grid;
   grid-template-columns: repeat(12, minmax(6vw, 20vw));
@@ -2584,7 +2589,7 @@ footer .footer-closing-text p {
 }
 
 .ibox-a1 {
-  grid-column: 8/span 5;
+  grid-column: 8/span 4;
   grid-row: 1;
 }
 

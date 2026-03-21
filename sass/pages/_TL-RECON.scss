@@ -20,6 +20,12 @@
     }
 }
 
+.tl-content-break {
+    background-color: a.$primary-color;
+    text-align: center;
+    font-size: 1000%;
+    height: 100vh;
+}
 
 // TLS-SECTION STYLING
 .tls-sticky-bg {
@@ -35,8 +41,8 @@
 }
 
 .tls-content-con {
-    border: 1px solid black;
-    border-radius: a.$borderrad;
+    // border: 1px solid black;
+    // border-radius: a.$borderrad;
     margin: 1%;
 
     // GRID SETUP
@@ -129,7 +135,7 @@
 .tbox-a5 {grid-column: 5 / span 4;}
 
 // IBOX-A
-.ibox-a1 {grid-column: 8 / span 5; grid-row: 1;}
+.ibox-a1 {grid-column: 8 / span 4; grid-row: 1;}
 
 // TBOX-B
 .tbox-b1 {grid-column: 6 / span 6;}

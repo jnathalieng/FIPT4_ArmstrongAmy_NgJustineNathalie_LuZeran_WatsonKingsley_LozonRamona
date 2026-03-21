@@ -5,7 +5,7 @@ export function parallaxObj() {
     const getY = (element) => {
         const height = element.clientHeight;
         const maxScrollSpeed = -600;
-        const minScrollSpeed = -100;
+        const minScrollSpeed = -10;
         const referenceHeight = 500;
 
         // function to adjust velocities based on heights relative to reference height
