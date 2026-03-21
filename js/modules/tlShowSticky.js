@@ -17,7 +17,7 @@ export function tlShowSticky() {
             scrollTrigger: {
                 trigger: "#tl-1909-section",
                 start: "top 50%",
-                toggleActions: "play reverse play reverse"
+                toggleActions: "play none none reverse"
             }
         });
 }
