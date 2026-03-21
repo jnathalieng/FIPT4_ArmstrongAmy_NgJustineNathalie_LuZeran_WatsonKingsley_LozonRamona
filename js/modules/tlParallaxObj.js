@@ -4,8 +4,8 @@ export function parallaxObj() {
     // function to get y translation values based on container height
     const getY = (element) => {
         const height = element.clientHeight;
-        const maxScrollSpeed = -500;
-        const minScrollSpeed = -10;
+        const maxScrollSpeed = -600;
+        const minScrollSpeed = -100;
         const referenceHeight = 500;
 
         // function to adjust velocities based on heights relative to reference height
