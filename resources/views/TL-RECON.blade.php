@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline Reconstruction</title>
-    <link type="text/css" href="css/main.css" rel="stylesheet">
-    <link type="text/css" href="css/grid.css" rel="stylesheet">
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
     <!-- Module -->
-    <script type="module" defer src="js/main.js"></script>
+    @vite(['resources/css/app.scss', 'resources/js/main.js'])
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body id="tl-body" data-page="TIMELINE-RECON">
@@ -18,11 +19,11 @@
     <header class="header">
     <!-- navbar -->
         <nav>
-                <div id="logo"><a href="index.html" class="hover-item"></a></div>
+                <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
                 
                 <div class="m-l-nav-item" id="about-nav">
                 <div></div>
-                    <a class="button-text" href="about.html">About</a>
+                    <a class="button-text" href="{{ route('about') }}">About</a>>About</a>
                 </div>
 
                 <div class="drop-down-wrap">
@@ -33,34 +34,37 @@
                     <ul class="dropdown-menu">
                         <li>
                             <div></div>
-                            <a class="button-text" href="wartime_experience.html">War Time Experiences</a>
+                            <a class="button-text" href="{{ route('timeline') }}">London's Air Page</a>
                         </li>
                         <li>
                             <div></div>
-                            <a class="button-text" href="training_bases.html">Training Bases</a>
+                            <a class="button-text" href="{{ route('wartime_experience') }}">War Time Experiences</a>
                         </li>
                         <li>
                             <div></div>
-                            <a class="button-text" href="canteen.html">Airman's Canteen</a>
+                            <a class="button-text" href="{{ route('training_bases') }}" >Training Bases</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a class="button-text" href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
 
                         <li>
                             <div></div>
-                            <a class="button-text" href="commemoration.html">Commemoration</a>
+                            <a class="button-text" href="{{ route('commemoration') }}">Commemoration</a>
                         </li>
-                    </ul>
                 </div>
                 <div class="m-l-nav-item">
                     <div></div>
-                    <a class="button-text" href="BOB.html">Battle of Britain</a>
+                    <a class="button-text" href="{{ route('BOB') }}">Battle of Britain</a>
                 </div>
                 <div class="m-l-nav-item">
                     <div></div>
-                    <a class="button-text" href="events.html">Events</a>
+                    <a class="button-text" href="{{ route('events') }}">Events</a>
                 </div>
                 <div class="m-l-nav-item">
                     <div></div>
-                    <a class="button-text" href="contact.html">Contact</a>
+                    <a class="button-text" href="{{ route('contact') }}">Contact</a>
                 </div>
 
             <!-- mobile hamburger menu -->
@@ -71,15 +75,16 @@
                     </div>
 
                     <ul class="hamburger-dropdown">
-                        <li><a class="button-text hover-item" href="index.html">Home</a></li>
-                        <li><a class="button-text hover-item" href="about.html">About</a></li>             
-                        <li><a class="button-text hover-item" href="wartime_experience.html">War Time Experiences</a></li>
-                        <li><a class="button-text hover-item" href="training_bases.html">Training Bases</a></li>
-                        <li><a class="button-text hover-item" href="canteen.html">Airman's Canteen</a></li>
-                        <li><a class="button-text hover-item" href="commemoration.html">Commemoration</a></li>                       
-                        <li><a class="button-text hover-item" href="BOB.html">Battle of Britain</a></li>
-                        <li><a class="button-text hover-item" href="events.html">Events</a></li>
-                        <li><a class="button-text hover-item" href="contact.html">Contact</a></li>
+                <li><a class="button-text hover-item" href="{{ route('home') }}">Home</a></li>   
+                <li><a class="button-text hover-item" href="{{ route('about') }}">About</a></li>             
+                <li><a class="button-text hover-item" href="{{ route('timeline') }}">London's Air Page</a></li>
+                <li><a class="button-text hover-item" href="{{ route('wartime_experience') }}">War Time Experiences</a></li>
+                <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
+                <li><a class="button-text hover-item" href="{{ route('canteen') }}">Airman's Canteen</a></li>
+                <li><a class="button-text hover-item" href="{{ route('commemoration') }}">Commemoration</a></li>                     
+                <li><a class="button-text hover-item" href="{{ route('BOB') }}">Battle of Britain</a></li>
+                <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
+                <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
 
         </nav>

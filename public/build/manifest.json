@@ -1,0 +1,11 @@
+{
+  "resources/css/sass/main.scss": {
+    "file": "assets/main-BNoivdG1.css",
+    "name": "main",
+    "names": [
+      "main.css"
+    ],
+    "src": "resources/css/sass/main.scss",
+    "isEntry": true
+  }
+}

@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battle of Britain</title>
-    <link type="text/css" href="css/main.css" rel="stylesheet">
-    <link type="text/css" href="css/grid.css" rel="stylesheet">
-
+    @vite(['resources/css/main.css', 'resources/js/main.js'])
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
-    <script type="module" defer src="js/main.js"></script>
 </head>
 <body data-page="BOB" id="BOB-page">
 
     <header class="header">
     <!-- navbar -->
         <nav>
-                <div id="logo"><a href="index.html" class="hover-item"></a></div>
+                <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
                 
                 <div class="m-l-nav-item" id="about-nav">
                 <div></div>
@@ -32,33 +29,32 @@
                     <ul class="dropdown-menu">
                         <li>
                             <div></div>
-                            <a class="button-text" href="timeline.html">London's Air Page</a>
+                            <a class="button-text" href="{{ route('timeline') }}">London's Air Page</a>
                         </li>
                         <li>
                             <div></div>
-                            <a class="button-text" href="wartime_experience.html">War Time Experiences</a>
+                            <a class="button-text" href="{{ route('wartime_experience') }}">War Time Experiences</a>
                         </li>
                         <li>
                             <div></div>
-                            <a class="button-text" href="training_bases.html">Training Bases</a>
+                            <a class="button-text" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
                         <li>
                             <div></div>
-                            <a class="button-text" href="canteen.html">Airman's Canteen</a>
+                            <a class="button-text" href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
-
                         <li>
                             <div></div>
-                            <a class="button-text" href="commemoration.html">Commemoration</a>
+                            <a class="button-text" href="{{ route('comm') }}">Commemoration</a>
                         </li>
                 </div>
                 <div class="m-l-nav-item">
                     <div></div>
-                    <a class="button-text" href="events.html">Events</a>
+                    <a class="button-text" href="{{ route('events') }}">Events</a>
                 </div>
                 <div class="m-l-nav-item">
                     <div></div>
-                    <a class="button-text" href="contact.html">Contact</a>
+                    <a class="button-text" href="{{ route('contact') }}">Contact</a>
                 </div>
 
             <!-- mobile hamburger menu -->
@@ -69,15 +65,15 @@
                     </div>
 
                     <ul class="hamburger-dropdown">
-                        <li><a class="button-text hover-item" href="index.html">Home</a></li>
-                        <li><a class="button-text hover-item" href="about.html">About</a></li>             
-                        <li><a class="button-text hover-item" href="timeline.html">London's Air Page</a></li>
-                        <li><a class="button-text hover-item" href="wartime_experience.html">War Time Experiences</a></li>
-                        <li><a class="button-text hover-item" href="training_bases.html">Training Bases</a></li>
-                        <li><a class="button-text hover-item" href="canteen.html">Airman's Canteen</a></li>
-                        <li><a class="button-text hover-item" href="commemoration.html">Commemoration</a></li>
-                        <li><a class="button-text hover-item" href="events.html">Events</a></li>
-                        <li><a class="button-text hover-item" href="contact.html">Contact</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('home') }}">Home</a></li> 
+                        <li><a class="button-text hover-item" href="{{ route('about') }}">About</a></li>             
+                        <li><a class="button-text hover-item" href="{{ route('timeline') }}">London's Air Page</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('wartime_experience') }}">War Time Experiences</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('canteen') }}">Airman's Canteen</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('comm') }}">Commemoration</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
 
         </nav>
@@ -452,14 +448,14 @@
 
     </main>
 
- <footer>
+    <footer>
 
         <!-- Footer Selection Section -->
 
         <div class="footer-selection-con">
             
             <div class="footer-selection-box">
-                <a href="training_bases.html" class="footer-selection-a">
+                <a href="{{ route('training_bases') }}" class="footer-selection-a">
                     <h3 class="header-text">BCATP Training Sites</h3>
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-map.png">
@@ -470,7 +466,7 @@
             </div>
 
             <div class="footer-selection-box">
-                <a href="timeline.html" class="footer-selection-a">
+                <a href="{{ route('timeline') }}" class="footer-selection-a">
                     <h3 class="header-text">London Aviation Timeline</h3>
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-war.png">
@@ -481,7 +477,7 @@
             </div>
 
             <div class="footer-selection-box">
-                <a href="BOB.html" class="footer-selection-a">
+                <a href="{{ route('BOB') }}" class="footer-selection-a">
                     <h3 class="header-text">Battle of Britain</h3>
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
@@ -497,7 +493,7 @@
             <!-- Logo -->
 
             <div class="footer-logo-con">
-                <a href="index.html">
+                <a href="{{ route('home') }}">
                     <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
                 </a>
             </div>
@@ -522,21 +518,21 @@
                     <h4 class="header-text">Discover</h4>
 
                     <div class="footer-cta-con">
-                        <a href="about.html">
+                        <a href="{{ route('about') }}">
                             <img src="/images/icons/right-arrow.svg">
                             About Us
                         </a>
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="timeline.html">
+                        <a href="{{ route('timeline') }}">
                             <img src="/images/icons/right-arrow.svg">
                             History
                         </a>
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="commemoration.html">
+                        <a href="{{ route('comm') }}">
                             <img src="/images/icons/right-arrow.svg">
                             Rememberance
                         </a>
@@ -550,7 +546,7 @@
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="contact.html">
+                        <a href="{{ route('contact') }}">
                             <img src="/images/icons/right-arrow.svg">
                             Contact Us
                         </a>
@@ -564,35 +560,35 @@
                     <h4 class="header-text">Our Legacy</h4>
 
                     <div class="footer-cta-con">
-                        <a href="timeline.html">
+                        <a href="{{ route('timeline') }}">
                             <img src="/images/icons/right-arrow.svg">
                             London Aviation Timeline
                         </a>
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="training_bases.html">
+                        <a href="{{ route('training_bases') }}">
                             <img src="/images/icons/right-arrow.svg">
                             Flight Schools and Training Bases
                         </a>
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="commemoration.html">
+                        <a href="{{ route('comm') }}">
                             <img src="/images/icons/right-arrow.svg">
                             Legacy of the Fallen
                         </a>
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="canteen.html">
+                        <a href="{{ route('canteen') }}">
                             <img src="/images/icons/right-arrow.svg">
                             Airman's Canteen
                         </a>
                     </div>
 
                     <div class="footer-cta-con">
-                        <a href="BOB.html">
+                        <a href="{{ route('BOB') }}">
                             <img src="/images/icons/right-arrow.svg">
                             Battle of Britain
                         </a>
@@ -669,10 +665,7 @@
         
         <div class="footer-closing-text">
             <p class="body-text">Copyright ©2026 LONDON AVIATION MUSEUM | Privacy Policy | Terms</p>
-        </div>
-    </footer>
-</body>
-</html>
+        </div>        
     </footer>
 </body>
 </html>
