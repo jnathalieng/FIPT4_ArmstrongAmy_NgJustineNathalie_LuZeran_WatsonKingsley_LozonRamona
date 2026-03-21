@@ -1,11 +1,26 @@
 {
-  "resources/css/sass/main.scss": {
-    "file": "assets/main-BNoivdG1.css",
+  "resources/css/grid.css": {
+    "file": "assets/grid-DqR4TeWH.css",
+    "name": "grid",
+    "names": [
+      "grid.css"
+    ],
+    "src": "resources/css/grid.css",
+    "isEntry": true
+  },
+  "resources/css/main.css": {
+    "file": "assets/main-aAoD0HnP.css",
     "name": "main",
     "names": [
       "main.css"
     ],
-    "src": "resources/css/sass/main.scss",
+    "src": "resources/css/main.css",
+    "isEntry": true
+  },
+  "resources/js/main.js": {
+    "file": "assets/main-B5nEAxxQ.js",
+    "name": "main",
+    "src": "resources/js/main.js",
     "isEntry": true
   }
 }
