@@ -17,6 +17,7 @@ class Comm extends Model
         'picture',
         'service_number',
         'rank',
+        'corps',
         'age',
         'birth',
         'death',

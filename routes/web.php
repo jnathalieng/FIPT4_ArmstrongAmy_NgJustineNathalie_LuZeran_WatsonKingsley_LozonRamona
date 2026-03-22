@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-
+use App\Http\Controllers\CommController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,6 +45,8 @@ Route::get('/canteen', function () {
 Route::get('/comm', function () {
     return view('comm');
 })->name('comm');
+
+Route::get('/comm', [CommController::class, 'index'])->name('comm');
 
 Route::get('/events', function () {
     return view('events');

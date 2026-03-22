@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+        <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commemoration Page</title>
+<script>window.commMembers = @json($commMembers);</script>
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,6 +186,8 @@
                         <p class="burial-info"><span class="label-span">BURIAL/MEMORIAL INFORMATION GRAVE REFERENCE: </span>Grave 3, Lot 59, Plot A,</p>
                     </div>
                 </div>
+
+                <div id="comm-app"></div>
 
                 <div class="read-more">
                     <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>

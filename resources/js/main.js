@@ -1,5 +1,6 @@
 import { navbar_showhide } from "./modules/hamburger.js";
 import contactForm from "./modules/contactForm.js";
+import commForm from "./modules/comm.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
@@ -38,6 +39,11 @@ else if(document.body.dataset.page === "canteen") {
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
     commShowHide();
+    
+    const app = createApp(commForm, {
+        members: window.commMembers || []
+    });
+    app.mount('#comm-app');
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
