@@ -18,10 +18,12 @@ class Comm extends Model
         'service_number',
         'rank',
         'corps',
+        'unit',
         'age',
         'birth',
         'death',
         'enlist',
-        'info'
+        'info',
+        'grave'
     ];
 }

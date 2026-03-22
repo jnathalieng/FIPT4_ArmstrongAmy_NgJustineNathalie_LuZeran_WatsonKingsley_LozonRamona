@@ -19,11 +19,13 @@ public function up()
         $table->string('service_number', 150);
         $table->text('rank');
         $table->string('corps', 250);
+        $table->string('unit', 250);
         $table->integer('age');
         $table->string('birth', 250);
         $table->text('death');
         $table->string('enlist', 300);
         $table->text('info');
+        $table->text('grave');
         $table->timestamps();
     });
 }
