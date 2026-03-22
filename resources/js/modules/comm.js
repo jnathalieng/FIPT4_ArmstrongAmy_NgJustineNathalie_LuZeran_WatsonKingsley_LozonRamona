@@ -1,12 +1,11 @@
 export default {
-    props: ['members'],
     data() {
         return {
             commMembers: []
         }
     },
     mounted() {
-        this.commMembers = this.members || [];
+        this.commMembers = window.commMembers || [];
     },
     methods: {
         getImagePath(picture, isMobile = false) {

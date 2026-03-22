@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commemoration Page</title>
 <script>window.commMembers = @json($commMembers);</script>
+<script>window.trainingThree = @json($trainingThree);</script>
+<script>window.trainingFour = @json($trainingFour);</script>
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -154,38 +156,7 @@
                 </div>
                 <!-- list of 420 squad airmen -->
 
-                <!-- GammaCon 420 Placeholder 1 -->
-                <div class="comm-gamma-con">
-                    <div class="comm-gamma-img-con">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/comm-images/desktop/d-comm-grant-thomas-stewart.png">
-                            <!-- NEEDS BOTH IMAGES -->
-                            <img  class="comm-gamma-img" src="images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="placeholder of pilots">
-                        </picture>
-                    </div>
-
-                    <div class="comm-gamma-text-con">
-                        <span class="title-span">PLACEHOLDER</span>
-                        <h2>PLACEHOLDER</h2>
-
-                        <p>
-                            PLACEHOLDER
-                        </p>
-
-                        <h3>PLACEHOLDER</h3>
-                        
-                        <p class="service-number"><span class="label-span">SERVICE NUMBER: </span>130234</p>
-                        <p class="age"><span class="label-span">AGE: </span>23</p>
-                        <p class="rank"><span class="label-span">RANK: </span>FLYING OFFICER</p>
-                        <p class="force"><span class="label-span">FORCE: </span>AIR FORCE</p>
-                        <p class="unit-regiment"><span class="label-span">UNIT/REGIMENT: </span>420 "City of London" (Fighter) Squadron</p>
-                        <p class="birth"><span class="label-span">BIRTH: </span>June 20, 1929 Kincardine, Ontario</p>
-                        <p class="enlistment"><span class="label-span">ENLISTMENT: </span>January 1, 1949 London, Ontario</p>
-                        <p class="death"><span class="label-span">DEATH: </span>October 25, 1952 Pinkerton, Ontario</p>
-
-                        <p class="burial-info"><span class="label-span">BURIAL/MEMORIAL INFORMATION GRAVE REFERENCE: </span>Grave 3, Lot 59, Plot A,</p>
-                    </div>
-                </div>
+              
 
                 <div id="comm-app"></div>
 
@@ -228,460 +199,11 @@
 
                 <div class="comm-delta-con-wrapper">
                     <h2>NO.3 AIR OBSERVER SCHOOL</h2>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
+                <div id="comm-training-three"></div>
                 </div>
-
                 <div class="comm-delta-con-wrapper">
                     <h2>NO. 4  AIR OBSERVER SCHOOL</h2>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
-
-                    <!-- DeltaCon Placeholder 1 -->
-                    <div class="comm-delta-con">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
-                                <!-- PLACEHOLDER CON -->
-                                <img  class="comm-delta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="placeholder of pilots">
-                            </picture>
-                        </div>
-
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">LEADING AIRCRAFTMAN</span>
-                            <h2>LEWIS DUFF</h2>
-
-                            <p>
-                                Killed in a mid-air collision during a solo training flight southwest of the London aerodrome.
-                            </p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>No. 3 Air Observer School</p>
-                            <p class="incident"><span class="label-span">INCIDENT: </span>Mid-air collision</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>One quarter mile southwest of London aerodrome</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>Engaged in a solo training flight when his aircraft collided with another student aircraft. Both airmen were killed.</p>
-                        </div>
-                    </div>
+                <div id="comm-training-four"></div>
                 </div>
 
                 <div class="read-more">
@@ -760,5 +282,223 @@
 </main>
 
     <footer>
+
+        <!-- Footer Selection Section -->
+
+        <div class="footer-selection-con">
+            
+            <div class="footer-selection-box">
+                <a href="{{ route('training_bases') }}" class="footer-selection-a">
+                    <h3 class="header-text">BCATP Training Sites</h3>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-map.png">
+
+                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="footer-selection-box">
+                <a href="{{ route('timeline') }}" class="footer-selection-a">
+                    <h3 class="header-text">London Aviation Timeline</h3>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-war.png">
+
+                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="footer-selection-box">
+                <a href="{{ route('BOB') }}" class="footer-selection-a">
+                    <h3 class="header-text">Battle of Britain</h3>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
+
+                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
+                    </picture>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-desktop-flex-con">
+            <div class="footer-desktop-flex-section" id="logo-and-info">
+            <!-- Logo -->
+
+            <div class="footer-logo-con">
+                <a href="{{ route('home') }}">
+                    <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
+                </a>
+            </div>
+
+            <div class="footer-text-con">
+                <p class="body-text">A Project of 427 Wing RCAF ASSOCIATION</p>
+
+                <p class="body-text">www.427wing.com</p>
+
+                <p class="body-text">Contact: 519-455-0430</p>
+
+                <p class="body-text">Email: info@427wing.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-desktop-flex-section" id="desk-center">
+            <!-- Footer Nav Links -->
+
+            <div class="footer-nav-links-con">
+                
+                <div class="footer-nav-links footer-nav-discover">
+                    <h4 class="header-text">Discover</h4>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('about') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('timeline') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            History
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('comm') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Rememberance
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="#">
+                            <img src="/images/icons/right-arrow.svg">
+                            News & Events
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('contact') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-nav-links footer-nav-legacy">
+                    <h4 class="header-text">Our Legacy</h4>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('timeline') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            London Aviation Timeline
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('training_bases') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Flight Schools and Training Bases
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('comm') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Legacy of the Fallen
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('canteen') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Airman's Canteen
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('BOB') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Battle of Britain
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-desktop-flex-section" id="flex-section-end">
+            <!-- Footer Explore -->
+
+            <div class="footer-search-con">
+                
+                <h3 class="header-text">
+                    EXPLORE THE MUSEUM
+                </h3>
+
+                <p class="body-text">
+                    Search aircraft, exhibits, and stories of courage.
+                </p>
+
+                <div class="footer-search-bar-con">
+                    <form role="search">
+                        <input type="search" id="footer-search-bar" name="searchbar" placeholder="Search through site content..." aria-label="Search through site content">
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Footer Socials -->
+
+            <div class="footer-socials-con">
+                <h3 class="header-text">JOIN OUR COMMUNITY</h3>
+
+                <p class="body-text">Stand with us in preserving stories of courage</p>
+
+                <div class="footer-socials-icons-con">
+                    
+                    <div class="icons-con">
+                        <a href="https://www.facebook.com/">
+                            <img src="/images/icons/footer-socials-icons/Facebook.svg">
+                        </a>
+                    </div>
+                    
+                    <div class="icons-con">
+                        <a href="https://www.linkedin.com/">
+                            <img src="/images/icons/footer-socials-icons/LinkedIn.svg">
+                        </a>
+                    </div>
+
+                    <div class="icons-con">
+                        <a href="https://www.instagram.com/">
+                            <img src="/images/icons/footer-socials-icons/Instagram.svg">
+                        </a>
+                    </div>
+
+                    <div class="icons-con">
+                        <a href="https://x.com/">
+                            <img src="/images/icons/footer-socials-icons/twitter.svg">
+                        </a>
+                    </div>
+
+                    <div class="icons-con">
+                        <a href="https://www.youtube.com/">
+                            <img src="/images/icons/footer-socials-icons/Youtube.svg">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer-closing-text">
+            <p class="body-text">Copyright ©2026 LONDON AVIATION MUSEUM | Privacy Policy | Terms</p>
+        </div>        
+    </footer>
 </body>
 </html>
