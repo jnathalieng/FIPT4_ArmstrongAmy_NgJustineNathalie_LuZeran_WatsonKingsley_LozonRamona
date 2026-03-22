@@ -4,15 +4,16 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-class NumberFourAirObserverSchool extends Seeder
+class NumberFourAirObserverSchoolSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('comm')->insert([
+        DB::table('number_four_air_observers_school')->insert([
             [
         'user_id' => 1,
         'rank' => 'CIVILIAN PILOT',

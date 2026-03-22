@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-    Schema::create('losses_during_training', function (Blueprint $table) {
+    Schema::create('number_three_air_observers_school', function (Blueprint $table) {
         $table->id();
         $table->unsignedBigInteger('user_id');
         $table->text('rank');
