@@ -5,25 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Comm extends Model
+class TrainingFour extends Model
 {
     use HasFactory;
 
-    protected $table = 'comm';
+    protected $table = 'number_four_air_observers_school';
     
     protected $fillable = [
         'user_id',
+        'rank',
         'name',
         'picture',
-        'service_number',
-        'rank',
-        'corps',
-        'unit',
-        'age',
-        'birth',
-        'death',
-        'enlist',
         'info',
-        'grave'
+        'unit',
+        'date',
+        'aircraft',
+        'incident',
+        'location',
+        'details'
     ];
 }

@@ -1,35 +1,22 @@
 <?php
-
 namespace App\Http\Controllers;
-
+use App\Models\Comm;
+use App\Models\TrainingThree;
+use App\Models\TrainingFour;
 use Illuminate\Http\Request;
 
 class CommController extends Controller
 {
     public function index()
     {
-        $comm = Comm::all();
-        
-        return response()->json([
-            'status' => 'success',
-            'data' => $comm
-        ]);
-    }
+        $commMembers = Comm::all();
+        $trainingThree = TrainingThree::all();
+        $trainingFour = TrainingFour::all();
 
-    public function show($id)
-    {
-        $comm = Comm::find($id);
-        
-        if (!$comm) {
-            return response()->json([
-                'status' => 'error',
-                'message' => 'Record not found'
-            ], 404);
-        }
-
-        return response()->json([
-            'status' => 'success',
-            'data' => $comm
-        ]);
+        return view('comm', [
+            'commMembers' => $commMembers,
+            'trainingThree' => $trainingThree,
+            'trainingFour' => $trainingFour,
+            ]);
     }
 }

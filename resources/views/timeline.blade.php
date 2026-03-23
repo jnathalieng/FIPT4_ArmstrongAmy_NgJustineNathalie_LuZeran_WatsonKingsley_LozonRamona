@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historic Timeline</title>
+    @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body id="timeline-page" data-page="timeline">
+
+    <header class="header">
+    <!-- navbar -->
+        <nav>
+                <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
+                
+                <div class="m-l-nav-item" id="about-nav">
+                <div></div>
+                    <a class="button-text" href="{{ route('about') }}">About</a>
+                </div>
+
+                <div class="drop-down-wrap">
+                <div class="button-text m-l-nav-item" id="history-nav">
+                    <div></div>
+                    <a class="button-text history-menu">History</a>
+                </div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div></div>
+                            <a class="button-text" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a class="button-text" href="{{ route('training_bases') }}">Training Bases</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a class="button-text" href="{{ route('canteen') }}">Airman's Canteen</a>
+                        </li>
+
+                        <li>
+                            <div></div>
+                            <a class="button-text" href="{{ route('comm') }}">Commemoration</a>
+                        </li>
+                    </div>
+                <div class="m-l-nav-item">
+                    <div></div>
+                    <a class="button-text" href="{{ route('BOB') }}">Battle of Britain</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <div></div>
+                    <a class="button-text" href="{{ route('events') }}">Events</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <div></div>
+                    <a class="button-text" href="{{ route('contact') }}">Contact</a>
+                </div>
+
+            <!-- mobile hamburger menu -->
+                    <div class="hamburger hover-item">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="hamburger-dropdown">
+                        <li><a class="button-text hover-item" href="{{ route('home') }}">Home</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('about') }}">About</a></li>             
+                        <li><a class="button-text hover-item" href="{{ route('wartime_experience') }}">War Time Experiences</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('canteen') }}">Airman's Canteen</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('comm') }}">Commemoration</a></li>                       
+                        <li><a class="button-text hover-item" href="{{ route('BOB') }}">Battle of Britain</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
+                        <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
+                    </ul>
+
+        </nav>
+    </header>
+<!-- Timeline Hero Section -->
+
+    <section class="hero-section" id="timeline-hero">
+        <div class="hero-triangle"></div>
+        <div class="hero-title-con">
+            <div class="hero-title"><p>Remembrance</p></div>
+            <div class="hero-subtitle"><p>Legacy of the Fallen</p></div>
+        </div>
+    </section>
+
+<!-- Timeline Timeline Section -->
+    
+    <section class="timeline-section">
+
+        <h2 class="hidden">Timeline Section</h2>
+
+        <!-- <div class="read-more">
+            <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+        </div> -->
+
+        <div id="timeline-intro-con">
+            <h2>
+                Defining Moments
+            </h2>
+            <h3>
+                The London Aviation Timeline
+            </h3>
+            <p>
+                Scroll to explore key moments in London's aviation history.
+            </p>
+        </div>
+
+        <!-- Timeline Scrolling Indicator -->
+
+        <div id="tl-scroll-prog-con">
+
+            <div id="tl-scroll-prog-fill">
+                
+            </div>
+
+            <div id="tl-scroll-markers-con">
+                
+                <a href="#" class="tl-marker">1909</a>
+                <a href="#" class="tl-marker">1918</a>
+                <a href="#" class="tl-marker">1927</a>
+                <a href="#" class="tl-marker">1928</a>
+                <a href="#" class="tl-marker">1930</a>
+                <a href="#" class="tl-marker">1940</a>
+            </div>
+        </div>
+
+        <!-- Timeline Time Period Divs -->
+
+        <div class="tl-alpha-con">
+            
+            <!-- BetaCon 1 -->
+            <div class="tl-beta-con" id="tl-beta-1">
+                
+                <h2>1909</h2>
+                <h3>Successful Flight in Canada</h3>
+
+                <div class="tl-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                    </svg>
+                </div>
+
+
+                <div class="tl-beta-text-con">
+                    <p>
+                        Throughout the history of manned flight, civilian and military flying have advanced together, each one pushing the other to greater heights.
+                    </p>
+
+                    <p>
+                        Successful flight in North America began with the Wright Brothers, two bicycle makers from Ohio, who made their first manned, powered flight in 1903. They were soon joined by Glenn Curtiss, a motorcycle builder and racer from Hammondsport, New York, who, in 1907, was invited to join the Aerial Experiment Association (AEA), a company started by Alexander Graham Bell and J.A.D. McCurdy to design and build aircraft.
+                    </p>
+
+                    <p>
+                        Curtiss provided engines for the Association's aircraft including the Silver Dart, which flew for the first time in Canada at Baddeck, Nova Scotia, on February 23, 1909. McCurdy, who flew it that day, became the first man to fly in the British Empire. The Silver Dart, designed by McCurdy, a Canadian, was built at Hammondsport, and shipped to Baddeck. The AEA was disbanded in 1909 by mutual agreement.
+                    </p>
+
+                    <p>
+                        Many Londoners saw their first aircraft on May 25, 1912 - a Curtiss Model E - flown by Beckwith Havens who had taken off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) on a 20-minute flight over the city. Two months later, thousands watched a Wright-Burgess hydroplane perform for several days over Port Stanley, flown by Walter Brookins.
+                    </p>
+
+                    <p>
+                        Both were "pusher" style aircraft with propellers mounted at the back pushing it through the air. The Wright models used two, chain-driven, propellers while on the Curtiss aircraft, the propeller was connected directly to the engine.
+                    </p>
+
+                    <button class="tl-toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
+                    </button>
+                </div>
+
+                <!-- GammaCon 1 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1912</h2>
+                    <h3>MAY 25</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1912-may-25.png">
+                            <!-- NEEDS MOBILE IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1912-may-25.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 2 -->
+                <div class="tl-gamma-con">
+
+                    <h3>JULY 20</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1912-july-20.png">
+                            <!-- NEEDS MOBILE IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1912-july-20.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Thousands watch Walter Brookins take off in a Wright-Burgess hydroplane at Port Stanley with his passenger Miss Dora Labatt, daughter of the London brewer. It was the first flight in Canada by a seaplane.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BetaCon 2 -->
+            <div class="tl-beta-con" id="tl-beta-2">
+                
+                <h2>1918</h2>
+                <h3>War Accelerates Flight</h3>
+
+                <div class="tl-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                    </svg>
+                </div>
+                
+
+                <div class="tl-beta-text-con">
+                    <p>
+                        Unsuccessful at Petawawa, McCurdy took over a flying school in Toronto that had been opened by Glenn Curtiss. He also ran a Curtiss factory in Toronto that produced the Jenny. The JN-4, known as the "Jenny", became the standard training aircraft at the flying schools which the Royal Flying Corps (RFC) opened in Canada towards the end of the war. Many of the estimated 13,000 Canadians who served in the RFC or in the Royal Navy Air Service were trained on them.
+                    </p>
+
+                    <p>
+                        A non-permanent (militia-style) Canadian Air Force (CAF) was created in 1920 to which a series of civilian duties were assigned in order to keep planes in the air and pilots in practice, including fire watches, coastal patrols, and mapping districts from the air.
+                    </p>
+
+                    <p>
+                        The Department of National Defence was created in 1923 which took control of all flying in Canada. Then, in 1924, the Chief of the General Staff, Major-General J. H. MacBrien, created a separate air force which would have a unique military mission separate from the army and the navy. It would be a force modeled on the Royal Air Force (RAF), created in 1918 by merging the RFC with the Royal Navy Air Service. The new RCAF even adopted its motto per ardua ad astra (through adversity to the stars), thought it now uses the original CAF motto Sic Itur Ad Astra.
+                    </p>
+
+                    <p>
+                        Many Londoners saw their first aircraft on May 25, 1912 - a Curtiss Model E - flown by Beckwith Havens who had taken off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) on a 20-minute flight over the city. Two months later, thousands watched a Wright-Burgess hydroplane perform for several days over Port Stanley, flown by Walter Brookins.
+                    </p>
+
+                    <p>
+                        While the pioneers of flight soon began promoting the use of their inventions as potential weapons, it was the First World War that greatly accelerated the evolution of manned flight in that direction.
+                    </p>
+
+                    <p>
+                        McCurdy brought the Silver Dart to Petawawa, just months after his successful flight at Baddeck, to demonstrate it for the Canadian militia.
+                    </p>
+
+                    <p>
+                        The Wrights were demonstrating their Military Flyer to the US Army Signal Corps in 1908, and Curtiss sold his first military aircraft in 1911.
+                    </p>
+
+                    <p>
+                        No other instances of aircraft appearing over London were recorded until 1918 when Capt. V. P. Cronyn flew what was likely a Curtiss JN-4 from a Royal Flying Corps training school in Beamsville to London, landing on the parade square at Wolseley Barracks on Carling Heights.
+                    </p>
+
+                    <p>
+                        By the time Capt. Cronyn had been posted to Beamsville in 1918, he had already served on the Western Front where he had shot down at least 7 enemy aircraft making him one of the war's 171 Canadian "aces". (Fliers with five or more kills). Cronyn and his brother Richard were among the many World War One flyers who saw that flying would continue to evolve in Canada after the war ended.
+                    </p>
+
+                    <p>
+                        Sic Itur Ad Astra | "such is the way to the stars"
+                    </p>
+
+                    <button class="tl-toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
+                    </button>
+                </div>
+
+                <!-- GammaCon 3-->
+                <div class="tl-gamma-con">
+
+                    <h3>JULY</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
+                            <!-- NEEDS MOBILE IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 4 -->
+                <div class="tl-gamma-con">
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-2.png">
+                            <!-- NEEDS MOBILE IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1918-july-2.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Capt. V. P. Cronyn becomes the first Londoner to land an aircraft in London when he flies a Curtiss Jenny from the Royal Flying Corps training school near Niagara to London, landing on the parade square at Wolseley Barracks on Carling Heights.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 5 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1919</h2>
+                    <h3>JUNE 15</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/timeline-placeholder.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/timeline-placeholder.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                London photographer Arthur A. Gleason, aboard a Curtiss Jenny, takes the first aerial photographs of London.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 6 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1926</h2>
+                    <h3>OCTOBER 26</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1926-october-26.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1926-october-26.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Members of London's Chamber of Commerce attend an aviation meeting in Pittsburgh and soon after begin promoting the idea of an airport for London. A field near Lambeth is selected and a company is set up to build the airport.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BetaCon 3 -->
+            <div class="tl-beta-con" id="tl-beta-3">
+                
+                <h2>1927</h2>
+                <h3>The London-to-London Flight</h3>
+
+                <div class="tl-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                    </svg>
+                </div>
+                
+                <div class="tl-beta-text-con">
+                    <p>
+                        Charles Lindbergh's flight across the Atlantic in the Spirit of St. Louis in May of 1927, ignited great public interest in aviation.
+                    </p>
+
+                    <p>
+                        It was not long before a London-to-London flight was proposed by Carling Brewery, who offered a prize of $25,000 for a successful flight from London, Canada to London, England.
+                    </p>
+
+                    <p>
+                        The men selected, Capt. Terrence Tully and Lieut. James Medcalf, were both veteran fliers of the Great War and had both been working as civilians, flying forest fire patrols in Ontario.
+                    </p>
+
+                    <p>
+                        Thousands watched as they flew out of London in their Stinson Detroiter on September 1, 1927. After several stops and a final refuelling in Harbour Grace, Newfoundland, they took off for England but were never heard from again. The $25,000 was placed in a trust for the grieving families.
+                    </p>
+
+                    <button class="tl-toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
+                    </button>
+                </div>
+
+                <!-- GammaCon 7 -->
+                <div class="tl-gamma-con">
+
+                    <h3>MAY 21</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Charles Lindbergh lands his plane, the Spirit of St. Louis, at Le Bourget Field in Paris, completing the first solo, nonstop transatlantic flight from New York in 33.5 hours. His flight inspires other long-distance endeavours including a London-to-London flight a few months later.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 8 -->
+                <div class="tl-gamma-con">
+
+                    <h3>SEPTEMBER 01</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1927-september.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1927-september.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Thousands watch as Capt. Terrence Tully and Lieut. James Medcalf lift off from a field near Clarke Road in a Stinson Detroiter in a bid to fly from London, Canada to London, England. Inspired by Lindbergh, the London-to-London flight was proposed by Carling Brewery, who offered a prize of $25,000. After several stops and a final refuelling in Harbour Grace, Newfoundland, they took off for England but were never heard from again. The $25,000 was placed in a trust for the grieving families.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 9 -->
+                <div class="tl-gamma-con">
+
+                    <h3>SEPTEMBER 01</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-november-25.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-november-25.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                John A. Wilson, Controller of Civil Aviation for Canada, visits London to support the proposed airport.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BetaCon 4 -->
+            <div class="tl-beta-con" id="tl-beta-4">
+                
+                <h2>1928</h2>
+                <h3>London's First Airport</h3>
+
+                <div class="tl-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                    </svg>
+                </div>
+                
+
+                <div class="tl-beta-text-con">
+                    <p>
+                        The road to a permanent airport in London lay through Pittsburgh. In 1926, London was one of a number of Chambers of Commerce that sent delegates to a special meeting there on the future of aviation.
+                    </p>
+
+                    <p>
+                        When they returned, the London Chamber immediately set up a committee chaired by Ernest Moore, an investment broker. The committee started looking for possible locations in the London area, finally selecting a farm just off Wharncliffe Road, then Highway 4, on the way to Lambeth.
+                    </p>
+
+                    <p>
+                        The city's assistance was solicited, and Council put a By-law on the December, 1927 ballot asking the voters to approve the purchase of the site at a cost of $20,000.
+                    </p>
+
+                    <p>
+                        Both J. A. Wilson, the Controller of Civil Aviation, and General MacBrien came to London in November of 1927 to bolster support for the By-law. Wilson spoke to the founding meeting of the London Flying Club where he offered the club two De Havilland Moths for their use.
+                    </p>
+
+                    <p>
+                        The club, which was incorporated the following March, would be the airport's main tenant. Established by a group of fliers, many of whom were war veterans, it would offer flying lessons to interested parties, men and women. Richard Cronyn was its founding president.
+                    </p>
+
+                    <p>
+                        Days later, General McBrien addressed the Rotary Club. Both talks were well covered by the press, but they failed to convince a majority of the electorate, and the By-law was defeated.
+                    </p>
+
+                    <p>
+                        Undaunted, Moore set up the London Airfield Company which raised the funds needed to buy the farm and build the airfield. London's first airport officially opened on August 24, 1928. J. A. Wilson was on hand to formally present the two Moth aircraft to the flying club and General MacBrien also attended. Now retired, he was representing International Airways Limited.
+                    </p>
+
+                    <button class="tl-toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
+                    </button>
+                </div>
+
+                <!-- GammaCon 10 -->
+                <div class="tl-gamma-con">
+
+                    <h3>JANUARY 28</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Letters Patent received by London Airport Company. Proceed to purchase a 140-acre farm near Lambeth.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 11 -->
+                <div class="tl-gamma-con">
+
+                    <h3>MARCH</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1929-july-15.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1929-july-15.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                London Flying Club is incorporated.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 12 -->
+                <div class="tl-gamma-con">
+
+                    <h3>JULY 11</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1928-july-11.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1928-july-11.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                The first of two De Havilland Moths are brought to London from the factory in Toronto by the London Flying Club. Hundreds of students would learn to fly in these aircraft.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 13 -->
+                <div class="tl-gamma-con">
+
+                    <h3>AUGUST 24</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1928-august-24.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1928-august-24.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                London's first airport officially opens. One of the events was arrival of an airmail flight sponsored by the CNE. Here, Capt. Earl Hand (centre) accepts a letter from the Hon. P. J. Veniot, Postmaster General of Canada in front of a Buhl Airsedan, observed by J. A. Wilson (left), Controller of Civil Aviation.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 14 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1929</h2>
+                    <h3>JULY 15</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1929-july-15.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1929-july-15.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                The first regular airmail flight leaves London.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BetaCon 5 -->
+            <div class="tl-beta-con" id="tl-beta-5">
+                
+                <h2>1930</h2>
+                <h3>The London-to-London Flight</h3>
+
+                <div class="tl-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                    </svg>
+                </div>
+                
+
+                <div class="tl-beta-text-con">
+                    <p>
+                        The airfield at Lambeth remained in use even after a new London Airport opened at its present location in 1940. It closed for good in 1942, when a “listening station” was established beside the air strip to intercept communications between German submarines in the Gulf of St. Lawrence. In 1949, after it sold the land, the London Airfield Company was dissolved and its shareholders paid.
+                    </p>
+
+                    <button class="tl-toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
+                    </button>
+                </div>
+
+                <!-- GammaCon 15 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1931</h2>
+                    <h3>SEPTEMBER 12</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1931-september.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1931-september.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Thousands attend the final stop of the Trans-Canada Air Pageant at the London airport. Highlights include formation flying by the RCAF Siskin fighters, an autogyro and a flying demonstration by Florence E. Spencer, Southwestern Ontario's only commercial woman pilot.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 16 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1934</h2>
+                    <h3>JULY 06</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                A large crowd visits the airport to watch five RAF Hawker Fury fighters put on a flying demonstration.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 17 -->
+                <div class="tl-gamma-con">
+
+                    <h2>1939</h2>
+                    <h3>JULY 24</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Council votes to accept Federal support for a new airport.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 18 -->
+                <div class="tl-gamma-con">
+
+                    <h3>SEPTEMBER 09</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Work commences on the construction of a new airport on the Crumlin sideroad. The Lambeth airport will continue in use until 1942. The Crumlin site is now part of the present London International Airport. The site was soon added to a list of over 100 locations where training schools were to be built as part of the British Commonwealth Air Training Plan. The schools would train men from throughout the Commonwealth in preparation for service as either air or groundcrew wherever they were needed during the war.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BetaCon 6 -->
+            <div class="tl-beta-con" id="tl-beta-6">
+                
+                <h2>1940</h2>
+                <h3>Crumlin Airport Opens</h3>
+
+                <div class="tl-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                    </svg>
+                </div>
+                
+
+                <div class="tl-beta-text-con">
+                    <p>
+                        In 1929, J. A. Wilson, as head of civil aviation, began the creation of a Trans-Canada airway, selecting sites and planning airports. A Department of Transport, created in 1936 with C. D. Howe as minister, took over civil aviation. Trans-Canada Airlines (TCA) was created in 1937 to link the airports along the air route.
+                    </p>
+
+                    <p>
+                        In London, City Council took up the offer of assistance from the Federal Government to build a new airport large enough for the aircraft to be used by the TCA.
+                    </p>
+
+                    <p>
+                        A site on the Crumlin sideroad was selected for its flat terrain and easy access to the city. Work on the airport began on September 9, 1939, the day before war was declared.
+                    </p>
+
+                    <p>
+                        The site was soon added to a list of over 100 locations where training schools were to be built as part of the British Commonwealth Air Training Plan. The schools would train men from throughout the Commonwealth in preparation for service as either air or groundcrew wherever they were needed.
+                    </p>
+
+                    <p>
+                        The RCAF would rely on Canada's flying clubs to provide basic training for each prospective pilot. In London, members of the flying club operated the #3 Elementary Flying Training School which opened at Crumlin Airport on June 24, 1940.
+                    </p>
+
+                    <p>
+                        The new airport itself was officially opened on July 27th, 1940, by Minister Howe. TCA service began on August 1st.
+                    </p>
+
+                    <button class="tl-toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
+                    </button>
+                </div>
+
+                <!-- GammaCon 19 -->
+                <div class="tl-gamma-con">
+
+                    <h3>JANUARY 19</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-january-19.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1940-january-19.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                George Durand, London Flying Club president, pilots the first plane to land at the new airport at Crumlin, a light Taylor Cub monoplane. He was accompanied by Howard Wright, the club's instructor. They are pictured here just after landing. From left to right: Alex Farquhar, chief engineer of airport construction; James Peever, one of the directors of the airport; Howard Wright, George Durand, and London Mayor Allan Johnson.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 20 -->
+                <div class="tl-gamma-con">
+
+                    <h3>JUNE 24</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-june-24.png">
+                            <!-- NEEDS BOTH IMAGES -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1940-june-24.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                #3 Elementary Flying Training School opens. Operated by the London Flying Club, it will train 681 flyers for service in WWII over the next two years.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 21 -->
+                <div class="tl-gamma-con">
+
+                    <h3>JUNE 27</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                C. D. Howe, Minister of Munitions, Supply and Transport officially opens the Crumlin airport, then inspects the pilots training at #3 Elementary Flying Training School.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 22 -->
+                <div class="tl-gamma-con">
+
+                    <h3>AUGUST 01</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-august.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-august.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                Trans-Canada Airlines begins passenger service from the London airport.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- GammaCon 22 -->
+                <div class="tl-gamma-con">
+
+                    <h3>DECEMBER 17</h3>
+
+                    <div class="gamma-graphic-con">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#B3262E"/>
+                        </svg>
+                    </div>
+
+                    <div class="gamma-img-con">
+                        <picture class="gamma-img-box">
+                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-december-17.png">
+                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                            <img  class="gamma-img" src="images/timeline-images/desktop/d-timeline-1940-december-17.png" alt="picture of Curtiss Model E training plane">
+
+                            <p class="gamma-p">
+                                #4 Air Observers School opens. Eventually expanding to occupy most of the airport, #4 will train a total of 4439 navigators and air bomber over the next four years.
+                            </p>
+
+                            <div class="gamma-bg">
+                            </div>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="read-more">
+            <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+        </div>
+
+    </section>
+    
+    <footer>
+
+        <!-- Footer Selection Section -->
+
+        <div class="footer-selection-con">
+            
+            <div class="footer-selection-box">
+                <a href="{{ route('training_bases') }}" class="footer-selection-a">
+                    <h3 class="header-text">BCATP Training Sites</h3>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-map.png">
+
+                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="footer-selection-box">
+                <a href="{{ route('timeline') }}" class="footer-selection-a">
+                    <h3 class="header-text">London Aviation Timeline</h3>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-war.png">
+
+                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="footer-selection-box">
+                <a href="{{ route('BOB') }}" class="footer-selection-a">
+                    <h3 class="header-text">Battle of Britain</h3>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
+
+                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
+                    </picture>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-desktop-flex-con">
+            <div class="footer-desktop-flex-section" id="logo-and-info">
+            <!-- Logo -->
+
+            <div class="footer-logo-con">
+                <a href="{{ route('home') }}">
+                    <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
+                </a>
+            </div>
+
+            <div class="footer-text-con">
+                <p class="body-text">A Project of 427 Wing RCAF ASSOCIATION</p>
+
+                <p class="body-text">www.427wing.com</p>
+
+                <p class="body-text">Contact: 519-455-0430</p>
+
+                <p class="body-text">Email: info@427wing.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-desktop-flex-section" id="desk-center">
+            <!-- Footer Nav Links -->
+
+            <div class="footer-nav-links-con">
+                
+                <div class="footer-nav-links footer-nav-discover">
+                    <h4 class="header-text">Discover</h4>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('about') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('timeline') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            History
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('comm') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Rememberance
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="#">
+                            <img src="/images/icons/right-arrow.svg">
+                            News & Events
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('contact') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-nav-links footer-nav-legacy">
+                    <h4 class="header-text">Our Legacy</h4>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('timeline') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            London Aviation Timeline
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('training_bases') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Flight Schools and Training Bases
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('comm') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Legacy of the Fallen
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('canteen') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Airman's Canteen
+                        </a>
+                    </div>
+
+                    <div class="footer-cta-con">
+                        <a href="{{ route('BOB') }}">
+                            <img src="/images/icons/right-arrow.svg">
+                            Battle of Britain
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-desktop-flex-section" id="flex-section-end">
+            <!-- Footer Explore -->
+
+            <div class="footer-search-con">
+                
+                <h3 class="header-text">
+                    EXPLORE THE MUSEUM
+                </h3>
+
+                <p class="body-text">
+                    Search aircraft, exhibits, and stories of courage.
+                </p>
+
+                <div class="footer-search-bar-con">
+                    <form role="search">
+                        <input type="search" id="footer-search-bar" name="searchbar" placeholder="Search through site content..." aria-label="Search through site content">
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Footer Socials -->
+
+            <div class="footer-socials-con">
+                <h3 class="header-text">JOIN OUR COMMUNITY</h3>
+
+                <p class="body-text">Stand with us in preserving stories of courage</p>
+
+                <div class="footer-socials-icons-con">
+                    
+                    <div class="icons-con">
+                        <a href="https://www.facebook.com/">
+                            <img src="/images/icons/footer-socials-icons/Facebook.svg">
+                        </a>
+                    </div>
+                    
+                    <div class="icons-con">
+                        <a href="https://www.linkedin.com/">
+                            <img src="/images/icons/footer-socials-icons/LinkedIn.svg">
+                        </a>
+                    </div>
+
+                    <div class="icons-con">
+                        <a href="https://www.instagram.com/">
+                            <img src="/images/icons/footer-socials-icons/Instagram.svg">
+                        </a>
+                    </div>
+
+                    <div class="icons-con">
+                        <a href="https://x.com/">
+                            <img src="/images/icons/footer-socials-icons/twitter.svg">
+                        </a>
+                    </div>
+
+                    <div class="icons-con">
+                        <a href="https://www.youtube.com/">
+                            <img src="/images/icons/footer-socials-icons/Youtube.svg">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer-closing-text">
+            <p class="body-text">Copyright ©2026 LONDON AVIATION MUSEUM | Privacy Policy | Terms</p>
+        </div>        
+    </footer>
+</body>
+</html>
