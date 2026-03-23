@@ -303,29 +303,8 @@
                             </div>
 
                             <div class="image-grid-overlay">
-                                
+
                                 <div class="parallax-con-img ibox-b1">
-
-                                    <div class="tl-ibox-img-con">
-                                        <picture class="tl-ibox-pic-con">
-                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
-                                            <!-- NEEDS MOBILE IMAGES -->
-                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
-                                        </picture>
-
-                                        <p class="tl-ibox-p">
-                                        </p>
-
-                                        <div class="tl-ibox-bg">
-                                        </div>
-                                    </div>
-
-                                    <div class="tl-ibox-text-con">
-                                        <h4>JULY</h4>
-                                    </div>
-                                </div>
-
-                                <div class="parallax-con-img ibox-b2">
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
@@ -347,7 +326,7 @@
                                     </div>
                                 </div>
 
-                                <div class="parallax-con-img ibox-b3">
+                                <div class="parallax-con-img ibox-b2">
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
@@ -367,6 +346,27 @@
                                     <div class="tl-ibox-text-con">
                                         <h3>1919</h3>
                                         <h4>JUNE 15</h4>
+                                    </div>
+                                </div>
+
+                                <div class="parallax-con-img ibox-b3">
+
+                                    <div class="tl-ibox-img-con">
+                                        <picture class="tl-ibox-pic-con">
+                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
+                                            <!-- NEEDS MOBILE IMAGES -->
+                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
+                                        </picture>
+
+                                        <p class="tl-ibox-p">
+                                        </p>
+
+                                        <div class="tl-ibox-bg">
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-ibox-text-con">
+                                        <h4>JULY</h4>
                                     </div>
                                 </div>
 
@@ -392,6 +392,7 @@
                                         <h4>OCTOBER 26</h4>
                                     </div>
                                 </div>
+                                                                
                             </div>
                             
                         </div>
