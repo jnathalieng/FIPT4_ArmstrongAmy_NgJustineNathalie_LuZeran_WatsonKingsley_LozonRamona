@@ -176,10 +176,6 @@
                         <div class="image-grid-overlay">
                             <!-- IMAGE CONTAINERS -->
                             <div class="parallax-con-img ibox-a1">
-                                <div class="tl-ibox-text-con">
-                                    <h3>1912</h3>
-                                    <h4>MAY 25</h4>
-                                </div>
 
                                 <div class="tl-ibox-img-con">
                                     <picture class="tl-ibox-pic-con">
@@ -194,6 +190,33 @@
 
                                     <div class="tl-ibox-bg">
                                     </div>
+                                </div>
+
+                                <div class="tl-ibox-text-con">
+                                    <h3>1912</h3>
+                                    <h4>MAY 25</h4>
+                                </div>
+                            </div>
+
+                            <div class="parallax-con-img ibox-a2">
+
+                                <div class="tl-ibox-img-con">
+                                    <picture class="tl-ibox-pic-con">
+                                        <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1912-july-20.png">
+                                        <!-- NEEDS MOBILE IMAGES -->
+                                        <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1912-july-20.png" alt="picture of Curtiss Model E training plane">
+                                    </picture>
+
+                                    <p class="tl-ibox-p">
+                                        Thousands watch Walter Brookins take off in a Wright-Burgess hydroplane at Port Stanley with his passenger Miss Dora Labatt, daughter of the London brewer. It was the first flight in Canada by a seaplane.
+                                    </p>
+
+                                    <div class="tl-ibox-bg">
+                                    </div>
+                                </div>
+
+                                <div class="tl-ibox-text-con">
+                                    <h4>JULY 20</h4>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +303,95 @@
                             </div>
 
                             <div class="image-grid-overlay">
+                                
+                                <div class="parallax-con-img ibox-b1">
 
+                                    <div class="tl-ibox-img-con">
+                                        <picture class="tl-ibox-pic-con">
+                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
+                                            <!-- NEEDS MOBILE IMAGES -->
+                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
+                                        </picture>
+
+                                        <p class="tl-ibox-p">
+                                        </p>
+
+                                        <div class="tl-ibox-bg">
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-ibox-text-con">
+                                        <h4>JULY</h4>
+                                    </div>
+                                </div>
+
+                                <div class="parallax-con-img ibox-b2">
+
+                                    <div class="tl-ibox-img-con">
+                                        <picture class="tl-ibox-pic-con">
+                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-2.png">
+                                            <!-- NEEDS MOBILE IMAGES -->
+                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-2.png" alt="picture of Curtiss Model E training plane">
+                                        </picture>
+
+                                        <p class="tl-ibox-p">
+                                            Capt. V. P. Cronyn becomes the first Londoner to land an aircraft in London when he flies a Curtiss Jenny from the Royal Flying Corps training school near Niagara to London, landing on the parade square at Wolseley Barracks on Carling Heights.
+                                        </p>
+
+                                        <div class="tl-ibox-bg">
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-ibox-text-con">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="parallax-con-img ibox-b3">
+
+                                    <div class="tl-ibox-img-con">
+                                        <picture class="tl-ibox-pic-con">
+                                            <source media="(min-width: 768px)" srcset="images/timeline-images/timeline-placeholder.png">
+                                            <!-- NEEDS BOTH IMAGES -->
+                                            <img  class="tl-ibox-img" src="images/timeline-images/timeline-placeholder.png" alt="picture of Curtiss Model E training plane">
+                                        </picture>
+
+                                        <p class="tl-ibox-p">
+                                            London photographer Arthur A. Gleason, aboard a Curtiss Jenny, takes the first aerial photographs of London.
+                                        </p>
+
+                                        <div class="tl-ibox-bg">
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-ibox-text-con">
+                                        <h3>1919</h3>
+                                        <h4>JUNE 15</h4>
+                                    </div>
+                                </div>
+
+                                <div class="parallax-con-img ibox-b4">
+
+                                    <div class="tl-ibox-img-con">
+                                        <picture class="tl-ibox-pic-con">
+                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1926-october-26.png">
+                                            <!-- NEEDS BOTH IMAGES -->
+                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1926-october-26.png" alt="picture of Curtiss Model E training plane">
+                                        </picture>
+
+                                        <p class="tl-ibox-p">
+                                            Members of London's Chamber of Commerce attend an aviation meeting in Pittsburgh and soon after begin promoting the idea of an airport for London. A field near Lambeth is selected and a company is set up to build the airport.
+                                        </p>
+
+                                        <div class="tl-ibox-bg">
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-ibox-text-con">
+                                        <h3>1926</h3>
+                                        <h4>OCTOBER 26</h4>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
@@ -331,7 +442,68 @@
                                 </div>
 
                                 <div class="image-grid-overlay">
+                                    <div class="parallax-con-img ibox-c1">
+                                        <div class="tl-ibox-img-con">
+                                            <picture class="tl-ibox-pic-con">
+                                                <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                            </picture>
 
+                                            <p class="tl-ibox-p">
+                                                Charles Lindbergh lands his plane, the Spirit of St. Louis, at Le Bourget Field in Paris, completing the first solo, nonstop transatlantic flight from New York in 33.5 hours. His flight inspires other long-distance endeavours including a London-to-London flight a few months later.
+                                            </p>
+
+                                            <div class="tl-ibox-bg">
+                                            </div>
+                                        </div>
+
+                                        <div class="tl-ibox-text-con">
+                                            <h4>MAY 21</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="parallax-con-img ibox-c2">
+                                        <div class="tl-ibox-img-con">
+                                            <picture class="tl-ibox-pic-con">
+                                                <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1927-september.png">
+                                                <!-- NEEDS BOTH IMAGES -->
+                                                <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1927-september.png" alt="picture of Curtiss Model E training plane">
+                                            </picture>
+
+                                            <p class="tl-ibox-p">
+                                                Thousands watch as Capt. Terrence Tully and Lieut. James Medcalf lift off from a field near Clarke Road in a Stinson Detroiter in a bid to fly from London, Canada to London, England. Inspired by Lindbergh, the London-to-London flight was proposed by Carling Brewery, who offered a prize of $25,000. After several stops and a final refuelling in Harbour Grace, Newfoundland, they took off for England but were never heard from again. The $25,000 was placed in a trust for the grieving families.
+                                            </p>
+
+                                            <div class="tl-ibox-bg">
+                                            </div>
+                                        </div>
+
+                                        <div class="tl-ibox-text-con">
+                                            <h4>SEPTEMBER 01</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="parallax-con-img ibox-c3">
+                                        <div class="tl-ibox-img-con">
+                                            <picture class="tl-ibox-pic-con">
+                                                <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-november-25.png">
+                                                <!-- NEEDS BOTH IMAGES -->
+                                                <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-november-25.png" alt="picture of Curtiss Model E training plane">
+                                            </picture>
+
+                                            <p class="tl-ibox-p">
+                                                John A. Wilson, Controller of Civil Aviation for Canada, visits London to support the proposed airport.
+                                            </p>
+
+                                            <div class="tl-ibox-bg">
+                                            </div>
+                                        </div>
+
+                                        <div class="tl-ibox-text-con">
+                                            <h4>SEPTEMBER 01</h4>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -400,7 +572,111 @@
                                     </div>
 
                                     <div class="image-grid-overlay">
+                                        <div class="parallax-con-img ibox-d1">
+                                            <div class="tl-ibox-img-con">
+                                                <picture class="tl-ibox-pic-con">
+                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                    <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                    <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                </picture>
 
+                                                <p class="tl-ibox-p">
+                                                    Letters Patent received by London Airport Company. Proceed to purchase a 140-acre farm near Lambeth.
+                                                </p>
+
+                                                <div class="tl-ibox-bg">
+                                                </div>
+                                            </div>
+
+                                            <div class="tl-ibox-text-con">
+                                                <h4>JANUARY 28</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="parallax-con-img ibox-d2">
+                                            <div class="tl-ibox-img-con">
+                                                <picture class="tl-ibox-pic-con">
+                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1929-july-15.png">
+                                                    <!-- NEEDS BOTH IMAGES -->
+                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1929-july-15.png" alt="picture of Curtiss Model E training plane">
+                                                </picture>
+
+                                                <p class="tl-ibox-p">
+                                                    London Flying Club is incorporated.
+                                                </p>
+
+                                                <div class="tl-ibox-bg">
+                                                </div>
+                                            </div>
+
+                                            <div class="tl-ibox-text-con">
+                                                <h4>MARCH</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="parallax-con-img ibox-d3">
+                                            <div class="tl-ibox-img-con">
+                                                <picture class="tl-ibox-pic-con">
+                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1928-july-11.png">
+                                                    <!-- NEEDS BOTH IMAGES -->
+                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1928-july-11.png" alt="picture of Curtiss Model E training plane">
+                                                </picture>
+
+                                                <p class="tl-ibox-p">
+                                                    The first of two De Havilland Moths are brought to London from the factory in Toronto by the London Flying Club. Hundreds of students would learn to fly in these aircraft.
+                                                </p>
+
+                                                <div class="tl-ibox-bg">
+                                                </div>
+                                            </div>
+
+                                            <div class="tl-ibox-text-con">
+                                                <h4>JULY 11</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="parallax-con-img ibox-d4">
+                                            <div class="tl-ibox-img-con">
+                                                <picture class="tl-ibox-pic-con">
+                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1928-august-24.png">
+                                                    <!-- NEEDS BOTH IMAGES -->
+                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1928-august-24.png" alt="picture of Curtiss Model E training plane">
+                                                </picture>
+
+                                                <p class="tl-ibox-p">
+                                                    London's first airport officially opens. One of the events was arrival of an airmail flight sponsored by the CNE. Here, Capt. Earl Hand (centre) accepts a letter from the Hon. P. J. Veniot, Postmaster General of Canada in front of a Buhl Airsedan, observed by J. A. Wilson (left), Controller of Civil Aviation.
+                                                </p>
+
+                                                <div class="tl-ibox-bg">
+                                                </div>
+                                            </div>
+
+                                            <div class="tl-ibox-text-con">
+                                                <h4>AUGUST 24</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="parallax-con-img ibox-d5">
+                                            <div class="tl-ibox-img-con">
+                                                <picture class="tl-ibox-pic-con">
+                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1929-july-15.png">
+                                                    <!-- NEEDS BOTH IMAGES -->
+                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1929-july-15.png" alt="picture of Curtiss Model E training plane">
+                                                </picture>
+
+                                                <p class="tl-ibox-p">
+                                                    The first regular airmail flight leaves London.
+                                                </p>
+
+                                                <div class="tl-ibox-bg">
+                                                </div>
+                                            </div>
+
+                                            <div class="tl-ibox-text-con">
+                                                <h3>1929</h3>
+                                                <h4>JULY 15</h4>
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                 </div>
@@ -433,7 +709,92 @@
                                         </div>
 
                                         <div class="image-grid-overlay">
+                                            <div class="parallax-con-img ibox-e1">
+                                                <div class="tl-ibox-img-con">
+                                                    <picture class="tl-ibox-pic-con">
+                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1931-september.png">
+                                                        <!-- NEEDS BOTH IMAGES -->
+                                                        <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1931-september.png" alt="picture of Curtiss Model E training plane">
+                                                    </picture>
 
+                                                    <p class="tl-ibox-p">
+                                                        Thousands attend the final stop of the Trans-Canada Air Pageant at the London airport. Highlights include formation flying by the RCAF Siskin fighters, an autogyro and a flying demonstration by Florence E. Spencer, Southwestern Ontario's only commercial woman pilot.
+                                                    </p>
+
+                                                    <div class="tl-ibox-bg">
+                                                    </div>
+                                                </div>
+
+                                                <div class="tl-ibox-text-con">
+                                                    <h3>1931</h3>
+                                                    <h4>SEPTEMBER 12</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="parallax-con-img ibox-e2">
+                                                <div class="tl-ibox-img-con">
+                                                    <picture class="tl-ibox-pic-con">
+                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                        <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                        <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                    </picture>
+
+                                                    <p class="tl-ibox-p">
+                                                        A large crowd visits the airport to watch five RAF Hawker Fury fighters put on a flying demonstration.
+                                                    </p>
+
+                                                    <div class="tl-ibox-bg">
+                                                    </div>
+                                                </div>
+
+                                                <div class="tl-ibox-text-con">
+                                                    <h3>1934</h3>
+                                                    <h4>JULY 06</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="parallax-con-img ibox-e3">
+                                                <div class="tl-ibox-img-con">
+                                                    <picture class="tl-ibox-pic-con">
+                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                        <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                        <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                    </picture>
+
+                                                    <p class="tl-ibox-p">
+                                                        Council votes to accept Federal support for a new airport.
+                                                    </p>
+
+                                                    <div class="tl-ibox-bg">
+                                                    </div>
+                                                </div>
+
+                                                <div class="tl-ibox-text-con">
+                                                    <h3>1939</h3>
+                                                    <h4>JULY 24</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="parallax-con-img ibox-e4">
+                                                <div class="tl-ibox-img-con">
+                                                    <picture class="tl-ibox-pic-con">
+                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                        <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                        <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                    </picture>
+
+                                                    <p class="tl-ibox-p">
+                                                        Work commences on the construction of a new airport on the Crumlin sideroad. The Lambeth airport will continue in use until 1942. The Crumlin site is now part of the present London International Airport. The site was soon added to a list of over 100 locations where training schools were to be built as part of the British Commonwealth Air Training Plan. The schools would train men from throughout the Commonwealth in preparation for service as either air or groundcrew wherever they were needed during the war.
+                                                    </p>
+
+                                                    <div class="tl-ibox-bg">
+                                                    </div>
+                                                </div>
+
+                                                <div class="tl-ibox-text-con">
+                                                    <h4>SEPTEMBER 09</h4>
+                                                </div>
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -496,7 +857,110 @@
                                             </div>
 
                                             <div class="image-grid-overlay">
+                                                <div class="parallax-con-img ibox-f1">
+                                                    <div class="tl-ibox-img-con">
+                                                        <picture class="tl-ibox-pic-con">
+                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-january-19.png">
+                                                            <!-- NEEDS BOTH IMAGES -->
+                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1940-january-19.png" alt="picture of Curtiss Model E training plane">
+                                                        </picture>
 
+                                                        <p class="tl-ibox-p">
+                                                            George Durand, London Flying Club president, pilots the first plane to land at the new airport at Crumlin, a light Taylor Cub monoplane. He was accompanied by Howard Wright, the club's instructor. They are pictured here just after landing. From left to right: Alex Farquhar, chief engineer of airport construction; James Peever, one of the directors of the airport; Howard Wright, George Durand, and London Mayor Allan Johnson.
+                                                        </p>
+
+                                                        <div class="tl-ibox-bg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tl-ibox-text-con">
+                                                        <h4>JANUARY 19</h4>
+                                                    </div>
+                                                </div>
+
+                                                <div class="parallax-con-img ibox-f2">
+                                                    <div class="tl-ibox-img-con">
+                                                        <picture class="tl-ibox-pic-con">
+                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-june-24.png">
+                                                            <!-- NEEDS BOTH IMAGES -->
+                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1940-june-24.png" alt="picture of Curtiss Model E training plane">
+                                                        </picture>
+
+                                                        <p class="tl-ibox-p">
+                                                            #3 Elementary Flying Training School opens. Operated by the London Flying Club, it will train 681 flyers for service in WWII over the next two years.
+                                                        </p>
+
+                                                        <div class="tl-ibox-bg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tl-ibox-text-con">
+                                                        <h4>JUNE 24</h4>
+                                                    </div>
+                                                </div>
+
+                                                <div class="parallax-con-img ibox-f3">
+                                                    <div class="tl-ibox-img-con">
+                                                        <picture class="tl-ibox-pic-con">
+                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                            <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                        </picture>
+
+                                                        <p class="tl-ibox-p">
+                                                            C. D. Howe, Minister of Munitions, Supply and Transport officially opens the Crumlin airport, then inspects the pilots training at #3 Elementary Flying Training School.
+                                                        </p>
+
+                                                        <div class="tl-ibox-bg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tl-ibox-text-con">
+                                                        <h4>JUNE 27</h4>
+                                                    </div>
+                                                </div>
+
+                                                <div class="parallax-con-img ibox-f4">
+                                                    <div class="tl-ibox-img-con">
+                                                        <picture class="tl-ibox-pic-con">
+                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-august.png">
+                                                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-august.png" alt="picture of Curtiss Model E training plane">
+                                                        </picture>
+
+                                                        <p class="tl-ibox-p">
+                                                            Trans-Canada Airlines begins passenger service from the London airport.
+                                                        </p>
+
+                                                        <div class="tl-ibox-bg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tl-ibox-text-con">
+                                                        <h4>AUGUST 01</h4>
+                                                    </div>
+                                                </div>
+
+                                                <div class="parallax-con-img ibox-f5">
+                                                    <div class="tl-ibox-img-con">
+                                                        <picture class="tl-ibox-pic-con">
+                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-december-17.png">
+                                                            <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
+                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1940-december-17.png" alt="picture of Curtiss Model E training plane">
+                                                        </picture>
+
+                                                        <p class="tl-ibox-p">
+                                                            #4 Air Observers School opens. Eventually expanding to occupy most of the airport, #4 will train a total of 4439 navigators and air bomber over the next four years.
+                                                        </p>
+
+                                                        <div class="tl-ibox-bg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tl-ibox-text-con">
+                                                        <h4>DECEMBER 17</h4>
+                                                    </div>
+                                                </div>
                                             </div>
                                             
                                         </div>
