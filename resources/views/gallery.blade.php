@@ -96,7 +96,7 @@
 
         <section class="event-updates">
             <div class="updates-text">
-                <p>Follow museum updates, commemorations, and community events honouring our legacy.</p>
+                <p>Through the lens of history</p>
             </div>
 
             <div class="events-buttons-list">
@@ -127,9 +127,29 @@
 
         </section>
 
-<section id="gallery-header"></section>
+<section id="gallery-header">
 
-<section id="gallery"></section>
+<div>
+    <h2>
+        WAR TIME EXPERIENCE
+    </h2>
+</div>
+
+<div>
+    <h3>Scenes from Wartime Training</h3>
+</div>
+
+<div>
+    <p>
+        A visual record of the airfields, aircraft, istructors, and trainees who shaped Canada's wartime aviation efforts.
+    </p>
+</div>
+
+</section>
+
+<section id="gallery">
+
+</section>
 
 
 </main>
