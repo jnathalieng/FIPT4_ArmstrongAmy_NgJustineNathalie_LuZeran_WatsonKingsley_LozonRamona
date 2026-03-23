@@ -1,6 +1,6 @@
 import { navbar_showhide } from "./modules/hamburger.js";
 import contactForm from "./modules/contactForm.js";
-import { createApp } from 'vue';
+// import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
@@ -8,6 +8,7 @@ import { tlShowHide } from "./modules/tlShowHide.js";
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
 import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
+import { tlShowSticky } from "./modules/tlShowSticky.js";
 
 navbar_showhide();
 
