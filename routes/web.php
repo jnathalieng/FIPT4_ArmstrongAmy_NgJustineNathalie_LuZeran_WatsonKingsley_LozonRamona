@@ -67,3 +67,7 @@ Route::get('/training_bases', function () {
 Route::get('/wartime_experience', function () {
     return view('wartime_experience');
 })->name('wartime_experience');
+
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');

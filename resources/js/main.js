@@ -60,3 +60,6 @@ else if(document.body.dataset.page === "contact") {
     app.mount('#contact-form');
     console.log('Vue app mounted!');
 }
+else if(document.body.dataset.page === "gallery") {
+    console.log('all our images!');
+}
