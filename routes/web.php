@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CommController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +14,60 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 Route::get('/contact', function () {
-    return file_get_contents(public_path('contact.html'));
-});
+    return view('contact');
+})->name('contact');
 
-Route::get('/commemoration', function () {
-    return file_get_contents(public_path('commemoration.html'));
-});
+Route::post('/api/contact', [ContactController::class, 'store']);
+
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+
+Route::get('/BOB', function () {
+    return view('BOB');
+})->name('BOB');
+
+Route::get('/canteen', function () {
+    return view('canteen');
+})->name('canteen');
+
+Route::get('/comm', function () {
+    return view('comm');
+})->name('comm');
+
+Route::get('/comm', [CommController::class, 'index'])->name('comm');
+
+Route::get('/events', function () {
+    return view('events');
+})->name('events');
+
+Route::get('/timeline', function () {
+    return view('timeline');
+})->name('timeline');
+
+Route::get('/TL-RECON', function () {
+    return view('TL-RECON');
+})->name('TL-RECON');
+
+Route::get('/training_bases', function () {
+    return view('training_bases');
+})->name('training_bases');
+
+Route::get('/wartime_experience', function () {
+    return view('wartime_experience');
+})->name('wartime_experience');
+
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
