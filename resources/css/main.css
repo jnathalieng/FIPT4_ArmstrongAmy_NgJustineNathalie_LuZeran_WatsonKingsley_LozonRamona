@@ -1404,7 +1404,7 @@ footer .footer-closing-text p {
   margin-left: 10%;
   background-color: #B3262E;
   opacity: 1;
-  transform: scaleY(0);
+  transform: scaleY(var(--scrollProgress));
   transform-origin: top;
 }
 

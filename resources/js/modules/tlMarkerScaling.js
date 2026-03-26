@@ -1,6 +1,6 @@
 export function tlMarkerScaling() {
     const markersPositionPercentage = [
-        0.2, 0.34, 0.48, 0.62, 0.76, 0.9
+        0.23, 0.37, 0.51, 0.65, 0.79, 0.93
     ];
 
     const markers = document.querySelectorAll(".tl-marker");
@@ -10,8 +10,6 @@ export function tlMarkerScaling() {
         marker.addEventListener("click", e => {
             gsap.to(maskingBar, {
                 scaleY: markersPositionPercentage[i],
-                duration: 0.5,
-                ease: "power2.out"
             })
         });
     });
