@@ -105,6 +105,10 @@
                     
                 </div>
 
+                <div id="tl-scroll-prog-mask">
+
+                </div>
+
                 <div id="tl-scroll-markers-con">
                     <a href="#tl-1909-section" class="tl-marker">1909</a>
                     <a href="#tl-1918-section" class="tl-marker">1918</a>
