@@ -9,7 +9,7 @@ export function tlMarkerScaling() {
     markers.forEach((marker, i) => {
         marker.addEventListener("click", e => {
             gsap.to(maskingBar, {
-                scaleY: markersPositionPercentage[i],
+                "--scrollProgress": markersPositionPercentage[i],
             })
         });
     });

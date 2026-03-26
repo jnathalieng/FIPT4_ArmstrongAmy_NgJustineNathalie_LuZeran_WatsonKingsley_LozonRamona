@@ -14,7 +14,8 @@ export function tlScrollProgress() {
             trigger: "#timeline-section",
             start: "top top",
             end: "bottom bottom",
-            scrub: 2
+            scrub: 2,
+            markers: true
         }
     })
 } 
