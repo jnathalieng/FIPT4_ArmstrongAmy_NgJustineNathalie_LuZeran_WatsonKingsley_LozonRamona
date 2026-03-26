@@ -14,6 +14,7 @@ import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 import { tlShowSticky } from "./modules/tlShowSticky.js";
 import { tlScrollProgress } from "./modules/tlScrollProgress.js";
 import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
+import { tlScrollTo } from "./modules/tlScrollTo.js";
 
 navbar_showhide();
 
@@ -29,6 +30,7 @@ else if(document.body.dataset.page === "TIMELINE-RECON") {
     parallaxObj();
     tlImgTextReveal();
     tlShowSticky();
+    tlScrollTo();
     tlMarkerScaling();
     tlScrollProgress();
 }
