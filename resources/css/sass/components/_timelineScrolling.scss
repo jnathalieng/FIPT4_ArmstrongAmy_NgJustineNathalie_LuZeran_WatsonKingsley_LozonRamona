@@ -13,8 +13,19 @@
 #tl-scroll-prog-fill {
     width: 1rem;
     height: 100%;
-    margin-left: 15%;
+    margin-left: 10%;
     background: a.$secondary-color;
+}
+
+#tl-scroll-prog-mask {
+    position: absolute;
+    width: 1rem;
+    height: 100%;
+    margin-left: 10%;
+    background-color: a.$primary-color;
+    opacity: 1;
+    transform: scaleY(0);
+    transform-origin: top;
 }
 
 .tl-marker {
@@ -23,7 +34,7 @@
     color: a.$primary-color;
     font-size: 200%;
     font-weight: bold;
-    margin: 8vh 0;
+    margin: 8vh 10%;
     transition: all 0.5s ease;
     transform-origin: left center;
 }
