@@ -6,7 +6,7 @@ export function tlScrollProgress() {
     });
 
     gsap.to("#tl-scroll-prog-mask", {
-        scaleY: 1,
+        transform: "scaleY(1)",
         ease: "none",
         scrollTrigger: {
             trigger: "#timeline-section",
