@@ -16,7 +16,8 @@ export function tlShowSticky() {
             ease: "power2.out",
             scrollTrigger: {
                 trigger: "#timeline-intro-con",
-                start: "top 10%"
+                start: "top 10%",
+                toggleActions: "play none none reverse"
             }
         });
 }
