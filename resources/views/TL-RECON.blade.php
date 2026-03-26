@@ -118,7 +118,7 @@
             <!-- INTRO -->
             <div id="timeline-intro-con">
                 <h2>
-                    LONDON AVIATIHello world
+                    LONDON AVIATION
                 </h2>
                 <p>
                     Scroll to explore key moments in London's aviation history.
