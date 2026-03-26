@@ -25,6 +25,12 @@
     font-size: 200%;
     font-weight: bold;
     margin: 8vh 0;
+    transition: all 0.5s ease;
+    transform-origin: left center;
+}
+
+.tl-marker:hover {
+    transform: scale(200%);
 }
 
 .tl-marker:first-child {
