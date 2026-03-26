@@ -10,6 +10,8 @@ export function tlMarkerScaling() {
         marker.addEventListener("click", e => {
             gsap.to(maskingBar, {
                 scaleY: markersPositionPercentage[i],
+                duration: 0.5,
+                ease: "power2.out"
             })
         });
     });
