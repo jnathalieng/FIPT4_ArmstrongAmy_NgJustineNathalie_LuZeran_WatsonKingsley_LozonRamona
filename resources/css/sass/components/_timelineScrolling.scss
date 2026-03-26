@@ -29,12 +29,13 @@
 }
 
 .tl-marker {
+    position: absolute;
+
     display: block;
     text-decoration: none;
     color: a.$primary-color;
     font-size: 200%;
     font-weight: bold;
-    margin: 8vh 10%;
     transition: all 0.5s ease;
     transform-origin: left center;
 }
@@ -43,6 +44,22 @@
     transform: scale(200%);
 }
 
-.tl-marker:first-child {
-    margin-top: 20vh;
+.tl-marker:nth-child(1) {
+    top: 20%;
+}
+.tl-marker:nth-child(2) {
+    top: 34%;
+}
+.tl-marker:nth-child(3) {
+    top: 48%;
+}
+
+.tl-marker:nth-child(4) {
+    top: 62%;
+}
+.tl-marker:nth-child(5) {
+    top: 76%;
+}
+.tl-marker:nth-child(6) {
+    top: 90%;
 }
