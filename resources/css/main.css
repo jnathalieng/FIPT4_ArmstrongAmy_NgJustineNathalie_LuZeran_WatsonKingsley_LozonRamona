@@ -1387,6 +1387,7 @@ footer .footer-closing-text p {
   height: 100vh;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 #tl-scroll-prog-fill {
@@ -1404,7 +1405,6 @@ footer .footer-closing-text p {
   font-size: 200%;
   font-weight: bold;
   margin: 8vh 0;
-  z-index: 100;
 }
 
 .tl-marker:first-child {
@@ -2824,7 +2824,7 @@ footer .footer-closing-text p {
 }
 
 .tbox-f6 {
-  grid-column: 6/span 5;
+  grid-column: 4/span 4;
 }
 
 .ibox-f1 {
@@ -2838,12 +2838,12 @@ footer .footer-closing-text p {
 }
 
 .ibox-f3 {
-  grid-column: 8/span 5;
+  grid-column: 8/span 4;
   grid-row: 6;
 }
 
 .ibox-f4 {
-  grid-column: 3/span 4;
+  grid-column: 9/span 4;
   grid-row: 9;
 }
 
