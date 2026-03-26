@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline Reconstruction</title>
-    <link type="text/css" href="css/main.css" rel="stylesheet">
-    <link type="text/css" href="css/grid.css" rel="stylesheet">
+    @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
-    <!-- Module -->
-    <script type="module" src="js/main.js"></script>
+    
 </head>
 
 <body id="tl-body" data-page="TIMELINE-RECON">
@@ -120,7 +118,7 @@
             <!-- INTRO -->
             <div id="timeline-intro-con">
                 <h2>
-                    LONDON AVIATION HISTORIC TIMELINE
+                    LONDON AVIATIHello world
                 </h2>
                 <p>
                     Scroll to explore key moments in London's aviation history.
@@ -348,29 +346,8 @@
                                         <h4>JUNE 15</h4>
                                     </div>
                                 </div>
-
+                                
                                 <div class="parallax-con-img ibox-b3">
-
-                                    <div class="tl-ibox-img-con">
-                                        <picture class="tl-ibox-pic-con">
-                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
-                                            <!-- NEEDS MOBILE IMAGES -->
-                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
-                                        </picture>
-
-                                        <p class="tl-ibox-p">
-                                        </p>
-
-                                        <div class="tl-ibox-bg">
-                                        </div>
-                                    </div>
-
-                                    <div class="tl-ibox-text-con">
-                                        <h4>JULY</h4>
-                                    </div>
-                                </div>
-
-                                <div class="parallax-con-img ibox-b4">
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
@@ -392,6 +369,29 @@
                                         <h4>OCTOBER 26</h4>
                                     </div>
                                 </div>
+
+                                <div class="parallax-con-img ibox-b4">
+
+                                    <div class="tl-ibox-img-con">
+                                        <picture class="tl-ibox-pic-con">
+                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
+                                            <!-- NEEDS MOBILE IMAGES -->
+                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
+                                        </picture>
+
+                                        <p class="tl-ibox-p">
+                                        </p>
+
+                                        <div class="tl-ibox-bg">
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-ibox-text-con">
+                                        <h4>JULY</h4>
+                                    </div>
+                                </div>
+
+                                
                                                                 
                             </div>
                             
