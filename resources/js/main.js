@@ -12,6 +12,7 @@ import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
 import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 import { tlShowSticky } from "./modules/tlShowSticky.js";
+import { tlScrollProgress } from "./modules/tlScrollProgress.js";
 
 navbar_showhide();
 
@@ -27,6 +28,7 @@ else if(document.body.dataset.page === "TIMELINE-RECON") {
     parallaxObj();
     tlImgTextReveal();
     tlShowSticky();
+    tlScrollProgress();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
