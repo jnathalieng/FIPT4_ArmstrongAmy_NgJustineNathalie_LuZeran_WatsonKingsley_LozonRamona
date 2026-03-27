@@ -34,6 +34,7 @@ export function tlMarkerScaling() {
             gsap.set(maskingBar, {
                 "--scrollProgress": progress
             });
+            console.log("Progress Value:", progress);
         }
     };
     
