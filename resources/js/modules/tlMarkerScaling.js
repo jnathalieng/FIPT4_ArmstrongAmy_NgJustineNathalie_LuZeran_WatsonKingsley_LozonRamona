@@ -17,7 +17,11 @@ export function tlMarkerScaling() {
     const startScrollY = firstMarker.offsetTop;
     const endScrollY = lastMarker.offsetTop;
     
-    const current = window.scrollY;
+    const updateBar = () => {
+        const current = window.scrollY;
+        
+        
+    }
     
 
 
