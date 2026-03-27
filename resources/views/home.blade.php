@@ -99,7 +99,7 @@
                     <a href="{{ route('comm') }}" class="hero-card-a">
                         <h3 class="body-text">Legacy of the Fallen</h3>
 
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/marching-poster.png" preload="metadata">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/marching-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             <source media="(min-width: 768px)" src="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
                             
                             <source src="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
@@ -119,11 +119,13 @@
                 <div class="hero-card" id="BOB-hero-card">
                     <a href="{{ route('BOB') }}" class="hero-card-a">
                         <h3 class="body-text">Battle of Britain</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-bob.png">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/canteen-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source media="(min-width: 768px)" src="/videos/hero-videos/hero-canteen-480x1080.mp4" type="video/mp4">
+                            
+                            <source src="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-bob.png" alt="image of pilot on a plane">
-                        </picture>
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
@@ -137,11 +139,13 @@
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
                         <h3 class="body-text">London Aviation timeline</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-history.png">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/gas-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source media="(min-width: 768px)" src="/videos/hero-videos/hero-gas-480x1080.mp4" type="video/mp4">
+                            
+                            <source src="/videos/hero-videos/hero-gas-768x768.mp4" type="video/mp4">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-history.png" alt="image of historic handshake">
-                        </picture>
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
@@ -155,11 +159,13 @@
                 <div class="hero-card" id="bases-hero-card">
                     <a href="{{ route('training_bases') }}" class="hero-card-a">
                         <h3 class="body-text">Ontario Training Bases</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-history.png">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/plane-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source media="(min-width: 768px)" src="/videos/hero-videos/hero-plane-480x1080.mp4" type="video/mp4">
+                            
+                            <source src="/videos/hero-videos/hero-plane-768x768.mp4" type="video/mp4">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-history.png" alt="image of historic handshake">
-                        </picture>
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
