@@ -37,7 +37,11 @@ export function tlMarkerScaling() {
         }
     };
     
+    updateBar();
 
+    window.addEventListener("scroll", () => {
+        updateBar();
+    });
 
     markers.forEach((marker, i) => {
         marker.addEventListener("click", e => {
