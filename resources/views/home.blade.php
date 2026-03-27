@@ -100,9 +100,10 @@
                         <h3 class="body-text">Legacy of the Fallen</h3>
 
                         <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/marching-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
-                            <source media="(min-width: 768px)" src="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
                             
-                            <source src="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
+                            <source data-desktop="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
+                            
+                            <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
 
                             <p>Your browser does not support</p>
                         </video>
