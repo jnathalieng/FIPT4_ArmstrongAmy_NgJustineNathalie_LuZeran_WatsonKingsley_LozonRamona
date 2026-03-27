@@ -8,6 +8,7 @@
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
     
 </head>
 
@@ -105,13 +106,17 @@
                     
                 </div>
 
+                <div id="tl-scroll-prog-mask">
+
+                </div>
+
                 <div id="tl-scroll-markers-con">
-                    <a href="#tl-1909-section" class="tl-marker">1909</a>
-                    <a href="#tl-1918-section" class="tl-marker">1918</a>
-                    <a href="#tl-1927-section" class="tl-marker">1927</a>
-                    <a href="#tl-1928-section" class="tl-marker">1928</a>
-                    <a href="#tl-1930-section" class="tl-marker">1930</a>
-                    <a href="#tl-1940-section" class="tl-marker">1940</a>
+                    <a href="#tl-1909-section" class="tl-marker" data-progress="0.20">1909</a>
+                    <a href="#tl-1918-section" class="tl-marker" data-progress="0.34">1918</a>
+                    <a href="#tl-1927-section" class="tl-marker" data-progress="0.48">1927</a>
+                    <a href="#tl-1928-section" class="tl-marker" data-progress="0.62">1928</a>
+                    <a href="#tl-1930-section" class="tl-marker" data-progress="0.76">1930</a>
+                    <a href="#tl-1940-section" class="tl-marker" data-progress="0.90">1940</a>
                 </div>
             </div>
 
