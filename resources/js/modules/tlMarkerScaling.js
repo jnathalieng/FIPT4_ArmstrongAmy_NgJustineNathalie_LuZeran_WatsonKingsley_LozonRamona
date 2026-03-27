@@ -1,7 +1,12 @@
 export function tlMarkerScaling() {
-    // const markersPositionPercentage = [
-    //     0.23, 0.37, 0.51, 0.65, 0.79, 0.93
-    // ];
+    const markersPositionPercentage = [
+        { id: "tl-1909-section", progress: 0.2 },
+        { id: "tl-1918-section", progress: 0.34 },
+        { id: "tl-1927-section", progress: 0.48 },
+        { id: "tl-1928-section", progress: 0.62 },
+        { id: "tl-1930-section", progress: 0.76 },
+        { id: "tl-1940-section", progress: 0.90 }
+    ];
 
     const markers = document.querySelectorAll(".tl-marker");
     const maskingBar = document.querySelector("#tl-scroll-prog-mask");
