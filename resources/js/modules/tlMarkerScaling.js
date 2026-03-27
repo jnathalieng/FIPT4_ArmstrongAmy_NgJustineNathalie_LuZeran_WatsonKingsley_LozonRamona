@@ -20,8 +20,22 @@ export function tlMarkerScaling() {
     const updateBar = () => {
         const current = window.scrollY;
         
-        
-    }
+        if (current <= startScrollY) {
+            gsap.set(maskingBar, {
+                "--scrollProgress": 0
+            }); 
+        } else if (current >= endScrollY) {
+            gsap.set(maskingBar, {
+                "--scrollProgress": 1
+            });
+        } else {
+            const progress = (current - startScrollY) / (endScrollY - startScrollY);
+
+            gsap.set(maskingBar, {
+                "--scrollProgress": progress
+            });
+        }
+    };
     
 
 
