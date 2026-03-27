@@ -15,7 +15,7 @@ export function tlMarkerScaling() {
     const lastMarker = document.querySelector("#tl-1940-section");
 
     const startScrollY = firstMarker.offsetTop;
-    const endScrollY = lastMarker.offsetTop;
+    const endScrollY = lastMarker.offsetTop + lastMarker.offsetHeight;
     
     const updateBar = () => {
         const current = window.scrollY;
