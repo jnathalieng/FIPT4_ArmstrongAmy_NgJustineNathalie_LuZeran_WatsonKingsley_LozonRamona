@@ -32,7 +32,7 @@ else if(document.body.dataset.page === "TIMELINE-RECON") {
     tlShowSticky();
     tlScrollTo();
     tlMarkerScaling();
-    tlScrollProgress();
+    // tlScrollProgress();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
