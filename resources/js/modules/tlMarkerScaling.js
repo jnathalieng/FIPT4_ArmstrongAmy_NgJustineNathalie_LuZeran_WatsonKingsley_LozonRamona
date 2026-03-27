@@ -10,6 +10,12 @@ export function tlMarkerScaling() {
         "--scrollProgress": 0
     });
 
+    const updateProgress = () => {
+        return parseFloat(
+            getComputedStyle(maskingBar).getPropertyValue("--scrollProgress")
+        );
+    };
+
     markers.forEach((marker, i) => {
         marker.addEventListener("click", e => {
             gsap.to(maskingBar, {
