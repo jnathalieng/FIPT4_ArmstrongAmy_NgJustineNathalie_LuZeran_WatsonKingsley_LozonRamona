@@ -6,6 +6,10 @@ export function tlMarkerScaling() {
     const markers = document.querySelectorAll(".tl-marker");
     const maskingBar = document.querySelector("#tl-scroll-prog-mask");
 
+    gsap.set(maskingBar, {
+        "--scrollProgress": 0
+    });
+
     markers.forEach((marker, i) => {
         marker.addEventListener("click", e => {
             gsap.to(maskingBar, {
