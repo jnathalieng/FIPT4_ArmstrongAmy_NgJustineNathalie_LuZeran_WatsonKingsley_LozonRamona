@@ -10,6 +10,9 @@ import { typeWriter } from "./modules/typeWriter.js";
 
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
+
+import { videoQuery } from "./modules/hpVideoQuery.js";
+
 import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 import { tlShowSticky } from "./modules/tlShowSticky.js";
 import { tlScrollProgress } from "./modules/tlScrollProgress.js";
@@ -20,6 +23,7 @@ navbar_showhide();
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
+    videoQuery();
 }
 else if(document.body.dataset.page === "timeline") {
     console.log('recon page');
