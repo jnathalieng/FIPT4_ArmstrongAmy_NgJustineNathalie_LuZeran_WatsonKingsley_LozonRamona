@@ -347,12 +347,15 @@ nav .mobile-nav-element a {
 
 .hero-card-con {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .hero-card {
   position: relative;
   overflow: hidden;
+  flex: 50%;
+  aspect-ratio: 1/1;
 }
 
 .hero-card h3 {
@@ -365,7 +368,7 @@ nav .mobile-nav-element a {
 
 .hero-card-video {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: block;
   object-fit: cover;
   z-index: 1;
@@ -392,6 +395,7 @@ nav .mobile-nav-element a {
   }
   .hero-card {
     flex: 1;
+    aspect-ratio: unset;
   }
   .hero-CTA-con a {
     display: flex;
