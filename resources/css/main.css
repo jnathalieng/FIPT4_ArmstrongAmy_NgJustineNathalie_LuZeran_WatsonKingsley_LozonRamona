@@ -425,6 +425,10 @@ nav .mobile-nav-element a {
     transform: scale(110%);
   }
 }
+input::placeholder {
+  color: #fff;
+}
+
 footer {
   width: 100%;
   background-color: #B3262E;
@@ -771,7 +775,7 @@ footer .footer-closing-text p {
 }
 
 .text-con {
-  background-color: #cecccd;
+  background-color: #f7f7f7;
   padding: 4rem;
   position: relative;
   font-family: "Monserrat", sans-serif;
@@ -1610,12 +1614,12 @@ footer .footer-closing-text p {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-color: #cecccd;
+  background-color: #f7f7f7;
 }
 
 .comm-gamma-con {
   display: none;
-  background-color: #cecccd;
+  background-color: #f7f7f7;
   flex-direction: column;
   align-items: center;
   margin: 4rem 0;
@@ -1656,7 +1660,7 @@ footer .footer-closing-text p {
 }
 
 .comm-delta-con {
-  background-color: #cecccd;
+  background-color: #f7f7f7;
   flex-direction: column;
   align-items: center;
   margin: 4rem 0;
@@ -2549,7 +2553,7 @@ footer .footer-closing-text p {
 }
 
 .tl-content-break {
-  background-color: #cecccd;
+  background-color: #f7f7f7;
   text-align: center;
   font-size: 1000%;
   height: 100vh;
@@ -2559,7 +2563,7 @@ footer .footer-closing-text p {
   font-size: 3000%;
   z-index: -1;
   pointer-events: none;
-  color: #cecccd;
+  color: #f7f7f7;
   text-align: center;
   position: sticky;
   top: 0;
@@ -2599,7 +2603,7 @@ footer .footer-closing-text p {
 }
 
 .parallax-con-img {
-  background-color: red;
+  background-color: transparent;
 }
 
 .tl-ibox-text-con {
