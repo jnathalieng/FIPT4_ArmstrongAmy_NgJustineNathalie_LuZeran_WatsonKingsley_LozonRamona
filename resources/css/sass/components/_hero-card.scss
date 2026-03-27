@@ -1,5 +1,4 @@
-@use '../abstracts/mixins' as m;
-@use '../abstracts/variables' as v;
+@use '../abstracts' as a;
 
 #hero-selection {
     display: block;
@@ -46,15 +45,10 @@
     h4 {
         display: none;
     }
-
-    svg {
-        right: 5%;
-    }
 }
 
 @media screen and (min-width: 768px) {
     .hero-card-con {
-        flex-direction: row;
         gap: 0;
     }
 
@@ -64,6 +58,8 @@
     }
 
     .hero-CTA-con {
+
+        bottom: 15%;
         a {
             display: flex;
             flex-direction: row;
@@ -73,33 +69,40 @@
 
             h4 {
                 display: block;
-                color: white;
+                color: a.$white;
                 margin: 1rem;
                 font-size: 120%;
             }
         }
 
         a:hover {
-            transform: m.$scale-up;
-            transition: m.$t-time;
+            transform-origin: right;
+            transform: a.$scale-up;
+            transition: a.$t-time;
 
             h4 {
-                color: v.$primary-color;
+                transition: a.$t-time;
+                transform: a.$scale-up;
             }
 
             svg {
-                fill: v.$primary-color;
+                transition: a.$t-time;
+                fill: a.$primary-color;
+                transform: translateX(-25%);
+                transform: scale(150%);
+
             }
         }
     }
 
     .hero-card h3 {
-        font-size: 400%;
-        max-width: 50%;
+        bottom: 30%;
+        font-size: 250%;
+        max-width: 60%;
     }
 
     .hero-card-image:hover {
-        transition: m.$t-time;
-        transform: m.$scale-up;
+        transition: a.$t-time;
+        transform: a.$scale-up;
     }
 }

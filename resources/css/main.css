@@ -384,18 +384,17 @@ nav .mobile-nav-element a {
 .hero-CTA-con h4 {
   display: none;
 }
-.hero-CTA-con svg {
-  right: 5%;
-}
 
 @media screen and (min-width: 768px) {
   .hero-card-con {
-    flex-direction: row;
     gap: 0;
   }
   .hero-card {
     flex: 1;
     aspect-ratio: unset;
+  }
+  .hero-CTA-con {
+    bottom: 15%;
   }
   .hero-CTA-con a {
     display: flex;
@@ -406,23 +405,29 @@ nav .mobile-nav-element a {
   }
   .hero-CTA-con a h4 {
     display: block;
-    color: white;
+    color: #fff;
     margin: 1rem;
     font-size: 120%;
   }
   .hero-CTA-con a:hover {
+    transform-origin: right;
     transform: scale(110%);
     transition: all 0.3s ease;
   }
   .hero-CTA-con a:hover h4 {
-    color: #B3262E;
+    transition: all 0.3s ease;
+    transform: scale(110%);
   }
   .hero-CTA-con a:hover svg {
+    transition: all 0.3s ease;
     fill: #B3262E;
+    transform: translateX(-25%);
+    transform: scale(150%);
   }
   .hero-card h3 {
-    font-size: 400%;
-    max-width: 50%;
+    bottom: 30%;
+    font-size: 250%;
+    max-width: 60%;
   }
   .hero-card-image:hover {
     transition: all 0.3s ease;
