@@ -98,11 +98,14 @@
                 <div class="hero-card" id="com-hero-card">
                     <a href="{{ route('comm') }}" class="hero-card-a">
                         <h3 class="body-text">Legacy of the Fallen</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-commemoration.png">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-commemoration.png" alt="image of soldier">
-                        </picture>
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/marching-poster.png" preload="metadata">
+                            <source media="(min-width: 768px)" src="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
+                            
+                            <source src="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
+
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
