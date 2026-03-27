@@ -107,7 +107,7 @@
                     
                     <div class="hero-CTA-con">
                         <a href="{{ route('comm') }}">
-                            <h4>Read their Stories</h4>
+                            <h4>Read their stories</h4>
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
                         </a>
                     </div>
@@ -125,7 +125,7 @@
                     
                     <div class="hero-CTA-con">
                         <a href="{{ route('wartime_experience') }}">
-                            <h4>Read their Stories</h4>
+                            <h4>Read their stories</h4>
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
                         </a>
                     </div>
@@ -133,7 +133,7 @@
                 
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
-                        <h3 class="body-text">London Aviation Timeline</h3>
+                        <h3 class="body-text">London Aviation timeline</h3>
                         <picture>
                             <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-history.png">
 
@@ -149,6 +149,23 @@
                     </div>
                 </div>
                 
+                <div class="hero-card" id="bases-hero-card">
+                    <a href="{{ route('training_bases') }}" class="hero-card-a">
+                        <h3 class="body-text">Ontario Training Bases</h3>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-history.png">
+
+                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-history.png" alt="image of historic handshake">
+                        </picture>
+                    </a>
+                    
+                    <div class="hero-CTA-con">
+                        <a href="{{ route('timeline') }}">
+                            <h4>View all bases</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
 
             </div>
             
