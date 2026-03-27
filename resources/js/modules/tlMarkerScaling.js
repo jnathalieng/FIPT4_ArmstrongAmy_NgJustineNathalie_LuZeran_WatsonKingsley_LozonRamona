@@ -10,6 +10,17 @@ export function tlMarkerScaling() {
         "--scrollProgress": 0
     });
 
+    // variables to calculate scrolling range (custome 0-1 scroll progress)
+    const firstMarker = document.querySelector("#tl-1909-section");
+    const lastMarker = document.querySelector("#tl-1940-section");
+
+    const startScrollY = firstMarker.offsetTop;
+    const endScrollY = lastMarker.offsetTop;
+    
+    const current = window.scrollY;
+    
+
+
     markers.forEach((marker, i) => {
         marker.addEventListener("click", e => {
             gsap.to(maskingBar, {
