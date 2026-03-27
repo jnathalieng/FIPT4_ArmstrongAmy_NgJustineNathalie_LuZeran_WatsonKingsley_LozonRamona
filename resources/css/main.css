@@ -342,7 +342,7 @@ nav .mobile-nav-element a {
 #hero-selection {
   display: block;
   width: 100%;
-  margin-top: 100px;
+  max-height: 100vh;
 }
 
 .hero-card-con {
@@ -360,7 +360,7 @@ nav .mobile-nav-element a {
 
 .hero-card h3 {
   position: absolute;
-  bottom: 12.5%;
+  bottom: 20%;
   left: 5%;
   font-size: 200%;
   z-index: 2;

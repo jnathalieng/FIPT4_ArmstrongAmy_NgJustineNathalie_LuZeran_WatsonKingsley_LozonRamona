@@ -76,7 +76,7 @@
                 <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
                 <li><a class="button-text hover-item" href="{{ route('canteen') }}">Airman's Canteen</a></li>
                 <li><a class="button-text hover-item" href="{{ route('comm') }}">Commemoration</a></li>                     
-                <li><a class="button-text hover-item" href="{{ route('BOB') }}">Battle of Britain</a></li>
+                <li><a class="button-text hover-item" href="{{ route('BOB') }}">The Battle of Britain</a></li>
                 <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
                 <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
             </ul>
@@ -119,7 +119,7 @@
                 
                 <div class="hero-card" id="BOB-hero-card">
                     <a href="{{ route('BOB') }}" class="hero-card-a">
-                        <h3 class="body-text">Battle of Britain</h3>
+                        <h3 class="body-text">The Battle of Britain</h3>
                         <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/canteen-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source data-desktop="/videos/hero-videos/hero-canteen-480x1080.mp4" type="video/mp4">
@@ -369,7 +369,7 @@
 
             <div class="footer-selection-box">
                 <a href="{{ route('BOB') }}" class="footer-selection-a">
-                    <h3 class="header-text">Battle of Britain</h3>
+                    <h3 class="header-text">The Battle of Britain</h3>
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
 
