@@ -22,10 +22,6 @@ if(document.body.dataset.page === "home") {
     console.log('welcome home');
 }
 else if(document.body.dataset.page === "timeline") {
-    console.log('a journey through time!');
-    tlShowHide();
-}
-else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
     parallaxObj();
     tlImgTextReveal();
