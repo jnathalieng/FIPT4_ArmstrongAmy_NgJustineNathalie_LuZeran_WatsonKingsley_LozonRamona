@@ -54,7 +54,7 @@ export function tlMarkerScaling() {
     markers.forEach((marker) => {
         marker.addEventListener("click", () => {
             gsap.to(maskingBar, {
-                "--scrollProgress": marker.dataset.progress
+                "--scrollProgress": parseFloat(marker.dataset.progress)
             })
         });
     });
