@@ -59,4 +59,4 @@ document.addEventListener('mousemove', (e) => {
     header.classList.remove('slideUp');
   }
 });
-    }
+}

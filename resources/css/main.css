@@ -74,9 +74,11 @@ a {
   justify-content: space-between;
   width: 50px;
   height: 40px;
-  margin: 5% 5% 0 auto;
-  position: relative;
+  z-index: 100;
   cursor: pointer;
+  position: fixed;
+  margin: 5%;
+  right: 0;
 }
 .hamburger span {
   display: block;
@@ -136,7 +138,33 @@ a {
 .hamburger-nav {
   display: flex;
   flex-direction: column;
+  background-color: #B3262E;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.hamburger-nav .hover-item {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 3%;
   background-color: blue;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  width: 60%;
+  margin: auto;
+}
+
+.hover-item:hover {
+  color: rgb(37, 37, 37);
+  transform: scale(110%);
+  transition: all 0.3s ease;
+}
+
+.hover-item:active {
+  transform: scale(90%);
 }
 
 @media screen and (min-width: 768px) {
