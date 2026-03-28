@@ -364,3 +364,85 @@
 .header.slideUp {
   transform: translateY(-100%);
 }
+
+.desktop-nav {
+    display: none;
+}
+
+// HAMBURGER STYLING
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 40px;
+    margin: 5% 5% 0 auto;
+    position: relative;
+    cursor: pointer;
+        span {
+            display: block;
+            width: 100%;
+            height: 10%;
+            background-color: a.$white;
+            border-radius: 2px;
+        }
+}
+
+.hamburger.X span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 20px;
+    position:absolute;
+    transition: a.$t-time;
+}
+
+.hamburger.X span:nth-child(2) {
+    opacity: 0;
+    transition: a.$t-time;
+}
+
+.hamburger.X span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 20px;
+    position: absolute;
+    transition: a.$t-time;
+}
+
+.slide-out {
+    animation: slide-out 0.25s forwards;
+}
+
+.slide-back {
+    animation: slide-back 0.25s forwards;
+}
+
+@keyframes slide-out {
+    0% {right:-100%;}
+    100% {right: 0%}
+}
+
+@keyframes slide-back {
+    0% {right: 0%;}
+    100% {right: -100%}
+}
+
+.open {
+    display: block;
+}
+
+.hamburger-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .desktop-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger-nav {
+        display: none;
+    }
+}

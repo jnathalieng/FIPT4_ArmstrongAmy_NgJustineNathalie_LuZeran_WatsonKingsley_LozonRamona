@@ -1,6 +1,6 @@
 export function navbar_showhide() {
   const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector(".hamburger-dropdown");
+  const menu = document.querySelector(".hamburger-nav");
   const header = document.querySelector(".header");
 
 function closeMenu() {

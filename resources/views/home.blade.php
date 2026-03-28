@@ -14,51 +14,53 @@
     <header class="header">
     <!-- navbar -->
         <nav>
-            <div class="m-l-nav-item" id="logo">
-                <a href="{{ route('home') }}" class="hover-item">
-
-                </a>
-            </div>
-            
-            <div class="m-l-nav-item" id="about-nav">
-                <a class="button-text" href="{{ route('about') }}">About</a>
-            </div>
-
-            <div class="drop-down-wrap">
+            <ul class="desktop-nav">
+                <div class="m-l-nav-item" id="logo">
+                    <a href="{{ route('home') }}" class="hover-item">
+                        <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
+                    </a>
+                </div>
                 
-                <div class="m-l-nav-item" id="history-nav">
-                    <a class="button-text history-menu">History</a>
+                <div class="m-l-nav-item" id="about-nav">
+                    <a class="button-text" href="{{ route('about') }}">About</a>
                 </div>
 
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="{{ route('timeline') }}">London's Air Page</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('wartime_experience') }}">War Time Experiences</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('training_bases') }}" >Training Bases</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('canteen') }}">Airman's Canteen</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('comm') }}">Commemoration</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="drop-down-wrap">
+                    
+                    <div class="m-l-nav-item" id="history-nav">
+                        <a class="button-text history-menu">History</a>
+                    </div>
 
-            <div class="m-l-nav-item">
-                <a href="{{ route('BOB') }}">Battle of Britain</a>
-            </div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{ route('timeline') }}">London's Air Page</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('training_bases') }}" >Training Bases</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('canteen') }}">Airman's Canteen</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('comm') }}">Commemoration</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="m-l-nav-item">
-                <a href="{{ route('events') }}">Events</a>
-            </div>
-            <div class="m-l-nav-item">
-                <a href="{{ route('contact') }}">Contact</a>
-            </div>
+                <div class="m-l-nav-item">
+                    <a href="{{ route('BOB') }}">Battle of Britain</a>
+                </div>
+
+                <div class="m-l-nav-item">
+                    <a href="{{ route('events') }}">Events</a>
+                </div>
+                <div class="m-l-nav-item">
+                    <a href="{{ route('contact') }}">Contact</a>
+                </div>
+            </ul>
 
         <!-- mobile hamburger menu -->
         <div class="hamburger hover-item">
@@ -67,7 +69,7 @@
             <span></span>
         </div>
 
-            <ul class="hamburger-dropdown">
+            <ul class="hamburger-nav">
                 <li>
                     <a class="hover-item" href="{{ route('about') }}">About</a>
                 </li>             
