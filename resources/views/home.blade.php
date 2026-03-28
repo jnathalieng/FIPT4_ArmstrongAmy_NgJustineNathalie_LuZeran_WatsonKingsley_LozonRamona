@@ -73,9 +73,12 @@
         <nav class="hamburger-nav">
             <ul>
                 <li>
-                    <a href="{{ route('home') }}" class="mobile-nav-item">
+                    <a href="{{ route('home') }}" class="logo-con">
                         <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
                     </a>
+                </li>
+                <li class="nav-separator">
+
                 </li>
                 <li>
                     <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
