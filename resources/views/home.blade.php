@@ -13,10 +13,10 @@
 
     <header class="header">
     <!-- navbar -->
-        <nav>
-            <ul class="desktop-nav">
-                <div class="m-l-nav-item" id="logo">
-                    <a href="{{ route('home') }}" class="hover-item">
+        <nav class="desktop-nav">
+            <ul>
+                <div class="m-l-nav-item">
+                    <a href="{{ route('home') }}" class="logo-con">
                         <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
                     </a>
                 </div>
@@ -61,41 +61,48 @@
                     <a href="{{ route('contact') }}">Contact</a>
                 </div>
             </ul>
+        </nav>
 
         <!-- mobile hamburger menu -->
-        <div class="hamburger hover-item">
+        <div class="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-            <ul class="hamburger-nav">
+        <nav class="hamburger-nav">
+            <ul>
                 <li>
-                    <a class="hover-item" href="{{ route('about') }}">About</a>
+                    <a href="{{ route('home') }}" class="mobile-nav-item">
+                        <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
+                    </a>
+                </li>
+                <li>
+                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
                 </li>             
                 <li>
-                    <a class="hover-item" href="{{ route('timeline') }}">London's Air Page</a>
+                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('training_bases') }}">Training Bases</a>
+                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('canteen') }}">Airman's Canteen</a>
+                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('comm') }}">Commemoration</a>
+                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('BOB') }}">The Battle of Britain</a>
+                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('events') }}">Events</a>
+                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
                 </li>
                 <li>
-                    <a class="hover-item" href="{{ route('contact') }}">Contact</a>
+                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
         </nav>

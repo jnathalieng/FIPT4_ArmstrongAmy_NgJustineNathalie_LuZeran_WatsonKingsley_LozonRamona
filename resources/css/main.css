@@ -145,7 +145,7 @@ a {
   top: 0;
   right: 0;
 }
-.hamburger-nav .hover-item {
+.hamburger-nav .mobile-nav-item {
   display: block;
   text-decoration: none;
   color: #fff;
