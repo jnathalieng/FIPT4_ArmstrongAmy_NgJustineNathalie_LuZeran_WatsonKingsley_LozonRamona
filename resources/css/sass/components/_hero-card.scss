@@ -1,33 +1,35 @@
-@use '../abstracts/mixins' as m;
-@use '../abstracts/variables' as v;
+@use '../abstracts' as a;
 
 #hero-selection {
     display: block;
     width: 100%;
-    margin-top: 100px;
+    max-height: 100vh;
 }
 
 .hero-card-con {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .hero-card {
     position: relative;
     overflow: hidden;
+    flex: 50%;
+    aspect-ratio: 1 / 1;
 }
 
 .hero-card h3 {
     position: absolute;
-    bottom: 12.5%;
+    bottom: 20%;
     left: 5%;
     font-size: 200%;
     z-index: 2;
 }
 
-.hero-card-image {
+.hero-card-video {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: block;
     object-fit: cover;
     z-index: 1;
@@ -43,23 +45,21 @@
     h4 {
         display: none;
     }
-
-    svg {
-        right: 5%;
-    }
 }
 
 @media screen and (min-width: 768px) {
     .hero-card-con {
-        flex-direction: row;
         gap: 0;
     }
 
     .hero-card {
         flex: 1;
+        aspect-ratio: unset;
     }
 
     .hero-CTA-con {
+
+        bottom: 15%;
         a {
             display: flex;
             flex-direction: row;
@@ -69,33 +69,40 @@
 
             h4 {
                 display: block;
-                color: white;
+                color: a.$white;
                 margin: 1rem;
                 font-size: 120%;
             }
         }
 
         a:hover {
-            transform: m.$scale-up;
-            transition: m.$t-time;
+            transform-origin: right;
+            transform: a.$scale-up;
+            transition: a.$t-time;
 
             h4 {
-                color: v.$primary-color;
+                transition: a.$t-time;
+                transform: a.$scale-up;
             }
 
             svg {
-                fill: v.$primary-color;
+                transition: a.$t-time;
+                fill: a.$primary-color;
+                transform: translateX(-25%);
+                transform: scale(150%);
+
             }
         }
     }
 
     .hero-card h3 {
-        font-size: 400%;
-        max-width: 50%;
+        bottom: 30%;
+        font-size: 250%;
+        max-width: 60%;
     }
 
     .hero-card-image:hover {
-        transition: m.$t-time;
-        transform: m.$scale-up;
+        transition: a.$t-time;
+        transform: a.$scale-up;
     }
 }
