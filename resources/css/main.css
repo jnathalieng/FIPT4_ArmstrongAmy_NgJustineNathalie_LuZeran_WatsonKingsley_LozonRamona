@@ -72,8 +72,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50px;
-  height: 40px;
+  width: 35px;
+  height: 25px;
   z-index: 100;
   cursor: pointer;
   position: fixed;
@@ -156,6 +156,16 @@ a {
   box-shadow: -4px 0 16px rgba(0, 0, 0, 0.25), 4px 0 16px rgba(0, 0, 0, 0.25);
 }
 
+.hamburger-nav ul li.mobile-nav-li {
+  transition: all 0.3s ease;
+}
+.hamburger-nav ul li.mobile-nav-li:hover {
+  border: 1px #fff;
+  border-style: solid none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 -1px 2px rgba(0, 0, 0, 0.15);
+  list-style: square;
+}
+
 .logo-con {
   display: block;
   margin: auto;
@@ -171,9 +181,9 @@ a {
 
 .nav-separator {
   background-color: #B3262E;
-  height: 1%;
+  height: 0.3%;
   width: 80%;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 1.5rem auto;
   border-radius: 1rem;
 }
 
@@ -181,7 +191,7 @@ a {
   display: block;
   text-decoration: none;
   color: #fff;
-  padding: 2%;
+  padding: 3%;
   font-size: 1rem;
   color: #fff;
   width: 70%;
@@ -228,10 +238,12 @@ a {
 
 .hero-card h3 {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 5%;
   font-size: 200%;
   z-index: 2;
+  font-size: 150%;
+  width: 60%;
 }
 
 .hero-card-video {
@@ -244,13 +256,16 @@ a {
 
 .hero-CTA-con {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   display: flex;
   flex-direction: row;
 }
 .hero-CTA-con h4 {
   display: none;
+}
+.hero-CTA-con img {
+  height: 2.5rem;
 }
 
 @media screen and (min-width: 768px) {
