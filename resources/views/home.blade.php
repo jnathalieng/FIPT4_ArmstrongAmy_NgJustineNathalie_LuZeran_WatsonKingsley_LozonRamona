@@ -80,31 +80,31 @@
                 <li class="nav-separator">
 
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
                 </li>             
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
                 </li>
-                <li>
+                <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
@@ -139,7 +139,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('comm') }}">
                             <h4>Read their stories</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('wartime_experience') }}">
                             <h4>Read their stories</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('timeline') }}">
                             <h4>See the Timeline</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('timeline') }}">
                             <h4>View all bases</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>

@@ -374,8 +374,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50px;
-    height: 40px;
+    width: 35px;
+    height: 25px;
     z-index: 100;
     cursor: pointer;
     
@@ -458,6 +458,19 @@
         4px 0 16px rgba(0,0,0,0.25);
 }
 
+.hamburger-nav ul li.mobile-nav-li {
+    transition: a.$t-time;
+
+    &:hover {
+        border: 1px a.$white;
+        border-style: solid none;
+        box-shadow: 
+        0 1px 2px rgba(0,0,0,0.15),
+        0 -1px 2px rgba(0,0,0,0.15);
+        list-style: square;
+    }
+}
+
 .logo-con {
     display: block;
     margin: auto;
@@ -474,9 +487,9 @@
 
 .nav-separator {
     background-color: a.$primary-color;
-    height: 1%;
+    height: 0.3%;
     width: 80%;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 1.5rem auto;
     border-radius: 1rem;
 
 }
@@ -485,7 +498,7 @@
     display: block;
     text-decoration: none;
     color: a.$white;
-    padding: 2%;
+    padding: 3%;
     font-size: 1rem;
     color: a.$white;
 
