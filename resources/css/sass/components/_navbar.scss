@@ -523,8 +523,27 @@
 @media screen and (min-width: 768px) {
     
     .desktop-nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .desktop-nav ul {
+        background-color: a.$primary-color;
+
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    // .desktop-nav ul li {
+    //     background-color: blue;
+    // }
+
+    .hamburger {
+        display: none;
     }
 
     .hamburger-nav {

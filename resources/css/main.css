@@ -210,8 +210,20 @@ a {
 
 @media screen and (min-width: 768px) {
   .desktop-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .desktop-nav ul {
+    background-color: #B3262E;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hamburger {
+    display: none;
   }
   .hamburger-nav {
     display: none;
