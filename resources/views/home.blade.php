@@ -27,22 +27,22 @@
 
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
                     
-                    <a class="button-text history-menu">History</a>
+                    <a class="history-menu">History</a>
 
                     <ul class="dropdown-menu">
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('timeline') }}">London's Air Page</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('wartime_experience') }}">War Time Experiences</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('comm') }}">Commemoration</a>
                         </li>
                     </ul>

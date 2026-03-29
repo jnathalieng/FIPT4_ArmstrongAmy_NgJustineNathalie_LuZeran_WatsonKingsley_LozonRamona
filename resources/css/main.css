@@ -209,13 +209,19 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .hamburger-nav {
+    display: none;
+  }
   .desktop-nav {
     display: block;
     position: fixed;
     width: 100%;
     z-index: 100;
   }
-  .desktop-nav ul {
+  .desktop-nav > ul {
     background-color: #B3262E;
     display: flex;
     flex-direction: row;
@@ -223,13 +229,17 @@ a {
     justify-content: space-evenly;
   }
   .desktop-nav ul li {
-    background-color: blue;
+    background-color: pink;
   }
-  .hamburger {
-    display: none;
+  .drop-down-wrap {
+    position: relative;
   }
-  .hamburger-nav {
-    display: none;
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 #hero-selection {
@@ -443,6 +453,7 @@ footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con 
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con #footer-search-bar {
   width: 80%;
   border: 2px solid #fff;
+  opacity: 65%;
   color: white;
   border-radius: 1rem;
   background-color: transparent;

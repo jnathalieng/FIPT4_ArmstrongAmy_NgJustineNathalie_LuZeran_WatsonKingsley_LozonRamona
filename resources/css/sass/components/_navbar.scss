@@ -522,6 +522,14 @@
 
 @media screen and (min-width: 768px) {
     
+    .hamburger {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: none;
+    }
+
     .desktop-nav {
         display: block;
         position: fixed;
@@ -529,7 +537,7 @@
         z-index: 100;
     }
 
-    .desktop-nav ul {
+    .desktop-nav > ul {
         background-color: a.$primary-color;
 
         display: flex;
@@ -539,14 +547,19 @@
     }
 
     .desktop-nav ul li {
-        background-color: blue;
+        background-color: pink;
     }
 
-    .hamburger {
-        display: none;
+    .drop-down-wrap {
+        position: relative;
     }
 
-    .hamburger-nav {
-        display: none;
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 }
