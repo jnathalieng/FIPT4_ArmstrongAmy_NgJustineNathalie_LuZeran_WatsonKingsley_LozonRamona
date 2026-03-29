@@ -209,12 +209,47 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .desktop-nav {
-    display: flex;
-    flex-direction: row;
+  .hamburger {
+    display: none;
   }
   .hamburger-nav {
     display: none;
+  }
+  .desktop-logo-con {
+    display: block;
+    height: 10vh;
+  }
+  .desktop-logo-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .desktop-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .desktop-nav > ul {
+    background-color: #B3262E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 10vh;
+  }
+  .desktop-nav ul li {
+    background-color: pink;
+  }
+  .drop-down-wrap {
+    position: relative;
+  }
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 #hero-selection {
@@ -308,9 +343,9 @@ a {
     transform: scale(150%);
   }
   .hero-card h3 {
-    bottom: 30%;
-    font-size: 250%;
-    max-width: 60%;
+    top: 65%;
+    font-size: 200%;
+    width: 90%;
   }
   .hero-card-image:hover {
     transition: all 0.3s ease;
@@ -428,6 +463,7 @@ footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con 
 footer .footer-desktop-flex-con .footer-desktop-flex-section .footer-search-con #footer-search-bar {
   width: 80%;
   border: 2px solid #fff;
+  opacity: 65%;
   color: white;
   border-radius: 1rem;
   background-color: transparent;

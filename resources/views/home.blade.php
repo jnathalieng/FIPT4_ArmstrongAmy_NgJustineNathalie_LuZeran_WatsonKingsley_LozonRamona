@@ -15,51 +15,49 @@
     <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
-                <div class="m-l-nav-item">
-                    <a href="{{ route('home') }}" class="logo-con">
+                <li class="m-l-nav-item">
+                    <a href="{{ route('home') }}" class="desktop-logo-con">
                         <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
                     </a>
-                </div>
+                </li>
                 
-                <div class="m-l-nav-item" id="about-nav">
+                <li class="m-l-nav-item" id="about-nav">
                     <a class="button-text" href="{{ route('about') }}">About</a>
-                </div>
+                </li>
 
-                <div class="drop-down-wrap">
+                <li class="m-l-nav-item drop-down-wrap" id="history-nav">
                     
-                    <div class="m-l-nav-item" id="history-nav">
-                        <a class="button-text history-menu">History</a>
-                    </div>
+                    <a class="history-menu">History</a>
 
                     <ul class="dropdown-menu">
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('timeline') }}">London's Air Page</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('wartime_experience') }}">War Time Experiences</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
-                        <li>
+                        <li class="dropdown-item">
                             <a href="{{ route('comm') }}">Commemoration</a>
                         </li>
                     </ul>
-                </div>
+                </li>
 
-                <div class="m-l-nav-item">
+                <li class="m-l-nav-item">
                     <a href="{{ route('BOB') }}">Battle of Britain</a>
-                </div>
+                </li>
 
-                <div class="m-l-nav-item">
+                <li class="m-l-nav-item">
                     <a href="{{ route('events') }}">Events</a>
-                </div>
-                <div class="m-l-nav-item">
+                </li>
+                <li class="m-l-nav-item">
                     <a href="{{ route('contact') }}">Contact</a>
-                </div>
+                </li>
             </ul>
         </nav>
 
