@@ -16,7 +16,7 @@
         <nav class="desktop-nav">
             <ul>
                 <li class="m-l-nav-item">
-                    <a href="{{ route('home') }}" class="logo-con">
+                    <a href="{{ route('home') }}" class="desktop-logo-con">
                         <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
                     </a>
                 </li>

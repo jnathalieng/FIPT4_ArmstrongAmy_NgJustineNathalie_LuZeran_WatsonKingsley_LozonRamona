@@ -215,6 +215,15 @@ a {
   .hamburger-nav {
     display: none;
   }
+  .desktop-logo-con {
+    display: block;
+    height: 10vh;
+  }
+  .desktop-logo-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
   .desktop-nav {
     display: block;
     position: fixed;
@@ -227,6 +236,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    max-height: 10vh;
   }
   .desktop-nav ul li {
     background-color: pink;
@@ -333,9 +343,9 @@ a {
     transform: scale(150%);
   }
   .hero-card h3 {
-    bottom: 30%;
-    font-size: 250%;
-    max-width: 60%;
+    top: 65%;
+    font-size: 200%;
+    width: 90%;
   }
   .hero-card-image:hover {
     transition: all 0.3s ease;
