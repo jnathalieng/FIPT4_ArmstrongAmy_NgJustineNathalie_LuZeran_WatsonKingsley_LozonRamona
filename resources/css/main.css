@@ -90,7 +90,7 @@ a {
 
 .hamburger.X span:nth-child(1) {
   transform: rotate(45deg);
-  top: 20px;
+  top: 12.5px;
   position: absolute;
   transition: all 0.3s ease;
 }
@@ -102,7 +102,7 @@ a {
 
 .hamburger.X span:nth-child(3) {
   transform: rotate(-45deg);
-  top: 20px;
+  top: 12.5px;
   position: absolute;
   transition: all 0.3s ease;
 }
@@ -149,7 +149,7 @@ a {
 }
 
 .hamburger-nav ul {
-  background-color: #91B8D9;
+  background-color: #fff;
   height: 100vh;
   width: 60%;
   margin: auto;
@@ -160,7 +160,7 @@ a {
   transition: all 0.3s ease;
 }
 .hamburger-nav ul li.mobile-nav-li:hover {
-  border: 1px #fff;
+  border: 1px #B3262E;
   border-style: solid none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 -1px 2px rgba(0, 0, 0, 0.15);
   list-style: square;
@@ -192,8 +192,8 @@ a {
   text-decoration: none;
   color: #fff;
   padding: 3%;
-  font-size: 1rem;
-  color: #fff;
+  font-size: 1.25rem;
+  color: #B3262E;
   width: 70%;
   margin: auto;
   transform-origin: left;
@@ -228,7 +228,8 @@ a {
     display: block;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   }
   .desktop-nav > ul {
     background-color: #B3262E;
@@ -237,19 +238,52 @@ a {
     align-items: center;
     justify-content: space-evenly;
     max-height: 10vh;
+    overflow: visible;
   }
-  .desktop-nav ul li {
-    background-color: pink;
+  .m-l-nav-item {
+    margin: 3%;
+    transition: all 0.3s ease;
+  }
+  .m-l-nav-item:hover {
+    transform: scale(scale(110%));
+  }
+  .m-l-nav-item:after {
+    transform: scale(scale(90%));
+  }
+  .m-l-nav-item:first-child {
+    margin-right: auto;
   }
   .drop-down-wrap {
     position: relative;
+    cursor: pointer;
+    background-color: red;
   }
   .dropdown-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: absolute;
-    top: 100%;
-    left: 0;
+    bottom: 0;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .droppingDown {
+    opacity: 1;
+    transform: translateY(calc(100% + 3.5vh));
+  }
+  .dropdown-item {
+    display: block;
+    height: auto;
+    background-color: blue;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+  .dropdown-item:hover {
+    transform: scale(scale(110%));
+  }
+  .dropdown-item:active {
+    transform: scale(scale(90%));
   }
 }
 #hero-selection {

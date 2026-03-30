@@ -394,7 +394,7 @@
 
 .hamburger.X span:nth-child(1) {
     transform: rotate(45deg);
-    top: 20px;
+    top: 12.5px;
     position: absolute;
     transition: a.$t-time;
 }
@@ -406,7 +406,7 @@
 
 .hamburger.X span:nth-child(3) {
     transform: rotate(-45deg);
-    top: 20px;
+    top: 12.5px;
     position: absolute;
     transition: a.$t-time;
 }
@@ -449,7 +449,7 @@
 }
 
 .hamburger-nav ul {
-    background-color: a.$secondary-color;
+    background-color: a.$white;
     height: 100vh;
     width: 60%;
     margin: auto;
@@ -462,7 +462,7 @@
     transition: a.$t-time;
 
     &:hover {
-        border: 1px a.$white;
+        border: 1px a.$primary-color;
         border-style: solid none;
         box-shadow: 
         0 1px 2px rgba(0,0,0,0.15),
@@ -499,8 +499,8 @@
     text-decoration: none;
     color: a.$white;
     padding: 3%;
-    font-size: 1rem;
-    color: a.$white;
+    font-size: 1.25rem;
+    color: a.$primary-color;
 
     width: 70%;
     margin: auto;
@@ -545,7 +545,9 @@
         display: block;
         position: fixed;
         width: 100%;
-        z-index: 100;
+        z-index: 1000;
+
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
     }
     
     .desktop-nav > ul {
@@ -557,22 +559,66 @@
         justify-content: space-evenly;
 
         max-height: 10vh;
+        overflow: visible;
     }
 
-    .desktop-nav ul li {
-        background-color: pink;
+    .m-l-nav-item {
+        margin: 3%;
+        transition: a.$t-time;
+
+        &:hover {
+            transform: scale(a.$scale-up);
+        }
+
+        &:after {
+            transform: scale(a.$scale-down);
+        }
+    }
+
+    .m-l-nav-item:first-child {
+        margin-right: auto;
     }
 
     .drop-down-wrap {
         position: relative;
+        cursor: pointer;
+
+        background-color: red;
     }
 
     .dropdown-menu {
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         position: absolute;
-        top: 100%;
-        left: 0;
+        bottom: 0;
+        z-index: 999;
+        opacity: 0;
+        transition: a.$t-time;
+    }
+
+    .droppingDown {
+        opacity: 1;
+        
+        // adjust this for dropdown nav consideration
+        transform: translateY(calc(100% + 3.5vh));
+    }
+
+    .dropdown-item {
+        display: block;
+        height: auto;
+        background-color: blue;
+        padding: 1rem;
+
+        transition: a.$t-time;
+
+        &:hover {
+            transform: scale(a.$scale-up);
+        }
+
+        &:active {
+            transform: scale(a.$scale-down);
+        }
     }
 }

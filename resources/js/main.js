@@ -1,4 +1,6 @@
 import { navbar_showhide } from "./modules/hamburger.js";
+import { navDropDown } from "./modules/navDropDown.js";
+
 import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
@@ -20,6 +22,7 @@ import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
 import { tlScrollTo } from "./modules/tlScrollTo.js";
 
 navbar_showhide();
+navDropDown();
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
