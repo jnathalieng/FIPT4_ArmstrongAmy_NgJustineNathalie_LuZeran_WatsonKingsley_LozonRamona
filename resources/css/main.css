@@ -149,7 +149,7 @@ a {
 }
 
 .hamburger-nav ul {
-  background-color: #91B8D9;
+  background-color: #fff;
   height: 100vh;
   width: 60%;
   margin: auto;
@@ -160,7 +160,7 @@ a {
   transition: all 0.3s ease;
 }
 .hamburger-nav ul li.mobile-nav-li:hover {
-  border: 1px #fff;
+  border: 1px #B3262E;
   border-style: solid none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 -1px 2px rgba(0, 0, 0, 0.15);
   list-style: square;
@@ -192,8 +192,8 @@ a {
   text-decoration: none;
   color: #fff;
   padding: 3%;
-  font-size: 1rem;
-  color: #fff;
+  font-size: 1.25rem;
+  color: #B3262E;
   width: 70%;
   margin: auto;
   transform-origin: left;

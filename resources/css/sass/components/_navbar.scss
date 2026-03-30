@@ -449,7 +449,7 @@
 }
 
 .hamburger-nav ul {
-    background-color: a.$secondary-color;
+    background-color: a.$white;
     height: 100vh;
     width: 60%;
     margin: auto;
@@ -462,7 +462,7 @@
     transition: a.$t-time;
 
     &:hover {
-        border: 1px a.$white;
+        border: 1px a.$primary-color;
         border-style: solid none;
         box-shadow: 
         0 1px 2px rgba(0,0,0,0.15),
@@ -499,8 +499,8 @@
     text-decoration: none;
     color: a.$white;
     padding: 3%;
-    font-size: 1rem;
-    color: a.$white;
+    font-size: 1.25rem;
+    color: a.$primary-color;
 
     width: 70%;
     margin: auto;
