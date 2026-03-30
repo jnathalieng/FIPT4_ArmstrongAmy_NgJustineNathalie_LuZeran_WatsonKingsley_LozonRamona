@@ -545,6 +545,8 @@
         display: block;
         position: fixed;
         width: 100%;
+        z-index: 1000;
+        max-height: 10vh;
     }
     
     .desktop-nav > ul {
@@ -554,14 +556,13 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        z-index: 1000;
-
-        max-height: 10vh;
     }
 
     .drop-down-wrap {
         position: relative;
         cursor: pointer;
+
+        background-color: red;
     }
 
     .dropdown-menu {
@@ -574,11 +575,13 @@
         bottom: 0;
         z-index: -1;
         opacity: 0;
+        transition: a.$t-time;
     }
 
     .droppingDown {
         opacity: 1;
         transform: translateY(100%);
+        
     }
 
     // .dropdown {
