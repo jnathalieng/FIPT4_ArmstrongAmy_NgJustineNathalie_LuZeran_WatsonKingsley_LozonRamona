@@ -228,7 +228,6 @@ a {
     display: block;
     position: fixed;
     width: 100%;
-    z-index: 100;
   }
   .desktop-nav > ul {
     background-color: #B3262E;
@@ -236,6 +235,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1000;
     max-height: 10vh;
   }
   .desktop-nav ul li {
@@ -248,8 +248,9 @@ a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: -100%;
     left: 0;
+    z-index: -1;
   }
 }
 #hero-selection {
