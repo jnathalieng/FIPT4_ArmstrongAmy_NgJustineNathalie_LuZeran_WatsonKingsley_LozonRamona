@@ -394,7 +394,7 @@
 
 .hamburger.X span:nth-child(1) {
     transform: rotate(45deg);
-    top: 20px;
+    top: 12.5px;
     position: absolute;
     transition: a.$t-time;
 }
@@ -406,7 +406,7 @@
 
 .hamburger.X span:nth-child(3) {
     transform: rotate(-45deg);
-    top: 20px;
+    top: 12.5px;
     position: absolute;
     transition: a.$t-time;
 }
@@ -558,7 +558,8 @@
         align-items: center;
         justify-content: space-evenly;
 
-        max-height: 10vh;        
+        max-height: 10vh;
+        overflow: visible;
     }
 
     .m-l-nav-item {
@@ -592,7 +593,7 @@
 
         position: absolute;
         bottom: 0;
-        z-index: -1;
+        z-index: 999;
         opacity: 0;
         transition: a.$t-time;
     }
@@ -601,7 +602,7 @@
         opacity: 1;
         
         // adjust this for dropdown nav consideration
-        transform: translateY(calc(100% + 3vh));
+        transform: translateY(calc(100% + 3.5vh));
     }
 
     .dropdown-item {

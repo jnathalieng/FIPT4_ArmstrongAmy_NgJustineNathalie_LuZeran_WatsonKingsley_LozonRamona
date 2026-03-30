@@ -72,7 +72,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
+                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">

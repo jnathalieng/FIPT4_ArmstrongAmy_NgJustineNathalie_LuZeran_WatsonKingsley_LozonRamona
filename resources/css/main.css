@@ -90,7 +90,7 @@ a {
 
 .hamburger.X span:nth-child(1) {
   transform: rotate(45deg);
-  top: 20px;
+  top: 12.5px;
   position: absolute;
   transition: all 0.3s ease;
 }
@@ -102,7 +102,7 @@ a {
 
 .hamburger.X span:nth-child(3) {
   transform: rotate(-45deg);
-  top: 20px;
+  top: 12.5px;
   position: absolute;
   transition: all 0.3s ease;
 }
@@ -238,6 +238,7 @@ a {
     align-items: center;
     justify-content: space-evenly;
     max-height: 10vh;
+    overflow: visible;
   }
   .m-l-nav-item {
     margin: 3%;
@@ -263,13 +264,13 @@ a {
     justify-content: center;
     position: absolute;
     bottom: 0;
-    z-index: -1;
+    z-index: 999;
     opacity: 0;
     transition: all 0.3s ease;
   }
   .droppingDown {
     opacity: 1;
-    transform: translateY(calc(100% + 3vh));
+    transform: translateY(calc(100% + 3.5vh));
   }
   .dropdown-item {
     display: block;
