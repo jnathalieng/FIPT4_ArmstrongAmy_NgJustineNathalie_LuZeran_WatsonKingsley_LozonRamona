@@ -561,6 +561,7 @@
 
     .drop-down-wrap {
         position: relative;
+        cursor: pointer;
     }
 
     .dropdown-menu {
@@ -572,11 +573,12 @@
         position: absolute;
         bottom: 0;
         z-index: -1;
+        opacity: 0;
     }
 
-    .drop-down-wrap:hover .dropdown-menu {
-        transition: a.$t-time;
-        transform: translateY(125%);
+    .droppingDown {
+        opacity: 1;
+        transform: translateY(100%);
     }
 
     // .dropdown {
