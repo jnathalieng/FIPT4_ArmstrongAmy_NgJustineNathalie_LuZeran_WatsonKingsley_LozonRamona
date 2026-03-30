@@ -580,18 +580,8 @@
 
     .droppingDown {
         opacity: 1;
-        transform: translateY(100%);
-        
+        transform: translateY(calc(100% + 3vh));
     }
-
-    // .dropdown {
-    //     position: relative;
-    // }
-
-    // @keyframes droppingDown {
-    //     0% {top: -400%}
-    //     100% {top: 100%}
-    // }
 
     .dropdown-item {
         display: block;

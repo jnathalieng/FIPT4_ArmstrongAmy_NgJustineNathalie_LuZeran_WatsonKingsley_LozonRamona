@@ -256,7 +256,7 @@ a {
   }
   .droppingDown {
     opacity: 1;
-    transform: translateY(100%);
+    transform: translateY(calc(100% + 3vh));
   }
   .dropdown-item {
     display: block;
