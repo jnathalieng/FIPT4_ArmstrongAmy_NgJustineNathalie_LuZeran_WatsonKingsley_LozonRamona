@@ -229,7 +229,6 @@ a {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    max-height: 10vh;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   }
   .desktop-nav > ul {
@@ -238,6 +237,20 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    max-height: 10vh;
+  }
+  .m-l-nav-item {
+    margin: 3%;
+    transition: all 0.3s ease;
+  }
+  .m-l-nav-item:hover {
+    transform: scale(scale(110%));
+  }
+  .m-l-nav-item:after {
+    transform: scale(scale(90%));
+  }
+  .m-l-nav-item:first-child {
+    margin-right: auto;
   }
   .drop-down-wrap {
     position: relative;
@@ -248,7 +261,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     position: absolute;
     bottom: 0;
     z-index: -1;
@@ -263,6 +275,14 @@ a {
     display: block;
     height: auto;
     background-color: blue;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+  .dropdown-item:hover {
+    transform: scale(scale(110%));
+  }
+  .dropdown-item:active {
+    transform: scale(scale(90%));
   }
 }
 #hero-selection {
