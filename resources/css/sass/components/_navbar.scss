@@ -547,6 +547,7 @@
         width: 100%;
         z-index: 1000;
         max-height: 10vh;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
     }
     
     .desktop-nav > ul {
@@ -580,6 +581,8 @@
 
     .droppingDown {
         opacity: 1;
+        
+        // adjust this for dropdown nav consideration
         transform: translateY(calc(100% + 3vh));
     }
 

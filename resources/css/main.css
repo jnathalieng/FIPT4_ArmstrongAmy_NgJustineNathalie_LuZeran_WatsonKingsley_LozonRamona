@@ -230,6 +230,7 @@ a {
     width: 100%;
     z-index: 1000;
     max-height: 10vh;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   }
   .desktop-nav > ul {
     background-color: #B3262E;
