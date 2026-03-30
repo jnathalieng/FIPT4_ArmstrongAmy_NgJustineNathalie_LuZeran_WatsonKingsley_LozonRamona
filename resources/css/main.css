@@ -238,19 +238,26 @@ a {
     z-index: 1000;
     max-height: 10vh;
   }
-  .desktop-nav ul li {
-    background-color: pink;
-  }
   .drop-down-wrap {
     position: relative;
   }
   .dropdown-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
     position: absolute;
-    top: -100%;
-    left: 0;
+    bottom: 0;
     z-index: -1;
+  }
+  .drop-down-wrap:hover .dropdown-menu {
+    transition: all 0.3s ease;
+    transform: translateY(125%);
+  }
+  .dropdown-item {
+    display: block;
+    height: auto;
+    background-color: blue;
   }
 }
 #hero-selection {
