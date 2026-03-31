@@ -606,6 +606,7 @@
         }
     }
 
+    // DROP DOWN STYLING
     .drop-down-wrap {
         position: relative;
         cursor: pointer;
@@ -614,10 +615,15 @@
     .dropdown-menu {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        width: 200%;
 
         position: absolute;
         bottom: 0;
+        
+        // centering logic
+        left: 50%;
+        transform: translateX(-50%);
+
         z-index: -1;
         opacity: 0;
         transition: a.$t-time;
@@ -627,22 +633,21 @@
         opacity: 1;
         
         // adjust this for dropdown nav consideration
-        transform: translateY(calc(100% + 3.5vh));
+        transform: translateX(-50%) translateY(100%);
     }
 
     .dropdown-item {
-        display: block;
-        height: auto;
-        background-color: blue;
+        height: 10vh;
+        background-color: a.$tertiary-color;
 
         transition: a.$t-time;
 
-        &:hover {
-            transform: scale(a.$scale-up);
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        &:active {
-            transform: scale(a.$scale-down);
-        }
+    .dropdown-anchor {
+        color: a.$primary-color;
     }
 }

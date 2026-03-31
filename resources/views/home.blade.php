@@ -35,22 +35,22 @@
 
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
-                            <a class="nav-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
+                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="nav-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
+                            <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="nav-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
+                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="nav-anchor" href="{{ route('comm') }}">Commemoration</a>
+                            <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="nav-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                            <a class="dropdown-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="nav-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
+                            <a class="dropdown-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
                     </ul>
                 </li>
