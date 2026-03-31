@@ -639,15 +639,30 @@
     .dropdown-item {
         height: 10vh;
         background-color: a.$tertiary-color;
-
-        transition: a.$t-time;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .dropdown-anchor {
         color: a.$primary-color;
+        transition: a.$t-time;   
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        width: 100%;
+        background-color: a.$tertiary-color;
+
+        &:hover {
+            border: 0.5px a.$primary-color;
+            border-style: solid none;
+            background-color: darken(a.$tertiary-color, 5%);
+
+            font-size: 120%;
+        }
+
+        &:active {
+            font-size: 100%;
+        }
     }
 }
