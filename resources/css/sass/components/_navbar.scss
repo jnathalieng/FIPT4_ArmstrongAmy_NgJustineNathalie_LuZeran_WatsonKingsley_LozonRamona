@@ -530,15 +530,10 @@
         display: none;
     }
 
-    .desktop-logo-con {
+    .desktop-logo {
         display: block;
-        height: 10vh;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+        place-content: center;
+        height: 100%;
     }
 
     .desktop-nav {
@@ -558,28 +553,43 @@
         align-items: center;
         justify-content: space-evenly;
 
-        max-height: 10vh;
-        overflow: visible;
-    }
-
-    .m-l-nav-item {
-        transition: a.$t-time;
-        border: 1px a.$white;
-        border-style: none solid;
-        width: 10%;
-        margin: 0;
-
-        &:hover {
-            transform: scale(a.$scale-up);
-        }
-
-        &:after {
-            transform: scale(a.$scale-down);
-        }
+        height: 12.5vh;
     }
 
     .m-l-nav-item:first-child {
         margin-right: auto;
+        margin-left: 3%;
+        
+        pointer-events: none;
+        a {
+            pointer-events: all;
+        }
+    }
+
+    .m-l-nav-item {
+        width: 10%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .nav-anchor {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        place-content: center;
+        transition: a.$t-time;
+
+        &:hover {
+            border: 0.5px a.$white;
+            border-style: none solid;
+
+            font-size: 120%;
+        }
+
+        &:active {
+            font-size: 100%;
+        }
     }
 
     .drop-down-wrap {

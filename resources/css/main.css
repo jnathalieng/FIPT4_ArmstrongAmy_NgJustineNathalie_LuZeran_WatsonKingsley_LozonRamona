@@ -215,14 +215,10 @@ a {
   .hamburger-nav {
     display: none;
   }
-  .desktop-logo-con {
+  .desktop-logo {
     display: block;
-    height: 10vh;
-  }
-  .desktop-logo-con img {
-    width: 100%;
+    place-content: center;
     height: 100%;
-    object-fit: contain;
   }
   .desktop-nav {
     display: block;
@@ -237,24 +233,36 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    max-height: 10vh;
-    overflow: visible;
-  }
-  .m-l-nav-item {
-    transition: all 0.3s ease;
-    border: 1px #fff;
-    border-style: none solid;
-    width: 10%;
-    margin: 0;
-  }
-  .m-l-nav-item:hover {
-    transform: scale(scale(110%));
-  }
-  .m-l-nav-item:after {
-    transform: scale(scale(90%));
+    height: 12.5vh;
   }
   .m-l-nav-item:first-child {
     margin-right: auto;
+    margin-left: 3%;
+    pointer-events: none;
+  }
+  .m-l-nav-item:first-child a {
+    pointer-events: all;
+  }
+  .m-l-nav-item {
+    width: 10%;
+    height: 100%;
+    margin: 0;
+  }
+  .nav-anchor {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    place-content: center;
+    transition: all 0.3s ease;
+  }
+  .nav-anchor:hover {
+    border: 0.5px #fff;
+    border-style: none solid;
+    font-size: 120%;
+  }
+  .nav-anchor:active {
+    font-size: 100%;
   }
   .drop-down-wrap {
     position: relative;

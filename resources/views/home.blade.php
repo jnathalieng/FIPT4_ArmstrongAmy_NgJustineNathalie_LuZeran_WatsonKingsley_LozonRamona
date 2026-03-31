@@ -15,48 +15,51 @@
     <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
-                <li class="m-l-nav-item">
-                    <a href="{{ route('home') }}" class="desktop-logo-con">
+                <li class="desktop-logo-con m-l-nav-item">
+                    <a class="desktop-logo" href="{{ route('home') }}">
                         <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
                     </a>
                 </li>
-                
+
                 <li class="m-l-nav-item" id="about-nav">
-                    <a class="button-text" href="{{ route('about') }}">About</a>
+                    <a class="nav-anchor" href="{{ route('home') }}">Home</a>
+                </li>
+
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('about') }}">About</a>
                 </li>
 
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
                     
-                    <a class="history-menu">History</a>
+                    <a class="nav-anchor">History</a>
 
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
-                            <a href="{{ route('timeline') }}">London's Air Page</a>
+                            <a class="nav-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                            <a class="nav-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="{{ route('training_bases') }}" >Training Bases</a>
+                            <a class="nav-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="{{ route('canteen') }}">Airman's Canteen</a>
+                            <a class="nav-anchor" href="{{ route('comm') }}">Commemoration</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="{{ route('comm') }}">Commemoration</a>
+                            <a class="nav-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
                     </ul>
                 </li>
 
                 <li class="m-l-nav-item">
-                    <a href="{{ route('BOB') }}">Battle of Britain</a>
-                </li>
-
-                <li class="m-l-nav-item">
-                    <a href="{{ route('events') }}">Events</a>
+                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
                 </li>
                 <li class="m-l-nav-item">
-                    <a href="{{ route('contact') }}">Contact</a>
+                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
         </nav>
