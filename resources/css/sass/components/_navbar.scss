@@ -534,6 +534,19 @@
         display: block;
         place-content: center;
         height: 100%;
+
+        img {
+            transition: a.$t-time;
+
+            &:hover {
+                transform: scale(110%);
+            }
+
+            &:active {
+                transform: scale(100%);
+            }
+        }
+        
     }
 
     .desktop-nav {
@@ -583,6 +596,7 @@
         &:hover {
             border: 0.5px a.$white;
             border-style: none solid;
+            background-color: darken(a.$primary-color, 3%);
 
             font-size: 120%;
         }
@@ -595,8 +609,6 @@
     .drop-down-wrap {
         position: relative;
         cursor: pointer;
-
-        background-color: red;
     }
 
     .dropdown-menu {
