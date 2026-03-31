@@ -241,8 +241,11 @@ a {
     overflow: visible;
   }
   .m-l-nav-item {
-    margin: 3%;
     transition: all 0.3s ease;
+    border: 1px #fff;
+    border-style: none solid;
+    width: 10%;
+    margin: 0;
   }
   .m-l-nav-item:hover {
     transform: scale(scale(110%));
@@ -264,7 +267,7 @@ a {
     justify-content: center;
     position: absolute;
     bottom: 0;
-    z-index: 999;
+    z-index: -1;
     opacity: 0;
     transition: all 0.3s ease;
   }
@@ -276,7 +279,6 @@ a {
     display: block;
     height: auto;
     background-color: blue;
-    padding: 1rem;
     transition: all 0.3s ease;
   }
   .dropdown-item:hover {

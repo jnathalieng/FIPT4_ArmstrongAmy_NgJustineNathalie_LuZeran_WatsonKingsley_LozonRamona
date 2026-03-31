@@ -17,7 +17,7 @@
             <ul>
                 <li class="m-l-nav-item">
                     <a href="{{ route('home') }}" class="desktop-logo-con">
-                        <img src="/images/icons/logos/FINAL_LOGO.svg" alt="image of logo">
+                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
                     </a>
                 </li>
                 

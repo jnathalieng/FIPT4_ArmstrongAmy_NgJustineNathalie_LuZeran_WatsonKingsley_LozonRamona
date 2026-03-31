@@ -563,8 +563,11 @@
     }
 
     .m-l-nav-item {
-        margin: 3%;
         transition: a.$t-time;
+        border: 1px a.$white;
+        border-style: none solid;
+        width: 10%;
+        margin: 0;
 
         &:hover {
             transform: scale(a.$scale-up);
@@ -593,7 +596,7 @@
 
         position: absolute;
         bottom: 0;
-        z-index: 999;
+        z-index: -1;
         opacity: 0;
         transition: a.$t-time;
     }
@@ -609,7 +612,6 @@
         display: block;
         height: auto;
         background-color: blue;
-        padding: 1rem;
 
         transition: a.$t-time;
 
