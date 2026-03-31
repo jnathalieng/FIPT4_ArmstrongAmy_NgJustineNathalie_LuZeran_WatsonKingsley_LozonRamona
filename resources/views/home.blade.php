@@ -12,7 +12,7 @@
 <body data-page="home">
 
     <header class="header">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -35,13 +35,10 @@
 
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
+                            <a class="dropdown-anchor" href="{{ route('timeline') }}">London's Air Page</a>
                         </li>
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
