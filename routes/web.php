@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CommController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,4 +70,6 @@ Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
 
-//Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');

@@ -2615,6 +2615,10 @@ footer .footer-closing-text p {
   margin: 10px;
 }
 
+main {
+  min-height: 100vw;
+}
+
 #tl-body {
   color: black;
 }
@@ -2970,4 +2974,4 @@ footer .footer-closing-text p {
 .ibox-f5 {
   grid-column: 4/span 7;
   grid-row: 10;
-}/*# sourceMappingURL=main.css.map */
+}

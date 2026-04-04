@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
-<body data-page="blog">
+<body data-page="blog-post">
 
     <header class="header">
     <!-- navbar -->
@@ -117,7 +117,7 @@
     </header>
 
     <main>
-        <div id="blog-app"></div>
+        <div id="blog-post-app" data-blog="{{ json_encode($blog) }}"></div>
     </main>
 
       <footer>
