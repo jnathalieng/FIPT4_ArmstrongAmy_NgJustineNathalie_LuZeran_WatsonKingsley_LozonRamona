@@ -6,6 +6,7 @@ import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import gallery from "./modules/gallery.js";
+//import blog from "./modules/blog.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
@@ -77,4 +78,7 @@ else if(document.body.dataset.page === "gallery") {
 
     const app = createApp(gallery);
     app.mount('#gallery-app');
+}
+else if(document.body.dataset.page === "blog") {
+    console.log('learn about our research journey!');
 }
