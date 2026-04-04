@@ -13,74 +13,102 @@
 
     <header class="header">
     <!-- navbar -->
-        <nav>
-                <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
-                
-                <div class="m-l-nav-item" id="about-nav">
-                <div></div>
-                    <a class="button-text" href="{{ route('about') }}">About</a>
-                </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li class="desktop-logo-con m-l-nav-item">
+                    <a class="desktop-logo" href="{{ route('home') }}">
+                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                    </a>
+                </li>
 
-                <div class="drop-down-wrap">
-                <div class="button-text m-l-nav-item" id="history-nav">
-                    <div></div>
-                    <a class="button-text history-menu">History</a>
-                </div>
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('home') }}">Home</a>
+                </li>
+
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('about') }}">About</a>
+                </li>
+
+                <li class="m-l-nav-item drop-down-wrap" id="history-nav">
+                    
+                    <a class="nav-anchor">History</a>
+
                     <ul class="dropdown-menu">
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('timeline') }}">London's Air Page</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('training_bases') }}" >Training Bases</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('canteen') }}">Airman's Canteen</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
                         </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
+                        </li>
+                    </ul>
+                </li>
 
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('comm') }}">Commemoration</a>
-                        </li>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('BOB') }}">Battle of Britain</a>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('events') }}">Events</a>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('contact') }}">Contact</a>
-                </div>
-
-            <!-- mobile hamburger menu -->
-                    <div class="hamburger hover-item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-            <ul class="hamburger-dropdown">
-                <li><a class="button-text hover-item" href="{{ route('about') }}">About</a></li>             
-                <li><a class="button-text hover-item" href="{{ route('timeline') }}">London's Air Page</a></li>
-                <li><a class="button-text hover-item" href="{{ route('wartime_experience') }}">War Time Experiences</a></li>
-                <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
-                <li><a class="button-text hover-item" href="{{ route('canteen') }}">Airman's Canteen</a></li>
-                <li><a class="button-text hover-item" href="{{ route('comm') }}">Commemoration</a></li>                     
-                <li><a class="button-text hover-item" href="{{ route('BOB') }}">Battle of Britain</a></li>
-                <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
-                <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
+                </li>
             </ul>
+        </nav>
 
+        <!-- mobile hamburger menu -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="hamburger-nav">
+            <ul>
+                <li>
+                    <a href="{{ route('home') }}" class="logo-con">
+                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                    </a>
+                </li>
+                <li class="nav-separator">
+
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
+                </li>             
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -98,57 +126,87 @@
                 <div class="hero-card" id="com-hero-card">
                     <a href="{{ route('comm') }}" class="hero-card-a">
                         <h3 class="body-text">Legacy of the Fallen</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-commemoration.png">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-commemoration.png" alt="image of soldier">
-                        </picture>
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/marching-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                            <source data-desktop="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
+                            
+                            <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
+
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
                         <a href="{{ route('comm') }}">
-                            <h4>Read their Stories</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <h4>Read their stories</h4>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>
                 
                 <div class="hero-card" id="BOB-hero-card">
                     <a href="{{ route('BOB') }}" class="hero-card-a">
-                        <h3 class="body-text">Battle of Britain</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-bob.png">
+                        <h3 class="body-text">The Battle of Britain</h3>
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/canteen-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                            <source data-desktop="/videos/hero-videos/hero-canteen-480x1080.mp4" type="video/mp4">
+                            
+                            <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-bob.png" alt="image of pilot on a plane">
-                        </picture>
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
                         <a href="{{ route('wartime_experience') }}">
-                            <h4>Read their Stories</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <h4>Read their stories</h4>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>
                 
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
-                        <h3 class="body-text">London Aviation Timeline</h3>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-bg-homepage-history.png">
+                        <h3 class="body-text">London Aviation timeline</h3>
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/gas-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                            <source data-desktop="/videos/hero-videos/hero-gas-480x1080.mp4" type="video/mp4">
+                            
+                            <source data-mobile="/videos/hero-videos/hero-gas-768x768.mp4" type="video/mp4">
 
-                            <img class="hero-card-image" src="images/homepage-images/mobile/m-bg-homepage-history.png" alt="image of historic handshake">
-                        </picture>
+                            <p>Your browser does not support</p>
+                        </video>
                     </a>
                     
                     <div class="hero-CTA-con">
                         <a href="{{ route('timeline') }}">
                             <h4>See the Timeline</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
+                            <img src="/images/icons/right-arrow.svg" alt="">
                         </a>
                     </div>
                 </div>
                 
+                <div class="hero-card" id="bases-hero-card">
+                    <a href="{{ route('training_bases') }}" class="hero-card-a">
+                        <h3 class="body-text">Ontario Training Bases</h3>
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/plane-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                            <source data-desktop="/videos/hero-videos/hero-plane-480x1080.mp4" type="video/mp4">
+                            
+                            <source data-mobile="/videos/hero-videos/hero-plane-768x768.mp4" type="video/mp4">
+
+                            <p>Your browser does not support</p>
+                        </video>
+                    </a>
+                    
+                    <div class="hero-CTA-con">
+                        <a href="{{ route('timeline') }}">
+                            <h4>View all bases</h4>
+                            <img src="/images/icons/right-arrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
             </div>
             
@@ -339,7 +397,7 @@
 
             <div class="footer-selection-box">
                 <a href="{{ route('BOB') }}" class="footer-selection-a">
-                    <h3 class="header-text">Battle of Britain</h3>
+                    <h3 class="header-text">The Battle of Britain</h3>
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
 

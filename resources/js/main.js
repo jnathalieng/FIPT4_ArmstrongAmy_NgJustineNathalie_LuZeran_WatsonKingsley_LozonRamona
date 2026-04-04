@@ -1,4 +1,6 @@
 import { navbar_showhide } from "./modules/hamburger.js";
+import { navDropDown } from "./modules/navDropDown.js";
+
 import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
@@ -8,24 +10,33 @@ import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
-import { tlShowHide } from "./modules/tlShowHide.js";
+
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
+
+import { videoQuery } from "./modules/hpVideoQuery.js";
+
 import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
+import { tlShowSticky } from "./modules/tlShowSticky.js";
+import { tlScrollProgress } from "./modules/tlScrollProgress.js";
+import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
+import { tlScrollTo } from "./modules/tlScrollTo.js";
 
 navbar_showhide();
+navDropDown();
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
+    videoQuery();
 }
 else if(document.body.dataset.page === "timeline") {
-    console.log('a journey through time!');
-    tlShowHide();
-}
-else if(document.body.dataset.page === "TIMELINE-RECON") {
     console.log('recon page');
     parallaxObj();
     tlImgTextReveal();
+    tlShowSticky();
+    tlScrollTo();
+    tlMarkerScaling();
+    // tlScrollProgress();
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
