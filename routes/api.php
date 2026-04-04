@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;  
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\CommController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,6 @@ Route::get('/comm', [CommController::class, 'index']);
 
 Route::get('/galleries', [GalleryController::class, 'index']);
 Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
+Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
+Route::get('/blogs', [BlogController::class, 'index']);
+Route::get('/blogs/{slug}', [BlogController::class, 'show']);

@@ -1,0 +1,8 @@
+@use '../abstracts/fonts';
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as v;
+@use '../base/typography';
+
+main {
+    min-height: 100vw;
+}
