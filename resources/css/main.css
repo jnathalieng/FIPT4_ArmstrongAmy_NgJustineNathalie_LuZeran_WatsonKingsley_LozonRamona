@@ -2155,7 +2155,6 @@ footer .footer-closing-text p {
   }
 }
 #bases-page {
-  background-color: rgba(60, 60, 60, 0.5);
   color: white;
   overflow-x: hidden;
 }
@@ -2165,16 +2164,25 @@ footer .footer-closing-text p {
   height: 100vh;
 }
 
-.scroll-section h2 {
-  color: #000;
+.scroll-container {
+  margin: 0;
+  padding: 0;
 }
-.scroll-section .map-content-box {
+
+.scroll-flex-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map-content-box, .map-image {
   background: linear-gradient(to bottom right, rgba(189, 189, 189, 0.5019607843), rgba(189, 189, 189, 0));
   backdrop-filter: blur(10px);
   position: relative;
   border-radius: 1rem;
 }
-.scroll-section .map-content-box::before {
+.map-content-box::before, .map-image::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2185,6 +2193,12 @@ footer .footer-closing-text p {
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
+}
+.map-content-box, .map-image {
+  width: 30vw;
+  margin: 0 15vw;
+  transition: all 0.3s ease;
+  height: 50vh;
 }
 
 #about-hero {

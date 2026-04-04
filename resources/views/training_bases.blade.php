@@ -149,19 +149,26 @@
             </section>
 
             <section class="scroll-section" data-target="base-1">
-            <h2>Base 1</h2>
-            <div class="map-content-box">
-            <p>         Goderich
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    (note, there's very little information on these from the powerpoint) 
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image" id="base-1-image"></div>
-            </div>
+                <h2>Base 1</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>         Goderich
+                            <br>
+                            <br>    NAME OF BASE
+                            <br>
+                            <br>    Purpose of base:
+                            <br>
+                            <br>    (note, there's very little information on these from the powerpoint) 
+                            <br>
+                            <br>    DETAILS ABOUT BASE(S)
+                        </p>
+                    </div>
+
+                    <div class="map-image" id="base-1-image">
+                        
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-2">
