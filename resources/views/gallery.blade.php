@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Events!</title>
+    <title>gallery</title>
+    <script>window.galleriesData = @json($gallery);</script>
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,6 +87,7 @@
     </header>
 <main>
 
+<!-- hero section -->
         <section class="hero-section" id="gallery-hero-section">
             <div class="hero-triangle"></div>
             <div class="hero-title-con">
@@ -94,62 +96,30 @@
             </div>
         </section>
 
-        <section class="event-updates">
-            <div class="updates-text">
+        <!-- button list -->
+        <section class="button-box">
+            <div class="button-box-title">
                 <p>Through the lens of history</p>
             </div>
 
-            <div class="events-buttons-list">
-                <div>
-                    <a class="button" id="museum-photos">The Museum</a>
+            <div class="button-list">
+                    <a class="box-button" id="museum-photos">The Museum</a>
+                
+                    <a class="box-button" id="airmans-canteen-photos">Airman's Canteen</a>
+
+                    <a class="box-button" id="londons-air-page-photos">London's Air Page</a>
+
+                    <a class="box-button" id="battle-of-britain-photos">Battle of Britain</a>
+
+                    <a class="box-button" id="wartime-experience-photos">War Time Experiences</a>
+
+                    <a class="box-button" id="event-photos">Events</a>
                 </div>
 
-                <div>
-                    <a class="button" id="airmans-canteen-photos">Airman's Canteen</a>
-                </div>
 
-                <div>
-                    <a class="button" id="londons-air-page-photos">London's Air Page</a>
-                </div>
 
-                <div>
-                    <a class="button" id="battle-of-britain-photos">Battle of Britain</a>
-                </div>
 
-                <div>
-                    <a class="button" id="wartime-experience-photos">War Time Experiences</a>
-                </div>
-
-                <div>
-                    <a class="button" id="event-photos">Events</a>
-                </div>
-            </div>
-
-        </section>
-
-<section id="gallery-header">
-
-<div>
-    <h2>
-        WAR TIME EXPERIENCE
-    </h2>
-</div>
-
-<div>
-    <h3>Scenes from Wartime Training</h3>
-</div>
-
-<div>
-    <p>
-        A visual record of the airfields, aircraft, istructors, and trainees who shaped Canada's wartime aviation efforts.
-    </p>
-</div>
-
-</section>
-
-<section id="gallery">
-
-</section>
+<div id="gallery-app"></div>
 
 
 </main>

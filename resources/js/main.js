@@ -3,6 +3,7 @@ import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
+import gallery from "./modules/gallery.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
@@ -62,4 +63,7 @@ else if(document.body.dataset.page === "contact") {
 }
 else if(document.body.dataset.page === "gallery") {
     console.log('all our images!');
+
+    const app = createApp(gallery);
+    app.mount('#gallery-app');
 }

@@ -16,3 +16,38 @@
     background-color: v.$primary-color;
     color: white;
 }
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-box-title {
+    color: v.$dark-background;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-button {
+    background-color: v.$dark-background;
+    padding: 10px;
+    margin: 8px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box-button:hover {
+    color: white;
+    background-color: v.$primary-color;
+}
