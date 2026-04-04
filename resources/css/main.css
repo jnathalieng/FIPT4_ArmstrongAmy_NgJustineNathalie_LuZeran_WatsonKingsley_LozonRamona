@@ -2169,7 +2169,7 @@ footer .footer-closing-text p {
   color: #000;
 }
 .scroll-section .map-content-box {
-  background: linear-gradient(to bottom right, #f7f7f7, rgba(247, 247, 247, 0.6));
+  background: linear-gradient(to bottom right, rgba(189, 189, 189, 0.5019607843), rgba(189, 189, 189, 0));
   backdrop-filter: blur(10px);
   position: relative;
   border-radius: 1rem;
@@ -2180,7 +2180,7 @@ footer .footer-closing-text p {
   inset: 0;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1019607843));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6666666667), rgba(255, 255, 255, 0.2078431373));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
