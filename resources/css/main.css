@@ -2166,39 +2166,25 @@ footer .footer-closing-text p {
 }
 
 .scroll-section h2 {
-  color: white;
-  margin-bottom: 20px;
-  background-color: rgba(60, 60, 60, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  border: solid 3px black;
+  color: #000;
 }
 .scroll-section .map-content-box {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  margin-left: 3vw;
+  background: linear-gradient(to bottom right, rgba(189, 189, 189, 0.5019607843), rgba(189, 189, 189, 0));
+  backdrop-filter: blur(10px);
+  position: relative;
+  border-radius: 1rem;
 }
-.scroll-section .map-content-box p {
-  color: white;
-  background-color: rgba(60, 60, 60, 0.5);
-  padding: 10px;
-  width: 33vw;
-  border-radius: 10px;
-  border: solid 3px black;
-}
-.scroll-section .map-content-box .map-image {
-  width: 33vw;
-  height: 33vw;
-  margin-left: auto;
-  margin-right: 3vw;
-  background-color: rgba(60, 60, 60, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  border: solid 3px black;
-  background-image: url("/images/general-images/AboutHero_Mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.scroll-section .map-content-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6666666667), rgba(255, 255, 255, 0.2078431373));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
 }
 
 #about-hero {
