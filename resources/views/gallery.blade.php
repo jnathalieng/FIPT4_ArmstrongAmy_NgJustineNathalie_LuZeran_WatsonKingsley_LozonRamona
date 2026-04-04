@@ -133,7 +133,7 @@
                 <p>Through the lens of history</p>
             </div>
 
-            <div class="button-list">
+            <!-- <div class="button-list">
                     <a class="box-button" id="airmans-canteen-photos">Airman's Canteen</a>
 
                     <a class="box-button" id="londons-air-page-photos">London's Air Page</a>
@@ -141,7 +141,7 @@
                     <a class="box-button" id="battle-of-britain-photos">Battle of Britain</a>
 
                     <a class="box-button" id="event-photos">Events</a>
-                </div>
+                </div> -->
 
 
 
