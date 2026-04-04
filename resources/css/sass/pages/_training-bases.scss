@@ -1,7 +1,7 @@
-@use '../abstracts' as v;
+@use '../abstracts' as a;
 
 #bases-page {
-    background-color: rgba(v.$dark-background, 0.5);
+    background-color: rgba(a.$dark-background, 0.5);
     color: white;
 
     overflow-x: hidden;
@@ -14,41 +14,40 @@
 
 .scroll-section {
     h2 {
-        color: white;
-        margin-bottom: 20px;
-        background-color: rgba(v.$dark-background, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        border: solid 3px black;
-
+        color: a.$black;
     }
+
     .map-content-box {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        margin-left: 3vw;
+        background-color: a.$glass-morph;
+        backdrop-filter: blur(10px);
+    }
+//     .map-content-box {
+//         display: flex;
+//         flex-direction: row;
+//         width: 100vw;
+//         margin-left: 3vw;
         
-    p {
-        color: white;
-        background-color: rgba(v.$dark-background, 0.5);
-        padding: 10px;
-        width: 33vw;
-        border-radius: 10px;
-        border: solid 3px black;
-    }
+//     p {
+//         color: white;
+//         background-color: rgba(a.$dark-background, 0.5);
+//         padding: 10px;
+//         width: 33vw;
+//         border-radius: 10px;
+//         border: solid 3px black;
+//     }
 
-    .map-image {
-        width: 33vw;
-        height: 33vw;
-        margin-left: auto;
-        margin-right: 3vw;
-        background-color: rgba(v.$dark-background, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        border: solid 3px black;
-        background-image: url("/images/general-images/AboutHero_Mobile.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
+//     .map-image {
+//         width: 33vw;
+//         height: 33vw;
+//         margin-left: auto;
+//         margin-right: 3vw;
+//         background-color: rgba(a.$dark-background, 0.5);
+//         padding: 20px;
+//         border-radius: 10px;
+//         border: solid 3px black;
+//         background-image: url("/images/general-images/AboutHero_Mobile.png");
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//     }
+// }
 }
