@@ -18,8 +18,30 @@
     }
 
     .map-content-box {
-        background-color: a.$glass-morph;
+        background: a.$glass-morph;
         backdrop-filter: blur(10px);
+
+        // Glass morphism gradient border
+        position: relative;
+        border-radius: 1rem;
+
+        // for some reason CSS doesn't natively allow gradient border colors, so Claude suggests a pseudo element workaround, @marco, this is so counter-intuitive...sorry
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: a.$glass-morph-stroke;
+            
+            // mask property sets up shape to cut from the pseudo element
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+
+            // mask property that does the cutting
+            mask-composite: exclude;
+            -webkit-mask-composite: xor;
+        }
     }
 //     .map-content-box {
 //         display: flex;
