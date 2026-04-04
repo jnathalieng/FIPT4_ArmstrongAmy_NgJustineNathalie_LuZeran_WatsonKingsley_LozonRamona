@@ -18,9 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
 </head>
 
-<body id="tl-body" data-page="timeline">
-
-    <header class="header">
+<header class="header">
     <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
