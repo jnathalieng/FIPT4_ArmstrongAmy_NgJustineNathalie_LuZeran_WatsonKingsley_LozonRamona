@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gallery</title>
-    <script>window.galleriesData = @json($galleries);</script>
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +15,7 @@
 </head>
 <body data-page="gallery">
 
-    <header class="header">
+      <header class="header">
     <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
@@ -135,15 +134,11 @@
             </div>
 
             <div class="button-list">
-                    <a class="box-button" id="museum-photos">The Museum</a>
-                
                     <a class="box-button" id="airmans-canteen-photos">Airman's Canteen</a>
 
                     <a class="box-button" id="londons-air-page-photos">London's Air Page</a>
 
                     <a class="box-button" id="battle-of-britain-photos">Battle of Britain</a>
-
-                    <a class="box-button" id="wartime-experience-photos">War Time Experiences</a>
 
                     <a class="box-button" id="event-photos">Events</a>
                 </div>
@@ -202,7 +197,7 @@
 
             <div class="footer-logo-con">
                 <a href="{{ route('home') }}">
-                    <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
+                    <img class="footer-logo" src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg">
                 </a>
             </div>
 

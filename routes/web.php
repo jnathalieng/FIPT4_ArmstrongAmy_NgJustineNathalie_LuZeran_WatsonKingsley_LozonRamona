@@ -69,4 +69,4 @@ Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
 
-Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+//Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');

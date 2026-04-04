@@ -71,6 +71,9 @@
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('gallery') }}">Gallery</a>
+                </li>
             </ul>
         </nav>
 
