@@ -1,0 +1,37 @@
+@use '../abstracts/fonts';
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as v;
+@use '../base/typography';
+
+
+
+
+.gallery-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10vw;
+    border-bottom: solid 4px #B3262E;
+    h2, h3, p {
+        margin: 10px;
+    }
+}
+
+.button-list {
+    background-color: rgb(v.$dark-background, 0.3);
+}
+
+.gallery-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 10vw;
+        //margin: 0 auto;
+}
+
+.gallery-image {
+    max-width: 300px;
+    margin: 10px;
+}
+
+

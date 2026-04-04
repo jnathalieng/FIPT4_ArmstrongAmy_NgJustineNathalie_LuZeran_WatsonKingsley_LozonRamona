@@ -55,13 +55,13 @@ methods: {
 template: `
     <div class="gallery-container">
         <!-- Gallery Selection Buttons -->
-        <div class="gallery-buttons" v-if="galleries.length > 0">
+        <div class="button-list" v-if="galleries.length > 0">
             <button 
                 v-for="gallery in galleries" 
                 :key="gallery.id"
                 @click="selectGallery(gallery.id)"
                 :class="{ active: selectedGallery === gallery.id }"
-                class="gallery-button"
+                class="box-button"
             >
                 {{ gallery.title }}
             </button>
@@ -69,9 +69,9 @@ template: `
         
         <!-- Gallery Info Section -->
         <section class="gallery-info" v-if="currentGallery">
-            <h2>{{ currentGallery.title }}</h2>
-            <h3>{{ currentGallery.subtitle }}</h3>
-            <p>{{ currentGallery.description }}</p>
+            <h2 class="r-title-text">{{ currentGallery.title.toUpperCase() }}</h2>
+            <h3 class="header-text">{{ currentGallery.subtitle }}</h3>
+            <p class="body-text">{{ currentGallery.description }}</p>
         </section>
         
         <!-- Gallery Grid -->
