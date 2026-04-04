@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;  
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\CommController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/contact', [ContactController::class, 'store']);
 
 Route::get('/comm', [CommController::class, 'index']);
-Route::get('/comm', [CommController::class, 'show']);
+
+Route::get('/galleries', [GalleryController::class, 'index']);
+Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);

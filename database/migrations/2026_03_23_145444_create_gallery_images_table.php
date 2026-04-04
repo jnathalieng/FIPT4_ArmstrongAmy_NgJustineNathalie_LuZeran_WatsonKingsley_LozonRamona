@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('gallery_id');
             $table->string('filename');
+            $table->integer('order')->default(0);
             $table->string('alt_text')->nullable();
-            $table->integer('order')->default(0); // for image ordering
             $table->timestamps();
             
             // Foreign key relationship
