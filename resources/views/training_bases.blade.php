@@ -165,8 +165,14 @@
                         </p>
                     </div>
 
-                    <div class="map-image" id="base-1-image">
-                        
+                    <div class="map-image-box" id="base-1-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="">
+
+                            <img class="map-image" src="" alt="picture of training base">
+                        </picture>
+
                     </div>
                 </div>
             </section>

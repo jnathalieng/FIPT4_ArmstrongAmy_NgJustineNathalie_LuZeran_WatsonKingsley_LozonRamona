@@ -2176,13 +2176,13 @@ footer .footer-closing-text p {
   justify-content: space-between;
 }
 
-.map-content-box, .map-image {
+.map-content-box, .map-image-box {
   background: linear-gradient(to bottom right, rgba(189, 189, 189, 0.5019607843), rgba(189, 189, 189, 0));
   backdrop-filter: blur(10px);
   position: relative;
   border-radius: 1rem;
 }
-.map-content-box::before, .map-image::before {
+.map-content-box::before, .map-image-box::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2194,7 +2194,7 @@ footer .footer-closing-text p {
   mask-composite: exclude;
   -webkit-mask-composite: xor;
 }
-.map-content-box, .map-image {
+.map-content-box, .map-image-box {
   width: 30vw;
   margin: 0 15vw;
   transition: all 0.3s ease;
