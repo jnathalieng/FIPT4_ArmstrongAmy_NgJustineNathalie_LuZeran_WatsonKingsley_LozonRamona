@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CommController;
+use App\Http\Controllers\GalleryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,10 +43,6 @@ Route::get('/canteen', function () {
     return view('canteen');
 })->name('canteen');
 
-Route::get('/comm', function () {
-    return view('comm');
-})->name('comm');
-
 Route::get('/comm', [CommController::class, 'index'])->name('comm');
 
 Route::get('/events', function () {
@@ -71,3 +68,5 @@ Route::get('/wartime_experience', function () {
 Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
+
+Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');

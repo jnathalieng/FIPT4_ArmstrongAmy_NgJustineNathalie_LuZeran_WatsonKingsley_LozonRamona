@@ -21,73 +21,104 @@
 </head>
 
 <body id="commemoration-page" data-page="comm">
-    <header class="header">
+      <header class="header">
     <!-- navbar -->
-        <nav>
-                <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
-                
-                <div class="m-l-nav-item" id="about-nav">
-                <div></div>
-                    <a class="button-text" href="{{ route('about') }}">About</a>>About</a>
-                </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li class="desktop-logo-con m-l-nav-item">
+                    <a class="desktop-logo" href="{{ route('home') }}">
+                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                    </a>
+                </li>
 
-                <div class="drop-down-wrap">
-                <div class="button-text m-l-nav-item" id="history-nav">
-                    <div></div>
-                    <a class="button-text history-menu">History</a>
-                </div>
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('home') }}">Home</a>
+                </li>
+
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('about') }}">About</a>
+                </li>
+
+                <li class="m-l-nav-item drop-down-wrap" id="history-nav">
+                    
+                    <a class="nav-anchor">History</a>
+
                     <ul class="dropdown-menu">
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('timeline') }}">London's Air Page</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('training_bases') }}" >Training Bases</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('canteen') }}">Airman's Canteen</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
                         </li>
                     </ul>
+                </li>
 
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('BOB') }}">Battle of Britain</a>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('events') }}">Events</a>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('contact') }}">Contact</a>
-                </div>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-            <!-- mobile hamburger menu -->
-                    <div class="hamburger hover-item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+        <!-- mobile hamburger menu -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-                    <ul class="hamburger-dropdown">
-                        <li><a class="button-text hover-item" href="{{ route('home') }}">Home</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('about') }}">About</a></li>             
-                        <li><a class="button-text hover-item" href="{{ route('timeline') }}">London's Air Page</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('wartime_experience') }}">War Time Experiences</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('canteen') }}">Airman's Canteen</a></li>                     
-                        <li><a class="button-text hover-item" href="{{ route('BOB') }}">Battle of Britain</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
-                    </ul>
+        <nav class="hamburger-nav">
+            <ul>
+                <li>
+                    <a href="{{ route('home') }}" class="logo-con">
+                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                    </a>
+                </li>
+                <li class="nav-separator">
 
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
+                </li>             
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -141,9 +172,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/comm-images/desktop/d-comm-john-allan-smith.png">
+                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-john-allan-smith.png">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-john-allan-smith.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-john-allan-smith.png" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
@@ -184,9 +215,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/comm-images/desktop/d-comm-robert-clinton-bailey.png">
+                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-robert-clinton-bailey.png">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-robert-clinton-bailey.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-robert-clinton-bailey.png" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
@@ -226,9 +257,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/comm-images/desktop/d-comm-grant-thomas-stewart.png">
+                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-grant-thomas-stewart.png">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             In 1940, five airmen connected to London served during the Battle of Britain, one of the most significant air campaigns of the Second World War. Their participation formed part of Canada's contribution to the defence of Britain during this critical period.
@@ -291,9 +322,9 @@
                 <a href="{{ route('training_bases') }}" class="footer-selection-a">
                     <h3 class="header-text">BCATP Training Sites</h3>
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-map.png">
+                        <source media="(min-width: 768px)" srcset="/images/homepage-images/desktop/d-homepage-map.png">
 
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
+                        <img class="footer-selection-image" src="/images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
                     </picture>
                 </a>
             </div>
@@ -302,9 +333,9 @@
                 <a href="{{ route('timeline') }}" class="footer-selection-a">
                     <h3 class="header-text">London Aviation Timeline</h3>
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-war.png">
+                        <source media="(min-width: 768px)" srcset="/images/homepage-images/desktop/d-homepage-war.png">
 
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
+                        <img class="footer-selection-image" src="/images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
                     </picture>
                 </a>
             </div>
@@ -313,9 +344,9 @@
                 <a href="{{ route('BOB') }}" class="footer-selection-a">
                     <h3 class="header-text">Battle of Britain</h3>
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
+                        <source media="(min-width: 768px)" srcset="/images/homepage-images/desktop/d-homepage-bases.png">
 
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
+                        <img class="footer-selection-image" src="/images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
                     </picture>
                 </a>
             </div>
@@ -327,7 +358,7 @@
 
             <div class="footer-logo-con">
                 <a href="{{ route('home') }}">
-                    <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
+                    <img class="footer-logo" src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg">
                 </a>
             </div>
 
