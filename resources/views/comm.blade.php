@@ -11,9 +11,9 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commemoration Page</title>
-<script>window.commMembers = @json($commMembers);</script>
-<script>window.trainingThree = @json($trainingThree);</script>
-<script>window.trainingFour = @json($trainingFour);</script>
+    <script>window.commMembers = @json($commMembers);</script>
+    <script>window.trainingThree = @json($trainingThree);</script>
+    <script>window.trainingFour = @json($trainingFour);</script>
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,9 @@
 </head>
 
 <body id="commemoration-page" data-page="comm">
-      <header class="header">
-    <!-- navbar -->
+
+    <header class="header">
+        <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -126,8 +127,37 @@
     </header>
 
     <h1 class="hidden">Commemoration Page</h1>
-
+    
     <main>
+
+        <!-- HERO -->
+        <section class="hero-section" id="commemoration-hero">
+            
+            <h2 class="hidden">Commemoration hero section</h2>
+
+            <div class="hero-title-con">
+                <div class="hero-title">
+                    <h3>
+                        Legacy of the Fallen
+                    </h3>
+                </div>
+                <div class="hero-subtitle">
+                    <p>
+                        Commemroate the losses throughout history
+                    </p>
+                </div>
+            </div>
+
+            <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                <source data-desktop="/videos/hero-videos/hero-march-1920x1080.mp4" type="video/mp4">
+                
+                <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
+
+                <p>Your browser does not support</p>
+            </video>
+
+        </section>
        
 <!-- COMMEMORATION HERO SECTION -->
 

@@ -64,6 +64,9 @@ else if(document.body.dataset.page === "canteen") {
 }
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
+
+    videoQuery();
+
     commShowHide();
     
     const appComm = createApp(commForm);

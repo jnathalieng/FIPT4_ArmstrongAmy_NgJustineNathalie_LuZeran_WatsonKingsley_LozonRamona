@@ -151,8 +151,6 @@
 
                 <p>Your browser does not support</p>
             </video>
-            
-            <!-- <div class="hero-triangle"></div> -->
 
         </section>
 
