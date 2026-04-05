@@ -63,7 +63,9 @@
     }
 }
 
+// DOSSIER STYLING
 .dossier-con {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,11 +73,11 @@
     background-color: transparent;
     padding-top: 40px;
     position: relative;
-    background-image: url(/images/BOB-images/folder-texture.png);
+    background-image: url(public/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
-    background-image: url(../../images/BOB-images/folder-texture.png);
+    background-image: url(public/images/BOB-images/folder-texture.png);
     text-align: center;
     box-shadow: -5px -5px 5px black;
     position: absolute;
@@ -113,7 +115,7 @@ transition: all 0.5s ease;
     left: 20px;
     padding: 0 1rem 0 1rem;
     border-radius: 1rem 1rem 0 0;
-    background-image: url(../../images/BOB-images/folder-texture.png);
+    background-image: url(public/images/BOB-images/folder-texture.png);
     top: -40px;
     font-size: 20px;
     color: black;
@@ -177,254 +179,254 @@ transition: all 0.5s ease;
     z-index: 2;
 }
 
-.big-red {
-    position: relative;
-    z-index: 130;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: a.$primary-color;
-    height:100px;
-    .big-red-text {
-        text-align: center;
-        font-size: 25px;
-        padding: 10px 0px;
-        border-top: solid 2px white;
-        border-bottom: solid 2px white;
-    }
-}
+// .big-red {
+//     position: relative;
+//     z-index: 130;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: a.$primary-color;
+//     height:100px;
+//     .big-red-text {
+//         text-align: center;
+//         font-size: 25px;
+//         padding: 10px 0px;
+//         border-top: solid 2px white;
+//         border-bottom: solid 2px white;
+//     }
+// }
 
-.deaths-section {
-    position: relative;
-    z-index: 120;
-    background-image: url(../../images/BOB-images/desktop/d-bob-losses-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+// .deaths-section {
+//     position: relative;
+//     z-index: 120;
+//     background-image: url(/images/BOB-images/desktop/d-bob-losses-bg.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: top;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
 
-    h2, p {
-        width: 90vw;
-        margin-top: 20px;
-        font-size: 20px;
-    }
+//     h2, p {
+//         width: 90vw;
+//         margin-top: 20px;
+//         font-size: 20px;
+//     }
 
-    p {
-        font-size: 20px;
-        width: 90vw;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
+//     p {
+//         font-size: 20px;
+//         width: 90vw;
+//         margin-top: 10px;
+//         margin-bottom: 10px;
+//     }
+// }
 
-.deaths-info-con {
-    text-align: left;
-    display: flex;
-    flex-direction:column;
+// .deaths-info-con {
+//     text-align: left;
+//     display: flex;
+//     flex-direction:column;
     
-    .deaths-info {
-        width: 90vw;
-        h3 {
-            width: 100%;
-            font-size: 18px;
-            white-space: nowrap;
-        }
-        p {
-            width: 100%;
-            font-size: 16px;
-        }
-    }
-}
+//     .deaths-info {
+//         width: 90vw;
+//         h3 {
+//             width: 100%;
+//             font-size: 18px;
+//             white-space: nowrap;
+//         }
+//         p {
+//             width: 100%;
+//             font-size: 16px;
+//         }
+//     }
+// }
 
-.deaths-info-bot {
-    text-align: left;
-}
+// .deaths-info-bot {
+//     text-align: left;
+// }
 
-.canadian-pilots-section {
-border-top: solid 5px a.$primary-color;
-
-
-    .canadian-pilots-card {
-        width: 100vw;
-        margin: 20px 0px;
-    }
-
-    .pilots-card-content {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: rgba(a.$dark-background, 0.3);
-        height: fit-content;
-        align-items: center;
-
-        .pilot-card-rank-mobile {
-            width: 90%;
-            color: a.$primary-color;
-            font-size: 16px;
-            margin: 10px 0px;
-        }
-
-        .pilot-card-name-mobile {
-            margin-left: 10%;
-            padding: 10px 0px;
-            border-bottom: solid 5px a.$secondary-color;
-            margin-bottom: 10px;
-            width: 100%;
-            color: a.$primary-color;
-            font-size: 20px;
-        }
-
-        .pilots-card-img-con {
-            display: flex;
-            width: 75%;
-            height: 90vw;
-            text-align: center;
-
-            background-size: cover;
-
-        }
-
-        #ross-smither {
-            background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
-        }
-
-        #hugh-riley {
-            background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
-        }
-
-        #robert-grassik {
-            background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
-        }
-
-        #niel-campbell {
-            background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
-        }
-
-        #robert-smith {
-            background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
-        }
-
-        .pilots-card-text-con {
-            width: 90%;
-            align-items: center;
-            margin: auto;
-
-            p {
-                margin: 2rem;
-                font-size: 120%;
-                color: black
-            }
-        }
-    }
-}
-.read-more {
-#view-remembrance {
-    min-width: 320px;
-    font-size: 16px;
-}
-}
-
-#discover-aircraft-cta {
-    border-bottom: solid 50px a.$secondary-color;
-}
-
-#explore-aircraft-button {
-    font-size: 18px;
-}
-
-#aircraft-carousel {
-    padding-bottom: 100px;
-}
-
-@media (min-width:1000px) {
+// .canadian-pilots-section {
+// border-top: solid 5px a.$primary-color;
 
 
-.canadian-pilots-section {
-border-top: solid 5px a.$primary-color;
+//     .canadian-pilots-card {
+//         width: 100vw;
+//         margin: 20px 0px;
+//     }
+
+//     .pilots-card-content {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 10px;
+//         background-color: rgba(a.$dark-background, 0.3);
+//         height: fit-content;
+//         align-items: center;
+
+//         .pilot-card-rank-mobile {
+//             width: 90%;
+//             color: a.$primary-color;
+//             font-size: 16px;
+//             margin: 10px 0px;
+//         }
+
+//         .pilot-card-name-mobile {
+//             margin-left: 10%;
+//             padding: 10px 0px;
+//             border-bottom: solid 5px a.$secondary-color;
+//             margin-bottom: 10px;
+//             width: 100%;
+//             color: a.$primary-color;
+//             font-size: 20px;
+//         }
+
+//         .pilots-card-img-con {
+//             display: flex;
+//             width: 75%;
+//             height: 90vw;
+//             text-align: center;
+
+//             background-size: cover;
+
+//         }
+
+//         #ross-smither {
+//             background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
+//         }
+
+//         #hugh-riley {
+//             background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
+//         }
+
+//         #robert-grassik {
+//             background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
+//         }
+
+//         #niel-campbell {
+//             background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
+//         }
+
+//         #robert-smith {
+//             background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
+//         }
+
+//         .pilots-card-text-con {
+//             width: 90%;
+//             align-items: center;
+//             margin: auto;
+
+//             p {
+//                 margin: 2rem;
+//                 font-size: 120%;
+//                 color: black
+//             }
+//         }
+//     }
+// }
+// .read-more {
+// #view-remembrance {
+//     min-width: 320px;
+//     font-size: 16px;
+// }
+// }
+
+// #discover-aircraft-cta {
+//     border-bottom: solid 50px a.$secondary-color;
+// }
+
+// #explore-aircraft-button {
+//     font-size: 18px;
+// }
+
+// #aircraft-carousel {
+//     padding-bottom: 100px;
+// }
+
+// @media (min-width:1000px) {
 
 
-    .canadian-pilots-card {
-        width: 100vw;
-        margin: 20px 0px;
-    }
+// .canadian-pilots-section {
+// border-top: solid 5px a.$primary-color;
 
-    .pilots-card-content {
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
-        background-color: rgba(a.$dark-background, 0.3);
-        height: fit-content;
-        align-items: center;
 
-        .pilot-card-rank-mobile {
-            display: none;
-        }
+//     .canadian-pilots-card {
+//         width: 100vw;
+//         margin: 20px 0px;
+//     }
 
-        .pilot-card-name-mobile {
-            display: none;
-        }
+//     .pilots-card-content {
+//         display: flex;
+//         flex-direction: row;
+//         padding: 10px;
+//         background-color: rgba(a.$dark-background, 0.3);
+//         height: fit-content;
+//         align-items: center;
 
-        .pilots-card-img-con {
-            display: flex;
-            width: 40%;
-            height: 33vw;
-            text-align: center;
+//         .pilot-card-rank-mobile {
+//             display: none;
+//         }
 
-            background-size: cover;
+//         .pilot-card-name-mobile {
+//             display: none;
+//         }
 
-        }
+//         .pilots-card-img-con {
+//             display: flex;
+//             width: 40%;
+//             height: 33vw;
+//             text-align: center;
 
-        #ross-smither {
-            background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
-        }
+//             background-size: cover;
 
-        #hugh-riley {
-            background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
-        }
+//         }
 
-        #robert-grassik {
-            background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
-        }
+//         #ross-smither {
+//             background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
+//         }
 
-        #niel-campbell {
-            background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
-        }
+//         #hugh-riley {
+//             background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
+//         }
 
-        #robert-smith {
-            background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
-        }
+//         #robert-grassik {
+//             background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
+//         }
 
-        .pilots-card-text-con {
-            width: 90%;
-            margin: 0px 5% 30px 5%;
-            align-items: center;
+//         #niel-campbell {
+//             background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
+//         }
 
-            .pilot-card-rank-desk {
-                width: 100%;
-                margin: 30px 0% 30px 0%;
-                color: a.$primary-color;
-                font-size: 24px;
-            }
+//         #robert-smith {
+//             background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
+//         }
 
-            .pilot-card-name-desk {
-                margin: 30px 0% 30px 0%;
-                padding-bottom: 20px;
-                border-bottom: solid 5px a.$secondary-color;
-                width: 90%;
-                color: a.$primary-color;
-                font-size: 60px;
-            }
+//         .pilots-card-text-con {
+//             width: 90%;
+//             margin: 0px 5% 30px 5%;
+//             align-items: center;
 
-            p {
-                margin: 0px;
-                font-size: 120%;
-                color: black
-            }
-        }
-    }
-}
-}
+//             .pilot-card-rank-desk {
+//                 width: 100%;
+//                 margin: 30px 0% 30px 0%;
+//                 color: a.$primary-color;
+//                 font-size: 24px;
+//             }
+
+//             .pilot-card-name-desk {
+//                 margin: 30px 0% 30px 0%;
+//                 padding-bottom: 20px;
+//                 border-bottom: solid 5px a.$secondary-color;
+//                 width: 90%;
+//                 color: a.$primary-color;
+//                 font-size: 60px;
+//             }
+
+//             p {
+//                 margin: 0px;
+//                 font-size: 120%;
+//                 color: black
+//             }
+//         }
+//     }
+// }
+// }

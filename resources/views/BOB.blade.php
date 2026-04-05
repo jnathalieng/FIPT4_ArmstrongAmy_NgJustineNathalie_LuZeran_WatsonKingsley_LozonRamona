@@ -124,7 +124,7 @@
 
     <main>
 
-        <!-- HERO -->
+        <!-- HERO SECTION -->
         <section class="hero-section" id="BOB-hero">
             
             <h2 class="hidden">Battle of Britain hero section</h2>
@@ -153,6 +153,7 @@
 
         </section>
         
+        <!-- INTRO SECTION -->
         <section class="BOB-intro-section">
             
             <h3>THE BATTLE OF BRITAIN</h3>
@@ -174,6 +175,7 @@
             </button>
         </section>
 
+        <!-- DOSSIER SECTION -->
         <div class="dossier-con">
             
             <div class="dossier" id="cover">
