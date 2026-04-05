@@ -1347,15 +1347,34 @@ footer .footer-closing-text p {
 
 .button-container {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  top: 20%;
+  left: 2%;
   z-index: 10;
 }
 
 .map-button {
-  padding: 2rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #B3262E;
+  border: 0.5px solid #B3262E;
+  border-radius: 2rem;
+  transform: scale(100%);
+  font-weight: 600;
+}
+.map-button:hover {
+  transform: scale(110%);
+  background: linear-gradient(to bottom right, rgba(189, 189, 189, 0.5019607843), rgba(189, 189, 189, 0));
 }
 
+@media screen and (max-width: 768px) {
+  .button-container {
+    top: 5%;
+    left: 5%;
+  }
+}
 .form-con {
   position: relative;
   display: flex;
@@ -3002,4 +3021,4 @@ main {
 .ibox-f5 {
   grid-column: 4/span 7;
   grid-row: 10;
-}
+}/*# sourceMappingURL=main.css.map */

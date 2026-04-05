@@ -104,18 +104,27 @@ function zoomToBase(targetId) {
 
 function resetMap() {
     svg.classList.remove('active');
-    // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+    
+    // stop observering
+    document.querySelectorAll('.scroll-section').forEach(section => {
+        observer.unobserve(section);
+        console.log("stopped observing");
+    });
+
+    // zoom and start observing
     gsap.to(svg, {
         scale: 1,
         duration: 0.5,
         ease: "power2.inOut",
         attr: {
             viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+        },
+        onComplete: () => {
+            document.querySelectorAll('.scroll-section').forEach(section => {
+                observer.observe(section);
+            });
+            console.log("observer reactivated!");
         }
-    })
-
-    document.querySelectorAll('.scroll-section').forEach(section => {
-        observer.unobserve(section);
     });
 }
 
