@@ -121,17 +121,40 @@
         </nav>
     </header>
 
+    <h1 class="hidden">Training Bases and Flight Schools Page</h1>
+
     <main>
-        <section class="hero-section" id="base-hero-section">
-            <div class="hero-triangle"></div>
+
+        <!-- HERO -->
+        <section class="hero-section" id="base-hero">
+            
+            <h2 class="hidden">Training Bases hero section</h2>
+
             <div class="hero-title-con">
-                <div class="hero-title"><p>Interactive Map</p></div>
-                <div class="hero-subtitle"><p>Discover the BCATP Training Sites</p></div>
+                <div class="hero-title">
+                    <h3>
+                        Interactive Map
+                    </h3>
+                </div>
+                <div class="hero-subtitle">
+                    <p>
+                        Discover the BCATP Training Sites
+                    </p>
+                </div>
             </div>
+
+            <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                <source data-desktop="/videos/hero-videos/hero-plane-1920x1080.mp4" type="video/mp4">
+                
+                <source data-mobile="/videos/hero-videos/hero-plane-768x768.mp4" type="video/mp4">
+
+                <p>Your browser does not support</p>
+            </video>
+            
+            <!-- <div class="hero-triangle"></div> -->
+
         </section>
-
-
-        <h1 class="hidden">Training Bases and Flight Schools Page</h1>
 
         <div class="button-container">
             <button class="map-button" id="return-map-button">

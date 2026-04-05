@@ -48,6 +48,9 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
+
+    videoQuery();
+    
     mapScroll();
     mapContentSlide();
 }
