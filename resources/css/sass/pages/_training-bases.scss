@@ -17,6 +17,23 @@
     padding: 0;
 }
 
+.scroll-section {
+    h2 {
+        color: a.$white;
+        font-size: 300%;
+        transition: a.$t-time;
+    }
+
+    h2.activeHeading {
+        font-size: 400%;
+        color: a.$primary-color;
+        background-color: a.$white;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin: 1rem 0;
+    }
+}
+
 .scroll-flex-con {
     display: flex;
     flex-direction: row;

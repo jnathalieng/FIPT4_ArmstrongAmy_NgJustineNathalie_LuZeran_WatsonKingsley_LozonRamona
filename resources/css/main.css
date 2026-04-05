@@ -2169,6 +2169,20 @@ footer .footer-closing-text p {
   padding: 0;
 }
 
+.scroll-section h2 {
+  color: #fff;
+  font-size: 300%;
+  transition: all 0.3s ease;
+}
+.scroll-section h2.activeHeading {
+  font-size: 400%;
+  color: #B3262E;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
 .scroll-flex-con {
   display: flex;
   flex-direction: row;

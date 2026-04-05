@@ -9,14 +9,18 @@ export function mapContentSlide() {
             gsap.from(baseHeading, {
                 x: -100,
                 opacity: 0,
-                duration: 1,
-                ease: "bounce.out",
+                duration: 0.2,
+                ease: "power1.In",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 10%',
-                    end: 'bottom 60%',
-                    toggleActions: 'play none none none',
-                    pin: true
+                    start: 'top 5%',
+                    end: 'bottom 5%',
+                    toggleActions: 'play reverse play reverse',
+                    pin: true,
+                    toggleClass: {
+                        targets: baseHeading,
+                        className: 'activeHeading'
+                    }
                 }
             })
         }
@@ -29,8 +33,8 @@ export function mapContentSlide() {
                 ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 60%',
-                    end: 'bottom 60%',
+                    start: 'top 5%',
+                    end: 'bottom 5%',
                     toggleActions: 'play reverse play reverse'
                 }
             });
@@ -44,8 +48,8 @@ export function mapContentSlide() {
                 ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 60%',
-                    end: 'bottom 60%',
+                    start: 'top 5%',
+                    end: 'bottom 5%',
                     toggleActions: 'play reverse play reverse'
                 }
             });
