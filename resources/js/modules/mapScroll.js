@@ -30,35 +30,52 @@ const observer = new IntersectionObserver((entries) => {
             
             if (targetId === 'full-view') {
 
-                svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
                 svg.classList.remove('active');
 
-                // GSAP zooming out from base
+                // uses the GSAP attr: to animate SVG attributes with more control
+                
                 gsap.to(svg, {
                     scale: 1,
                     duration: 0.5,
-                    ease: "power2.inOut"
-                });
+                    ease: "power2.inOut",
+                    attr: {
+                        viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+                    }
+                })
+
+                // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+
+                // svg.classList.remove('active');
+
+                // // GSAP zooming out from base
+                // gsap.to(svg, {
+                //     scale: 1,
+                //     duration: 0.5,
+                //     ease: "power2.inOut"
+                // });
 
             } else {
+                svg.classList.add('active');
                 zoomToBase(targetId);
 
-                svg.classList.add('active');
+                
 
                 // GSAP zooming in to base
-                gsap.to(svg, {
-                    scale: 2.5,
-                    duration: 0.5,
-                    ease: "power2.inOut"
-                });
+                // gsap.to(svg, {
+                //     scale: 2.5,
+                //     duration: 0.5,
+                //     ease: "power2.inOut"
+                // });
             } 
         } else {
             // GSAP zooming out generally
             gsap.to(svg, {
                 scale: 1,
                 duration: 0.5,
-                ease: "power2.inOut"
+                ease: "power2.inOut",
+                attr: {
+                    viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+                }
             });
         }
     });
@@ -74,14 +91,28 @@ function zoomToBase(targetId) {
     const viewBoxX = target.x - (viewWidth / 2);
     const viewBoxY = target.y - (viewHeight / 2);
 
-    svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
+    gsap.to(svg, {
+        scale: 2,
+        duration: 0.5,
+        ease: "power2.inOut",
+        attr: {
+            viewBox: `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`
+        }
+    })
+    // svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
 }
 
 function resetMap() {
-
-    svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
     svg.classList.remove('active');
+    // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+    gsap.to(svg, {
+        scale: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+        attr: {
+            viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+        }
+    })
 
     document.querySelectorAll('.scroll-section').forEach(section => {
         observer.unobserve(section);
