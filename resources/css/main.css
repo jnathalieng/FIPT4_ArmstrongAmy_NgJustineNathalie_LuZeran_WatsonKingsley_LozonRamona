@@ -24,6 +24,18 @@ a {
     font-size: 300%;
   }
 }
+.header-text {
+  font-family: "Monserrat", sans-serif;
+  color: #B3262E;
+  font-size: 45;
+}
+
+.body-text {
+  font-family: "Monserrat", sans-serif;
+  color: #3c3c3c;
+  font-size: 32;
+}
+
 .r-title-text {
   font-family: "Monserrat", sans-serif;
   color: #B3262E;
@@ -1034,6 +1046,10 @@ footer .footer-closing-text p {
   margin: 8px;
   width: 200px;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Monserrat", sans-serif;
+  border: none;
   cursor: pointer;
 }
 
@@ -1042,6 +1058,15 @@ footer .footer-closing-text p {
   background-color: #B3262E;
 }
 
+@media (min-width: 768px) {
+  .button-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20vw;
+    margin: 0 auto;
+  }
+}
 .card-carousel {
   display: flex;
   flex-direction: column;
@@ -2591,6 +2616,37 @@ footer .footer-closing-text p {
     background-image: url("/images/canteen-images/desktop/d-airmans-gallery-4.png");
   }
 }
+.gallery-info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10vw;
+  border-bottom: solid 4px #B3262E;
+}
+.gallery-info h2, .gallery-info h3, .gallery-info p {
+  margin: 10px;
+}
+
+.button-list {
+  background-color: rgba(60, 60, 60, 0.3);
+}
+
+.gallery-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 10vw;
+}
+
+.gallery-image {
+  max-width: 300px;
+  margin: 10px;
+}
+
+main {
+  min-height: 100vw;
+}
+
 #tl-body {
   color: black;
 }
@@ -2946,4 +3002,4 @@ footer .footer-closing-text p {
 .ibox-f5 {
   grid-column: 4/span 7;
   grid-row: 10;
-}/*# sourceMappingURL=main.css.map */
+}

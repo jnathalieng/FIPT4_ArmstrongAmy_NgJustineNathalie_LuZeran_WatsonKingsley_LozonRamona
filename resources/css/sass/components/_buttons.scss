@@ -44,10 +44,24 @@
     margin: 8px;
     width: 200px;
     text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Monserrat", sans-serif;
+    border: none;
     cursor: pointer;
 }
 
 .box-button:hover {
     color: white;
     background-color: v.$primary-color;
+}
+
+@media (min-width: 768px) {
+    .button-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 20vw;
+        margin: 0 auto;
+    }
 }

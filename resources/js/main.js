@@ -6,6 +6,7 @@ import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import gallery from "./modules/gallery.js";
+import blog from "./modules/blog.js";
 import { createApp } from 'vue';
 
 // Training Bases
@@ -82,4 +83,14 @@ else if(document.body.dataset.page === "gallery") {
 
     const app = createApp(gallery);
     app.mount('#gallery-app');
+}
+else if(document.body.dataset.page === "blog") {
+    console.log('learn about our research journey!');
+    const app = createApp(blog);
+    app.mount('#blog-app');
+}
+else if(document.body.dataset.page === "blog-post") {
+    const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
+    const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
+    app.mount('#blog-post-app');
 }

@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         NumberFourAirObserverSchoolSeeder::class,
         NumberThreeAirObserverSchoolSeeder::class,
         GallerySeeder::class,
+        BlogSeeder::class,
     ]);
     }
 }
