@@ -862,6 +862,10 @@ footer .footer-closing-text p {
   font-size: 1.5rem;
 }
 
+#BOB-hero.hero-title-con {
+  background: linear-gradient(to bottom, #333, #000);
+}
+
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 1.5rem;
