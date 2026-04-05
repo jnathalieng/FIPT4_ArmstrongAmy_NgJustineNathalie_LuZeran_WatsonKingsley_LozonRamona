@@ -135,10 +135,7 @@
 
         <div class="button-container">
             <button class="map-button" id="return-map-button">
-                Return to Map
-            </button>
-            <button class="map-button">
-                Find a random Base
+                Go to Map
             </button>
         </div>
 
