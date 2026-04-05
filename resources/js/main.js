@@ -56,6 +56,9 @@ else if(document.body.dataset.page === "trainingBases") {
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
+    
+    videoQuery();
+    
     typeWriter();
     dossierOpen();
 }
