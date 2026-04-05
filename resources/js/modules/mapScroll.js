@@ -48,7 +48,7 @@ const observer = new IntersectionObserver((entries) => {
 
                 // GSAP zooming in to base
                 gsap.to(svg, {
-                    scale: 1.5,
+                    scale: 2.5,
                     duration: 0.5,
                     ease: "power2.inOut"
                 });
@@ -62,7 +62,7 @@ const observer = new IntersectionObserver((entries) => {
             });
         }
     });
-}, {threshold: 0.2}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
+}, {threshold: 0.05}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
 
 function zoomToBase(targetId) {
     const target = baseCoordinates[targetId];
