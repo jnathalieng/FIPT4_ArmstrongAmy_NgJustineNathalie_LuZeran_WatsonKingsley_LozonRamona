@@ -825,94 +825,46 @@ footer .footer-closing-text p {
     margin-bottom: 4rem;
   }
 }
-.hero {
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  overflow: hidden;
-  text-align: right;
-}
-
-.hero video {
-  display: block;
-  object-fit: cover;
-  filter: brightness(20%);
-}
-
-.hero-h1 {
-  position: absolute;
-  font-size: 500%;
-  max-width: 80%;
-  font-weight: bold;
-  bottom: 20%;
-  right: 10%;
-}
-
-.hero-h2 {
-  color: #B3262E;
-  position: absolute;
-  font-size: 100%;
-  font-weight: bold;
-  max-width: 80%;
-  bottom: 10%;
-  right: 10%;
-}
-
 .hero-section {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  max-width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
+  overflow: hidden;
 }
-.hero-section .hero-triangle {
+
+.hero-section-video {
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.hero-title-con {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #91B8D9;
-  opacity: 0.8;
-  display: flex;
-  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
-}
-.hero-section .hero-title-con {
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
+  width: 100vw;
+  bottom: 0;
+  background-color: #91B8D9;
+  padding: 2rem;
+  height: auto;
 }
-.hero-section .hero-title-con .hero-title {
-  display: flex;
-  text-align: end;
+
+.hero-title, .hero-subtitle {
+  text-align: right;
+  margin-right: 1rem;
 }
-.hero-section .hero-title-con .hero-title p {
-  font-size: 50px;
-  font-weight: bold;
-}
-.hero-section .hero-title-con .hero-subtitle {
-  display: flex;
-}
-.hero-section .hero-title-con .hero-subtitle p {
+
+.hero-title {
   color: #B3262E;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-h1 {
-    font-size: 1000%;
-    bottom: 20%;
-    right: 5%;
-  }
-  .hero-h2 {
-    font-size: 200%;
-    bottom: 10%;
-    right: 5%;
+  .hero-title {
+    font-size: 1.5rem;
   }
 }
 .caption {

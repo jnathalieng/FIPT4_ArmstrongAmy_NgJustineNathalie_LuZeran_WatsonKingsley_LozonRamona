@@ -36,6 +36,9 @@ if(document.body.dataset.page === "home") {
 }
 else if(document.body.dataset.page === "timeline") {
     console.log('recon page');
+
+    videoQuery();
+
     parallaxObj();
     tlImgTextReveal();
     tlShowSticky();
