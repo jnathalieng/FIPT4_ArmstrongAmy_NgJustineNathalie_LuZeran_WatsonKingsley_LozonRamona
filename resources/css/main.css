@@ -862,10 +862,6 @@ footer .footer-closing-text p {
   font-size: 1.5rem;
 }
 
-#BOB-hero.hero-title-con {
-  background: linear-gradient(to bottom, #333, #000);
-}
-
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 1.5rem;
@@ -1789,43 +1785,49 @@ footer .footer-closing-text p {
     margin: 0.25rem 0;
   }
 }
-#BOB-page {
-  color: white;
+#BOB-hero .hero-title-con {
+  background: linear-gradient(to bottom, #505050, black);
+  backdrop-filter: blur(50px);
 }
-#BOB-page .hero {
+#BOB-hero .hero-title {
+  color: #fff;
+}
+#BOB-hero .hero-subtitle {
+  color: #B3262E;
+}
+
+.BOB-intro-section {
+  color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 200px 5px;
-  background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5019607843)), url(/public/images/BOB-images/desktop/d-bob-hero.png);
   text-align: right;
   width: 100vw;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#BOB-page .hero h2 {
-  font-size: 200%;
-  padding-bottom: 2rem;
+.BOB-intro-section h2 {
+  font-size: 2rem;
   text-align: center;
 }
-#BOB-page .hero p {
+.BOB-intro-section p {
+  font-size: 1rem;
   text-align: left;
-  margin: 5px;
-  font-size: 150%;
-  width: 90vw;
 }
-#BOB-page .hero #skipQuote {
+.BOB-intro-section #skipQuote {
   background-color: transparent;
   border: none;
   transition: all 0.5s ease;
   cursor: pointer;
 }
-#BOB-page .hero #skipQuote:hover {
+.BOB-intro-section #skipQuote:hover {
   transform: scale(150%);
 }
-#BOB-page .hero #skipQuote:active {
+.BOB-intro-section #skipQuote:active {
   transform: scale(90%);
 }
 

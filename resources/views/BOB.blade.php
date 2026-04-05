@@ -153,7 +153,7 @@
 
         </section>
         
-        <section class="hero">
+        <section class="BOB-intro-section">
             
             <h3>THE BATTLE OF BRITAIN</h3>
 
