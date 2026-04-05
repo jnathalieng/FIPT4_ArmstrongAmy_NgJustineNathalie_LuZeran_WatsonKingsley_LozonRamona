@@ -34,11 +34,32 @@ const observer = new IntersectionObserver((entries) => {
 
                 svg.classList.remove('active');
 
+                // GSAP zooming out from base
+                gsap.to(svg, {
+                    scale: 1,
+                    duration: 0.5,
+                    ease: "power2.inOut"
+                });
+
             } else {
                 zoomToBase(targetId);
 
                 svg.classList.add('active');
-            }
+
+                // GSAP zooming in to base
+                gsap.to(svg, {
+                    scale: 1.5,
+                    duration: 0.5,
+                    ease: "power2.inOut"
+                });
+            } 
+        } else {
+            // GSAP zooming out generally
+            gsap.to(svg, {
+                scale: 1,
+                duration: 0.5,
+                ease: "power2.inOut"
+            });
         }
     });
 }, {threshold: 0.5}); //this means the detector is 'detects' when there the new "scroll-section" is 50% visible
