@@ -7,10 +7,10 @@ export function mapContentSlide() {
 
         if (baseHeading) {
             gsap.from(baseHeading, {
-                y: 1000,
+                x: -100,
                 opacity: 0,
-                duration: 0.1,
-                ease: "power2.inOut",
+                duration: 1,
+                ease: "bounce",
                 scrollTrigger: {
                     trigger: section,
                     start: 'top 60%',
@@ -24,7 +24,7 @@ export function mapContentSlide() {
             gsap.from(contentBox, {
                 x: -100,
                 opacity: 0,
-                duration: 0.1,
+                duration: 0.2,
                 ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: section,
@@ -39,7 +39,7 @@ export function mapContentSlide() {
             gsap.from(imageBox, {
                 x: 100,
                 opacity: 0,
-                duration: 0.1,
+                duration: 0.2,
                 ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: section,
