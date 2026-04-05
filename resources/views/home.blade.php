@@ -16,7 +16,7 @@
 <body data-page="home">
 
     <header class="header">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
