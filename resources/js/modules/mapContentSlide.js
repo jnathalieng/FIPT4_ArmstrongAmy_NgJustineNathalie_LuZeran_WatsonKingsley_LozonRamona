@@ -14,7 +14,7 @@ export function mapContentSlide() {
                 scrollTrigger: {
                     trigger: section,
                     start: 'top 10%',
-                    end: 'bottom 40%',
+                    end: 'bottom 60%',
                     toggleActions: 'play none none none',
                     pin: true
                 }
