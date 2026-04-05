@@ -1,48 +1,65 @@
-@use '../abstracts' as v;
+@use '../abstracts' as a;
 
-#BOB-page {
-    color: white;
-
+#BOB-hero {
     
-    .hero {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 200px 5px;
-        background-image: url(../../images/BOB-images/desktop/d-bob-hero.png);
-        text-align: right;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        h2 {
-            font-size: 200%;
-            padding-bottom: 2rem;
-            text-align: center;
-        }
+    // unique gradient for BOB
+    .hero-title-con {
+        background: linear-gradient(to bottom, #000000, #000000FF);
+        backdrop-filter: blur(50px);
+    }
 
-        p {
-            text-align: left;
-            margin: 5px;
-            font-size: 150%;
-            width: 90vw;
-        }
+    .hero-title {
+        color: a.$white;
+    }
 
-        #skipQuote {
-            background-color: transparent;
-            border: none;
-            transition: all 0.5s ease;
-            cursor: pointer;
-        }
+    .hero-subtitle {
+        color: a.$primary-color;
+    }
+}
 
-        #skipQuote:hover {
-            transform: scale(150%);
-        }
+.BOB-intro-section {
 
-        #skipQuote:active {
-            transform: scale(90%);
-        }
+    color: a.$white;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // match unique gradient for BOB
+    background-image: linear-gradient(to bottom, #000000FF, #00000000), url(/public/images/BOB-images/desktop/d-bob-hero.png);
+    
+    text-align: right;
+    width: 100vw;
+    padding: 4rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #skipQuote {
+        background-color: transparent;
+        border: none;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    #skipQuote:hover {
+        transform: scale(150%);
+    }
+
+    #skipQuote:active {
+        transform: scale(90%);
     }
 }
 
@@ -167,7 +184,7 @@ transition: all 0.5s ease;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: v.$primary-color;
+    background-color: a.$primary-color;
     height:100px;
     .big-red-text {
         text-align: center;
@@ -228,7 +245,7 @@ transition: all 0.5s ease;
 }
 
 .canadian-pilots-section {
-border-top: solid 5px v.$primary-color;
+border-top: solid 5px a.$primary-color;
 
 
     .canadian-pilots-card {
@@ -240,13 +257,13 @@ border-top: solid 5px v.$primary-color;
         display: flex;
         flex-direction: column;
         padding: 10px;
-        background-color: rgba(v.$dark-background, 0.3);
+        background-color: rgba(a.$dark-background, 0.3);
         height: fit-content;
         align-items: center;
 
         .pilot-card-rank-mobile {
             width: 90%;
-            color: v.$primary-color;
+            color: a.$primary-color;
             font-size: 16px;
             margin: 10px 0px;
         }
@@ -254,10 +271,10 @@ border-top: solid 5px v.$primary-color;
         .pilot-card-name-mobile {
             margin-left: 10%;
             padding: 10px 0px;
-            border-bottom: solid 5px v.$secondary-color;
+            border-bottom: solid 5px a.$secondary-color;
             margin-bottom: 10px;
             width: 100%;
-            color: v.$primary-color;
+            color: a.$primary-color;
             font-size: 20px;
         }
 
@@ -312,7 +329,7 @@ border-top: solid 5px v.$primary-color;
 }
 
 #discover-aircraft-cta {
-    border-bottom: solid 50px v.$secondary-color;
+    border-bottom: solid 50px a.$secondary-color;
 }
 
 #explore-aircraft-button {
@@ -327,7 +344,7 @@ border-top: solid 5px v.$primary-color;
 
 
 .canadian-pilots-section {
-border-top: solid 5px v.$primary-color;
+border-top: solid 5px a.$primary-color;
 
 
     .canadian-pilots-card {
@@ -339,7 +356,7 @@ border-top: solid 5px v.$primary-color;
         display: flex;
         flex-direction: row;
         padding: 10px;
-        background-color: rgba(v.$dark-background, 0.3);
+        background-color: rgba(a.$dark-background, 0.3);
         height: fit-content;
         align-items: center;
 
@@ -389,16 +406,16 @@ border-top: solid 5px v.$primary-color;
             .pilot-card-rank-desk {
                 width: 100%;
                 margin: 30px 0% 30px 0%;
-                color: v.$primary-color;
+                color: a.$primary-color;
                 font-size: 24px;
             }
 
             .pilot-card-name-desk {
                 margin: 30px 0% 30px 0%;
                 padding-bottom: 20px;
-                border-bottom: solid 5px v.$secondary-color;
+                border-bottom: solid 5px a.$secondary-color;
                 width: 90%;
-                color: v.$primary-color;
+                color: a.$primary-color;
                 font-size: 60px;
             }
 
