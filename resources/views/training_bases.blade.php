@@ -12,6 +12,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- GSAP LINKING -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
 </head>
 <body data-page="trainingBases" id="bases-page">
 
@@ -169,8 +174,14 @@
                         </p>
                     </div>
 
-                    <div class="map-image" id="base-1-image">
-                        
+                    <div class="map-image-box" id="base-1-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="">
+
+                            <img class="map-image" src="" alt="picture of training base">
+                        </picture>
+
                     </div>
                 </div>
             </section>

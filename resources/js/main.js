@@ -8,7 +8,11 @@ import commFour from "./modules/comm-four.js";
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import { createApp } from 'vue';
+
+// Training Bases
 import { mapScroll } from "./modules/mapScroll.js";
+import { mapContentSlide } from "./modules/mapContentSlide.js";
+
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
 
@@ -42,6 +46,7 @@ else if(document.body.dataset.page === "timeline") {
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
     mapScroll();
+    mapContentSlide();
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');

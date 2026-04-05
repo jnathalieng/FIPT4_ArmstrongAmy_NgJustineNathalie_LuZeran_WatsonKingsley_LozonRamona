@@ -17,6 +17,25 @@
     padding: 0;
 }
 
+.scroll-section {
+    h2 {
+        color: a.$white;
+        font-size: 300%;
+        transition: a.$t-time;
+    }
+
+    h2.activeHeading {
+        font-size: 400%;
+        color: a.$primary-color;
+        background-color: a.$white;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin: 1rem 0;
+
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.15);
+    }
+}
+
 .scroll-flex-con {
     display: flex;
     flex-direction: row;
@@ -24,7 +43,8 @@
     justify-content: space-between;
 }
 
-.map-content-box, .map-image {
+.map-content-box, .map-image-box {
+    padding: 2rem;
     background: a.$glass-morph;
     backdrop-filter: blur(10px);
 
@@ -55,4 +75,18 @@
     margin: 0 15vw;
     transition: a.$t-time;
     height: 50vh;
+
+    &:hover {
+        width: 35vw;
+        height: 55vh;
+        padding: 4rem;
+        transition: a.$t-time;
+        background: a.$glass-morph-active;
+        backdrop-filter: blur(20px);
+
+        &::before {
+            padding: 3px;
+            background: a.$glass-morph-stroke-active;
+        }
+    }
 }
