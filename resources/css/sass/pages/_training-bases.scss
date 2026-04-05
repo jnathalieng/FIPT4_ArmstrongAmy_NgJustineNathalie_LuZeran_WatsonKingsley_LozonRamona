@@ -44,6 +44,7 @@
 }
 
 .map-content-box, .map-image-box {
+    padding: 2rem;
     background: a.$glass-morph;
     backdrop-filter: blur(10px);
 
@@ -76,6 +77,9 @@
     height: 50vh;
 
     &:hover {
+        width: 35vw;
+        height: 55vh;
+        padding: 4rem;
         transition: a.$t-time;
         background: a.$glass-morph-active;
         backdrop-filter: blur(20px);

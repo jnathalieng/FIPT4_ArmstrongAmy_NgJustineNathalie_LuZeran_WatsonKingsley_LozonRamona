@@ -2192,6 +2192,7 @@ footer .footer-closing-text p {
 }
 
 .map-content-box, .map-image-box {
+  padding: 2rem;
   background: linear-gradient(to bottom right, rgba(189, 189, 189, 0.5019607843), rgba(189, 189, 189, 0));
   backdrop-filter: blur(10px);
   position: relative;
@@ -2216,6 +2217,9 @@ footer .footer-closing-text p {
   height: 50vh;
 }
 .map-content-box:hover, .map-image-box:hover {
+  width: 35vw;
+  height: 55vh;
+  padding: 4rem;
   transition: all 0.3s ease;
   background: linear-gradient(to top left, rgba(138, 138, 138, 0), rgba(138, 138, 138, 0.5019607843));
   backdrop-filter: blur(20px);
