@@ -62,18 +62,7 @@ const observer = new IntersectionObserver((entries) => {
             });
         }
     });
-}, {threshold: 0.5}); //this means the detector is 'detects' when there the new "scroll-section" is 50% visible
-
-let observerActive = false;
-window.addEventListener('scroll', () => {
-    if (!observerActive) {
-        observerActive = true;
-        document.querySelectorAll('.scroll-section').forEach(section => {
-            observer.observe(section);
-        });
-        console.log("observer activated");
-    }
-});
+}, {threshold: 0.2}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
 
 function zoomToBase(targetId) {
     const target = baseCoordinates[targetId];
@@ -93,8 +82,6 @@ function resetMap() {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
     svg.classList.remove('active');
-
-    observerActive = false;
 
     document.querySelectorAll('.scroll-section').forEach(section => {
         observer.unobserve(section);
@@ -122,6 +109,10 @@ window.addEventListener('load', () => {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
     svg.classList.remove('active');
+
+    document.querySelectorAll('.scroll-section').forEach(section => {
+        observer.observe(section);
+    })
 });
 
 }
