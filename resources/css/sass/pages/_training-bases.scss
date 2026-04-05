@@ -31,6 +31,8 @@
         border-radius: 2rem;
         padding: 2rem;
         margin: 1rem 0;
+
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.15);
     }
 }
 
@@ -72,4 +74,15 @@
     margin: 0 15vw;
     transition: a.$t-time;
     height: 50vh;
+
+    &:hover {
+        transition: a.$t-time;
+        background: a.$glass-morph-active;
+        backdrop-filter: blur(20px);
+
+        &::before {
+            padding: 3px;
+            background: a.$glass-morph-stroke-active;
+        }
+    }
 }

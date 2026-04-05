@@ -2181,6 +2181,7 @@ footer .footer-closing-text p {
   border-radius: 2rem;
   padding: 2rem;
   margin: 1rem 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 .scroll-flex-con {
@@ -2213,6 +2214,15 @@ footer .footer-closing-text p {
   margin: 0 15vw;
   transition: all 0.3s ease;
   height: 50vh;
+}
+.map-content-box:hover, .map-image-box:hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(to top left, rgba(138, 138, 138, 0), rgba(138, 138, 138, 0.5019607843));
+  backdrop-filter: blur(20px);
+}
+.map-content-box:hover::before, .map-image-box:hover::before {
+  padding: 3px;
+  background: linear-gradient(to bottom right, rgba(74, 74, 74, 0.2078431373), rgba(74, 74, 74, 0));
 }
 
 #about-hero {
