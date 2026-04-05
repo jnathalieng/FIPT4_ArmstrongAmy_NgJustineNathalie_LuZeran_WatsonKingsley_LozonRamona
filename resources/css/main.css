@@ -1835,29 +1835,43 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150px;
-  background-color: transparent;
-  padding-top: 40px;
   position: relative;
+<<<<<<< Updated upstream
   background-image: url(public/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
   background-image: url(public/images/BOB-images/folder-texture.png);
+=======
+<<<<<<< Updated upstream
+  background-image: url(/images/BOB-images/folder-texture.png);
+}
+
+.dossier {
+  background-image: url(../../images/BOB-images/folder-texture.png);
+=======
+  background-color: red;
+}
+
+.dossier {
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   text-align: center;
-  box-shadow: -5px -5px 5px black;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.15);
   position: absolute;
   width: 100vw;
   height: fit-content;
   text-align: left;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  background-image: url(/public/images/BOB-images/folder-texture.png);
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .dossier-content {
+<<<<<<< Updated upstream
   color: black;
   width: 90%;
   font-size: 18px;
@@ -1941,6 +1955,15 @@ footer .footer-closing-text p {
 #oct-tag {
   left: 60%;
   z-index: 2;
+=======
+  color: #000;
+  width: 80%;
+  padding: 2rem;
+  background-image: url(/public/images/BOB-images/paper-texture.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+>>>>>>> Stashed changes
 }
 
 #bases-page {

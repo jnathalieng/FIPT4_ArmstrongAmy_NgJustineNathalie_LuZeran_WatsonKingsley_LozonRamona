@@ -179,7 +179,7 @@
         <div class="dossier-con">
             
             <div class="dossier" id="cover">
-                <img src="images/BOB-images/folder-texture.png">
+                <!-- <img src="/images/BOB-images/folder-texture.png"> -->
             </div>
 
             <div class="dossier" id="july" data-lift="500">
@@ -217,7 +217,7 @@
 
                 <p class="dossier-content">
                     August 12, 1940
-                    First focused German attacks on Britain’s coastal radar stations. Most installations remained operational.
+                    First focused German attacks on Britain's coastal radar stations. Most installations remained operational.
                     August 13, 1940 — Adler Tag (Eagle Day)
                     Large-scale attacks targeted RAF airfields. Germany lost 39 aircraft and 66 men, while Britain lost 15 aircraft and 4 pilots.
                     August 15, 1940
@@ -264,7 +264,7 @@
                 <p class="dossier-content">
                     WHY THE BATTLE MATTERED
                     Germany needed control of the skies before launching a ground invasion of Britain. Achieving air superiority would have allowed German forces to cross the English Channel safely. When the Luftwaffe failed to destroy RAF Fighter Command, invasion plans were postponed and eventually abandoned.
-                    This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain’s air defence network.
+                    This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain's air defence network.
                 </p>
 
             </div>
