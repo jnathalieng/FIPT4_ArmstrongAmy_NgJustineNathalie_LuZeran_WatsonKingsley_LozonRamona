@@ -1786,7 +1786,7 @@ footer .footer-closing-text p {
   }
 }
 #BOB-hero .hero-title-con {
-  background: linear-gradient(to bottom, #505050, black);
+  background: linear-gradient(to bottom, #000000, black);
   backdrop-filter: blur(50px);
 }
 #BOB-hero .hero-title {
@@ -1801,7 +1801,7 @@ footer .footer-closing-text p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5019607843)), url(/public/images/BOB-images/desktop/d-bob-hero.png);
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)), url(/public/images/BOB-images/desktop/d-bob-hero.png);
   text-align: right;
   width: 100vw;
   padding: 4rem 0;

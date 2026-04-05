@@ -4,7 +4,7 @@
     
     // unique gradient for BOB
     .hero-title-con {
-        background: linear-gradient(to bottom, #505050, #000000FF);
+        background: linear-gradient(to bottom, #000000, #000000FF);
         backdrop-filter: blur(50px);
     }
 
@@ -26,7 +26,7 @@
     background-position: center;
 
     // match unique gradient for BOB
-    background-image: linear-gradient(to bottom, #000000FF, #00000080), url(/public/images/BOB-images/desktop/d-bob-hero.png);
+    background-image: linear-gradient(to bottom, #000000FF, #00000000), url(/public/images/BOB-images/desktop/d-bob-hero.png);
     
     text-align: right;
     width: 100vw;
