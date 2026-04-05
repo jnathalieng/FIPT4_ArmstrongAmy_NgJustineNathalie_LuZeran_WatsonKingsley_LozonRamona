@@ -131,7 +131,7 @@
                     <a href="{{ route('comm') }}" class="hero-card-a">
                         <h3 class="body-text">Legacy of the Fallen</h3>
 
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/marching-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/marching-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source data-desktop="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
                             
@@ -152,7 +152,7 @@
                 <div class="hero-card" id="BOB-hero-card">
                     <a href="{{ route('BOB') }}" class="hero-card-a">
                         <h3 class="body-text">The Battle of Britain</h3>
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/canteen-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/canteen-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source data-desktop="/videos/hero-videos/hero-canteen-480x1080.mp4" type="video/mp4">
                             
@@ -173,7 +173,7 @@
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
                         <h3 class="body-text">London Aviation timeline</h3>
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/gas-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/gas-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source data-desktop="/videos/hero-videos/hero-gas-480x1080.mp4" type="video/mp4">
                             
@@ -194,7 +194,7 @@
                 <div class="hero-card" id="bases-hero-card">
                     <a href="{{ route('training_bases') }}" class="hero-card-a">
                         <h3 class="body-text">Ontario Training Bases</h3>
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/plane-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/plane-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source data-desktop="/videos/hero-videos/hero-plane-480x1080.mp4" type="video/mp4">
                             
