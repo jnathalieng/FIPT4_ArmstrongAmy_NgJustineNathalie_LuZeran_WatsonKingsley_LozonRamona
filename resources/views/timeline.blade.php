@@ -18,23 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
 </head>
 
-<<<<<<< Updated upstream
 <body data-page="timeline">
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-<header class="header">
-    <!-- navbar -->
-        <nav class="desktop-nav">
-            <ul>
-                <li class="desktop-logo-con m-l-nav-item">
-                    <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
-                    </a>
-                </li>
-=======
-<body data-page="timeline">
->>>>>>> Stashed changes
 
     <header class="header">
         <!-- navbar -->
@@ -167,8 +151,6 @@
 
                 <p>Your browser does not support</p>
             </video>
-            
-            <!-- <div class="hero-triangle"></div> -->
 
         </section>
 

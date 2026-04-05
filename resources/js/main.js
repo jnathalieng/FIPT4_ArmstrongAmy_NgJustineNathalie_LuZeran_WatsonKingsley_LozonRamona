@@ -48,11 +48,17 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
+
+    videoQuery();
+    
     mapScroll();
     mapContentSlide();
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
+    
+    videoQuery();
+    
     typeWriter();
     dossierOpen();
 }
@@ -61,6 +67,9 @@ else if(document.body.dataset.page === "canteen") {
 }
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
+
+    videoQuery();
+
     commShowHide();
     
     const appComm = createApp(commForm);

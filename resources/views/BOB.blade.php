@@ -12,7 +12,7 @@
 <body data-page="BOB" id="BOB-page">
 
     <header class="header">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav>
                 <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
                 
@@ -78,10 +78,40 @@
 
         </nav>
     </header>
+
+    <h1 class="hidden">The Battle of Britain Page</h1>
+
     <main>
 
-        <h1 class="hidden">The Battle of Britain Page</h1>
+        <!-- HERO -->
+        <section class="hero-section" id="BOB-hero">
+            
+            <h2 class="hidden">Battle of Britain hero section</h2>
 
+            <div class="hero-title-con">
+                <div class="hero-title">
+                    <h3>
+                        The Battle of Britain
+                    </h3>
+                </div>
+                <div class="hero-subtitle">
+                    <p>
+                        London's unheard involvement
+                    </p>
+                </div>
+            </div>
+
+            <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                            
+                <source data-desktop="/videos/hero-videos/hero-canteen-1920x1080.mp4" type="video/mp4">
+                
+                <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
+
+                <p>Your browser does not support</p>
+            </video>
+
+        </section>
+        
         <section class="hero">
             
             <h3>THE BATTLE OF BRITAIN</h3>
@@ -166,9 +196,9 @@
 
                 <p class="dossier-content">
                     September 7, 1940 — Start of the London Blitz
-                    Nearly 1,000 German aircraft attacked London’s docks and East End. Over 400 civilians were killed. Attacks on RAF airfields decreased, allowing squadrons time to recover.
+                    Nearly 1,000 German aircraft attacked London's docks and East End. Over 400 civilians were killed. Attacks on RAF airfields decreased, allowing squadrons time to recover.
                     September 15, 1940 — Battle of Britain Day
-                    Two massive German attacks were repelled over London. Losses were so severe that Germany’s belief the RAF was near collapse was proven wrong. Plans for invasion were postponed indefinitely.
+                    Two massive German attacks were repelled over London. Losses were so severe that Germany's belief the RAF was near collapse was proven wrong. Plans for invasion were postponed indefinitely.
                 </p>
 
             </div>
@@ -199,12 +229,12 @@
 
         <section class="big-red">
             <h3 class="big-red-text">Cumulative Battle of Britain Losses 
-        (July–October 1940)</h3>
+        (July - October 1940)</h3>
         </section>
 
         <div class="deaths-section">
             <h2>Cumulative Battle of Britain Losses</h2>
-            <p>(July–October 1940)</p>
+            <p>(July - October 1940)</p>
 
             <div class="deaths-info-con">
 
@@ -346,7 +376,7 @@
 
                             While no actions from the Battle of Britain period appear in his record, Ted Barris mentions him while describing the action the men from 242 Squadron saw in France:
 
-                            “During the climax of the Dunkirk air battle, Stan Turner shot down two more enemy fighters. His fellow No. 242 P/O’s Robert Grassick, Willie McKnight and John Latta also turned in remarkable combat records. Grassick chased and fired at an Me109 until it crashed and then claimed a second enemy fighter.”
+                            “During the climax of the Dunkirk air battle, Stan Turner shot down two more enemy fighters. His fellow No. 242 P/O's Robert Grassick, Willie McKnight and John Latta also turned in remarkable combat records. Grassick chased and fired at an Me109 until it crashed and then claimed a second enemy fighter.”
 
                             He survived the war.
                         </p>
@@ -368,7 +398,7 @@
                         </p>
 
                         <p>
-                            AIn 1938 Campbell began flying at the London, Ontario Flying Club and obtained his civil pilot’s licence. He applied for a short service commission in the RAF in late 1938.
+                            AIn 1938 Campbell began flying at the London, Ontario Flying Club and obtained his civil pilot's licence. He applied for a short service commission in the RAF in late 1938.
 
                             Following training, he was posted to 32 Squadron at Wittering, arriving on May 24th. On June 3rd, he moved to 242 Squadron at Biggin Hill. Five days later he flew to France with the squadron; to help cover the rearguard actions being fought by the British Army as it retreated to the Atlantic coast.
 
