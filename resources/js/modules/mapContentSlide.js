@@ -10,12 +10,13 @@ export function mapContentSlide() {
                 x: -100,
                 opacity: 0,
                 duration: 1,
-                ease: "bounce",
+                ease: "bounce.out",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 60%',
-                    end: 'bottom 60%',
-                    toggleActions: 'play reverse play reverse'
+                    start: 'top 10%',
+                    end: 'bottom 40%',
+                    toggleActions: 'play none none none',
+                    pin: true
                 }
             })
         }
