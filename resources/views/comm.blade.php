@@ -25,7 +25,11 @@
 </head>
 
 <body id="commemoration-page" data-page="comm">
-      <header class="header">
+      
+</head>
+<body data-page="home">
+
+    <header class="header">
     <!-- navbar -->
         <nav class="desktop-nav">
             <ul>

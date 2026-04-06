@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 </head>
-<body data-page="BOB" id="BOB-page">
+<body data-page="home">
 
     <header class="header">
     <!-- navbar -->

@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
-<body data-page="about">
+<body data-page="home">
 
     <header class="header">
     <!-- navbar -->
