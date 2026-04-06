@@ -32,6 +32,7 @@ function closeMenu() {
         menu.classList.add("open");
         menu.classList.add("slide-out");
         hamburger.classList.add('X');
+        header.classList.remove('slideUp');
 
         menu.addEventListener('animationend', function() {
             document.addEventListener('click', docClick);
@@ -45,7 +46,7 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
   const current = window.scrollY;
 
-  if (current > lastScroll && current > 80) {
+  if (current > lastScroll && current > 80 && !menu.classList.contains('open')) {
     header.classList.add('slideUp');
   } else if (current < lastScroll) {
     header.classList.remove('slideUp');
