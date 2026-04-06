@@ -67,12 +67,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    background-image: url(/public/images/BOB-images/folder-texture.png);
-    
     position: relative;
-
-    padding-top: 20vh;
 }
 // .dossier-con {
 //     display: flex;
@@ -129,7 +124,7 @@
     font-size: 1rem;
     box-shadow: 2px 2px 4px a.$shadow;
     transition: a.$t-time;
-    transform: translate(0, );
+    transform: translate(0, 0);
 
     background-image: url(/public/images/BOB-images/paper-texture.jpg);
     background-repeat: repeat;
@@ -164,7 +159,24 @@
 // transform: translateY(30px);
 // transition: all 0.5s ease;
 // }
+.dossier-tag {
+    position: absolute;
+    height: 10vh;
+    width: 40vw;
 
+    top: -10vh;
+
+    padding: 0 2rem;
+    background-image: url(/public/images/BOB-images/folder-texture.png);
+    border-radius: 1rem 1rem 0 0;
+    color: a.$black;
+    text-align: center;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 // .dossier-tag {
 //     position: absolute;
 //     box-shadow: -5px -5px 5px black;
@@ -180,12 +192,28 @@
 //     text-align: center;
 //     padding-top: 5px;
 // }
-
+#july {
+    z-index: 50;
+    top: -40vh;
+}
 // #july {
 //     z-index: 50;
 //     top: -80px;
 // }
+#august {
+    z-index: 55;
+    top: -20vh;
+}
 
+#september {
+    z-index: 60;
+    top: 0;
+}
+
+#october {
+    z-index: 65;
+    top: 20vh;
+}
 // #august {
 //     z-index: 55;
 //     top:-20px;
