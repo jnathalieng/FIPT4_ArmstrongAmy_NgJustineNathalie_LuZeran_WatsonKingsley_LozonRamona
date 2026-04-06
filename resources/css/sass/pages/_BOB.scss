@@ -79,16 +79,7 @@ p.typewriter-quote {
     align-items: center;
     position: relative;
 }
-// .dossier-con {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     height: 150px;
-//     background-color: transparent;
-//     padding-top: 40px;
-//     position: relative;
-//     background-image: url(/images/BOB-images/folder-texture.png);
-// }
+
 .dossier {
     background-image: url(/public/images/BOB-images/folder-texture.png);
     box-shadow: a.$shadow;
@@ -114,20 +105,7 @@ p.typewriter-quote {
 .dossier:hover ~ .dossier {
     transform: translateY(10vh);
 }
-// .dossier {
-//     background-image: url(../../images/BOB-images/folder-texture.png);
-//     text-align: center;
-//     box-shadow: -5px -5px 5px black;
-//     position: absolute;
-//     width: 100vw;
-//     height: fit-content;
-//     text-align: left;
-//     padding: 10px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     padding-top: 50px;
-// }
+
 .dossier-content {
     color: a.$black;
     width: 80%;
@@ -156,21 +134,7 @@ p.typewriter-quote {
         transform: translateY(-50vh) translateX(2vw);
     }
 }
-// .dossier-content {
-//         color: black; 
-//         width: 90%;
-//         font-size: 18px;
-// }
 
-// .dossier:hover {
-// transform: translateY(-40px);
-// transition: all 0.5s ease;
-// }
-
-// .dossier:hover ~ .dossier {
-// transform: translateY(30px);
-// transition: all 0.5s ease;
-// }
 .dossier-tag {
     position: absolute;
     height: 10vh;
@@ -190,29 +154,12 @@ p.typewriter-quote {
     justify-content: center;
     align-items: center;
 }
-// .dossier-tag {
-//     position: absolute;
-//     box-shadow: -5px -5px 5px black;
-//     height: 40px; 
-//     width: 150px;
-//     left: 20px;
-//     padding: 0 1rem 0 1rem;
-//     border-radius: 1rem 1rem 0 0;
-//     background-image: url(../../images/BOB-images/folder-texture.png);
-//     top: -40px;
-//     font-size: 20px;
-//     color: black;
-//     text-align: center;
-//     padding-top: 5px;
-// }
+
 #july {
     z-index: 50;
     top: 0;
 }
-// #july {
-//     z-index: 50;
-//     top: -80px;
-// }
+
 #august {
     z-index: 55;
     top: 20vh;
@@ -227,21 +174,6 @@ p.typewriter-quote {
     z-index: 65;
     top: 60vh;
 }
-// #august {
-//     z-index: 55;
-//     top:-20px;
-
-// }
-
-// #september {
-//     z-index: 60;
-//     top: 40px;
-// }
-
-// #october {
-//     z-index: 65;
-//     top: 100px;
-// }
 
 #cover {
     display: none;
@@ -257,19 +189,7 @@ p.typewriter-quote {
     opacity: 0;
     transform: translate(-100%, -100%);
 }
-// #cover {
-//     display: none;
-//     background-color: transparent;
-//     z-index: 6;
-//     position: absolute;
-//     opacity: 1;
-//     transition: all 1s ease;
-// }
 
-// #cover.hideCover {
-//     opacity: 0;
-//     transform: translateY(100%);
-// }
 #july-tag {
     left: 5%;
 }
@@ -282,63 +202,6 @@ p.typewriter-quote {
 #oct-tag {
     left: 50%;
 }
-
-@media screen and (min-width: 768px) {
-
-    .dossier-content {
-        padding: 10rem 8rem;
-    }
-
-    .dossier-tag {
-        font-size: 2rem;
-        width: 25vw;
-    }
-
-    #july-tag {
-        left: 10%;
-    }
-    #aug-tag {
-        left: 30%;
-    }
-    #sept-tag {
-        left: 50%;
-    }
-    #oct-tag {
-        left: 70%;
-    }
-
-    .BOB-intro-section {
-        padding: 30vh 8rem;
-    }
-
-    h3.typewriter-quote {
-        font-size: 5rem;
-    }
-
-    p.typewriter-quote {
-        font-size: 1.25rem;
-        font-weight: normal;
-    }
-}
-// #july-tag {
-//     left: 5%;
-//     z-index: 5;
-// }
-
-// #aug-tag {
-//     left: 20%;
-//     z-index: 4;
-// }
-
-// #sept-tag {
-//     left: 40%;
-//     z-index: 3;
-// }
-
-// #oct-tag {
-//     left: 60%;
-//     z-index: 2;
-// }
 
 // .big-red {
 //     position: relative;
@@ -591,3 +454,40 @@ p.typewriter-quote {
 //     }
 // }
 // }
+@media screen and (min-width: 768px) {
+
+    .dossier-content {
+        padding: 10rem 8rem;
+    }
+
+    .dossier-tag {
+        font-size: 2rem;
+        width: 25vw;
+    }
+
+    #july-tag {
+        left: 10%;
+    }
+    #aug-tag {
+        left: 30%;
+    }
+    #sept-tag {
+        left: 50%;
+    }
+    #oct-tag {
+        left: 70%;
+    }
+
+    .BOB-intro-section {
+        padding: 30vh 8rem;
+    }
+
+    h3.typewriter-quote {
+        font-size: 5rem;
+    }
+
+    p.typewriter-quote {
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+}
