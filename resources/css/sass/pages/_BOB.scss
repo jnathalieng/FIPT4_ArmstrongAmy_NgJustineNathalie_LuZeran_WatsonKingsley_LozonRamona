@@ -135,23 +135,25 @@ p.typewriter-quote {
     box-shadow: a.$shadow;
     transition: a.$t-time;
     transform: translate(0, 0);
+    cursor: pointer;
 
     background-image: url(/public/images/BOB-images/paper-texture.jpg);
     background-repeat: repeat;
     background-position: center;
     
-    padding: 2rem;
+    padding: 4rem 4rem;
 
     &:hover {
         box-shadow: -8px -8px 16px rgb(0, 0, 0, 0.25);
     }
 
     &:nth-child(odd):hover {
-        transform: translateY(-2vh) translateX(-2vw);
+        transform: translateY(-50vh) translateX(-2vw);
+        
     }
 
     &:nth-child(even):hover {
-        transform: translateY(-2vh) translateX(2vw);
+        transform: translateY(-50vh) translateX(2vw);
     }
 }
 // .dossier-content {
@@ -182,7 +184,7 @@ p.typewriter-quote {
     box-shadow: a.$shadow;
     color: a.$black;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     display: flex;
     justify-content: center;
@@ -282,8 +284,14 @@ p.typewriter-quote {
 }
 
 @media screen and (min-width: 768px) {
+
+    .dossier-content {
+        padding: 10rem 8rem;
+    }
+
     .dossier-tag {
-        width: 20vw;
+        font-size: 2rem;
+        width: 25vw;
     }
 
     #july-tag {
@@ -297,6 +305,19 @@ p.typewriter-quote {
     }
     #oct-tag {
         left: 70%;
+    }
+
+    .BOB-intro-section {
+        padding: 30vh 8rem;
+    }
+
+    h3.typewriter-quote {
+        font-size: 5rem;
+    }
+
+    p.typewriter-quote {
+        font-size: 1.25rem;
+        font-weight: normal;
     }
 }
 // #july-tag {
