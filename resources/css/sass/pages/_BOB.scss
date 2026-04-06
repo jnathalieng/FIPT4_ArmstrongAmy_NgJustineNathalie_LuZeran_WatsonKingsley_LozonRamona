@@ -30,22 +30,12 @@
     
     text-align: right;
     width: 100vw;
-    padding: 4rem 0;
+    padding: 30vh 2rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1rem;
-        text-align: left;
-    }
 
     #skipQuote {
         background-color: transparent;
@@ -62,6 +52,26 @@
         transform: scale(90%);
     }
 }
+
+h3.typewriter-quote {
+    font-size: 2rem;
+    margin: 2rem 0;
+
+    text-align: center;
+}
+
+p.typewriter-quote {
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.typewriter-quote {
+    font-family: 'typewriter', serif;
+    font-weight: bold;
+}
+
+// DOSSIER STYLING
 
 .dossier-con {
     display: flex;

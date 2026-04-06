@@ -155,7 +155,7 @@
         
         <section class="BOB-intro-section">
             
-            <h3>THE BATTLE OF BRITAIN</h3>
+            <h3 class="typewriter-quote">THE BATTLE OF BRITAIN</h3>
 
             <p class="typewriter-quote">
                 "...the Battle of France is over. I expect that the Battle of Britain is about to begin...The whole fury and might of the enemy must very soon be turned on us.
