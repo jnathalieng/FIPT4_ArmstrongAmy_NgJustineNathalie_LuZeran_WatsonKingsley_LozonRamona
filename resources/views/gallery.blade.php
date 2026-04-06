@@ -220,11 +220,5 @@
     </div>
 
 </footer>
-
-<!-- Footer Script -->
-<script src="footer.js"></script>
-
-</body>
-</html>
 </body>
 </html>

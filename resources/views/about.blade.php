@@ -318,227 +318,87 @@
 </main>
 
     
-    <footer>
+<footer id="main-footer">
 
-        <!-- Footer Selection Section -->
+    <div id="footer-inner">
 
-        <div class="footer-selection-con">
-            
-            <div class="footer-selection-box">
-                <a href="{{ route('training_bases') }}" class="footer-selection-a">
-                    <h3 class="header-text">BCATP Training Sites</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-map.png">
-
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
-                    </picture>
-                </a>
-            </div>
-
-            <div class="footer-selection-box">
-                <a href="{{ route('timeline') }}" class="footer-selection-a">
-                    <h3 class="header-text">London Aviation Timeline</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-war.png">
-
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
-                    </picture>
-                </a>
-            </div>
-
-            <div class="footer-selection-box">
-                <a href="{{ route('BOB') }}" class="footer-selection-a">
-                    <h3 class="header-text">Battle of Britain</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
-
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
-                    </picture>
-                </a>
-            </div>
+        <div class="footer-col" id="footer-logo">
+            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
+            <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
+            <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
+            <p class="footer-contact-line">Contact: 519-455-0430</p>
+            <p class="footer-contact-line">Email: info@427wing.com</p>
         </div>
 
-        <div class="footer-desktop-flex-con">
-            <div class="footer-desktop-flex-section" id="logo-and-info">
-            <!-- Logo -->
-
-            <div class="footer-logo-con">
-                <a href="{{ route('home') }}">
-                    <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
-                </a>
-            </div>
-
-            <div class="footer-text-con">
-                <p class="body-text">A Project of 427 Wing RCAF ASSOCIATION</p>
-
-                <p class="body-text">www.427wing.com</p>
-
-                <p class="body-text">Contact: 519-455-0430</p>
-
-                <p class="body-text">Email: info@427wing.com</p>
-            </div>
+        <div class="footer-col" id="footer-discover">
+            <h3 class="footer-col-title">Discover</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('about') }}">&rarr; About Us</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Remembrance</a></li>
+                <li><a href="{{ route('events') }}">&rarr; News &amp; Events</a></li>
+                <li><a href="{{ route('blog') }}">&rarr; Blog</a></li>
+                <li><a href="{{ route('gallery') }}">&rarr; Gallery</a></li>
+                <li><a href="{{ route('contact') }}">&rarr; Contact Us</a></li>
+            </ul>
         </div>
-        
-        <div class="footer-desktop-flex-section" id="desk-center">
-            <!-- Footer Nav Links -->
 
-            <div class="footer-nav-links-con">
-                
-                <div class="footer-nav-links footer-nav-discover">
-                    <h4 class="header-text">Discover</h4>
+        <div class="footer-col" id="footer-legacy">
+            <h3 class="footer-col-title">Our Legacy</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('timeline') }}">&rarr; London Aviation Timeline</a></li>
+                <li><a href="{{ route('training_bases') }}">&rarr; Flight Schools and Training Bases</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Legacy of the Fallen</a></li>
+                <li><a href="{{ route('canteen') }}">&rarr; Airman's Canteen</a></li>
+                <li><a href="{{ route('BOB') }}">&rarr; Battle of Britain</a></li>
+            </ul>
+        </div>
 
-                    <div class="footer-cta-con">
-                        <a href="{{ route('about') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            About Us
-                        </a>
-                    </div>
+        <!-- COL 4: EXPLORE & JOIN -->
+        <div class="footer-col" id="footer-explore">
 
-                    <div class="footer-cta-con">
-                        <a href="{{ route('timeline') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            History
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('comm') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Rememberance
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="#">
-                            <img src="/images/icons/right-arrow.svg">
-                            News & Events
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('contact') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Contact Us
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-                <div class="footer-nav-links footer-nav-legacy">
-                    <h4 class="header-text">Our Legacy</h4>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('timeline') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            London Aviation Timeline
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('training_bases') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Flight Schools and Training Bases
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('comm') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Legacy of the Fallen
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('canteen') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Airman's Canteen
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('BOB') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Battle of Britain
-                        </a>
-                    </div>
-
+            <div id="footer-explore-top">
+                <h3 class="footer-col-title">Explore the Museum</h3>
+                <p class="footer-col-subtitle">Search aircraft, exhibits, and stories of courage.</p>
+                <div id="footer-search">
+                    <input type="text" id="footer-search-input" placeholder="Search here">
+                    <button type="button" id="footer-search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-desktop-flex-section" id="flex-section-end">
-            <!-- Footer Explore -->
 
-            <div class="footer-search-con">
-                
-                <h3 class="header-text">
-                    EXPLORE THE MUSEUM
-                </h3>
-
-                <p class="body-text">
-                    Search aircraft, exhibits, and stories of courage.
-                </p>
-
-                <div class="footer-search-bar-con">
-                    <form role="search">
-                        <input type="search" id="footer-search-bar" name="searchbar" placeholder="Search through site content..." aria-label="Search through site content">
-                    </form>
-                </div>
-
-            </div>
-
-            <!-- Footer Socials -->
-
-            <div class="footer-socials-con">
-                <h3 class="header-text">JOIN OUR COMMUNITY</h3>
-
-                <p class="body-text">Stand with us in preserving stories of courage</p>
-
-                <div class="footer-socials-icons-con">
-                    
-                    <div class="icons-con">
-                        <a href="https://www.facebook.com/">
-                            <img src="/images/icons/footer-socials-icons/Facebook.svg">
-                        </a>
-                    </div>
-                    
-                    <div class="icons-con">
-                        <a href="https://www.linkedin.com/">
-                            <img src="/images/icons/footer-socials-icons/LinkedIn.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://www.instagram.com/">
-                            <img src="/images/icons/footer-socials-icons/Instagram.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://x.com/">
-                            <img src="/images/icons/footer-socials-icons/twitter.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://www.youtube.com/">
-                            <img src="/images/icons/footer-socials-icons/Youtube.svg">
-                        </a>
-                    </div>
-
+            <div id="footer-community">
+                <h3 class="footer-col-title">Join Our Community</h3>
+                <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
+                <div id="footer-socials">
+                    <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
+                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
+                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
+                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                    </a>
+                    <a href="https://x.com/" class="social-icon" alt="X / Twitter">
+                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
+                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                    </a>
                 </div>
             </div>
+
         </div>
-        </div>
-        
-        <div class="footer-closing-text">
-            <p class="body-text">Copyright ©2026 LONDON AVIATION MUSEUM | Privacy Policy | Terms</p>
-        </div>        
-    </footer>
+
+    </div>
+
+    <!-- FOOTER BOTTOM BAR -->
+    <div id="footer-bottom">
+        <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </div>
+
+</footer>
 </body>
-</html>
-    </footer>
-    </body>
 </html>

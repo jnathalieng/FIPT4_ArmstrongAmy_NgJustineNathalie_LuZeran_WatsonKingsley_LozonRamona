@@ -6,7 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\CommController;
 use App\Http\Controllers\BlogController;
-
+use App\Http\Controllers\SearchController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -29,3 +29,4 @@ Route::get('/galleries', [GalleryController::class, 'index']);
 Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
 Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::get('/blogs', [BlogController::class, 'index']);
+Route::get('/search', [SearchController::class, 'apiSearch']);
