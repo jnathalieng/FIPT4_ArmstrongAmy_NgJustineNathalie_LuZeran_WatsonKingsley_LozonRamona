@@ -127,12 +127,27 @@
     color: a.$black;
     width: 80%;
     font-size: 1rem;
+    box-shadow: 2px 2px 4px a.$shadow;
+    transition: a.$t-time;
+    transform: translate(0, );
 
     background-image: url(/public/images/BOB-images/paper-texture.jpg);
     background-repeat: repeat;
     background-position: center;
     
     padding: 2rem;
+
+    &:hover {
+        box-shadow: 8px 8px 16px a.$shadow;
+    }
+
+    &:nth-child(odd):hover {
+        transform: translateY(-2vh) translateX(-2vw);
+    }
+
+    &:nth-child(even):hover {
+        transform: translateY(-2vh) translateX(2vw);
+    }
 }
 // .dossier-content {
 //         color: black; 

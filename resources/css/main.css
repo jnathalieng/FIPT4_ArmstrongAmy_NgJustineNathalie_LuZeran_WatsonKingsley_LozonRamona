@@ -1895,10 +1895,22 @@ footer .footer-closing-text p {
   color: #000;
   width: 80%;
   font-size: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  transform: translate(0);
   background-image: url(/public/images/BOB-images/paper-texture.jpg);
   background-repeat: repeat;
   background-position: center;
   padding: 2rem;
+}
+.dossier-content:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
+}
+.dossier-content:nth-child(odd):hover {
+  transform: translateY(-2vh) translateX(-2vw);
+}
+.dossier-content:nth-child(even):hover {
+  transform: translateY(-2vh) translateX(2vw);
 }
 
 #bases-page {
