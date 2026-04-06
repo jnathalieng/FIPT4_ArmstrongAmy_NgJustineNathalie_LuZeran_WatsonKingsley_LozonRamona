@@ -126,7 +126,7 @@
         <h1 class="hidden">Historic Timeline Page</h1>
 
         <!-- HERO -->
-        <section class="hero-section" id="timeline-hero">
+        <section class="hero-video-section" id="timeline-hero">
             
             <h2 class="hidden">Timeline hero section</h2>
 

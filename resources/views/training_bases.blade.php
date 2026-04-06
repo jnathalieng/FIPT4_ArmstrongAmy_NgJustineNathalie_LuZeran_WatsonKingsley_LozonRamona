@@ -126,7 +126,7 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero-section" id="base-hero">
+        <section class="hero-video-section" id="base-hero">
             
             <h2 class="hidden">Training Bases hero section</h2>
 

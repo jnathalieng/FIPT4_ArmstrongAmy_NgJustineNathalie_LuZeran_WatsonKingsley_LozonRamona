@@ -125,7 +125,7 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero-section" id="BOB-hero">
+        <section class="hero-video-section" id="BOB-hero">
             
             <h2 class="hidden">Battle of Britain hero section</h2>
 
