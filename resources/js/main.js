@@ -1,21 +1,20 @@
 import { navbar_showhide } from "./modules/hamburger.js";
 import { navDropDown } from "./modules/navDropDown.js";
-
 import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import gallery from "./modules/gallery.js";
+import blog from "./modules/blog.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
+import { mapContentSlide } from "./modules/mapContentSlide.js";
+import { footerSearch } from "./modules/footer.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
-
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
-
 import { videoQuery } from "./modules/hpVideoQuery.js";
-
 import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 import { tlShowSticky } from "./modules/tlShowSticky.js";
 import { tlScrollProgress } from "./modules/tlScrollProgress.js";
@@ -24,6 +23,7 @@ import { tlScrollTo } from "./modules/tlScrollTo.js";
 
 navbar_showhide();
 navDropDown();
+footerSearch();
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
@@ -31,6 +31,9 @@ if(document.body.dataset.page === "home") {
 }
 else if(document.body.dataset.page === "timeline") {
     console.log('recon page');
+
+    videoQuery();
+
     parallaxObj();
     tlImgTextReveal();
     tlShowSticky();
@@ -40,10 +43,17 @@ else if(document.body.dataset.page === "timeline") {
 }
 else if(document.body.dataset.page === "trainingBases") {
     console.log('welcome to boot camp!');
+
+    videoQuery();
+    
     mapScroll();
+    mapContentSlide();
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
+    
+    videoQuery();
+    
     typeWriter();
     dossierOpen();
 }
@@ -52,6 +62,9 @@ else if(document.body.dataset.page === "canteen") {
 }
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
+
+    videoQuery();
+
     commShowHide();
     
     const appComm = createApp(commForm);
@@ -77,4 +90,14 @@ else if(document.body.dataset.page === "gallery") {
 
     const app = createApp(gallery);
     app.mount('#gallery-app');
+}
+else if(document.body.dataset.page === "blog") {
+    console.log('learn about our research journey!');
+    const app = createApp(blog);
+    app.mount('#blog-app');
+}
+else if(document.body.dataset.page === "blog-post") {
+    const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
+    const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
+    app.mount('#blog-post-app');
 }

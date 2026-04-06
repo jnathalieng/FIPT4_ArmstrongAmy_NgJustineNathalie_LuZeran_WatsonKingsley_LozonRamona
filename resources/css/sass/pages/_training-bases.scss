@@ -1,7 +1,7 @@
-@use '../abstracts' as v;
+@use '../abstracts' as a;
 
 #bases-page {
-    background-color: rgba(v.$dark-background, 0.5);
+    // background-color: rgba(a.$dark-background, 0.5);
     color: white;
 
     overflow-x: hidden;
@@ -12,43 +12,81 @@
     height: 100vh;
 }
 
+.scroll-container {
+    margin: 0;
+    padding: 0;
+}
+
 .scroll-section {
     h2 {
-        color: white;
-        margin-bottom: 20px;
-        background-color: rgba(v.$dark-background, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        border: solid 3px black;
-
-    }
-    .map-content-box {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        margin-left: 3vw;
-        
-    p {
-        color: white;
-        background-color: rgba(v.$dark-background, 0.5);
-        padding: 10px;
-        width: 33vw;
-        border-radius: 10px;
-        border: solid 3px black;
+        color: a.$white;
+        font-size: 300%;
+        transition: a.$t-time;
     }
 
-    .map-image {
-        width: 33vw;
-        height: 33vw;
-        margin-left: auto;
-        margin-right: 3vw;
-        background-color: rgba(v.$dark-background, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        border: solid 3px black;
-        background-image: url("/images/general-images/AboutHero_Mobile.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+    h2.activeHeading {
+        font-size: 400%;
+        color: a.$primary-color;
+        background-color: a.$white;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin: 1rem 0;
+
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.15);
     }
 }
+
+.scroll-flex-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-content-box, .map-image-box {
+    padding: 2rem;
+    background: a.$glass-morph;
+    backdrop-filter: blur(10px);
+
+    // Glass morphism gradient border
+    position: relative;
+    border-radius: 1rem;
+
+    // for some reason CSS doesn't natively allow gradient border colors, so Claude suggests a pseudo element workaround, @marco, this is so counter-intuitive...sorry
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 2px;
+        background: a.$glass-morph-stroke;
+        
+        // mask property sets up shape to cut from the pseudo element
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+
+        // mask property that does the cutting
+        mask-composite: exclude;
+        -webkit-mask-composite: xor;
+    }
+
+    // Container Styling
+    width: 30vw;
+    margin: 0 15vw;
+    transition: a.$t-time;
+    height: 50vh;
+
+    &:hover {
+        width: 35vw;
+        height: 55vh;
+        padding: 4rem;
+        transition: a.$t-time;
+        background: a.$glass-morph-active;
+        backdrop-filter: blur(20px);
+
+        &::before {
+            padding: 3px;
+            background: a.$glass-morph-stroke-active;
+        }
+    }
 }

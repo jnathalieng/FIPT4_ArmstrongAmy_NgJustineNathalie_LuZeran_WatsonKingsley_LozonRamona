@@ -10,6 +10,46 @@ $accent-color: #FFC000;
 $black: #000;
 $white: #fff;
 
+$shadow: -4px -4px 8px rgb(0, 0, 0, 0.15);
 $body-text-color: #ffffff;
 $menu-element-color: rgb(37, 37, 37);
 $dark-background: #3c3c3c;
+
+// GLASS MORPHISM VALUES
+$glass-morph: linear-gradient(to bottom right, #bdbdbd80, #bdbdbd00);
+$glass-morph-stroke: linear-gradient(to bottom right, #ffffffaa, #ffffff35);
+
+$glass-morph-active: linear-gradient(to top left, #8a8a8a00, #8a8a8a80);
+$glass-morph-stroke-active: linear-gradient(to bottom right, #4a4a4a35, #4a4a4a00);
+
+// ============================================================
+// FOOTER VARIABLES
+// ============================================================
+
+$footer-bg:           #b71c1c;
+$footer-color:        #ffffff;
+$footer-font:         'Montserrat', sans-serif;
+$footer-font-heading: 'Montserrat', sans-serif;
+$footer-max-width:    1400px;
+$footer-padding-x:    60px;
+$footer-padding-top:  60px;
+$footer-padding-bot:  50px;
+$footer-gap:          48px;
+
+$divider:             rgba(255, 255, 255, 0.3);
+$muted:               rgba(255, 255, 255, 0.72);
+$icon-bg:             rgba(255, 255, 255, 0.15);
+$icon-bg-hover:       rgba(255, 255, 255, 0.35);
+$search-bg:           rgba(255, 255, 255, 0.12);
+$search-border:       rgba(255, 255, 255, 0.4);
+
+$bp-tablet:           1024px;
+$bp-mobile:           600px;
+
+// TYPEWRITTER FONT
+@font-face {
+    font-family: 'typewriter';
+    src: url(/public/fonts/SpecialElite-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -30,29 +30,56 @@ const observer = new IntersectionObserver((entries) => {
             
             if (targetId === 'full-view') {
 
-                svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
                 svg.classList.remove('active');
 
+                // uses the GSAP attr: to animate SVG attributes with more control
+                
+                gsap.to(svg, {
+                    scale: 1,
+                    duration: 0.5,
+                    ease: "power2.inOut",
+                    attr: {
+                        viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+                    }
+                })
+
+                // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+
+                // svg.classList.remove('active');
+
+                // // GSAP zooming out from base
+                // gsap.to(svg, {
+                //     scale: 1,
+                //     duration: 0.5,
+                //     ease: "power2.inOut"
+                // });
+
             } else {
+                svg.classList.add('active');
                 zoomToBase(targetId);
 
-                svg.classList.add('active');
-            }
+                
+
+                // GSAP zooming in to base
+                // gsap.to(svg, {
+                //     scale: 2.5,
+                //     duration: 0.5,
+                //     ease: "power2.inOut"
+                // });
+            } 
+        } else {
+            // GSAP zooming out generally
+            gsap.to(svg, {
+                scale: 1,
+                duration: 0.5,
+                ease: "power2.inOut",
+                attr: {
+                    viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+                }
+            });
         }
     });
-}, {threshold: 0.5}); //this means the detector is 'detects' when there the new "scroll-section" is 50% visible
-
-let observerActive = false;
-window.addEventListener('scroll', () => {
-    if (!observerActive) {
-        observerActive = true;
-        document.querySelectorAll('.scroll-section').forEach(section => {
-            observer.observe(section);
-        });
-        console.log("observer activated");
-    }
-});
+}, {threshold: 0.05}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
 
 function zoomToBase(targetId) {
     const target = baseCoordinates[targetId];
@@ -64,19 +91,40 @@ function zoomToBase(targetId) {
     const viewBoxX = target.x - (viewWidth / 2);
     const viewBoxY = target.y - (viewHeight / 2);
 
-    svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
+    gsap.to(svg, {
+        scale: 2,
+        duration: 0.5,
+        ease: "power2.inOut",
+        attr: {
+            viewBox: `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`
+        }
+    })
+    // svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
 }
 
 function resetMap() {
-
-    svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
     svg.classList.remove('active');
-
-    observerActive = false;
-
+    
+    // stop observering
     document.querySelectorAll('.scroll-section').forEach(section => {
         observer.unobserve(section);
+        console.log("stopped observing");
+    });
+
+    // zoom and start observing
+    gsap.to(svg, {
+        scale: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+        attr: {
+            viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+        },
+        onComplete: () => {
+            document.querySelectorAll('.scroll-section').forEach(section => {
+                observer.observe(section);
+            });
+            console.log("observer reactivated!");
+        }
     });
 }
 
@@ -101,6 +149,10 @@ window.addEventListener('load', () => {
     svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
     svg.classList.remove('active');
+
+    document.querySelectorAll('.scroll-section').forEach(section => {
+        observer.observe(section);
+    })
 });
 
 }
