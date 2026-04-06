@@ -1880,7 +1880,7 @@ p.typewriter-quote {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 80vh;
+  height: 160vh;
   background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
@@ -1889,13 +1889,13 @@ p.typewriter-quote {
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease;
   transform: translateY(0);
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
 .dossier:hover {
@@ -1967,18 +1967,11 @@ p.typewriter-quote {
 }
 
 #cover {
-  display: none;
-  background-color: transparent;
   z-index: 70;
-  position: absolute;
-  opacity: 1;
-  transition: all 0.3s ease;
-  transform: translate(0, 0);
+  top: 80vh;
 }
-
-#cover.hideCover {
-  opacity: 0;
-  transform: translate(-100%, -100%);
+#cover:hover {
+  transform: none;
 }
 
 #july-tag {
@@ -1997,8 +1990,12 @@ p.typewriter-quote {
   left: 50%;
 }
 
+#cover-tag {
+  width: 60vw;
+}
+
 .big-red {
-  margin-top: 80vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2015,6 +2012,19 @@ p.typewriter-quote {
 }
 
 @media screen and (min-width: 768px) {
+  .BOB-intro-section {
+    padding: 30vh 8rem;
+  }
+  h3.typewriter-quote {
+    font-size: 5rem;
+  }
+  p.typewriter-quote {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  .dossier-con {
+    height: 210vh;
+  }
   .dossier-content {
     padding: 10rem 8rem;
   }
@@ -2034,15 +2044,8 @@ p.typewriter-quote {
   #oct-tag {
     left: 70%;
   }
-  .BOB-intro-section {
-    padding: 30vh 8rem;
-  }
-  h3.typewriter-quote {
-    font-size: 5rem;
-  }
-  p.typewriter-quote {
-    font-size: 1.25rem;
-    font-weight: normal;
+  #cover-tag {
+    width: 50vw;
   }
 }
 #bases-page {

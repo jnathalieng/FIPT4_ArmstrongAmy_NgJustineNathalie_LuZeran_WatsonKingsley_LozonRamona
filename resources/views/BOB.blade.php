@@ -175,10 +175,6 @@
         </section>
 
         <div class="dossier-con">
-            
-            <div class="dossier" id="cover">
-                <img src="images/BOB-images/folder-texture.png">
-            </div>
 
             <div class="dossier" id="july" data-lift="500">
                 
@@ -288,6 +284,13 @@
                             This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain's air defence network.
                         </p>
                     </div>
+            </div>
+
+            <div class="dossier" id="cover">
+                <h3 class="dossier-tag" id="cover-tag">
+                    THE BATTLE OF BRITAIN
+                </h3>
+                <img src="/images/BOB-images/classified.png" alt="">
             </div>
         </div>
 
