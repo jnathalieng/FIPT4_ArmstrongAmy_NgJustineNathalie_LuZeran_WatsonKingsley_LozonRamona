@@ -96,7 +96,18 @@
     flex-direction: column;
     align-items: center;
 
+    transition: a.$t-time;
+    transform: translateY(0);
+
     padding-top: 20vh;
+}
+
+.dossier:hover {
+    transform: translateY(-10vh);
+}
+
+.dossier:hover ~ .dossier {
+    transform: translateY(10vh);
 }
 // .dossier {
 //     background-image: url(../../images/BOB-images/folder-texture.png);

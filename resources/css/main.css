@@ -1878,7 +1878,17 @@ footer .footer-closing-text p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease;
+  transform: translateY(0);
   padding-top: 20vh;
+}
+
+.dossier:hover {
+  transform: translateY(-10vh);
+}
+
+.dossier:hover ~ .dossier {
+  transform: translateY(10vh);
 }
 
 .dossier-content {
