@@ -2645,12 +2645,39 @@ footer .footer-closing-text p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 10px 10vw;
 }
 
 .gallery-image {
   max-width: 300px;
+  height: fit-content;
   margin: 10px;
+  cursor: pointer;
+}
+
+.lightbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px;
+  background-color: rgba(145, 184, 217, 0.3);
+  z-index: 10000;
+}
+.lightbox .lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox .lightbox-content img {
+  max-height: 80vh;
+  max-width: 100vw;
 }
 
 main {

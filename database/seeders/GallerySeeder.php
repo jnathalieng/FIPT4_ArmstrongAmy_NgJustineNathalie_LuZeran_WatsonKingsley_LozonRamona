@@ -157,8 +157,8 @@ class GallerySeeder extends Seeder
 
         GalleryImage::create([
             'gallery_id' => $bob->id,
-            'filename_desktop' => 'd-bob-hero.jpg',
-            'filename_mobile' => 'm-bob-hero.jpg',
+            'filename_desktop' => 'd-bob-hero.png',
+            'filename_mobile' => 'm-bob-hero.png',
             'folder_path' => 'BOB-images',
             'alt_text' => 'Main image on Battle of Britain Page',
             'order' => 1
@@ -167,7 +167,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $bob->id,
             'filename_desktop' => 'd-bob-losses-bg.png',          
-            'filename_mobile' => null,
+            'filename_mobile' => 'm-bob-losses-bg.png',
             'folder_path' => 'BOB-images',
             'alt_text' => 'Hugh Rielly',
             'order' => 2
@@ -277,7 +277,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $canteen->id,
             'filename_desktop' => 'd-airmans-paper-1.png',   
-            'filename_mobile' => null,
+            'filename_mobile' => 'm-airmans-paper-1.png', 
             'folder_path' => 'canteen-images',
             'alt_text' => 'airmans paper 1',
             'order' => 7
@@ -286,7 +286,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $canteen->id,
             'filename_desktop' => 'd-airmans-paper-2.png',   
-            'filename_mobile' => null,
+            'filename_mobile' => 'm-airmans-paper-2.png',
             'folder_path' => 'canteen-images',
             'alt_text' => 'airmans paper 2',
             'order' => 8
@@ -295,7 +295,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $canteen->id,
             'filename_desktop' => 'd-airmans-paper-3.png',   
-            'filename_mobile' => null,
+            'filename_mobile' => 'm-airmans-paper-2.png',
             'folder_path' => 'canteen-images',
             'alt_text' => 'airmans paper 3',
             'order' => 9
@@ -503,7 +503,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1912-july-20.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1912-july-20 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1912-july-20',
             'order' => 1
@@ -512,7 +512,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1912-may-25.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1912-may-25 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1912-may-25',
             'order' => 2
@@ -521,7 +521,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1918-july-1.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1918-july-1 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1918-july-1',
             'order' => 3
@@ -530,7 +530,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1918-july-2.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1918-july-2 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1918-july-2',
             'order' => 4
@@ -539,7 +539,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1918-july-02.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1918-july-02 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1918-july-o2',
             'order' => 5
@@ -548,7 +548,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1919-june-15.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1919-june-15 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1919-june-15',
             'order' => 6
@@ -557,7 +557,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1926-october-26.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1926-october-26 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1926-october-26',
             'order' => 7
@@ -566,7 +566,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1927-november-25.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1927-november-25 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1927-november-25',
             'order' => 8
@@ -575,7 +575,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1927-september.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1927-september 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1927-september',
             'order' => 9
@@ -584,7 +584,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1928-august-24.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1928-august-24 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => '1928-august-24',
             'order' => 10
@@ -593,7 +593,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1928-august-28.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1928-august-28 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1928-august-28',
             'order' => 11
@@ -602,7 +602,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1928-july-11.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1928-july-11 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1928-july-11',
             'order' => 12
@@ -611,7 +611,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1929-july-15.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1929-july-15 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1929-july-15',
             'order' => 13
@@ -620,7 +620,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1931-september.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1931-september 1.png',
             'folder_path' => 'timeline-images',
             'alt_text' => '1931 september',
             'order' => 14
@@ -629,7 +629,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1940-december-17.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1940-december-17 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => '1940 december 17',
             'order' => 15
@@ -638,7 +638,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1940-january-19.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1940-january-19 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => '1940 january 19',
             'order' => 16
@@ -647,7 +647,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-1940-june-24.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-1940-june-24 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => '1940 june 24',
             'order' => 17
@@ -656,7 +656,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-august.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-august 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => 'august',
             'order' => 18
@@ -665,7 +665,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-august-01.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-august-01 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => 'august 01',
             'order' => 19
@@ -683,7 +683,7 @@ class GallerySeeder extends Seeder
         GalleryImage::create([
             'gallery_id' => $timeline->id,
             'filename_desktop' => 'd-timeline-november-25.png', 
-            'filename_mobile' => null,
+            'filename_mobile' => 'd-timeline-november-25 1.png', 
             'folder_path' => 'timeline-images',
             'alt_text' => 'november 25',
             'order' => 20

@@ -90,7 +90,7 @@ template: `
         <div v-if="selectedImage" class="lightbox" @click="closeLightbox()">
             <div class="lightbox-content" @click.stop>
                 <img v-if="getImagePath(selectedImage, 'desktop')" :src="getImagePath(selectedImage, 'desktop')" :alt="selectedImage.alt_text">
-                <button @click="closeLightbox()">Close</button>
+                <button class="button" @click="closeLightbox()">Close</button>
             </div>
         </div>
 
