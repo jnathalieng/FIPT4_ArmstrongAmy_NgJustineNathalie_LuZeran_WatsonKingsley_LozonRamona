@@ -1880,6 +1880,8 @@ p.typewriter-quote {
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 80vh;
+  background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
@@ -1911,19 +1913,20 @@ p.typewriter-quote {
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   transform: translate(0, 0);
+  cursor: pointer;
   background-image: url(/public/images/BOB-images/paper-texture.jpg);
   background-repeat: repeat;
   background-position: center;
-  padding: 2rem;
+  padding: 4rem 4rem;
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
 }
 .dossier-content:nth-child(odd):hover {
-  transform: translateY(-2vh) translateX(-2vw);
+  transform: translateY(-50vh) translateX(-2vw);
 }
 .dossier-content:nth-child(even):hover {
-  transform: translateY(-2vh) translateX(2vw);
+  transform: translateY(-50vh) translateX(2vw);
 }
 
 .dossier-tag {
@@ -1937,7 +1940,7 @@ p.typewriter-quote {
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   color: #000;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1994,9 +1997,30 @@ p.typewriter-quote {
   left: 50%;
 }
 
+.big-red {
+  margin-top: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B3262E;
+  height: 20vh;
+}
+.big-red .big-red-text {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
 @media screen and (min-width: 768px) {
+  .dossier-content {
+    padding: 10rem 8rem;
+  }
   .dossier-tag {
-    width: 20vw;
+    font-size: 2rem;
+    width: 25vw;
   }
   #july-tag {
     left: 10%;
@@ -2009,6 +2033,16 @@ p.typewriter-quote {
   }
   #oct-tag {
     left: 70%;
+  }
+  .BOB-intro-section {
+    padding: 30vh 8rem;
+  }
+  h3.typewriter-quote {
+    font-size: 5rem;
+  }
+  p.typewriter-quote {
+    font-size: 1.25rem;
+    font-weight: normal;
   }
 }
 #bases-page {
