@@ -112,7 +112,17 @@
 //     align-items: center;
 //     padding-top: 50px;
 // }
+.dossier-content {
+    color: a.$black;
+    width: 80%;
+    font-size: 1rem;
 
+    background-image: url(/public/images/BOB-images/paper-texture.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    
+    padding: 2rem;
+}
 // .dossier-content {
 //         color: black; 
 //         width: 90%;

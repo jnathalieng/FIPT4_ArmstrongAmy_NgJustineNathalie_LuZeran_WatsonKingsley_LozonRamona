@@ -1881,6 +1881,16 @@ footer .footer-closing-text p {
   padding-top: 20vh;
 }
 
+.dossier-content {
+  color: #000;
+  width: 80%;
+  font-size: 1rem;
+  background-image: url(/public/images/BOB-images/paper-texture.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  padding: 2rem;
+}
+
 #bases-page {
   color: white;
   overflow-x: hidden;
