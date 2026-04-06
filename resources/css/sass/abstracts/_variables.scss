@@ -21,3 +21,12 @@ $glass-morph-stroke: linear-gradient(to bottom right, #ffffffaa, #ffffff35);
 
 $glass-morph-active: linear-gradient(to top left, #8a8a8a00, #8a8a8a80);
 $glass-morph-stroke-active: linear-gradient(to bottom right, #4a4a4a35, #4a4a4a00);
+
+
+// TYPEWRITTER FONT
+@font-face {
+    font-family: 'typewriter';
+    src: url(/public/fonts/SpecialElite-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

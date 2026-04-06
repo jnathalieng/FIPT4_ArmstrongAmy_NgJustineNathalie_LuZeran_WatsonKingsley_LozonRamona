@@ -54,6 +54,12 @@ a {
   font-size: 24;
 }
 
+@font-face {
+  font-family: "typewriter";
+  src: url(/public/fonts/SpecialElite-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .header {
   z-index: 1000;
   position: fixed;
@@ -1833,19 +1839,11 @@ footer .footer-closing-text p {
   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)), url(/public/images/BOB-images/desktop/d-bob-hero.png);
   text-align: right;
   width: 100vw;
-  padding: 4rem 0;
+  padding: 30vh 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.BOB-intro-section h2 {
-  font-size: 2rem;
-  text-align: center;
-}
-.BOB-intro-section p {
-  font-size: 1rem;
-  text-align: left;
 }
 .BOB-intro-section #skipQuote {
   background-color: transparent;
@@ -1858,6 +1856,23 @@ footer .footer-closing-text p {
 }
 .BOB-intro-section #skipQuote:active {
   transform: scale(90%);
+}
+
+h3.typewriter-quote {
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+p.typewriter-quote {
+  font-size: 1rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.typewriter-quote {
+  font-family: "typewriter", serif;
+  font-weight: bold;
 }
 
 .dossier-con {
@@ -2859,4 +2874,4 @@ footer .footer-closing-text p {
 .ibox-f5 {
   grid-column: 4/span 7;
   grid-row: 10;
-}
+}/*# sourceMappingURL=main.css.map */
