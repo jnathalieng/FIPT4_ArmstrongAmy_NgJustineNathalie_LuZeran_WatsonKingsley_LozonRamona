@@ -176,28 +176,21 @@
             </section>
 
             <section class="scroll-section" data-target="base-1">
-                <h2>Base 1</h2>
+                <h2>Port Albert</h2>
 
                 <div class="scroll-flex-con">
                     <div class="map-content-box">
-                        <p>         Goderich
-                            <br>
-                            <br>    NAME OF BASE
-                            <br>
-                            <br>    Purpose of base:
-                            <br>
-                            <br>    (note, there's very little information on these from the powerpoint) 
-                            <br>
-                            <br>    DETAILS ABOUT BASE(S)
+                        <p>
+                            No. 31 Air Navigation School
                         </p>
                     </div>
 
                     <div class="map-image-box" id="base-1-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A1-PortAlbert_3AirNav.png">
 
-                            <img class="map-image" src="" alt="picture of training base">
+                            <img class="map-image" src="/images/Training_Bases/mobile/A1-MOBILE-PortAlbert_3AirNav.png" alt="picture of Port Albert training base">
                         </picture>
 
                     </div>
@@ -205,243 +198,385 @@
             </section>
 
             <section class="scroll-section" data-target="base-2">
-            <h2>Base 2</h2>
-            <div class="map-content-box">
-            <p>         Base 2
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Goderich</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            EFTS #12
+                            <br>
+                            <br>
+                            This training base was an EFTS - Elementary Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-2-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A2-Goderich12.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A2-MOBILE-Goderich12.png" alt="picture of Goderich training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-3">
-            <h2>Base 3</h2>
-            <div class="map-content-box">
-            <p>         Base 3
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Clinton</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            Radio Direction Finding (Radar) School
+                            <br>
+                            <br>
+                            No. 31 (became #5 in July, 1943)
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-3-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A3-Clinton_no5Radio.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A3-MOBILE-Clinton_no5Radio.png" alt="picture of Clinton training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-4">
-            <h2>Base 4</h2>
-            <div class="map-content-box">
-            <p>         Base 4
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Centralia</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #8 SFTS
+                            <br>
+                            <br>
+                            This training base was a SFTS - Service Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-4-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A4-Centralia_8SFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A4-MOBILE-Centralia_8SFTS.png" alt="picture of Centralia training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-5">
-            <h2>Base 5</h2>
-            <div class="map-content-box">
-            <p>         Base 5
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Guelph</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #4 Wireless
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-5-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A5-Guelph_4Wireless.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A5-MOBILE-Guelph_4Wireless.png" alt="picture of Guelph training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-6">
-            <h2>Base 6</h2>
-            <div class="map-content-box">
-            <p>         Base 6
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>London</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #3 EFTS 1940-42
+                            <br>
+                            <br>
+                            This training base was an EFTS - Elementary Flying Training School!
+                            <br>
+                            <br>
+                            #4 AOS 1940-44
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-6-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/mobile/A6-MOBILE-LondonEFTS_AOS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/desktop/A6-LondonEFTS_AOS.png" alt="picture of London training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-7">
-            <h2>Base 7</h2>
-            <div class="map-content-box">
-            <p>         Base 7
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Windsor</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #7 EFTS
+                            <br>
+                            <br>
+                            This training base was an EFTS - Elementary Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-7-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A7-Windsor_7EFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A7-MOBILE-Windsor_7EFTS.png" alt="picture of Windsor training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-8">
-            <h2>Fingal Base</h2>
-            <div class="map-content-box">
-            <p>         Fingal
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Bomber & Gunner Training
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Fingal</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #4 B&G
+                            <br>
+                            <br>
+                            This training was a B&G - Bombing and Gunnery!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-8-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A8-Fingal_4BomGun.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A8-MOBILE-Fingal_4BomGun.png" alt="picture of training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-9">
-            <h2>St.thomas Base</h2>
-            <div class="map-content-box">
-            <p>         St. Thomas Base
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Ground Crew School
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>St. Thomas</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #1 Technical Training School
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-9-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A9-StThomas.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A9-MOBILE-StThomas.png" alt="picture of St. Thomas training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-10">
-            <h2>Aylmer Base</h2>
-            <div class="map-content-box">
-            <p>         Aylmer
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Advanced Flying School - Service Training flying School
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Aylmer</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #14 SFTS
+                            <br>
+                            <br>
+                            This training base was a SFTS - Service Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-10-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A10-Aylmer14SFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A10-MOBILE-Aylmer14SFTS.png" alt="picture of Aylmer training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-11">
-            <h2>Base 11</h2>
-            <div class="map-content-box">
-            <p>         Base 11
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Jarvis</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #1 B&G
+                            <br>
+                            <br>
+                            This training base was a B&G - Bombing and Gunnery!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-11-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A11-Jarvis_BG.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A11-MOBILE-Jarvis_BG.png" alt="picture of Jarvis training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-12">
-            <h2>Base 12</h2>
-            <div class="map-content-box">
-            <p>         Base 12
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Hagersville</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #16 SFTS
+                            <br>
+                            <br>
+                            This training base was a SFTS - Service Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-12-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A12-Hagersville,16SFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A12-MOBILE-Hagersville,16SFTS.png" alt="picture of Hagersville training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-13">
-            <h2>Base 13</h2>
-            <div class="map-content-box">
-            <p>         Base 13
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Dunnville</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #6 SFTS
+                            <br>
+                            <br>
+                            This training base was a SFTS - Service Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-13-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A13-Dunville6SFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A13-MOBILE-Dunville6SFTS.png" alt="picture of Dunnville training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-14">
-            <h2>Base 14</h2>
-            <div class="map-content-box">
-            <p>         Base 14
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>St. Catharines</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #9 EFTS
+                            <br>
+                            <br>
+                            This training base was a EFTS - Elementary Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-14-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A14-StCatharines9EFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A14-MOBILE-StCatharines9EFTS.png" alt="picture of St. Catharines training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-15">
-            <h2>Base 15</h2>
-            <div class="map-content-box">
-            <p>         Base 15
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Mount Hope</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            No. 33 Air Navigation School
+                            <br>
+                            <br>
+                            #10 EFTS
+                            <br>
+                            <br>
+                            This training base was an EFTS - Elementary Flying Training School!
+                            <br>
+                            <br>
+                            #1 Wireless School
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-15-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A15-Hamilton_MountHope.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A15-MOBILE-Hamilton_MountHope.png" alt="picture of Mount Hope training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
             <section class="scroll-section" data-target="base-16">
-            <h2>Base 16</h2>
-            <div class="map-content-box">
-            <p>         Base 16
-                <br>
-                <br>    NAME OF BASE
-                <br>
-                <br>    Purpose of base:
-                <br>
-                <br>    Base Details
-                <br>
-                <br>    DETAILS ABOUT BASE(S)</p>
-            <div class="map-image"></div>
-            </div>
+                <h2>Brantford</h2>
+
+                <div class="scroll-flex-con">
+                    <div class="map-content-box">
+                        <p>
+                            #5 SFTS
+                            <br>
+                            <br>
+                            This training base was a SFTS - Service Flying Training School!
+                        </p>
+                    </div>
+
+                    <div class="map-image-box" id="base-16-image">
+
+                        <picture class="map-image-con">
+                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A16-Brantford_5SFTS.png">
+
+                            <img class="map-image" src="/images/Training_Bases/mobile/A16-MOBILE-Brantford_5SFTS.png" alt="picture of Brantford training base">
+                        </picture>
+
+                    </div>
+                </div>
             </section>
 
         </div>
