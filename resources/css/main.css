@@ -1880,6 +1880,8 @@ p.typewriter-quote {
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 80vh;
+  background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
@@ -1993,6 +1995,23 @@ p.typewriter-quote {
 
 #oct-tag {
   left: 50%;
+}
+
+.big-red {
+  margin-top: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B3262E;
+  height: 20vh;
+}
+.big-red .big-red-text {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
 }
 
 @media screen and (min-width: 768px) {

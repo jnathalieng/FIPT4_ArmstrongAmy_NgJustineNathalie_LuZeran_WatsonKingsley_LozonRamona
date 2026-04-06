@@ -78,6 +78,9 @@ p.typewriter-quote {
     flex-direction: column;
     align-items: center;
     position: relative;
+    height: 80vh;
+
+    background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
@@ -203,23 +206,25 @@ p.typewriter-quote {
     left: 50%;
 }
 
-// .big-red {
-//     position: relative;
-//     z-index: 130;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: a.$primary-color;
-//     height:100px;
-//     .big-red-text {
-//         text-align: center;
-//         font-size: 25px;
-//         padding: 10px 0px;
-//         border-top: solid 2px white;
-//         border-bottom: solid 2px white;
-//     }
-// }
+.big-red {
+
+    margin-top: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: a.$primary-color;
+    height: 20vh;
+
+    .big-red-text {
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem 0;
+        border-top: solid 2px white;
+        border-bottom: solid 2px white;
+    }
+}
 
 // .deaths-section {
 //     position: relative;
