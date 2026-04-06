@@ -1,5 +1,44 @@
+@use '../abstracts/variables' as a;
+
 $t-time: all 0.3s ease;
 $scale-up: scale(110%);
 $scale-down: scale(90%);
 
 $borderrad: 2rem;
+
+
+// ============================================================
+// MIXINS
+// ============================================================
+
+@mixin col-title {
+    font-family: a.$footer-font-heading;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-bottom: 2px solid a.$divider;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+
+@mixin col-subtitle {
+    font-size: 0.72rem;
+    opacity: 0.72;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+@mixin nav-link {
+    color: a.$footer-color;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 400;
+    opacity: 0.88;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
+}
