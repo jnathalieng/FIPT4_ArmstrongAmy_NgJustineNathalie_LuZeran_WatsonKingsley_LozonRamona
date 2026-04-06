@@ -3,6 +3,20 @@
 @use '../abstracts/variables' as v;
 @use '../base/typography';
 
-main {
-    min-height: 100vw;
+
+.blog-card {
+    background-color: v.$secondary-color;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10vw;
+    cursor: pointer;
 }
+
+// .excerpt {
+
+// }
+
+// .date {
+
+// }

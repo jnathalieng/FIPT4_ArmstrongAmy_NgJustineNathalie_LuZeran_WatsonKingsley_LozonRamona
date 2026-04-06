@@ -29,4 +29,3 @@ Route::get('/galleries', [GalleryController::class, 'index']);
 Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
 Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::get('/blogs', [BlogController::class, 'index']);
-Route::get('/blogs/{slug}', [BlogController::class, 'show']);

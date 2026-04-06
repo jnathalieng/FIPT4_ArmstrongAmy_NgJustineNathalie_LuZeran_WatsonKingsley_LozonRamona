@@ -12,7 +12,7 @@ class BlogController extends Controller
     }
 
     public function show(Blog $blog) {
-        return view('blog-post', ['blog' => '$blog']);
+        return view('blog-post', ['blog' => $blog]);
     }
 
     public function getLatest(){

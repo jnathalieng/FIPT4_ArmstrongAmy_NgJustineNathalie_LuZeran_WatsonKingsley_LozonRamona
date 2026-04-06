@@ -73,3 +73,5 @@ Route::get('/gallery', function () {
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
+
+Route::get('/blogs/{slug}', [BlogController::class, 'show']);
