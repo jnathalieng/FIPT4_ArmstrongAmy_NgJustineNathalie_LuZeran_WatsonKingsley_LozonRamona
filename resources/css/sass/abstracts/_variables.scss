@@ -10,6 +10,7 @@ $accent-color: #FFC000;
 $black: #000;
 $white: #fff;
 
+$shadow: -4px -4px 8px rgb(0, 0, 0, 0.15);
 $body-text-color: #ffffff;
 $menu-element-color: rgb(37, 37, 37);
 $dark-background: #3c3c3c;
@@ -44,3 +45,11 @@ $search-border:       rgba(255, 255, 255, 0.4);
 
 $bp-tablet:           1024px;
 $bp-mobile:           600px;
+
+// TYPEWRITTER FONT
+@font-face {
+    font-family: 'typewriter';
+    src: url(/public/fonts/SpecialElite-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
