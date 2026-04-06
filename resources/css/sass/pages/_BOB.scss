@@ -85,7 +85,7 @@
 
     position: absolute;
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -208,7 +208,7 @@
 
 #september {
     z-index: 60;
-    top: 40;
+    top: 40vh;
 }
 
 #october {
@@ -243,7 +243,7 @@
 
 #cover.hideCover {
     opacity: 0;
-    transform: translate(-100, -100);
+    transform: translate(-100%, -100%);
 }
 // #cover {
 //     display: none;
@@ -269,6 +269,25 @@
 }
 #oct-tag {
     left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .dossier-tag {
+        width: 20vw;
+    }
+
+    #july-tag {
+        left: 10%;
+    }
+    #aug-tag {
+        left: 30%;
+    }
+    #sept-tag {
+        left: 50%;
+    }
+    #oct-tag {
+        left: 70%;
+    }
 }
 // #july-tag {
 //     left: 5%;

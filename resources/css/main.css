@@ -1872,7 +1872,7 @@ footer .footer-closing-text p {
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   position: absolute;
   width: 100vw;
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1940,7 +1940,7 @@ footer .footer-closing-text p {
 
 #september {
   z-index: 60;
-  top: 40;
+  top: 40vh;
 }
 
 #october {
@@ -1960,7 +1960,7 @@ footer .footer-closing-text p {
 
 #cover.hideCover {
   opacity: 0;
-  transform: translate(-100, -100);
+  transform: translate(-100%, -100%);
 }
 
 #july-tag {
@@ -1979,6 +1979,23 @@ footer .footer-closing-text p {
   left: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .dossier-tag {
+    width: 20vw;
+  }
+  #july-tag {
+    left: 10%;
+  }
+  #aug-tag {
+    left: 30%;
+  }
+  #sept-tag {
+    left: 50%;
+  }
+  #oct-tag {
+    left: 70%;
+  }
+}
 #bases-page {
   color: white;
   overflow-x: hidden;
