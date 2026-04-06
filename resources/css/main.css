@@ -1869,6 +1869,18 @@ footer .footer-closing-text p {
   padding-top: 20vh;
 }
 
+.dossier {
+  background-image: url(/public/images/BOB-images/folder-texture.png);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
+}
+
 #bases-page {
   color: white;
   overflow-x: hidden;
