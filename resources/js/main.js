@@ -12,7 +12,7 @@ import { createApp } from 'vue';
 // Training Bases
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapContentSlide } from "./modules/mapContentSlide.js";
-
+import { footerSearch } from "./modules/footer.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
 
@@ -105,4 +105,5 @@ else if(document.body.dataset.page === "blog-post") {
     const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
     const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
     app.mount('#blog-post-app');
+    footerSearch();
 }
