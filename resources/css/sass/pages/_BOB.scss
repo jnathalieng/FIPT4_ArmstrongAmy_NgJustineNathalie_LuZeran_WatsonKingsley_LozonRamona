@@ -1,5 +1,9 @@
 @use '../abstracts' as a;
 
+#BOB-page {
+    overflow-x: hidden;
+}
+
 #BOB-hero {
     
     // unique gradient for BOB
@@ -126,15 +130,7 @@ p.typewriter-quote {
 
     &:hover {
         box-shadow: -8px -8px 16px rgb(0, 0, 0, 0.25);
-    }
-
-    &:nth-child(odd):hover {
-        transform: translateY(-50vh) translateX(-2vw);
-        
-    }
-
-    &:nth-child(even):hover {
-        transform: translateY(-50vh) translateX(2vw);
+        transform: translateY(-40vh);
     }
 }
 
@@ -187,21 +183,6 @@ p.typewriter-quote {
     }
 }
 
-// #cover {
-//     display: none;
-//     background-color: transparent;
-//     z-index: 70;
-//     position: absolute;
-//     opacity: 1;
-//     transition: a.$t-time;
-//     transform: translate(0, 0);
-// }
-
-// #cover.hideCover {
-//     opacity: 0;
-//     transform: translate(100%);
-// }
-
 #july-tag {
     left: 5%;
 }
@@ -229,6 +210,7 @@ p.typewriter-quote {
 
     background-color: a.$primary-color;
     height: 20vh;
+    width: 100vw;
 
     .big-red-text {
         text-align: center;
@@ -239,31 +221,28 @@ p.typewriter-quote {
     }
 }
 
-// .deaths-section {
-//     position: relative;
-//     z-index: 120;
-//     background-image: url(../../images/BOB-images/desktop/d-bob-losses-bg.png);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: top;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
+.deaths-section {
+    position: relative;
 
-//     h2, p {
-//         width: 90vw;
-//         margin-top: 20px;
-//         font-size: 20px;
-//     }
+    background-image: linear-gradient(to bottom, #00000000, #000000FF), url(/public/images/BOB-images/desktop/d-bob-hero.png);
 
-//     p {
-//         font-size: 20px;
-//         width: 90vw;
-//         margin-top: 10px;
-//         margin-bottom: 10px;
-//     }
-// }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deaths-info-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deaths-info {
+    flex: 1;
+    background-color: red;
+}
 
 // .deaths-info-con {
 //     text-align: left;
@@ -491,7 +470,7 @@ p.typewriter-quote {
     }
 
     .dossier-content {
-        padding: 10rem 8rem;
+        padding: 10rem 8rem 40vh 8rem;
     }
 
     .dossier-tag {

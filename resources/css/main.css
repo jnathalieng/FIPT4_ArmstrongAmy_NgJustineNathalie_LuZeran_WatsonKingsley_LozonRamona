@@ -1820,6 +1820,10 @@ footer .footer-closing-text p {
     background-image: url("/images/hero-images/desktop/AboutHero_Desktop.png");
   }
 }
+#BOB-page {
+  overflow-x: hidden;
+}
+
 #BOB-hero .hero-title-con {
   background: linear-gradient(to bottom, #000000, black);
   backdrop-filter: blur(50px);
@@ -1921,12 +1925,7 @@ p.typewriter-quote {
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
-}
-.dossier-content:nth-child(odd):hover {
-  transform: translateY(-50vh) translateX(-2vw);
-}
-.dossier-content:nth-child(even):hover {
-  transform: translateY(-50vh) translateX(2vw);
+  transform: translateY(-40vh);
 }
 
 .dossier-tag {
@@ -2002,6 +2001,7 @@ p.typewriter-quote {
   justify-content: center;
   background-color: #B3262E;
   height: 20vh;
+  width: 100vw;
 }
 .big-red .big-red-text {
   text-align: center;
@@ -2009,6 +2009,27 @@ p.typewriter-quote {
   padding: 1rem 0;
   border-top: solid 2px white;
   border-bottom: solid 2px white;
+}
+
+.deaths-section {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(/public/images/BOB-images/desktop/d-bob-hero.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deaths-info-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deaths-info {
+  flex: 1;
+  background-color: red;
 }
 
 @media screen and (min-width: 768px) {
@@ -2026,7 +2047,7 @@ p.typewriter-quote {
     height: 210vh;
   }
   .dossier-content {
-    padding: 10rem 8rem;
+    padding: 10rem 8rem 40vh 8rem;
   }
   .dossier-tag {
     font-size: 2rem;
