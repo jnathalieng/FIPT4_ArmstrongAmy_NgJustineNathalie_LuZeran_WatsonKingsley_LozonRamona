@@ -71,41 +71,18 @@
     align-items: center;
 
     position: relative;
-<<<<<<< Updated upstream
-    background-image: url(public/images/BOB-images/folder-texture.png);
+    background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
 .dossier {
-    background-image: url(public/images/BOB-images/folder-texture.png);
-=======
-<<<<<<< Updated upstream
-    background-image: url(/images/BOB-images/folder-texture.png);
-}
-
-.dossier {
-    background-image: url(../../images/BOB-images/folder-texture.png);
-=======
-    background-color: red;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // height: 150px;
-    // background-color: transparent;
-    // padding-top: 40px;
-    // position: relative;
-    // background-image: url(public/images/BOB-images/folder-texture.png);
-}
-
-.dossier {
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     text-align: center;
     box-shadow: -2px -2px 4px rgb(0, 0, 0, 0.15);
     position: absolute;
     width: 100vw;
     height: fit-content;
     text-align: left;
-    
+    cursor: pointer;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,6 +90,17 @@
     background-image: url(/public/images/BOB-images/folder-texture.png);
     background-repeat: repeat;
     background-position: center;
+
+    transition: a.$t-time;
+    transform: translateY(0);
+}
+
+.dossier:hover {
+    transform: translateY(-10vh);
+}
+
+.dossier:hover ~ .dossier {
+    transform: translateY(10vh);
 }
 // .dossier {
 //     background-image: url(public/images/BOB-images/folder-texture.png);
@@ -151,12 +139,8 @@
 // transition: all 0.5s ease;
 // }
 
-// .dossier:hover ~ .dossier {
-// transform: translateY(30px);
-// transition: all 0.5s ease;
-// }
 
-<<<<<<< Updated upstream
+
 .dossier-tag {
     position: absolute;
     box-shadow: -5px -5px 5px black;
@@ -172,23 +156,6 @@
     text-align: center;
     padding-top: 5px;
 }
-=======
-// .dossier-tag {
-//     position: absolute;
-//     box-shadow: -5px -5px 5px black;
-//     height: 40px; 
-//     width: 150px;
-//     left: 20px;
-//     padding: 0 1rem 0 1rem;
-//     border-radius: 1rem 1rem 0 0;
-//     background-image: url(public/images/BOB-images/folder-texture.png);
-//     top: -40px;
-//     font-size: 20px;
-//     color: black;
-//     text-align: center;
-//     padding-top: 5px;
-// }
->>>>>>> Stashed changes
 
 // #july {
 //     z-index: 50;
