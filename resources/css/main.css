@@ -847,6 +847,10 @@ footer .footer-closing-text p {
   clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
 }
 
+.hero-video-section {
+  position: relative;
+}
+
 .hero-section-video {
   z-index: -1;
   object-fit: cover;
@@ -3012,4 +3016,4 @@ main {
 .ibox-f5 {
   grid-column: 4/span 7;
   grid-row: 10;
-}
+}/*# sourceMappingURL=main.css.map */

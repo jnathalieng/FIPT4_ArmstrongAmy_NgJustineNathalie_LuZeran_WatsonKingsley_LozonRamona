@@ -131,7 +131,7 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero-section" id="commemoration-hero">
+        <section class="hero-video-section" id="commemoration-hero">
             
             <h2 class="hidden">Commemoration hero section</h2>
 

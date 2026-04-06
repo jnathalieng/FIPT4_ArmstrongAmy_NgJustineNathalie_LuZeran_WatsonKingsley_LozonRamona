@@ -48,7 +48,12 @@
         // }
     }
 
+.hero-video-section {
+    position: relative;
+}
+
 .hero-section-video {
+    
     z-index: -1;
     // margin-top: 12.5vh;
     object-fit: cover;
