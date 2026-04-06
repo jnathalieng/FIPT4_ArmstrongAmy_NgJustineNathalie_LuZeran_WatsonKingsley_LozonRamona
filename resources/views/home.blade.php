@@ -80,10 +80,15 @@
         </nav>
 
         <!-- mobile hamburger menu -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="hamburger-bar">
+            <a href="{{ route('home') }}" class="ham-logo-con">
+                <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <nav class="hamburger-nav">

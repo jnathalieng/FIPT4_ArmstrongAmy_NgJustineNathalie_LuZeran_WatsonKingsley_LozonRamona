@@ -86,6 +86,26 @@ a {
   display: none;
 }
 
+.hamburger-bar {
+  display: flex;
+  align-items: center;
+  background-color: #B3262E;
+  width: 100%;
+  height: 12.5vh;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.25), 4px 0 16px rgba(0, 0, 0, 0.25);
+}
+
+.ham-logo-con {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.ham-logo-con img {
+  height: 10vh;
+  object-fit: contain;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -217,7 +237,7 @@ a {
   padding: 5% 20%;
   font-size: 1rem;
   color: #B3262E;
-  width: 100%;
+  width: 90%;
   margin: auto;
   transform-origin: left;
   transition: all 0.3s ease;
@@ -232,7 +252,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .hamburger {
+  .hamburger, .hamburger-bar {
     display: none;
   }
   .hamburger-nav {
