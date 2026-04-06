@@ -223,7 +223,7 @@ a {
   transform: translateX(10%);
 }
 .mobile-nav-item:active {
-  color: #FFC000;
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -334,6 +334,9 @@ a {
   }
   .dropdown-anchor:active {
     font-size: 100%;
+  }
+  #history-nav {
+    cursor: default;
   }
 }
 #hero-selection {
