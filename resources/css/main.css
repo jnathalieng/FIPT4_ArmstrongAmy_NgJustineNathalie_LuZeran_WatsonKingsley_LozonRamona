@@ -484,9 +484,9 @@ a {
   flex-direction: column;
 }
 #main-footer #footer-inner #footer-logo #footer-logo-img {
-  width: 80px;
+  width: 80%;
   height: auto;
-  margin-bottom: 14px;
+  margin: auto;
 }
 #main-footer #footer-inner #footer-logo #footer-logo-name {
   font-family: "Montserrat", sans-serif;
@@ -504,6 +504,7 @@ a {
   text-transform: uppercase;
   opacity: 0.8;
   margin-bottom: 16px;
+  margin-top: 2.5vh;
 }
 #main-footer #footer-inner #footer-logo #footer-logo-url {
   color: #ffffff;
