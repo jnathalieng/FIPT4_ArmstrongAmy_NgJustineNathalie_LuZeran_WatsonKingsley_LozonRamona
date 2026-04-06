@@ -1800,6 +1800,10 @@ a {
     background-image: url("/images/hero-images/desktop/AboutHero_Desktop.png");
   }
 }
+#BOB-page {
+  overflow-x: hidden;
+}
+
 #BOB-hero .hero-title-con {
   background: linear-gradient(to bottom, #000000, black);
   backdrop-filter: blur(50px);
@@ -1860,7 +1864,7 @@ p.typewriter-quote {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 80vh;
+  height: 160vh;
   background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
@@ -1869,13 +1873,13 @@ p.typewriter-quote {
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease;
   transform: translateY(0);
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
 .dossier:hover {
@@ -1901,12 +1905,7 @@ p.typewriter-quote {
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
-}
-.dossier-content:nth-child(odd):hover {
-  transform: translateY(-50vh) translateX(-2vw);
-}
-.dossier-content:nth-child(even):hover {
-  transform: translateY(-50vh) translateX(2vw);
+  transform: translateY(-40vh);
 }
 
 .dossier-tag {
@@ -1947,18 +1946,11 @@ p.typewriter-quote {
 }
 
 #cover {
-  display: none;
-  background-color: transparent;
   z-index: 70;
-  position: absolute;
-  opacity: 1;
-  transition: all 0.3s ease;
-  transform: translate(0, 0);
+  top: 80vh;
 }
-
-#cover.hideCover {
-  opacity: 0;
-  transform: translate(-100%, -100%);
+#cover:hover {
+  transform: none;
 }
 
 #july-tag {
@@ -1977,14 +1969,19 @@ p.typewriter-quote {
   left: 50%;
 }
 
+#cover-tag {
+  width: 60vw;
+}
+
 .big-red {
-  margin-top: 80vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #B3262E;
   height: 20vh;
+  width: 100vw;
 }
 .big-red .big-red-text {
   text-align: center;
@@ -1994,9 +1991,43 @@ p.typewriter-quote {
   border-bottom: solid 2px white;
 }
 
+.deaths-section {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(/public/images/BOB-images/desktop/d-bob-hero.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deaths-info-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deaths-info {
+  flex: 1;
+  background-color: red;
+}
+
 @media screen and (min-width: 768px) {
+  .BOB-intro-section {
+    padding: 30vh 8rem;
+  }
+  h3.typewriter-quote {
+    font-size: 5rem;
+  }
+  p.typewriter-quote {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  .dossier-con {
+    height: 210vh;
+  }
   .dossier-content {
-    padding: 10rem 8rem;
+    padding: 10rem 8rem 40vh 8rem;
   }
   .dossier-tag {
     font-size: 2rem;
@@ -2014,15 +2045,8 @@ p.typewriter-quote {
   #oct-tag {
     left: 70%;
   }
-  .BOB-intro-section {
-    padding: 30vh 8rem;
-  }
-  h3.typewriter-quote {
-    font-size: 5rem;
-  }
-  p.typewriter-quote {
-    font-size: 1.25rem;
-    font-weight: normal;
+  #cover-tag {
+    width: 50vw;
   }
 }
 #bases-page {
