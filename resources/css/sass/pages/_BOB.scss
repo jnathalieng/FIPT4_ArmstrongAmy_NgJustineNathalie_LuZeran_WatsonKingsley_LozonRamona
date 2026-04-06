@@ -81,7 +81,7 @@
 // }
 .dossier {
     background-image: url(/public/images/BOB-images/folder-texture.png);
-    box-shadow: 4px 4px 8px a.$shadow;
+    box-shadow: a.$shadow;
 
     position: absolute;
     width: 100vw;
@@ -122,7 +122,7 @@
     color: a.$black;
     width: 80%;
     font-size: 1rem;
-    box-shadow: 2px 2px 4px a.$shadow;
+    box-shadow: a.$shadow;
     transition: a.$t-time;
     transform: translate(0, 0);
 
@@ -133,7 +133,7 @@
     padding: 2rem;
 
     &:hover {
-        box-shadow: 8px 8px 16px a.$shadow;
+        box-shadow: -8px -8px 16px rgb(0, 0, 0, 0.25);
     }
 
     &:nth-child(odd):hover {
@@ -169,6 +169,7 @@
     padding: 0 2rem;
     background-image: url(/public/images/BOB-images/folder-texture.png);
     border-radius: 1rem 1rem 0 0;
+    box-shadow: a.$shadow;
     color: a.$black;
     text-align: center;
     font-size: 2rem;
@@ -194,7 +195,7 @@
 // }
 #july {
     z-index: 50;
-    top: -40vh;
+    top: 0;
 }
 // #july {
 //     z-index: 50;
@@ -202,17 +203,17 @@
 // }
 #august {
     z-index: 55;
-    top: -20vh;
+    top: 20vh;
 }
 
 #september {
     z-index: 60;
-    top: 0;
+    top: 40;
 }
 
 #october {
     z-index: 65;
-    top: 20vh;
+    top: 60vh;
 }
 // #august {
 //     z-index: 55;
@@ -230,7 +231,20 @@
 //     top: 100px;
 // }
 
+#cover {
+    display: none;
+    background-color: transparent;
+    z-index: 70;
+    position: absolute;
+    opacity: 1;
+    transition: a.$t-time;
+    transform: translate(0, 0);
+}
 
+#cover.hideCover {
+    opacity: 0;
+    transform: translate(-100, -100);
+}
 // #cover {
 //     display: none;
 //     background-color: transparent;
@@ -244,7 +258,18 @@
 //     opacity: 0;
 //     transform: translateY(100%);
 // }
-
+#july-tag {
+    left: 5%;
+}
+#aug-tag {
+    left: 20%;
+}
+#sept-tag {
+    left: 35%;
+}
+#oct-tag {
+    left: 50%;
+}
 // #july-tag {
 //     left: 5%;
 //     z-index: 5;
