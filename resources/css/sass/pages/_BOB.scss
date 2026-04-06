@@ -140,44 +140,72 @@
 // }
 
 
-
 .dossier-tag {
     position: absolute;
-    box-shadow: -5px -5px 5px black;
-    height: 40px; 
-    width: 150px;
-    left: 20px;
-    padding: 0 1rem 0 1rem;
-    border-radius: 1rem 1rem 0 0;
-    background-image: url(public/images/BOB-images/folder-texture.png);
-    top: -40px;
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    padding-top: 5px;
-}
+    
+    height: 10vh;
+    width: 40vw;
 
+    border-radius: 1rem 1rem 0 0;
+    background-image: url(/public/images/BOB-images/folder-texture.png);
+    box-shadow: 2px 0 4px rgb(0, 0, 0, 0.15);
+    
+    color: a.$black;
+    font-size: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+// .dossier-tag {
+//     position: absolute;
+//     box-shadow: -5px -5px 5px black;
+//     height: 40px; 
+//     width: 150px;
+//     left: 20px;
+//     padding: 0 1rem 0 1rem;
+//     border-radius: 1rem 1rem 0 0;
+//     background-image: url(public/images/BOB-images/folder-texture.png);
+//     top: -40px;
+//     font-size: 20px;
+//     color: black;
+//     text-align: center;
+//     padding-top: 5px;
+// }
+
+#july {
+    z-index: 50;
+    top: -20vh;
+}
 // #july {
 //     z-index: 50;
 //     top: -80px;
 // }
-
+#august {
+    z-index: 55;
+    top: 0;
+}
 // #august {
 //     z-index: 55;
 //     top:-20px;
-
 // }
-
+#september {
+    z-index: 60;
+    top: 20vh;
+}
 // #september {
 //     z-index: 60;
 //     top: 40px;
 // }
-
+#october {
+    z-index: 65;
+    top: 40vh;
+}
 // #october {
 //     z-index: 65;
 //     top: 100px;
 // }
-
 
 // #cover {
 //     display: none;

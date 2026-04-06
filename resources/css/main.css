@@ -1877,18 +1877,37 @@ footer .footer-closing-text p {
 
 .dossier-tag {
   position: absolute;
-  box-shadow: -5px -5px 5px black;
-  height: 40px;
-  width: 150px;
-  left: 20px;
-  padding: 0 1rem 0 1rem;
+  height: 10vh;
+  width: 40vw;
   border-radius: 1rem 1rem 0 0;
-  background-image: url(public/images/BOB-images/folder-texture.png);
-  top: -40px;
-  font-size: 20px;
-  color: black;
+  background-image: url(/public/images/BOB-images/folder-texture.png);
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.15);
+  color: #000;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 5px;
+}
+
+#july {
+  z-index: 50;
+  top: -20vh;
+}
+
+#august {
+  z-index: 55;
+  top: 0;
+}
+
+#september {
+  z-index: 60;
+  top: 20vh;
+}
+
+#october {
+  z-index: 65;
+  top: 40vh;
 }
 
 #bases-page {
