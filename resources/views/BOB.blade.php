@@ -12,15 +12,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+<<<<<<< dev.ng.navbar
+    <!--Gsap-->
+=======
     <!-- GSAP LINKING -->
+>>>>>>> main
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 </head>
-<body data-page="BOB" id="BOB-page">
+<body data-page="home">
 
     <header class="header">
+<<<<<<< dev.ng.navbar
+    <!-- navbar -->
+=======
         <!-- navbar -->
+>>>>>>> main
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -71,6 +79,7 @@
                 </li>
             </ul>
         </nav>
+<<<<<<< dev.ng.navbar
 
         <!-- mobile hamburger menu -->
         <div class="hamburger">
@@ -79,6 +88,16 @@
             <span></span>
         </div>
 
+=======
+
+        <!-- mobile hamburger menu -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+>>>>>>> main
         <nav class="hamburger-nav">
             <ul>
                 <li>
