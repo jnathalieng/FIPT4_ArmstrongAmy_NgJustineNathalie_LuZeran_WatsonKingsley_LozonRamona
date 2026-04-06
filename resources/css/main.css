@@ -557,10 +557,10 @@ a {
 #main-footer #footer-inner #footer-explore #footer-explore-top #footer-search {
   display: flex;
   align-items: center;
+  position: relative;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 3px;
-  overflow: hidden;
 }
 #main-footer #footer-inner #footer-explore #footer-explore-top #footer-search #footer-search-input {
   background: transparent;
@@ -588,6 +588,45 @@ a {
 }
 #main-footer #footer-inner #footer-explore #footer-explore-top #footer-search #footer-search-btn:hover {
   opacity: 1;
+}
+#main-footer #footer-inner #footer-explore .search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 10000;
+}
+#main-footer #footer-inner #footer-explore .search-results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#main-footer #footer-inner #footer-explore .search-results-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+#main-footer #footer-inner #footer-explore .search-results-list li:last-child {
+  border-bottom: none;
+}
+#main-footer #footer-inner #footer-explore .search-results-list a {
+  text-decoration: none;
+  color: #B3262E;
+  display: block;
+}
+#main-footer #footer-inner #footer-explore .search-results-list a:hover {
+  color: #0066cc;
+  font-weight: 500;
+}
+#main-footer #footer-inner #footer-explore .search-no-results {
+  padding: 10px;
+  text-align: center;
+  color: #999;
 }
 #main-footer #footer-inner #footer-explore #footer-community .footer-col-title {
   font-family: "Montserrat", sans-serif;

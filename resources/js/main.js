@@ -1,6 +1,5 @@
 import { navbar_showhide } from "./modules/hamburger.js";
 import { navDropDown } from "./modules/navDropDown.js";
-
 import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
@@ -8,19 +7,14 @@ import commFour from "./modules/comm-four.js";
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import { createApp } from 'vue';
-
-// Training Bases
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapContentSlide } from "./modules/mapContentSlide.js";
 import { footerSearch } from "./modules/footer.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
-
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
-
 import { videoQuery } from "./modules/hpVideoQuery.js";
-
 import { tlImgTextReveal } from "./modules/tlImgTextReveal.js";
 import { tlShowSticky } from "./modules/tlShowSticky.js";
 import { tlScrollProgress } from "./modules/tlScrollProgress.js";
@@ -29,6 +23,7 @@ import { tlScrollTo } from "./modules/tlScrollTo.js";
 
 navbar_showhide();
 navDropDown();
+footerSearch();
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
@@ -105,5 +100,4 @@ else if(document.body.dataset.page === "blog-post") {
     const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
     const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
     app.mount('#blog-post-app');
-    footerSearch();
 }
