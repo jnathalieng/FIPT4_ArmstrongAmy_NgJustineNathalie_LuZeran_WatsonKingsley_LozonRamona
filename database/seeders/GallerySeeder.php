@@ -15,21 +15,12 @@ class GallerySeeder extends Seeder
     public function run(): void
     {
 
-        $homepage = Gallery::create([
-        'slug' => 'homepage-images',
-        'title' => 'homepage-images',
+        $museum = Gallery::create([
+        'slug' => 'Museum-images',
+        'title' => 'Museum-images',
         'subtitle' => 'images from the homepage',
         'description' => 'all of these images you can find in the homepage',
-        'folder_path' => 'homepage-images',
-        'order' => 1
-        ]);
-
-        $about = Gallery::create([
-        'slug' => 'about-images',
-        'title' => 'about-images',
-        'subtitle' => 'images from the about page',
-        'description' => 'all of these images you can find in the about page',
-        'folder_path' => 'about-images',
+        'folder_path' => 'Museum',
         'order' => 1
         ]);
 
@@ -44,7 +35,7 @@ class GallerySeeder extends Seeder
 
         $timeline = Gallery::create([
         'slug' => 'timeline',
-        'title' => 'The Museum',
+        'title' => 'Timeline',
         'subtitle' => 'A Journey Through Time',
         'description' => 'Historical images documenting London\'s aviation history...',
         'folder_path' => 'general-images',
@@ -53,7 +44,7 @@ class GallerySeeder extends Seeder
         
         $bob = Gallery::create([
         'slug' => 'battle-of-britain',
-        'title' => 'The Museum',
+        'title' => 'The Battle of Britain',
         'subtitle' => 'A Journey Through Time',
         'description' => 'Historical images documenting London\'s aviation history...',
         'folder_path' => 'general-images',
@@ -79,35 +70,88 @@ class GallerySeeder extends Seeder
 
         ]);
 
-        //About images
+        //Museum images
 
         GalleryImage::create([
-            'gallery_id' => $about->id,
-            'filename_desktop' => 'AboutHero_Desktop.png',
-            'filename_mobile' => 'AboutHero_Mobile.png',
-            'folder_path' => 'about-images',
-            'alt_text' => 'Main image on the about Page',
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'biplane-model-d.png',
+            'filename_mobile' => 'biplane-model-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'A Model Biplane in the Museum',
             'order' => 1
         ]);
 
         GalleryImage::create([
-            'gallery_id' => $about->id,
-            'filename_desktop' => 'LondonAirAge_Desktop.png',
-            'filename_mobile' => 'LondonAirAge_Mobile.png',
-            'folder_path' => 'about-images',
-            'alt_text' => 'london air age',
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'hockey-exhibit-d.png',
+            'filename_mobile' => 'hockey-exhibit-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'A hockey exhibit in the Museum',
             'order' => 2
         ]);
 
         GalleryImage::create([
-            'gallery_id' => $about->id,
-            'filename_desktop' => 'News&Events_Desktop.png',
-            'filename_mobile' => 'News&Events_Mobile.png',
-            'folder_path' => 'about-images',
-            'alt_text' => 'news & Events',
-            'order' => 2
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'hockey-info-d.png',
+            'filename_mobile' => 'hockey-info-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'Information on local hockey history',
+            'order' => 3
         ]);
 
+        GalleryImage::create([
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'LAM-hall-d.png',
+            'filename_mobile' => 'LAM-hall-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'The Hall at the Museum',
+            'order' => 4
+        ]);
+
+        GalleryImage::create([
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'lancaster-receiver-d.png',
+            'filename_mobile' => 'lancaster-receiver-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'The receiver from a Lancaster Bomber',
+            'order' => 5
+        ]);
+
+        GalleryImage::create([
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'medals-d.png',
+            'filename_mobile' => 'medals-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'A collection of medals from the museum',
+            'order' => 6
+        ]);
+
+        GalleryImage::create([
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'owl-plaque-d.png',
+            'filename_mobile' => 'owl-plaque-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'A plaque for the 420 Snowy Owl Squadron',
+            'order' => 7
+        ]);
+
+        GalleryImage::create([
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'spitfire-model-d.png',
+            'filename_mobile' => 'spitfire-model-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'A model of A Spitfire Airplane',
+            'order' => 8
+        ]);
+
+        GalleryImage::create([
+            'gallery_id' => $museum->id,
+            'filename_desktop' => 'wright-brothers-plane-model-d.png',
+            'filename_mobile' => 'wright-brothers-plane-model-m.png',
+            'folder_path' => 'Museum',
+            'alt_text' => 'A model of A Spitfire Airplane',
+            'order' => 9
+        ]);
 
         // Battle of britain images
 
@@ -355,104 +399,104 @@ class GallerySeeder extends Seeder
 
         //homepage images
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-bg-homepage-bob.png', 
-            'filename_mobile' => 'm-bg-homepage-bob.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Battle of Britain image',
-            'order' => 1
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-bg-homepage-bob.png', 
+        //     'filename_mobile' => 'm-bg-homepage-bob.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Battle of Britain image',
+        //     'order' => 1
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-bg-homepage-commemoration.png', 
-            'filename_mobile' => 'm-bg-homepage-commemoration.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Commemoration image',
-            'order' => 2
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-bg-homepage-commemoration.png', 
+        //     'filename_mobile' => 'm-bg-homepage-commemoration.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Commemoration image',
+        //     'order' => 2
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-bg-homepage-history.png', 
-            'filename_mobile' => 'm-bg-homepage-history.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage History image',
-            'order' => 3
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-bg-homepage-history.png', 
+        //     'filename_mobile' => 'm-bg-homepage-history.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage History image',
+        //     'order' => 3
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-bases.png', 
-            'filename_mobile' => 'm-homepage-bases.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Bases image',
-            'order' => 4
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-bases.png', 
+        //     'filename_mobile' => 'm-homepage-bases.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Bases image',
+        //     'order' => 4
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-canteen.png', 
-            'filename_mobile' => 'm-homepage-canteen.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Bases Image',
-            'order' => 5
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-canteen.png', 
+        //     'filename_mobile' => 'm-homepage-canteen.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Bases Image',
+        //     'order' => 5
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-contact.png', 
-            'filename_mobile' => 'm-homepage-contact.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Contact Image',
-            'order' => 6
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-contact.png', 
+        //     'filename_mobile' => 'm-homepage-contact.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Contact Image',
+        //     'order' => 6
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-events.png', 
-            'filename_mobile' => 'm-homepage-events.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Events Image',
-            'order' => 7
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-events.png', 
+        //     'filename_mobile' => 'm-homepage-events.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Events Image',
+        //     'order' => 7
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-flight.png', 
-            'filename_mobile' => 'm-homepage-flight.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage flight Image',
-            'order' => 8
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-flight.png', 
+        //     'filename_mobile' => 'm-homepage-flight.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage flight Image',
+        //     'order' => 8
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-intro.png', 
-            'filename_mobile' => 'm-homepage-intro.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Intro Image',
-            'order' => 9
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-intro.png', 
+        //     'filename_mobile' => 'm-homepage-intro.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Intro Image',
+        //     'order' => 9
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-map.png', 
-            'filename_mobile' => 'm-homepage-map.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage Map Image',
-            'order' => 10
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-map.png', 
+        //     'filename_mobile' => 'm-homepage-map.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage Map Image',
+        //     'order' => 10
+        // ]);
 
-        GalleryImage::create([
-            'gallery_id' => $homepage->id,
-            'filename_desktop' => 'd-homepage-war.png', 
-            'filename_mobile' => 'm-homepage-war.png',
-            'folder_path' => 'homepage-images',
-            'alt_text' => 'Homepage War Image',
-            'order' => 11
-        ]);
+        // GalleryImage::create([
+        //     'gallery_id' => $homepage->id,
+        //     'filename_desktop' => 'd-homepage-war.png', 
+        //     'filename_mobile' => 'm-homepage-war.png',
+        //     'folder_path' => 'homepage-images',
+        //     'alt_text' => 'Homepage War Image',
+        //     'order' => 11
+        // ]);
 
         //Timeline images
 
