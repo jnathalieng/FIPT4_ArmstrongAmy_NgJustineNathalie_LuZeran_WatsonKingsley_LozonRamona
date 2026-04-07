@@ -26,7 +26,7 @@
                 <ul>
                     <li class="desktop-logo-con m-l-nav-item">
                         <a class="desktop-logo" href="{{ route('home') }}">
-                            <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                            <img src="{{ assets('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                         </a>
                     </li>
 
@@ -84,7 +84,7 @@
                 <ul>
                     <li>
                         <a href="{{ route('home') }}" class="logo-con">
-                            <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                            <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                         </a>
                     </li>
                     <li class="nav-separator">
@@ -1041,7 +1041,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ assets('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
@@ -1091,19 +1091,19 @@
                 <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
                 <div id="footer-socials">
                     <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
                     </a>
                     <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
                     </a>
                     <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
                     </a>
                     <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
                     </a>
                     <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
                     </a>
                 </div>
             </div>
