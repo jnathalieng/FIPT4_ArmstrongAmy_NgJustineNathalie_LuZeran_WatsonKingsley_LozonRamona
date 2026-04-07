@@ -192,7 +192,7 @@ ScrollTrigger.create({
             duration: 1,
             scrollTo: {
                 y: "#full-view",
-                ease: "power2.inOut"
+                ease: "none"
             }
         });
     });
