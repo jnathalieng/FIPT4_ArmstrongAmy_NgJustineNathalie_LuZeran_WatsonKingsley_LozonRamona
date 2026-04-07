@@ -8,15 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}') }}">
     <link rel="manifest" href="favicon_io/site.webmanifest">
-<<<<<<< dev.ng.navbar
-    <!--Gsap-->
-=======
     <!-- GSAP LINKING -->
->>>>>>> main
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
@@ -24,16 +20,12 @@
 <body data-page="home">
 
     <header class="header">
-<<<<<<< dev.ng.navbar
-    <!-- navbar -->
-=======
         <!-- navbar -->
->>>>>>> main
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img srcset="images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img srcset="{{ asset(images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -79,7 +71,6 @@
                 </li>
             </ul>
         </nav>
-<<<<<<< dev.ng.navbar
 
         <!-- mobile hamburger menu -->
         <div class="hamburger">
@@ -88,21 +79,11 @@
             <span></span>
         </div>
 
-=======
-
-        <!-- mobile hamburger menu -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
->>>>>>> main
         <nav class="hamburger-nav">
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img srcset="images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img srcset="{{ asset(images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -163,9 +144,9 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-canteen-1920x1080.mp4" type="video/mp4">
+                <source data-desktop="/videos/hero-videos/hero-canteen-1920x1080.mp4') }}" type="video/mp4">
                 
-                <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
+                <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
@@ -309,7 +290,7 @@
                 <h3 class="dossier-tag" id="cover-tag">
                     THE BATTLE OF BRITAIN
                 </h3>
-                <img srcset="{{ asset('images/BOB-images/classified.png" alt="">
+                <img srcset="{{ asset('images/BOB-images/classified.png') }}" alt="">
             </div>
         </div>
 
