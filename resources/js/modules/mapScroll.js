@@ -23,73 +23,109 @@ const svg = document.querySelector("#map");
 const initialViewBox = {x: 0, y: 0, w: 1200, h: 800};
 
 // IntersectionOberserver watches the viewport and detects what "scroll-section" the user is on
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const targetId = entry.target.dataset.target;
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             const targetId = entry.target.dataset.target;
             
-            if (targetId === 'full-view') {
+//             if (targetId === 'full-view') {
 
-                svg.classList.remove('active');
+//                 svg.classList.remove('active');
 
-                // uses the GSAP attr: to animate SVG attributes with more control
+//                 // uses the GSAP attr: to animate SVG attributes with more control
                 
-                gsap.to(svg, {
-                    scale: 1,
-                    duration: 0.5,
-                    ease: "power2.inOut",
-                    attr: {
-                        viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-                    }
-                })
+//                 gsap.to(svg, {
+//                     scale: 1,
+//                     duration: 0.5,
+//                     ease: "power2.inOut",
+//                     attr: {
+//                         viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+//                     }
+//                 })
 
-                // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
+//                 // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
 
-                // svg.classList.remove('active');
+//                 // svg.classList.remove('active');
 
-                // // GSAP zooming out from base
-                // gsap.to(svg, {
-                //     scale: 1,
-                //     duration: 0.5,
-                //     ease: "power2.inOut"
-                // });
+//                 // // GSAP zooming out from base
+//                 // gsap.to(svg, {
+//                 //     scale: 1,
+//                 //     duration: 0.5,
+//                 //     ease: "power2.inOut"
+//                 // });
 
-            } else {
-                svg.classList.add('active');
-                zoomToBase(targetId);
+//             } else {
+//                 svg.classList.add('active');
+//                 zoomToBase(targetId);
 
                 
 
-                // GSAP zooming in to base
-                // gsap.to(svg, {
-                //     scale: 2.5,
-                //     duration: 0.5,
-                //     ease: "power2.inOut"
-                // });
-            } 
-        } else {
-            // GSAP zooming out generally
-            gsap.to(svg, {
-                scale: 1,
-                duration: 0.5,
-                ease: "power2.inOut",
-                attr: {
-                    viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-                }
-            });
-        }
-    });
-}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
+//                 // GSAP zooming in to base
+//                 // gsap.to(svg, {
+//                 //     scale: 2.5,
+//                 //     duration: 0.5,
+//                 //     ease: "power2.inOut"
+//                 // });
+//             } 
+//         } else {
+//             // GSAP zooming out generally
+//             gsap.to(svg, {
+//                 scale: 1,
+//                 duration: 0.5,
+//                 ease: "power2.inOut",
+//                 attr: {
+//                     viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
+//                 }
+//             });
+//         }
+//     });
+// }); 
+// 
+//this means the detector is 'detects' when there the new "scroll-section" is 20% visible
 
-function zoomToBase(targetId) {
+function getZoomedViewBox(targetId) {
     const target = baseCoordinates[targetId];
-
     const zoomLevel = 0.25;
+
     const viewWidth = initialViewBox.w * zoomLevel;
     const viewHeight = initialViewBox.h * zoomLevel;
 
     const viewBoxX = target.x - (viewWidth / 2);
     const viewBoxY = target.y - (viewHeight / 2);
+
+    return `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`;
+}
+
+function resetViewBox() {
+    return `${viewBoxX.x} ${viewBoxY.y} ${viewWidth.w} ${viewHeight.h}`
+}
+
+const fullView = document.querySelector("#full-view");
+
+ScrollTrigger.create({
+    trigger: fullView,
+    start: 'top top',
+    end: 'bottom top',
+    pin: true,
+    onEnter: () => {
+        gsap.to(svg, {
+            duration: 0.5,
+            ease: "power2.inOut",
+            attr: {
+                viewBox: resetViewBox()
+            }
+        });
+    },
+    onEnterBack: () => {
+        gsap.to(svg, {
+            duration: 0.5,
+            ease: "power2.inOut",
+            attr: {
+                viewBox: resetViewBox()
+            }
+        });
+    }
+});
 
     gsap.to(svg, {
         scale: 2,
