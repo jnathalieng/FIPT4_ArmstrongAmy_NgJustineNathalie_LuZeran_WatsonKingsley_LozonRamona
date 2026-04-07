@@ -1,11 +1,15 @@
 export function tlSVG() {
 
     gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(ScrollTo);
+    // gsap.registerPlugin(ScrollTo);
 
     gsap.utils.toArray(".tl-content-break").forEach((section) => {
+        console.log("section found:", section);
+        console.log("svgs found:", section.querySelectorAll("svg"));
         
         const svgs = section.querySelectorAll("svg");
+
+        if (svgs.length === 0) return;
 
         const svgTL = gsap.timeline({
             scrollTrigger: {
@@ -17,12 +21,15 @@ export function tlSVG() {
         });
 
         svgTL.fromTo(svgs, {
-            clipPath: "inset(0 100% 0 0)",            
+            scale: 0,
+            opacity: 0,            
         },
         {
-            clipPath: "inset(0 0 0 0)",
-            duration: 1,
+            scale: 1,
+            opacity: 1,
+            duration: 3,
             ease: "power2.inOut",
+            stagger: 1
         });
     });
 }
