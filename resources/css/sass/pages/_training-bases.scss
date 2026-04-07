@@ -5,6 +5,15 @@
     color: white;
 
     overflow-x: hidden;
+
+    #base-hero, #main-footer {
+        position: relative;
+        z-index: 2;
+    }
+
+    #main-footer {
+        margin-top: 200vh;
+    }
 }
 
 #base-hero-section {

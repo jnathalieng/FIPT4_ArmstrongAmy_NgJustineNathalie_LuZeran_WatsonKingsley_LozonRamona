@@ -2082,6 +2082,13 @@ p.typewriter-quote {
   color: white;
   overflow-x: hidden;
 }
+#bases-page #base-hero, #bases-page #main-footer {
+  position: relative;
+  z-index: 2;
+}
+#bases-page #main-footer {
+  margin-top: 200vh;
+}
 
 #base-hero-section {
   background-image: url("/images/bases-images/map.svg");
