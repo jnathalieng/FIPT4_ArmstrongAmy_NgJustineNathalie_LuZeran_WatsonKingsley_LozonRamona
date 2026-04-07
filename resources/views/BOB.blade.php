@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <!-- GSAP LINKING -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
@@ -25,7 +25,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
                     </a>
                 </li>
 
@@ -83,7 +83,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -290,7 +290,7 @@
                 <h3 class="dossier-tag" id="cover-tag">
                     THE BATTLE OF BRITAIN
                 </h3>
-                <img src="/images/BOB-images/classified.png" alt="">
+                <img srcset="{{ asset('images/BOB-images/classified.png" alt="">
             </div>
         </div>
 
