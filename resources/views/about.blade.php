@@ -12,11 +12,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
+
 </head>
-<body data-page="about">
+<body data-page="home">
 
     <header class="header">
-        <!-- navbar -->
+    <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -122,7 +123,8 @@
                 </li>
             </ul>
         </nav>
-    </header>   
+    </header> 
+
     
 <main>
 
