@@ -37,7 +37,7 @@ function getZoomedViewBox(targetId) {
 }
 
 function resetViewBox() {
-    return `${viewBoxX.x} ${viewBoxY.y} ${viewWidth.w} ${viewHeight.h}`
+    return `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
 }
 
 const fullView = document.querySelector("#full-view");
@@ -90,7 +90,7 @@ ScrollTrigger.create({
                         className: 'activeHeading'
                     }
                 }
-            })
+            });
         }
 
         if (contentBox) {
