@@ -7,7 +7,16 @@ export function tlSVG() {
         
         const svgs = section.querySelectorAll("svg");
 
-        tlSVG.fromTo(svgs, {
+        const svgTL = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+                start: "top 80%",
+                end: "bottom 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+
+        svgTL.fromTo(svgs, {
             clipPath: "inset(0 100% 0 0)",            
         },
         {
