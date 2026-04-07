@@ -1566,6 +1566,10 @@ a {
   height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #date-and-blog-section {
   position: relative;
 }

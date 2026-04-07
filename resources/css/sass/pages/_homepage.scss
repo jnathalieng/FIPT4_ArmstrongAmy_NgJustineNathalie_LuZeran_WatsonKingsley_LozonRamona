@@ -1,5 +1,8 @@
 @use '../abstracts/variables' as v;
 
+body {
+    overflow-x: hidden;
+}
 // D&B Section
 
 #date-and-blog-section {
