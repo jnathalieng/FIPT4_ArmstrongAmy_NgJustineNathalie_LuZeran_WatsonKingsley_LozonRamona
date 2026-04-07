@@ -8,9 +8,10 @@ import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
-import { mapContentSlide } from "./modules/mapContentSlide.js";
+import { mapAnimation } from "./modules/mapAnimation.js";
+import { mapHotSpots } from "./modules/mapHotSpots.js";
 import { footerSearch } from "./modules/footer.js";
-import { dossierOpen } from "./modules/dossierOpen.js";
+// import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
@@ -47,7 +48,8 @@ else if(document.body.dataset.page === "trainingBases") {
     videoQuery();
     
     mapScroll();
-    mapContentSlide();
+    mapAnimation();
+    mapHotSpots();
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
@@ -55,7 +57,7 @@ else if(document.body.dataset.page === "BOB") {
     videoQuery();
     
     typeWriter();
-    dossierOpen();
+    // dossierOpen();
 }
 else if(document.body.dataset.page === "canteen") {
     console.log('drink up!');

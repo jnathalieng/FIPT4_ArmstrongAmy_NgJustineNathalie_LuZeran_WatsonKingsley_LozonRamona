@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
     <!-- GSAP LINKING -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 </head>
-<body data-page="BOB" id="BOB-page">
+<body id="BOB-page" data-page="BOB">
 
     <header class="header">
         <!-- navbar -->
@@ -25,7 +25,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -63,8 +63,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
@@ -83,7 +93,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -144,9 +154,7 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-canteen-1920x1080.mp4" type="video/mp4">
-                
-                <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-canteen-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
@@ -290,7 +298,7 @@
                 <h3 class="dossier-tag" id="cover-tag">
                     THE BATTLE OF BRITAIN
                 </h3>
-                <img src="/images/BOB-images/classified.png" alt="">
+                <img srcset="{{ asset('images/BOB-images/classified.png') }}" alt="">
             </div>
         </div>
 
@@ -348,11 +356,11 @@
             </div>
 
             <div class="deaths-info-bot">
-                <p class="appear-text">
+                <p class="typewriter-quote">
                     “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
                 </p>
 
-                <p class="appear-text">
+                <p class="typewriter-quote">
                     Prime Minister Churchill in the House of Commons, August 15, 1940
                 </p>
 
@@ -376,7 +384,12 @@
                 <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                     <h2 class="pilot-card-name-mobile">ROSS SMITHER</h2>
-                    <div class="pilots-card-img-con" ID="ross-smither"></div>
+                    <div class="pilots-card-img-con" ID="ross-smither">
+                        <picture class="BOB-img-con">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-ross-smither.png') }}">
+                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-ross-smither.png') }}" alt="">
+                        </picture>
+                    </div>
                     <div class="pilots-card-text-con">
 
                     <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
@@ -402,7 +415,12 @@
                 <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">HUGH RILEY</h2>
 
-                    <div class="pilots-card-img-con" id="hugh-riley"></div>
+                    <div class="pilots-card-img-con" id="hugh-riley">
+                        <picture class="BOB-img-con">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-hugh-reilley.png') }}">
+                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-hugh-reilley.png') }}" alt="">
+                        </picture>
+                    </div>
                     <div class="pilots-card-text-con">
                     <h2 class="pilot-card-rank-desk">PILOTOFFICER</h2>
                     <h2 class="pilot-card-name-desk">HUGH RILEY</h2>
@@ -428,7 +446,12 @@
                 <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">ROBERT GRASSICK</h2>
 
-                <div class="pilots-card-img-con" id="robert-grassik"></div>
+                <div class="pilots-card-img-con" id="robert-grassik">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-grassick.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-grassick.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
 
                     <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
@@ -459,7 +482,12 @@
                 <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">NIEL CAMPBELL</h2>
 
-                <div class="pilots-card-img-con" id="niel-campbell"></div>
+                <div class="pilots-card-img-con" id="niel-campbell">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-neil-campbell.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-neil-campbell.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
                     <h2 class="pilot-card-rank-desk">PILOT OFFICER</h2>
                     <h2 class="pilot-card-name-desk">NIEL CAMPBELL</h2>
@@ -486,7 +514,12 @@
                 <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">ROBERT R. SMITH, DFC</h2>
 
-                <div class="pilots-card-img-con" id="robert-smith"></div>
+                <div class="pilots-card-img-con" id="robert-smith">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-smith.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-smith.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
                 <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-desk">ROBERT R. SMITH, DFC</h2>
@@ -547,6 +580,89 @@
 
 
     </main>
+<!-- FOOTER SECTION -->
 
+<footer id="main-footer">
+
+    <div id="footer-inner">
+
+        <div class="footer-col" id="footer-logo">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
+            <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
+            <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
+            <p class="footer-contact-line">Contact: 519-455-0430</p>
+            <p class="footer-contact-line">Email: info@427wing.com</p>
+        </div>
+
+        <div class="footer-col" id="footer-discover">
+            <h3 class="footer-col-title">Discover</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('about') }}">&rarr; About Us</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Remembrance</a></li>
+                <li><a href="{{ route('events') }}">&rarr; News &amp; Events</a></li>
+                <li><a href="{{ route('blog') }}">&rarr; Blog</a></li>
+                <li><a href="{{ route('gallery') }}">&rarr; Gallery</a></li>
+                <li><a href="{{ route('contact') }}">&rarr; Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col" id="footer-legacy">
+            <h3 class="footer-col-title">Our Legacy</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('timeline') }}">&rarr; London Aviation Timeline</a></li>
+                <li><a href="{{ route('training_bases') }}">&rarr; Flight Schools and Training Bases</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Legacy of the Fallen</a></li>
+                <li><a href="{{ route('canteen') }}">&rarr; Airman's Canteen</a></li>
+                <li><a href="{{ route('BOB') }}">&rarr; Battle of Britain</a></li>
+            </ul>
+        </div>
+
+        <!-- COL 4: EXPLORE & JOIN -->
+        <div class="footer-col" id="footer-explore">
+
+            <div id="footer-explore-top">
+                <h3 class="footer-col-title">Explore the Museum</h3>
+                <p class="footer-col-subtitle">Search aircraft, exhibits, and stories of courage.</p>
+                <div id="footer-search">
+                    <input type="text" id="footer-search-input" placeholder="Search here">
+                    <button type="button" id="footer-search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="footer-community">
+                <h3 class="footer-col-title">Join Our Community</h3>
+                <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
+                <div id="footer-socials">
+                    <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
+                    </a>
+                    <a href="https://x.com/" class="social-icon" alt="X / Twitter">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM BAR -->
+    <div id="footer-bottom">
+        <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </div>
+
+</footer>
 </body>
 </html>

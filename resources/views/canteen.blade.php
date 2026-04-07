@@ -8,76 +8,123 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
 <body data-page="canteen" id="canteen-page">
 
     <header class="header">
     <!-- navbar -->
-        <nav>
-                <div id="logo"><a href="{{ route('home') }}" class="hover-item"></a></div>
-                
-                <div class="m-l-nav-item" id="about-nav">
-                <div></div>
-                    <a class="button-text" href="about.html">About</a>
-                </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li class="desktop-logo-con m-l-nav-item">
+                    <a class="desktop-logo" href="{{ route('home') }}">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+                    </a>
+                </li>
 
-                <div class="drop-down-wrap">
-                <div class="button-text m-l-nav-item" id="history-nav">
-                    <div></div>
-                    <a class="button-text history-menu">History</a>
-                </div>
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('home') }}">Home</a>
+                </li>
+
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('about') }}">About</a>
+                </li>
+
+                <li class="m-l-nav-item drop-down-wrap" id="history-nav">
+                    
+                    <a class="nav-anchor">History</a>
+
                     <ul class="dropdown-menu">
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('timeline') }}">London's Air Page</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('training_bases') }}" >Training Bases</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
                         </li>
-                        <li>
-                            <div></div>
-                            <a class="button-text" href="{{ route('comm') }}">Commemoration</a>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
                         </li>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('BOB') }}">Battle of Britain</a>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('events') }}">Events</a>
-                </div>
-                <div class="m-l-nav-item">
-                    <div></div>
-                    <a class="button-text" href="{{ route('contact') }}">Contact</a>
-                </div>
-
-            <!-- mobile hamburger menu -->
-                    <div class="hamburger hover-item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <ul class="hamburger-dropdown">
-                        <li><a class="button-text hover-item" href="{{ route('home') }}">Home</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('about') }}">About</a></li>             
-                        <li><a class="button-text hover-item" href="{{ route('timeline') }}">London's Air Page</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('wartime_experience') }}">Wartime Experiences</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('training_bases') }}">Training Bases</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('comm') }}">Commemoration</a></li>                      
-                        <li><a class="button-text hover-item" href="{{ route('BOB') }}">Battle of Britain</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('events') }}">Events</a></li>
-                        <li><a class="button-text hover-item" href="{{ route('contact') }}">Contact</a></li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
+                        </li>
                     </ul>
+                </li>
 
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
+                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
+                </li>
+            </ul>
         </nav>
-    </header>    
+
+        <!-- mobile hamburger menu -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="hamburger-nav">
+            <ul>
+                <li>
+                    <a href="{{ route('home') }}" class="logo-con">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
+                    </a>
+                </li>
+                <li class="nav-separator">
+
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
+                </li>             
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
 <!-- Canteen Hero Section -->
@@ -85,7 +132,7 @@
         <h1 class="hidden">Airman's Canteen Page</h1>
 
         <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback">
-            <source src="videos/hero-videos/canteen-vid.mp4" type="video/mp4">
+            <source src="{{ asset('videos/hero-videos/hero-canteen-vid.mp4') }}" type="video/mp4">
         </video>
 
     </section>
@@ -105,25 +152,25 @@
             <div class="canteen-gallery-container">
                 <div class="img-con backg">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-paper-1.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-1.png') }}">
                         <!-- NEED MOBILE IMAGES -->
-                        <img class="canteen-gallery-image" src="images/canteen-images/desktop/d-airmans-paper-1.png" alt="image of newsletters">
+                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-1.png') }}" alt="image of newsletters">
                     </picture>
                 </div>
 
                 <div class="img-con foreg">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-paper-2.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-2.png') }}">
                         <!-- NEED MOBILE IMAGES -->
-                        <img class="canteen-gallery-image" src="images/canteen-images/desktop/d-airmans-paper-2.png" alt="image of newsletters">
+                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-2.png') }}" alt="image of newsletters">
                     </picture>
                 </div>
 
                 <div class="img-con backg">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-paper-3.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}">
                         <!-- NEED MOBILE IMAGES -->
-                        <img class="canteen-gallery-image" src="images/canteen-images/desktop/d-airmans-paper-3.png" alt="image of newsletters">
+                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}" alt="image of newsletters">
                     </picture>
                 </div>
             </div>
@@ -140,9 +187,9 @@
 
             <div class="canteen-image-con">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-420-squad.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-420-squad.png') }}">
 
-                        <img class="canteen-gallery-image" src="images/canteen-images/mobile/m-airmans-420-squad.png" alt="image of 420 squad">
+                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-420-squad.png') }}" alt="image of 420 squad">
                     </picture>
 
                     <p class="caption">
@@ -159,9 +206,9 @@
 
                 <div class="canteen-image-con">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-building.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-building.png') }}">
 
-                        <img class="canteen-gallery-image" src="images/canteen-images/mobile/m-airmans-building.png" alt="image of canteen building">
+                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-building.png') }}" alt="image of canteen building">
                     </picture>
 
                     <p class="caption">
@@ -200,25 +247,25 @@
                 <div class="gallery-box-con">
                     <div class="gallery-box">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-gallery-1.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-gallery-1.png') }}">
 
-                            <img class="gallery-image" src="images/canteen-images/mobile/m-airmans-gallery-1.png" alt="image of canteen dining room">
+                            <img class="gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-gallery-1.png') }}" alt="image of canteen dining room">
                         </picture>
                     </div>
 
                     <div class="gallery-box">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-gallery-3.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-gallery-3.png') }}">
 
-                            <img class="gallery-image" src="images/canteen-images/mobile/m-airmans-gallery-3.png" alt="image of civilian military efforts">
+                            <img class="gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-gallery-3.png') }}" alt="image of civilian military efforts">
                         </picture>
                     </div>
 
                     <div class="gallery-box">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="images/canteen-images/desktop/d-airmans-gallery-4.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-gallery-4.png') }}">
 
-                            <img class="gallery-image" src="images/canteen-images/mobile/m-airmans-gallery-4.png" alt="image of vintage plane">
+                            <img class="gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-gallery-4.png') }}" alt="image of vintage plane">
                         </picture>
                     </div>
                 </div>
@@ -237,7 +284,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
@@ -287,19 +334,19 @@
                 <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
                 <div id="footer-socials">
                     <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
                     </a>
                     <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
                     </a>
                     <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
                     </a>
                     <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
                     </a>
                     <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
                     </a>
                 </div>
             </div>

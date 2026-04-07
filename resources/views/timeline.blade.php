@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png') }}" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png') }}" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
 </head>
 
-<body data-page="timeline">
+<body id="tl-page" data-page="timeline">
 
     <header class="header">
         <!-- navbar -->
@@ -26,7 +26,7 @@
                 <ul>
                     <li class="desktop-logo-con m-l-nav-item">
                         <a class="desktop-logo" href="{{ route('home') }}">
-                            <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                         </a>
                     </li>
 
@@ -64,9 +64,19 @@
                         </ul>
                     </li>
 
-                    <li class="m-l-nav-item">
-                        <a class="nav-anchor" href="{{ route('events') }}">Events</a>
-                    </li>
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
+                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
+                </li>
                     <li class="m-l-nav-item">
                         <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                     </li>
@@ -84,7 +94,7 @@
                 <ul>
                     <li>
                         <a href="{{ route('home') }}" class="logo-con">
-                            <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                            <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                         </a>
                     </li>
                     <li class="nav-separator">
@@ -145,9 +155,7 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-gas-1920x1080.mp4" type="video/mp4">
-                
-                <source data-mobile="/videos/hero-videos/hero-gas-768x768.mp4" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-gas-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-gas-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
@@ -238,9 +246,9 @@
 
                                 <div class="tl-ibox-img-con">
                                     <picture class="tl-ibox-pic-con">
-                                        <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1912-may-25.png">
+                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1912-may-25.png') }}">
                                         <!-- NEEDS MOBILE IMAGES -->
-                                        <img class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1912-may-25.png" alt="picture of Curtiss Model E training plane">
+                                        <img class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1912-may-25.png') }}" alt="picture of Curtiss Model E training plane">
                                     </picture>
 
                                     <p class="tl-ibox-p">
@@ -261,9 +269,9 @@
 
                                 <div class="tl-ibox-img-con">
                                     <picture class="tl-ibox-pic-con">
-                                        <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1912-july-20.png">
+                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1912-july-20.png') }}">
                                         <!-- NEEDS MOBILE IMAGES -->
-                                        <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1912-july-20.png" alt="picture of Curtiss Model E training plane">
+                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1912-july-20.png') }}" alt="picture of Curtiss Model E training plane">
                                     </picture>
 
                                     <p class="tl-ibox-p">
@@ -445,9 +453,9 @@
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
-                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-2.png">
+                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1918-july-2.png') }}">
                                             <!-- NEEDS MOBILE IMAGES -->
-                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-2.png" alt="picture of Curtiss Model E training plane">
+                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1918-july-2.png') }}" alt="picture of Curtiss Model E training plane">
                                         </picture>
 
                                         <p class="tl-ibox-p">
@@ -467,9 +475,9 @@
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
-                                            <source media="(min-width: 768px)" srcset="images/timeline-images/timeline-placeholder.png">
+                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/timeline-placeholder.png') }}">
                                             <!-- NEEDS BOTH IMAGES -->
-                                            <img  class="tl-ibox-img" src="images/timeline-images/timeline-placeholder.png" alt="picture of Curtiss Model E training plane">
+                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/timeline-placeholder.png') }}" alt="picture of Curtiss Model E training plane">
                                         </picture>
 
                                         <p class="tl-ibox-p">
@@ -490,9 +498,9 @@
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
-                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1926-october-26.png">
+                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1926-october-26.png') }}">
                                             <!-- NEEDS BOTH IMAGES -->
-                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1926-october-26.png" alt="picture of Curtiss Model E training plane">
+                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1926-october-26.png') }}" alt="picture of Curtiss Model E training plane">
                                         </picture>
 
                                         <p class="tl-ibox-p">
@@ -513,9 +521,9 @@
 
                                     <div class="tl-ibox-img-con">
                                         <picture class="tl-ibox-pic-con">
-                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1918-july-1.png">
+                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1918-july-1.png') }}">
                                             <!-- NEEDS MOBILE IMAGES -->
-                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1918-july-1.png" alt="picture of Curtiss Model E training plane">
+                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1918-july-1.png') }}" alt="picture of Curtiss Model E training plane">
                                         </picture>
 
                                         <p class="tl-ibox-p">
@@ -585,9 +593,9 @@
                                     <div class="parallax-con-img ibox-c1">
                                         <div class="tl-ibox-img-con">
                                             <picture class="tl-ibox-pic-con">
-                                                <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
                                                 <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
                                             </picture>
 
                                             <p class="tl-ibox-p">
@@ -606,9 +614,9 @@
                                     <div class="parallax-con-img ibox-c2">
                                         <div class="tl-ibox-img-con">
                                             <picture class="tl-ibox-pic-con">
-                                                <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1927-september.png">
+                                                <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1927-september.png') }}">
                                                 <!-- NEEDS BOTH IMAGES -->
-                                                <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1927-september.png" alt="picture of Curtiss Model E training plane">
+                                                <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1927-september.png') }}" alt="picture of Curtiss Model E training plane">
                                             </picture>
 
                                             <p class="tl-ibox-p">
@@ -627,9 +635,9 @@
                                     <div class="parallax-con-img ibox-c3">
                                         <div class="tl-ibox-img-con">
                                             <picture class="tl-ibox-pic-con">
-                                                <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-november-25.png">
+                                                <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-november-25.png') }}">
                                                 <!-- NEEDS BOTH IMAGES -->
-                                                <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-november-25.png" alt="picture of Curtiss Model E training plane">
+                                                <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-november-25.png') }}" alt="picture of Curtiss Model E training plane">
                                             </picture>
 
                                             <p class="tl-ibox-p">
@@ -715,9 +723,9 @@
                                         <div class="parallax-con-img ibox-d1">
                                             <div class="tl-ibox-img-con">
                                                 <picture class="tl-ibox-pic-con">
-                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                    <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
                                                     <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                    <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                    <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
                                                 </picture>
 
                                                 <p class="tl-ibox-p">
@@ -736,9 +744,9 @@
                                         <div class="parallax-con-img ibox-d2">
                                             <div class="tl-ibox-img-con">
                                                 <picture class="tl-ibox-pic-con">
-                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1929-july-15.png">
+                                                    <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1929-july-15.png') }}">
                                                     <!-- NEEDS BOTH IMAGES -->
-                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1929-july-15.png" alt="picture of Curtiss Model E training plane">
+                                                    <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1929-july-15.png') }}" alt="picture of Curtiss Model E training plane">
                                                 </picture>
 
                                                 <p class="tl-ibox-p">
@@ -757,9 +765,9 @@
                                         <div class="parallax-con-img ibox-d3">
                                             <div class="tl-ibox-img-con">
                                                 <picture class="tl-ibox-pic-con">
-                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1928-july-11.png">
+                                                    <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1928-july-11.png') }}">
                                                     <!-- NEEDS BOTH IMAGES -->
-                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1928-july-11.png" alt="picture of Curtiss Model E training plane">
+                                                    <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1928-july-11.png') }}" alt="picture of Curtiss Model E training plane">
                                                 </picture>
 
                                                 <p class="tl-ibox-p">
@@ -778,9 +786,9 @@
                                         <div class="parallax-con-img ibox-d4">
                                             <div class="tl-ibox-img-con">
                                                 <picture class="tl-ibox-pic-con">
-                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1928-august-24.png">
+                                                    <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1928-august-24.png') }}">
                                                     <!-- NEEDS BOTH IMAGES -->
-                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1928-august-24.png" alt="picture of Curtiss Model E training plane">
+                                                    <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1928-august-24.png') }}" alt="picture of Curtiss Model E training plane">
                                                 </picture>
 
                                                 <p class="tl-ibox-p">
@@ -799,9 +807,9 @@
                                         <div class="parallax-con-img ibox-d5">
                                             <div class="tl-ibox-img-con">
                                                 <picture class="tl-ibox-pic-con">
-                                                    <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1929-july-15.png">
+                                                    <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1929-july-15.png') }}">
                                                     <!-- NEEDS BOTH IMAGES -->
-                                                    <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1929-july-15.png" alt="picture of Curtiss Model E training plane">
+                                                    <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1929-july-15.png') }}" alt="picture of Curtiss Model E training plane">
                                                 </picture>
 
                                                 <p class="tl-ibox-p">
@@ -852,9 +860,9 @@
                                             <div class="parallax-con-img ibox-e1">
                                                 <div class="tl-ibox-img-con">
                                                     <picture class="tl-ibox-pic-con">
-                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1931-september.png">
+                                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1931-september.png') }}">
                                                         <!-- NEEDS BOTH IMAGES -->
-                                                        <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1931-september.png" alt="picture of Curtiss Model E training plane">
+                                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1931-september.png') }}" alt="picture of Curtiss Model E training plane">
                                                     </picture>
 
                                                     <p class="tl-ibox-p">
@@ -874,9 +882,9 @@
                                             <div class="parallax-con-img ibox-e2">
                                                 <div class="tl-ibox-img-con">
                                                     <picture class="tl-ibox-pic-con">
-                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
                                                         <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                        <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
                                                     </picture>
 
                                                     <p class="tl-ibox-p">
@@ -896,9 +904,9 @@
                                             <div class="parallax-con-img ibox-e3">
                                                 <div class="tl-ibox-img-con">
                                                     <picture class="tl-ibox-pic-con">
-                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
                                                         <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                        <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
                                                     </picture>
 
                                                     <p class="tl-ibox-p">
@@ -918,9 +926,9 @@
                                             <div class="parallax-con-img ibox-e4">
                                                 <div class="tl-ibox-img-con">
                                                     <picture class="tl-ibox-pic-con">
-                                                        <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
                                                         <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                        <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
                                                     </picture>
 
                                                     <p class="tl-ibox-p">
@@ -1000,9 +1008,9 @@
                                                 <div class="parallax-con-img ibox-f1">
                                                     <div class="tl-ibox-img-con">
                                                         <picture class="tl-ibox-pic-con">
-                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-january-19.png">
+                                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1940-january-19.png') }}">
                                                             <!-- NEEDS BOTH IMAGES -->
-                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1940-january-19.png" alt="picture of Curtiss Model E training plane">
+                                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1940-january-19.png') }}" alt="picture of Curtiss Model E training plane">
                                                         </picture>
 
                                                         <p class="tl-ibox-p">
@@ -1021,9 +1029,9 @@
                                                 <div class="parallax-con-img ibox-f2">
                                                     <div class="tl-ibox-img-con">
                                                         <picture class="tl-ibox-pic-con">
-                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-june-24.png">
+                                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1940-june-24.png') }}">
                                                             <!-- NEEDS BOTH IMAGES -->
-                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1940-june-24.png" alt="picture of Curtiss Model E training plane">
+                                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1940-june-24.png') }}" alt="picture of Curtiss Model E training plane">
                                                         </picture>
 
                                                         <p class="tl-ibox-p">
@@ -1042,9 +1050,9 @@
                                                 <div class="parallax-con-img ibox-f3">
                                                     <div class="tl-ibox-img-con">
                                                         <picture class="tl-ibox-pic-con">
-                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/mobile/m-timeline-hero.png">
+                                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
                                                             <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                            <img  class="tl-ibox-img" src="images/timeline-images/mobile/m-timeline-hero.png" alt="picture of Curtiss Model E training plane">
+                                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
                                                         </picture>
 
                                                         <p class="tl-ibox-p">
@@ -1063,9 +1071,9 @@
                                                 <div class="parallax-con-img ibox-f4">
                                                     <div class="tl-ibox-img-con">
                                                         <picture class="tl-ibox-pic-con">
-                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-august.png">
+                                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-august.png') }}">
                                                             <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-august.png" alt="picture of Curtiss Model E training plane">
+                                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-august.png') }}" alt="picture of Curtiss Model E training plane">
                                                         </picture>
 
                                                         <p class="tl-ibox-p">
@@ -1084,9 +1092,9 @@
                                                 <div class="parallax-con-img ibox-f5">
                                                     <div class="tl-ibox-img-con">
                                                         <picture class="tl-ibox-pic-con">
-                                                            <source media="(min-width: 768px)" srcset="images/timeline-images/desktop/d-timeline-1940-december-17.png">
+                                                            <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/desktop/d-timeline-1940-december-17.png') }}">
                                                             <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                            <img  class="tl-ibox-img" src="images/timeline-images/desktop/d-timeline-1940-december-17.png" alt="picture of Curtiss Model E training plane">
+                                                            <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/desktop/d-timeline-1940-december-17.png') }}" alt="picture of Curtiss Model E training plane">
                                                         </picture>
 
                                                         <p class="tl-ibox-p">
@@ -1119,7 +1127,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
@@ -1169,19 +1177,19 @@
                 <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
                 <div id="footer-socials">
                     <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
                     </a>
                     <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
                     </a>
                     <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
                     </a>
                     <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
                     </a>
                     <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
                     </a>
                 </div>
             </div>

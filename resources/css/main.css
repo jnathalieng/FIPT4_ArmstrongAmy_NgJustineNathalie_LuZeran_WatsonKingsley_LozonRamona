@@ -1656,6 +1656,10 @@ a {
   background-image: url("/images/hero-images/mobile/AboutHero_Mobile.png");
 }
 
+#commemoration-page {
+  overflow-x: hidden;
+}
+
 .comm-beta-con {
   position: relative;
 }
@@ -1946,10 +1950,11 @@ p.typewriter-quote {
   background-repeat: repeat;
   background-position: center;
   padding: 4rem 4rem;
+  font-size: 1.25rem;
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
-  transform: translateY(-40vh);
+  transform: translateY(-60vh);
 }
 
 .dossier-tag {
@@ -1967,6 +1972,10 @@ p.typewriter-quote {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dossier-p {
+  margin: 5vh 0;
 }
 
 #july {
@@ -2044,18 +2053,182 @@ p.typewriter-quote {
   justify-content: center;
 }
 
+.deaths-info-con p {
+  margin: 1rem;
+}
 .deaths-info-con {
+  margin: 5vw;
+  text-align: left;
   display: flex;
   flex-direction: column;
+}
+.deaths-info-con .deaths-info {
+  width: 90vw;
+}
+.deaths-info-con .deaths-info h3 {
+  width: 100%;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.deaths-info-con .deaths-info p {
+  width: 100%;
+  font-size: 16px;
+}
+
+.deaths-info-bot {
+  margin: 5vw;
+  text-align: center;
+}
+.deaths-info-bot p {
+  margin: 1rem;
+  text-align: left;
+}
+
+.canadian-pilots-section {
+  border-top: solid 5px #B3262E;
+}
+.canadian-pilots-section .canadian-pilots-card {
+  width: 100vw;
+  margin: 20px 0px;
+}
+.canadian-pilots-section .pilots-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(60, 60, 60, 0.3);
+  height: fit-content;
   align-items: center;
-  justify-content: center;
+}
+.canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
+  width: 90%;
+  color: #B3262E;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
+  margin-left: 10%;
+  padding: 10px 0px;
+  border-bottom: solid 5px #91B8D9;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #B3262E;
+  font-size: 20px;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-img-con {
+  display: flex;
+  width: 75%;
+  height: 90vw;
+  text-align: center;
+  background-size: cover;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-text-con {
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
+  margin: 2rem;
+  font-size: 120%;
+  color: black;
 }
 
-.deaths-info {
-  flex: 1;
-  background-color: red;
+.read-more #view-remembrance {
+  min-width: 320px;
+  font-size: 16px;
 }
 
+.BOB-img-con {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.BOB-img {
+  object-fit: contain;
+}
+
+#discover-aircraft-cta {
+  border-bottom: solid 50px #91B8D9;
+}
+
+#explore-aircraft-button {
+  font-size: 18px;
+}
+
+#aircraft-carousel {
+  padding-bottom: 100px;
+}
+
+@media (min-width: 1000px) {
+  .canadian-pilots-section {
+    border-top: solid 5px #B3262E;
+  }
+  .canadian-pilots-section .canadian-pilots-card {
+    width: 100vw;
+    margin: 20px 0px;
+  }
+  .canadian-pilots-section .pilots-card-content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgba(60, 60, 60, 0.3);
+    height: fit-content;
+    align-items: center;
+  }
+  .canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
+    display: none;
+  }
+  .canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
+    display: none;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-img-con {
+    display: flex;
+    width: 40%;
+    height: 33vw;
+    text-align: center;
+    background-size: cover;
+  }
+  .canadian-pilots-section .pilots-card-content #ross-smither {
+    background-image: url("/images/BOB-images/mobile/m-bob-ross-smither.png");
+  }
+  .canadian-pilots-section .pilots-card-content #hugh-riley {
+    background-image: url("/images/BOB-images/mobile/m-bob-hugh-reilley.png");
+  }
+  .canadian-pilots-section .pilots-card-content #robert-grassik {
+    background-image: url("/images/BOB-images/mobile/m-bob-robert-grassick.png");
+  }
+  .canadian-pilots-section .pilots-card-content #niel-campbell {
+    background-image: url("/images/BOB-images/mobile/m-bob-neil-campbell.png");
+  }
+  .canadian-pilots-section .pilots-card-content #robert-smith {
+    background-image: url("/images/BOB-images/mobile/m-bob-robert-smith.png");
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con {
+    width: 90%;
+    margin: 0px 5% 30px 5%;
+    align-items: center;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con .pilot-card-rank-desk {
+    width: 100%;
+    margin: 30px 0% 30px 0%;
+    color: #B3262E;
+    font-size: 24px;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con .pilot-card-name-desk {
+    margin: 30px 0% 30px 0%;
+    padding-bottom: 20px;
+    border-bottom: solid 5px #91B8D9;
+    width: 90%;
+    color: #B3262E;
+    font-size: 60px;
+  }
+  .canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
+    margin: 0px;
+    font-size: 120%;
+    color: black;
+  }
+}
 @media screen and (min-width: 768px) {
   .BOB-intro-section {
     padding: 30vh 8rem;
@@ -2071,7 +2244,7 @@ p.typewriter-quote {
     height: 210vh;
   }
   .dossier-content {
-    padding: 10rem 8rem 40vh 8rem;
+    padding: 4rem 6rem 50vh 6rem;
   }
   .dossier-tag {
     font-size: 2rem;
@@ -2097,15 +2270,34 @@ p.typewriter-quote {
   color: white;
   overflow-x: hidden;
 }
+#bases-page #base-hero, #bases-page #main-footer {
+  position: relative;
+  z-index: 2;
+}
+#bases-page #main-footer {
+  margin-top: 200vh;
+}
 
 #base-hero-section {
   background-image: url("/images/bases-images/map.svg");
   height: 100vh;
 }
 
+.map-svg-element {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: all;
+}
+
 .scroll-container {
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .scroll-section h2 {
@@ -2123,11 +2315,24 @@ p.typewriter-quote {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
+.scroll-section {
+  pointer-events: none;
+}
+
+.scroll-flex-con {
+  pointer-events: none;
+}
+
+.map-content-box,
+.map-image-box,
+.map-button {
+  pointer-events: all;
+}
+
 .scroll-flex-con {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 .map-content-box, .map-image-box {
@@ -2150,16 +2355,13 @@ p.typewriter-quote {
   -webkit-mask-composite: xor;
 }
 .map-content-box, .map-image-box {
-  width: 30vw;
-  margin: 0 15vw;
+  height: 40vh;
+  width: 40vw;
+  margin: 0 10vw;
   transition: all 0.3s ease;
-  height: 50vh;
+  cursor: default;
 }
 .map-content-box:hover, .map-image-box:hover {
-  width: 35vw;
-  height: 55vh;
-  padding: 4rem;
-  transition: all 0.3s ease;
   background: linear-gradient(to top left, rgba(138, 138, 138, 0), rgba(138, 138, 138, 0.5019607843));
   backdrop-filter: blur(20px);
 }
@@ -2168,8 +2370,77 @@ p.typewriter-quote {
   background: linear-gradient(to bottom right, rgba(74, 74, 74, 0.2078431373), rgba(74, 74, 74, 0));
 }
 
+.map-content-box {
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.map-content-box p {
+  transition: all 0.3s ease;
+}
+.map-content-box:hover {
+  margin-left: 40vw;
+  width: 60vw;
+  padding: 4rem;
+}
+.map-content-box:hover p {
+  transform: scale(120%);
+  font-weight: bold;
+}
+
+.map-image-box {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.map-image-box img {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.map-image-box:hover {
+  margin-right: 40vw;
+  width: 60vw;
+  padding: 4rem;
+}
+.map-image-box:hover img {
+  transform: scale(120%);
+}
+
+@media screen and (min-width: 768px) {
+  .map-content-box, .map-image-box {
+    width: 30vw;
+    height: 50vh;
+    margin: 0 20vw;
+  }
+  .map-content-box {
+    font-size: 1.5rem;
+  }
+  .map-content-box:hover {
+    margin-left: 40vw;
+    width: 40vw;
+    height: 55vh;
+    padding: 4rem;
+  }
+  .map-content-box:hover p {
+    font-size: 1.5rem;
+  }
+  .map-image-box img {
+    object-fit: contain;
+  }
+  .map-image-box:hover {
+    margin: 0 30vw 10vh 0;
+    width: 60vw;
+    height: 75vh;
+  }
+  .map-image-box:hover img {
+    transform: none;
+  }
+}
 #about-hero {
-  background-image: url("/images/general-images/mobile/AboutHero_Mobile.png");
+  background-image: url("{../../images/general-images/AboutHero_Mobile.png}");
 }
 
 #about-mike {
@@ -2179,7 +2450,7 @@ p.typewriter-quote {
 
 @media screen and (min-width: 768px) {
   #about-hero {
-    background-image: url("/images/general-images/tablet/AboutHero_Tablet.png");
+    background-image: url("../../images/general-images/AboutHero_Tablet.png");
   }
   #about-video-section h2, #about-video-section p {
     margin: 2rem 0;
@@ -2193,7 +2464,7 @@ p.typewriter-quote {
 }
 @media (min-width: 1200px) {
   #about-hero {
-    background-image: url("/images/general-images/desktop/AboutHero_Desktop.png");
+    background-image: url("../../images/general-images/AboutHero_Desktop.png");
   }
 }
 #contact-hero {

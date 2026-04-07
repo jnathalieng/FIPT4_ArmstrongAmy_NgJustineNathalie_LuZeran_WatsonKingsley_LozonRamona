@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
 <body data-page="home">
 
@@ -21,7 +21,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -82,7 +82,7 @@
         <!-- mobile hamburger menu -->
         <div class="hamburger-bar">
             <a href="{{ route('home') }}" class="ham-logo-con">
-                <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
             </a>
             <div class="hamburger">
                 <span></span>
@@ -95,7 +95,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -152,13 +152,10 @@
                 <div class="hero-card" id="com-hero-card">
                     <a href="{{ route('comm') }}" class="hero-card-a">
                         <h3 class="body-text">Legacy of the Fallen</h3>
-
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/marching-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/marching-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                            <source data-desktop="/videos/hero-videos/hero-march-480x1080.mp4" type="video/mp4">
+                            <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-march-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
                             
-                            <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
-
                             <p>Your browser does not support</p>
                         </video>
                     </a>
@@ -166,7 +163,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('comm') }}">
                             <h4>Read their stories</h4>
-                            <img src="/images/icons/right-arrow.svg" alt="">
+                            <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -174,11 +171,9 @@
                 <div class="hero-card" id="BOB-hero-card">
                     <a href="{{ route('BOB') }}" class="hero-card-a">
                         <h3 class="body-text">The Battle of Britain</h3>
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/canteen-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/canteen-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                            <source data-desktop="/videos/hero-videos/hero-canteen-480x1080.mp4" type="video/mp4">
-                            
-                            <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
+                            <source  class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-canteen-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
 
                             <p>Your browser does not support</p>
                         </video>
@@ -187,7 +182,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('wartime_experience') }}">
                             <h4>Read their stories</h4>
-                            <img src="/images/icons/right-arrow.svg" alt="">
+                            <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -195,11 +190,9 @@
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
                         <h3 class="body-text">London Aviation timeline</h3>
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/gas-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/gas-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                            <source data-desktop="/videos/hero-videos/hero-gas-480x1080.mp4" type="video/mp4">
-                            
-                            <source data-mobile="/videos/hero-videos/hero-gas-768x768.mp4" type="video/mp4">
+                            <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-gas-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-gas-768x768.mp4') }}" type="video/mp4">
 
                             <p>Your browser does not support</p>
                         </video>
@@ -208,7 +201,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('timeline') }}">
                             <h4>See the Timeline</h4>
-                            <img src="/images/icons/right-arrow.svg" alt="">
+                            <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -216,11 +209,9 @@
                 <div class="hero-card" id="bases-hero-card">
                     <a href="{{ route('training_bases') }}" class="hero-card-a">
                         <h3 class="body-text">Ontario Training Bases</h3>
-                        <video class="hero-card-video" muted loop playsinline poster="/images/hero-video-poster-images/Desktop/plane-poster.png" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
+                        <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/plane-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                            <source data-desktop="/videos/hero-videos/hero-plane-480x1080.mp4" type="video/mp4">
-                            
-                            <source data-mobile="/videos/hero-videos/hero-plane-768x768.mp4" type="video/mp4">
+                            <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-plane-480x1080.mp4') }}" type="video/mp4" data-mobile="/videos/hero-videos/hero-plane-768x768.mp4" type="video/mp4">
 
                             <p>Your browser does not support</p>
                         </video>
@@ -229,7 +220,7 @@
                     <div class="hero-CTA-con">
                         <a href="{{ route('timeline') }}">
                             <h4>View all bases</h4>
-                            <img src="/images/icons/right-arrow.svg" alt="">
+                            <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -398,7 +389,8 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGO_TEXTWHITE.svg" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
             <p class="footer-contact-line">Contact: 519-455-0430</p>
@@ -447,19 +439,19 @@
                 <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
                 <div id="footer-socials">
                     <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
                     </a>
                     <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
                     </a>
                     <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
                     </a>
                     <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
                     </a>
                     <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
                     </a>
                 </div>
             </div>
