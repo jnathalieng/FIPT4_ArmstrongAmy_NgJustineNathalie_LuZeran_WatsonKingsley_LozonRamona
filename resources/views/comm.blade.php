@@ -73,11 +73,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
-                </li>
-                <li class="m-l-nav-item">
-                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('gallery') }}">Gallery</a>
@@ -311,7 +318,7 @@
                 </div>
 
                 <div class="read-more">
-                    <a href="BOB.html" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+                    <a href="{{ route('BOB') }}" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
                 </div>
             </div>
 

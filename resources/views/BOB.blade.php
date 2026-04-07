@@ -25,7 +25,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img srcset="{{ asset(images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -63,8 +63,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
@@ -83,7 +93,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img srcset="{{ asset(images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">

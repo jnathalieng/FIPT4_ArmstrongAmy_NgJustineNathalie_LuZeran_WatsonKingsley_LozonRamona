@@ -29,7 +29,7 @@
 // }
 
 #about-hero {
-    background-image: url("/images/general-images/mobile/AboutHero_Mobile.png");
+    background-image: url("{../../images/general-images/AboutHero_Mobile.png}");
 }
 
 #about-mike {
@@ -40,7 +40,7 @@
 @media screen and (min-width: 768px) {
 
 #about-hero {
-    background-image: url("/images/general-images/tablet/AboutHero_Tablet.png");
+    background-image: url("../../images/general-images/AboutHero_Tablet.png");
 }
 
     #about-video-section {
@@ -61,6 +61,6 @@
 @media (min-width:1200px) {
     
     #about-hero {
-    background-image: url("/images/general-images/desktop/AboutHero_Desktop.png");
+    background-image: url("../../images/general-images/AboutHero_Desktop.png");
 }
 }

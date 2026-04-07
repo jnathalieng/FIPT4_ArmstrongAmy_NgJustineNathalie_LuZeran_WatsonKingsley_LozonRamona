@@ -82,7 +82,7 @@
         <!-- mobile hamburger menu -->
         <div class="hamburger-bar">
             <a href="{{ route('home') }}" class="ham-logo-con">
-                <img src="{{ assets('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+                <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
             </a>
             <div class="hamburger">
                 <span></span>

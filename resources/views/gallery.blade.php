@@ -59,8 +59,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>

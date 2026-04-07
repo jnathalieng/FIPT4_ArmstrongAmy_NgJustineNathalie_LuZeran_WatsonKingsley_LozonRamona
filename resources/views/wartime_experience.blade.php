@@ -60,8 +60,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
@@ -173,7 +183,7 @@ The Air Observer schools were operated by civilians under contract to the RCAF. 
 <section id='wte-map'></section>
 
         <div class="read-more">
-            <a class="read-more-button">Explore the Map <span class="cta-arrow">&#8594</span></a>
+            <a class="read-more-button" href="{{ route('training_bases') }}">Explore the Map <span class="cta-arrow">&#8594</span></a>
         </div>
 
 <section class="color-content-box white-background">
@@ -221,7 +231,7 @@ The Air Observer schools were operated by civilians under contract to the RCAF. 
         </section>
 
         <div class="read-more">
-            <a class="read-more-button">View More<span class="cta-arrow">&#8594</span></a>
+            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
         </div>
 </section>
 </main>     
@@ -230,7 +240,7 @@ The Air Observer schools were operated by civilians under contract to the RCAF. 
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
@@ -280,19 +290,19 @@ The Air Observer schools were operated by civilians under contract to the RCAF. 
                 <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
                 <div id="footer-socials">
                     <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
                     </a>
                     <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
                     </a>
                     <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
                     </a>
                     <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
                     </a>
                     <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
                     </a>
                 </div>
             </div>

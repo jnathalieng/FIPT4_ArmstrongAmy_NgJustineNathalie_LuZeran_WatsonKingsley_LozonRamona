@@ -20,4 +20,9 @@ export default defineConfig({
         }),
         vue(),
     ],
+    resolve: {
+        alias: {
+            '~': '/public',
+        },
+    },
 });
