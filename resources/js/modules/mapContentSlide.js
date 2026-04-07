@@ -13,8 +13,8 @@ export function mapContentSlide() {
                 ease: "power1.In",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 5%',
-                    end: 'bottom 5%',
+                    start: 'top top',
+                    end: 'bottom top',
                     toggleActions: 'play reverse play reverse',
                     pin: true,
                     toggleClass: {
@@ -33,8 +33,8 @@ export function mapContentSlide() {
                 ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 5%',
-                    end: 'bottom 5%',
+                    start: 'top top',
+                    end: 'bottom top',
                     toggleActions: 'play reverse play reverse'
                 }
             });
@@ -48,8 +48,8 @@ export function mapContentSlide() {
                 ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 5%',
-                    end: 'bottom 5%',
+                    start: 'top top',
+                    end: 'bottom top',
                     toggleActions: 'play reverse play reverse'
                 }
             });

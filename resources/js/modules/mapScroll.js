@@ -79,7 +79,7 @@ const observer = new IntersectionObserver((entries) => {
             });
         }
     });
-}, {threshold: 0.05}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
+}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
 
 function zoomToBase(targetId) {
     const target = baseCoordinates[targetId];
