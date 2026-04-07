@@ -34,9 +34,7 @@
                 </li>
 
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
-                    
                     <a class="nav-anchor">History</a>
-
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
@@ -63,6 +61,12 @@
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
                 </li>
                 <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('gallery') }}">Gallery</a>
+                </li>
+                <li class="m-l-nav-item">
+                    <a class="nav-anchor" href="{{ route('blog') }}">Blog</a>
+                </li>
+                <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
@@ -83,7 +87,6 @@
                     </a>
                 </li>
                 <li class="nav-separator">
-
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
@@ -108,6 +111,12 @@
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
