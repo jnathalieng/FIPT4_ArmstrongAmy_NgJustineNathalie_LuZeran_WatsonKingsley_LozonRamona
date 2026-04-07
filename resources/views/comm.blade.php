@@ -28,7 +28,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
                     </a>
                 </li>
 
@@ -89,7 +89,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -205,9 +205,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-john-allan-smith.png">
+                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-john-allan-smith.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-john-allan-smith.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
@@ -248,9 +248,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-robert-clinton-bailey.png">
+                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-robert-clinton-bailey.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-robert-clinton-bailey.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
@@ -290,9 +290,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-grant-thomas-stewart.png">
+                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-grant-thomas-stewart.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             In 1940, five airmen connected to London served during the Battle of Britain, one of the most significant air campaigns of the Second World War. Their participation formed part of Canada's contribution to the defence of Britain during this critical period.
@@ -323,9 +323,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
+                        <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             The Book of Remembrance preserves the names of those connected to London's aviation history whose service and sacrifice are recorded for future generations. It stands as a lasting record within the museum and 427 Wing.
@@ -350,7 +350,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="aviation.png') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
