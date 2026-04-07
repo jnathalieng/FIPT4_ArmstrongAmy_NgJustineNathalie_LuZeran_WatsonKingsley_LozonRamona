@@ -2915,6 +2915,10 @@ p.typewriter-quote {
   height: 400vh;
 }
 
+#tl-1909-section .tls-content-con {
+  height: 300vh;
+}
+
 .text-grid-overlay, .image-grid-overlay {
   display: grid;
   grid-template-columns: inherit;
