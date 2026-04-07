@@ -76,3 +76,18 @@ Route::get('/blog', function () {
 })->name('blog');
 
 Route::get('/blogs/{slug}', [BlogController::class, 'show']);
+
+Route::get('/clear-config', function () {
+    \Artisan::call('config:cache');
+    \Artisan::call('cache:clear');
+    return 'Config cleared!';
+});
+
+Route::get('/test-db', function () {
+    try {
+        $test = DB::connection()->getPdo();
+        return 'Database connection successful!';
+    } catch (\Exception $e) {
+        return 'Database connection failed: ' . $e->getMessage();
+    }
+});
