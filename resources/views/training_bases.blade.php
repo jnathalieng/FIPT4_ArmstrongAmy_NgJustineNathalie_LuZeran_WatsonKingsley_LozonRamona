@@ -130,13 +130,13 @@
             
             <h2 class="hidden">Training Bases hero section</h2>
 
-            <div class="hero-title-con">
-                <div class="hero-title">
+            <div class="hero-title-con-vid">
+                <div class="hero-title-vid">
                     <h3>
                         Interactive Map
                     </h3>
                 </div>
-                <div class="hero-subtitle">
+                <div class="hero-subtitle-vid">
                     <p>
                         Discover the BCATP Training Sites
                     </p>

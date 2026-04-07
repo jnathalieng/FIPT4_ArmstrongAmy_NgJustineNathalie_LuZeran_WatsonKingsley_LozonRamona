@@ -149,15 +149,15 @@
             
             <h2 class="hidden">Commemoration hero section</h2>
 
-            <div class="hero-title-con">
-                <div class="hero-title">
+            <div class="hero-title-con-vid">
+                <div class="hero-title-vid">
                     <h3>
                         Legacy of the Fallen
                     </h3>
                 </div>
-                <div class="hero-subtitle">
+                <div class="hero-subtitle-vid">
                     <p>
-                        Commemroate the losses throughout history
+                        Commemorate the losses throughout history
                     </p>
                 </div>
             </div>

@@ -29,7 +29,7 @@
 // }
 
 #about-hero {
-    background-image: url("{../../images/general-images/AboutHero_Mobile.png}");
+    background-image: url("{../../../public/images/general-images/AboutHero_Mobile.png}");
 }
 
 #about-mike {
@@ -40,15 +40,27 @@
 @media screen and (min-width: 768px) {
 
 #about-hero {
-    background-image: url("../../images/general-images/AboutHero_Tablet.png");
+    background-image: url("../../../public/mages/general-images/AboutHero_Tablet.png");
 }
 
     #about-video-section {
-
-        h2, p {
-            margin: 2rem 0; 
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            color: a.$primary-color;
+            margin: 10px;
+        }
+        p {
+            color: black;
+            margin: 10px;
         }
     }
+
+    // #about-video-con {
+    //     margin: 10px 50px;;
+    // }
 
     #about-mike {
         display: flex;
@@ -61,6 +73,6 @@
 @media (min-width:1200px) {
     
     #about-hero {
-    background-image: url("../../images/general-images/AboutHero_Desktop.png");
+    background-image: url("../../../public/images/general-images/AboutHero_Desktop.png");
 }
 }

@@ -151,7 +151,7 @@
 
                 <div class="hero-card" id="com-hero-card">
                     <a href="{{ route('comm') }}" class="hero-card-a">
-                        <h3 class="body-text">Legacy of the Fallen</h3>
+                        <h3>Legacy of the Fallen</h3>
                         <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/marching-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-march-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
@@ -160,7 +160,7 @@
                         </video>
                     </a>
                     
-                    <div class="hero-CTA-con">
+                    <div class="hero-CTA-con home-hero-cta-link">
                         <a href="{{ route('comm') }}">
                             <h4>Read their stories</h4>
                             <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
@@ -170,7 +170,7 @@
                 
                 <div class="hero-card" id="BOB-hero-card">
                     <a href="{{ route('BOB') }}" class="hero-card-a">
-                        <h3 class="body-text">The Battle of Britain</h3>
+                        <h3>The Battle of Britain</h3>
                         <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/canteen-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source  class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-canteen-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
@@ -179,7 +179,7 @@
                         </video>
                     </a>
                     
-                    <div class="hero-CTA-con">
+                    <div class="hero-CTA-con home-hero-cta-link">
                         <a href="{{ route('wartime_experience') }}">
                             <h4>Read their stories</h4>
                             <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
@@ -189,7 +189,7 @@
                 
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
-                        <h3 class="body-text">London Aviation timeline</h3>
+                        <h3>London Aviation timeline</h3>
                         <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/gas-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-gas-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-gas-768x768.mp4') }}" type="video/mp4">
@@ -198,7 +198,7 @@
                         </video>
                     </a>
                     
-                    <div class="hero-CTA-con">
+                       <div class="hero-CTA-con home-hero-cta-link">
                         <a href="{{ route('timeline') }}">
                             <h4>See the Timeline</h4>
                             <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
@@ -208,7 +208,7 @@
                 
                 <div class="hero-card" id="bases-hero-card">
                     <a href="{{ route('training_bases') }}" class="hero-card-a">
-                        <h3 class="body-text">Ontario Training Bases</h3>
+                        <h3>Ontario Training Bases</h3>
                         <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/plane-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-plane-480x1080.mp4') }}" type="video/mp4" data-mobile="/videos/hero-videos/hero-plane-768x768.mp4" type="video/mp4">
@@ -217,7 +217,7 @@
                         </video>
                     </a>
                     
-                    <div class="hero-CTA-con">
+                    <div class="hero-CTA-con home-hero-cta-link">
                         <a href="{{ route('timeline') }}">
                             <h4>View all bases</h4>
                             <img src="{{ asset('images/icons/right-arrow.svg') }}" alt="">
@@ -274,7 +274,7 @@
 
                 <div id="blog-text-content">
                     <h2 class="r-header-text">New & Event Highlights</h2>
-                    <p class="b-body-text">Discover recent stories, announcements, and community gatherings.</p>
+                    <p class="body-text">Discover recent stories, announcements, and community gatherings.</p>
                 </div>
 
                 <div id="blog-con">
