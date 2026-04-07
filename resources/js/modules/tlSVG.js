@@ -27,7 +27,7 @@ export function tlSVG() {
         {
             scale: 1,
             opacity: 1,
-            duration: 3,
+            duration: 2,
             ease: "power2.inOut",
             stagger: 1
         });

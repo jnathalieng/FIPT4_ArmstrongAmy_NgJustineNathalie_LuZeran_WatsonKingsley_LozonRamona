@@ -1,5 +1,9 @@
 @use '../abstracts' as a;
 
+#tl-page {
+    overflow-x: hidden;
+}
+
 #tl-body {
     color: black;
 }
@@ -25,7 +29,7 @@
     font-size: 3000%;
     z-index: -1;
     pointer-events: none;
-    color: a.$tertiary-color;
+    color: a.$secondary-color;
     text-align: center;
 
     // Parallax settings

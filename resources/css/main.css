@@ -2872,6 +2872,10 @@ p.typewriter-quote {
   cursor: pointer;
 }
 
+#tl-page {
+  overflow-x: hidden;
+}
+
 #tl-body {
   color: black;
 }
@@ -2893,7 +2897,7 @@ p.typewriter-quote {
   font-size: 3000%;
   z-index: -1;
   pointer-events: none;
-  color: #f7f7f7;
+  color: #91B8D9;
   text-align: center;
   position: sticky;
   top: 0;
