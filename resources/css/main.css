@@ -2145,7 +2145,6 @@ p.typewriter-quote {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 .map-content-box, .map-image-box {
@@ -2168,16 +2167,13 @@ p.typewriter-quote {
   -webkit-mask-composite: xor;
 }
 .map-content-box, .map-image-box {
-  width: 30vw;
-  margin: 0 15vw;
+  height: 40vh;
+  width: 40vw;
+  margin: 0 10vw;
   transition: all 0.3s ease;
-  height: 50vh;
+  cursor: default;
 }
 .map-content-box:hover, .map-image-box:hover {
-  width: 35vw;
-  height: 55vh;
-  padding: 4rem;
-  transition: all 0.3s ease;
   background: linear-gradient(to top left, rgba(138, 138, 138, 0), rgba(138, 138, 138, 0.5019607843));
   backdrop-filter: blur(20px);
 }
@@ -2186,6 +2182,75 @@ p.typewriter-quote {
   background: linear-gradient(to bottom right, rgba(74, 74, 74, 0.2078431373), rgba(74, 74, 74, 0));
 }
 
+.map-content-box {
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.map-content-box p {
+  transition: all 0.3s ease;
+}
+.map-content-box:hover {
+  margin-left: 40vw;
+  width: 60vw;
+  padding: 4rem;
+}
+.map-content-box:hover p {
+  transform: scale(120%);
+  font-weight: bold;
+}
+
+.map-image-box {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.map-image-box img {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.map-image-box:hover {
+  margin-right: 40vw;
+  width: 60vw;
+  padding: 4rem;
+}
+.map-image-box:hover img {
+  transform: scale(120%);
+}
+
+@media screen and (min-width: 768px) {
+  .map-content-box, .map-image-box {
+    width: 30vw;
+    height: 50vh;
+    margin: 0 20vw;
+  }
+  .map-content-box {
+    font-size: 1.5rem;
+  }
+  .map-content-box:hover {
+    margin-left: 40vw;
+    width: 40vw;
+    height: 55vh;
+    padding: 4rem;
+  }
+  .map-content-box:hover p {
+    font-size: 1.5rem;
+  }
+  .map-image-box img {
+    object-fit: contain;
+  }
+  .map-image-box:hover {
+    margin: 0 30vw 10vh 0;
+    width: 60vw;
+    height: 75vh;
+  }
+  .map-image-box:hover img {
+    transform: none;
+  }
+}
 #about-hero {
   background-image: url("/images/general-images/mobile/AboutHero_Mobile.png");
 }

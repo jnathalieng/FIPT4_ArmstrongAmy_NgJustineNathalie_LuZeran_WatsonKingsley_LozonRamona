@@ -76,7 +76,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
 .map-content-box, .map-image-box {
@@ -107,22 +106,109 @@
     }
 
     // Container Styling
-    width: 30vw;
-    margin: 0 15vw;
+    height: 40vh;
+    width: 40vw;
+    margin: 0 10vw;
     transition: a.$t-time;
-    height: 50vh;
+    cursor: default;
 
     &:hover {
-        width: 35vw;
-        height: 55vh;
-        padding: 4rem;
-        transition: a.$t-time;
         background: a.$glass-morph-active;
         backdrop-filter: blur(20px);
 
         &::before {
             padding: 3px;
             background: a.$glass-morph-stroke-active;
+        }
+    }
+}
+
+.map-content-box {
+    color: a.$black;
+
+    display: flex;
+    align-items: center;
+
+    p {
+        transition: a.$t-time;
+    }
+
+    &:hover {
+
+        margin-left: 40vw;
+        width: 60vw;
+        padding: 4rem;
+
+        p {
+            transform: scale(120%);
+            font-weight: bold;
+        }
+    }
+}
+
+.map-image-box {
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        transition: a.$t-time;
+        border-radius: 1rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+
+        margin-right: 40vw;
+        width: 60vw;
+        padding: 4rem;
+
+        img {
+            transform: scale(120%);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .map-content-box, .map-image-box {
+        width: 30vw;
+        height: 50vh;
+        margin: 0 20vw;
+    }
+
+    .map-content-box {
+
+        font-size: 1.5rem;
+
+        &:hover {
+            margin-left: 40vw;
+            width: 40vw;
+            height: 55vh;
+            padding: 4rem;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .map-image-box {
+
+        img {
+            object-fit: contain;
+        }
+
+        &:hover {
+            margin: 0 30vw 10vh 0;
+            width: 60vw;
+            height: 75vh;
+
+            img {
+                transform: none;
+            }
         }
     }
 }
