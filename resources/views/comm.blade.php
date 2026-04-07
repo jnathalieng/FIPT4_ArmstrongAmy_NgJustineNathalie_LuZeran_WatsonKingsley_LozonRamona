@@ -18,10 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
 
 <body id="commemoration-page" data-page="comm">
@@ -35,7 +35,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -96,7 +96,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -157,9 +157,9 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-march-1920x1080.mp4" type="video/mp4">
+                <source data-desktop="/videos/hero-videos/hero-march-1920x1080.mp4') }}" type="video/mp4">
                 
-                <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
+                <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
@@ -357,7 +357,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
@@ -407,19 +407,19 @@
                 <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
                 <div id="footer-socials">
                     <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
                     </a>
                     <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
                     </a>
                     <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
                     </a>
                     <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
                     </a>
                     <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
                     </a>
                 </div>
             </div>
