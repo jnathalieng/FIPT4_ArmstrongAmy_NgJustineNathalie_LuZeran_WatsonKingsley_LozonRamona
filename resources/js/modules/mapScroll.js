@@ -185,20 +185,22 @@ document.querySelectorAll('.scroll-section').forEach(section => {
     }
 });
 
+// RETURN BUTTON
+const returnButton = document.querySelector("#return-map-button");
 
-    // zoom and start observing
+returnButton.addEventListener('click', () => {
     gsap.to(svg, {
-        scale: 1,
-        duration: 0.5,
+        duration: 1,
         ease: "power2.inOut",
         attr: {
-            viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-        },
-        onComplete: () => {
-            document.querySelectorAll('.scroll-section').forEach(section => {
-                observer.observe(section);
-            });
-            console.log("observer reactivated!");
+            viewBox: resetViewBox()
+        }
+    });
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: "#full-view",
+            ease: "power2.inOut"
         }
     });
 });
