@@ -12,14 +12,14 @@ export function mapAnimation() {
     });
 
     tl.fromTo(hotspots, {
-        scale: 0,
+        scale: 3,
     },
     {
         scale: 1,
         duration: 1,
         ease: "back.out(1.5)",
         transformOrigin: "center center",
-        stagger: 0.1
+        stagger: 0.2
     });
 
     hotspots.forEach((hotspot) => {
