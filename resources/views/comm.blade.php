@@ -325,7 +325,7 @@
                     <picture>
                         <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             The Book of Remembrance preserves the names of those connected to London's aviation history whose service and sacrifice are recorded for future generations. It stands as a lasting record within the museum and 427 Wing.
