@@ -5,7 +5,7 @@ export function mapHotSpots() {
     const hotspots = document.querySelectorAll("#hotspots circle");
     console.log('circles found:', hotspots.length);
 
-    let currentID = 0;
+    let currentID = 1;
 
     hotspots.forEach((hotspot) => {
         const hsID = hotspot.id.replace('hs', '');
