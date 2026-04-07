@@ -77,9 +77,13 @@ ScrollTrigger.create({
         const imageBox = section.querySelector('.map-image-box');
 
         if (baseHeading) {
-            gsap.from(baseHeading, {
+            gsap.fromTo(baseHeading, {
                 x: -100,
-                opacity: 0,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
                 duration: 0.2,
                 ease: "power1.In",
                 scrollTrigger: {
@@ -133,9 +137,13 @@ ScrollTrigger.create({
         }
 
         if (contentBox) {
-            gsap.from(contentBox, {
+            gsap.fromTo(contentBox, {
                 x: -100,
-                opacity: 0,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
                 duration: 0.2,
                 ease: "power2.inOut",
                 scrollTrigger: {
@@ -148,9 +156,13 @@ ScrollTrigger.create({
         }
 
         if (imageBox) {
-            gsap.from(imageBox, {
+            gsap.fromTo(imageBox, {
                 x: 100,
-                opacity: 0,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
                 duration: 0.2,
                 ease: "power2.inOut",
                 scrollTrigger: {
