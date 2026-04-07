@@ -21,6 +21,7 @@ import { tlShowSticky } from "./modules/tlShowSticky.js";
 import { tlScrollProgress } from "./modules/tlScrollProgress.js";
 import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
 import { tlScrollTo } from "./modules/tlScrollTo.js";
+import { tlSVG } from "./modules/tlSVG.js";
 
 navbar_showhide();
 navDropDown();
@@ -40,6 +41,7 @@ else if(document.body.dataset.page === "timeline") {
     tlShowSticky();
     tlScrollTo();
     tlMarkerScaling();
+    tlSVG();
     // tlScrollProgress();
 }
 else if(document.body.dataset.page === "trainingBases") {
