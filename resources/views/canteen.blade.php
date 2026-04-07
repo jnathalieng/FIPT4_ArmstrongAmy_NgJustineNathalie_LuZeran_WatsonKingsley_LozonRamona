@@ -122,7 +122,7 @@
         <h1 class="hidden">Airman's Canteen Page</h1>
 
         <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback">
-            <source src="{{ asset('videos/hero-videos/canteen-vid.mp4') }}" type="video/mp4">
+            <source src="{{ asset('videos/hero-videos/hero-canteen-480x1080.mp4') }}" type="video/mp4">
         </video>
 
     </section>
@@ -158,7 +158,7 @@
 
                 <div class="img-con backg">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.pn') }}'">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}">
                         <!-- NEED MOBILE IMAGES -->
                         <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}" alt="image of newsletters">
                     </picture>
