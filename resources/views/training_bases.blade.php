@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <!-- GSAP LINKING -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
@@ -26,7 +26,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img src="images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
                     </a>
                 </li>
 
@@ -84,7 +84,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img src="images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -188,9 +188,9 @@
                     <div class="map-image-box" id="base-1-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A1-PortAlbert_3AirNav.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A1-PortAlbert_3AirNav.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A1-MOBILE-PortAlbert_3AirNav.png" alt="picture of Port Albert training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A1-MOBILE-PortAlbert_3AirNav.png') }}" alt="picture of Port Albert training base">
                         </picture>
 
                     </div>
@@ -213,9 +213,9 @@
                     <div class="map-image-box" id="base-2-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A2-Goderich12.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A2-Goderich12.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A2-MOBILE-Goderich12.png" alt="picture of Goderich training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A2-MOBILE-Goderich12.png') }}" alt="picture of Goderich training base">
                         </picture>
 
                     </div>
@@ -238,9 +238,9 @@
                     <div class="map-image-box" id="base-3-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A3-Clinton_no5Radio.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A3-Clinton_no5Radio.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A3-MOBILE-Clinton_no5Radio.png" alt="picture of Clinton training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A3-MOBILE-Clinton_no5Radio.png') }}" alt="picture of Clinton training base">
                         </picture>
 
                     </div>
@@ -263,9 +263,9 @@
                     <div class="map-image-box" id="base-4-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A4-Centralia_8SFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A4-Centralia_8SFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A4-MOBILE-Centralia_8SFTS.png" alt="picture of Centralia training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A4-MOBILE-Centralia_8SFTS.png') }}" alt="picture of Centralia training base">
                         </picture>
 
                     </div>
@@ -285,9 +285,9 @@
                     <div class="map-image-box" id="base-5-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A5-Guelph_4Wireless.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A5-Guelph_4Wireless.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A5-MOBILE-Guelph_4Wireless.png" alt="picture of Guelph training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A5-MOBILE-Guelph_4Wireless.png') }}" alt="picture of Guelph training base">
                         </picture>
 
                     </div>
@@ -315,9 +315,9 @@
                     <div class="map-image-box" id="base-6-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/mobile/A6-MOBILE-LondonEFTS_AOS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/mobile/A6-MOBILE-LondonEFTS_AOS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/desktop/A6-LondonEFTS_AOS.png" alt="picture of London training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/desktop/A6-LondonEFTS_AOS.png') }}" alt="picture of London training base">
                         </picture>
 
                     </div>
@@ -340,9 +340,9 @@
                     <div class="map-image-box" id="base-7-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A7-Windsor_7EFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A7-Windsor_7EFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A7-MOBILE-Windsor_7EFTS.png" alt="picture of Windsor training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A7-MOBILE-Windsor_7EFTS.png') }}" alt="picture of Windsor training base">
                         </picture>
 
                     </div>
@@ -365,9 +365,9 @@
                     <div class="map-image-box" id="base-8-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A8-Fingal_4BomGun.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A8-Fingal_4BomGun.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A8-MOBILE-Fingal_4BomGun.png" alt="picture of training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A8-MOBILE-Fingal_4BomGun.png') }}" alt="picture of training base">
                         </picture>
 
                     </div>
@@ -387,9 +387,9 @@
                     <div class="map-image-box" id="base-9-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A9-StThomas.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A9-StThomas.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A9-MOBILE-StThomas.png" alt="picture of St. Thomas training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A9-MOBILE-StThomas.png') }}" alt="picture of St. Thomas training base">
                         </picture>
 
                     </div>
@@ -412,9 +412,9 @@
                     <div class="map-image-box" id="base-10-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A10-Aylmer14SFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A10-Aylmer14SFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A10-MOBILE-Aylmer14SFTS.png" alt="picture of Aylmer training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A10-MOBILE-Aylmer14SFTS.png') }}" alt="picture of Aylmer training base">
                         </picture>
 
                     </div>
@@ -437,9 +437,9 @@
                     <div class="map-image-box" id="base-11-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A11-Jarvis_BG.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A11-Jarvis_BG.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A11-MOBILE-Jarvis_BG.png" alt="picture of Jarvis training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A11-MOBILE-Jarvis_BG.png') }}" alt="picture of Jarvis training base">
                         </picture>
 
                     </div>
@@ -462,9 +462,9 @@
                     <div class="map-image-box" id="base-12-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A12-Hagersville,16SFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A12-Hagersville,16SFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A12-MOBILE-Hagersville,16SFTS.png" alt="picture of Hagersville training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A12-MOBILE-Hagersville,16SFTS.png') }}" alt="picture of Hagersville training base">
                         </picture>
 
                     </div>
@@ -487,9 +487,9 @@
                     <div class="map-image-box" id="base-13-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A13-Dunville6SFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A13-Dunville6SFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A13-MOBILE-Dunville6SFTS.png" alt="picture of Dunnville training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A13-MOBILE-Dunville6SFTS.png') }}" alt="picture of Dunnville training base">
                         </picture>
 
                     </div>
@@ -512,9 +512,9 @@
                     <div class="map-image-box" id="base-14-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A14-StCatharines9EFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A14-StCatharines9EFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A14-MOBILE-StCatharines9EFTS.png" alt="picture of St. Catharines training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A14-MOBILE-StCatharines9EFTS.png') }}" alt="picture of St. Catharines training base">
                         </picture>
 
                     </div>
@@ -545,9 +545,9 @@
                     <div class="map-image-box" id="base-15-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A15-Hamilton_MountHope.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A15-Hamilton_MountHope.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A15-MOBILE-Hamilton_MountHope.png" alt="picture of Mount Hope training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A15-MOBILE-Hamilton_MountHope.png') }}" alt="picture of Mount Hope training base">
                         </picture>
 
                     </div>
@@ -570,9 +570,9 @@
                     <div class="map-image-box" id="base-16-image">
 
                         <picture class="map-image-con">
-                            <source media="(min-width: 768px)" srcset="/images/Training_Bases/desktop/A16-Brantford_5SFTS.png">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/Training_Bases/desktop/A16-Brantford_5SFTS.png') }}">
 
-                            <img class="map-image" src="/images/Training_Bases/mobile/A16-MOBILE-Brantford_5SFTS.png" alt="picture of Brantford training base">
+                            <img class="map-image" src="{{ asset('images/Training_Bases/mobile/A16-MOBILE-Brantford_5SFTS.png') }}" alt="picture of Brantford training base">
                         </picture>
 
                     </div>
@@ -1157,7 +1157,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="aviation.png') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
