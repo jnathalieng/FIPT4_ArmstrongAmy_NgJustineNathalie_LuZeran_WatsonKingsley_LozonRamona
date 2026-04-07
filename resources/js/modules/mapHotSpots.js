@@ -24,7 +24,7 @@ export function mapHotSpots() {
                     duration: 1,
                     scrollTo: {
                         y: hsTarget,
-                        offsetY: -200
+                        offsetY: -250
                     },
                     ease: "power2.inOut"
                 });
@@ -33,7 +33,7 @@ export function mapHotSpots() {
                     duration: 1,
                     scrollTo: {
                         y: hsTarget,
-                        offsetY: 200
+                        offsetY: 250
                     },
                     ease: "power2.inOut"
                 });

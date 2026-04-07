@@ -47,6 +47,7 @@ ScrollTrigger.create({
     start: 'top top',
     end: 'bottom top',
     pin: true,
+    pinSpacing: false,
     onEnter: () => {
         gsap.to(svg, {
             duration: 0.5,
@@ -92,6 +93,7 @@ ScrollTrigger.create({
                     end: 'bottom top',
                     toggleActions: 'play reverse play reverse',
                     pin: true,
+                    pinSpacing: false,
                     toggleClass: {
                         targets: baseHeading,
                         className: 'activeHeading'
