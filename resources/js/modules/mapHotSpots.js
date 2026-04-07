@@ -17,9 +17,14 @@ export function mapHotSpots() {
         hotspot.addEventListener('click', () => {
             console.log(`hs${hsID} clicked, scrolling to:`, hsTarget);
 
-            hsTarget.scrollIntoView({
-                behavior: 'smooth'
+            gsap.to(window, {
+                duration: 1,
+                scrollTo: {
+                    y: hsTarget,
+                    offsetY: 0
+                },
+                ease: "power2.inOut"
             });
-        })
-    })
+        });
+    });
 }
