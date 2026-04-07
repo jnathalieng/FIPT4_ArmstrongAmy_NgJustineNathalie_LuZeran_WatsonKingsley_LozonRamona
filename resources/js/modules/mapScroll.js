@@ -22,67 +22,6 @@ const baseCoordinates = {
 const svg = document.querySelector("#map");
 const initialViewBox = {x: 0, y: 0, w: 1200, h: 800};
 
-// IntersectionOberserver watches the viewport and detects what "scroll-section" the user is on
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             const targetId = entry.target.dataset.target;
-            
-//             if (targetId === 'full-view') {
-
-//                 svg.classList.remove('active');
-
-//                 // uses the GSAP attr: to animate SVG attributes with more control
-                
-//                 gsap.to(svg, {
-//                     scale: 1,
-//                     duration: 0.5,
-//                     ease: "power2.inOut",
-//                     attr: {
-//                         viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-//                     }
-//                 })
-
-//                 // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
-//                 // svg.classList.remove('active');
-
-//                 // // GSAP zooming out from base
-//                 // gsap.to(svg, {
-//                 //     scale: 1,
-//                 //     duration: 0.5,
-//                 //     ease: "power2.inOut"
-//                 // });
-
-//             } else {
-//                 svg.classList.add('active');
-//                 zoomToBase(targetId);
-
-                
-
-//                 // GSAP zooming in to base
-//                 // gsap.to(svg, {
-//                 //     scale: 2.5,
-//                 //     duration: 0.5,
-//                 //     ease: "power2.inOut"
-//                 // });
-//             } 
-//         } else {
-//             // GSAP zooming out generally
-//             gsap.to(svg, {
-//                 scale: 1,
-//                 duration: 0.5,
-//                 ease: "power2.inOut",
-//                 attr: {
-//                     viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-//                 }
-//             });
-//         }
-//     });
-// }); 
-// 
-//this means the detector is 'detects' when there the new "scroll-section" is 20% visible
-
 // VARAIBLES AND FUNCTIONS DEFINING VIEW STATES OF THE MAP
 function getZoomedViewBox(targetId) {
     const target = baseCoordinates[targetId];
@@ -129,90 +68,84 @@ ScrollTrigger.create({
 });
 
 // CONTROLLING CONTENT SLIDE MIGRATION
-document.querySelectorAll('.scroll-section').forEach(section => {
-    const baseHeading = section.querySelector('h2');
-    const contentBox = section.querySelector('.map-content-box');
-    const imageBox = section.querySelector('.map-image-box');
-
-    if (baseHeading) {
-        gsap.from(baseHeading, {
-            x: -100,
-            opacity: 0,
-            duration: 0.2,
-            ease: "power1.In",
-            scrollTrigger: {
-                trigger: section,
-                start: 'top top',
-                end: 'bottom top',
-                toggleActions: 'play reverse play reverse',
-                pin: true,
-                toggleClass: {
-                    targets: baseHeading,
-                    className: 'activeHeading'
-                }
-            }
-        })
-    }
-
-    if (contentBox) {
-        gsap.from(contentBox, {
-            x: -100,
-            opacity: 0,
-            duration: 0.2,
-            ease: "power2.inOut",
-            scrollTrigger: {
-                trigger: section,
-                start: 'top top',
-                end: 'bottom top',
-                toggleActions: 'play reverse play reverse'
-            }
-        });
-    }
-
-    if (imageBox) {
-        gsap.from(imageBox, {
-            x: 100,
-            opacity: 0,
-            duration: 0.2,
-            ease: "power2.inOut",
-            scrollTrigger: {
-                trigger: section,
-                start: 'top top',
-                end: 'bottom top',
-                toggleActions: 'play reverse play reverse'
-            }
-        });
-    }
-});
-
-// RETURN BUTTON
-const returnButton = document.querySelector("#return-map-button");
-
-returnButton.addEventListener('click', () => {
-    gsap.to(svg, {
-        duration: 1,
-        ease: "power2.inOut",
-        attr: {
-            viewBox: resetViewBox()
-        }
-    });
-    gsap.to(window, {
-        duration: 1,
-        scrollTo: {
-            y: "#full-view",
-            ease: "power2.inOut"
-        }
-    });
-});
-
-window.addEventListener('load', () => {
-    svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
-    svg.classList.remove('active');
-
     document.querySelectorAll('.scroll-section').forEach(section => {
-        observer.observe(section);
-    })
-});
+        const baseHeading = section.querySelector('h2');
+        const contentBox = section.querySelector('.map-content-box');
+        const imageBox = section.querySelector('.map-image-box');
+
+        if (baseHeading) {
+            gsap.from(baseHeading, {
+                x: -100,
+                opacity: 0,
+                duration: 0.2,
+                ease: "power1.In",
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: 'bottom top',
+                    toggleActions: 'play reverse play reverse',
+                    pin: true,
+                    toggleClass: {
+                        targets: baseHeading,
+                        className: 'activeHeading'
+                    }
+                }
+            })
+        }
+
+        if (contentBox) {
+            gsap.from(contentBox, {
+                x: -100,
+                opacity: 0,
+                duration: 0.2,
+                ease: "power2.inOut",
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: 'bottom top',
+                    toggleActions: 'play reverse play reverse'
+                }
+            });
+        }
+
+        if (imageBox) {
+            gsap.from(imageBox, {
+                x: 100,
+                opacity: 0,
+                duration: 0.2,
+                ease: "power2.inOut",
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: 'bottom top',
+                    toggleActions: 'play reverse play reverse'
+                }
+            });
+        }
+    });
+
+    // RETURN BUTTON
+    const returnButton = document.querySelector("#return-map-button");
+
+    returnButton.addEventListener('click', () => {
+        gsap.to(svg, {
+            duration: 1,
+            ease: "power2.inOut",
+            attr: {
+                viewBox: resetViewBox()
+            }
+        });
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: {
+                y: "#full-view",
+                ease: "power2.inOut"
+            }
+        });
+    });
+
+    window.addEventListener('load', () => {
+        svg.setAttribute('viewBox', resetViewBox());
+    });
 
 }
