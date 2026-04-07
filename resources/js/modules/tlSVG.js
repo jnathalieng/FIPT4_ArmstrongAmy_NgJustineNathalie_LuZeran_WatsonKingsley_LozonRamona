@@ -1,4 +1,8 @@
 export function tlSVG() {
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTo);
+
     gsap.utils.toArray(".tl-content-break").forEach((section) => {
         
         const svgs = section.querySelectorAll("svg");
