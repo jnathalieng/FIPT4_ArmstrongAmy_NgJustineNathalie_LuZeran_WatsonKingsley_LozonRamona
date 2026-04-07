@@ -1,6 +1,6 @@
 export function tlSVG() {
 
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
     // gsap.registerPlugin(ScrollTo);
 
     gsap.utils.toArray(".tl-content-break").forEach((section) => {
@@ -31,5 +31,19 @@ export function tlSVG() {
             ease: "power2.inOut",
             stagger: 0.3
         });
+
+        // DRAW SVGs if there are any
+        const strokedSVG = section.querySelectorAll("svg path[stroke]");
+
+        if (strokedSVG.length > 0) {
+            svgTL.fromTo(strokedSVG, {
+                drawSVG: "50%"
+            },
+            {
+                drawSVG: "100%",
+                duration: 1,
+                ease: "power2.inOut",
+            }
+        )};
     });
 }
