@@ -130,80 +130,61 @@ ScrollTrigger.create({
 
 // CONTROLLING CONTENT SLIDE MIGRATION
 document.querySelectorAll('.scroll-section').forEach(section => {
-        const baseHeading = section.querySelector('h2');
-        const contentBox = section.querySelector('.map-content-box');
-        const imageBox = section.querySelector('.map-image-box');
+    const baseHeading = section.querySelector('h2');
+    const contentBox = section.querySelector('.map-content-box');
+    const imageBox = section.querySelector('.map-image-box');
 
-        if (baseHeading) {
-            gsap.from(baseHeading, {
-                x: -100,
-                opacity: 0,
-                duration: 0.2,
-                ease: "power1.In",
-                scrollTrigger: {
-                    trigger: section,
-                    start: 'top top',
-                    end: 'bottom top',
-                    toggleActions: 'play reverse play reverse',
-                    pin: true,
-                    toggleClass: {
-                        targets: baseHeading,
-                        className: 'activeHeading'
-                    }
+    if (baseHeading) {
+        gsap.from(baseHeading, {
+            x: -100,
+            opacity: 0,
+            duration: 0.2,
+            ease: "power1.In",
+            scrollTrigger: {
+                trigger: section,
+                start: 'top top',
+                end: 'bottom top',
+                toggleActions: 'play reverse play reverse',
+                pin: true,
+                toggleClass: {
+                    targets: baseHeading,
+                    className: 'activeHeading'
                 }
-            })
-        }
+            }
+        })
+    }
 
-        if (contentBox) {
-            gsap.from(contentBox, {
-                x: -100,
-                opacity: 0,
-                duration: 0.2,
-                ease: "power2.inOut",
-                scrollTrigger: {
-                    trigger: section,
-                    start: 'top top',
-                    end: 'bottom top',
-                    toggleActions: 'play reverse play reverse'
-                }
-            });
-        }
+    if (contentBox) {
+        gsap.from(contentBox, {
+            x: -100,
+            opacity: 0,
+            duration: 0.2,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                trigger: section,
+                start: 'top top',
+                end: 'bottom top',
+                toggleActions: 'play reverse play reverse'
+            }
+        });
+    }
 
-        if (imageBox) {
-            gsap.from(imageBox, {
-                x: 100,
-                opacity: 0,
-                duration: 0.2,
-                ease: "power2.inOut",
-                scrollTrigger: {
-                    trigger: section,
-                    start: 'top top',
-                    end: 'bottom top',
-                    toggleActions: 'play reverse play reverse'
-                }
-            });
-        }
-    });
-    
-    gsap.to(svg, {
-        scale: 2,
-        duration: 0.5,
-        ease: "power2.inOut",
-        attr: {
-            viewBox: `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`
-        }
-    })
-    // svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
-}
+    if (imageBox) {
+        gsap.from(imageBox, {
+            x: 100,
+            opacity: 0,
+            duration: 0.2,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                trigger: section,
+                start: 'top top',
+                end: 'bottom top',
+                toggleActions: 'play reverse play reverse'
+            }
+        });
+    }
+});
 
-function resetMap() {
-    svg.classList.remove('active');
-    
-    // stop observering
-    document.querySelectorAll('.scroll-section').forEach(section => {
-        observer.unobserve(section);
-        console.log("stopped observing");
-    });
 
     // zoom and start observing
     gsap.to(svg, {
@@ -220,23 +201,6 @@ function resetMap() {
             console.log("observer reactivated!");
         }
     });
-}
-
-function resetScrollSection() {
-    const fullViewSection = document.querySelector('#full-view');
-
-    fullViewSection.scrollIntoView({
-            behavior: 'instant'
-        });
-    }
-
-const returnButton = document.querySelector("#return-map-button");
-
-returnButton.addEventListener('click', () => {
-    resetMap();
-    console.log("map reset");
-    resetScrollSection();
-    console.log("reset section content");
 });
 
 window.addEventListener('load', () => {
