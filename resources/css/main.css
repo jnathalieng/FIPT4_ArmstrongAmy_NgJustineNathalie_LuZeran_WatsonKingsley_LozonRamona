@@ -3292,3 +3292,21 @@ p.typewriter-quote {
   grid-column: 4/span 7;
   grid-row: 10;
 }
+
+@media screen and (max-width: 768px) {
+  .tls-content-con {
+    display: flex;
+    flex-direction: column;
+  }
+  .tls-content-con .text-grid-overlay {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+  .tls-content-con .image-grid-overlay {
+    pointer-events: none;
+  }
+  .tls-content-con .image-grid-overlay p {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
