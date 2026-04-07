@@ -12,9 +12,22 @@
     height: 100vh;
 }
 
+.map-svg-element {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: all;
+}
+
 .scroll-container {
     margin: 0;
     padding: 0;
+
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .scroll-section {
@@ -34,6 +47,20 @@
 
         box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.15);
     }
+}
+
+.scroll-section {
+    pointer-events: none;
+}
+
+.scroll-flex-con {
+    pointer-events: none;
+}
+
+.map-content-box,
+.map-image-box,
+.map-button {
+    pointer-events: all;
 }
 
 .scroll-flex-con {
