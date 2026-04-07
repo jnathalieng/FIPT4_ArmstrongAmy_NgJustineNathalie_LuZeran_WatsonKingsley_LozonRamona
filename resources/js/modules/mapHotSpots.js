@@ -1,6 +1,6 @@
 export function mapHotSpots() {
 
-    console.log("hotspots!")
+    console.log("hotspots!");
 
     const hotspots = document.querySelectorAll("#hotspots circle");
     console.log('circles found:', hotspots.length);
