@@ -24,15 +24,8 @@
                 <li class="m-l-nav-item" id="about-nav">
                     <a class="nav-anchor" href="{{ route('home') }}">Home</a>
                 </li>
-
-                <li class="m-l-nav-item" id="about-nav">
-                    <a class="nav-anchor" href="{{ route('about') }}">About</a>
-                </li>
-
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
-                    
                     <a class="nav-anchor">History</a>
-
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
@@ -55,12 +48,25 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
-                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+               <li class="m-l-nav-item drop-down-wrap" id="history-nav">
+                    <a class="nav-anchor"></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('events') }}">Events</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blog</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}" >Gallery</a>
+                        </li>
+                    </ul>
                 </li>
+
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
+    
             </ul>
         </nav>
 
@@ -79,11 +85,7 @@
                     </a>
                 </li>
                 <li class="nav-separator">
-
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
-                </li>             
+                </li>            
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
                 </li>
@@ -104,6 +106,12 @@
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
@@ -174,7 +182,7 @@
 
         <div class="col-span-full m-col-start-2 m-col-span-10" id="about-video-con">
             <video controls playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" id="about-video">
-                <source src="videos/website-video.mp4" type="video/mp4">
+                <source src="./videos/website-video.mp4" type="video/mp4">
             </video>
         </div>
 

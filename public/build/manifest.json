@@ -1,4 +1,20 @@
 {
+  "public/fonts/SpecialElite-Regular.ttf": {
+    "file": "assets/SpecialElite-Regular-Clp9cCPZ.ttf",
+    "src": "public/fonts/SpecialElite-Regular.ttf"
+  },
+  "public/images/BOB-images/desktop/d-bob-hero.png": {
+    "file": "assets/d-bob-hero-vpzjvV3B.png",
+    "src": "public/images/BOB-images/desktop/d-bob-hero.png"
+  },
+  "public/images/BOB-images/folder-texture.png": {
+    "file": "assets/folder-texture-BTPlteLl.png",
+    "src": "public/images/BOB-images/folder-texture.png"
+  },
+  "public/images/BOB-images/paper-texture.jpg": {
+    "file": "assets/paper-texture-Tebj36YW.jpg",
+    "src": "public/images/BOB-images/paper-texture.jpg"
+  },
   "resources/css/grid.css": {
     "file": "assets/grid-DqR4TeWH.css",
     "name": "grid",
@@ -9,16 +25,22 @@
     "isEntry": true
   },
   "resources/css/main.css": {
-    "file": "assets/main-CLbC-r5C.css",
+    "file": "assets/main-BnB0z3lC.css",
     "name": "main",
     "names": [
       "main.css"
     ],
     "src": "resources/css/main.css",
-    "isEntry": true
+    "isEntry": true,
+    "assets": [
+      "assets/SpecialElite-Regular-Clp9cCPZ.ttf",
+      "assets/d-bob-hero-vpzjvV3B.png",
+      "assets/folder-texture-BTPlteLl.png",
+      "assets/paper-texture-Tebj36YW.jpg"
+    ]
   },
   "resources/js/main.js": {
-    "file": "assets/main-KgvhBxtr.js",
+    "file": "assets/main-CgV_f3M6.js",
     "name": "main",
     "src": "resources/js/main.js",
     "isEntry": true

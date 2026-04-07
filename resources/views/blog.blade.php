@@ -28,15 +28,12 @@
                 <li class="m-l-nav-item" id="about-nav">
                     <a class="nav-anchor" href="{{ route('home') }}">Home</a>
                 </li>
-
                 <li class="m-l-nav-item" id="about-nav">
                     <a class="nav-anchor" href="{{ route('about') }}">About</a>
                 </li>
 
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
-                    
                     <a class="nav-anchor">History</a>
-
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
@@ -45,7 +42,7 @@
                             <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
+                            <a class="dropdown-anchor" href="{{ route('training_bases') }}">Training Bases</a>
                         </li>
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
