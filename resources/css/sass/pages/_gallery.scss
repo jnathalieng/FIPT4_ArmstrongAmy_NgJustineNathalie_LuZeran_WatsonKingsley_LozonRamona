@@ -3,7 +3,9 @@
 @use '../abstracts/variables' as v;
 @use '../base/typography';
 
-
+#gallery-hero {
+     background-image: url("../../../public/images/canteen-images/mobile/m-airmans-building.png");
+}
 
 
 .gallery-info {

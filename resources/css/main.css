@@ -2865,6 +2865,10 @@ p.typewriter-quote {
     background-image: url("../../../public/images/canteen-images/desktop/d-airmans-gallery-4.png");
   }
 }
+#gallery-hero {
+  background-image: url("../../../public/images/canteen-images/mobile/m-airmans-building.png");
+}
+
 .gallery-info {
   display: flex;
   flex-direction: column;
