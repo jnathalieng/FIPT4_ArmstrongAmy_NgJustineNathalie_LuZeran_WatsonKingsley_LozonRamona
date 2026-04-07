@@ -8,7 +8,7 @@ import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
-// import { mapContentSlide } from "./modules/mapContentSlide.js";
+import { mapAnimation } from "./modules/mapAnimation.js";
 import { mapHotSpots } from "./modules/mapHotSpots.js";
 import { footerSearch } from "./modules/footer.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
@@ -48,7 +48,7 @@ else if(document.body.dataset.page === "trainingBases") {
     videoQuery();
     
     mapScroll();
-    // mapContentSlide();
+    mapAnimation();
     mapHotSpots();
 }
 else if(document.body.dataset.page === "BOB") {
