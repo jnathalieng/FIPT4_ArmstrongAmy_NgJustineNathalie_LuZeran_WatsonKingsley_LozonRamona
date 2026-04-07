@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
 </head>
 
-<body data-page="timeline">
+<body id="tl-page" data-page="timeline">
 
     <header class="header">
         <!-- navbar -->
@@ -155,9 +155,7 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-gas-1920x1080.mp4" type="video/mp4">
-                
-                <source data-mobile="/videos/hero-videos/hero-gas-768x768.mp4" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-gas-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-gas-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
