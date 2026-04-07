@@ -122,7 +122,7 @@
         <h1 class="hidden">Airman's Canteen Page</h1>
 
         <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback">
-            <source src="{{ asset('videos/hero-videos/hero-canteen-480x1080.mp4') }}" type="video/mp4">
+            <source src="{{ asset('videos/hero-videos/hero-canteen-vid.mp4') }}" type="video/mp4">
         </video>
 
     </section>
