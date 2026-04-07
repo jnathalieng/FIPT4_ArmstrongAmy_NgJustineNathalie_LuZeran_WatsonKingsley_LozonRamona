@@ -9,6 +9,7 @@ import blog from "./modules/blog.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapContentSlide } from "./modules/mapContentSlide.js";
+import { mapHotSpots } from "./modules/mapHotSpots.js";
 import { footerSearch } from "./modules/footer.js";
 import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
@@ -48,6 +49,7 @@ else if(document.body.dataset.page === "trainingBases") {
     
     mapScroll();
     mapContentSlide();
+    mapHotSpots();
 }
 else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
