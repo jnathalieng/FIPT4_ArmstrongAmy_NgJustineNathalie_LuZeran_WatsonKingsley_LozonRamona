@@ -88,6 +88,42 @@ ScrollTrigger.create({
                     toggleClass: {
                         targets: baseHeading,
                         className: 'activeHeading'
+                    },
+                    onEnter: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: getZoomedViewBox(section.dataset.target)
+                            }
+                        });
+                    },
+                    onEnterBack: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: getZoomedViewBox(section.dataset.target)
+                            }
+                        });
+                    },
+                    onLeave: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: resetViewBox()
+                            }
+                        });
+                    },
+                    onLeaveBack: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: resetViewBox()
+                            }
+                        });
                     }
                 }
             });
