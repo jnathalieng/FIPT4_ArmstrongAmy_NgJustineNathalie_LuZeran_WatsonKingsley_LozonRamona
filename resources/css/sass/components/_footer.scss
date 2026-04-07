@@ -28,9 +28,9 @@
             flex-direction: column;
 
             #footer-logo-img {
-                width: 80px;
+                width: 80%;
                 height: auto;
-                margin-bottom: 14px;
+                margin: auto;
             }
 
             #footer-logo-name {
@@ -50,6 +50,7 @@
                 text-transform: uppercase;
                 opacity: 0.8;
                 margin-bottom: 16px;
+                margin-top: 2.5vh;
             }
 
             #footer-logo-url {

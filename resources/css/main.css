@@ -86,6 +86,26 @@ a {
   display: none;
 }
 
+.hamburger-bar {
+  display: flex;
+  align-items: center;
+  background-color: #B3262E;
+  width: 100%;
+  height: 12.5vh;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.25), 4px 0 16px rgba(0, 0, 0, 0.25);
+}
+
+.ham-logo-con {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.ham-logo-con img {
+  height: 10vh;
+  object-fit: contain;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -169,9 +189,12 @@ a {
 .hamburger-nav ul {
   background-color: #fff;
   height: 100vh;
-  width: 60%;
+  width: 70%;
   margin: auto;
   box-shadow: -4px 0 16px rgba(0, 0, 0, 0.25), 4px 0 16px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
 }
 
 .hamburger-nav ul li.mobile-nav-li {
@@ -180,19 +203,20 @@ a {
 .hamburger-nav ul li.mobile-nav-li:hover {
   border: 1px #B3262E;
   border-style: solid none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 -1px 2px rgba(0, 0, 0, 0.15);
-  list-style: square;
+}
+
+.hamburger-nav ul li:first-child {
+  grid-column: 1/-1;
 }
 
 .logo-con {
-  display: block;
-  margin: auto;
   width: 100%;
 }
 .logo-con img {
+  display: block;
+  margin: 0 auto;
   padding: 1rem;
-  width: 100%;
-  height: 100%;
+  width: 50%;
   max-height: 40vh;
   object-fit: contain;
 }
@@ -203,16 +227,17 @@ a {
   width: 80%;
   margin: 0.5rem auto 1.5rem auto;
   border-radius: 1rem;
+  grid-column: 1/-1;
 }
 
 .mobile-nav-item {
   display: block;
   text-decoration: none;
   color: #fff;
-  padding: 3%;
-  font-size: 1.25rem;
+  padding: 5% 20%;
+  font-size: 1rem;
   color: #B3262E;
-  width: 70%;
+  width: 90%;
   margin: auto;
   transform-origin: left;
   transition: all 0.3s ease;
@@ -223,11 +248,11 @@ a {
   transform: translateX(10%);
 }
 .mobile-nav-item:active {
-  color: #FFC000;
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
-  .hamburger {
+  .hamburger, .hamburger-bar {
     display: none;
   }
   .hamburger-nav {
@@ -334,6 +359,9 @@ a {
   }
   .dropdown-anchor:active {
     font-size: 100%;
+  }
+  #history-nav {
+    cursor: default;
   }
 }
 #hero-selection {
@@ -456,9 +484,9 @@ a {
   flex-direction: column;
 }
 #main-footer #footer-inner #footer-logo #footer-logo-img {
-  width: 80px;
+  width: 80%;
   height: auto;
-  margin-bottom: 14px;
+  margin: auto;
 }
 #main-footer #footer-inner #footer-logo #footer-logo-name {
   font-family: "Montserrat", sans-serif;
@@ -476,6 +504,7 @@ a {
   text-transform: uppercase;
   opacity: 0.8;
   margin-bottom: 16px;
+  margin-top: 2.5vh;
 }
 #main-footer #footer-inner #footer-logo #footer-logo-url {
   color: #ffffff;
@@ -1800,6 +1829,10 @@ a {
     background-image: url("/images/hero-images/desktop/AboutHero_Desktop.png");
   }
 }
+#BOB-page {
+  overflow-x: hidden;
+}
+
 #BOB-hero .hero-title-con {
   background: linear-gradient(to bottom, #000000, black);
   backdrop-filter: blur(50px);
@@ -1860,7 +1893,7 @@ p.typewriter-quote {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 80vh;
+  height: 160vh;
   background-image: url(/public/images/BOB-images/folder-texture.png);
 }
 
@@ -1869,13 +1902,13 @@ p.typewriter-quote {
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease;
   transform: translateY(0);
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
 .dossier:hover {
@@ -1901,12 +1934,7 @@ p.typewriter-quote {
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
-}
-.dossier-content:nth-child(odd):hover {
-  transform: translateY(-50vh) translateX(-2vw);
-}
-.dossier-content:nth-child(even):hover {
-  transform: translateY(-50vh) translateX(2vw);
+  transform: translateY(-40vh);
 }
 
 .dossier-tag {
@@ -1947,18 +1975,11 @@ p.typewriter-quote {
 }
 
 #cover {
-  display: none;
-  background-color: transparent;
   z-index: 70;
-  position: absolute;
-  opacity: 1;
-  transition: all 0.3s ease;
-  transform: translate(0, 0);
+  top: 80vh;
 }
-
-#cover.hideCover {
-  opacity: 0;
-  transform: translate(-100%, -100%);
+#cover:hover {
+  transform: none;
 }
 
 #july-tag {
@@ -1977,14 +1998,19 @@ p.typewriter-quote {
   left: 50%;
 }
 
+#cover-tag {
+  width: 60vw;
+}
+
 .big-red {
-  margin-top: 80vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #B3262E;
   height: 20vh;
+  width: 100vw;
 }
 .big-red .big-red-text {
   text-align: center;
@@ -1994,9 +2020,43 @@ p.typewriter-quote {
   border-bottom: solid 2px white;
 }
 
+.deaths-section {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(/public/images/BOB-images/desktop/d-bob-hero.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deaths-info-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deaths-info {
+  flex: 1;
+  background-color: red;
+}
+
 @media screen and (min-width: 768px) {
+  .BOB-intro-section {
+    padding: 30vh 8rem;
+  }
+  h3.typewriter-quote {
+    font-size: 5rem;
+  }
+  p.typewriter-quote {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  .dossier-con {
+    height: 210vh;
+  }
   .dossier-content {
-    padding: 10rem 8rem;
+    padding: 10rem 8rem 40vh 8rem;
   }
   .dossier-tag {
     font-size: 2rem;
@@ -2014,15 +2074,8 @@ p.typewriter-quote {
   #oct-tag {
     left: 70%;
   }
-  .BOB-intro-section {
-    padding: 30vh 8rem;
-  }
-  h3.typewriter-quote {
-    font-size: 5rem;
-  }
-  p.typewriter-quote {
-    font-size: 1.25rem;
-    font-weight: normal;
+  #cover-tag {
+    width: 50vw;
   }
 }
 #bases-page {

@@ -12,15 +12,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+<<<<<<< dev.ng.navbar
+    <!--Gsap-->
+=======
     <!-- GSAP LINKING -->
+>>>>>>> main
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 </head>
-<body data-page="BOB" id="BOB-page">
+<body data-page="home">
 
     <header class="header">
+<<<<<<< dev.ng.navbar
+    <!-- navbar -->
+=======
         <!-- navbar -->
+>>>>>>> main
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -71,6 +79,7 @@
                 </li>
             </ul>
         </nav>
+<<<<<<< dev.ng.navbar
 
         <!-- mobile hamburger menu -->
         <div class="hamburger">
@@ -79,6 +88,16 @@
             <span></span>
         </div>
 
+=======
+
+        <!-- mobile hamburger menu -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+>>>>>>> main
         <nav class="hamburger-nav">
             <ul>
                 <li>
@@ -175,10 +194,6 @@
         </section>
 
         <div class="dossier-con">
-            
-            <div class="dossier" id="cover">
-                <img src="images/BOB-images/folder-texture.png">
-            </div>
 
             <div class="dossier" id="july" data-lift="500">
                 
@@ -289,6 +304,13 @@
                         </p>
                     </div>
             </div>
+
+            <div class="dossier" id="cover">
+                <h3 class="dossier-tag" id="cover-tag">
+                    THE BATTLE OF BRITAIN
+                </h3>
+                <img src="/images/BOB-images/classified.png" alt="">
+            </div>
         </div>
 
         <section class="big-red">
@@ -301,8 +323,7 @@
         </section>
 
         <div class="deaths-section">
-            <h2>Cumulative Battle of Britain Losses</h2>
-            <p>(July - October 1940)</p>
+            <h2 class="hidden">Losses Section</h2>
 
             <div class="deaths-info-con">
 
@@ -546,87 +567,5 @@
 
     </main>
 
-<footer id="main-footer">
-
-    <div id="footer-inner">
-
-        <div class="footer-col" id="footer-logo">
-            <img src="aviation.png" alt="London Aviation Museum Logo" id="footer-logo-img">
-            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
-            <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
-            <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
-            <p class="footer-contact-line">Contact: 519-455-0430</p>
-            <p class="footer-contact-line">Email: info@427wing.com</p>
-        </div>
-
-        <div class="footer-col" id="footer-discover">
-            <h3 class="footer-col-title">Discover</h3>
-            <ul class="footer-nav-list">
-                <li><a href="{{ route('about') }}">&rarr; About Us</a></li>
-                <li><a href="{{ route('comm') }}">&rarr; Remembrance</a></li>
-                <li><a href="{{ route('events') }}">&rarr; News &amp; Events</a></li>
-                <li><a href="{{ route('blog') }}">&rarr; Blog</a></li>
-                <li><a href="{{ route('gallery') }}">&rarr; Gallery</a></li>
-                <li><a href="{{ route('contact') }}">&rarr; Contact Us</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col" id="footer-legacy">
-            <h3 class="footer-col-title">Our Legacy</h3>
-            <ul class="footer-nav-list">
-                <li><a href="{{ route('timeline') }}">&rarr; London Aviation Timeline</a></li>
-                <li><a href="{{ route('training_bases') }}">&rarr; Flight Schools and Training Bases</a></li>
-                <li><a href="{{ route('comm') }}">&rarr; Legacy of the Fallen</a></li>
-                <li><a href="{{ route('canteen') }}">&rarr; Airman's Canteen</a></li>
-                <li><a href="{{ route('BOB') }}">&rarr; Battle of Britain</a></li>
-            </ul>
-        </div>
-
-        <!-- COL 4: EXPLORE & JOIN -->
-        <div class="footer-col" id="footer-explore">
-
-            <div id="footer-explore-top">
-                <h3 class="footer-col-title">Explore the Museum</h3>
-                <p class="footer-col-subtitle">Search aircraft, exhibits, and stories of courage.</p>
-                <div id="footer-search">
-                    <input type="text" id="footer-search-input" placeholder="Search here">
-                    <button type="button" id="footer-search-btn">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div id="footer-community">
-                <h3 class="footer-col-title">Join Our Community</h3>
-                <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
-                <div id="footer-socials">
-                    <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
-                        <img src="\images\icons\footer-socials-icons\Facebook.svg">
-                    </a>
-                    <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
-                        <img src="\images\icons\footer-socials-icons\LinkedIn.svg">
-                    </a>
-                    <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
-                        <img src="\images\icons\footer-socials-icons\Instagram.svg">
-                    </a>
-                    <a href="https://x.com/" class="social-icon" alt="X / Twitter">
-                        <img src="\images\icons\footer-socials-icons\twitter.svg">
-                    </a>
-                    <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
-                        <img src="\images\icons\footer-socials-icons\Youtube.svg">
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- FOOTER BOTTOM BAR -->
-    <div id="footer-bottom">
-        <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
-    </div>
-
-</footer>
 </body>
 </html>
