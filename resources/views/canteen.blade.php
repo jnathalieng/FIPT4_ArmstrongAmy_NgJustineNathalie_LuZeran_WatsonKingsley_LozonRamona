@@ -128,14 +128,15 @@
 
     <main>
 <!-- Canteen Hero Section -->
-        <section class="hero" id="canteen-hero">
-        <h1 class="hidden">Airman's Canteen Page</h1>
-
-        <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback">
-            <source src="{{ asset('videos/hero-videos/hero-canteen-vid.mp4') }}" type="video/mp4">
-        </video>
-
-    </section>
+        <section class="hero-section" id="canteen-hero">
+            <div class="hero-triangle"></div>
+            <div class="hero-title-con">
+                <div class="hero-title"><p>Airman's Canteen</p></div>
+                <div class="hero-subtitle"><p>A project of 427 Wing (London),
+                <br>Royal Canadian Air Force Association.
+  </p></div>
+            </div>
+        </section>
 
 <!-- Canteen About Section -->
 

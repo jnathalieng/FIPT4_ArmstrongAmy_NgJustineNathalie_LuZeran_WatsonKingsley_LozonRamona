@@ -1,10 +1,7 @@
 @use '../abstracts' as a;
 
 #canteen-hero {
-
-    video {
-        filter: brightness(100%);
-    }
+    background-image: url('../../../public/images/canteen-images/mobile/m-airmans-hero.png');
 }
 
 #canteen-about-section {

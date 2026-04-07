@@ -185,7 +185,7 @@
     </section>
 
         <div class="read-more">
-            <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+            <!-- <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a> -->
         </div>
 
 <!-- About Video Section -->

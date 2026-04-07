@@ -140,13 +140,13 @@
             
             <h2 class="hidden">Timeline hero section</h2>
 
-            <div class="hero-title-con">
-                <div class="hero-title">
+            <div class="hero-title-con-vid">
+                <div class="hero-title-vid">
                     <h3>
-                        Remembrance
+                        Timeline
                     </h3>
                 </div>
-                <div class="hero-subtitle">
+                <div class="hero-subtitle-vid">
                     <p>
                         Legacy of the Fallen
                     </p>
