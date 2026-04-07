@@ -21,7 +21,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="{{ assets('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -1065,7 +1065,7 @@
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="{{ assets('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
