@@ -1511,6 +1511,21 @@ a {
   top: 90%;
 }
 
+.tl-content-break {
+  background-color: #f7f7f7;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.tl-content-break svg {
+  display: block;
+  flex: 1 1 50%;
+  min-width: 0;
+  height: 100%;
+}
+
 #date-and-blog-section {
   position: relative;
 }
@@ -2872,13 +2887,6 @@ p.typewriter-quote {
 #timeline-intro-con h2 {
   width: 50%;
   margin: auto;
-}
-
-.tl-content-break {
-  background-color: #f7f7f7;
-  text-align: center;
-  font-size: 1000%;
-  height: 100vh;
 }
 
 .tls-sticky-bg {
