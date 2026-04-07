@@ -15,8 +15,11 @@
 #timeline-intro-con {
     // position: absolute;
     // top: 0;
+    color: a.$primary-color;
     text-align: center;
     width: 100%;
+    margin: -75vh auto 20vh auto;
+    
 
     h2 {
         width: 50%;
@@ -86,8 +89,10 @@
 }
 
 .tl-ibox-text-con {
-    display: flex;
-    justify-content: space-evenly   ;
+    display: none;
+    justify-content: space-evenly;
+    
+    color: a.$black;
 }
 
 .tl-ibox-img-con {

@@ -1512,7 +1512,7 @@ a {
 }
 
 .tl-content-break {
-  background-color: #f7f7f7;
+  background-color: #fff;
   text-align: center;
   height: 100vh;
   display: flex;
@@ -2885,8 +2885,10 @@ p.typewriter-quote {
 }
 
 #timeline-intro-con {
+  color: #B3262E;
   text-align: center;
   width: 100%;
+  margin: -75vh auto 20vh auto;
 }
 #timeline-intro-con h2 {
   width: 50%;
@@ -2941,8 +2943,9 @@ p.typewriter-quote {
 }
 
 .tl-ibox-text-con {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
+  color: #000;
 }
 
 .tl-ibox-img-con {

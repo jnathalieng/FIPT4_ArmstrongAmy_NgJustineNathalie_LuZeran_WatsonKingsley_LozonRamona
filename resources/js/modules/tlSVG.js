@@ -27,9 +27,9 @@ export function tlSVG() {
         {
             scale: 1,
             opacity: 1,
-            duration: 2,
+            duration: 1,
             ease: "power2.inOut",
-            stagger: 1
+            stagger: 0.3
         });
     });
 }
