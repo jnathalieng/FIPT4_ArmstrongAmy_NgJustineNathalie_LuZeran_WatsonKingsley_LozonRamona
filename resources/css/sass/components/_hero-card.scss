@@ -3,10 +3,11 @@
 #hero-selection {
     display: block;
     width: 100%;
-    max-height: 100vh;
+    //min-height: 100vh;
 }
 
 .hero-card-con {
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,6 +18,7 @@
     overflow: hidden;
     flex: 50%;
     aspect-ratio: 1 / 1;
+
 }
 
 .hero-card h3 {
@@ -110,5 +112,12 @@
     .hero-card-image:hover {
         transition: a.$t-time;
         transform: a.$scale-up;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .hero-card {
+        height: 100vh;
     }
 }

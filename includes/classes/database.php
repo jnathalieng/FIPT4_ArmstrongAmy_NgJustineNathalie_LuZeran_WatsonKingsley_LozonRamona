@@ -42,22 +42,22 @@ class database
     public function getConfig()
     {
         //dev
-        // return [
-        //     'username' => 'root',
-        //     'password' => '',
-        //     'host' => 'localhost',
-        //     'database' => 'london_aircraft_museum',
-        //     'port' => '3306'
-        // ];
-
-        //Production
         return [
-            'username' => 'thede519_london',
-            'password' => 'Rvf;Fs91a6X9Z8j&',
+            'username' => 'root',
+            'password' => '',
             'host' => 'localhost',
-            'database' => 'thede519_london_aircraft_museum',
+            'database' => 'london_aircraft_museum',
             'port' => '3306'
         ];
+
+        //Production
+        // return [
+        //     'username' => 'thede519_london',
+        //     'password' => 'Rvf;Fs91a6X9Z8j&',
+        //     'host' => 'localhost',
+        //     'database' => 'thede519_london_aircraft_museum',
+        //     'port' => '3306'
+        // ];
     }
 
     public function getDsn()
