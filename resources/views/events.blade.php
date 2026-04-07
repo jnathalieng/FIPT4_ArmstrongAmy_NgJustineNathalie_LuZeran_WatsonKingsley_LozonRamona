@@ -195,7 +195,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
                     <!-- <img class="carousel-card-image"-->
                     
                     <!-- card title -->
@@ -227,7 +227,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
                     
                     <!-- card title -->
                     </div>
@@ -258,101 +258,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-
-                    
-                    <!-- card title -->
-                    </div>
-                        <h3 class="card-title">
-                            TITLE
-                        </h3>
-
-                    <!-- card text content     -->
-                    <div class="card-text">
-                        <P>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing.
-                        </P>
-                    </div>
-
-                    <!-- card bottom button -->
-                <a class="card-button">Read More<span>&#8594</span></a>
-                </div>
-
-            <!-- Carousel Card -->
-            <div class="event-card">
-
-                <!-- top-left sub-card -->
-                <div class="sub-card">
-                    <span>MAY</span>
-                    <span>30<span>
-                    <span>2026</span>
-                </div>
-
-                <!-- card main image -->
-                    <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-                    
-                    <!-- card title -->
-                    </div>
-                        <h3 class="card-title">
-                            TITLE
-                        </h3>
-
-                    <!-- card text content     -->
-                    <div class="card-text">
-                        <P>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing.
-                        </P>
-                    </div>
-
-                    <!-- card bottom button -->
-                <a class="card-button">Read More<span>&#8594</span></a>
-                </div>
-
-            <!-- Carousel Card -->
-            <div class="event-card">
-
-                <!-- top-left sub-card -->
-                <div class="sub-card">
-                    <span>MAY</span>
-                    <span>30<span>
-                    <span>2026</span>
-                </div>
-
-                <!-- card main image -->
-                    <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-                    
-                    <!-- card title -->
-                    </div>
-                        <h3 class="card-title">
-                            TITLE
-                        </h3>
-
-                    <!-- card text content     -->
-                    <div class="card-text">
-                        <P>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing.
-                        </P>
-                    </div>
-
-                    <!-- card bottom button -->
-                <a class="card-button">Read More<span>&#8594</span></a>
-                </div>
-
-            <!-- Carousel Card -->
-            <div class="event-card">
-
-                <!-- top-left sub-card -->
-                <div class="sub-card">
-                    <span>MAY</span>
-                    <span>30<span>
-                    <span>2026</span>
-                </div>
-
-                <!-- card main image -->
-                    <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -384,7 +290,69 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
+                    
+                    <!-- card title -->
+                    </div>
+                        <h3 class="card-title">
+                            TITLE
+                        </h3>
+
+                    <!-- card text content     -->
+                    <div class="card-text">
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing.
+                        </P>
+                    </div>
+
+                    <!-- card bottom button -->
+                <a class="card-button">Read More<span>&#8594</span></a>
+                </div>
+
+            <!-- Carousel Card -->
+            <div class="event-card">
+
+                <!-- top-left sub-card -->
+                <div class="sub-card">
+                    <span>MAY</span>
+                    <span>30<span>
+                    <span>2026</span>
+                </div>
+
+                <!-- card main image -->
+                    <div class="card-image-con">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
+                    
+                    <!-- card title -->
+                    </div>
+                        <h3 class="card-title">
+                            TITLE
+                        </h3>
+
+                    <!-- card text content     -->
+                    <div class="card-text">
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing.
+                        </P>
+                    </div>
+
+                    <!-- card bottom button -->
+                <a class="card-button">Read More<span>&#8594</span></a>
+                </div>
+
+            <!-- Carousel Card -->
+            <div class="event-card">
+
+                <!-- top-left sub-card -->
+                <div class="sub-card">
+                    <span>MAY</span>
+                    <span>30<span>
+                    <span>2026</span>
+                </div>
+
+                <!-- card main image -->
+                    <div class="card-image-con">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -416,7 +384,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -448,7 +416,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -480,7 +448,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -512,7 +480,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -544,7 +512,39 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
+
+                    
+                    <!-- card title -->
+                    </div>
+                        <h3 class="card-title">
+                            TITLE
+                        </h3>
+
+                    <!-- card text content     -->
+                    <div class="card-text">
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing.
+                        </P>
+                    </div>
+
+                    <!-- card bottom button -->
+                <a class="card-button">Read More<span>&#8594</span></a>
+                </div>
+
+            <!-- Carousel Card -->
+            <div class="event-card">
+
+                <!-- top-left sub-card -->
+                <div class="sub-card">
+                    <span>MAY</span>
+                    <span>30<span>
+                    <span>2026</span>
+                </div>
+
+                <!-- card main image -->
+                    <div class="card-image-con">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -595,7 +595,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -627,7 +627,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -659,7 +659,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -691,7 +691,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -723,7 +723,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
                     
                     <!-- card title -->
                     </div>
@@ -754,39 +754,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-
-                    
-                    <!-- card title -->
-                    </div>
-                        <h3 class="card-title">
-                            TITLE
-                        </h3>
-
-                    <!-- card text content     -->
-                    <div class="card-text">
-                        <P>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing.
-                        </P>
-                    </div>
-
-                    <!-- card bottom button -->
-                <a class="card-button">Read More<span>&#8594</span></a>
-                </div>
-
-            <!-- Carousel Card -->
-            <div class="event-card">
-
-                <!-- top-left sub-card -->
-                <div class="sub-card">
-                    <span>MAY</span>
-                    <span>30<span>
-                    <span>2026</span>
-                </div>
-
-                <!-- card main image -->
-                    <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -818,7 +786,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -850,7 +818,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -882,7 +850,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -914,7 +882,7 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
@@ -946,7 +914,39 @@
 
                 <!-- card main image -->
                     <div class="card-image-con">
-                         <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
+
+                    
+                    <!-- card title -->
+                    </div>
+                        <h3 class="card-title">
+                            TITLE
+                        </h3>
+
+                    <!-- card text content     -->
+                    <div class="card-text">
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing.
+                        </P>
+                    </div>
+
+                    <!-- card bottom button -->
+                <a class="card-button">Read More<span>&#8594</span></a>
+                </div>
+
+            <!-- Carousel Card -->
+            <div class="event-card">
+
+                <!-- top-left sub-card -->
+                <div class="sub-card">
+                    <span>MAY</span>
+                    <span>30<span>
+                    <span>2026</span>
+                </div>
+
+                <!-- card main image -->
+                    <div class="card-image-con">
+                         <img class="carousel-card-image" src="{{ asset('images/icons/LAM-logo-no-text-red.svg') }}">
 
                     
                     <!-- card title -->
