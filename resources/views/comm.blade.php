@@ -205,7 +205,7 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
                         <!-- NEEDS IMAGES -->
                         <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-john-allan-smith.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
@@ -248,7 +248,7 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
                         <!-- NEEDS IMAGES -->
                         <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-robert-clinton-bailey.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
@@ -290,7 +290,7 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
                         <!-- NEEDS IMAGES -->
                         <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-grant-thomas-stewart.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
@@ -323,7 +323,7 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png') }}">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}">
                         <!-- NEEDS IMAGES -->
                         <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
