@@ -1,5 +1,9 @@
 @use '../abstracts' as a;
 
+#tl-page {
+    overflow-x: hidden;
+}
+
 #tl-body {
     color: black;
 }
@@ -11,8 +15,11 @@
 #timeline-intro-con {
     // position: absolute;
     // top: 0;
+    color: a.$primary-color;
     text-align: center;
     width: 100%;
+    margin: -75vh auto 20vh auto;
+    
 
     h2 {
         width: 50%;
@@ -25,7 +32,7 @@
     font-size: 3000%;
     z-index: -1;
     pointer-events: none;
-    color: a.$tertiary-color;
+    color: a.$secondary-color;
     text-align: center;
 
     // Parallax settings
@@ -46,6 +53,13 @@
     position: relative;
     height: 400vh;
 }
+
+#tl-1909-section {
+    .tls-content-con {
+        height: 300vh;
+    }
+}
+
 
 .text-grid-overlay, .image-grid-overlay {
     display: grid;
@@ -82,8 +96,10 @@
 }
 
 .tl-ibox-text-con {
-    display: flex;
-    justify-content: space-evenly   ;
+    display: none;
+    justify-content: space-evenly;
+    
+    color: a.$black;
 }
 
 .tl-ibox-img-con {

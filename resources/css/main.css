@@ -1552,7 +1552,7 @@ a {
 }
 
 .tl-content-break {
-  background-color: #f7f7f7;
+  background-color: #fff;
   text-align: center;
   height: 100vh;
   display: flex;
@@ -2928,6 +2928,10 @@ p.typewriter-quote {
   cursor: pointer;
 }
 
+#tl-page {
+  overflow-x: hidden;
+}
+
 #tl-body {
   color: black;
 }
@@ -2937,8 +2941,10 @@ p.typewriter-quote {
 }
 
 #timeline-intro-con {
+  color: #B3262E;
   text-align: center;
   width: 100%;
+  margin: -75vh auto 20vh auto;
 }
 #timeline-intro-con h2 {
   width: 50%;
@@ -2949,7 +2955,7 @@ p.typewriter-quote {
   font-size: 3000%;
   z-index: -1;
   pointer-events: none;
-  color: #f7f7f7;
+  color: #91B8D9;
   text-align: center;
   position: sticky;
   top: 0;
@@ -2963,6 +2969,10 @@ p.typewriter-quote {
   gap: 1%;
   position: relative;
   height: 400vh;
+}
+
+#tl-1909-section .tls-content-con {
+  height: 300vh;
 }
 
 .text-grid-overlay, .image-grid-overlay {
@@ -2993,8 +3003,9 @@ p.typewriter-quote {
 }
 
 .tl-ibox-text-con {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
+  color: #000;
 }
 
 .tl-ibox-img-con {
