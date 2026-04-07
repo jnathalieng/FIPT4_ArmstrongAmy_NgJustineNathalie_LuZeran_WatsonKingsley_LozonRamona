@@ -22,137 +22,183 @@ const baseCoordinates = {
 const svg = document.querySelector("#map");
 const initialViewBox = {x: 0, y: 0, w: 1200, h: 800};
 
-// IntersectionOberserver watches the viewport and detects what "scroll-section" the user is on
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const targetId = entry.target.dataset.target;
-            
-            if (targetId === 'full-view') {
-
-                svg.classList.remove('active');
-
-                // uses the GSAP attr: to animate SVG attributes with more control
-                
-                gsap.to(svg, {
-                    scale: 1,
-                    duration: 0.5,
-                    ease: "power2.inOut",
-                    attr: {
-                        viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-                    }
-                })
-
-                // svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
-                // svg.classList.remove('active');
-
-                // // GSAP zooming out from base
-                // gsap.to(svg, {
-                //     scale: 1,
-                //     duration: 0.5,
-                //     ease: "power2.inOut"
-                // });
-
-            } else {
-                svg.classList.add('active');
-                zoomToBase(targetId);
-
-                
-
-                // GSAP zooming in to base
-                // gsap.to(svg, {
-                //     scale: 2.5,
-                //     duration: 0.5,
-                //     ease: "power2.inOut"
-                // });
-            } 
-        } else {
-            // GSAP zooming out generally
-            gsap.to(svg, {
-                scale: 1,
-                duration: 0.5,
-                ease: "power2.inOut",
-                attr: {
-                    viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-                }
-            });
-        }
-    });
-}, {threshold: 0.05}); //this means the detector is 'detects' when there the new "scroll-section" is 20% visible
-
-function zoomToBase(targetId) {
+// VARAIBLES AND FUNCTIONS DEFINING VIEW STATES OF THE MAP
+function getZoomedViewBox(targetId) {
     const target = baseCoordinates[targetId];
-
     const zoomLevel = 0.25;
+
     const viewWidth = initialViewBox.w * zoomLevel;
     const viewHeight = initialViewBox.h * zoomLevel;
 
     const viewBoxX = target.x - (viewWidth / 2);
     const viewBoxY = target.y - (viewHeight / 2);
 
-    gsap.to(svg, {
-        scale: 2,
-        duration: 0.5,
-        ease: "power2.inOut",
-        attr: {
-            viewBox: `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`
-        }
-    })
-    // svg.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`);
+    return `${viewBoxX} ${viewBoxY} ${viewWidth} ${viewHeight}`;
 }
 
-function resetMap() {
-    svg.classList.remove('active');
-    
-    // stop observering
-    document.querySelectorAll('.scroll-section').forEach(section => {
-        observer.unobserve(section);
-        console.log("stopped observing");
-    });
-
-    // zoom and start observing
-    gsap.to(svg, {
-        scale: 1,
-        duration: 0.5,
-        ease: "power2.inOut",
-        attr: {
-            viewBox: `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
-        },
-        onComplete: () => {
-            document.querySelectorAll('.scroll-section').forEach(section => {
-                observer.observe(section);
-            });
-            console.log("observer reactivated!");
-        }
-    });
+function resetViewBox() {
+    return `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`
 }
 
-function resetScrollSection() {
-    const fullViewSection = document.querySelector('#full-view');
+const fullView = document.querySelector("#full-view");
 
-    fullViewSection.scrollIntoView({
-            behavior: 'instant'
+ScrollTrigger.create({
+    trigger: fullView,
+    start: 'top top',
+    end: 'bottom top',
+    pin: true,
+    pinSpacing: false,
+    onEnter: () => {
+        gsap.to(svg, {
+            duration: 0.5,
+            ease: "power2.inOut",
+            attr: {
+                viewBox: resetViewBox()
+            }
+        });
+    },
+    onEnterBack: () => {
+        gsap.to(svg, {
+            duration: 0.5,
+            ease: "power2.inOut",
+            attr: {
+                viewBox: resetViewBox()
+            }
         });
     }
-
-const returnButton = document.querySelector("#return-map-button");
-
-returnButton.addEventListener('click', () => {
-    resetMap();
-    console.log("map reset");
-    resetScrollSection();
-    console.log("reset section content");
 });
 
-window.addEventListener('load', () => {
-    svg.setAttribute('viewBox', `${initialViewBox.x} ${initialViewBox.y} ${initialViewBox.w} ${initialViewBox.h}`);
-
-    svg.classList.remove('active');
-
+// CONTROLLING CONTENT SLIDE MIGRATION
     document.querySelectorAll('.scroll-section').forEach(section => {
-        observer.observe(section);
-    })
-});
+
+        if (section.dataset.target === 'full-view') return;
+
+        const baseHeading = section.querySelector('h2');
+        const contentBox = section.querySelector('.map-content-box');
+        const imageBox = section.querySelector('.map-image-box');
+
+        if (baseHeading) {
+            gsap.fromTo(baseHeading, {
+                x: -100,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.2,
+                ease: "power1.In",
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: 'bottom top',
+                    toggleActions: 'play reverse play reverse',
+                    pin: true,
+                    pinSpacing: false,
+                    toggleClass: {
+                        targets: baseHeading,
+                        className: 'activeHeading'
+                    },
+                    onEnter: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: getZoomedViewBox(section.dataset.target)
+                            }
+                        });
+                    },
+                    onEnterBack: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: getZoomedViewBox(section.dataset.target)
+                            }
+                        });
+                    },
+                    onLeave: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: resetViewBox()
+                            }
+                        });
+                    },
+                    onLeaveBack: () => {
+                        gsap.to(svg, {
+                            duration: 0.5,
+                            ease: "power2.inOut",
+                            attr: {
+                                viewBox: resetViewBox()
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        if (contentBox) {
+            gsap.fromTo(contentBox, {
+                x: -100,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.2,
+                ease: "power2.inOut",
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: 'bottom top',
+                    toggleActions: 'play reverse play reverse'
+                }
+            });
+        }
+
+        if (imageBox) {
+            gsap.fromTo(imageBox, {
+                x: 100,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.2,
+                ease: "power2.inOut",
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: 'bottom top',
+                    toggleActions: 'play reverse play reverse'
+                }
+            });
+        }
+    });
+
+    // RETURN BUTTON
+    const returnButton = document.querySelector("#return-map-button");
+
+    returnButton.addEventListener('click', () => {
+        gsap.to(svg, {
+            duration: 1,
+            ease: "power2.inOut",
+            attr: {
+                viewBox: resetViewBox()
+            }
+        });
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: {
+                y: "#full-view",
+                ease: "none"
+            }
+        });
+    });
+
+    window.addEventListener('load', () => {
+        svg.setAttribute('viewBox', resetViewBox());
+    });
 
 }
