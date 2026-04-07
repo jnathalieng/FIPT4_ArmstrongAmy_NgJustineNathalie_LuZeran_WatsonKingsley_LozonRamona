@@ -70,7 +70,7 @@
 
                 <li class="m-l-nav-item drop-down-wrap" id="events-nav">
                     
-                    <a class="nav-anchor" href="{{ route('Events') }}">Events</a>
+                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
 
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
