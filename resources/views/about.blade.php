@@ -17,7 +17,7 @@
 <body data-page="home">
 
     <header class="header">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -29,8 +29,11 @@
                 <li class="m-l-nav-item" id="about-nav">
                     <a class="nav-anchor" href="{{ route('home') }}">Home</a>
                 </li>
+
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
+                    
                     <a class="nav-anchor">History</a>
+
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
                             <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
@@ -53,17 +56,16 @@
                     </ul>
                 </li>
 
-               <li class="m-l-nav-item drop-down-wrap" id="history-nav">
-                    <a class="nav-anchor"></a>
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
+                    <a class="nav-anchor" href="{{ route('gallery') }}">Events</a>
+
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('events') }}">Events</a>
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blog</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('gallery') }}" >Gallery</a>
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
                         </li>
                     </ul>
                 </li>
@@ -71,15 +73,19 @@
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
-    
             </ul>
         </nav>
 
         <!-- mobile hamburger menu -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="hamburger-bar">
+            <a href="{{ route('home') }}" class="ham-logo-con">
+                <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <nav class="hamburger-nav">
@@ -90,7 +96,11 @@
                     </a>
                 </li>
                 <li class="nav-separator">
-                </li>            
+
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('home') }}">Home</a>
+                </li>             
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
                 </li>
@@ -113,10 +123,10 @@
                     <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
+                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blogs</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blog</a>
+                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>

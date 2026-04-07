@@ -2154,7 +2154,7 @@ p.typewriter-quote {
 }
 
 #about-hero {
-  background-image: url("/images/general-images/mobile/AboutHero_Mobile.png");
+  background-image: url("{../../images/general-images/AboutHero_Mobile.png}");
 }
 
 #about-mike {
@@ -2164,7 +2164,7 @@ p.typewriter-quote {
 
 @media screen and (min-width: 768px) {
   #about-hero {
-    background-image: url("/images/general-images/tablet/AboutHero_Tablet.png");
+    background-image: url("../../images/general-images/AboutHero_Tablet.png");
   }
   #about-video-section h2, #about-video-section p {
     margin: 2rem 0;
@@ -2178,7 +2178,7 @@ p.typewriter-quote {
 }
 @media (min-width: 1200px) {
   #about-hero {
-    background-image: url("/images/general-images/desktop/AboutHero_Desktop.png");
+    background-image: url("../../images/general-images/AboutHero_Desktop.png");
   }
 }
 #contact-hero {
@@ -2941,4 +2941,4 @@ p.typewriter-quote {
 .ibox-f5 {
   grid-column: 4/span 7;
   grid-row: 10;
-}/*# sourceMappingURL=main.css.map */
+}
