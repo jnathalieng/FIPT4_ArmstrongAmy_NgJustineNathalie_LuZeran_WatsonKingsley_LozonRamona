@@ -6,7 +6,7 @@ export function mapHotSpots() {
     console.log('circles found:', hotspots.length);
 
     hotspots.forEach((hotspot, index) => {
-        const hsID = index + 1;
+        const hsID = hotspot.id.replace('hs', '');
         const hsTarget = document.querySelector(`[data-target="base-${hsID}"]`);
 
         if (!hsTarget) return;
