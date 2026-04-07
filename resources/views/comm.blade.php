@@ -164,23 +164,13 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-march-1920x1080.mp4') }}" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-march-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
                 
                 <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
 
-        </section>
-       
-<!-- COMMEMORATION HERO SECTION -->
-
-        <section class="hero-section" id="comm-hero">
-            <div class="hero-triangle"></div>
-            <div class="hero-title-con">
-                <div class="hero-title"><p>London's Air Age</p></div>
-                <div class="hero-subtitle"><p>From Lambeth to Crumlin</p></div>
-            </div>
         </section>
 
 <!-- Commemoration Text Section -->
