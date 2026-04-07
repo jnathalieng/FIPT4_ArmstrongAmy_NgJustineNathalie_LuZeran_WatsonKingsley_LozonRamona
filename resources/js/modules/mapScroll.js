@@ -69,6 +69,9 @@ ScrollTrigger.create({
 
 // CONTROLLING CONTENT SLIDE MIGRATION
     document.querySelectorAll('.scroll-section').forEach(section => {
+
+        if (section.dataset.target === 'full-view') return;
+
         const baseHeading = section.querySelector('h2');
         const contentBox = section.querySelector('.map-content-box');
         const imageBox = section.querySelector('.map-image-box');
