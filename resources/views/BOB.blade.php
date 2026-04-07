@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 </head>
-<body data-page="home">
+<body id="BOB-page" data-page="BOB">
 
     <header class="header">
         <!-- navbar -->
@@ -154,9 +154,7 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-canteen-1920x1080.mp4') }}" type="video/mp4">
-                
-                <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-canteen-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
@@ -358,11 +356,11 @@
             </div>
 
             <div class="deaths-info-bot">
-                <p class="appear-text">
+                <p class="typewriter-quote">
                     “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
                 </p>
 
-                <p class="appear-text">
+                <p class="typewriter-quote">
                     Prime Minister Churchill in the House of Commons, August 15, 1940
                 </p>
 
@@ -386,7 +384,12 @@
                 <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                     <h2 class="pilot-card-name-mobile">ROSS SMITHER</h2>
-                    <div class="pilots-card-img-con" ID="ross-smither"></div>
+                    <div class="pilots-card-img-con" ID="ross-smither">
+                        <picture class="BOB-img-con">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-ross-smither.png') }}">
+                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-ross-smither.png') }}" alt="">
+                        </picture>
+                    </div>
                     <div class="pilots-card-text-con">
 
                     <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
@@ -412,7 +415,12 @@
                 <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">HUGH RILEY</h2>
 
-                    <div class="pilots-card-img-con" id="hugh-riley"></div>
+                    <div class="pilots-card-img-con" id="hugh-riley">
+                        <picture class="BOB-img-con">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-hugh-reilley.png') }}">
+                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-hugh-reilley.png') }}" alt="">
+                        </picture>
+                    </div>
                     <div class="pilots-card-text-con">
                     <h2 class="pilot-card-rank-desk">PILOTOFFICER</h2>
                     <h2 class="pilot-card-name-desk">HUGH RILEY</h2>
@@ -438,7 +446,12 @@
                 <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">ROBERT GRASSICK</h2>
 
-                <div class="pilots-card-img-con" id="robert-grassik"></div>
+                <div class="pilots-card-img-con" id="robert-grassik">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-grassick.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-grassick.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
 
                     <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
@@ -469,7 +482,12 @@
                 <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">NIEL CAMPBELL</h2>
 
-                <div class="pilots-card-img-con" id="niel-campbell"></div>
+                <div class="pilots-card-img-con" id="niel-campbell">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-neil-campbell.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-neil-campbell.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
                     <h2 class="pilot-card-rank-desk">PILOT OFFICER</h2>
                     <h2 class="pilot-card-name-desk">NIEL CAMPBELL</h2>
@@ -496,7 +514,12 @@
                 <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">ROBERT R. SMITH, DFC</h2>
 
-                <div class="pilots-card-img-con" id="robert-smith"></div>
+                <div class="pilots-card-img-con" id="robert-smith">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-smith.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-smith.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
                 <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-desk">ROBERT R. SMITH, DFC</h2>
