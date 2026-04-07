@@ -26,7 +26,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img src="images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
                     </a>
                 </li>
 
@@ -84,7 +84,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img src="images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
