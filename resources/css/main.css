@@ -48,9 +48,27 @@ a {
   font-size: 55;
 }
 
+.g-header-text {
+  font-family: "Monserrat", sans-serif;
+  color: #3c3c3c;
+  font-size: 55;
+}
+
 .r-body-text {
   font-family: "Monserrat", sans-serif;
   color: #B3262E;
+  font-size: 24;
+}
+
+.b-header-text {
+  font-family: "Monserrat", sans-serif;
+  color: #91B8D9;
+  font-size: 55;
+}
+
+.b-body-text {
+  font-family: "Monserrat", sans-serif;
+  color: #91B8D9;
   font-size: 24;
 }
 
@@ -93,6 +111,10 @@ a {
   width: 100%;
   height: 12.5vh;
   box-shadow: -4px 0 16px rgba(0, 0, 0, 0.25), 4px 0 16px rgba(0, 0, 0, 0.25);
+}
+
+#cms-logo-mobile img {
+  width: 100px;
 }
 
 .ham-logo-con {
@@ -2936,6 +2958,62 @@ p.typewriter-quote {
   cursor: pointer;
 }
 
+.cms-page-top {
+  margin-top: 15vh;
+}
+
+.dashboard-page-con {
+  display: flex;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cms-card {
+  border: solid 1px #3c3c3c;
+}
+
+.stat-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.stat-bar .grey-divider {
+  border: solid 1px #3c3c3c;
+  width: 90%;
+}
+.stat-bar .stat-con {
+  width: 80vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: row;
+}
+.stat-bar .stat-con img {
+  height: 50px;
+  opacity: 0.5;
+}
+
+.actions-and-content-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.actions-and-content-con .card-title-bar {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.actions-and-content-con .card-title-bar img {
+  width: 50px;
+  margin-left: auto;
+}
+
 #tl-page {
   overflow-x: hidden;
 }
@@ -3313,4 +3391,4 @@ p.typewriter-quote {
   .tls-content-con .image-grid-overlay p {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}

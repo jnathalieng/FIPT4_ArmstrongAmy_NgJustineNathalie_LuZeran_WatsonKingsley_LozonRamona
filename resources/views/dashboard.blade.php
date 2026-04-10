@@ -19,7 +19,7 @@
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
-                    <a class="desktop-logo" href="{{ route('home') }}">
+                    <a class="desktop-logo" id="cms-logo" href="{{ route('home') }}">
                         <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
@@ -92,7 +92,7 @@
 
         <!-- mobile hamburger menu -->
         <div class="hamburger-bar">
-            <a href="{{ route('home') }}" class="ham-logo-con">
+            <a href="{{ route('home') }}" class="ham-logo-con" id="cms-logo-mobile">
                 <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
             </a>
             <div class="hamburger">
@@ -113,46 +113,122 @@
 
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('home') }}">Home</a>
+                    <a class="mobile-nav-item" href="{{ route('dashboard') }}">Dashboard</a>
                 </li> 
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
+                    <a class="mobile-nav-item" href="{{ route('events-manager') }}">Events</a>
                 </li>             
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
+                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                    <a class="mobile-nav-item" href="{{ route('comm-manager') }}">Commemoration</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
+                    <a class="mobile-nav-item" href="{{ route('gallery-manager') }}">Gallery</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blogs</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
+                    <a class="mobile-nav-item" href="{{ route('social-media-manager') }}">Social Media</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main style="min-height: 100vh;">
+    <main>
+
+<section class="cms-page-top dashboard-page-con grid-con">
+    <div class="col-span-full">
+        <h2 class="r-title-text">
+            Home/Dashboard
+        </h2>
+    </div>
+
+    <div class="col-span-full">
+        <h2 class="g-header-text">Welcome Back, Admin</h2>
+        <h3 class="g-header-text">Manage Events, Blog Posts, and other Museum Contents</h3>
+    </div>
+
+    <section class="stat-bar cms-card col-span-full">
+        
+    <div class="stat-con">
+            <img src="{{ asset('images\icons\calendar-solid-full.svg') }}">
+
+            <div>
+                <p class="r-body-text">TOTAL EVENTS</p>
+                <p class="b-header-text">12</p>
+            </div>
+        </div>
+
+    <div class="grey-divider"></div>
+
+        <div class="stat-con">
+            <img src="{{ asset('images\icons\file-lines-regular-full.svg') }}">
+            
+            <div>
+                <p class="r-body-text">BLOG POSTS</p>
+                <p class="b-header-text">28</p>
+            </div>
+        </div>
+
+  <div class="grey-divider"></div>
+
+        <div class="stat-con">
+            <img src="{{ asset('images\icons\star-solid-full.svg') }}">
+
+            <div>
+                <p class="r-body-text">COMMEMORATION</p>
+                <p class="b-header-text">28</p>
+            </div>
+        </div>
+
+  <div class="grey-divider"></div>
+
+        <div class="stat-con">
+            <img src="{{ asset('images\icons\comment-dots-regular-full.svg') }}">
+            <div>
+                <p class="r-body-text">SOCIAL POSTS</p>
+                <p class="b-header-text">28</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cms-card actions-and-content-con col-span-full">
+        <div>
+            <article class="card-title-bar">
+                <h3>
+                    Quick Actions
+                </h3>
+            <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">
+            </article>
+
+            <article>
+                <h3>
+                    Latest Content
+                </h3>
+            </article>
+        </div>
+
+        <article>
+            <h3>
+                Upcoming Events
+            </h3>
+            <p>
+                Google Calendar
+            </p>
+            <img src="{{ asset('images\icons\calendar-solid-full.svg') }}">
+        </article>
+    </section>
+
+    <section>
+        <div>
+            <h3>
+                Recent Activity
+            </h3>
+
+            <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">
+        </div>
+    </section>
+</section>
         </main>
 
 <!-- FOOTER SECTION -->

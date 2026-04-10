@@ -1,0 +1,57 @@
+@use '../abstracts' as a;
+
+.cms-page-top {
+    margin-top: 15vh;
+}
+
+.dashboard-page-con {
+    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cms-card {
+    border: solid 1px #3c3c3c;
+}
+
+.stat-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .grey-divider {
+        border: solid 1px #3c3c3c;
+        width: 90%;
+    }
+    .stat-con {
+        width: 80vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        display: flex;
+        flex-direction: row;
+        img {
+            height: 50px;
+            opacity: 0.5
+        }
+    }
+}
+
+.actions-and-content-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .card-title-bar {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 50px;
+            margin-left: auto;
+        }
+    }
+}
