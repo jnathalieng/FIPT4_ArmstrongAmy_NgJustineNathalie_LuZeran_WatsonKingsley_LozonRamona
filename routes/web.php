@@ -77,6 +77,38 @@ Route::get('/blog', function () {
 
 Route::get('/blogs/{slug}', [BlogController::class, 'show']);
 
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+Route::get('/events-manager', function () {
+    return view('events-manager');
+})->name('events-manager');
+
+Route::get('/blog-manager', function () {
+    return view('blog-manager');
+})->name('blog-manager');
+
+Route::get('/comm-manager', function () {
+    return view('comm-manager');
+})->name('comm-manager');
+
+Route::get('/gallery-manager', function () {
+    return view('gallery-manager');
+})->name('gallery-manager');
+
+Route::get('/social-media-manager', function () {
+    return view('social-media-manager');
+})->name('social-media-manager');
+
+Route::get('/logout', function () {
+    return view('logout');
+})->name('logout');
+
 Route::get('/clear-config', function () {
     \Artisan::call('config:cache');
     \Artisan::call('cache:clear');
