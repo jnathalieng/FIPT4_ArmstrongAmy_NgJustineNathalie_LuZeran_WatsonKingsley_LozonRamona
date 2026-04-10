@@ -144,8 +144,8 @@
     </div>
 
     <div class="col-span-full">
-        <h2 class="g-header-text">Welcome Back, Admin</h2>
-        <h3 class="g-header-text">Manage Events, Blog Posts, and other Museum Contents</h3>
+        <p class="g-header-text">Welcome Back, Admin</p>
+        <p class="g-header-text">Manage Events, Blog Posts, and other Museum Contents</p>
     </div>
 
     <section class="stat-bar cms-card col-span-full">
@@ -192,39 +192,45 @@
         </div>
     </section>
 
-    <section class="cms-card actions-and-content-con col-span-full">
-        <div>
-            <article class="card-title-bar">
-                <h3>
-                    Quick Actions
-                </h3>
-            <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">
+    <section class="actions-and-content-con col-span-full">
+            <article class="cms-card">
+                <div class="card-title-bar">
+                    <h3 class="r-title-text">
+                        Quick Actions
+                    </h3>
+                    <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">
+                </div>
+                <div></div>
             </article>
 
-            <article>
-                <h3>
+            <article class="cms-card">
+                <h3 class="r-title-text card-title-bar">
                     Latest Content
                 </h3>
+                <div></div>
             </article>
-        </div>
 
-        <article>
-            <h3>
-                Upcoming Events
-            </h3>
-            <p>
-                Google Calendar
-            </p>
-            <img src="{{ asset('images\icons\calendar-solid-full.svg') }}">
+        <article class="cms-card calendar-con">
+            <div class="card-title-bar">
+                <div>
+                    <h3 class="r-title-text">
+                        Upcoming Events
+                    </h3>
+                    <p class="g-header-text">
+                        Google Calendar
+                    </p>
+                </div>
+                <img src="{{ asset('images\icons\calendar-solid-full.svg') }}">
+            </div>
+            <div></div>
         </article>
     </section>
 
-    <section>
-        <div>
-            <h3>
+    <section class="col-span-full cms-card">
+        <div class="card-title-bar">
+            <h3 class="r-title-text">
                 Recent Activity
             </h3>
-
             <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">
         </div>
     </section>
