@@ -2963,6 +2963,7 @@ p.typewriter-quote {
 
 .cms-page-top {
   margin-top: 15vh;
+  width: 100%;
 }
 
 .dashboard-page-con {
@@ -3015,6 +3016,10 @@ p.typewriter-quote {
   justify-content: center;
 }
 
+.card-box {
+  width: 100%;
+}
+
 .card-title-bar {
   width: 100%;
   display: flex;
@@ -3035,6 +3040,25 @@ p.typewriter-quote {
   height: 100px;
 }
 
+@media (min-width: 768px) {
+  .actions-and-content-con {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .calendar-con {
+    margin-left: 2vw;
+    height: 90%;
+  }
+}
+@media (min-width: 980px) {
+  .stat-bar {
+    flex-direction: row;
+  }
+  .stat-bar .grey-divider {
+    width: 1px;
+    height: 90%;
+  }
+}
 #tl-page {
   overflow-x: hidden;
 }

@@ -193,6 +193,7 @@
     </section>
 
     <section class="actions-and-content-con col-span-full">
+        <div class="card-box">
             <article class="cms-card">
                 <div class="card-title-bar">
                     <h3 class="r-title-text">
@@ -209,7 +210,7 @@
                 </h3>
                 <div></div>
             </article>
-
+        </div>
         <article class="cms-card calendar-con">
             <div class="card-title-bar">
                 <div>
