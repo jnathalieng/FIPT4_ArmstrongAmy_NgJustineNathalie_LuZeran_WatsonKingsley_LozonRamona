@@ -28,8 +28,7 @@ Route::get('/comm', [CommController::class, 'index']);
 
 Route::get('/galleries', [GalleryController::class, 'index']);
 Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
-Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
-Route::get('/blogs', [BlogController::class, 'index']);
+
 Route::get('/search', [SearchController::class, 'apiSearch']);
 
 // EVENTS MANAGER ROUTES
@@ -38,7 +37,16 @@ Route::get('/events/{id}', [EventsController::class, 'show']);
 Route::post('/events', [EventsController::class, 'store']);
 Route::put('/events/{id}', [EventsController::class, 'update']);
 Route::delete('/events/{id}', [EventsController::class, 'destroy']);
+
+// BLOG MANAGER ROUTES - ZERAN
+Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
+Route::get('/blogs', [BlogController::class, 'index']);
+Route::get('/blogs/{slug}', [BlogController::class, 'show']);
+Route::post('/blogs', [BlogController::class, 'store']);
+Route::put('/blogs/{id}', [BlogController::class, 'update']);
+Route::delete('/blogs/{id}', [BlogController::class, 'destroy']);
+
 Route::post('/api/contact', [ContactController::class, 'store']);
 Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 Route::get('/comm', [CommController::class, 'index'])->name('comm');
-Route::get('/blogs/{slug}', [BlogController::class, 'show']);
+
