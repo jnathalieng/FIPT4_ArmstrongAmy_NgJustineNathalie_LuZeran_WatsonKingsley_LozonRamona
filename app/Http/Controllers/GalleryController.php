@@ -47,4 +47,28 @@ class GalleryController extends Controller
 
         return response()->json(['message' => 'This image has been successfully deleted.']);
     }
+
+
+    // MISSING GALLERY IMAGE CRUD FUNCTIONALITY - ZERAN
+    public function storeImage(Request $request)
+    {
+        $galleryImage = GalleryImage::create($request->all());
+
+        return response()->json($galleryImage);
+    }
+
+    public function updateImage(Request $request, $id)
+    {
+        $galleryImage = GalleryImage::findOrFail($id);
+        $galleryImage->update($request->all());
+
+        return response()->json($galleryImage);
+    }
+
+    public function destroyImage($id)
+    {
+        GalleryImage::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'This gallery image has been successfully deleted.']);
+    }
 }
