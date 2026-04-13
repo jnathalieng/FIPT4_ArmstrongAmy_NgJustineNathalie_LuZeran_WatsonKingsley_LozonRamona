@@ -39,6 +39,6 @@ Route::post('/events', [EventsController::class, 'store']);
 Route::put('/events/{id}', [EventsController::class, 'update']);
 Route::delete('/events/{id}', [EventsController::class, 'destroy']);
 Route::post('/api/contact', [ContactController::class, 'store']);
-Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/comm', [CommController::class, 'index'])->name('comm');
 Route::get('/blogs/{slug}', [BlogController::class, 'show']);
