@@ -45,4 +45,30 @@ class CommController extends Controller
         return response()->json(['message' => 'This commemorative card has been deleted successfully.']);
     }
 
+
+    // TRAINING THREE CARDS CRUD FUNCTIONALITY BLOCK
+    public function storeCommThree(Request $request)
+    {
+        // create a new comm3 card
+        $commThree = TrainingThree::create($request->all());
+
+        return response()->json($commThree);
+    }
+
+    public function updateCommThree(Request $request, $id)
+    {
+        // updating a comm3 card
+        $commThree = TrainingThree::findOrFail($id);
+        $commThree->update($request->all());
+        
+        return response()->json($commThree);
+    }
+
+    public function destroyCommThree($id)
+    {
+        TrainingThree::findOrFail($id)->delete();
+        
+        return response()->json(['message' => 'This commemorative card (training three) has been deleted successfully.']);
+    }
+    
 }
