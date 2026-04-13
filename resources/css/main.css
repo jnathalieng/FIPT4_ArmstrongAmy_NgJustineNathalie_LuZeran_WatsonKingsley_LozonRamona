@@ -3165,8 +3165,19 @@ p.typewriter-quote {
   padding: 20px;
 }
 
+.title-con {
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: solid 1px black;
+}
+
+.title-input {
+  margin-top: 15px;
+}
+
 .add-form {
-  width: 90vw;
+  width: 100%;
+  margin: 20px 0px;
 }
 
 .add-form-con {
@@ -3179,16 +3190,16 @@ p.typewriter-quote {
 }
 
 .add-input-form {
-  background-color: wheat;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2vw;
 }
 
 .add-form-box {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
 }
@@ -3205,40 +3216,128 @@ p.typewriter-quote {
 
 .what-and-where {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.drop-down-menu {
-  width: 90%;
-  height: 30px;
-  background-color: white;
-  border: solid 1px #3c3c3c;
+.drop-down-box, .location-box, .date-box, .indicators {
+  width: 100%;
 }
 
-.status {
+.drop-down-box {
+  margin-right: 5px;
+}
+
+.location-box {
+  margin-right: 5px;
+}
+
+.date-box {
+  margin-left: 5px;
+}
+
+.indicators {
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
+  display: flex;
   justify-content: center;
+}
+
+.indicator-box {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indicator-con {
+  width: 47%;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border: solid 2px black;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0px 10px;
 }
 
 .checkbox-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  border: solid 1px #B3262E;
+  margin-right: auto;
+}
+
+.drop-down-menu {
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  border: solid 2px #3c3c3c;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.twin-inputs {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border: solid 1px #3c3c3c;
 }
 
 .add-content-box {
-  width: 90%;
+  width: 100%;
   padding: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+  min-height: 200px;
+}
+
+.button-con {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 2vw;
+}
+
+.content-title {
+  margin-right: auto;
+}
+
+.add-button {
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  color: white;
+  border: solid 1px #3c3c3c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: rgba(60, 60, 60, 0.5);
+}
+
+.save-button {
+  background-color: #91B8D9;
+}
+
+.publish-button {
+  background-color: #B3262E;
+}
+
+.add-button:hover {
+  background-color: white;
+  color: #B3262E;
 }
 
 @media (min-width: 768px) {
@@ -3249,13 +3348,6 @@ p.typewriter-quote {
   .calendar-con {
     margin-left: 2vw;
     height: 90%;
-  }
-  .add-form-inputs {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 980px) {

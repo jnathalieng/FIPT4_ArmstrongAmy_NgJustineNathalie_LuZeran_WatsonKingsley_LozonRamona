@@ -162,49 +162,72 @@
             <p class="r-header-text">Create New Blog Post</p>
         </div>
 
-    <section class="add-form">
-        <p>Post Details</p>
+    <section class="add-form col-span-full">
 
         <article class="add-form-con" id="blog-form">
   <form @submit.prevent="regForm" class="add-input-form" id="blogForm">
 
-        <p class="field-error" v-if="errors.title">@{{errors.title}}</p>
+    <div class="title-con">
+        <span class="r-header-text">Post Details</span>
+    </div>    
+        <!-- <p class="field-error" v-if="errors.title">@{{errors.title}}</p> -->
         <input  v-model="formData.title" 
-                class="add-form-box"
-                id="event-title-input"
+                class="add-form-box title-input"
+                id="title-input"
                 type="text" 
                 name="Post-Title" 
                 placeholder="Post Title">
 
         <section class="add-form-inputs">
 
-            <article class="what-and-where">
-                <p class="field-error" v-if="errors.category">@{{errors.category}}</p>
+            <article class="twin-inputs">
+
+            <!-- category drop down -->
+             <div class="drop-down-box">
+                <span class="r-header-text">Category</span>
+                <!-- <p class="field-error" v-if="errors.category">@{{errors.category}}</p> -->
                 <div class="drop-down-menu">
                     <!-- i want to make a drop down menu here that pulls info from the database for what category options are available -->
                 </div>
+            </div>
+            <!-- draft/published indicator -->
+             <div class="indicators">
 
-                <p class="field-error" v-if="errors.location">@{{errors.location}}</p>
+                <span class="r-header-text">Category</span>
+
+                <div class="indicator-box">
+                    <div class="indicator-con">    
+                        <div class="checkbox-dot" id="draft-dot"></div>
+                        <p class="body-text">Draft</p>
+                    </div>
+
+                        <!-- one of these dots will have a red background when active -->
+                    <div class="indicator-con">
+                        <div class="checkbox-dot" id="published-dot"></div>
+                        <p class="body-text">Published</p>
+                    </div>
+                </div>
+            </div>
+
+            </article>
+
+            <article class="twin-inputs">
+
+            <!-- location input -->
+             <div class="location-box">
+                <label for="location" class="r-header-text">Location</label>
+                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
                 <input  v-model="formData.location" 
                         class="add-form-box"
                         id="location-input"
                         type="text" 
                         name="location" 
                         placeholder="Location">
-                </article>
-
-            <article class="status">
-                <div class="checkbox-dot" id="draft-dot">
-                    <p>Draft</p>
-                </div>
-                    <!-- one of these dots will have a red background when active -->
-                <div>
-                    <div class="checkbox-dot" id="published-dot">
-                    <p>Published</p>
-                </div>
-
-
-                <p class="field-error" v-if="errors.date">@{{errors.date}}</p>
+            </div>
+            <!-- date input -->
+             <div class="date-box">
+                <label for="date" class="r-header-text">Date</label>
+                <!-- <p class="field-error" v-if="errors.date">@{{errors.date}}</p> -->
                 <input  v-model="formData.date" 
                             class="add-form-box"
                             id="date"
@@ -212,8 +235,10 @@
                             name="date">
             </article>
         </section>
-        
-            <p class="field-error" v-if="errors.content">@{{errors.content}}</p>
+
+        <!-- content input -->
+            <label for="content" class="r-header-text content-title">Content</label>
+            <!-- <p class="field-error" v-if="errors.content">@{{errors.content}}</p> -->
             <input  v-model="formData.content" 
                         class="add-content-box"
                         id="content"
@@ -221,19 +246,21 @@
                         name="Content">
             </div>
                   
+        <!-- drag and drop box for images -->
         <div class="drag-and-drop-images">
             <!-- here will be an area where user's creating the blog posts can drag and drop images onto the page that they want included in the blog post -->
         </div>
-
       </div>
-          <button class="cancel-button" type="submit">Cancel</button>
-      <button class="save-button" type="submit">Save as Draft</button>
-      <button class="publish-button" type="submit">Publish Post</button>
 
-        <p class="field-error" v-if="errors.general">@{{errors.general}}</p>
-        <div v-if="responseMessage">
-          @{{responseMessage}}
+      <div class="button-con">
+            <button class="add-button cancel-button" type="submit">Cancel</button>
+            <button class="add-button save-button" type="submit">Save as Draft</button>
+            <button class="add-button publish-button" type="submit">Publish Post</button>
         </div>
+        <!-- <p class="field-error" v-if="errors.general">@{{errors.general}}</p> -->
+        <!-- <div v-if="responseMessage"> -->
+          <!-- @{{responseMessage}} -->
+        <!-- </div> -->
     </form>
     </section>
 </section>
