@@ -24,10 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('/contact', [ContactController::class, 'store']);
 
-
-Route::get('/galleries', [GalleryController::class, 'index']);
-Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
-
 Route::get('/search', [SearchController::class, 'apiSearch']);
 
 // EVENTS MANAGER ROUTES
@@ -52,15 +48,31 @@ Route::put('/comm/{id}', [CommController::class, 'updateComm']);
 Route::delete('/comm/{id}', [CommController::class, 'destroyComm']);
 
     // COMM - TRAINING 3 CRUD
-    Route::post('/comm-three', [CommController::class, 'storeCommThree']);
-    Route::put('/comm-three/{id}', [CommController::class, 'updateCommThree']);
-    Route::delete('/comm-three/{id}', [CommController::class, 'destroyCommThree']);
+    Route::post('/commThree', [CommController::class, 'storeCommThree']);
+    Route::put('/commThree/{id}', [CommController::class, 'updateCommThree']);
+    Route::delete('/commThree/{id}', [CommController::class, 'destroyCommThree']);
 
     // COMM - TRAINING 4 CRUD
-    Route::post('/comm-four', [CommController::class, 'storeCommFour']);
-    Route::put('/comm-four/{id}', [CommController::class, 'updateCommFour']);
-    Route::delete('/comm-four/{id}', [CommController::class, 'destroyCommFour']);
+    Route::post('/commFour', [CommController::class, 'storeCommFour']);
+    Route::put('/commFour/{id}', [CommController::class, 'updateCommFour']);
+    Route::delete('/commFour/{id}', [CommController::class, 'destroyCommFour']);
 
-Route::post('/api/contact', [ContactController::class, 'store']);
-Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+
+// GALLERY MANAGER ROUTES - ZERAN
+Route::get('/galleries', [GalleryController::class, 'index']);
+// Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
+Route::get('/galleries/{slug}', [GalleryController::class, 'show']);
+
+Route::post('/galleries', [GalleryController::class, 'store']);
+Route::put('/galleries/{id}', [GalleryController::class, 'update']);
+Route::delete('/galleries/{id}', [GalleryController::class, 'destroy']);
+
+    // GALLERY IMAGES CRUD
+    Route::post('/galleryImages', [GalleryController::class, 'storeImage']);
+    Route::put('/galleryImages/{id}', [GalleryController::class, 'updateImage']);
+    Route::delete('/galleryImages/{id}', [GalleryController::class, 'destroyImage']);
+
+// MERGE CONFLICT DUPLICATE ROUTES
+// Route::post('/api/contact', [ContactController::class, 'store']);
+// Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
