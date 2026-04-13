@@ -31,3 +31,10 @@ Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
 Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::get('/blogs', [BlogController::class, 'index']);
 Route::get('/search', [SearchController::class, 'apiSearch']);
+
+// EVENTS MANAGER ROUTES
+Route::get('/events', [EventsController::class, 'index']);
+Route::get('/events/{id}', [EventsController::class, 'show']);
+Route::post('/events', [EventsController::class, 'store']);
+Route::put('/events/{id}', [EventsController::class, 'update']);
+Route::delete('/events/{id}', [EventsController::class, 'destroy']);
