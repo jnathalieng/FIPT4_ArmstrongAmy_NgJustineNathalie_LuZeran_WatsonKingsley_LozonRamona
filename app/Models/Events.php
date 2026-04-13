@@ -20,6 +20,6 @@ class Events extends Model
         'events_image_2',
         'events_image_alt_2',
         'events_image_3',
-        'events_image_alt_3'
+        'events_image_alt_3',
     ];
 }
