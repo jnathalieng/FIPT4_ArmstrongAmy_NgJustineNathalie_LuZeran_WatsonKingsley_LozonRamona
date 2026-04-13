@@ -5,11 +5,48 @@
     width: 100%;
 }
 
+/* Login styles */
+
+.login-background {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../../../public/images/hero-images/desktop/AboutHero_Desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.login-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    z-index: 10;
+    input {
+        width: 70%;
+    }
+}
+
+/*dashboard styles*/
+
 .dashboard-page-con {
     display: flex;
     width: 90vw;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.page-path {
+    text-decoration: underline;
 }
 
 .cms-card {
@@ -78,6 +115,52 @@
     width: 100%;
     height: 100px;
 
+}
+
+/* events styles */
+
+.title-and-create {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 15px;
+}
+
+.create-button {
+    margin-left: auto;
+}
+
+.entry-con {
+    width: 100%;
+    height: 100%;
+    border: solid 1px #3c3c3c;
+}
+
+.entry-list {
+    width: 100%;
+
+}
+
+.entry-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.entry-legend {
+    width: 100%;
+    background-color: rgb(#3c3c3c, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px
 }
 
 @media (min-width:768px) {
