@@ -3165,6 +3165,82 @@ p.typewriter-quote {
   padding: 20px;
 }
 
+.add-form {
+  width: 90vw;
+}
+
+.add-form-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #3c3c3c;
+}
+
+.add-input-form {
+  background-color: wheat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-form-box {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.add-form-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.what-and-where {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-down-menu {
+  width: 90%;
+  height: 30px;
+  background-color: white;
+  border: solid 1px #3c3c3c;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-dot {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: solid 1px #3c3c3c;
+}
+
+.add-content-box {
+  width: 90%;
+  padding: 10px;
+}
+
 @media (min-width: 768px) {
   .actions-and-content-con {
     flex-direction: row;
@@ -3173,6 +3249,13 @@ p.typewriter-quote {
   .calendar-con {
     margin-left: 2vw;
     height: 90%;
+  }
+  .add-form-inputs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 980px) {
