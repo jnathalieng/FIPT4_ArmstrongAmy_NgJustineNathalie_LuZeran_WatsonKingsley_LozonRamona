@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events Manager</title>   
+    <title>Edit Commemoration</title>   
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
-<body data-page="events-manager">
+<body data-page="edit-comm">
     <header class="header">
         <!-- navbar -->
         <nav class="desktop-nav">
@@ -155,36 +155,11 @@
 <main style="min-height: 100vh;">
 
 <section class="cms-page-top dashboard-page-con grid-con">
-    
     <div class="col-span-full">
-        <p class="g-header-text">Dashboard / <span class="page-path">Events Manager</span></p>
+        <p class="g-header-text">Dashboard / Events Manager / <span class="page-path">Edit Event</span></p>
     </div>
 
-    <div class="title-and-create col-span-full">
-        <div>
-            <p class="r-header-text">Events Manager</p>
-        </div>
-        <div class="create-button">
-            <a class="button" href="{{ route('events-manager-add')}}">Create New Event</a>
-        </div>
-    </div>
 
-    <article class="entry-con col-span-full">
-        
-        <div class="entry-search">
-            <input type="text" id="search" placeholder="search">
-        </div>
-
-        <div class="entry-list">
-            <div class="entry-legend">
-                <p>Title</p>
-                <p>Category</p>
-                <p>Status</p>
-                <p>Actions</p>
-            </div>
-        </div>
-
-    </article>
 </section>
 </main>
 
