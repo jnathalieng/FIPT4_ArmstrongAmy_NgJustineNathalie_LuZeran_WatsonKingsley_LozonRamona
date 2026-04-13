@@ -42,8 +42,6 @@ Route::get('/canteen', function () {
     return view('canteen');
 })->name('canteen');
 
-Route::get('/comm', [CommController::class, 'index'])->name('comm');
-
 Route::get('/events', function () {
     return view('events');
 })->name('events');
@@ -72,13 +70,11 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/blogs/{slug}', [BlogController::class, 'show']);
+//CMS routes
 
 Route::get('/login', function () {
     return view('login');
 })->name('login');
-
-//CMS routes
 
 Route::get('/dashboard', function () {
     return view('dashboard');
