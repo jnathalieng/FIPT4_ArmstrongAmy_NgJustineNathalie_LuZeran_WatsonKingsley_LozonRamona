@@ -4,6 +4,7 @@ import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
+import eventsManager from "./modules/eventsManager.js";
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import { createApp } from 'vue';
@@ -84,6 +85,9 @@ else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
 } else if (document.body.dataset.page === "events-manager") {
     console.log("welcome to the events mananger");
+
+    const appEventsManager = createApp(eventsManager);
+    appEventsManager.mount();
 }
 else if(document.body.dataset.page === "contact") {
     console.log('Contact us!');
