@@ -171,7 +171,7 @@
         <span class="r-header-text">Post Details</span>
     </div>    
         <!-- <p class="field-error" v-if="errors.title">@{{errors.title}}</p> -->
-        <input  v-model="formData.title" 
+        <input  v-model="formData.event_title" 
                 class="add-form-box title-input"
                 id="title-input"
                 type="text" 
@@ -182,30 +182,28 @@
 
             <article class="twin-inputs">
 
-            <!-- category drop down -->
-             <div class="drop-down-box">
-                <span class="r-header-text">Category</span>
-                <!-- <p class="field-error" v-if="errors.category">@{{errors.category}}</p> -->
-                <div class="drop-down-menu">
-                    <!-- i want to make a drop down menu here that pulls info from the database for what category options are available -->
-                </div>
+            <!-- Slug Title -->
+             <div class="left-box">
+                <label for="link-header" class="r-header-text">Link Header</label>
+                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
+                <input  v-model="formData.slug" 
+                        class="add-form-box"
+                        id="slug"
+                        type="text" 
+                        name="slug" 
+                        placeholder="Location">
             </div>
+
             <!-- draft/published indicator -->
-             <div class="indicators">
-
-                <span class="r-header-text">Category</span>
-
-                <div class="indicator-box">
-                    <div class="indicator-con">    
-                        <div class="checkbox-dot" id="draft-dot"></div>
-                        <p class="body-text">Draft</p>
-                    </div>
-
-                        <!-- one of these dots will have a red background when active -->
-                    <div class="indicator-con">
-                        <div class="checkbox-dot" id="published-dot"></div>
-                        <p class="body-text">Published</p>
-                    </div>
+             <div class="left-box">
+                <label for="excerpt" class="r-header-text">Excerpt</label>
+                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
+                <input  v-model="formData.excerpt" 
+                        class="add-form-box"
+                        id="slug"
+                        type="text" 
+                        name="slug" 
+                        placeholder="Location">
                 </div>
             </div>
 
@@ -214,25 +212,16 @@
             <article class="twin-inputs">
 
             <!-- location input -->
-             <div class="location-box">
-                <label for="location" class="r-header-text">Location</label>
-                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
-                <input  v-model="formData.location" 
-                        class="add-form-box"
-                        id="location-input"
-                        type="text" 
-                        name="location" 
-                        placeholder="Location">
-            </div>
-            <!-- date input -->
-             <div class="date-box">
-                <label for="date" class="r-header-text">Date</label>
-                <!-- <p class="field-error" v-if="errors.date">@{{errors.date}}</p> -->
-                <input  v-model="formData.date" 
-                            class="add-form-box"
-                            id="date"
-                            type="text"
-                            name="date">
+                    <div class="right-box">
+                        <label for="featured-image" class="r-header-text">Featured Image</label>
+                        <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
+                        <input  v-model="formData.featured_image" 
+                                class="add-form-box"
+                                id="featured-image"
+                                type="text" 
+                                name="Featured Image" 
+                                placeholder="Place image Here">
+                    </div>
             </article>
         </section>
 

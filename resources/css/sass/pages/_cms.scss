@@ -219,7 +219,7 @@
 
 .add-form-inputs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -235,20 +235,20 @@
     justify-content: center;
 }
 
-.drop-down-box, .location-box, .date-box, .indicators {
+.left-box, .right-box {
     width: 100%;
 }
 
-.drop-down-box {
+.left-box {
     margin-right: 5px;
 }
 
-.location-box {
-    margin-right: 5px;
-}
-
-.date-box {
+.right-box {
     margin-left: 5px;
+}
+
+#featured-image {
+    height: 130px;
 }
 
 .indicators {
@@ -300,7 +300,7 @@
 
 .twin-inputs {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
