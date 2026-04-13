@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         NumberThreeAirObserverSchoolSeeder::class,
         GallerySeeder::class,
         BlogSeeder::class,
+        EventsSeeder::class,
     ]);
     }
 }
