@@ -136,7 +136,38 @@
     </header>
 
     <main>
-        </main>
+
+    <section class="login-background">
+        <article class="login-con">
+            <p>CMS Login</p>
+            <div class="form-con">
+            <form @submit.prevent="regForm" class="input-form" id="loginForm">
+            <p class="field-error" v-if="errors.username">@{{errors.username}}</p>
+            <input  v-model="formData.username" 
+                    class="form-box"
+                    id="username"
+                    type="username" 
+                    name="username" 
+                    placeholder="Username">
+            <p class="field-error" v-if="errors.password">@{{errors.password}}</p>
+            <input  v-model="formData.password" 
+                    class="form-box"
+                    id="password"
+                    type="password" 
+                    name="password" 
+                    placeholder="Password">
+                <button class="submit-button" type="submit">Submit</button>
+
+                <p class="field-error" v-if="errors.general">@{{errors.general}}</p>
+                <div v-if="responseMessage">
+                @{{responseMessage}}
+                </div>
+            </form>
+            </div>
+        </article>
+
+    </section>
+</main>
 
 <!-- FOOTER SECTION -->
 
