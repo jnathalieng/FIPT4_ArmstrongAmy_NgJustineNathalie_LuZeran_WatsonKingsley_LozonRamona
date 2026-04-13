@@ -76,6 +76,7 @@ Route::delete('/galleries/{id}', [GalleryController::class, 'destroy']);
     Route::put('/galleryImages/{id}', [GalleryController::class, 'updateImage']);
     Route::delete('/galleryImages/{id}', [GalleryController::class, 'destroyImage']);
 
-Route::post('/api/contact', [ContactController::class, 'store']);
-Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+// MERGE CONFLICT DUPLICATE ROUTES
+// Route::post('/api/contact', [ContactController::class, 'store']);
+// Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
