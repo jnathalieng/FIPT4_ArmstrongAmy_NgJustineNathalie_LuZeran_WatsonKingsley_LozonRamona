@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Editor</title>   
+    <title>Add Commemoration</title>   
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
-<body data-page="events-edit">
+<body data-page="comm-add">
     <header class="header">
         <!-- navbar -->
         <nav class="desktop-nav">
@@ -156,10 +156,59 @@
 
 <section class="cms-page-top dashboard-page-con grid-con">
     <div class="col-span-full">
-        <p class="g-header-text">Dashboard / Events Manager / <span class="page-path">Edit Event</span></p>
+        <p class="g-header-text">Dashboard / Events Manager / <span class="page-path">Create New Event</span></p>
     </div>
+        <div class="col-span-full">
+            <p class="r-header-text">Create New Event</p>
+        </div>
 
+    <section class="create-form">
+        <p>Event Details</p>
 
+        <article class="form-con" id="contact-form">
+  <form @submit.prevent="regForm" class="input-form" id="contactForm">
+
+        <label for="name" >Name:<span class="required">*</span></label>
+        <p class="field-error" v-if="errors.name">@{{errors.name}}</p>
+        <input  v-model="formData.title" 
+                class="form-box"
+                id="event-title-input"
+                type="text" 
+                name="Event-Title" 
+                placeholder="Event Title"/>
+
+        <label for="email" >Email:<span class="required">*</span></label>
+        <p class="field-error" v-if="errors.email">@{{errors.email}}</p>
+        <input  v-model="formData.email" 
+                class="form-box"
+                id="email"
+                type="email" 
+                name="email" 
+                placeholder="JohnDoe@gmail.com"/>
+
+        <label for="message">Message: <span class="required">*</span></label>
+        <p class="field-error" v-if="errors.message">@{{errors.message}}</p>
+        <textarea   v-model="formData.message" 
+                    class="form-box"
+                    id="msg"
+                    name="message">
+        </textarea>
+
+        <label for="testAnswer">What is 4+4 (Type the number) <span class="required">*</span></label>
+        <p class="field-error" v-if="errors.testAnswer">@{{errors.testAnswer}}</p>
+        <input placeholder="0" type="number" id="testAnswer" v-model="formData.testAnswer">                    
+
+        <input type="text" id="honeypot" v-model="formData.honeypot">
+
+      </div>
+      <button class="send-button" type="submit">Send</button>
+
+        <p class="field-error" v-if="errors.general">@{{errors.general}}</p>
+        <div v-if="responseMessage">
+          @{{responseMessage}}
+        </div>
+    </form>
+    </section>
 </section>
 </main>
 
