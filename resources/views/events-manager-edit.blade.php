@@ -155,36 +155,11 @@
 <main style="min-height: 100vh;">
 
 <section class="cms-page-top dashboard-page-con grid-con">
-    
     <div class="col-span-full">
-        <p class="g-header-text">Dashboard / <span class="page-path">Events Manager</span></p>
+        <p class="g-header-text">Dashboard / Events Manager / <span class="page-path">Edit Event</span></p>
     </div>
 
-    <div class="title-and-create col-span-full">
-        <div>
-            <p class="r-header-text">Events Manager</p>
-        </div>
-        <div class="create-button">
-            <a class="button" href="{{ route('events-manager-add')}}">Create New Event</a>
-        </div>
-    </div>
 
-    <article class="entry-con col-span-full">
-        
-        <div class="entry-search">
-            <input type="text" id="search" placeholder="search">
-        </div>
-
-        <div class="entry-list">
-            <div class="entry-legend">
-                <p>Title</p>
-                <p>Category</p>
-                <p>Status</p>
-                <p>Actions</p>
-            </div>
-        </div>
-
-    </article>
 </section>
 </main>
 

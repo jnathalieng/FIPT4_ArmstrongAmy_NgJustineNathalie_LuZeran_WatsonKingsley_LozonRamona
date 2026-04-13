@@ -30,3 +30,5 @@ Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
 Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::get('/blogs', [BlogController::class, 'index']);
 Route::get('/search', [SearchController::class, 'apiSearch']);
+Route::post('/api/contact', [ContactController::class, 'store']);
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');

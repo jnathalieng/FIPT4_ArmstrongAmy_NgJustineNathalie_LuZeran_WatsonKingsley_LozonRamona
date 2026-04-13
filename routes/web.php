@@ -6,6 +6,7 @@ use App\Http\Controllers\CommController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SearchController;
+//use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,10 +33,6 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
-
-Route::post('/api/contact', [ContactController::class, 'store']);
-
-Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/BOB', function () {
     return view('BOB');
@@ -81,35 +78,81 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+//CMS routes
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+// Events
 
 Route::get('/events-manager', function () {
     return view('events-manager');
 })->name('events-manager');
 
+Route::get('/events-manager-add', function () {
+    return view('events-manager-add');
+})->name('events-manager-add');
+
+Route::get('/events-manager-edit', function () {
+    return view('events-manager-edit');
+})->name('events-manager-edit');
+
+// blog
+
 Route::get('/blog-manager', function () {
     return view('blog-manager');
 })->name('blog-manager');
+
+Route::get('/blog-manager-add', function () {
+    return view('blog-manager-add');
+})->name('blog-manager-add');
+
+Route::get('/blog-manager-edit', function () {
+    return view('blog-manager-edit');
+})->name('blog-manager-edit');
+
+Route::get('/blog-manager-edit/{id}', function () {
+    return view('blog-manager-edit/{id}');
+})->name('blog-manager-edit/{id}');
+
+//commemoration
 
 Route::get('/comm-manager', function () {
     return view('comm-manager');
 })->name('comm-manager');
 
+Route::get('/comm-manager-add', function () {
+    return view('comm-manager-add');
+})->name('comm-manager-add');
+
+Route::get('/comm-manager-edit', function () {
+    return view('comm-manager-edit');
+})->name('comm-manager-edit');
+
+Route::get('/comm-manager-edit/{id}', function () {
+    return view('comm-manager-edit/{id}');
+})->name('comm-manager-edit/{id}');
+
+// Gallery
+
 Route::get('/gallery-manager', function () {
     return view('gallery-manager');
 })->name('gallery-manager');
+
+//Social Media
 
 Route::get('/social-media-manager', function () {
     return view('social-media-manager');
 })->name('social-media-manager');
 
-Route::get('/logout', function () {
-    return view('logout');
-})->name('logout');
+// Logout
 
-Route::get('/clear-config', function () {
+Route::post('/logout', [AuthController::class, 'destroy'])->name('logout');
+
+//Debugging and Dev (remove this in prod) 
+
+Route::post('/clear-config', function () {
     \Artisan::call('config:cache');
     \Artisan::call('cache:clear');
     return 'Config cleared!';
