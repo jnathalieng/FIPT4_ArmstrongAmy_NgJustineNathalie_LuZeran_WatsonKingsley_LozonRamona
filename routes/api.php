@@ -24,12 +24,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('/contact', [ContactController::class, 'store']);
 
-Route::get('/comm', [CommController::class, 'index']);
 
 Route::get('/galleries', [GalleryController::class, 'index']);
 Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
-Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
-Route::get('/blogs', [BlogController::class, 'index']);
+
 Route::get('/search', [SearchController::class, 'apiSearch']);
 
 // EVENTS MANAGER ROUTES
@@ -38,7 +36,31 @@ Route::get('/events/{id}', [EventsController::class, 'show']);
 Route::post('/events', [EventsController::class, 'store']);
 Route::put('/events/{id}', [EventsController::class, 'update']);
 Route::delete('/events/{id}', [EventsController::class, 'destroy']);
-Route::post('/api/contact', [ContactController::class, 'store']);
-Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-Route::get('/comm', [CommController::class, 'index'])->name('comm');
+
+// BLOG MANAGER ROUTES - ZERAN
+Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
+Route::get('/blogs', [BlogController::class, 'index']);
 Route::get('/blogs/{slug}', [BlogController::class, 'show']);
+Route::post('/blogs', [BlogController::class, 'store']);
+Route::put('/blogs/{id}', [BlogController::class, 'update']);
+Route::delete('/blogs/{id}', [BlogController::class, 'destroy']);
+
+// COMMEMORATION MANAGER ROUTES - ZERAN
+Route::get('/comm', [CommController::class, 'index'])->name('comm');
+Route::post('/comm', [CommController::class, 'storeComm']);
+Route::put('/comm/{id}', [CommController::class, 'updateComm']);
+Route::delete('/comm/{id}', [CommController::class, 'destroyComm']);
+
+    // COMM - TRAINING 3 CRUD
+    Route::post('/comm-three', [CommController::class, 'storeCommThree']);
+    Route::put('/comm-three/{id}', [CommController::class, 'updateCommThree']);
+    Route::delete('/comm-three/{id}', [CommController::class, 'destroyCommThree']);
+
+    // COMM - TRAINING 4 CRUD
+    Route::post('/comm-four', [CommController::class, 'storeCommFour']);
+    Route::put('/comm-four/{id}', [CommController::class, 'updateCommFour']);
+    Route::delete('/comm-four/{id}', [CommController::class, 'destroyCommFour']);
+
+Route::post('/api/contact', [ContactController::class, 'store']);
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+
