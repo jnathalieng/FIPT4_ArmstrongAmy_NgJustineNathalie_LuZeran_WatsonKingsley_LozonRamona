@@ -31,4 +31,13 @@ class EventsController extends Controller
 
         return response()->json($event);
     }
+
+    public function update(Request $request, $id)
+    {
+        // updating a prexisting event
+        $event = Events::findOrFail($id);
+        $event->update($request->all());
+
+        return response()->json($event);
+    }
 }
