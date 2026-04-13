@@ -16,4 +16,12 @@ class EventsController extends Controller
         return response()->json($events);
     }
     
+    public function show($id)
+    {
+        // fetch a single event by it's ID
+        $event = Events::findOrFail($id);
+
+        return response()->json($event);
+    }
+
 }
