@@ -1,0 +1,51 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Events;
+
+class EventsController extends Controller
+{
+    //
+    public function index() 
+    {
+        // orders events - upcoming events first
+        $events = Events::orderBy('events_start_datetime', 'asc')->get();
+
+        return response()->json($events);
+    }
+    
+    public function show($id)
+    {
+        // fetch a single event by it's ID
+        $event = Events::findOrFail($id);
+
+        return response()->json($event);
+    }
+
+    public function store(Request $request)
+    {
+        // creating a new event
+        $event = Events::create($request->all());
+
+        return response()->json($event);
+    }
+
+    public function update(Request $request, $id)
+    {
+        // updating a prexisting event
+        $event = Events::findOrFail($id);
+        $event->update($request->all());
+
+        return response()->json($event);
+    }
+
+    public function destroy($id)
+    {
+        // deleting a prexisting event
+        Events::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'You have successfully deleted this event.']);
+    }
+}
