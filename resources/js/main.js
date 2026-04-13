@@ -82,6 +82,8 @@ else if(document.body.dataset.page === "comm") {
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
+} else if (document.body.dataset.page === "events-manager") {
+    console.log("welcome to the events mananger");
 }
 else if(document.body.dataset.page === "contact") {
     console.log('Contact us!');
