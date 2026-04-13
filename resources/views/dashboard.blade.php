@@ -155,7 +155,7 @@
 
             <div>
                 <p class="r-body-text">TOTAL EVENTS</p>
-                <p class="b-header-text">12</p>
+                <p class="b-body-text">12</p>
             </div>
         </div>
 
@@ -166,7 +166,7 @@
             
             <div>
                 <p class="r-body-text">BLOG POSTS</p>
-                <p class="b-header-text">28</p>
+                <p class="b-body-text">28</p>
             </div>
         </div>
 
@@ -177,7 +177,7 @@
 
             <div>
                 <p class="r-body-text">COMMEMORATION</p>
-                <p class="b-header-text">28</p>
+                <p class="b-body-text">28</p>
             </div>
         </div>
 
@@ -187,7 +187,7 @@
             <img src="{{ asset('images\icons\comment-dots-regular-full.svg') }}">
             <div>
                 <p class="r-body-text">SOCIAL POSTS</p>
-                <p class="b-header-text">28</p>
+                <p class="b-body-text">28</p>
             </div>
         </div>
     </section>
@@ -196,16 +196,21 @@
         <div class="card-box">
             <article class="cms-card">
                 <div class="card-title-bar">
-                    <h3 class="r-title-text">
+                    <h3 class="r-header-text">
                         Quick Actions
                     </h3>
                     <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">
                 </div>
-                <div></div>
+                <div class="card-content">
+            <a class="add-button dashboard-button" href="{{ route('events-manager-add') }}">+ Add New Event</a>
+            <a class="add-button dashboard-button" href="{{ route('blog-manager-add') }}">+ Add New Blog Post</a>     
+            <a class="add-button dashboard-button" href="{{ route('comm-manager-add') }}">+ Add New Commemoration Post</a>   
+
+                </div>
             </article>
 
             <article class="cms-card">
-                <h3 class="r-title-text card-title-bar">
+                <h3 class="r-header-text card-title-bar">
                     Latest Content
                 </h3>
                 <div></div>
@@ -214,10 +219,10 @@
         <article class="cms-card calendar-con">
             <div class="card-title-bar">
                 <div>
-                    <h3 class="r-title-text">
+                    <h3 class="r-header-text">
                         Upcoming Events
                     </h3>
-                    <p class="g-header-text">
+                    <p class="body-text">
                         Google Calendar
                     </p>
                 </div>
@@ -229,7 +234,7 @@
 
     <section class="col-span-full cms-card">
         <div class="card-title-bar">
-            <h3 class="r-title-text">
+            <h3 class="r-header-text">
                 Recent Activity
             </h3>
             <img src="{{ asset('images\icons\ellipsis-solid-full.svg') }}">

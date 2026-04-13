@@ -3064,6 +3064,18 @@ p.typewriter-quote {
   min-height: 100px;
 }
 
+.card-content {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-button {
+  margin: 10px;
+  background-color: #91B8D9;
+}
+
 .stat-bar {
   display: flex;
   flex-direction: column;
@@ -3316,7 +3328,7 @@ p.typewriter-quote {
 .add-button {
   margin: 10px;
   padding: 5px;
-  width: 100px;
+  min-width: 100px;
   color: white;
   border: solid 1px #3c3c3c;
   border-radius: 5px;
@@ -3736,4 +3748,4 @@ p.typewriter-quote {
   .tls-content-con .image-grid-overlay p {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}
