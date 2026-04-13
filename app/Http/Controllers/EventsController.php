@@ -40,4 +40,12 @@ class EventsController extends Controller
 
         return response()->json($event);
     }
+
+    public function destroy($id)
+    {
+        // deleting a prexisting event
+        Events::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'You have successfully deleted this event.']);
+    }
 }
