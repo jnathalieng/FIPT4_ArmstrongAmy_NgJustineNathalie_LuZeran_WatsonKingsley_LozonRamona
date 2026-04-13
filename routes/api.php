@@ -24,10 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('/contact', [ContactController::class, 'store']);
 
-
-Route::get('/galleries', [GalleryController::class, 'index']);
-Route::get('/galleries/{slug}', [GalleryController::class, 'getGallery']);
-
 Route::get('/search', [SearchController::class, 'apiSearch']);
 
 // EVENTS MANAGER ROUTES
