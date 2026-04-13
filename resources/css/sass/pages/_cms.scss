@@ -59,6 +59,18 @@
     min-height: 100px;
 }
 
+.card-content {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-button {
+    margin: 10px;
+    background-color: a.$secondary-color;
+}
+
 .stat-bar {
     display: flex;
     flex-direction: column;
@@ -317,7 +329,7 @@
 .add-button {
     margin: 10px;
     padding: 5px;
-    width: 100px;
+    min-width: 100px;
     color: white;
     border: solid 1px a.$dark-background;
     border-radius: 5px;
