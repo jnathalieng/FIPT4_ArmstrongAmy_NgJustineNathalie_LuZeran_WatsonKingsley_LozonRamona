@@ -6,6 +6,7 @@ use App\Http\Controllers\CommController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\EventsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
