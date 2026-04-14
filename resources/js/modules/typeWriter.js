@@ -26,7 +26,7 @@ export function typeWriter() {
             duration: 1,
             scrollTo: {
                 y: '.dossier-con',
-                offsetY: 100
+                offsetY: 200
             },
             ease: 'power2.inOut'
         })
@@ -34,7 +34,7 @@ export function typeWriter() {
     })
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
+        if (window.scrollY > 750) {
             typeTL.progress(1);
         }
     })

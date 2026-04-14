@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
     <!-- GSAP LINKING -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 </head>
-<body data-page="BOB" id="BOB-page">
+<body id="BOB-page" data-page="BOB">
 
     <header class="header">
         <!-- navbar -->
@@ -25,7 +25,7 @@
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -63,8 +63,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
@@ -83,7 +93,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img srcset="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -125,17 +135,17 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero-section" id="BOB-hero">
+        <section class="hero-video-section" id="BOB-hero">
             
             <h2 class="hidden">Battle of Britain hero section</h2>
 
-            <div class="hero-title-con">
-                <div class="hero-title">
+            <div class="hero-title-con-vid">
+                <div class="hero-title-vid">
                     <h3>
                         The Battle of Britain
                     </h3>
                 </div>
-                <div class="hero-subtitle">
+                <div class="hero-subtitle-vid">
                     <p>
                         London's unheard involvement
                     </p>
@@ -144,18 +154,16 @@
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-canteen-1920x1080.mp4" type="video/mp4">
-                
-                <source data-mobile="/videos/hero-videos/hero-canteen-768x768.mp4" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-canteen-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-canteen-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
 
         </section>
         
-        <section class="hero">
+        <section class="BOB-intro-section">
             
-            <h3>THE BATTLE OF BRITAIN</h3>
+            <h3 class="typewriter-quote">THE BATTLE OF BRITAIN</h3>
 
             <p class="typewriter-quote">
                 "...the Battle of France is over. I expect that the Battle of Britain is about to begin...The whole fury and might of the enemy must very soon be turned on us.
@@ -175,107 +183,136 @@
         </section>
 
         <div class="dossier-con">
-            
-            <div class="dossier" id="cover">
-                <img src="images/BOB-images/folder-texture.png">
-            </div>
 
             <div class="dossier" id="july" data-lift="500">
                 
                 <h3 class="dossier-tag" id="july-tag">JULY</h3>
 
-                <p class="dossier-content">
-                    The Battle of Britain (July 10 - October 31, 1940)
-                    
-                    The Battle of Britain was the first major military campaign fought entirely in the air. Over 82 days, the Royal Air Force defended the skies over southern England against sustained attacks by the German Luftwaffe. Germany's objective was to gain air superiority in preparation for Operation Sea Lion, the planned invasion of Britain. Despite being outnumbered, RAF Fighter Command successfully resisted the assault, preventing invasion and marking a major turning point in World War II.
-                    “Never in the field of human conflict was so much owed by so many to so few.”
-                    — Winston Churchill, House of Commons, August 15, 1940
-                </p>
+                    <div class="dossier-content">
+                        <p class="dossier-p">
+                            The Battle of Britain (July 10 - October 31, 1940)
+                            
+                            The Battle of Britain was the first major military campaign fought entirely in the air. Over 82 days, the Royal Air Force defended the skies over southern England against sustained attacks by the German Luftwaffe. Germany's objective was to gain air superiority in preparation for Operation Sea Lion, the planned invasion of Britain. Despite being outnumbered, RAF Fighter Command successfully resisted the assault, preventing invasion and marking a major turning point in World War II.
+                        </p>
 
-                <p class="dossier-content">
-                    Phase 1 — Channel Battles (July to early August)
-                    German attacks focused on shipping convoys and fighter sweeps over southern England to disrupt supplies and draw RAF fighters into combat.
-                </p>
+                        <p class="dossier-p c-quote">
+                            “Never in the field of human conflict was so much owed by so many to so few.”
+                            — Winston Churchill, House of Commons, August 15, 1940
+                        </p>
 
-                <p class="dossier-content">
-                    July 10, 1940
-                    Recognized as the start of the Battle of Britain. The Luftwaffe launched major attacks on English Channel shipping convoys. Over 100 aircraft clashed in large air battles over Dover.
-                </p>
+                        <p class="dossier-p">
+                            Phase 1 — Channel Battles (July to early August)
+                            German attacks focused on shipping convoys and fighter sweeps over southern England to disrupt supplies and draw RAF fighters into combat.
+                        </p>
 
+                        <p class="dossier-p">
+                            July 10, 1940
+                            Recognized as the start of the Battle of Britain. The Luftwaffe launched major attacks on English Channel shipping convoys. Over 100 aircraft clashed in large air battles over Dover.
+                        </p>
+                    </div>
             </div>
 
             <div class="dossier" id="august"  data-lift="300">
                 
                 <h3 class="dossier-tag" id="aug-tag">AUGUST</h3>
 
-                <p class="dossier-content">
-                    Phase 2 — Airfields & Radar (Mid-August)
-                    Luftwaffe targeted radar stations and RAF airfields to cripple Fighter Command. This was the most dangerous period for the RAF.
-                </p>
+                    <div class="dossier-content">
+                        <p class="dossier-p">
+                            Phase 2 — Airfields & Radar (Mid-August)
+                            Luftwaffe targeted radar stations and RAF airfields to cripple Fighter Command. This was the most dangerous period for the RAF.
+                        </p>
 
-                <p class="dossier-content">
-                    August 12, 1940
-                    First focused German attacks on Britain’s coastal radar stations. Most installations remained operational.
-                    August 13, 1940 — Adler Tag (Eagle Day)
-                    Large-scale attacks targeted RAF airfields. Germany lost 39 aircraft and 66 men, while Britain lost 15 aircraft and 4 pilots.
-                    August 15, 1940
-                    The Luftwaffe launched its most widespread assault, attacking airfields and factories across southern and northeastern England. Nearly 1,800 German sorties were flown. Despite heavy damage, RAF Fighter Command remained operational.
-                    August 18, 1940 — The Hardest Day
-                    Over 850 German sorties were flown. Intense air battles involved up to 300 aircraft at once. Despite heavy attacks, no RAF sector stations were destroyed.
-                </p>
+                        <p class="dossier-p">
+                            August 12, 1940
+                            First focused German attacks on Britain's coastal radar stations. Most installations remained operational.
+                            
+                        </p>
 
+                        <p class="dossier-p">
+                            August 13, 1940 — Adler Tag (Eagle Day)
+                            Large-scale attacks targeted RAF airfields. Germany lost 39 aircraft and 66 men, while Britain lost 15 aircraft and 4 pilots.
+                        </p>
+
+                        <p class="dossier-p">
+                            August 15, 1940
+                            The Luftwaffe launched its most widespread assault, attacking airfields and factories across southern and northeastern England. Nearly 1,800 German sorties were flown. Despite heavy damage, RAF Fighter Command remained operational.
+                        </p>
+
+                        <p class="dossier-p">
+                            August 18, 1940 — The Hardest Day
+                            Over 850 German sorties were flown. Intense air battles involved up to 300 aircraft at once. Despite heavy attacks, no RAF sector stations were destroyed.
+                        </p>
+                    </div>
             </div>
 
             <div class="dossier" id="september"  data-lift="350">
                 
                 <h3 class="dossier-tag" id="sept-tag">SEPTEMBER</h3>
 
-                <p class="dossier-content">
-                    Phase 3 — London Blitz (From September 7)
-                    Attacks shifted to London and major cities. Daylight raids were combined with heavy night bombing, reducing pressure on RAF airfields.
-                </p>
+                    <div class="dossier-content">
+                        <p class="p">
+                            Phase 3 — London Blitz (From September 7)
+                            Attacks shifted to London and major cities. Daylight raids were combined with heavy night bombing, reducing pressure on RAF airfields.
+                        </p>
 
-                <p class="dossier-content">
-                    September 7, 1940 — Start of the London Blitz
-                    Nearly 1,000 German aircraft attacked London's docks and East End. Over 400 civilians were killed. Attacks on RAF airfields decreased, allowing squadrons time to recover.
-                    September 15, 1940 — Battle of Britain Day
-                    Two massive German attacks were repelled over London. Losses were so severe that Germany's belief the RAF was near collapse was proven wrong. Plans for invasion were postponed indefinitely.
-                </p>
-
+                        <p class="dossier-p">
+                            September 7, 1940 — Start of the London Blitz
+                            Nearly 1,000 German aircraft attacked London's docks and East End. Over 400 civilians were killed. Attacks on RAF airfields decreased, allowing squadrons time to recover.
+                        </p>
+                        
+                        <p class="dossier-p">
+                            September 15, 1940 — Battle of Britain Day
+                            Two massive German attacks were repelled over London. Losses were so severe that Germany's belief the RAF was near collapse was proven wrong. Plans for invasion were postponed indefinitely.
+                        </p>
+                    </div>
             </div>
 
             <div class="dossier" id="october"  data-lift="400">
                 
                 <h3 class="dossier-tag" id="oct-tag">OCTOBER</h3>
-                
-                <p class="dossier-content">
-                    Phase 4 — Night Bombing Campaign (Late September onward)
-                    After invasion plans were cancelled, Germany focused mainly on night raids, with fewer daytime operations.
-                </p>
 
-                <p class="dossier-content">
-                    October 31, 1940
+                    <div class="dossier-content">
+                        <p class="dossier-p">
+                            Phase 4 — Night Bombing Campaign (Late September onward)
+                            After invasion plans were cancelled, Germany focused mainly on night raids, with fewer daytime operations.
+                        </p>
 
-                    Later designated as the official end of the Battle of Britain. German forces failed to achieve air superiority.
-                </p>
+                        <p class="dossier-p">
+                            October 31, 1940
 
-                <p class="dossier-content">
-                    WHY THE BATTLE MATTERED
-                    Germany needed control of the skies before launching a ground invasion of Britain. Achieving air superiority would have allowed German forces to cross the English Channel safely. When the Luftwaffe failed to destroy RAF Fighter Command, invasion plans were postponed and eventually abandoned.
-                    This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain’s air defence network.
-                </p>
+                            Later designated as the official end of the Battle of Britain. German forces failed to achieve air superiority.
+                        </p>
 
+                        <p class="dossier-p">
+                            WHY THE BATTLE MATTERED
+                            Germany needed control of the skies before launching a ground invasion of Britain. Achieving air superiority would have allowed German forces to cross the English Channel safely. When the Luftwaffe failed to destroy RAF Fighter Command, invasion plans were postponed and eventually abandoned.
+                        </p>
+
+                        <p class="dossier-p">
+                            This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain's air defence network.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="dossier" id="cover">
+                <h3 class="dossier-tag" id="cover-tag">
+                    THE BATTLE OF BRITAIN
+                </h3>
+                <img srcset="{{ asset('images/BOB-images/classified.png') }}" alt="">
             </div>
         </div>
 
         <section class="big-red">
-            <h3 class="big-red-text">Cumulative Battle of Britain Losses 
-        (July - October 1940)</h3>
+
+            <h2 class="hidden">Red separator section</h2>
+
+            <h3 class="big-red-text">
+                Cumulative Battle of Britain Losses (July - October 1940)
+            </h3>
         </section>
 
         <div class="deaths-section">
-            <h2>Cumulative Battle of Britain Losses</h2>
-            <p>(July - October 1940)</p>
+            <h2 class="hidden">Losses Section</h2>
 
             <div class="deaths-info-con">
 
@@ -319,11 +356,11 @@
             </div>
 
             <div class="deaths-info-bot">
-                <p class="appear-text">
+                <p class="typewriter-quote">
                     “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
                 </p>
 
-                <p class="appear-text">
+                <p class="typewriter-quote">
                     Prime Minister Churchill in the House of Commons, August 15, 1940
                 </p>
 
@@ -347,7 +384,12 @@
                 <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                     <h2 class="pilot-card-name-mobile">ROSS SMITHER</h2>
-                    <div class="pilots-card-img-con" ID="ross-smither"></div>
+                    <div class="pilots-card-img-con" ID="ross-smither">
+                        <picture class="BOB-img-con">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-ross-smither.png') }}">
+                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-ross-smither.png') }}" alt="">
+                        </picture>
+                    </div>
                     <div class="pilots-card-text-con">
 
                     <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
@@ -373,7 +415,12 @@
                 <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">HUGH RILEY</h2>
 
-                    <div class="pilots-card-img-con" id="hugh-riley"></div>
+                    <div class="pilots-card-img-con" id="hugh-riley">
+                        <picture class="BOB-img-con">
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-hugh-reilley.png') }}">
+                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-hugh-reilley.png') }}" alt="">
+                        </picture>
+                    </div>
                     <div class="pilots-card-text-con">
                     <h2 class="pilot-card-rank-desk">PILOTOFFICER</h2>
                     <h2 class="pilot-card-name-desk">HUGH RILEY</h2>
@@ -399,7 +446,12 @@
                 <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">ROBERT GRASSICK</h2>
 
-                <div class="pilots-card-img-con" id="robert-grassik"></div>
+                <div class="pilots-card-img-con" id="robert-grassik">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-grassick.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-grassick.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
 
                     <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
@@ -430,7 +482,12 @@
                 <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">NIEL CAMPBELL</h2>
 
-                <div class="pilots-card-img-con" id="niel-campbell"></div>
+                <div class="pilots-card-img-con" id="niel-campbell">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-neil-campbell.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-neil-campbell.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
                     <h2 class="pilot-card-rank-desk">PILOT OFFICER</h2>
                     <h2 class="pilot-card-name-desk">NIEL CAMPBELL</h2>
@@ -457,7 +514,12 @@
                 <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-mobile">ROBERT R. SMITH, DFC</h2>
 
-                <div class="pilots-card-img-con" id="robert-smith"></div>
+                <div class="pilots-card-img-con" id="robert-smith">
+                    <picture class="BOB-img-con">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-smith.png') }}">
+                        <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-smith.png') }}" alt="">
+                    </picture>
+                </div>
                 <div class="pilots-card-text-con">
                 <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
                 <h2 class="pilot-card-name-desk">ROBERT R. SMITH, DFC</h2>
@@ -518,225 +580,89 @@
 
 
     </main>
+<!-- FOOTER SECTION -->
 
-    <footer>
+<footer id="main-footer">
 
-        <!-- Footer Selection Section -->
+    <div id="footer-inner">
 
-        <div class="footer-selection-con">
-            
-            <div class="footer-selection-box">
-                <a href="{{ route('training_bases') }}" class="footer-selection-a">
-                    <h3 class="header-text">BCATP Training Sites</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-map.png">
-
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
-                    </picture>
-                </a>
-            </div>
-
-            <div class="footer-selection-box">
-                <a href="{{ route('timeline') }}" class="footer-selection-a">
-                    <h3 class="header-text">London Aviation Timeline</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-war.png">
-
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
-                    </picture>
-                </a>
-            </div>
-
-            <div class="footer-selection-box">
-                <a href="{{ route('BOB') }}" class="footer-selection-a">
-                    <h3 class="header-text">Battle of Britain</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/homepage-images/desktop/d-homepage-bases.png">
-
-                        <img class="footer-selection-image" src="images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
-                    </picture>
-                </a>
-            </div>
+        <div class="footer-col" id="footer-logo">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
+            <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
+            <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
+            <p class="footer-contact-line">Contact: 519-455-0430</p>
+            <p class="footer-contact-line">Email: info@427wing.com</p>
         </div>
 
-        <div class="footer-desktop-flex-con">
-            <div class="footer-desktop-flex-section" id="logo-and-info">
-            <!-- Logo -->
-
-            <div class="footer-logo-con">
-                <a href="{{ route('home') }}">
-                    <img class="footer-logo" src="/images/icons/LAM-logo-white.svg">
-                </a>
-            </div>
-
-            <div class="footer-text-con">
-                <p class="body-text">A Project of 427 Wing RCAF ASSOCIATION</p>
-
-                <p class="body-text">www.427wing.com</p>
-
-                <p class="body-text">Contact: 519-455-0430</p>
-
-                <p class="body-text">Email: info@427wing.com</p>
-            </div>
+        <div class="footer-col" id="footer-discover">
+            <h3 class="footer-col-title">Discover</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('about') }}">&rarr; About Us</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Remembrance</a></li>
+                <li><a href="{{ route('events') }}">&rarr; News &amp; Events</a></li>
+                <li><a href="{{ route('blog') }}">&rarr; Blog</a></li>
+                <li><a href="{{ route('gallery') }}">&rarr; Gallery</a></li>
+                <li><a href="{{ route('contact') }}">&rarr; Contact Us</a></li>
+            </ul>
         </div>
-        
-        <div class="footer-desktop-flex-section" id="desk-center">
-            <!-- Footer Nav Links -->
 
-            <div class="footer-nav-links-con">
-                
-                <div class="footer-nav-links footer-nav-discover">
-                    <h4 class="header-text">Discover</h4>
+        <div class="footer-col" id="footer-legacy">
+            <h3 class="footer-col-title">Our Legacy</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('timeline') }}">&rarr; London Aviation Timeline</a></li>
+                <li><a href="{{ route('training_bases') }}">&rarr; Flight Schools and Training Bases</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Legacy of the Fallen</a></li>
+                <li><a href="{{ route('canteen') }}">&rarr; Airman's Canteen</a></li>
+                <li><a href="{{ route('BOB') }}">&rarr; Battle of Britain</a></li>
+            </ul>
+        </div>
 
-                    <div class="footer-cta-con">
-                        <a href="{{ route('about') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            About Us
-                        </a>
-                    </div>
+        <!-- COL 4: EXPLORE & JOIN -->
+        <div class="footer-col" id="footer-explore">
 
-                    <div class="footer-cta-con">
-                        <a href="{{ route('timeline') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            History
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('comm') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Rememberance
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="#">
-                            <img src="/images/icons/right-arrow.svg">
-                            News & Events
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('contact') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Contact Us
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-                <div class="footer-nav-links footer-nav-legacy">
-                    <h4 class="header-text">Our Legacy</h4>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('timeline') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            London Aviation Timeline
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('training_bases') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Flight Schools and Training Bases
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('comm') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Legacy of the Fallen
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('canteen') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Airman's Canteen
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('BOB') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Battle of Britain
-                        </a>
-                    </div>
-
+            <div id="footer-explore-top">
+                <h3 class="footer-col-title">Explore the Museum</h3>
+                <p class="footer-col-subtitle">Search aircraft, exhibits, and stories of courage.</p>
+                <div id="footer-search">
+                    <input type="text" id="footer-search-input" placeholder="Search here">
+                    <button type="button" id="footer-search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-desktop-flex-section" id="flex-section-end">
-            <!-- Footer Explore -->
 
-            <div class="footer-search-con">
-                
-                <h3 class="header-text">
-                    EXPLORE THE MUSEUM
-                </h3>
-
-                <p class="body-text">
-                    Search aircraft, exhibits, and stories of courage.
-                </p>
-
-                <div class="footer-search-bar-con">
-                    <form role="search">
-                        <input type="search" id="footer-search-bar" name="searchbar" placeholder="Search through site content..." aria-label="Search through site content">
-                    </form>
-                </div>
-
-            </div>
-
-            <!-- Footer Socials -->
-
-            <div class="footer-socials-con">
-                <h3 class="header-text">JOIN OUR COMMUNITY</h3>
-
-                <p class="body-text">Stand with us in preserving stories of courage</p>
-
-                <div class="footer-socials-icons-con">
-                    
-                    <div class="icons-con">
-                        <a href="https://www.facebook.com/">
-                            <img src="/images/icons/footer-socials-icons/Facebook.svg">
-                        </a>
-                    </div>
-                    
-                    <div class="icons-con">
-                        <a href="https://www.linkedin.com/">
-                            <img src="/images/icons/footer-socials-icons/LinkedIn.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://www.instagram.com/">
-                            <img src="/images/icons/footer-socials-icons/Instagram.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://x.com/">
-                            <img src="/images/icons/footer-socials-icons/twitter.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://www.youtube.com/">
-                            <img src="/images/icons/footer-socials-icons/Youtube.svg">
-                        </a>
-                    </div>
-
+            <div id="footer-community">
+                <h3 class="footer-col-title">Join Our Community</h3>
+                <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
+                <div id="footer-socials">
+                    <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
+                    </a>
+                    <a href="https://x.com/" class="social-icon" alt="X / Twitter">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
+                    </a>
                 </div>
             </div>
+
         </div>
-        </div>
-        
-        <div class="footer-closing-text">
-            <p class="body-text">Copyright ©2026 LONDON AVIATION MUSEUM | Privacy Policy | Terms</p>
-        </div>        
-    </footer>
+
+    </div>
+
+    <!-- FOOTER BOTTOM BAR -->
+    <div id="footer-bottom">
+        <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </div>
+
+</footer>
 </body>
 </html>

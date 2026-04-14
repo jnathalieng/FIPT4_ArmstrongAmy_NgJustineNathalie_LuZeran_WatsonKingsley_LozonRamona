@@ -18,17 +18,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
 
 <body id="commemoration-page" data-page="comm">
+      
+</head>
+<body data-page="home">
 
     <header class="header">
-        <!-- navbar -->
+    <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
                     <a class="desktop-logo" href="{{ route('home') }}">
-                        <img src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
                     </a>
                 </li>
 
@@ -66,11 +73,18 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
                     <a class="nav-anchor" href="{{ route('events') }}">Events</a>
-                </li>
-                <li class="m-l-nav-item">
-                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('gallery') }}">Gallery</a>
@@ -89,7 +103,7 @@
             <ul>
                 <li>
                     <a href="{{ route('home') }}" class="logo-con">
-                        <img src="/images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg" alt="image of logo">
+                        <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
                 <li class="nav-separator">
@@ -131,42 +145,32 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero-section" id="commemoration-hero">
+        <section class="hero-video-section" id="commemoration-hero">
             
             <h2 class="hidden">Commemoration hero section</h2>
 
-            <div class="hero-title-con">
-                <div class="hero-title">
+            <div class="hero-title-con-vid">
+                <div class="hero-title-vid">
                     <h3>
                         Legacy of the Fallen
                     </h3>
                 </div>
-                <div class="hero-subtitle">
+                <div class="hero-subtitle-vid">
                     <p>
-                        Commemroate the losses throughout history
+                        Commemorate the losses throughout history
                     </p>
                 </div>
             </div>
 
             <video class="hero-card-video hero-section-video" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
-                <source data-desktop="/videos/hero-videos/hero-march-1920x1080.mp4" type="video/mp4">
+                <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-march-1920x1080.mp4') }}" type="video/mp4" data-mobile="{{ asset('videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
                 
-                <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4" type="video/mp4">
+                <source data-mobile="/videos/hero-videos/hero-march-768x768.mp4') }}" type="video/mp4">
 
                 <p>Your browser does not support</p>
             </video>
 
-        </section>
-       
-<!-- COMMEMORATION HERO SECTION -->
-
-        <section class="hero-section" id="comm-hero">
-            <div class="hero-triangle"></div>
-            <div class="hero-title-con">
-                <div class="hero-title"><p>London's Air Age</p></div>
-                <div class="hero-subtitle"><p>From Lambeth to Crumlin</p></div>
-            </div>
         </section>
 
 <!-- Commemoration Text Section -->
@@ -205,9 +209,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-john-allan-smith.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-john-allan-smith.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-john-allan-smith.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
@@ -248,9 +252,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-robert-clinton-bailey.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-robert-clinton-bailey.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-robert-clinton-bailey.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
@@ -290,9 +294,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="/images/comm-images/desktop/d-comm-grant-thomas-stewart.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="/images/comm-images/mobile/m-comm-grant-thomas-stewart.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-grant-thomas-stewart.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             In 1940, five airmen connected to London served during the Battle of Britain, one of the most significant air campaigns of the Second World War. Their participation formed part of Canada's contribution to the defence of Britain during this critical period.
@@ -304,7 +308,7 @@
                 </div>
 
                 <div class="read-more">
-                    <a href="BOB.html" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+                    <a href="{{ route('BOB') }}" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
                 </div>
             </div>
 
@@ -323,9 +327,9 @@
 
                 <div class="comm-beta-img-box">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/comm-images/mobile/m-comm-420-badge.png">
+                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}">
                         <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="images/comm-images/mobile/m-comm-420-badge.png" alt="picture of John Allan Smith recieving a medal">
+                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
                         
                         <p class="comm-beta-p">
                             The Book of Remembrance preserves the names of those connected to London's aviation history whose service and sacrifice are recorded for future generations. It stands as a lasting record within the museum and 427 Wing.
@@ -345,224 +349,87 @@
     </section>
 </main>
 
-    <footer>
+<footer id="main-footer">
 
-        <!-- Footer Selection Section -->
+    <div id="footer-inner">
 
-        <div class="footer-selection-con">
-            
-            <div class="footer-selection-box">
-                <a href="{{ route('training_bases') }}" class="footer-selection-a">
-                    <h3 class="header-text">BCATP Training Sites</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="/images/homepage-images/desktop/d-homepage-map.png">
-
-                        <img class="footer-selection-image" src="/images/homepage-images/mobile/m-homepage-map.png" alt="zoomed in map of ontario">
-                    </picture>
-                </a>
-            </div>
-
-            <div class="footer-selection-box">
-                <a href="{{ route('timeline') }}" class="footer-selection-a">
-                    <h3 class="header-text">London Aviation Timeline</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="/images/homepage-images/desktop/d-homepage-war.png">
-
-                        <img class="footer-selection-image" src="/images/homepage-images/mobile/m-homepage-war.png" alt="image of a wartime woman">
-                    </picture>
-                </a>
-            </div>
-
-            <div class="footer-selection-box">
-                <a href="{{ route('BOB') }}" class="footer-selection-a">
-                    <h3 class="header-text">Battle of Britain</h3>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="/images/homepage-images/desktop/d-homepage-bases.png">
-
-                        <img class="footer-selection-image" src="/images/homepage-images/mobile/m-homepage-bases.png" alt="zoomed in map of ontario">
-                    </picture>
-                </a>
-            </div>
+        <div class="footer-col" id="footer-logo">
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
+            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
+            <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
+            <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
+            <p class="footer-contact-line">Contact: 519-455-0430</p>
+            <p class="footer-contact-line">Email: info@427wing.com</p>
         </div>
 
-        <div class="footer-desktop-flex-con">
-            <div class="footer-desktop-flex-section" id="logo-and-info">
-            <!-- Logo -->
-
-            <div class="footer-logo-con">
-                <a href="{{ route('home') }}">
-                    <img class="footer-logo" src="/images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg">
-                </a>
-            </div>
-
-            <div class="footer-text-con">
-                <p class="body-text">A Project of 427 Wing RCAF ASSOCIATION</p>
-
-                <p class="body-text">www.427wing.com</p>
-
-                <p class="body-text">Contact: 519-455-0430</p>
-
-                <p class="body-text">Email: info@427wing.com</p>
-            </div>
+        <div class="footer-col" id="footer-discover">
+            <h3 class="footer-col-title">Discover</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('about') }}">&rarr; About Us</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Remembrance</a></li>
+                <li><a href="{{ route('events') }}">&rarr; News &amp; Events</a></li>
+                <li><a href="{{ route('blog') }}">&rarr; Blog</a></li>
+                <li><a href="{{ route('gallery') }}">&rarr; Gallery</a></li>
+                <li><a href="{{ route('contact') }}">&rarr; Contact Us</a></li>
+            </ul>
         </div>
-        
-        <div class="footer-desktop-flex-section" id="desk-center">
-            <!-- Footer Nav Links -->
 
-            <div class="footer-nav-links-con">
-                
-                <div class="footer-nav-links footer-nav-discover">
-                    <h4 class="header-text">Discover</h4>
+        <div class="footer-col" id="footer-legacy">
+            <h3 class="footer-col-title">Our Legacy</h3>
+            <ul class="footer-nav-list">
+                <li><a href="{{ route('timeline') }}">&rarr; London Aviation Timeline</a></li>
+                <li><a href="{{ route('training_bases') }}">&rarr; Flight Schools and Training Bases</a></li>
+                <li><a href="{{ route('comm') }}">&rarr; Legacy of the Fallen</a></li>
+                <li><a href="{{ route('canteen') }}">&rarr; Airman's Canteen</a></li>
+                <li><a href="{{ route('BOB') }}">&rarr; Battle of Britain</a></li>
+            </ul>
+        </div>
 
-                    <div class="footer-cta-con">
-                        <a href="{{ route('about') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            About Us
-                        </a>
-                    </div>
+        <!-- COL 4: EXPLORE & JOIN -->
+        <div class="footer-col" id="footer-explore">
 
-                    <div class="footer-cta-con">
-                        <a href="{{ route('timeline') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            History
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('comm') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Rememberance
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="#">
-                            <img src="/images/icons/right-arrow.svg">
-                            News & Events
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('contact') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Contact Us
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-                <div class="footer-nav-links footer-nav-legacy">
-                    <h4 class="header-text">Our Legacy</h4>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('timeline') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            London Aviation Timeline
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('training_bases') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Flight Schools and Training Bases
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('comm') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Legacy of the Fallen
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('canteen') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Airman's Canteen
-                        </a>
-                    </div>
-
-                    <div class="footer-cta-con">
-                        <a href="{{ route('BOB') }}">
-                            <img src="/images/icons/right-arrow.svg">
-                            Battle of Britain
-                        </a>
-                    </div>
-
+            <div id="footer-explore-top">
+                <h3 class="footer-col-title">Explore the Museum</h3>
+                <p class="footer-col-subtitle">Search aircraft, exhibits, and stories of courage.</p>
+                <div id="footer-search">
+                    <input type="text" id="footer-search-input" placeholder="Search here">
+                    <button type="button" id="footer-search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-desktop-flex-section" id="flex-section-end">
-            <!-- Footer Explore -->
 
-            <div class="footer-search-con">
-                
-                <h3 class="header-text">
-                    EXPLORE THE MUSEUM
-                </h3>
-
-                <p class="body-text">
-                    Search aircraft, exhibits, and stories of courage.
-                </p>
-
-                <div class="footer-search-bar-con">
-                    <form role="search">
-                        <input type="search" id="footer-search-bar" name="searchbar" placeholder="Search through site content..." aria-label="Search through site content">
-                    </form>
-                </div>
-
-            </div>
-
-            <!-- Footer Socials -->
-
-            <div class="footer-socials-con">
-                <h3 class="header-text">JOIN OUR COMMUNITY</h3>
-
-                <p class="body-text">Stand with us in preserving stories of courage</p>
-
-                <div class="footer-socials-icons-con">
-                    
-                    <div class="icons-con">
-                        <a href="https://www.facebook.com/">
-                            <img src="/images/icons/footer-socials-icons/Facebook.svg">
-                        </a>
-                    </div>
-                    
-                    <div class="icons-con">
-                        <a href="https://www.linkedin.com/">
-                            <img src="/images/icons/footer-socials-icons/LinkedIn.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://www.instagram.com/">
-                            <img src="/images/icons/footer-socials-icons/Instagram.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://x.com/">
-                            <img src="/images/icons/footer-socials-icons/twitter.svg">
-                        </a>
-                    </div>
-
-                    <div class="icons-con">
-                        <a href="https://www.youtube.com/">
-                            <img src="/images/icons/footer-socials-icons/Youtube.svg">
-                        </a>
-                    </div>
-
+            <div id="footer-community">
+                <h3 class="footer-col-title">Join Our Community</h3>
+                <p class="footer-col-subtitle">Stand with us in preserving stories of courage.</p>
+                <div id="footer-socials">
+                    <a href="https://www.facebook.com/" class="social-icon" alt="Facebook">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Facebook.svg') }}">
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-icon" alt="LinkedIn">
+                        <img src="{{ asset('images\icons\footer-socials-icons\LinkedIn.svg') }}">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-icon" alt="Instagram">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Instagram.svg') }}">
+                    </a>
+                    <a href="https://x.com/" class="social-icon" alt="X / Twitter">
+                        <img src="{{ asset('images\icons\footer-socials-icons\twitter.svg') }}">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-icon" alt="YouTube">
+                        <img src="{{ asset('images\icons\footer-socials-icons\Youtube.svg') }}">
+                    </a>
                 </div>
             </div>
+
         </div>
-        </div>
-        
-        <div class="footer-closing-text">
-            <p class="body-text">Copyright ©2026 LONDON AVIATION MUSEUM | Privacy Policy | Terms</p>
-        </div>        
-    </footer>
+
+    </div>
+
+    <!-- FOOTER BOTTOM BAR -->
+    <div id="footer-bottom">
+        <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </div>
+
+</footer>
 </body>
 </html>

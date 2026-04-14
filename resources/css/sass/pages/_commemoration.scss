@@ -1,9 +1,12 @@
 @use '../abstracts' as a;
 
 #comm-hero {
-    background-image: url("/images/hero-images/AboutHero_Mobile.png");
+    background-image: url("/images/hero-images/mobile/AboutHero_Mobile.png");
 }
 
+#commemoration-page {
+    overflow-x: hidden;
+}
 
 // EXPANDABLE SELECTION STYLING
 
@@ -160,6 +163,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    
+#comm-hero {
+    background-image: url("/images/hero-images/tablet/AboutHero_Tablet.png");
+}
+    
     // BetaCon styling
     .comm-beta-con {
         
@@ -247,4 +255,10 @@
             }
         }
     }
+}
+
+@media (min-width:1200px) {
+    #comm-hero {
+    background-image: url("/images/hero-images/desktop/AboutHero_Desktop.png");
+}
 }

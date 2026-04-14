@@ -41,7 +41,7 @@ class database
 
     public function getConfig()
     {
-        //local
+        //dev
         return [
             'username' => 'root',
             'password' => '',
@@ -49,6 +49,15 @@ class database
             'database' => 'london_aircraft_museum',
             'port' => '3306'
         ];
+
+        //Production
+        // return [
+        //     'username' => 'thede519_london',
+        //     'password' => 'Rvf;Fs91a6X9Z8j&',
+        //     'host' => 'localhost',
+        //     'database' => 'thede519_london_aircraft_museum',
+        //     'port' => '3306'
+        // ];
     }
 
     public function getDsn()

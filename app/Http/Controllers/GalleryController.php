@@ -1,6 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 use App\Models\Gallery;
+use App\Models\GalleryImage;
+use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
@@ -21,5 +23,52 @@ class GalleryController extends Controller
             ->firstOrFail();
         
         return response()->json($gallery);
+    }
+
+    // MISSING GALLERY CRUD FUNCTIONALITY - ZERAN
+    public function store(Request $request)
+    {
+        $gallery = Gallery::create($request->all());
+
+        return response()->json($gallery);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $gallery = Gallery::findOrFail($id);
+        $gallery->update($request->all());
+
+        return response()->json($gallery);
+    }
+
+    public function destroy($id)
+    {
+        Gallery::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'This image has been successfully deleted.']);
+    }
+
+
+    // MISSING GALLERY IMAGE CRUD FUNCTIONALITY - ZERAN
+    public function storeImage(Request $request)
+    {
+        $galleryImage = GalleryImage::create($request->all());
+
+        return response()->json($galleryImage);
+    }
+
+    public function updateImage(Request $request, $id)
+    {
+        $galleryImage = GalleryImage::findOrFail($id);
+        $galleryImage->update($request->all());
+
+        return response()->json($galleryImage);
+    }
+
+    public function destroyImage($id)
+    {
+        GalleryImage::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'This gallery image has been successfully deleted.']);
     }
 }

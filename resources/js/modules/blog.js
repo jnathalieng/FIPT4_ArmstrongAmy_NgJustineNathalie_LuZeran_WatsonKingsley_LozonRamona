@@ -27,10 +27,10 @@ export default {
     },
     methods: {
         goToBlog(slug) {
-            window.location.href = `/blog/${slug}`;
+            window.location.href = `/blogs/${slug}`;
         },
         goBackToBlog() {
-            window.location.href = '/blog';
+            window.location.href = '/blogs';
         }
     },
   template: `
@@ -38,8 +38,13 @@ export default {
         <div v-if="!isPostPage" class="blog-container">
             <section class="hero-section">
                 <div class="hero-title-con">
-                    <div class="hero-title"><p>Blog</p></div>
-                    <div class="hero-subtitle"><p>Stories and insights from London Aviation Museum</p></div>
+                    <div class="hero-title">
+                        <p>Blog</p>
+                    </div>
+                    <div class="hero-subtitle">
+                        <p>Stories and insights from London Aviation Museum
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -56,7 +61,7 @@ export default {
                             :src="'/images/blog/' + blog.featured_image" 
                             :alt="blog.featured_image_alt"
                         >
-                        <h2>{{ blog.title }}</h2>
+                        <h2 class="r-title-text">{{ blog.title }}</h2>
                         <p class="excerpt">{{ blog.excerpt }}</p>
                         <span class="date">{{ new Date(blog.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) }}</span>
                     </article>

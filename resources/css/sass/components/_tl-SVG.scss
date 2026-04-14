@@ -1,0 +1,18 @@
+@use '../abstracts' as a;
+
+.tl-content-break {
+    background-color: a.$white;
+    text-align: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    svg {
+        display: block;
+        flex: 1 1 50%;
+        min-width: 0;
+        height: 100%;
+    }
+}

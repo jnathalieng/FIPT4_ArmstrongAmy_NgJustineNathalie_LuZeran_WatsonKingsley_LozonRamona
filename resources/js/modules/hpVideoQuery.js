@@ -1,23 +1,38 @@
 export function videoQuery() {
     
-    const heroVideos = document.querySelectorAll(".hero-card-video");
     const mediaQuery = window.matchMedia("(min-width: 768px)");
-
+    
     function setHeroVideoSrc() {
+        const heroVideos = document.querySelectorAll(".hero-card-video");
+        
         heroVideos.forEach(video => {
-            const mobileSrc = video.querySelector("[data-mobile]").getAttribute("data-mobile");
-            const desktopSrc = video.querySelector("[data-desktop]").getAttribute("data-desktop");
-
+            const source = video.querySelector(".responsive-source");
+            
+            // Make sure source element exists before accessing it
+            if (!source) {
+                console.warn("No .responsive-source found in video", video);
+                return;
+            }
+            
+            const mobileSrc = source.getAttribute("data-mobile");
+            const desktopSrc = source.getAttribute("data-desktop");
             
             if (mediaQuery.matches) {
-                video.src = desktopSrc;
+                source.src = desktopSrc;
             } else {
-                video.src = mobileSrc;
+                source.src = mobileSrc;
             }
             video.load();
         });
-    };
-
-    window.addEventListener("load", setHeroVideoSrc);
+    }
+    
+    // Run after DOM is fully loaded
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", setHeroVideoSrc);
+    } else {
+        setHeroVideoSrc();
+    }
+    
+    // Listen for viewport changes
     mediaQuery.addEventListener("change", setHeroVideoSrc);
 }
