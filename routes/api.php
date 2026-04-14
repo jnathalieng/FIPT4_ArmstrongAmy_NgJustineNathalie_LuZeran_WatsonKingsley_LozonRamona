@@ -38,12 +38,14 @@ Route::put('/events/{id}', [EventsController::class, 'update']);
 Route::delete('/events/{id}', [EventsController::class, 'destroy']);
 
 // BLOG MANAGER ROUTES - ZERAN
-Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
+Route::get('/blog-categories', [BlogController::class, 'getCategories']);
 Route::get('/blogs', [BlogController::class, 'index']);
-Route::get('/blogs/{slug}', [BlogController::class, 'show']);
+Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::post('/blogs', [BlogController::class, 'store']);
-Route::put('/blogs/{id}', [BlogController::class, 'update']);
-Route::delete('/blogs/{id}', [BlogController::class, 'destroy']);
+Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit']);
+Route::put('/blogs/{blog}', [BlogController::class, 'update']);
+Route::delete('/blogs/{blog}', [BlogController::class, 'destroy']);
+Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 
 // COMMEMORATION MANAGER ROUTES - ZERAN
 Route::get('/comm', [CommController::class, 'index'])->name('comm');

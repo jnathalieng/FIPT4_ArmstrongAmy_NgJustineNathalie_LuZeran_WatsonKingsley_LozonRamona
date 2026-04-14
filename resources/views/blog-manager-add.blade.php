@@ -153,106 +153,18 @@
     </header>
 
 <main style="min-height: 100vh;">
-
-<section class="cms-page-top dashboard-page-con grid-con">
-    <div class="col-span-full">
-        <p class="g-header-text">Dashboard / Blog Manager / <span class="page-path">Create New Blog Post</span></p>
-    </div>
+    <section class="cms-page-top dashboard-page-con grid-con">
         <div class="col-span-full">
-            <p class="r-header-text">Create New Blog Post</p>
+            <p class="g-header-text">Dashboard / Blog Manager / <span class="page-path">Create New Blog Post</span></p>
         </div>
-
-    <section class="add-form col-span-full">
-
-        <article class="add-form-con" id="blog-form">
-  <form @submit.prevent="regForm" class="add-input-form" id="blogForm">
-
-    <div class="title-con">
-        <span class="r-header-text">Post Details</span>
-    </div>    
-        <!-- <p class="field-error" v-if="errors.title">@{{errors.title}}</p> -->
-        <input  v-model="formData.event_title" 
-                class="add-form-box title-input"
-                id="title-input"
-                type="text" 
-                name="Post-Title" 
-                placeholder="Post Title">
-
-        <section class="add-form-inputs">
-
-            <article class="twin-inputs">
-
-            <!-- Slug Title -->
-             <div class="left-box">
-                <label for="link-header" class="r-header-text">Link Header</label>
-                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
-                <input  v-model="formData.slug" 
-                        class="add-form-box"
-                        id="slug"
-                        type="text" 
-                        name="slug" 
-                        placeholder="Location">
+            <div class="col-span-full">
+                <p class="r-header-text">Create New Blog Post</p>
             </div>
-
-            <!-- draft/published indicator -->
-             <div class="left-box">
-                <label for="excerpt" class="r-header-text">Excerpt</label>
-                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
-                <input  v-model="formData.excerpt" 
-                        class="add-form-box"
-                        id="slug"
-                        type="text" 
-                        name="slug" 
-                        placeholder="Location">
-                </div>
-            </div>
-
-            </article>
-
-            <article class="twin-inputs">
-
-            <!-- location input -->
-                    <div class="right-box">
-                        <label for="featured-image" class="r-header-text">Featured Image</label>
-                        <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
-                        <input  v-model="formData.featured_image" 
-                                class="add-form-box"
-                                id="featured-image"
-                                type="text" 
-                                name="Featured Image" 
-                                placeholder="Place image Here">
-                    </div>
-            </article>
-        </section>
-
-        <!-- content input -->
-            <label for="content" class="r-header-text content-title">Content</label>
-            <!-- <p class="field-error" v-if="errors.content">@{{errors.content}}</p> -->
-            <input  v-model="formData.content" 
-                        class="add-content-box"
-                        id="content"
-                        type="text"
-                        name="Content">
-            </div>
-                  
-        <!-- drag and drop box for images -->
-        <div class="drag-and-drop-images">
-            <!-- here will be an area where user's creating the blog posts can drag and drop images onto the page that they want included in the blog post -->
+            <section class="add-form col-span-full">
+                    <div id="blog-form-add"></div>
+            </section>
         </div>
-      </div>
-
-      <div class="button-con">
-            <button class="add-button cancel-button" type="submit">Cancel</button>
-            <button class="add-button save-button" type="submit">Save as Draft</button>
-            <button class="add-button publish-button" type="submit">Publish Post</button>
-        </div>
-        <!-- <p class="field-error" v-if="errors.general">@{{errors.general}}</p> -->
-        <!-- <div v-if="responseMessage"> -->
-          <!-- @{{responseMessage}} -->
-        <!-- </div> -->
-    </form>
     </section>
-</section>
 </main>
 
 <!-- FOOTER SECTION -->
