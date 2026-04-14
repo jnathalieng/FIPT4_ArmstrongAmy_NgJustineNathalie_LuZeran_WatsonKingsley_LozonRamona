@@ -7,7 +7,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\EventsController;
-//use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -91,8 +91,8 @@ Route::get('/events-manager-add', function () {
     return view('events-manager-add');
 })->name('events-manager-add');
 
-Route::get('/events-manager-edit', function () {
-    return view('events-manager-edit');
+Route::get('/events-manager-edit/{id}', function ($id) {
+    return view('events-manager-edit', ['eventId' => $id]);
 })->name('events-manager-edit');
 
 // blog
