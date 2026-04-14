@@ -14,6 +14,8 @@ import blogFormAdd from "./modules/blogFormAdd.js";
 import blogFormEdit from "./modules/blogFormEdit.js";
 import blogManager from "./modules/blogManager.js";
 import commManager from "./modules/commManager.js";
+import commFormAdd from "./modules/commFormAdd.js";
+import commFormEdit from "./modules/commFormEdit.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
@@ -88,11 +90,6 @@ else if(document.body.dataset.page === "comm") {
     const appFour = createApp(commFour);
     appFour.mount('#comm-training-four');
 }
-else if(document.body.dataset.page === "comm-manager") {
-    console.log('manage Commemorations');
-    const app = createApp(commManager);
-    app.mount('#comm-manager-app');
-}
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
 }
@@ -144,9 +141,23 @@ else if(document.body.dataset.page === "blog-edit") {
     const app = createApp(blogFormEdit);
     app.mount('#blog-form-edit');
 }
-
 else if (document.body.dataset.page === "gallery-manager") {
     console.log('welcome to the gallery manager');
     const app = createApp(galleryManager);
     app.mount('#gallery-manager-app');
+}
+else if(document.body.dataset.page === "comm-manager") {
+    console.log('manage Commemorations');
+    const app = createApp(commManager);
+    app.mount('#comm-manager-app');
+}
+else if (document.body.dataset.page === "comm-manager-add") {
+    console.log('add commemoration entry');
+    const app = createApp(commFormAdd);
+    app.mount('#comm-form-add');
+}
+else if (document.body.dataset.page === "comm-manager-edit") {
+    console.log('edit commemoration entry');
+    const app = createApp(commFormEdit);
+    app.mount('#comm-form-edit');
 }

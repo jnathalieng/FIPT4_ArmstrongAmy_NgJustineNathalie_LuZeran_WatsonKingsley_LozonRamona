@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 </head>
-<body data-page="edit-comm">
+<body data-page="comm-manager-edit">
     <header class="header">
         <!-- navbar -->
         <nav class="desktop-nav">
@@ -90,11 +90,13 @@
 <main style="min-height: 100vh;">
 
 <section class="cms-page-top dashboard-page-con grid-con">
+
     <div class="col-span-full">
         <p class="g-header-text">Dashboard / Events Manager / <span class="page-path">Edit Event</span></p>
     </div>
-
-
+    <section class=col-span-full>
+        <div id="comm-form-edit"></div>
+    </section>
 </section>
 </main>
 

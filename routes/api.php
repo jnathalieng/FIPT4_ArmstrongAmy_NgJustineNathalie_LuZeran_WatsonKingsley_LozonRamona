@@ -44,22 +44,25 @@ Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 
 // COMMEMORATION MANAGER ROUTES - ZERAN
 Route::get('/comm', [CommController::class, 'index'])->name('comm');
+Route::get('/comm/{id}', [CommController::class, 'showComm']);
 Route::get('/commJson', [CommController::class, 'indexComm']);
 Route::post('/comm', [CommController::class, 'storeComm']);
 Route::put('/comm/{id}', [CommController::class, 'updateComm']);
 Route::delete('/comm/{id}', [CommController::class, 'destroyComm']);
 
-    // COMM - TRAINING 3 CRUD
-    Route::get('/commThree', [CommController::class, 'indexThree']);
-    Route::post('/commThree', [CommController::class, 'storeCommThree']);
-    Route::put('/commThree/{id}', [CommController::class, 'updateCommThree']);
-    Route::delete('/commThree/{id}', [CommController::class, 'destroyCommThree']);
+// COMM - TRAINING 3 CRUD
+Route::get('/commThree', [CommController::class, 'indexThree']);
+Route::get('/commThree/{id}', [CommController::class, 'showThree']);
+Route::post('/commThree', [CommController::class, 'storeCommThree']);
+Route::put('/commThree/{id}', [CommController::class, 'updateCommThree']);
+Route::delete('/commThree/{id}', [CommController::class, 'destroyCommThree']);
 
-    // COMM - TRAINING 4 CRUD
-    Route::get('/commFour', [CommController::class, 'indexFour']);
-    Route::post('/commFour', [CommController::class, 'storeCommFour']);
-    Route::put('/commFour/{id}', [CommController::class, 'updateCommFour']);
-    Route::delete('/commFour/{id}', [CommController::class, 'destroyCommFour']);
+// COMM - TRAINING 4 CRUD
+Route::get('/commFour', [CommController::class, 'indexFour']);
+Route::get('/commFour/{id}', [CommController::class, 'showFour']);
+Route::post('/commFour', [CommController::class, 'storeCommFour']);
+Route::put('/commFour/{id}', [CommController::class, 'updateCommFour']);
+Route::delete('/commFour/{id}', [CommController::class, 'destroyCommFour']);
 
 // GALLERY MANAGER ROUTES - ZERAN
 Route::get('/galleries', [GalleryController::class, 'index']);

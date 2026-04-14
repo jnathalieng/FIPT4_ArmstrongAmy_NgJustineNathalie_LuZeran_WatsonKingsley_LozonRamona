@@ -15,7 +15,7 @@ public function up()
         $table->id();
         $table->unsignedBigInteger('user_id');
         $table->string('name', 250);
-        $table->string('picture', 250);
+        $table->string('picture', 250)->nullable();
         $table->string('service_number', 150);
         $table->text('rank');
         $table->string('corps', 250);

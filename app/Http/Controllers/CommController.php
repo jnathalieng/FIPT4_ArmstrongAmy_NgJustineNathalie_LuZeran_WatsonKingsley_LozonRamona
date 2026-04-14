@@ -109,4 +109,16 @@ class CommController extends Controller
     public function indexFour() {
         return response()->json(TrainingFour::all());
     }
+
+    public function showComm($id) {
+    return response()->json(Comm::findOrFail($id));
+    }
+
+    public function showThree($id) {
+        return response()->json(TrainingThree::findOrFail($id));
+    }
+    
+    public function showFour($id) {
+        return response()->json(TrainingFour::findOrFail($id));
+    }
 }

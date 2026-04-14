@@ -127,9 +127,13 @@ Route::get('/comm-manager-edit', function () {
     return view('comm-manager-edit');
 })->name('comm-manager-edit');
 
-Route::get('/comm-manager-edit/{id}', function () {
-    return view('comm-manager-edit/{id}');
-})->name('comm-manager-edit/{id}');
+Route::get('/comm-manager-edit/{table}/{id}', function ($table, $id) {
+    return view('comm-manager-edit', ['table' => $table, 'id' => $id]);
+})->name('comm-manager-edit');
+
+// Route::get('/comm-manager-edit/{id}', function () {
+//     return view('comm-manager-edit/{id}');
+// })->name('comm-manager-edit/{id}');
 
 // Gallery
 
