@@ -176,12 +176,12 @@
 }
 
 //blog styles
-.blog-manager-container {
+.manager-container {
     width: 100%;
     padding: 20px 0;
 }
 
-.blog-manager-header {
+.manager-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -208,14 +208,15 @@
     font-size: 16px;
 }
 
-.blog-list {
+.manager-list {
     width: 100%;
     border: 1px solid a.$dark-background;
     border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
-.blog-list-header {
+.manager-list-header {
     display: grid;
     grid-template-columns: 2fr 1.5fr 1fr 1fr;
     gap: 20px;
@@ -231,7 +232,7 @@
     }
 }
 
-.blog-list-item {
+.manager-list-item {
     display: grid;
     grid-template-columns: 2fr 1.5fr 1fr 1fr;
     gap: 20px;
@@ -247,24 +248,6 @@
     &:last-child {
         border-bottom: none;
     }
-
-    // .col-title h4 {
-    //     margin: 0;
-    //     word-break: break-word;
-    // }
-
-//     .col-slug p,
-//     .col-date p {
-//         margin: 0;
-//         color: #666;
-//         font-size: 14px;
-//     }
-// }
-
-// .col-actions {
-//     display: flex;
-//     gap: 10px;
-//     justify-content: flex-end;
 }
 
 .action-btn {
@@ -323,7 +306,6 @@
     color: #d32f2f;
 }
 
-/* Delete Confirmation Modal */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -367,7 +349,7 @@
 
 // Responsive Design
 @media (max-width: 768px) {
-    .blog-manager-header {
+    .manager-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
@@ -378,17 +360,17 @@
         width: 100%;
     }
 
-    .blog-list-header,
-    .blog-list-item {
+    .manager-list-header,
+    .manager-list-item {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .blog-list-header {
+    .manager-list-header {
         display: none; // Hide header on mobile
     }
 
-    .blog-list-item {
+    .manager-list-item {
         border: 1px solid #ddd;
         border-radius: 5px;
         margin-bottom: 15px;

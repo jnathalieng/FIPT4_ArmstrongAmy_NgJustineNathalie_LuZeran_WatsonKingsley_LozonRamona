@@ -90,6 +90,11 @@
 <main style="min-height: 100vh;">
 
 <section class="cms-page-top dashboard-page-con grid-con">
+
+    <div class="col-span-full">
+        <p class="g-header-text">Dashboard / <span class="page-path">Blog Manager</span></p>
+    </div>
+
 <div class="col-span-full" id="blog-manager-app"></div>
 </section>
 </main>

@@ -88,6 +88,17 @@
     </header>
 
 <main style="min-height: 100vh;">
+<section class="cms-page-top dashboard-page-con grid-con">
+
+    <div class="col-span-full">
+        <p class="g-header-text">Dashboard / <span class="page-path">Events Manager</span></p>
+    </div>
+
+<div class="col-span-full" id="events-manager-app"></div>
+</section>
+</main>
+
+<!-- <main style="min-height: 100vh;">
 
 <section class="cms-page-top dashboard-page-con grid-con">
     
@@ -120,7 +131,7 @@
         </div>
 
     </article>
-</section>
+</section> -->
 </main>
 
 <!-- FOOTER SECTION -->

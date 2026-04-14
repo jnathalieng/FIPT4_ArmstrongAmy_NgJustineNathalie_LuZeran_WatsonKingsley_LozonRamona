@@ -19,12 +19,25 @@ export default {
             blogId: null,
         }
     },
-    mounted() {
-        this.blogId = document.querySelector('#blog-form-edit')?.dataset.blogId;
+mounted() {
+    console.log('blogFormEdit mounted');
+    
+    const element = document.querySelector('#blog-form-edit');
+    console.log('Element found:', !!element);
+    
+    if (element) {
+        this.blogId = element.dataset.blogId;
+        console.log('Blog ID:', this.blogId);
+        
         if (this.blogId) {
             this.fetchBlog();
+        } else {
+            console.warn('No blogId in data attribute');
         }
-    },
+    } else {
+        console.error('Element #blog-form-edit not found!');
+    }
+},
     methods: {
         async fetchBlog() {
             try {
