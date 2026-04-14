@@ -3638,6 +3638,35 @@ p.typewriter-quote {
     height: 90%;
   }
 }
+.comm-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.3s;
+}
+.tab-button:hover {
+  color: #B3262E;
+}
+.tab-button.active {
+  color: #B3262E;
+  border-bottom-color: #B3262E;
+}
+
+.comm-list-item {
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
 #tl-page {
   overflow-x: hidden;
 }

@@ -133,7 +133,7 @@ mounted() {
             }
 
             if (!this.formData.slug.trim()) {
-                this.errors.slug = 'Link header (slug) is required';
+                this.errors.slug = 'Link header is required';
                 this.isLoading = false;
                 return;
             }

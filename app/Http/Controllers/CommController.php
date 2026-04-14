@@ -97,4 +97,16 @@ class CommController extends Controller
         
         return response()->json(['message' => 'This commemorative card (training 4) has been deleted successfully.']);
     }
+    
+        public function indexComm() {
+        return response()->json(Comm::all());
+    }
+
+    public function indexThree() {
+        return response()->json(TrainingThree::all());
+    }
+
+    public function indexFour() {
+        return response()->json(TrainingFour::all());
+    }
 }
