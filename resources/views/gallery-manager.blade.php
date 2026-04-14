@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Manager</title>   
+    <title>Gallery Manager</title>
     @vite(['resources/css/main.css', 'resources/css/grid.css', 'resources/js/main.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body data-page="gallery-manager">
     <header class="header">
@@ -29,16 +30,16 @@
                 <li class="m-l-nav-item" id="events-manager-nav">
                     <a class="nav-anchor" href="{{ route('events-manager') }}">Events</a>
                 </li>
-                <li class="m-l-nav-item" id="blog-manager-nav">
+                <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('blog-manager') }}">Blog</a>
                 </li>
-                <li class="m-l-nav-item" id="blog-manager-nav">
+                <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('comm-manager') }}">Commemoration</a>
                 </li>
-                <li class="m-l-nav-item" id="blog-manager-nav">
+                <li class="m-l-nav-item" id="gallery-manager-nav">
                     <a class="nav-anchor" href="{{ route('gallery-manager') }}">Gallery</a>
                 </li>
-                <li class="m-l-nav-item" id="blog-manager-nav">
+                <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('logout') }}">Logout</a>
                 </li>
             </ul>
@@ -63,14 +64,13 @@
                         <img src="{{ asset('images/icons/logos/SVG_FILES_RED/FINAL_LOGONAME.svg') }}" alt="image of logo">
                     </a>
                 </li>
-                <li class="nav-separator">
-                </li>
+                <li class="nav-separator"></li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('dashboard') }}">Dashboard</a>
-                </li> 
+                </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('events-manager') }}">Events</a>
-                </li>             
+                </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('blog-manager') }}">Blog</a>
                 </li>
@@ -88,16 +88,19 @@
     </header>
 
     <main style="min-height: 100vh;">
-        </main>
+        <section class="cms-page-top dashboard-page-con grid-con">
+            <div class="col-span-full">
+                <p class="g-header-text">Dashboard / <span class="page-path">Gallery Manager</span></p>
+            </div>
+            <div class="col-span-full" id="gallery-manager-app"></div>
+        </section>
+    </main>
 
-<!-- FOOTER SECTION -->
-
-<footer id="main-footer">
-    <!-- FOOTER BOTTOM BAR -->
-    <div id="footer-bottom">
-        <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
-    </div>
-
-</footer>
+    <!-- FOOTER SECTION -->
+    <footer id="main-footer">
+        <div id="footer-bottom">
+            <p>Copyright &copy;2026 LONDON AVIATION MUSEUM | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer>
 </body>
 </html>

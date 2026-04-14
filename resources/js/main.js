@@ -6,6 +6,9 @@ import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import eventsManager from "./modules/eventsManager.js";
 import galleryManager from './modules/galleryManager.js';
+import eventsFormAdd from "./modules/eventsFormAdd.js";
+import eventsFormEdit from "./modules/eventsFormEdit.js";
+import galleryManager from './modules/gallery.js';
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import blogFormAdd from "./modules/blogFormAdd.js";
@@ -88,24 +91,23 @@ else if(document.body.dataset.page === "comm") {
 }
 else if(document.body.dataset.page === "comm-manager") {
     console.log('manage Commemorations');
-        const app = createApp(commManager);
+    const app = createApp(commManager);
     app.mount('#comm-manager-app');
 }
-
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
-} 
-else if (document.body.dataset.page === "events-manager") {
+}
+else if(document.body.dataset.page === "events-manager") {
     console.log("welcome to the events manager");
     const appEventsManager = createApp(eventsManager);
     appEventsManager.mount('#events-manager-app');
 }
 else if(document.body.dataset.page === "events-add") {
-    const app = createApp(blogFormAdd);
+    const app = createApp(eventsFormAdd);
     app.mount('#event-form-add');
 }
 else if(document.body.dataset.page === "events-edit") {
-    const app = createApp(blogFormEdit);
+    const app = createApp(eventsFormEdit);
     app.mount('#event-form-edit');
 }
 else if(document.body.dataset.page === "contact") {
@@ -142,4 +144,10 @@ else if(document.body.dataset.page === "blog-add") {
 else if(document.body.dataset.page === "blog-edit") {
     const app = createApp(blogFormEdit);
     app.mount('#blog-form-edit');
+}
+
+else if (document.body.dataset.page === "gallery-manager") {
+    console.log('welcome to the gallery manager');
+    const app = createApp(galleryManager);
+    app.mount('#gallery-manager-app');
 }
