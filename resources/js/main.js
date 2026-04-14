@@ -89,14 +89,13 @@ else if(document.body.dataset.page === "comm") {
 }
 else if(document.body.dataset.page === "comm-manager") {
     console.log('manage Commemorations');
-        const app = createApp(commManager);
+    const app = createApp(commManager);
     app.mount('#comm-manager-app');
 }
-
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
-} 
-else if (document.body.dataset.page === "events-manager") {
+}
+else if(document.body.dataset.page === "events-manager") {
     console.log("welcome to the events manager");
     const appEventsManager = createApp(eventsManager);
     appEventsManager.mount('#events-manager-app');
@@ -107,13 +106,6 @@ else if(document.body.dataset.page === "events-add") {
 }
 else if(document.body.dataset.page === "events-edit") {
     const app = createApp(eventsFormEdit);
-    app.mount('#event-form-edit');
-
-    const app = createApp(blogFormAdd);
-    app.mount('#event-form-add');
-}
-else if(document.body.dataset.page === "events-edit") {
-    const app = createApp(blogFormEdit);
     app.mount('#event-form-edit');
 }
 else if(document.body.dataset.page === "contact") {
