@@ -123,6 +123,10 @@ Route::get('/comm-manager-add', function () {
     return view('comm-manager-add');
 })->name('comm-manager-add');
 
+Route::get('/comm-manager-add/{table}', function ($table) {
+    return view('comm-manager-add', ['table' => $table]);
+});
+
 Route::get('/comm-manager-edit', function () {
     return view('comm-manager-edit');
 })->name('comm-manager-edit');
