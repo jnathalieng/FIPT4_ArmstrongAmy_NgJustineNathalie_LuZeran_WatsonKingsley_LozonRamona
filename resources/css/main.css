@@ -3651,9 +3651,10 @@ p.typewriter-quote {
   border-bottom: 1px solid #eee;
   align-items: center;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 .gallery-header-row:hover {
-  background-color: #fafafa;
+  background-color: #dbdbdb;
 }
 
 .gallery-chevron {
