@@ -5,6 +5,8 @@ import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import eventsManager from "./modules/eventsManager.js";
+import eventsFormAdd from "./modules/eventsFormAdd.js";
+import eventsFormEdit from "./modules/eventsFormEdit.js";
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import blogFormAdd from "./modules/blogFormAdd.js";
@@ -100,6 +102,13 @@ else if (document.body.dataset.page === "events-manager") {
     appEventsManager.mount('#events-manager-app');
 }
 else if(document.body.dataset.page === "events-add") {
+    const app = createApp(eventsFormAdd);
+    app.mount('#event-form-add');
+}
+else if(document.body.dataset.page === "events-edit") {
+    const app = createApp(eventsFormEdit);
+    app.mount('#event-form-edit');
+
     const app = createApp(blogFormAdd);
     app.mount('#event-form-add');
 }

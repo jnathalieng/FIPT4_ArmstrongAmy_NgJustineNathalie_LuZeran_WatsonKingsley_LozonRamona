@@ -10,7 +10,7 @@ export default {
         }
     },
     computed: {
-        filteredBlogs() {
+
             return this.events.filter(event => 
                 event.events_title.toLowerCase().includes(this.searchQuery.toLowerCase())
             );
