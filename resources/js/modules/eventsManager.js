@@ -125,7 +125,7 @@ export default {
 
             <!-- Events List -->
             <div v-else class="manager-list">
-                <div class="manager-list-header">
+                <div class="manager-list-header events-manager-grid">
                     <div class="r-header-text">Title</div>
                     <div class="r-header-text">Start Date</div>
                     <div class="r-header-text">Status</div>
@@ -133,7 +133,7 @@ export default {
                     <div class="r-header-text">Actions</div>
                 </div>
 
-                <div v-for="event in filteredEvents" :key="event.id" class="manager-list-item">
+                <div v-for="event in filteredEvents" :key="event.id" class="manager-list-item events-manager-grid">
                     <div class="col-title">
                         <h4 class="r-body-text">{{ event.events_title }}</h4>
                     </div>

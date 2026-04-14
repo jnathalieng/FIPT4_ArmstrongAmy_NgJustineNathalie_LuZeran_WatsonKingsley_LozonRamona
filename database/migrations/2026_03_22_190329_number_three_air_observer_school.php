@@ -16,7 +16,7 @@ return new class extends Migration
         $table->unsignedBigInteger('user_id');
         $table->text('rank');
         $table->string('name', 250);
-        $table->string('picture', 250);
+        $table->string('picture', 250)->nullable();
         $table->text('info');
         $table->string('unit', 250);
         $table->text('date');
