@@ -39,53 +39,7 @@
                     <a class="nav-anchor" href="{{ route('gallery-manager') }}">Gallery</a>
                 </li>
                 <li class="m-l-nav-item" id="blog-manager-nav">
-                    <a class="nav-anchor" href="{{ route('social-media-manager') }}">Social Media</a>
-                </li>
-                <li class="m-l-nav-item" id="blog-manager-nav">
                     <a class="nav-anchor" href="{{ route('logout') }}">Logout</a>
-                </li>
-
-
-                <li class="m-l-nav-item drop-down-wrap hidden" id="history-nav">
-                    <a class="nav-anchor">Website</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('about') }}">About</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('events') }}">Events</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blog</a>
-                        </li>     
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('contact') }}">Contact</a>
-                        </li>                    
-                    </ul>
                 </li>
             </ul>
         </nav>
@@ -110,43 +64,24 @@
                     </a>
                 </li>
                 <li class="nav-separator">
-
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('home') }}">Home</a>
+                    <a class="mobile-nav-item" href="{{ route('dashboard') }}">Dashboard</a>
                 </li> 
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
+                    <a class="mobile-nav-item" href="{{ route('events-manager') }}">Events</a>
                 </li>             
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
+                    <a class="mobile-nav-item" href="{{ route('blog-manager') }}">Blog</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                    <a class="mobile-nav-item" href="{{ route('comm-manager') }}">Commemoration</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
+                    <a class="mobile-nav-item" href="{{ route('gallery-manager') }}">Gallery</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blogs</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
+                    <a class="mobile-nav-item" href="{{ route('logout') }}">Logout</a>
                 </li>
             </ul>
         </nav>

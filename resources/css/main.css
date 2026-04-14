@@ -3208,6 +3208,7 @@ p.typewriter-quote {
   align-items: center;
   justify-content: center;
   padding: 2vw;
+  border: solid 1px black;
 }
 
 .add-form-box {
@@ -3218,7 +3219,7 @@ p.typewriter-quote {
 
 .add-form-inputs {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -3234,20 +3235,27 @@ p.typewriter-quote {
   justify-content: center;
 }
 
-.drop-down-box, .location-box, .date-box, .indicators {
+.left-box, .right-box {
   width: 100%;
 }
 
-.drop-down-box {
+.left-box {
   margin-right: 5px;
 }
 
-.location-box {
-  margin-right: 5px;
-}
-
-.date-box {
+.right-box {
   margin-left: 5px;
+}
+
+.drag-and-drop-con {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.drag-and-drop-images {
+  height: auto;
+  flex-grow: 1;
 }
 
 .indicators {
@@ -3299,10 +3307,8 @@ p.typewriter-quote {
 
 .twin-inputs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 .add-content-box {
@@ -3350,6 +3356,66 @@ p.typewriter-quote {
 .add-button:hover {
   background-color: white;
   color: #B3262E;
+}
+
+.drop-zone-content {
+  padding: 20px;
+  min-height: 125px;
+  color: #666;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+.drop-zone-content a {
+  color: #B3262E;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.drop-zone-content a:hover {
+  color: #91B8D9;
+}
+
+.image-preview {
+  text-align: center;
+}
+.image-preview img {
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.remove-image-btn {
+  padding: 8px 15px;
+  background-color: #91B8D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.remove-image-btn:hover {
+  opacity: 0.8;
+}
+
+.loading-message {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.error-message {
+  color: #d32f2f;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffebee;
+  border-radius: 5px;
+}
+
+.success-message {
+  color: #388e3c;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {

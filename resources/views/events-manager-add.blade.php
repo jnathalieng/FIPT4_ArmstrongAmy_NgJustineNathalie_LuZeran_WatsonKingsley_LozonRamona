@@ -39,53 +39,7 @@
                     <a class="nav-anchor" href="{{ route('gallery-manager') }}">Gallery</a>
                 </li>
                 <li class="m-l-nav-item" id="blog-manager-nav">
-                    <a class="nav-anchor" href="{{ route('social-media-manager') }}">Social Media</a>
-                </li>
-                <li class="m-l-nav-item" id="blog-manager-nav">
                     <a class="nav-anchor" href="{{ route('logout') }}">Logout</a>
-                </li>
-
-
-                <li class="m-l-nav-item drop-down-wrap hidden" id="history-nav">
-                    <a class="nav-anchor">Website</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('about') }}">About</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('timeline') }}">Historic Timeline</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('BOB') }}">Battle of Britain</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('training_bases') }}" >Training Bases</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('comm') }}">Commemoration</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('wartime_experience') }}">War Time Experiences</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('canteen') }}">Airman's Canteen</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('events') }}">Events</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blog</a>
-                        </li>     
-                        <li class="dropdown-item">
-                            <a class="dropdown-anchor" href="{{ route('contact') }}">Contact</a>
-                        </li>                    
-                    </ul>
                 </li>
             </ul>
         </nav>
@@ -110,43 +64,24 @@
                     </a>
                 </li>
                 <li class="nav-separator">
-
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('home') }}">Home</a>
+                    <a class="mobile-nav-item" href="{{ route('dashboard') }}">Dashboard</a>
                 </li> 
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
+                    <a class="mobile-nav-item" href="{{ route('events-manager') }}">Events</a>
                 </li>             
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
+                    <a class="mobile-nav-item" href="{{ route('blog-manager') }}">Blog</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('wartime_experience') }}">War Time Experiences</a>
+                    <a class="mobile-nav-item" href="{{ route('comm-manager') }}">Commemoration</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('training_bases') }}">Training Bases</a>
+                    <a class="mobile-nav-item" href="{{ route('gallery-manager') }}">Gallery</a>
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('canteen') }}">Airman's Canteen</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('comm') }}">Commemoration</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('BOB') }}">The Battle of Britain</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blogs</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
-                </li>
-                <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
+                    <a class="mobile-nav-item" href="{{ route('logout') }}">Logout</a>
                 </li>
             </ul>
         </nav>
@@ -156,19 +91,19 @@
 
 <section class="cms-page-top dashboard-page-con grid-con">
     <div class="col-span-full">
-        <p class="g-header-text">Dashboard / Blog Manager / <span class="page-path">Create New Blog Post</span></p>
+        <p class="g-header-text">Dashboard / Event Manager / <span class="page-path">Create New Event</span></p>
     </div>
         <div class="col-span-full">
-            <p class="r-header-text">Create New Blog Post</p>
+            <p class="r-header-text">Create New Event</p>
         </div>
 
     <section class="add-form col-span-full">
 
-        <article class="add-form-con" id="blog-form">
-  <form @submit.prevent="regForm" class="add-input-form" id="blogForm">
+        <article class="add-form-con" id="event-form">
+  <form @submit.prevent="regForm" class="add-input-form" id="eventForm">
 
     <div class="title-con">
-        <span class="r-header-text">Post Details</span>
+        <span class="r-header-text">Event Details</span>
     </div>    
         <!-- <p class="field-error" v-if="errors.title">@{{errors.title}}</p> -->
         <input  v-model="formData.title" 
@@ -176,36 +111,50 @@
                 id="title-input"
                 type="text" 
                 name="Post-Title" 
-                placeholder="Post Title">
+                placeholder="Event Title">
 
+        <!-- <p class="field-error" v-if="errors.title">@{{errors.title}}</p> -->
+        <input  v-model="formData.event_category" 
+                class="add-form-box title-input"
+                id="event-type"
+                type="text" 
+                name="event-type" 
+                placeholder="Event Type">
+        <!-- content input -->
+            <label for="description" class="r-header-text content-title">Description</label>
+            <!-- <p class="field-error" v-if="errors.content">@{{errors.content}}</p> -->
+            <input  v-model="formData.events_description" 
+                        class="add-content-box"
+                        id="events-description"
+                        type="text"
+                        name="Content">
+            </div>
         <section class="add-form-inputs">
 
             <article class="twin-inputs">
 
-            <!-- category drop down -->
-             <div class="drop-down-box">
-                <span class="r-header-text">Category</span>
-                <!-- <p class="field-error" v-if="errors.category">@{{errors.category}}</p> -->
-                <div class="drop-down-menu">
-                    <!-- i want to make a drop down menu here that pulls info from the database for what category options are available -->
-                </div>
+            <!-- Slug Title -->
+             <div class="left-box">
+                <label for="link-header" class="r-header-text">Start Time</label>
+                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
+                <input  v-model="formData.event_start_datetime" 
+                        class="add-form-box"
+                        id="slug"
+                        type="text" 
+                        name="slug" 
+                        placeholder="Start time">
             </div>
+
             <!-- draft/published indicator -->
-             <div class="indicators">
-
-                <span class="r-header-text">Category</span>
-
-                <div class="indicator-box">
-                    <div class="indicator-con">    
-                        <div class="checkbox-dot" id="draft-dot"></div>
-                        <p class="body-text">Draft</p>
-                    </div>
-
-                        <!-- one of these dots will have a red background when active -->
-                    <div class="indicator-con">
-                        <div class="checkbox-dot" id="published-dot"></div>
-                        <p class="body-text">Published</p>
-                    </div>
+             <div class="left-box">
+                <label for="excerpt" class="r-header-text">End Time</label>
+                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
+                <input  v-model="formData.event-end-datetime" 
+                        class="add-form-box"
+                        id="slug"
+                        type="text" 
+                        name="event-end" 
+                        placeholder="End time">
                 </div>
             </div>
 
@@ -214,38 +163,18 @@
             <article class="twin-inputs">
 
             <!-- location input -->
-             <div class="location-box">
-                <label for="location" class="r-header-text">Location</label>
-                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
-                <input  v-model="formData.location" 
-                        class="add-form-box"
-                        id="location-input"
-                        type="text" 
-                        name="location" 
-                        placeholder="Location">
-            </div>
-            <!-- date input -->
-             <div class="date-box">
-                <label for="date" class="r-header-text">Date</label>
-                <!-- <p class="field-error" v-if="errors.date">@{{errors.date}}</p> -->
-                <input  v-model="formData.date" 
-                            class="add-form-box"
-                            id="date"
-                            type="text"
-                            name="date">
+                    <div class="right-box">
+                        <label for="featured-image" class="r-header-text">Featured Image</label>
+                        <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
+                        <input  v-model="formData.featured_image" 
+                                class="add-form-box"
+                                id="featured-image"
+                                type="text" 
+                                name="Featured Image" 
+                                placeholder="Place image Here">
+                    </div>
             </article>
-        </section>
-
-        <!-- content input -->
-            <label for="content" class="r-header-text content-title">Content</label>
-            <!-- <p class="field-error" v-if="errors.content">@{{errors.content}}</p> -->
-            <input  v-model="formData.content" 
-                        class="add-content-box"
-                        id="content"
-                        type="text"
-                        name="Content">
-            </div>
-                  
+        </section>      
         <!-- drag and drop box for images -->
         <div class="drag-and-drop-images">
             <!-- here will be an area where user's creating the blog posts can drag and drop images onto the page that they want included in the blog post -->
@@ -255,7 +184,7 @@
       <div class="button-con">
             <button class="add-button cancel-button" type="submit">Cancel</button>
             <button class="add-button save-button" type="submit">Save as Draft</button>
-            <button class="add-button publish-button" type="submit">Publish Post</button>
+            <button class="add-button publish-button" type="submit">Publish Event</button>
         </div>
         <!-- <p class="field-error" v-if="errors.general">@{{errors.general}}</p> -->
         <!-- <div v-if="responseMessage"> -->

@@ -7,6 +7,8 @@ import commFour from "./modules/comm-four.js";
 import eventsManager from "./modules/eventsManager.js";
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
+import blogFormAdd from "./modules/blogFormAdd.js";
+import blogFormEdit from "./modules/blogFormEdit.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
@@ -83,11 +85,12 @@ else if(document.body.dataset.page === "comm") {
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
-} else if (document.body.dataset.page === "events-manager") {
-    console.log("welcome to the events mananger");
+} 
 
+else if (document.body.dataset.page === "events-manager") {
+    console.log("welcome to the events manager");
     const appEventsManager = createApp(eventsManager);
-    appEventsManager.mount();
+    appEventsManager.mount('#events-manager-app');  // Add the selector here
 }
 else if(document.body.dataset.page === "contact") {
     console.log('Contact us!');
@@ -110,4 +113,12 @@ else if(document.body.dataset.page === "blog-post") {
     const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
     const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
     app.mount('#blog-post-app');
+}
+else if(document.body.dataset.page === "blog-add") {
+    const app = createApp(blogFormAdd);
+    app.mount('#blog-form-add');
+}
+else if(document.body.dataset.page === "blog-edit") {
+    const app = createApp(blogFormEdit);
+    app.mount('#blog-form-edit');
 }
