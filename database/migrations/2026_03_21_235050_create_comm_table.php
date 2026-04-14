@@ -13,7 +13,7 @@ public function up()
 {
     Schema::create('comm', function (Blueprint $table) {
         $table->id();
-        $table->unsignedBigInteger('user_id');
+        $table->unsignedBigInteger('user_id')->nullable();
         $table->string('name', 250);
         $table->string('picture', 250)->nullable();
         $table->string('service_number', 150);

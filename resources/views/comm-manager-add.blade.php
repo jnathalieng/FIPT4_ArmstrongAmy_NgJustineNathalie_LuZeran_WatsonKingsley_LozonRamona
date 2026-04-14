@@ -93,9 +93,9 @@
     <div class="col-span-full">
         <p class="g-header-text">Dashboard / Commemoration Manager / <span class="page-path">Create a new Commemoration</span></p>
     </div>
-
-    <div id="comm-form-add"></div>
-        
+    <section class="col-span-full">
+        <div id="comm-form-add"></div>
+    </section>
 </section>
 </main>
 

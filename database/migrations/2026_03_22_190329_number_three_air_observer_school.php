@@ -13,7 +13,7 @@ return new class extends Migration
     {
     Schema::create('number_three_air_observers_school', function (Blueprint $table) {
         $table->id();
-        $table->unsignedBigInteger('user_id');
+        $table->unsignedBigInteger('user_id')->nullable();
         $table->text('rank');
         $table->string('name', 250);
         $table->string('picture', 250)->nullable();

@@ -48,7 +48,7 @@ Route::get('/comm/{id}', [CommController::class, 'showComm']);
 Route::get('/commJson', [CommController::class, 'indexComm']);
 Route::post('/comm', [CommController::class, 'storeComm']);
 Route::put('/comm/{id}', [CommController::class, 'updateComm']);
-Route::delete('/comm/{id}', [CommController::class, 'destroyComm']);
+Route::delete('/commJson/{id}', [CommController::class, 'destroyComm']);
 
 // COMM - TRAINING 3 CRUD
 Route::get('/commThree', [CommController::class, 'indexThree']);
