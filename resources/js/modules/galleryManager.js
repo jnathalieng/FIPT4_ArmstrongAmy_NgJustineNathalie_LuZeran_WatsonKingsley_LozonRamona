@@ -2,8 +2,6 @@ import { createApp, ref, computed, onMounted } from 'vue';
 
 const GalleryManager = {
     template: `
-    <div class="manager-container">
-
         <!-- Header -->
         <div class="manager-container">
             <div class="manager-header">
