@@ -3424,8 +3424,6 @@ p.typewriter-quote {
   display: flex;
   flex-direction: row;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
