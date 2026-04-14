@@ -91,101 +91,168 @@
 
 <section class="cms-page-top dashboard-page-con grid-con">
     <div class="col-span-full">
-        <p class="g-header-text">Dashboard / Blog Manager / <span class="page-path">Create New Blog Post</span></p>
+        <p class="g-header-text">Dashboard / Commemoration Manager / <span class="page-path">Create a new Commemoration</span></p>
     </div>
         <div class="col-span-full">
-            <p class="r-header-text">Create New Blog Post</p>
+            <p class="r-header-text">Create New Commemoration Entry</p>
         </div>
 
     <section class="add-form col-span-full">
 
         <article class="add-form-con" id="blog-form">
+
+
   <form @submit.prevent="regForm" class="add-input-form" id="blogForm">
 
     <div class="title-con">
         <span class="r-header-text">Post Details</span>
     </div>    
+
+        <label for="name" class="r-body-text">Name</label>
         <!-- <p class="field-error" v-if="errors.title">@{{errors.title}}</p> -->
-        <input  v-model="formData.title" 
+        <input  v-model="formData.name" 
                 class="add-form-box title-input"
-                id="title-input"
+                id="name-input"
                 type="text" 
-                name="Post-Title" 
-                placeholder="Post Title">
+                name="name" 
+                placeholder="Name">
 
-        <section class="add-form-inputs">
 
-            <article class="twin-inputs">
+                    <!-- Featured Image with Drag & Drop -->
+                    <div class="drag-and-drop-con">
+                        <label for="image" class="r-header-text">Image</label>
+                        <!-- <p class="field-error" v-if="errors.picture">{{ errors.picture }}</p> -->
+                        
+                        <div 
+                            class="drag-and-drop-images"
+                            @dragover.prevent="isDragging = true"
+                            @dragleave.prevent="isDragging = false"
+                            @drop.prevent="handleImageDrop"
+                            :class="{ 'dragging': isDragging }">
+                            <input 
+                                ref="fileInput"
+                                type="file" 
+                                accept="image/*"
+                                @change="handleImageSelect"
+                                style="display: none;">
+                            
+                            <div v-if="!imagePreview" class="drop-zone-content">
+                                <p>Drag and drop image here or <a href="#" @click.prevent="$refs.fileInput.click()">click to browse</a></p>
+                            </div>
 
-            <!-- category drop down -->
-             <div class="drop-down-box">
-                <span class="r-header-text">Category</span>
-                <!-- <p class="field-error" v-if="errors.category">@{{errors.category}}</p> -->
-                <div class="drop-down-menu">
-                    <!-- i want to make a drop down menu here that pulls info from the database for what category options are available -->
-                </div>
-            </div>
-            <!-- draft/published indicator -->
-             <div class="indicators">
+                            <div v-else class="image-preview">
+                                <img :src="imagePreview" :alt="formData.name">
+                                <button type="button" @click="removeImage" class="remove-image-btn">Remove</button>
+                            </div>
+                        </div>
 
-                <span class="r-header-text">Category</span>
-
-                <div class="indicator-box">
-                    <div class="indicator-con">    
-                        <div class="checkbox-dot" id="draft-dot"></div>
-                        <p class="body-text">Draft</p>
-                    </div>
-
-                        <!-- one of these dots will have a red background when active -->
-                    <div class="indicator-con">
-                        <div class="checkbox-dot" id="published-dot"></div>
-                        <p class="body-text">Published</p>
-                    </div>
-                </div>
-            </div>
-
-            </article>
-
-            <article class="twin-inputs">
-
-            <!-- location input -->
-             <div class="location-box">
-                <label for="location" class="r-header-text">Location</label>
-                <!-- <p class="field-error" v-if="errors.location">@{{errors.location}}</p> -->
-                <input  v-model="formData.location" 
-                        class="add-form-box"
-                        id="location-input"
-                        type="text" 
-                        name="location" 
-                        placeholder="Location">
-            </div>
-            <!-- date input -->
-             <div class="date-box">
-                <label for="date" class="r-header-text">Date</label>
-                <!-- <p class="field-error" v-if="errors.date">@{{errors.date}}</p> -->
-                <input  v-model="formData.date" 
-                            class="add-form-box"
-                            id="date"
+                        <input 
+                            v-if="picturePreview"
+                            v-model="formData.picture_alt"
                             type="text"
-                            name="date">
-            </article>
-        </section>
+                            placeholder="Image alt text (for accessibility)"
+                            class="add-form-box"
+                            style="margin-top: 10px;">
+                    </div>
 
-        <!-- content input -->
-            <label for="content" class="r-header-text content-title">Content</label>
-            <!-- <p class="field-error" v-if="errors.content">@{{errors.content}}</p> -->
-            <input  v-model="formData.content" 
-                        class="add-content-box"
-                        id="content"
-                        type="text"
-                        name="Content">
-            </div>
-                  
-        <!-- drag and drop box for images -->
-        <div class="drag-and-drop-images">
-            <!-- here will be an area where user's creating the blog posts can drag and drop images onto the page that they want included in the blog post -->
-        </div>
-      </div>
+
+    <section class="add-form-inputs">
+    <article class="twin-inputs left-box">
+
+        <label for="service_number" class="r-body-text">Service Number</label>
+        <!-- <p class="field-error" v-if="errors.service_number">@{{errors.title}}</p> -->
+        <input  v-model="formData.service_number" 
+                class="add-form-box title-input"
+                id="service-number-input"
+                type="text" 
+                name="service-number" 
+                placeholder="Service Number">
+
+
+        <label for="rank" class="r-body-text">Rank</label>
+        <!-- <p class="field-error" v-if="errors.rank">@{{errors.rank}}</p> -->
+        <input  v-model="formData.rank" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="rank" 
+                placeholder="Rank">
+
+        <label for="corps" class="r-body-text">corps</label>
+        <!-- <p class="field-error" v-if="errors.corps">@{{errors.corps}}</p> -->
+        <input  v-model="formData.corps" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="corps" 
+                placeholder="corps">
+
+        <label for="unit" class="r-body-text">unit</label>
+        <!-- <p class="field-error" v-if="errors.unit">@{{errors.unit}}</p> -->
+        <input  v-model="formData.unit" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="unit" 
+                placeholder="unit">
+</article>
+<article class="twin-inputs right-box">
+        <label for="age" class="r-body-text">age</label>
+        <!-- <p class="field-error" v-if="errors.age">@{{errors.age}}</p> -->
+        <input  v-model="formData.age" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="age" 
+                placeholder="age">
+
+
+        <label for="birth" class="r-body-text">birth</label>
+        <!-- <p class="field-error" v-if="errors.birth">@{{errors.birth}}</p> -->
+        <input  v-model="formData.birth" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="birth" 
+                placeholder="birth">
+                
+        <label for="death" class="r-body-text">death</label>
+        <!-- <p class="field-error" v-if="errors.death">@{{errors.death}}</p> -->
+        <input  v-model="formData.death" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="death" 
+                placeholder="death">
+
+        <label for="enlist" class="r-body-text">enlist</label>
+        <!-- <p class="field-error" v-if="errors.enlist">@{{errors.enlist}}</p> -->
+        <input  v-model="formData.enlist" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="enlist" 
+                placeholder="enlist">
+</article>
+</section>
+        <label for="info" class="r-body-text">info</label>
+        <!-- <p class="field-error" v-if="errors.info">@{{errors.info}}</p> -->
+        <input  v-model="formData.info" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="info" 
+                placeholder="info">
+
+        <label for="grave" class="r-body-text">grave</label>
+        <!-- <p class="field-error" v-if="errors.grave">@{{errors.grave}}</p> -->
+        <input  v-model="formData.grave" 
+                class="add-form-box title-input"
+                id="rank-input"
+                type="text" 
+                name="grave" 
+                placeholder="grave">
+            </article>
 
       <div class="button-con">
             <button class="add-button cancel-button" type="submit">Cancel</button>
