@@ -10,6 +10,7 @@ import blog from "./modules/blog.js";
 import blogFormAdd from "./modules/blogFormAdd.js";
 import blogFormEdit from "./modules/blogFormEdit.js";
 import blogManager from "./modules/blogManager.js";
+import commManager from "./modules/commManager.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
@@ -84,14 +85,27 @@ else if(document.body.dataset.page === "comm") {
     const appFour = createApp(commFour);
     appFour.mount('#comm-training-four');
 }
+else if(document.body.dataset.page === "comm-manager") {
+    console.log('manage Commemorations');
+        const app = createApp(commManager);
+    app.mount('#comm-manager-app');
+}
+
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
 } 
-
 else if (document.body.dataset.page === "events-manager") {
     console.log("welcome to the events manager");
     const appEventsManager = createApp(eventsManager);
-    appEventsManager.mount('#events-manager-app');  // Add the selector here
+    appEventsManager.mount('#events-manager-app');
+}
+else if(document.body.dataset.page === "events-add") {
+    const app = createApp(blogFormAdd);
+    app.mount('#event-form-add');
+}
+else if(document.body.dataset.page === "events-edit") {
+    const app = createApp(blogFormEdit);
+    app.mount('#event-form-edit');
 }
 else if(document.body.dataset.page === "contact") {
     console.log('Contact us!');

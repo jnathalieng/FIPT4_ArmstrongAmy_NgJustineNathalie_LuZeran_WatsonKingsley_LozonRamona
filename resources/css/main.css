@@ -3183,12 +3183,12 @@ p.typewriter-quote {
   padding: 20px;
 }
 
-.blog-manager-container {
+.manager-container {
   width: 100%;
   padding: 20px 0;
 }
 
-.blog-manager-header {
+.manager-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3215,14 +3215,15 @@ p.typewriter-quote {
   font-size: 16px;
 }
 
-.blog-list {
+.manager-list {
   width: 100%;
   border: 1px solid #3c3c3c;
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.blog-list-header {
+.manager-list-header {
   display: grid;
   grid-template-columns: 2fr 1.5fr 1fr 1fr;
   gap: 20px;
@@ -3231,13 +3232,13 @@ p.typewriter-quote {
   border-bottom: 2px solid #3c3c3c;
   font-weight: bold;
 }
-.blog-list-header div {
+.manager-list-header div {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.blog-list-item {
+.manager-list-item {
   display: grid;
   grid-template-columns: 2fr 1.5fr 1fr 1fr;
   gap: 20px;
@@ -3246,10 +3247,10 @@ p.typewriter-quote {
   align-items: center;
   transition: background-color 0.2s;
 }
-.blog-list-item:hover {
+.manager-list-item:hover {
   background-color: #fafafa;
 }
-.blog-list-item:last-child {
+.manager-list-item:last-child {
   border-bottom: none;
 }
 
@@ -3306,7 +3307,6 @@ p.typewriter-quote {
   color: #d32f2f;
 }
 
-/* Delete Confirmation Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -3346,7 +3346,7 @@ p.typewriter-quote {
 }
 
 @media (max-width: 768px) {
-  .blog-manager-header {
+  .manager-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -3355,20 +3355,20 @@ p.typewriter-quote {
     margin-left: 0;
     width: 100%;
   }
-  .blog-list-header,
-  .blog-list-item {
+  .manager-list-header,
+  .manager-list-item {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  .blog-list-header {
+  .manager-list-header {
     display: none;
   }
-  .blog-list-item {
+  .manager-list-item {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 15px;
   }
-  .blog-list-item div::before {
+  .manager-list-item div::before {
     content: attr(data-label);
     font-weight: bold;
     display: block;

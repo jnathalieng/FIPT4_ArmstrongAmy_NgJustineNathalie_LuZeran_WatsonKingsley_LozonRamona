@@ -1,7 +1,7 @@
 export default {
     data() {
         return {
-            blogs: [],
+            comms: [],
             isLoading: true,
             errors: {},
             deleteId: null,
@@ -11,9 +11,9 @@ export default {
     },
     computed: {
         filteredBlogs() {
-            return this.blogs.filter(blog => 
-                blog.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-                blog.slug.toLowerCase().includes(this.searchQuery.toLowerCase())
+            return this.comms.filter(comm => 
+                comm.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+                comm.slug.toLowerCase().includes(this.searchQuery.toLowerCase())
             );
         }
     },
@@ -24,31 +24,31 @@ export default {
         async fetchBlogs() {
             this.isLoading = true;
             try {
-                const response = await fetch('/api/blogs');
+                const response = await fetch('/api/comms');
                 
                 if (!response.ok) {
-                    throw new Error('Failed to fetch blogs');
+                    throw new Error('Failed to fetch comms');
                 }
 
-                this.blogs = await response.json();
+                this.comms = await response.json();
                 this.isLoading = false;
             } catch (error) {
-                console.error('Error fetching blogs:', error);
-                this.errors.general = 'Failed to load blog posts';
+                console.error('Error fetching comms:', error);
+                this.errors.general = 'Failed to load comm posts';
                 this.isLoading = false;
             }
         },
 
         goToCreate() {
-            window.location.href = '/blog-manager-add';
+            window.location.href = '/comm-manager-add';
         },
 
-        goToEdit(blogId) {
-            window.location.href = `/blog-manager-edit/${blogId}`;
+        goToEdit(commId) {
+            window.location.href = `/comm-manager-edit/${commId}`;
         },
 
-        openDeleteConfirm(blogId) {
-            this.deleteId = blogId;
+        openDeleteConfirm(commId) {
+            this.deleteId = commId;
             this.showDeleteConfirm = true;
         },
 
@@ -61,7 +61,7 @@ export default {
             if (!this.deleteId) return;
 
             try {
-                const response = await fetch(`/api/blogs/${this.deleteId}`, {
+                const response = await fetch(`/api/comms/${this.deleteId}`, {
                     method: 'DELETE',
                     headers: {
                         'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
@@ -69,15 +69,15 @@ export default {
                 });
 
                 if (!response.ok) {
-                    throw new Error('Failed to delete blog');
+                    throw new Error('Failed to delete comm');
                 }
 
                 // Remove from list
-                this.blogs = this.blogs.filter(blog => blog.id !== this.deleteId);
+                this.comms = this.comms.filter(comm => comm.id !== this.deleteId);
                 this.closeDeleteConfirm();
             } catch (error) {
-                console.error('Error deleting blog:', error);
-                this.errors.general = 'Failed to delete blog post';
+                console.error('Error deleting comm:', error);
+                this.errors.general = 'Failed to delete comm post';
             }
         },
 
@@ -116,12 +116,12 @@ export default {
 
             <!-- Loading State -->
             <div v-if="isLoading" class="loading-message">
-                Loading blog posts...
+                Loading comm posts...
             </div>
 
             <!-- Empty State -->
-            <div v-else-if="blogs.length === 0" class="empty-state">
-                <p class="body-text">No blog posts yet. <a href="#" @click.prevent="goToCreate">Create one now!</a></p>
+            <div v-else-if="comms.length === 0" class="empty-state">
+                <p class="body-text">No comm posts yet. <a href="#" @click.prevent="goToCreate">Create one now!</a></p>
             </div>
 
             <!-- Blog List -->
@@ -133,27 +133,27 @@ export default {
                     <div class="r-header-text">Actions</div>
                 </div>
 
-                <div v-for="blog in filteredBlogs" :key="blog.id" class="manager-list-item">
+                <div v-for="comm in filteredBlogs" :key="comm.id" class="manager-list-item">
                     <div class="col-title">
-                        <h4 class="r-body-text">{{ blog.title }}</h4>
+                        <h4 class="r-body-text">{{ comm.title }}</h4>
                     </div>
                     <div class="col-slug">
-                        <p class="small-text">{{ blog.slug }}</p>
+                        <p class="small-text">{{ comm.slug }}</p>
                     </div>
                     <div class="col-date">
-                        <p class="small-text">{{ formatDate(blog.created_at) }}</p>
+                        <p class="small-text">{{ formatDate(comm.created_at) }}</p>
                     </div>
                     <div class="col-actions">
                         <button 
                             class="save-button add-button"
-                            @click="goToEdit(blog.id)"
+                            @click="goToEdit(comm.id)"
                             title="Edit"
                         >
                             Edit
                         </button>
                         <button 
                             class="publish-button add-button"
-                            @click="openDeleteConfirm(blog.id)"
+                            @click="openDeleteConfirm(comm.id)"
                             title="Delete"
                         >
                             Delete
@@ -163,7 +163,7 @@ export default {
 
                 <!-- No Results Message -->
                 <div v-if="filteredBlogs.length === 0" class="empty-state">
-                    <p class="body-text">No blogs match your search.</p>
+                    <p class="body-text">No comms match your search.</p>
                 </div>
             </div>
 
@@ -171,7 +171,7 @@ export default {
             <div v-if="showDeleteConfirm" class="modal-overlay">
                 <div class="modal-content">
                     <h3 class="r-header-text">Delete Blog Post?</h3>
-                    <p class="body-text">Are you sure you want to delete this blog post? This action cannot be undone.</p>
+                    <p class="body-text">Are you sure you want to delete this comm post? This action cannot be undone.</p>
                     
                     <div class="modal-buttons">
                         <button 

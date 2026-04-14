@@ -34,7 +34,6 @@ Route::put('/events/{id}', [EventsController::class, 'update']);
 Route::delete('/events/{id}', [EventsController::class, 'destroy']);
 
 // BLOG MANAGER ROUTES - ZERAN
-Route::get('/blog-categories', [BlogController::class, 'getCategories']);
 Route::get('/blogs', [BlogController::class, 'index']);
 Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::post('/blogs', [BlogController::class, 'store']);
