@@ -9,6 +9,7 @@ import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import blogFormAdd from "./modules/blogFormAdd.js";
 import blogFormEdit from "./modules/blogFormEdit.js";
+import blogManager from "./modules/blogManager.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
@@ -113,6 +114,11 @@ else if(document.body.dataset.page === "blog-post") {
     const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
     const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
     app.mount('#blog-post-app');
+}
+else if(document.body.dataset.page === "blog-manager") {
+    console.log('welcome to the blog manager');
+    const app = createApp(blogManager);
+    app.mount('#blog-manager-app');
 }
 else if(document.body.dataset.page === "blog-add") {
     const app = createApp(blogFormAdd);
