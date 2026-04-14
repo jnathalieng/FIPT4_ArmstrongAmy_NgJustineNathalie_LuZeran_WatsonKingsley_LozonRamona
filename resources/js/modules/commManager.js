@@ -1,54 +1,78 @@
 export default {
     data() {
         return {
-            comms: [],
+            currentTable: 'main',
+            records: [],
             isLoading: true,
             errors: {},
+            searchQuery: '',
             deleteId: null,
             showDeleteConfirm: false,
-            searchQuery: '',
+            
+            // Form data
+            formData: {
+                name: '',
+                picture: '',
+                rank: '',
+                info: '',
+                unit: '',
+            },
         }
     },
     computed: {
-        filteredBlogs() {
-            return this.comms.filter(comm => 
-                comm.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-                comm.slug.toLowerCase().includes(this.searchQuery.toLowerCase())
+        filteredRecords() {
+            return this.records.filter(record =>
+                record.name.toLowerCase().includes(this.searchQuery.toLowerCase())
             );
+        },
+        tableLabel() {
+            const labels = {
+                'main': 'Main Commemorations',
+                'three': 'Number 3 Air Observer School',
+                'four': 'Number 4 Air Observer School'
+            };
+            return labels[this.currentTable];
+        },
+        apiEndpoint() {
+            const endpoints = {
+                'main': 'http://127.0.0.1:8000/api/commJson',
+                'three': 'http://127.0.0.1:8000/api/commThree',
+                'four': 'http://127.0.0.1:8000/api/commFour'
+            };
+            return endpoints[this.currentTable];
         }
     },
     mounted() {
-        this.fetchBlogs();
+        this.fetchRecords();
     },
     methods: {
-        async fetchBlogs() {
+        switchTable(tableName) {
+            this.currentTable = tableName;
+            this.searchQuery = '';
+            this.resetForm();
+            this.fetchRecords();
+        },
+
+        async fetchRecords() {
             this.isLoading = true;
             try {
-                const response = await fetch('/api/comms');
+                const response = await fetch(this.apiEndpoint);
                 
                 if (!response.ok) {
-                    throw new Error('Failed to fetch comms');
+                    throw new Error('Failed to fetch records');
                 }
 
-                this.comms = await response.json();
+                this.records = await response.json();
                 this.isLoading = false;
             } catch (error) {
-                console.error('Error fetching comms:', error);
-                this.errors.general = 'Failed to load comm posts';
+                console.error('Error fetching records:', error);
+                this.errors.general = 'Failed to load records';
                 this.isLoading = false;
             }
         },
 
-        goToCreate() {
-            window.location.href = '/comm-manager-add';
-        },
-
-        goToEdit(commId) {
-            window.location.href = `/comm-manager-edit/${commId}`;
-        },
-
-        openDeleteConfirm(commId) {
-            this.deleteId = commId;
+        openDeleteConfirm(recordId) {
+            this.deleteId = recordId;
             this.showDeleteConfirm = true;
         },
 
@@ -57,11 +81,11 @@ export default {
             this.showDeleteConfirm = false;
         },
 
-        async deleteBlog() {
+        async deleteRecord() {
             if (!this.deleteId) return;
 
             try {
-                const response = await fetch(`/api/comms/${this.deleteId}`, {
+                const response = await fetch(`${this.apiEndpoint}/${this.deleteId}`, {
                     method: 'DELETE',
                     headers: {
                         'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
@@ -69,16 +93,33 @@ export default {
                 });
 
                 if (!response.ok) {
-                    throw new Error('Failed to delete comm');
+                    throw new Error('Failed to delete record');
                 }
 
-                // Remove from list
-                this.comms = this.comms.filter(comm => comm.id !== this.deleteId);
+                this.records = this.records.filter(record => record.id !== this.deleteId);
                 this.closeDeleteConfirm();
             } catch (error) {
-                console.error('Error deleting comm:', error);
-                this.errors.general = 'Failed to delete comm post';
+                console.error('Error deleting record:', error);
+                this.errors.general = 'Failed to delete record';
             }
+        },
+
+        goToEdit(recordId) {
+            window.location.href = `/comm-manager-edit/${this.currentTable}/${recordId}`;
+        },
+
+        goToCreate() {
+            window.location.href = `/comm-manager-add/${this.currentTable}`;
+        },
+
+        resetForm() {
+            this.formData = {
+                name: '',
+                picture: '',
+                rank: '',
+                info: '',
+                unit: '',
+            };
         },
 
         formatDate(dateString) {
@@ -92,68 +133,104 @@ export default {
     },
     template: `
         <div class="manager-container">
-            <div class="manager-header">
-                <h2 class="r-header-text">Blog Manager</h2>
-                <button class="create-button add-button publish-button" @click="goToCreate">
-                    + Create New Post
+
+            <!-- Tabs -->
+            <div class="comm-tabs">
+
+                <button 
+                    class="tab-button"
+                    :class="{ 'active': currentTable === 'main' }"
+                    @click="switchTable('main')">
+                    Main Commemorations
                 </button>
+
+                <button 
+                    class="tab-button"
+                    :class="{ 'active': currentTable === 'three' }"
+                    @click="switchTable('three')">
+                    School 3
+                </button>
+
+                <button 
+                    class="tab-button"
+                    :class="{ 'active': currentTable === 'four' }"
+                    @click="switchTable('four')">
+                    School 4
+                </button>
+
             </div>
 
-            <!-- Search Bar -->
+            <!-- Header -->
+            <div class="manager-header">
+
+                <h2 class="r-header-text">{{ tableLabel }}</h2>
+
+                    <button class="create-button add-button publish-button" @click="goToCreate">
+                        + Add Entry
+                    </button>
+
+            </div>
+
+            <!-- Search -->
             <div class="search-con">
+
                 <input 
                     v-model="searchQuery"
                     type="text"
                     class="add-form-box"
-                    placeholder="Search by title..."
-                >
+                    placeholder="Search by name...">
+
             </div>
 
-            <!-- Error Message -->
+            <!-- Error -->
             <div v-if="errors.general" class="error-message">
                 {{ errors.general }}
             </div>
 
-            <!-- Loading State -->
+            <!-- Loading -->
             <div v-if="isLoading" class="loading-message">
-                Loading comm posts...
+                Loading records...
             </div>
 
             <!-- Empty State -->
-            <div v-else-if="comms.length === 0" class="empty-state">
-                <p class="body-text">No comm posts yet. <a href="#" @click.prevent="goToCreate">Create one now!</a></p>
+            <div v-else-if="records.length === 0" class="empty-state">
+                <p class="body-text">No entries yet. <a href="#" @click.prevent="goToCreate">Add one now!</a></p>
             </div>
 
-            <!-- Blog List -->
+            <!-- Records List -->
             <div v-else class="manager-list">
                 <div class="manager-list-header">
-                    <div class="r-header-text">Title</div>
-                    <div class="r-header-text">Link Header</div>
-                    <div class="r-header-text">Created</div>
-                    <div class="r-header-text">Actions</div>
+                    <div class="col-name r-body-text">Name</div>
+                    <div class="col-rank r-body-text">Rank</div>
+                    <div class="col-unit r-body-text">Unit</div>
+                    <div class="col-date r-body-text">Created</div>
+                    <div class="col-actions r-body-text">Actions</div>
                 </div>
 
-                <div v-for="comm in filteredBlogs" :key="comm.id" class="manager-list-item">
-                    <div class="col-title">
-                        <h4 class="r-body-text">{{ comm.title }}</h4>
+                <div v-for="record in filteredRecords" :key="record.id" class="manager-list-item comm-list-item">
+                    <div class="col-name">
+                        <h4 class="r-body-text">{{ record.name }}</h4>
                     </div>
-                    <div class="col-slug">
-                        <p class="small-text">{{ comm.slug }}</p>
+                    <div class="col-rank">
+                        <p class="small-text">{{ record.rank }}</p>
+                    </div>
+                    <div class="col-unit">
+                        <p class="small-text">{{ record.unit }}</p>
                     </div>
                     <div class="col-date">
-                        <p class="small-text">{{ formatDate(comm.created_at) }}</p>
+                        <p class="small-text">{{ formatDate(record.created_at) }}</p>
                     </div>
                     <div class="col-actions">
                         <button 
-                            class="save-button add-button"
-                            @click="goToEdit(comm.id)"
+                            class="add-button save-button"
+                            @click="goToEdit(record.id)"
                             title="Edit"
                         >
                             Edit
                         </button>
                         <button 
-                            class="publish-button add-button"
-                            @click="openDeleteConfirm(comm.id)"
+                            class="add-button publish-button"
+                            @click="openDeleteConfirm(record.id)"
                             title="Delete"
                         >
                             Delete
@@ -161,17 +238,17 @@ export default {
                     </div>
                 </div>
 
-                <!-- No Results Message -->
-                <div v-if="filteredBlogs.length === 0" class="empty-state">
-                    <p class="body-text">No comms match your search.</p>
+                <!-- No Results -->
+                <div v-if="filteredRecords.length === 0" class="empty-state">
+                    <p class="body-text">No records match your search.</p>
                 </div>
             </div>
 
             <!-- Delete Confirmation Modal -->
             <div v-if="showDeleteConfirm" class="modal-overlay">
                 <div class="modal-content">
-                    <h3 class="r-header-text">Delete Blog Post?</h3>
-                    <p class="body-text">Are you sure you want to delete this comm post? This action cannot be undone.</p>
+                    <h3 class="r-header-text">Delete Entry?</h3>
+                    <p class="body-text">Are you sure? This action cannot be undone.</p>
                     
                     <div class="modal-buttons">
                         <button 
@@ -182,7 +259,7 @@ export default {
                         </button>
                         <button 
                             class="add-button delete-btn"
-                            @click="deleteBlog"
+                            @click="deleteRecord"
                         >
                             Delete
                         </button>
