@@ -109,8 +109,8 @@ Route::get('/blog-manager-edit', function () {
     return view('blog-manager-edit');
 })->name('blog-manager-edit');
 
-Route::get('/blog-manager-edit/{id}', function () {
-    return view('blog-manager-edit/{id}');
+Route::get('/blog-manager-edit/{id}', function ($id) {
+    return view('blog-manager-edit', ['blogId' => $id]);
 })->name('blog-manager-edit/{id}');
 
 //commemoration

@@ -89,8 +89,34 @@
 
 <main style="min-height: 100vh;">
 
-<section id="blog-form-edit"></section>
+    <section class="cms-page-top dashboard-page-con grid-con">
+        <div class="col-span-full">
+            <p class="g-header-text">Dashboard / Blog Manager / <span class="page-path">Edit Blog Post</span></p>
+        </div>
+        <div class="col-span-full">
+            <p class="r-header-text">Edit Blog Post</p>
+        </div>
 
+        <section class="add-form col-span-full">
+            <article id="blog-form-edit" data-blog-id="{{ $blogId }}"></article>
+        </section>
+    </section>
+
+</main>
+
+<main style="min-height: 100vh;">
+    <section class="cms-page-top dashboard-page-con grid-con">
+        <div class="col-span-full">
+            <p class="g-header-text">Dashboard / Blog Manager / <span class="page-path">Create New Blog Post</span></p>
+        </div>
+            <div class="col-span-full">
+                <p class="r-header-text">Create New Blog Post</p>
+            </div>
+            <section class="add-form col-span-full">
+                    <div id="blog-form-add"></div>
+            </section>
+        </div>
+    </section>
 </main>
 
 <!-- FOOTER SECTION -->
