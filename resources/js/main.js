@@ -5,6 +5,12 @@ import contactForm from "./modules/contactForm.js";
 import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
+<<<<<<< Updated upstream
+=======
+import eventsManager from "./modules/eventsManager.js";
+import eventsFormAdd from "./modules/eventsFormAdd.js";
+import eventsFormEdit from "./modules/eventsFormEdit.js";
+>>>>>>> Stashed changes
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import { createApp } from 'vue';
@@ -83,6 +89,22 @@ else if(document.body.dataset.page === "comm") {
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
+<<<<<<< Updated upstream
+=======
+} 
+else if (document.body.dataset.page === "events-manager") {
+    console.log("welcome to the events manager");
+    const appEventsManager = createApp(eventsManager);
+    appEventsManager.mount('#events-manager-app');
+}
+else if(document.body.dataset.page === "events-add") {
+    const app = createApp(eventsFormAdd);
+    app.mount('#event-form-add');
+}
+else if(document.body.dataset.page === "events-edit") {
+    const app = createApp(eventsFormEdit);
+    app.mount('#event-form-edit');
+>>>>>>> Stashed changes
 }
 else if(document.body.dataset.page === "contact") {
     console.log('Contact us!');
