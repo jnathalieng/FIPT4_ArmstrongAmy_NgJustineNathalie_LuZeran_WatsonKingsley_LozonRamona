@@ -5,6 +5,7 @@ import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import eventsManager from "./modules/eventsManager.js";
+import galleryManager from './modules/galleryManager.js';
 import eventsFormAdd from "./modules/eventsFormAdd.js";
 import eventsFormEdit from "./modules/eventsFormEdit.js";
 import galleryManager from './modules/gallery.js';
