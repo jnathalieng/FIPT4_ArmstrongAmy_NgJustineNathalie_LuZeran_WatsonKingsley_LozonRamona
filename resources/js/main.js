@@ -7,6 +7,7 @@ import commFour from "./modules/comm-four.js";
 import eventsManager from "./modules/eventsManager.js";
 import eventsFormAdd from "./modules/eventsFormAdd.js";
 import eventsFormEdit from "./modules/eventsFormEdit.js";
+import galleryManager from './modules/galleryManager.js';
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import blogFormAdd from "./modules/blogFormAdd.js";
@@ -142,4 +143,10 @@ else if(document.body.dataset.page === "blog-add") {
 else if(document.body.dataset.page === "blog-edit") {
     const app = createApp(blogFormEdit);
     app.mount('#blog-form-edit');
+}
+
+else if (document.body.dataset.page === "gallery-manager") {
+    console.log('welcome to the gallery manager');
+    const app = createApp(galleryManager);
+    app.mount('#gallery-manager-app');
 }
