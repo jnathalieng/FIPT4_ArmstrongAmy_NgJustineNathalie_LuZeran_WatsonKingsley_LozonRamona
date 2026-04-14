@@ -10,17 +10,17 @@ export default {
         }
     },
     computed: {
-
+        filteredEvents() {
             return this.events.filter(event => 
                 event.events_title.toLowerCase().includes(this.searchQuery.toLowerCase())
             );
         }
     },
     mounted() {
-        this.fetchBlogs();
+        this.fetchEvents();
     },
     methods: {
-        async fetchBlogs() {
+        async fetchEvents() {
             this.isLoading = true;
             try {
                 const response = await fetch('/api/events');
@@ -33,7 +33,7 @@ export default {
                 this.isLoading = false;
             } catch (error) {
                 console.error('Error fetching events:', error);
-                this.errors.general = 'Failed to load event posts';
+                this.errors.general = 'Failed to load events';
                 this.isLoading = false;
             }
         },
@@ -43,7 +43,8 @@ export default {
         },
 
         goToEdit(eventId) {
-            window.location.href = `/event-manager-edit/${eventId}`;
+            // ✅ Fixed: was /event-manager-edit/ (missing 's')
+            window.location.href = `/events-manager-edit/${eventId}`;
         },
 
         openDeleteConfirm(eventId) {
@@ -56,7 +57,7 @@ export default {
             this.showDeleteConfirm = false;
         },
 
-        async deleteBlog() {
+        async deleteEvent() {
             if (!this.deleteId) return;
 
             try {
@@ -71,12 +72,11 @@ export default {
                     throw new Error('Failed to delete event');
                 }
 
-                // Remove from list
                 this.events = this.events.filter(event => event.id !== this.deleteId);
                 this.closeDeleteConfirm();
             } catch (error) {
                 console.error('Error deleting event:', error);
-                this.errors.general = 'Failed to delete event post';
+                this.errors.general = 'Failed to delete event';
             }
         },
 
@@ -94,7 +94,7 @@ export default {
             <div class="manager-header">
                 <h2 class="r-header-text">Events Manager</h2>
                 <button class="create-button add-button publish-button" @click="goToCreate">
-                    + Create New Post
+                    + Create New Event
                 </button>
             </div>
 
@@ -115,29 +115,33 @@ export default {
 
             <!-- Loading State -->
             <div v-if="isLoading" class="loading-message">
-                Loading event posts...
+                Loading events...
             </div>
 
             <!-- Empty State -->
             <div v-else-if="events.length === 0" class="empty-state">
-                <p class="body-text">No event posts yet. <a href="#" @click.prevent="goToCreate">Create one now!</a></p>
+                <p class="body-text">No events yet. <a href="#" @click.prevent="goToCreate">Create one now!</a></p>
             </div>
 
-            <!-- Blog List -->
+            <!-- Events List -->
             <div v-else class="manager-list">
                 <div class="manager-list-header">
                     <div class="r-header-text">Title</div>
-                    <div class="r-header-text">Date</div>
+                    <div class="r-header-text">Start Date</div>
+                    <div class="r-header-text">Status</div>
                     <div class="r-header-text">Created</div>
                     <div class="r-header-text">Actions</div>
                 </div>
 
-                <div v-for="event in filteredBlogs" :key="event.id" class="manager-list-item">
+                <div v-for="event in filteredEvents" :key="event.id" class="manager-list-item">
                     <div class="col-title">
                         <h4 class="r-body-text">{{ event.events_title }}</h4>
                     </div>
                     <div>
-                        <p class="small-text">{{ event.events_start_datetime }}</p>
+                        <p class="small-text">{{ formatDate(event.events_start_datetime) }}</p>
+                    </div>
+                    <div>
+                        <p class="small-text">{{ event.events_status }}</p>
                     </div>
                     <div class="col-date">
                         <p class="small-text">{{ formatDate(event.created_at) }}</p>
@@ -160,8 +164,8 @@ export default {
                     </div>
                 </div>
 
-                <!-- No Results Message -->
-                <div v-if="filteredBlogs.length === 0" class="empty-state">
+                <!-- No Results -->
+                <div v-if="filteredEvents.length === 0" class="empty-state">
                     <p class="body-text">No events match your search.</p>
                 </div>
             </div>
@@ -169,8 +173,8 @@ export default {
             <!-- Delete Confirmation Modal -->
             <div v-if="showDeleteConfirm" class="modal-overlay">
                 <div class="modal-content">
-                    <h3 class="r-header-text">Delete Blog Post?</h3>
-                    <p class="body-text">Are you sure you want to delete this event post? This action cannot be undone.</p>
+                    <h3 class="r-header-text">Delete Event?</h3>
+                    <p class="body-text">Are you sure you want to delete this event? This action cannot be undone.</p>
                     
                     <div class="modal-buttons">
                         <button 
@@ -181,7 +185,7 @@ export default {
                         </button>
                         <button 
                             class="add-button delete-btn"
-                            @click="deleteBlog"
+                            @click="deleteEvent"
                         >
                             Delete
                         </button>
