@@ -126,14 +126,14 @@ export default {
 
             <!-- Blog List -->
             <div v-else class="manager-list">
-                <div class="manager-list-header">
+                <div class="manager-list-header blog-manager-grid">
                     <div class="r-header-text">Title</div>
                     <div class="r-header-text">Link Header</div>
                     <div class="r-header-text">Created</div>
                     <div class="r-header-text">Actions</div>
                 </div>
 
-                <div v-for="blog in filteredBlogs" :key="blog.id" class="manager-list-item">
+                <div v-for="blog in filteredBlogs" :key="blog.id" class="manager-list-item blog-manager-grid">
                     <div class="col-title">
                         <h4 class="r-body-text">{{ blog.title }}</h4>
                     </div>

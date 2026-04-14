@@ -199,7 +199,7 @@ export default {
 
             <!-- Records List -->
             <div v-else class="manager-list">
-                <div class="manager-list-header">
+                <div class="manager-list-header comm-manager-grid">
                     <div class="col-name r-body-text">Name</div>
                     <div class="col-rank r-body-text">Rank</div>
                     <div class="col-unit r-body-text">Unit</div>
@@ -207,7 +207,7 @@ export default {
                     <div class="col-actions r-body-text">Actions</div>
                 </div>
 
-                <div v-for="record in filteredRecords" :key="record.id" class="manager-list-item comm-list-item">
+                <div v-for="record in filteredRecords" :key="record.id" class="manager-list-item comm-manager-grid">
                     <div class="col-name">
                         <h4 class="r-body-text">{{ record.name }}</h4>
                     </div>

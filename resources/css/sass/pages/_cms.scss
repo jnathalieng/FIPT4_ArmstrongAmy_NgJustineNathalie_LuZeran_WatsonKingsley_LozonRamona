@@ -218,7 +218,6 @@
 
 .manager-list-header {
     display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     background-color: #f5f5f5;
@@ -234,13 +233,12 @@
 
 .manager-list-item {
     display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     border-bottom: 1px solid #eee;
     align-items: center;
     transition: background-color 0.2s;
-
+    
     &:hover {
         background-color: #fafafa;
     }
@@ -248,6 +246,18 @@
     &:last-child {
         border-bottom: none;
     }
+}
+
+.blog-manager-grid {
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+}
+
+.events-manager-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.comm-manager-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
 .action-btn {
