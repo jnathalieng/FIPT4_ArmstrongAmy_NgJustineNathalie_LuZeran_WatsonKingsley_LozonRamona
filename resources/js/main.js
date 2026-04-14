@@ -5,6 +5,7 @@ import commForm from "./modules/comm.js";
 import commThree from "./modules/comm-three.js";
 import commFour from "./modules/comm-four.js";
 import eventsManager from "./modules/eventsManager.js";
+import galleryManager from './modules/galleryManager.js';
 import gallery from "./modules/gallery.js";
 import blog from "./modules/blog.js";
 import blogFormAdd from "./modules/blogFormAdd.js";
