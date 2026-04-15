@@ -19,9 +19,9 @@ use App\Http\Controllers\EventsController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 Route::post('/contact', [ContactController::class, 'store']);
 
 Route::get('/search', [SearchController::class, 'apiSearch']);

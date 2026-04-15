@@ -1,29 +1,27 @@
 export default {
     data() {
         return {
-            formData: {
-                events_title: '',
-                events_description: '',
-                events_start_datetime: '',
-                events_end_datetime: '',
-                events_timezone: '',
-                events_category: '',
-                events_status: 'Draft',
-                events_image_1: null,
-                events_image_alt_1: '',
-                events_image_2: null,
-                events_image_alt_2: '',
-                events_image_3: null,
-                events_image_alt_3: '',
-            },
-            errors: {},
-            isLoading: false,
-            isDragging: false,
-            imagePreview1: null,
-            imagePreview2: null,
-            imagePreview3: null,
-            successMessage: '',
-        }
+        formData: {
+            events_title: '',
+            events_description: '',
+            events_start_datetime: '',
+            events_end_datetime: '',
+            events_timezone: '',
+            events_category: '',
+            events_status: 'Draft',
+        },
+images: {
+    1: { file: null, preview: null, existing: null, removed: false, alt: '', dragging: false },
+    2: { file: null, preview: null, existing: null, removed: false, alt: '', dragging: false },
+    3: { file: null, preview: null, existing: null, removed: false, alt: '', dragging: false }
+},
+        errors: {},
+        isLoading: false,
+        isDragging: false,
+        successMessage: '',
+        loading: true,
+        eventId: null,
+    }
     },
     methods: {
         handleImageDrop(e, slot) {
@@ -34,20 +32,13 @@ export default {
             }
         },
 
-        // handleImageSelect(e, slot) {
-        //     const files = e.target.files;
-        //     if (files.length) {
-        //         this.processImageFile(files[0], slot);
-        //     }
-        // },
-
-        browseFiles(slot) {
-            const input = document.querySelector(`input[data-slot="${slot}"]`);
-            if (input) {
-                input.click();
+        handleImageSelect(e, slot) {
+            const files = e.target.files;
+            if (files.length) {
+                this.processImageFile(files[0], slot);
             }
         },
-        
+
         processImageFile(file, slot) {
             if (!file.type.startsWith('image/')) {
                 this.errors[`events_image_${slot}`] = 'Please select a valid image file';

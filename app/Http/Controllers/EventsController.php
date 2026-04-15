@@ -66,7 +66,7 @@ class EventsController extends Controller
             }
         }
 
-        return response()->json($events->load('images'));
+        return response()->json($event);
     }
 
     public function update(Request $request, $id)
