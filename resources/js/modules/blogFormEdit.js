@@ -204,13 +204,13 @@ mounted() {
                 </div>
 
                 <p class="field-error" v-if="errors.event_title">{{ errors.event_title }}</p>
+                    <label for="title" class="r-body-text">Event Title</label>
                 <input 
                     v-model="formData.event_title"
                     class="add-form-box title-input"
                     type="text"
                     name="event_title"
-                    placeholder="Post Title"
-                >
+                    placeholder="Post Title">
 
                 <section class="add-form-inputs">
                     <article class="twin-inputs">
