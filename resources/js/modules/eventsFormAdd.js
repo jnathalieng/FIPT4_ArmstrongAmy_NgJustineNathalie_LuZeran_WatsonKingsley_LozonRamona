@@ -34,13 +34,20 @@ export default {
             }
         },
 
-        handleImageSelect(e, slot) {
-            const files = e.target.files;
-            if (files.length) {
-                this.processImageFile(files[0], slot);
+        // handleImageSelect(e, slot) {
+        //     const files = e.target.files;
+        //     if (files.length) {
+        //         this.processImageFile(files[0], slot);
+        //     }
+        // },
+
+        browseFiles(slot) {
+            const input = document.querySelector(`input[data-slot="${slot}"]`);
+            if (input) {
+                input.click();
             }
         },
-
+        
         processImageFile(file, slot) {
             if (!file.type.startsWith('image/')) {
                 this.errors[`events_image_${slot}`] = 'Please select a valid image file';
@@ -162,72 +169,79 @@ export default {
                 <span class="r-header-text">Event Details</span>
             </div>
 
+    <section class="add-form-inputs">
+
+        <article class="twin-inputs">
+
             <!-- Title -->
+        <div class="left-box">
             <p class="field-error" v-if="errors.events_title">{{ errors.events_title }}</p>
+            <label for="title" class="r-body-text">Event Title</label>
             <input
                 v-model="formData.events_title"
-                class="add-form-box title-input"
+                class="add-form-box"
                 type="text"
-                placeholder="Event Title"
-            >
-
+                placeholder="Event Title">
+                </div>
+                
             <!-- Category -->
+        <div class="left-box">
             <p class="field-error" v-if="errors.events_category">{{ errors.events_category }}</p>
+            <label for="category" class="r-body-text">Event Type</label>
             <input
                 v-model="formData.events_category"
-                class="add-form-box title-input"
+                class="add-form-box"
+                name="category"
                 type="text"
-                placeholder="Event Category (e.g. Dinner Party, Airshow)"
-            >
-
+                placeholder="Event Category (e.g. Dinner Party, Airshow)">
+                </div>
+                
             <!-- Description -->
-            <label class="r-header-text content-title">Description</label>
+        <div class="left-box">
+            <label class="r-body-text content-title">Description</label>
             <p class="field-error" v-if="errors.events_description">{{ errors.events_description }}</p>
             <textarea
                 v-model="formData.events_description"
                 class="add-content-box"
-                placeholder="Enter event description..."
-            ></textarea>
+                placeholder="Enter event description...">
+            </textarea>
+        </div>
+    </article>
 
-            <section class="add-form-inputs">
                 <article class="twin-inputs">
+
                     <!-- Start DateTime -->
-                    <div class="left-box">
-                        <label class="r-header-text">Start Date & Time</label>
+                    <div class="right-box">
+                        <label class="r-body-text">Start Date & Time</label>
                         <p class="field-error" v-if="errors.events_start_datetime">{{ errors.events_start_datetime }}</p>
                         <input
                             v-model="formData.events_start_datetime"
                             class="add-form-box"
-                            type="datetime-local"
-                        >
+                            type="datetime-local">
                     </div>
 
                     <!-- End DateTime -->
-                    <div class="left-box">
-                        <label class="r-header-text">End Date & Time</label>
+                    <div class="right-box">
+                        <label class="r-body-text">End Date & Time</label>
                         <input
                             v-model="formData.events_end_datetime"
                             class="add-form-box"
-                            type="datetime-local"
-                        >
+                            type="datetime-local">
                     </div>
-                </article>
 
-                <article class="twin-inputs">
                     <!-- Timezone -->
-                    <div class="left-box">
-                        <label class="r-header-text">Timezone (optional)</label>
+                    <div class="right-box">
+                        <label class="r-body-text">Timezone (optional)</label>
                         <input
                             v-model="formData.events_timezone"
                             class="add-form-box"
                             type="text"
-                            placeholder="e.g. EST, UTC-5"
-                        >
+                            placeholder="e.g. EST, UTC-5">
                     </div>
 
                     <!-- Status -->
-                    <div class="left-box">
-                        <label class="r-header-text">Status</label>
+                    <div class="right-box">
+                        <label class="r-body-text">Status</label>
                         <select v-model="formData.events_status" class="add-form-box">
                             <option value="Draft">Draft</option>
                             <option value="Published">Published</option>
@@ -244,7 +258,7 @@ export default {
             </div>
 
             <div v-for="slot in [1, 2, 3]" :key="slot" class="right-box drag-and-drop-con" style="margin-bottom: 1.5rem;">
-                <label class="r-header-text">Image {{ slot }} {{ slot === 1 ? '(Featured)' : '(Optional)' }}</label>
+                <label class="r-body-text">Image {{ slot }} {{ slot === 1 ? '(Featured)' : '(Optional)' }}</label>
                 <p class="field-error" v-if="errors['events_image_' + slot]">{{ errors['events_image_' + slot] }}</p>
 
                 <div
@@ -252,18 +266,17 @@ export default {
                     @dragover.prevent="isDragging = true"
                     @dragleave.prevent="isDragging = false"
                     @drop.prevent="handleImageDrop($event, slot)"
-                    :class="{ 'dragging': isDragging }"
-                >
+                    :class="{ 'dragging': isDragging }">
                     <input
-                        :ref="'fileInput' + slot"
+                        :data-slot="slot"
                         type="file"
                         accept="image/*"
                         @change="handleImageSelect($event, slot)"
-                        style="display: none;"
-                    >
+                        style="display: none;">
 
-                    <div v-if="!$data['imagePreview' + slot]" class="drop-zone-content">
-                        <p>Drag and drop image here or <a href="#" @click.prevent="$refs['fileInput' + slot].click()">click to browse</a></p>
+                    <!-- No image yet -->
+                    <div v-if="!$data['imagePreview' + slot] && !$data['currentImage' + slot]" class="drop-zone-content">
+                        <p>Drag and drop image here or <a href="#" @click.prevent="browseFiles(slot)">click to browse</a></p>
                     </div>
 
                     <div v-else class="image-preview">

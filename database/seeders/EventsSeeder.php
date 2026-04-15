@@ -22,12 +22,6 @@ class EventsSeeder extends Seeder
             'events_timezone' => null,
             'events_category' => 'Dinner Party',
             'events_status' => 'Sold Out',
-            'events_image_1' => 'images/real-image-path',
-            'events_image_alt_1' => 'picture of the London airshow, 2025',
-            'events_image_2' => null,
-            'events_image_alt_2' => null,
-            'events_image_3' => 'images/desktop/another-real-image-path',
-            'events_image_alt_3' => 'picture of aviation dinnerparty 2023',
         ]);
     }
 }

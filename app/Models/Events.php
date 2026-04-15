@@ -6,7 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Events extends Model
 {
-    //
+
+public function images()
+{
+    return $this->hasMany(EventImage::class, 'event_id');
+}
+
     protected $fillable = [
         'events_title',
         'events_description',
@@ -15,11 +20,5 @@ class Events extends Model
         'events_timezone',
         'events_category',
         'events_status',
-        'events_image_1',
-        'events_image_alt_1',
-        'events_image_2',
-        'events_image_alt_2',
-        'events_image_3',
-        'events_image_alt_3',
     ];
 }
