@@ -26,8 +26,8 @@ export default {
         });
     },
     methods: {
-        goToBlog(slug) {
-            window.location.href = `/blogs/${slug}`;
+        goToBlog(id) {
+            window.location.href = `/blogs/${id}`;
         },
         goBackToBlog() {
             window.location.href = '/blogs';
@@ -54,7 +54,7 @@ export default {
                         v-for="blog in blogs" 
                         :key="blog.id"
                         class="blog-card"
-                        @click="goToBlog(blog.slug)"
+                        @click="goToBlog(blog.id)"
                     >
                         <img 
                             v-if="blog.featured_image"
