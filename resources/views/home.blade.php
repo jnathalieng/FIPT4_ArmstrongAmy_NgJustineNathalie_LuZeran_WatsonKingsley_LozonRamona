@@ -239,12 +239,11 @@
                 <p>
                     <br>
                     427 Wing's museum is housed in a 1943 airmen's canteen at the London International Airport.
-                    The canteen is the last surviving building from the British Commonwealth Air Training Plan (BCATP) 
+                    The canteen is the last surviving building from the <span class="text-highlight">British Commonwealth Air Training Plan (BCATP)</span> 
                     base that existed at London's airport during World War Two. 
                     <br>
                     <br>
-                    It is a London landmark and is listed 
-                    in the city's Register of Cultural Heritage Resources. The museum commemorates the thousands of Canadian and Commonwealth airmen who trained at this site, as well as the military and civilian personnel who supported and instructed them. It will also commemorate the nearly 250 London men who lost their lives while serving with the RCAF during World War Two.
+                    It is a London landmark and is listed in the city's Register of Cultural Heritage Resources. The museum commemorates the thousands of Canadian and Commonwealth airmen who trained at this site, as well as the military and civilian personnel who supported and instructed them. It will also commemorate the nearly 250 London men who lost their lives while serving with the <span class="text-highlight">RCAF during World War Two</span>.
                     <br>
                     <br>
                     The museum is currently installing a permanent exhibition illustrating the history of military 
@@ -252,8 +251,7 @@
                     primarily on the two BCAPT training schools - a navigator's school and an elementary flying school.
                     <br>
                     <br>
-                    The exhibit will incorporate uniforms, a variety of artifacts, historic images and a number of model aircraft from the museum's collection, including a Spitfire and a Lancaster. The exhibition is slated 
-                    to open in the fall of 2026.
+                    The exhibit will incorporate uniforms, a variety of artifacts, historic images and a number of model aircraft from the museum's collection, including a Spitfire and a Lancaster. The exhibition is slated to <span class="text-highlight">open in the fall of 2026</span>.
                 </p>
             </div>
         </div>
