@@ -1,98 +1,38 @@
-body {
-  font-family: "Monserrat", sans-serif;
-  color: white;
-}
-
-h1 {
-  font-size: 64;
-}
-
-h2, h3, h4 {
-  font-size: 55;
-}
-
-p {
-  font-size: 24;
-}
-
-a {
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  h2, h3, h4 {
-    font-size: 300%;
-  }
-  .g-header-text {
-    font-size: 32px;
-  }
-}
-.header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 45px;
-}
-
-.body-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 32px;
-}
-
-.small-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 16px;
-}
-
-.r-title-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 64px;
-}
-
-.r-header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 40px;
-}
-
-.g-title-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 55px;
-}
-
-.g-header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 32px;
-}
-
-.r-body-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 24px;
-}
-
-.b-header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #91B8D9;
-  font-size: 55px;
-}
-
-.b-body-text {
-  font-family: "Monserrat", sans-serif;
-  color: #91B8D9;
-  font-size: 24px;
-}
-
 @font-face {
   font-family: "typewriter";
   src: url(/public/fonts/SpecialElite-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Monserrat", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3, h4 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .header {
   z-index: 1000;
   position: fixed;
