@@ -30,12 +30,17 @@ h1, h2, h3, h4 {
 
 p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-highlight {
+  color: #B3262E;
+  font-weight: bold;
 }
 
 .header {
@@ -791,7 +796,7 @@ a {
   width: 80%;
   margin: auto;
   background-color: #fff;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
 }
 
@@ -1876,7 +1881,7 @@ p.typewriter-quote {
 
 .dossier {
   background-image: url(/public/images/BOB-images/folder-texture.png);
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 100vw;
   height: 80vh;
@@ -1900,7 +1905,7 @@ p.typewriter-quote {
   color: #000;
   width: 80%;
   font-size: 1rem;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   transform: translate(0, 0);
   cursor: pointer;
@@ -1923,7 +1928,7 @@ p.typewriter-quote {
   padding: 0 2rem;
   background-image: url(/public/images/BOB-images/folder-texture.png);
   border-radius: 1rem 1rem 0 0;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   color: #000;
   text-align: center;
   font-size: 1.5rem;
