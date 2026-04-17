@@ -2,8 +2,7 @@ export default {
     data() {
         return {
             formData: {
-                event_title: '',
-                slug: '',
+                title: '',
                 excerpt: '',
                 featured_image: null,
                 featured_image_alt: '',
@@ -17,7 +16,7 @@ export default {
         }
     },
     methods: {
-        handleImageDrop(e) {
+       handleImageDrop(e) {
             this.isDragging = false;
             const files = e.dataTransfer.files;
             if (files.length) {
@@ -44,9 +43,9 @@ export default {
             }
 
             this.formData.featured_image = file;
+            this.currentImage = null;
             this.errors.featured_image = '';
 
-            // Create preview
             const reader = new FileReader();
             reader.onload = (e) => {
                 this.imagePreview = e.target.result;
@@ -60,6 +59,11 @@ export default {
             this.$refs.fileInput.value = '';
         },
 
+        replaceImage() {
+            this.currentImage = null;
+            this.$refs.fileInput.click();
+        },
+
         async submitForm() {
             await this.saveBlog();
         },
@@ -68,15 +72,8 @@ export default {
             this.isLoading = true;
             this.errors = {};
 
-            // Validate required fields
-            if (!this.formData.event_title.trim()) {
-                this.errors.event_title = 'Title is required';
-                this.isLoading = false;
-                return;
-            }
-
-            if (!this.formData.slug.trim()) {
-                this.errors.slug = 'Link header (slug) is required';
+            if (!this.formData.title.trim()) {
+                this.errors.title = 'Title is required';
                 this.isLoading = false;
                 return;
             }
@@ -88,21 +85,24 @@ export default {
             }
 
             const formDataToSend = new FormData();
-            
-            // Add all text fields
-            formDataToSend.append('title', this.formData.event_title);
-            formDataToSend.append('slug', this.formData.slug);
+
+            formDataToSend.append('title', this.formData.title);
             formDataToSend.append('excerpt', this.formData.excerpt || '');
             formDataToSend.append('content', this.formData.content);
 
-            // Add file if selected
             if (this.formData.featured_image instanceof File) {
                 formDataToSend.append('featured_image', this.formData.featured_image);
-                formDataToSend.append('featured_image_alt', this.formData.featured_image_alt || this.formData.event_title);
+                formDataToSend.append('featured_image_alt', this.formData.featured_image_alt || this.formData.title);
             }
 
             try {
-                const response = await fetch('/api/blogs', {
+                const payload = {
+                    title: this.formData.title,
+                    excerpt: this.formData.excerpt || '',
+                    content: this.formData.content,
+                };
+
+                const response = await fetch(`/api/blogs`, {
                     method: 'POST',
                     body: formDataToSend,
                     headers: {
@@ -120,13 +120,13 @@ export default {
                     return;
                 }
 
-                this.successMessage = 'Blog post published successfully!';
+                this.successMessage = 'Blog post updated successfully!';
                 setTimeout(() => {
                     window.location.href = '/blog-manager';
                 }, 1500);
             } catch (error) {
                 this.errors.general = 'An error occurred while saving: ' + error.message;
-                console.error('Error saving blog:', error);
+                console.error('Error updating blog:', error);
             } finally {
                 this.isLoading = false;
             }
@@ -143,29 +143,17 @@ export default {
                 <span class="r-header-text">Post Details</span>
             </div>
 
-            <p class="field-error" v-if="errors.event_title">{{ errors.event_title }}</p>
+            <p class="field-error" v-if="errors.title">{{ errors.title }}</p>
             <input 
-                v-model="formData.event_title"
+                v-model="formData.title"
                 class="add-form-box title-input"
                 type="text"
-                name="event_title"
+                name="title"
                 placeholder="Post Title"
             >
 
             <section class="add-form-inputs">
                 <article class="twin-inputs">
-                    <!-- Slug/Link Header -->
-                    <div class="left-box">
-                        <label for="slug" class="r-header-text">Link Header</label>
-                        <p class="field-error" v-if="errors.slug">{{ errors.slug }}</p>
-                        <input
-                            v-model="formData.slug"
-                            class="add-form-box"
-                            type="text"
-                            name="slug"
-                            placeholder="e.g., history-of-london-aviation"
-                        >
-                    </div>
 
                     <!-- Excerpt -->
                     <div class="left-box">
@@ -176,8 +164,7 @@ export default {
                             class="add-form-box"
                             type="text"
                             name="excerpt"
-                            placeholder="Short summary of the post"
-                        >
+                            placeholder="Short summary of the post">
                     </div>
                 </article>
 
@@ -207,7 +194,7 @@ export default {
                             </div>
 
                             <div v-else class="image-preview">
-                                <img :src="imagePreview" :alt="formData.event_title">
+                                <img :src="imagePreview" :alt="formData.title">
                                 <button type="button" @click="removeImage" class="remove-image-btn">Remove</button>
                             </div>
                         </div>

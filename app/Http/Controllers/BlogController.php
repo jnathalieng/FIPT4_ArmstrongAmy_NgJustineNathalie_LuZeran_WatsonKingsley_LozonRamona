@@ -30,7 +30,7 @@ class BlogController extends Controller
 
         $blog = Blog::create($validated);
         
-        return response()->json(['message' => 'Blog created successfully', 'blog' => $id], 201);
+        return response()->json(['message' => 'Blog created successfully', 'blog' => $blog], 201);
     }
 
     //Update an existing blog post
