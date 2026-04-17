@@ -25,18 +25,29 @@ images: {
     },
     methods: {
         handleImageDrop(e, slot) {
-            this.isDragging = false;
-            const files = e.dataTransfer.files;
-            if (files.length) {
-                this.processImageFile(files[0], slot);
+            this.images[slot].dragging = false;
+            const file = e.dataTransfer.files[0];
+            if (file) {
+                this.handleImageSelect({ target: { files: [file] } }, slot);
             }
         },
 
         handleImageSelect(e, slot) {
-            const files = e.target.files;
-            if (files.length) {
-                this.processImageFile(files[0], slot);
-            }
+            const file = e.target.files[0];
+            if (!file) return;
+
+            if (!file.type.startsWith('image/')) return;
+            if (file.size > 5 * 1024 * 1024) return;
+
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                this.images[slot].file = file;
+                this.images[slot].preview = e.target.result;
+                this.images[slot].removed = false;
+            };
+
+            reader.readAsDataURL(file);
         },
 
         processImageFile(file, slot) {
@@ -61,9 +72,14 @@ images: {
         },
 
         removeImage(slot) {
-            this.formData[`events_image_${slot}`] = null;
-            this[`imagePreview${slot}`] = null;
-            this.$refs[`fileInput${slot}`].value = '';
+            const img = this.images[slot];
+
+            img.file = null;
+            img.preview = null;
+
+            if (img.existing) {
+                img.removed = true;
+            }
         },
 
         async submitForm(status) {
@@ -71,35 +87,26 @@ images: {
             await this.saveEvent();
         },
 
-        async saveEvent() {
-            this.isLoading = true;
-            this.errors = {};
+        browseFiles(slot) {
+            const input = document.querySelector(`input[data-slot="${slot}"]`);
+            if (input) input.click();
+        },
 
-            if (!this.formData.events_title.trim()) {
+        async submitForm() {
+            await this.saveEvent();
+        },
+
+        async saveEvent() {
+                if (!this.formData.events_title.trim()) {
                 this.errors.events_title = 'Title is required';
                 this.isLoading = false;
                 return;
             }
-
-            if (!this.formData.events_description.trim()) {
-                this.errors.events_description = 'Description is required';
-                this.isLoading = false;
-                return;
-            }
-
-            if (!this.formData.events_start_datetime) {
-                this.errors.events_start_datetime = 'Start date & time is required';
-                this.isLoading = false;
-                return;
-            }
-
-            if (!this.formData.events_category.trim()) {
-                this.errors.events_category = 'Category is required';
-                this.isLoading = false;
-                return;
-            }
+            this.isLoading = true;
+            this.errors = {};
 
             const formDataToSend = new FormData();
+
             formDataToSend.append('events_title', this.formData.events_title);
             formDataToSend.append('events_description', this.formData.events_description);
             formDataToSend.append('events_start_datetime', this.formData.events_start_datetime);
@@ -108,10 +115,17 @@ images: {
             formDataToSend.append('events_category', this.formData.events_category);
             formDataToSend.append('events_status', this.formData.events_status);
 
-            [1, 2, 3].forEach(slot => {
-                if (this.formData[`events_image_${slot}`] instanceof File) {
-                    formDataToSend.append(`events_image_${slot}`, this.formData[`events_image_${slot}`]);
-                    formDataToSend.append(`events_image_alt_${slot}`, this.formData[`events_image_alt_${slot}`] || this.formData.events_title);
+            [1,2,3].forEach(slot => {
+                const img = this.images[slot];
+
+                if (img.file) {
+                    formDataToSend.append(`events_image_${slot}`, img.file);
+                }
+
+                formDataToSend.append(`events_image_alt_${slot}`, img.alt || '');
+
+                if (img.removed) {
+                    formDataToSend.append(`events_image_remove_${slot}`, '1');
                 }
             });
 
@@ -126,28 +140,22 @@ images: {
 
                 if (!response.ok) {
                     const errorData = await response.json();
-                    if (errorData.errors) {
-                        this.errors = errorData.errors;
-                    } else {
-                        this.errors.general = errorData.message || 'An error occurred while saving';
-                    }
+                    this.errors = errorData.errors || {};
                     return;
                 }
 
-                this.successMessage = this.formData.events_status === 'Published'
-                    ? 'Event published successfully!'
-                    : 'Event saved as draft!';
+                this.successMessage = 'Event updated successfully!';
 
                 setTimeout(() => {
                     window.location.href = '/events-manager';
                 }, 1500);
+
             } catch (error) {
-                this.errors.general = 'An error occurred while saving: ' + error.message;
-                console.error('Error saving event:', error);
+                this.errors.general = error.message;
             } finally {
                 this.isLoading = false;
             }
-        },
+        },           
 
         goBack() {
             window.location.href = '/events-manager';
@@ -243,21 +251,23 @@ images: {
                 </article>
             </section>
 
-            <!-- Images -->
-            <div class="title-con" style="margin-top: 2rem;">
-                <span class="r-header-text">Event Images</span>
-            </div>
+                 <!-- Images -->
+                <div class="title-con" style="margin-top: 2rem;">
+                    <span class="r-header-text">Event Images</span>
+                </div>
 
-            <div v-for="slot in [1, 2, 3]" :key="slot" class="right-box drag-and-drop-con" style="margin-bottom: 1.5rem;">
-                <label class="r-body-text">Image {{ slot }} {{ slot === 1 ? '(Featured)' : '(Optional)' }}</label>
-                <p class="field-error" v-if="errors['events_image_' + slot]">{{ errors['events_image_' + slot] }}</p>
+                <div v-for="slot in [1, 2, 3]" :key="slot" class="right-box drag-and-drop-con" style="margin-bottom: 1.5rem;">
 
-                <div
-                    class="drag-and-drop-images"
-                    @dragover.prevent="isDragging = true"
-                    @dragleave.prevent="isDragging = false"
-                    @drop.prevent="handleImageDrop($event, slot)"
-                    :class="{ 'dragging': isDragging }">
+                    <label class="r-header-text">Image {{ slot }} {{ slot === 1 ? '(Featured)' : '(Optional)' }}</label>
+
+                    <p class="field-error" v-if="errors['events_image_' + slot]">{{ errors['events_image_' + slot] }}</p>
+
+                    <div
+                        class="drag-and-drop-images"
+                            @dragover.prevent="images[slot].dragging = true"
+                            @dragleave.prevent="images[slot].dragging = false"
+                            @drop.prevent="handleImageDrop($event, slot)"
+                            :class="{ 'dragging': images[slot].dragging }">
                     <input
                         :data-slot="slot"
                         type="file"
@@ -265,27 +275,25 @@ images: {
                         @change="handleImageSelect($event, slot)"
                         style="display: none;">
 
-                    <!-- No image yet -->
-                    <div v-if="!$data['imagePreview' + slot] && !$data['currentImage' + slot]" class="drop-zone-content">
-                        <p>Drag and drop image here or <a href="#" @click.prevent="browseFiles(slot)">click to browse</a></p>
-                    </div>
+                        <!-- No image -->
+                        <div v-if="!images[slot].preview" class="drop-zone-content">
+                            <p>Drag and drop image here or <a href="#" @click.prevent="browseFiles(slot)">click to browse</a></p>
+                        </div>
 
-                    <div v-else class="image-preview">
-                        <img :src="$data['imagePreview' + slot]" :alt="formData['events_image_alt_' + slot]">
-                        <button type="button" @click="removeImage(slot)" class="remove-image-btn">Remove</button>
+                        <div v-if="images[slot].removed" class="removed-label">
+                            Image will be removed on save
+                        </div>
+                        
+                        <!-- Image preview -->
+                        <div v-else class="image-preview">
+                            <img :src="images[slot].preview" :alt="images[slot].alt" />
+
+                            <button type="button" @click="removeImage(slot)" class="remove-image-btn">
+                                Remove
+                            </button>
+                        </div>
                     </div>
                 </div>
-
-                <input
-                    v-if="$data['imagePreview' + slot]"
-                    v-model="formData['events_image_alt_' + slot]"
-                    type="text"
-                    placeholder="Image alt text (for accessibility)"
-                    class="add-form-box"
-                    style="margin-top: 10px;"
-                >
-            </div>
-
             <!-- Buttons -->
             <div class="button-con">
                 <button class="add-button cancel-button" type="button" @click="goBack">Cancel</button>
