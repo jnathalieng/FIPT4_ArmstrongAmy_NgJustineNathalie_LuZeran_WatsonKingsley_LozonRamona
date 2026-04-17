@@ -12,8 +12,7 @@ export default {
     computed: {
         filteredBlogs() {
             return this.blogs.filter(blog => 
-                blog.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-                blog.slug.toLowerCase().includes(this.searchQuery.toLowerCase())
+                blog.title.toLowerCase().includes(this.searchQuery.toLowerCase())
             );
         }
     },
@@ -25,7 +24,7 @@ export default {
             this.isLoading = true;
             try {
                 const response = await fetch('/api/blogs');
-                
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch blogs');
                 }
@@ -44,6 +43,7 @@ export default {
         },
 
         goToEdit(blogId) {
+            console.log(blogId);
             window.location.href = `/blog-manager-edit/${blogId}`;
         },
 
@@ -128,7 +128,7 @@ export default {
             <div v-else class="manager-list">
                 <div class="manager-list-header blog-manager-grid">
                     <div class="r-header-text">Title</div>
-                    <div class="r-header-text">Link Header</div>
+                    <div class="r-header-text">Excerpt</div>
                     <div class="r-header-text">Created</div>
                     <div class="r-header-text">Actions</div>
                 </div>
@@ -137,9 +137,11 @@ export default {
                     <div class="col-title">
                         <h4 class="r-body-text">{{ blog.title }}</h4>
                     </div>
-                    <div class="col-slug">
-                        <p class="small-text">{{ blog.slug }}</p>
+
+                    <div class="col-excerpt">
+                        <h4 class="small-text">{{ blog.excerpt }}</h4>
                     </div>
+
                     <div class="col-date">
                         <p class="small-text">{{ formatDate(blog.created_at) }}</p>
                     </div>

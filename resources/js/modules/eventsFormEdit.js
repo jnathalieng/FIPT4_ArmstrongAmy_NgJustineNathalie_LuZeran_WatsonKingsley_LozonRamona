@@ -151,12 +151,24 @@ async saveEvent() {
     });
 
     try {
+        const payload = {
+            events_title: this.formData.events_title,
+            events_description: this.formData.events_description,
+            events_start_datetime: this.formData.events_start_datetime,
+            events_end_datetime: this.formData.events_end_datetime || '',
+            events_timezone: this.formData.events_timezone || '',
+            events_category: this.formData.events_category,
+            events_status: this.formData.events_status,
+        };
+
         const response = await fetch(`/api/events/${this.eventId}`, {
-            method: 'POST',
+            method: 'PATCH',
             body: formDataToSend,
             headers: {
+                'Content-Type': 'application/json',
                 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.content || ''
-            }
+            },
+                        body: JSON.stringify(payload)
         });
 
         if (!response.ok) {

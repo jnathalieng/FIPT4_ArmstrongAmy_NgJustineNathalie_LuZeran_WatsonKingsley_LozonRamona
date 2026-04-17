@@ -30,15 +30,15 @@ Route::get('/search', [SearchController::class, 'apiSearch']);
 Route::get('/events', [EventsController::class, 'index']);
 Route::get('/events/{id}', [EventsController::class, 'show']);
 Route::post('/events', [EventsController::class, 'store']);
-Route::put('/events/{id}', [EventsController::class, 'update']);
+Route::patch('/events/{id}', [EventsController::class, 'update']);
 Route::delete('/events/{id}', [EventsController::class, 'destroy']);
 
 // BLOG MANAGER ROUTES - ZERAN
 Route::get('/blogs', [BlogController::class, 'index']);
 Route::get('/blogs/latest', [BlogController::class, 'getLatest']);
 Route::post('/blogs', [BlogController::class, 'store']);
-Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit']);
-Route::put('/blogs/{blog}', [BlogController::class, 'update']);
+// Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit']);
+Route::patch('/blogs/{blog}', [BlogController::class, 'update']);
 Route::delete('/blogs/{blog}', [BlogController::class, 'destroy']);
 Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 

@@ -2,8 +2,7 @@ export default {
     data() {
         return {
             formData: {
-                event_title: '',
-                slug: '',
+                title: '',
                 excerpt: '',
                 featured_image: null,
                 featured_image_alt: '',
@@ -41,17 +40,15 @@ mounted() {
     methods: {
         async fetchBlog() {
             try {
-                const response = await fetch(`/api/blogs/${this.blogId}/edit`);
+                const response = await fetch(`/api/blogs/${this.blogId}`);
                 
                 if (!response.ok) {
                     throw new Error('Failed to fetch blog');
                 }
 
                 const blog = await response.json();
-
                 this.formData = {
-                    event_title: blog.title,
-                    slug: blog.slug,
+                    title: blog.title,
                     excerpt: blog.excerpt || '',
                     featured_image: null,
                     featured_image_alt: blog.featured_image_alt || '',
@@ -59,7 +56,7 @@ mounted() {
                 };
 
                 if (blog.featured_image) {
-                    this.currentImage = `/storage/${blog.featured_image}`;
+                    this.currentImage = `/storage/blog-images/${blog.featured_image}`;
                 }
 
                 this.loading = false;
@@ -126,14 +123,8 @@ mounted() {
             this.isLoading = true;
             this.errors = {};
 
-            if (!this.formData.event_title.trim()) {
-                this.errors.event_title = 'Title is required';
-                this.isLoading = false;
-                return;
-            }
-
-            if (!this.formData.slug.trim()) {
-                this.errors.slug = 'Link header is required';
+            if (!this.formData.title.trim()) {
+                this.errors.title = 'Title is required';
                 this.isLoading = false;
                 return;
             }
@@ -146,19 +137,26 @@ mounted() {
 
             const formDataToSend = new FormData();
 
-            formDataToSend.append('title', this.formData.event_title);
-            formDataToSend.append('slug', this.formData.slug);
+            formDataToSend.append('_method', 'PATCH');
+
+            formDataToSend.append('title', this.formData.title);
             formDataToSend.append('excerpt', this.formData.excerpt || '');
             formDataToSend.append('content', this.formData.content);
 
             if (this.formData.featured_image instanceof File) {
                 formDataToSend.append('featured_image', this.formData.featured_image);
-                formDataToSend.append('featured_image_alt', this.formData.featured_image_alt || this.formData.event_title);
+                formDataToSend.append('featured_image_alt', this.formData.featured_image_alt || this.formData.title);
             }
 
             try {
+                const payload = {
+                    title: this.formData.title,
+                    excerpt: this.formData.excerpt || '',
+                    content: this.formData.content,
+                };
+
                 const response = await fetch(`/api/blogs/${this.blogId}`, {
-                    method: 'PUT',
+                    method: 'POST',
                     body: formDataToSend,
                     headers: {
                         'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
@@ -203,29 +201,17 @@ mounted() {
                     <span class="r-header-text">Post Details</span>
                 </div>
 
-                <p class="field-error" v-if="errors.event_title">{{ errors.event_title }}</p>
-                    <label for="title" class="r-body-text">Event Title</label>
+                <p class="field-error" v-if="errors.title">{{ errors.title }}</p>
+                    <label for="title" class="r-body-text">Title</label>
                 <input 
-                    v-model="formData.event_title"
+                    v-model="formData.title"
                     class="add-form-box title-input"
                     type="text"
-                    name="event_title"
+                    name="title"
                     placeholder="Post Title">
 
                 <section class="add-form-inputs">
                     <article class="twin-inputs">
-                        <!-- Slug/Link Header -->
-                        <div class="left-box">
-                            <label for="slug" class="r-header-text">Link Header</label>
-                            <p class="field-error" v-if="errors.slug">{{ errors.slug }}</p>
-                            <input
-                                v-model="formData.slug"
-                                class="add-form-box"
-                                type="text"
-                                name="slug"
-                                placeholder="e.g., history-of-london-aviation"
-                            >
-                        </div>
 
                         <!-- Excerpt -->
                         <div class="left-box">
@@ -267,12 +253,12 @@ mounted() {
                                 </div>
 
                                 <div v-else-if="!imagePreview && currentImage" class="image-preview">
-                                    <img :src="currentImage" :alt="formData.event_title">
+                                    <img :src="currentImage" :alt="formData.title">
                                     <button type="button" @click="replaceImage" class="remove-image-btn">Replace</button>
                                 </div>
 
                                 <div v-else class="image-preview">
-                                    <img :src="imagePreview" :alt="formData.event_title">
+                                    <img :src="imagePreview" :alt="formData.title">
                                     <button type="button" @click="removeImage" class="remove-image-btn">Remove</button>
                                 </div>
                             </div>

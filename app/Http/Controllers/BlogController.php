@@ -9,11 +9,12 @@ class BlogController extends Controller
     /**
      * Create a new blog post
      */
+
+
     public function store(Request $request)
     {
         $validated = $request->validate([
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|unique:blogs,slug|max:255',
             'excerpt' => 'nullable|string|max:500',
             'content' => 'required|string',
             'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120', // 5MB
@@ -29,7 +30,7 @@ class BlogController extends Controller
 
         $blog = Blog::create($validated);
         
-        return response()->json(['message' => 'Blog created successfully', 'blog' => $blog], 201);
+        return response()->json(['message' => 'Blog created successfully', 'blog' => $id], 201);
     }
 
     //Update an existing blog post
@@ -37,11 +38,14 @@ class BlogController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:blogs,slug,' . $blog->id,
             'excerpt' => 'nullable|string|max:500',
             'content' => 'required|string',
-            'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120',
-            'featured_image_alt' => 'nullable|string|max:255',
+        ]);
+
+        $blog->update([
+            'title' => $request->title,
+            'excerpt' => $request->excerpt,
+            'content' => $request->content
         ]);
 
         // Handle image upload and deletion of old image
@@ -55,9 +59,9 @@ class BlogController extends Controller
             $filename = time() . '_' . $file->getClientOriginalName();
             $file->storeAs('blog-images', $filename, 'public');
             $validated['featured_image'] = $filename;
+            $blog->featured_image = $filename;
+            $blog->save();  
         }
-
-        $blog->update($validated);
         
         return response()->json(['message' => 'Blog updated successfully', 'blog' => $blog]);
     }
@@ -92,7 +96,7 @@ class BlogController extends Controller
 
     public function show(Blog $blog)
     {
-        return view('blog-post', ['blog' => $blog]);
+        return response()->json($blog);
     }
 
     //Get the 3 most recent blogs
