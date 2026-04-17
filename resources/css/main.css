@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -24,8 +24,13 @@ h3, h4 {
   font-size: 2.5rem;
 }
 
+h1, h2, h3, h4 {
+  color: #B3262E;
+}
+
 p {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 a {
