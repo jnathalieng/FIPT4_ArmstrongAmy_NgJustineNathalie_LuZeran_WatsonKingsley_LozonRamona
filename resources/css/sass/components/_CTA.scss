@@ -1,53 +1,42 @@
 @use '../abstracts' as a;
 
+.read-more {
+    position: relative;
+    border-top: solid 10px a.$secondary-color;
 
-// <div class="CTA-con">
-//     <a href="about.html">
-//         <h4>Read More</h4>
-//         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#fff"><path d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"/></svg>
-//     </a>
-// </div>
-
-.CTA-con {
-
-    position: absolute;
+    // amalgamated logic from earlier CTA
     width: 100%;
     bottom: 0;
     left: 0;
     text-align: right;
-
-    a {
+    z-index: 99;
+    
+    .read-more-button {
+        background-color: a.$secondary-color;
+        position: absolute;
+        font-size: 20px;
         display: flex;
-        justify-content: right;
+        z-index: 100;
+        right: 0px;
+        top: -43px;
+        height: 30px;
+        min-width: 250px;
+        clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+        color: white;
         align-items: center;
-        text-decoration: none;
-        border-bottom: 0.5rem solid a.$primary-color;
+        justify-content: flex-end;
+        padding: 20px;
+        cursor: pointer;
 
-        h4 {
-            color: a.$white;
+        
+        transition: a.$t-time;
+
+        &:hover {
+            padding-right: 0.5rem;
         }
     }
 }
 
-#timeline-CTA {
-    position: relative;
-    width: 100%;
-    text-align: right;
-    border-top: 0.5rem solid a.$primary-color;
-
-    // make adjustments to general CTA based on the position and width values of timeline-CTA
-
-    a {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        text-decoration: none;
-        background-color: a.$primary-color;
-        width: 50%;
-        margin-left: auto;
-
-        h4 {
-            color: a.$white;
-        }
-    }
+.cta-arrow {
+    padding: 0 0.5rem;
 }

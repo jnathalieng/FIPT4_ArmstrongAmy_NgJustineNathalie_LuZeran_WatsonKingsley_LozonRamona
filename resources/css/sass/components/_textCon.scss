@@ -1,59 +1,43 @@
 @use '../abstracts' as a;
 
 .text-con {
-    background-color: a.$tertiary-color;
-    padding: 4rem;
-    position: relative;
-    font-family: "Monserrat", sans-serif;
-    border-bottom: solid 10px a.$primary-color;
-
-    h3 {
-        color: a.$primary-color;
-        margin: 2rem 0;
-    }
-
-    p {
-        color: a.$black;
-        margin-bottom: 1rem;
-    }
+    background-color: a.$primary-color;
+    width: 100%;
 }
 
-.text-con-b {
+.text-box {
+    width: 80%;
+    margin: auto;
     background-color: a.$white;
-    padding: 2rem;
-    position: relative;
-    font-family: "Monserrat", sans-serif;
+    box-shadow: a.$shadow;
 
-    h3 {
-        color: a.$primary-color;
-        margin: 2rem 0;
-    }
-
-    p {
-        color: a.$black;
-        margin: 2rem 0;
-    }
+    // has to match column gap below
+    padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
 
-    .text-con {
-        h3 {
-            font-size: 300%;
-        }
-
-        p {
-            margin-bottom: 4rem;
-        }
+    .text-box {
+        columns: 2;
+        column-gap: 4rem;
     }
+    // .text-con {
+    //     h3 {
+    //         font-size: 300%;
+    //     }
 
-    .text-con-b {
-        h3 {
-            font-size: 300%;
-        }
+    //     p {
+    //         margin-bottom: 4rem;
+    //     }
+    // }
 
-        p {
-            margin-bottom: 4rem;
-        }
-    }
+    // .text-con-b {
+    //     h3 {
+    //         font-size: 300%;
+    //     }
+
+    //     p {
+    //         margin-bottom: 4rem;
+    //     }
+    // }
 }

@@ -1,98 +1,48 @@
-body {
-  font-family: "Monserrat", sans-serif;
-  color: white;
-}
-
-h1 {
-  font-size: 64;
-}
-
-h2, h3, h4 {
-  font-size: 55;
-}
-
-p {
-  font-size: 24;
-}
-
-a {
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  h2, h3, h4 {
-    font-size: 300%;
-  }
-  .g-header-text {
-    font-size: 32px;
-  }
-}
-.header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 45px;
-}
-
-.body-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 32px;
-}
-
-.small-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 16px;
-}
-
-.r-title-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 64px;
-}
-
-.r-header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 40px;
-}
-
-.g-title-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 55px;
-}
-
-.g-header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #3c3c3c;
-  font-size: 32px;
-}
-
-.r-body-text {
-  font-family: "Monserrat", sans-serif;
-  color: #B3262E;
-  font-size: 24px;
-}
-
-.b-header-text {
-  font-family: "Monserrat", sans-serif;
-  color: #91B8D9;
-  font-size: 55px;
-}
-
-.b-body-text {
-  font-family: "Monserrat", sans-serif;
-  color: #91B8D9;
-  font-size: 24px;
-}
-
 @font-face {
   font-family: "typewriter";
   src: url(/public/fonts/SpecialElite-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3, h4 {
+  font-size: 2.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: #B3262E;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-highlight {
+  color: #B3262E;
+  font-weight: bold;
+}
+
 .header {
   z-index: 1000;
   position: fixed;
@@ -773,46 +723,9 @@ a {
   }
 }
 
-.CTA-con {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: right;
-}
-.CTA-con a {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  text-decoration: none;
-  border-bottom: 0.5rem solid #B3262E;
-}
-.CTA-con a h4 {
-  color: #fff;
-}
-
-#timeline-CTA {
-  position: relative;
-  width: 100%;
-  text-align: right;
-  border-top: 0.5rem solid #B3262E;
-}
-#timeline-CTA a {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  text-decoration: none;
-  background-color: #B3262E;
-  width: 50%;
-  margin-left: auto;
-}
-#timeline-CTA a h4 {
-  color: #fff;
-}
-
 .read-more {
   position: relative;
-  border-top: solid 10px #B3262E;
+  border-top: solid 10px #91B8D9;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -820,7 +733,7 @@ a {
   z-index: 99;
 }
 .read-more .read-more-button {
-  background-color: #B3262E;
+  background-color: #91B8D9;
   position: absolute;
   font-size: 20px;
   display: flex;
@@ -835,51 +748,33 @@ a {
   justify-content: flex-end;
   padding: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.read-more .read-more-button:hover {
+  padding-right: 0.5rem;
+}
+
+.cta-arrow {
+  padding: 0 0.5rem;
 }
 
 .text-con {
-  background-color: #f7f7f7;
-  padding: 4rem;
-  position: relative;
-  font-family: "Monserrat", sans-serif;
-  border-bottom: solid 10px #B3262E;
-}
-.text-con h3 {
-  color: #B3262E;
-  margin: 2rem 0;
-}
-.text-con p {
-  color: #000;
-  margin-bottom: 1rem;
+  background-color: #B3262E;
+  width: 100%;
 }
 
-.text-con-b {
+.text-box {
+  width: 80%;
+  margin: auto;
   background-color: #fff;
-  padding: 2rem;
-  position: relative;
-  font-family: "Monserrat", sans-serif;
-}
-.text-con-b h3 {
-  color: #B3262E;
-  margin: 2rem 0;
-}
-.text-con-b p {
-  color: #000;
-  margin: 2rem 0;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
-  .text-con h3 {
-    font-size: 300%;
-  }
-  .text-con p {
-    margin-bottom: 4rem;
-  }
-  .text-con-b h3 {
-    font-size: 300%;
-  }
-  .text-con-b p {
-    margin-bottom: 4rem;
+  .text-box {
+    columns: 2;
+    column-gap: 4rem;
   }
 }
 .hero-section {
@@ -1647,93 +1542,6 @@ body {
   overflow-x: hidden;
 }
 
-#date-and-blog-section {
-  position: relative;
-}
-
-#dynamic-date {
-  background-color: #91B8D9;
-  padding: 1rem;
-}
-
-#blog-text-content {
-  background-color: #fff;
-}
-#blog-text-content h2, #blog-text-content p {
-  margin: 1rem 2rem;
-}
-#blog-text-content p {
-  margin-bottom: 2rem;
-}
-
-#blog-con {
-  background-color: #91B8D9;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.blog-box:nth-child(2),
-.blog-box:nth-child(3) {
-  display: none;
-}
-
-.blog-box {
-  background-color: #fff;
-  width: 100%;
-  aspect-ratio: 1/1;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #3c3c3c;
-}
-.blog-box svg {
-  padding: 4rem;
-  height: auto;
-}
-.blog-box p {
-  font-size: 200%;
-}
-
-@media screen and (min-width: 768px) {
-  #dynamic-date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  #dynamic-date h3, #dynamic-date p {
-    position: relative;
-    left: 10%;
-    font-size: 150%;
-    margin: 0.5rem;
-  }
-  #blog-text-content h2 {
-    font-size: 200%;
-    position: relative;
-    left: 10%;
-  }
-  #blog-text-content p {
-    position: relative;
-    left: 10%;
-  }
-  .blog-box:nth-child(2),
-  .blog-box:nth-child(3) {
-    display: block;
-  }
-  #blog-con {
-    gap: 2rem;
-    padding: 2rem;
-  }
-  .blog-box {
-    flex: 1;
-    margin-bottom: 2rem;
-  }
-}
-#home-intro {
-  background-color: rgba(60, 60, 60, 0.2);
-  position: relative;
-}
-
 #canteen-hero {
   background-image: url("../../../public/images/canteen-images/mobile/m-airmans-hero.png");
 }
@@ -2044,7 +1852,7 @@ p.typewriter-quote {
 
 .dossier {
   background-image: url(/public/images/BOB-images/folder-texture.png);
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 100vw;
   height: 80vh;
@@ -2068,7 +1876,7 @@ p.typewriter-quote {
   color: #000;
   width: 80%;
   font-size: 1rem;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   transform: translate(0, 0);
   cursor: pointer;
@@ -2091,7 +1899,7 @@ p.typewriter-quote {
   padding: 0 2rem;
   background-image: url(/public/images/BOB-images/folder-texture.png);
   border-radius: 1rem 1rem 0 0;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   color: #000;
   text-align: center;
   font-size: 1.5rem;
@@ -4116,4 +3924,4 @@ p.typewriter-quote {
   .tls-content-con .image-grid-overlay p {
     display: none;
   }
-}
+}/*# sourceMappingURL=main.css.map */
