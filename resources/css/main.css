@@ -723,46 +723,9 @@ a {
   }
 }
 
-.CTA-con {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: right;
-}
-.CTA-con a {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  text-decoration: none;
-  border-bottom: 0.5rem solid #B3262E;
-}
-.CTA-con a h4 {
-  color: #fff;
-}
-
-#timeline-CTA {
-  position: relative;
-  width: 100%;
-  text-align: right;
-  border-top: 0.5rem solid #B3262E;
-}
-#timeline-CTA a {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  text-decoration: none;
-  background-color: #B3262E;
-  width: 50%;
-  margin-left: auto;
-}
-#timeline-CTA a h4 {
-  color: #fff;
-}
-
 .read-more {
   position: relative;
-  border-top: solid 10px #B3262E;
+  border-top: solid 10px #91B8D9;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -770,7 +733,7 @@ a {
   z-index: 99;
 }
 .read-more .read-more-button {
-  background-color: #B3262E;
+  background-color: #91B8D9;
   position: absolute;
   font-size: 20px;
   display: flex;
@@ -785,6 +748,14 @@ a {
   justify-content: flex-end;
   padding: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.read-more .read-more-button:hover {
+  padding-right: 0.5rem;
+}
+
+.cta-arrow {
+  padding: 0 0.5rem;
 }
 
 .text-con {
@@ -797,13 +768,13 @@ a {
   margin: auto;
   background-color: #fff;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
   .text-box {
     columns: 2;
-    column-gap: 2rem;
+    column-gap: 4rem;
   }
 }
 .hero-section {

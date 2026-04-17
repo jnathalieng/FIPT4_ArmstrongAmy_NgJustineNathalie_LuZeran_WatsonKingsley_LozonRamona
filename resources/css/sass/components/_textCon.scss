@@ -11,14 +11,15 @@
     background-color: a.$white;
     box-shadow: a.$shadow;
 
-    padding: 2rem;
+    // has to match column gap below
+    padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
 
     .text-box {
         columns: 2;
-        column-gap: 2rem;
+        column-gap: 4rem;
     }
     // .text-con {
     //     h3 {
