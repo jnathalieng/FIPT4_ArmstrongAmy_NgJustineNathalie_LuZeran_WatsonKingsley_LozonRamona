@@ -838,48 +838,22 @@ a {
 }
 
 .text-con {
-  background-color: #f7f7f7;
-  padding: 4rem;
-  position: relative;
-  font-family: "Monserrat", sans-serif;
-  border-bottom: solid 10px #B3262E;
-}
-.text-con h3 {
-  color: #B3262E;
-  margin: 2rem 0;
-}
-.text-con p {
-  color: #000;
-  margin-bottom: 1rem;
+  background-color: #B3262E;
+  width: 100%;
 }
 
-.text-con-b {
+.text-box {
+  width: 80%;
+  margin: auto;
   background-color: #fff;
+  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
   padding: 2rem;
-  position: relative;
-  font-family: "Monserrat", sans-serif;
-}
-.text-con-b h3 {
-  color: #B3262E;
-  margin: 2rem 0;
-}
-.text-con-b p {
-  color: #000;
-  margin: 2rem 0;
 }
 
 @media screen and (min-width: 768px) {
-  .text-con h3 {
-    font-size: 300%;
-  }
-  .text-con p {
-    margin-bottom: 4rem;
-  }
-  .text-con-b h3 {
-    font-size: 300%;
-  }
-  .text-con-b p {
-    margin-bottom: 4rem;
+  .text-box {
+    columns: 2;
+    column-gap: 2rem;
   }
 }
 .hero-section {
@@ -1645,93 +1619,6 @@ a {
 
 body {
   overflow-x: hidden;
-}
-
-#date-and-blog-section {
-  position: relative;
-}
-
-#dynamic-date {
-  background-color: #91B8D9;
-  padding: 1rem;
-}
-
-#blog-text-content {
-  background-color: #fff;
-}
-#blog-text-content h2, #blog-text-content p {
-  margin: 1rem 2rem;
-}
-#blog-text-content p {
-  margin-bottom: 2rem;
-}
-
-#blog-con {
-  background-color: #91B8D9;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.blog-box:nth-child(2),
-.blog-box:nth-child(3) {
-  display: none;
-}
-
-.blog-box {
-  background-color: #fff;
-  width: 100%;
-  aspect-ratio: 1/1;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #3c3c3c;
-}
-.blog-box svg {
-  padding: 4rem;
-  height: auto;
-}
-.blog-box p {
-  font-size: 200%;
-}
-
-@media screen and (min-width: 768px) {
-  #dynamic-date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  #dynamic-date h3, #dynamic-date p {
-    position: relative;
-    left: 10%;
-    font-size: 150%;
-    margin: 0.5rem;
-  }
-  #blog-text-content h2 {
-    font-size: 200%;
-    position: relative;
-    left: 10%;
-  }
-  #blog-text-content p {
-    position: relative;
-    left: 10%;
-  }
-  .blog-box:nth-child(2),
-  .blog-box:nth-child(3) {
-    display: block;
-  }
-  #blog-con {
-    gap: 2rem;
-    padding: 2rem;
-  }
-  .blog-box {
-    flex: 1;
-    margin-bottom: 2rem;
-  }
-}
-#home-intro {
-  background-color: rgba(60, 60, 60, 0.2);
-  position: relative;
 }
 
 #canteen-hero {
@@ -4116,4 +4003,4 @@ p.typewriter-quote {
   .tls-content-con .image-grid-overlay p {
     display: none;
   }
-}
+}/*# sourceMappingURL=main.css.map */
