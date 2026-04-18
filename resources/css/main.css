@@ -5,6 +5,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "montserrat";
+  src: url(/public/fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
   font-family: "inter";
   src: url(/public/fonts/Inter.ttf) format("truetype");
   font-weight: 400;

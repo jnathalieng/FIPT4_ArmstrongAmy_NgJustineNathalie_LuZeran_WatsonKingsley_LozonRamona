@@ -54,6 +54,14 @@ $bp-mobile:           600px;
     font-style: normal;
 }
 
+// MONTSERRAT FONT
+@font-face {
+    font-family: 'montserrat';
+    src: url(/public/fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 // INTER PARAGRAPH FONT
 @font-face {
     font-family: 'inter';
@@ -62,5 +70,5 @@ $bp-mobile:           600px;
     font-style: normal;
 }
 
-$font-h: "Montserrat", sans-serif;
+$font-h: "montserrat", sans-serif;
 $font-p: "inter", sans-serif;
