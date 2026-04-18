@@ -1242,17 +1242,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 100px;
-  border-bottom: solid 5px #B3262E;
-}
-
-.gray-background {
-  background-color: rgba(60, 60, 60, 0.3);
-}
-
-.white-background {
-  background-color: white;
 }
 
 .content-box-title {
@@ -1261,9 +1250,6 @@ button {
   flex-direction: column;
   justify-content: center;
   color: #B3262E;
-  width: 80%;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 .content-box-subtitle {
@@ -1272,10 +1258,6 @@ button {
   flex-direction: column;
   justify-content: center;
   color: #B3262E;
-  width: 80%;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 30px;
 }
 
 .content-box-text {
@@ -1283,11 +1265,6 @@ button {
   display: flex;
   flex-direction: column;
   color: black;
-  font-size: 16px;
-  font-weight: bolder;
-  width: 80%;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 .map-svg-element {
