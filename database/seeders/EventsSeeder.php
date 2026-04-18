@@ -25,3 +25,9 @@ class EventsSeeder extends Seeder
         ]);
     }
 }
+
+//london airshow event
+//remembrance day
+//poker nights
+//uker nights
+//darts

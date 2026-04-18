@@ -2840,6 +2840,11 @@ p.typewriter-quote {
   cursor: pointer;
 }
 
+.blog-post-container {
+  min-height: 100vh;
+  margin-top: 20vh;
+}
+
 .cms-page-top {
   margin-top: 15vh;
   width: 100%;
@@ -3943,4 +3948,4 @@ p.typewriter-quote {
   .tls-content-con .image-grid-overlay p {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}

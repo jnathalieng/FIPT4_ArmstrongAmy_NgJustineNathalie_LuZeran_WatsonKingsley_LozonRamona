@@ -4,30 +4,35 @@ export default {
             blogs: [],
             currentBlog: null,
             isPostPage: false,
-            isMobile: window.innerwidth < 768
+            isMobile: window.innerWidth < 768
         }
     },
-    mounted() {
-        if (!this.isPostPage) {
-            fetch('http://127.0.0.1:8000/api/blogs')
-            .then(res => {
-                if(!res.ok) {
-                    throw new Error("failed to Fetch the Blogs");
-                }
-                return res.json();
-            })
-            .then(data => {
-                this.blogs = data;
-            })
-            .catch(err => console.error('Error Loading blogs', err));
-        }
-        window.addEventListener('resize', () => {
-            this.isMobile = window.innerwidth < 768;
-        });
-    },
+mounted() {
+    const el = document.getElementById('blog-app');
+    if (el && el.dataset.blog) {
+        this.currentBlog = JSON.parse(el.dataset.blog);
+        this.isPostPage = true;
+    } else {
+        fetch('http://127.0.0.1:8000/api/blogs')
+        .then(res => {
+            if(!res.ok) throw new Error("failed to Fetch the Blogs");
+            return res.json();
+        })
+        .then(data => {
+            this.blogs = data;
+            this.loading = false;
+        })
+        .catch(err => console.error('Error Loading blogs', err));
+    }
+
+    window.addEventListener('resize', () => {
+        this.isMobile = window.innerWidth < 768; // ← fixed capital W
+    });
+},
+
     methods: {
-        goToBlog(id) {
-            window.location.href = `/blogs/${id}`;
+        goToBlog(blogId) {
+            window.location.href = `/api/blog-post/${blogId}`;
         },
         goBackToBlog() {
             window.location.href = '/blogs';
@@ -58,7 +63,7 @@ export default {
                     >
                         <img 
                             v-if="blog.featured_image"
-                            :src="'/images/blog/' + blog.featured_image" 
+                            :src="'/storage/blog-images/' + blog.featured_image" 
                             :alt="blog.featured_image_alt"
                         >
                         <h2 class="r-title-text">{{ blog.title }}</h2>
@@ -74,7 +79,7 @@ export default {
             <article class="blog-post">
                 <img 
                     v-if="currentBlog.featured_image"
-                    :src="'/images/blog/' + currentBlog.featured_image" 
+                    :src="'/storage/blog-images/' + currentBlog.featured_image" 
                     :alt="currentBlog.featured_image_alt"
                     class="featured-image"
                 >
