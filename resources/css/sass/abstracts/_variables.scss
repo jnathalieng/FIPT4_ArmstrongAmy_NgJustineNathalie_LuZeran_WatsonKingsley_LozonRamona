@@ -53,3 +53,10 @@ $bp-mobile:           600px;
     font-weight: normal;
     font-style: normal;
 }
+
+// INTER PARAGRAPH FONT
+@font-face {
+    font-family: 'inter';
+    src: url(/public/fonts/Inter.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;

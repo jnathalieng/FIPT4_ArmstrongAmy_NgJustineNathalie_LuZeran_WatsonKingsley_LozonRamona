@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "inter";
+  src: url(/public/fonts/Inter.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 html {
   font-size: 16px;
 }
