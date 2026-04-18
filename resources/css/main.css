@@ -770,7 +770,7 @@ button {
   transition: all 0.3s ease;
 }
 .read-more .read-more-button:hover {
-  padding-right: 0.5rem;
+  padding-right: 1.5rem;
 }
 
 .cta-arrow {
