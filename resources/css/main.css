@@ -1058,8 +1058,10 @@ button {
   transform: translateY(100px);
   z-index: -1;
   background-color: #91B8D9;
-  height: 80px;
+  height: 20vh;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .card-carousel .carousel {
   display: flex;
