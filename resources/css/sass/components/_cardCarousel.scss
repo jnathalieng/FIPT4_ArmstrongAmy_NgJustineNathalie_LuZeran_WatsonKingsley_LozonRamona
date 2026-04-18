@@ -1,605 +1,230 @@
 @use '../abstracts' as a;
 
+.card-carousel {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
 
-// #photo-1 {
-//     background-image: ;
-// }
+    // absolute reference
+    position: relative;
 
-    .card-carousel {
-        display: flex;
-        flex-direction: column;
-        overflow-x: scroll;
+    .carousel-background {
+        position: absolute;
+
+        // absolute reference
+        top: 50%;
+        transform: translateY(-50%);
+
+        z-index: -1;
+        background-color: a.$secondary-color;
+        height: 20vh;
         width: 100%;
-        white-space: nowrap;
+    }
+    .carousel {
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        animation: scroll-left 60s linear infinite;
 
-        .carousel-background {
-            position: absolute;
-            transform: translateY(100px);
-            z-index: -1;
-            background-color: a.$secondary-color;
-            height: 80px;
-            width: 100%;
+        &:hover {
+            animation-play-state: paused;
         }
-        .carousel {
-            display: flex;
-            flex-direction: row;
-            width: max-content;
-            animation: scroll-left 60s linear infinite;
 
-            &:hover {
-                animation-play-state: paused;
-            }
-
-                    @keyframes scroll-left {
+        @keyframes scroll-left {
             0%   { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
-            .event-card {
-                background-color: white;
-                position: relative;
-                z-index: 100;
-                display: flex;
-                width: 180px;
-                height: 180px;
-                box-shadow: 2px 2px 2px black;
-                margin: 10px;
-                flex-direction: column;
-                border: solid 1px rgba(a.$dark-background, 0.3);
-                container-type: inline-size;
 
-                .sub-card {
-                    background-color: a.$primary-color;
+        .event-card {
+            background-color: white;
+            position: relative;
+            z-index: 100;
+            display: flex;
+            width: 30vh;
+            height: 30vh;
+            box-shadow: a.$shadow;
+            margin: 2vw;
+            flex-direction: column;
+            border: solid 0.5px rgba(a.$dark-background, 0.3);
+            container-type: inline-size;
+
+            transition: a.$t-time;
+
+            &:hover {
+                transform: a.$scale-up;
+            }
+
+            .sub-card {
+                background-color: a.$primary-color;
+                position: absolute;
+                width: 33%;
+                height: 33%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                span {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+            .card-image-con {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                .carousel-card-image {
                     position: absolute;
-                    width: 33%;
-                    height: 33%;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    span {
-                        font-size: 12px;
-                        font-weight: bold;
-                    }
+                    width: 60%;
+                    height: 60%;
+                    top: 15%;
+                    left: 20%;
                 }
-                .card-image-con {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    .carousel-card-image {
-                        position: absolute;
-                        display: flex;
-                        width: 60%;
-                        height: 60%;
-                        top: 15%;
-                        left: 20%;
-                    }
-                }
-                .card-title {
-                        display: flex;
-                        color: black;
-                        position: absolute;
-                        font-size: 15px;
-                        top: 50%;
-                        left: 10%;
-                    }
-                .card-text {
+            }
+            .card-title {
+                    display: flex;
                     color: black;
                     position: absolute;
-                    top: 60%;
-                    font-size: 14px;
+                    font-size: 15px;
+                    top: 50%;
                     left: 10%;
-                    white-space: normal;
-                    p {
-                    width: 80%;
-                    height: 20%px;
-                    font-size: 12px;
-                }}
-                .card-button {
-                    background-color: a.$primary-color;
-                    position: absolute;
-                    display: flex;
-                    right: 0px;
-                    bottom: 0px;
-                    height: 16%;
-                    width: 70%;
-                    clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
-                    color: white;
-                    align-items: center;
-                    justify-content: flex-end;
-                    padding-right: 10px;
-                    font-size: 14px;
-                }           
-            }
+                }
+            .card-text {
+                color: black;
+                position: absolute;
+                top: 60%;
+                font-size: 14px;
+                left: 10%;
+                white-space: normal;
+                p {
+                width: 80%;
+                height: 20%px;
+                font-size: 12px;
+            }}
+            .card-button {
+                background-color: a.$primary-color;
+                position: absolute;
+                display: flex;
+                right: 0px;
+                bottom: 0px;
+                height: 16%;
+                width: 70%;
+                clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 0% 100%);
+                color: white;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 10px;
+                font-size: 14px;
+            }           
         }
     }
+}
 
 @media (min-width:768px) {
-    
+
     .card-carousel {
+
         .carousel-background {
-            position: absolute;
-            transform: translateY(100px);
-            height: 120px;
+            height: 30vh;
         }
+
         .carousel {
             .event-card {
-                width: 250px;
-                height: 250px;
-                box-shadow: 2px 2px 2px black;
-                margin: 10px;
+                width: 25vw;
+                height: 25vw;
 
-                .sub-card {
-                    width: 33%;
-                    height: 33%;
-                    span {
-                        font-size: 12px;
-                    }
-                }
-                .card-title {
-                        font-size: 15px;
-                        top: 55%;
-                        left: 10%;
-                    }
-                .card-text {
-                    top: 65%;
-                    left: 10%;
-                    p {
-                    width: 80%;
-                    height: 20%px;
-                    font-size: 15px;
-                }}
-                .card-button {
-                    height: 16%;
-                    width: 60%;
-                    padding-right: 10px;
-                    font-size: 14px;
-                }           
+                margin: 1rem;
             }
         }
     }
+//     .card-carousel {
+//         .carousel-background {
+//             position: absolute;
+//             transform: translateY(100px);
+//             height: 120px;
+//         }
+//         .carousel {
+//             .event-card {
+//                 width: 250px;
+//                 height: 250px;
+//                 box-shadow: 2px 2px 2px black;
+//                 margin: 10px;
+
+//                 .sub-card {
+//                     width: 33%;
+//                     height: 33%;
+//                     span {
+//                         font-size: 12px;
+//                     }
+//                 }
+//                 .card-title {
+//                         font-size: 15px;
+//                         top: 55%;
+//                         left: 10%;
+//                     }
+//                 .card-text {
+//                     top: 65%;
+//                     left: 10%;
+//                     p {
+//                     width: 80%;
+//                     height: 20%px;
+//                     font-size: 15px;
+//                 }}
+//                 .card-button {
+//                     height: 16%;
+//                     width: 60%;
+//                     padding-right: 10px;
+//                     font-size: 14px;
+//                 }           
+//             }
+//         }
+//     }
 }
 
-@media (min-width:1200px) {
-    .card-carousel {
-        .carousel-background {
-            position: absolute;
-            transform: translateY(100px);
-            height: 300px;
-        }
-        .carousel {
-            .event-card {
-                width: 500px;
-                height: 500px;
-                box-shadow: 2px 2px 2px black;
-                margin: 10px;
-
-                .sub-card {
-                    width: 33%;
-                    height: 33%;
-                    span {
-                        font-size: 20px;
-                    }
-                }
-                .card-title {
-                        font-size: 24px;
-                        top: 65%;
-                        left: 10%;
-                    }
-                .card-text {
-                    top: 75%;
-                    left: 10%;
-                    p {
-                    width: 80%;
-                    height: 20%px;
-                    font-size: 20px;
-                }}
-                .card-button {
-                    height: 12%;
-                    width: 60%;
-                    padding-right: 10px;
-                    font-size: 20px;
-                }           
-            }
-        }
-    }
-}
-
-        //     <!-- events carousel -->
-        // <section class="card-carousel" id="upcoming-events">
-            
-        //     <!-- carousel title -->
-        //     <div class="underline-title">
-        //         <h1>UPCOMING EVENTS</h1>
-        //     </div>
-
-        //     <!-- carousel container -->
-        //     <div class="carousel">
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //     <!-- Carousel Card -->
-        //     <div class="event-card">
-
-        //         <!-- top-left sub-card -->
-        //         <div class="sub-card">
-        //             <span>MAY</span>
-        //             <span>30<span>
-        //             <span>2026</span>
-        //         </div>
-
-        //         <!-- card main image -->
-        //             <div class="card-image-con">
-        //                  <img class="carousel-card-image" src="/images/icons/LAM-logo-no-text-red.svg">
-        //             <!-- <img class="carousel-card-image" href="<? $row${db-image-row}"> -->
-                    
-        //             <!-- card title -->
-        //             </div>
-        //                 <h3 class="card-title">
-        //                     TITLE
-        //                 </h3>
-
-        //             <!-- card text content     -->
-        //             <div class="card-text">
-        //                 <P>
-        //                     Lorem ipsum dolor sit amet, consectetur adipiscing.
-        //                 </P>
-        //             </div>
-
-        //             <!-- card bottom button -->
-        //         <a class="card-button">Read More<span>&#8594</span></a>
-        //         </div>
-
-        //         <!-- carousel background -->
-        //     <div class="carousel-background"></div>
-        // </section>
+// @media (min-width:1200px) {
+//     .card-carousel {
+//         .carousel-background {
+//             position: absolute;
+//             transform: translateY(100px);
+//             height: 300px;
+//         }
+//         .carousel {
+//             .event-card {
+//                 width: 500px;
+//                 height: 500px;
+//                 box-shadow: 2px 2px 2px black;
+//                 margin: 10px;
+
+//                 .sub-card {
+//                     width: 33%;
+//                     height: 33%;
+//                     span {
+//                         font-size: 20px;
+//                     }
+//                 }
+//                 .card-title {
+//                         font-size: 24px;
+//                         top: 65%;
+//                         left: 10%;
+//                     }
+//                 .card-text {
+//                     top: 75%;
+//                     left: 10%;
+//                     p {
+//                     width: 80%;
+//                     height: 20%px;
+//                     font-size: 20px;
+//                 }}
+//                 .card-button {
+//                     height: 12%;
+//                     width: 60%;
+//                     padding-right: 10px;
+//                     font-size: 20px;
+//                 }           
+//             }
+//         }
+//     }
+// }

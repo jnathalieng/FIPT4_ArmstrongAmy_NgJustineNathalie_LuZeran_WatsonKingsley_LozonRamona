@@ -1052,13 +1052,15 @@ button {
   overflow-x: scroll;
   width: 100%;
   white-space: nowrap;
+  position: relative;
 }
 .card-carousel .carousel-background {
   position: absolute;
-  transform: translateY(100px);
+  top: 50%;
+  transform: translateY(-50%);
   z-index: -1;
   background-color: #91B8D9;
-  height: 80px;
+  height: 20vh;
   width: 100%;
 }
 .card-carousel .carousel {
@@ -1083,13 +1085,17 @@ button {
   position: relative;
   z-index: 100;
   display: flex;
-  width: 180px;
-  height: 180px;
-  box-shadow: 2px 2px 2px black;
-  margin: 10px;
+  width: 30vh;
+  height: 30vh;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 2vw;
   flex-direction: column;
-  border: solid 1px rgba(60, 60, 60, 0.3);
+  border: solid 0.5px rgba(60, 60, 60, 0.3);
   container-type: inline-size;
+  transition: all 0.3s ease;
+}
+.card-carousel .carousel .event-card:hover {
+  transform: scale(110%);
 }
 .card-carousel .carousel .event-card .sub-card {
   background-color: #B3262E;
@@ -1158,82 +1164,12 @@ button {
 
 @media (min-width: 768px) {
   .card-carousel .carousel-background {
-    position: absolute;
-    transform: translateY(100px);
-    height: 120px;
+    height: 30vh;
   }
   .card-carousel .carousel .event-card {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 2px black;
-    margin: 10px;
-  }
-  .card-carousel .carousel .event-card .sub-card {
-    width: 33%;
-    height: 33%;
-  }
-  .card-carousel .carousel .event-card .sub-card span {
-    font-size: 12px;
-  }
-  .card-carousel .carousel .event-card .card-title {
-    font-size: 15px;
-    top: 55%;
-    left: 10%;
-  }
-  .card-carousel .carousel .event-card .card-text {
-    top: 65%;
-    left: 10%;
-  }
-  .card-carousel .carousel .event-card .card-text p {
-    width: 80%;
-    height: 20% px;
-    font-size: 15px;
-  }
-  .card-carousel .carousel .event-card .card-button {
-    height: 16%;
-    width: 60%;
-    padding-right: 10px;
-    font-size: 14px;
-  }
-}
-@media (min-width: 1200px) {
-  .card-carousel .carousel-background {
-    position: absolute;
-    transform: translateY(100px);
-    height: 300px;
-  }
-  .card-carousel .carousel .event-card {
-    width: 500px;
-    height: 500px;
-    box-shadow: 2px 2px 2px black;
-    margin: 10px;
-  }
-  .card-carousel .carousel .event-card .sub-card {
-    width: 33%;
-    height: 33%;
-  }
-  .card-carousel .carousel .event-card .sub-card span {
-    font-size: 20px;
-  }
-  .card-carousel .carousel .event-card .card-title {
-    font-size: 24px;
-    top: 65%;
-    left: 10%;
-  }
-  .card-carousel .carousel .event-card .card-text {
-    top: 75%;
-    left: 10%;
-  }
-  .card-carousel .carousel .event-card .card-text p {
-    width: 80%;
-    height: 20% px;
-    font-size: 20px;
-  }
-  .card-carousel .carousel .event-card .card-button {
-    height: 12%;
-    width: 60%;
-    padding-right: 10px;
-    font-size: 20px;
+    width: 25vw;
+    height: 25vw;
+    margin: 1rem;
   }
 }
 .color-content-box {
@@ -1245,14 +1181,13 @@ button {
   padding: 8vh 0;
 }
 
-.content-box-title {
+.content-box-title, .content-box-subtitle, .content-box-text {
   position: relative;
   display: flex;
-}
-
-.content-box-subtitle {
-  position: relative;
-  display: flex;
+  width: 100%;
+  text-align: left;
+  max-width: 80%;
+  padding: 0 4rem;
 }
 
 .content-box-text {
