@@ -10,7 +10,7 @@ $accent-color: #FFC000;
 $black: #000;
 $white: #fff;
 
-$shadow: -4px 2px 8px rgb(0, 0, 0, 0.10), 4px 2px 8px rgb(0, 0, 0, 0.10),;
+$shadow: -4px 2px 8px rgb(0, 0, 0, 0.10), 4px 2px 8px rgb(0, 0, 0, 0.10);
 $body-text-color: #ffffff;
 $menu-element-color: rgb(37, 37, 37);
 $dark-background: #3c3c3c;
@@ -53,3 +53,22 @@ $bp-mobile:           600px;
     font-weight: normal;
     font-style: normal;
 }
+
+// MONTSERRAT FONT
+@font-face {
+    font-family: 'montserrat';
+    src: url(/public/fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+// INTER PARAGRAPH FONT
+@font-face {
+    font-family: 'inter';
+    src: url(/public/fonts/Inter.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-h: "montserrat", sans-serif;
+$font-p: "inter", sans-serif;
