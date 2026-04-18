@@ -124,9 +124,18 @@ else if(document.body.dataset.page === "blog") {
     app.mount('#blog-app');
 }
 else if(document.body.dataset.page === "blog-post") {
-    const blogData = JSON.parse(document.querySelector('#blog-post-app').dataset.blog);
-    const app = createApp({...blog, ...{ data: () => ({ currentBlog: blogData }) }});
-    app.mount('#blog-post-app');
+    const blogData = JSON.parse(document.querySelector('#blog-app').dataset.blog);
+    console.log(blogData);
+    const app = createApp({...blog,
+                                data() {
+                                    return {
+                                        ...blog.data(),
+                                        currentBlog: blogData,
+                                        isPostPage: true,
+                                    }
+                                } 
+                            });
+    app.mount('#blog-app');
 }
 else if(document.body.dataset.page === "blog-manager") {
     console.log('welcome to the blog manager');

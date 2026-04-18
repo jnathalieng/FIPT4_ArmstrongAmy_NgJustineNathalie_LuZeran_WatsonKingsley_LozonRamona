@@ -41,6 +41,7 @@ Route::post('/blogs', [BlogController::class, 'store']);
 Route::patch('/blogs/{blog}', [BlogController::class, 'update']);
 Route::delete('/blogs/{blog}', [BlogController::class, 'destroy']);
 Route::get('/blogs/{blog}', [BlogController::class, 'show']);
+Route::get('/blog-post/{blog}', [BlogController::class, 'showPost']);
 
 // COMMEMORATION MANAGER ROUTES - ZERAN
 Route::get('/comm', [CommController::class, 'index'])->name('comm');

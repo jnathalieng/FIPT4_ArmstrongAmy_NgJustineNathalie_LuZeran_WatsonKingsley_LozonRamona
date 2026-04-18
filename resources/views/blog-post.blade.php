@@ -124,7 +124,7 @@
     </header>
 
     <main>
-        <div id="blog-post-app" data-blog="{{ json_encode($blog) }}"></div>
+        <div id="blog-app" data-blog="{{ json_encode($blog) }}"></div>
     </main>
 
 <footer id="main-footer">

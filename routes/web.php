@@ -67,10 +67,6 @@ Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
 
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
-
 //CMS routes
 
 Route::get('/login', function () {
@@ -96,6 +92,14 @@ Route::get('/events-manager-edit/{id}', function ($id) {
 })->name('events-manager-edit');
 
 // blog
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('/blog-post', function () {
+    return view('blog-post');
+})->name('blog-post');
 
 Route::get('/blog-manager', function () {
     return view('blog-manager');

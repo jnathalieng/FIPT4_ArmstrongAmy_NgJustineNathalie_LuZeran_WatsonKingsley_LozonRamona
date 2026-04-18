@@ -99,6 +99,12 @@ class BlogController extends Controller
         return response()->json($blog);
     }
 
+    public function showPost(Blog $blog)
+    {
+            //dd($blog); 
+        return view('blog-post', ['blog' => $blog]);
+    }
+
     //Get the 3 most recent blogs
     public function getLatest()
     {
