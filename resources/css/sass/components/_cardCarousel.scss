@@ -50,6 +50,12 @@
             border: solid 0.5px rgba(a.$dark-background, 0.3);
             container-type: inline-size;
 
+            transition: a.$t-time;
+
+            &:hover {
+                transform: a.$scale-up;
+            }
+
             .sub-card {
                 background-color: a.$primary-color;
                 position: absolute;

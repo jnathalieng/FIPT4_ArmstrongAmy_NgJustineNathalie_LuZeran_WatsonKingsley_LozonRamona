@@ -1092,6 +1092,10 @@ button {
   flex-direction: column;
   border: solid 0.5px rgba(60, 60, 60, 0.3);
   container-type: inline-size;
+  transition: all 0.3s ease;
+}
+.card-carousel .carousel .event-card:hover {
+  transform: scale(110%);
 }
 .card-carousel .carousel .event-card .sub-card {
   background-color: #B3262E;
