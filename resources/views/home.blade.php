@@ -261,6 +261,7 @@
         </div>
 
         <section class="color-content-box white-background" id="wte-gallery">
+
         <h3 class="content-box-title">Upcoming Events</h3>
         <p class="content-box-text">Check out some upcoming events happening around London!</p>
    
