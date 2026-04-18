@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  color: #000;
 }
 
 h1 {
@@ -38,11 +38,13 @@ h3, h4 {
 
 h1, h2, h3, h4 {
   color: #B3262E;
+  font-family: "montserrat", sans-serif;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.6;
+  font-family: "inter", sans-serif;
 }
 
 a {

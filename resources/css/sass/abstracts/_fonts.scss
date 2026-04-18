@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    color: a.$black;
 }
 
 h1 {
@@ -22,11 +22,13 @@ h3, h4 {
 
 h1, h2, h3, h4 {
     color: a.$primary-color;
+    font-family: a.$font-h;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.6;
+    font-family: a.$font-p;
 }
 
 a {
