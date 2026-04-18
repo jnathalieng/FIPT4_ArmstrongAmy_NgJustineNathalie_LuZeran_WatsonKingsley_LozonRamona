@@ -43,10 +43,23 @@ export default {
         },
         resetForm() {
             this.formData = {
-                name: '', picture: '', rank: '', info: '', unit: '',
-                service_number: '', corps: '', age: '', birth: '',
-                death: '', enlist: '', grave: '',
-                date: '', aircraft: '', incident: '', location: '', details: ''
+                name: '', 
+                picture: '', 
+                rank: '', 
+                info: '', 
+                unit: '',
+                service_number: '', 
+                corps: '', 
+                age: '', 
+                birth: '',
+                death: '', 
+                enlist: '', 
+                grave: '',
+                date: '', 
+                aircraft: '', 
+                incident: '', 
+                location: '', 
+                details: ''
             };
         },
         validate() {
