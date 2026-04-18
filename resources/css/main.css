@@ -1245,14 +1245,13 @@ button {
   padding: 8vh 0;
 }
 
-.content-box-title {
+.content-box-title, .content-box-subtitle, .content-box-text {
   position: relative;
   display: flex;
-}
-
-.content-box-subtitle {
-  position: relative;
-  display: flex;
+  width: 100%;
+  text-align: left;
+  max-width: 80%;
+  padding: 0 4rem;
 }
 
 .content-box-text {
