@@ -29,6 +29,9 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     font-family: a.$font-p;
+
+    // max character length for readability
+    max-width: 65ch;
 }
 
 a {
