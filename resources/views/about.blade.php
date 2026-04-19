@@ -161,7 +161,7 @@
 
                 <p>
                     <br>
-                    427 Wing's museum is housed in a 1943 airmen's canteen at the London International Airport. The canteen is the last surviving building from the British Commonwealth Air Training Plan (BCATP) base that existed at London's airport during World War Two. It is a London landmark and is listed in the city's Register of Cultural Heritage Resources. 
+                    427 Wing's museum is housed in a 1943 airmen's canteen at the London International Airport. The canteen is the last surviving building from the <span class="text-highlight">British Commonwealth Air Training Plan (BCATP) base</span> that existed at London's airport during World War Two. It is a London landmark and is listed in the city's Register of Cultural Heritage Resources. 
                     <br>
                     <br>
                     The museum commemorates the thousands of Canadian and Commonwealth airmen who trained at this site, as well as the military and civilian personnel who supported and instructed them. It will also commemorate the nearly 250 London men who lost their lives while serving with the RCAF during World War Two.
@@ -169,7 +169,7 @@
 
                 <p>
                    <br>
-                    The museum is currently installing a permanent exhibition illustrating the history of military and civilian aviation in the London region in the main hall of the canteen building. It will focus primarily on the two BCAPT training schools - a navigator's school and an elementary flying school. 
+                    The museum is currently installing a permanent exhibition illustrating the history of military and civilian aviation in the London region in the main hall of the canteen building. It will focus primarily on the <span class="text-highlight">two BCAPT training schools</span> - a navigator's school and an elementary flying school. 
                     <br>
                     <br>
                     The exhibit will incorporate uniforms, a variety of artifacts, historic images and a number of model aircraft from the museum's collection, including a Spitfire and a Lancaster. The exhibition is slated to open in the fall 2026.
@@ -181,7 +181,7 @@
 
                 <p>
                     <br>
-                    The London Aviation Museum was founded to preserve and interpret London's aviation history, both civilian and military; to commemorate those Londoners who gave their lives in the defence of freedom while serving in the RCAF or the RAF; to commemorate those lost while training at RCAF Station London; and to commemorate London veterans of the RCAF and RAF.
+                    The London Aviation Museum was founded to preserve and interpret London's aviation history, both civilian and military; to commemorate those Londoners who gave their lives in the defence of freedom while serving in the RCAF or the RAF; to commemorate those lost while training at RCAF Station London; and to <span class="text-highlight">commemorate London veterans of the RCAF and RAF</span>.
                 </p>
             </div>
         </section>
