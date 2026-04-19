@@ -14,7 +14,7 @@
     <link rel="manifest" href="{{ asset('favicon_io/site.webmanifest') }}">
 
 </head>
-<body data-page="home">
+<body data-page="about">
 
     <header class="header">
         <!-- navbar -->

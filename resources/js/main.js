@@ -40,6 +40,8 @@ footerSearch();
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
     videoQuery();
+} else if (document.body.dataset.page === "about") {
+    console.log('about us!');
 }
 else if(document.body.dataset.page === "timeline") {
     console.log('recon page');
