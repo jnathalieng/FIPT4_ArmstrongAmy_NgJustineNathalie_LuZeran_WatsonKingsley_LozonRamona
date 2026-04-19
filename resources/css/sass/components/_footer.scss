@@ -5,11 +5,14 @@
 // ============================================================
 
 #main-footer {
-    background-color: a.$footer-bg;
-    color: a.$footer-color;
+    background-color: a.$primary-color;
+    color: a.$white;
     font-family: a.$footer-font;
     width: 100%;
 
+    .footer-col-title {
+        color: a.$white;
+    }
 
     // ── INNER GRID ──────────────────────────────────────────
     #footer-inner {
@@ -226,7 +229,7 @@
                         height: 36px;
                         background: a.$icon-bg;
                         border-radius: 50%;
-                        color: a.$footer-color;
+                        color: a.$white;
                         font-size: 0.82rem;
                         text-decoration: none;
                         transition: background 0.2s ease;
@@ -251,6 +254,9 @@
         font-size: 0.72rem;
         font-weight: 500;
         opacity: 0.72;
+
+        display: flex;
+        justify-content: center;
 
         a {
             color: a.$footer-color;

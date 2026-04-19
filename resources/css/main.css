@@ -477,10 +477,13 @@ button {
   }
 }
 #main-footer {
-  background-color: #b71c1c;
-  color: #ffffff;
+  background-color: #B3262E;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   width: 100%;
+}
+#main-footer .footer-col-title {
+  color: #fff;
 }
 #main-footer #footer-inner {
   display: grid;
@@ -698,7 +701,7 @@ button {
   height: 36px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
-  color: #ffffff;
+  color: #fff;
   font-size: 0.82rem;
   text-decoration: none;
   transition: background 0.2s ease;
@@ -714,6 +717,8 @@ button {
   font-size: 0.72rem;
   font-weight: 500;
   opacity: 0.72;
+  display: flex;
+  justify-content: center;
 }
 #main-footer #footer-bottom a {
   color: #ffffff;
@@ -3854,4 +3859,4 @@ p.typewriter-quote {
   .tls-content-con .image-grid-overlay p {
     display: none;
   }
-}
+}/*# sourceMappingURL=main.css.map */
