@@ -187,7 +187,7 @@
         </section>
 
         <div class="read-more">
-            <!-- <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a> -->
+            <a class="read-more-button" href="{{ route('timeline') }}">Read More <span class="cta-arrow">&#8594</span></a>
         </div>
 
     <!-- About Video Section -->
@@ -212,19 +212,21 @@
     </section>
 
     <!-- About Mike Section -->
-    <section id="about-mike">
+    <section class="text-con">
         
-        <p class="quote">“The losses in training are really just as much as a sacrifice in winning the war as losses on the battlefield.” - Mike</p>
+        <div class="text-box">
+            <p class="quote">“The losses in training are really just as much as a sacrifice in winning the war as losses on the battlefield.” - Mike</p>
 
-        <picture>
-            <source media="(min-width: 768px)" srcset="{{ asset('images/about-images/about-mike.png') }}">
+            <picture>
+                <source media="(min-width: 768px)" srcset="{{ asset('images/about-images/about-mike.png') }}">
 
-            <img class="footer-selection-image" src="{{ asset('images/about-images/about-mike.png') }}" alt="picture of mike">
-        </picture>
+                <img class="footer-selection-image" src="{{ asset('images/about-images/about-mike.png') }}" alt="picture of mike">
+            </picture>
+        </div>
     </section>
 
     <div class="read-more">
-        <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+        <a class="read-more-button" href="{{ route('timeline') }}">Read More <span class="cta-arrow">&#8594</span></a>
     </div>
     
 </main>
