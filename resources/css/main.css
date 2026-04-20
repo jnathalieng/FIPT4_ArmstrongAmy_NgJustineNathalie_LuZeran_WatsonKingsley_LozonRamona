@@ -45,7 +45,6 @@ p {
   font-size: 1rem;
   line-height: 1.7;
   font-family: "inter", sans-serif;
-  max-width: 65ch;
 }
 
 a {
@@ -793,6 +792,9 @@ button {
   background-color: #fff;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 4rem;
+}
+.text-box p {
+  max-width: 65ch;
 }
 
 @media screen and (min-width: 768px) {
