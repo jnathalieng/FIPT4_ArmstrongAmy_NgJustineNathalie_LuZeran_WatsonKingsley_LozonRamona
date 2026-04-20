@@ -215,7 +215,8 @@
                 <p class="quote-flex-con-item">
                     <span class="quote">“The losses in training are really just as much as a sacrifice in winning the war as losses on the battlefield.”</span>
                     <br>
-                    - Mike</p>
+                    - Mike
+                </p>
 
                 <picture class="quote-flex-con-item">
                     <source media="(min-width: 768px)" srcset="{{ asset('images/about-images/about-mike.png') }}">

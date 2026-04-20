@@ -3,7 +3,7 @@
 .quote-flex-con {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
 
     align-items: center;
     justify-content: center;
@@ -11,6 +11,7 @@
 
 .quote-flex-con-item {
     flex: 1;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -24,5 +25,9 @@
                 text-align: center;
             }
         }
+    }
+
+    .quote-flex-con {
+        gap: 4rem;
     }
 }

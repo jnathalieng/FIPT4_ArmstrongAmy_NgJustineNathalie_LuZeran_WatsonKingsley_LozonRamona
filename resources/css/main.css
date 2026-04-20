@@ -907,15 +907,13 @@ button {
 
 .quote {
   font-style: italic;
-  font-weight: bold;
+  font-weight: normal;
   color: #B3262E;
-  text-align: center;
-  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   .quote {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 .dynamic-gallery-con {
@@ -2303,13 +2301,14 @@ p.typewriter-quote {
 .quote-flex-con {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
 }
 
 .quote-flex-con-item {
   flex: 1;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -2319,6 +2318,9 @@ p.typewriter-quote {
   #about-video-section .text-box p {
     max-width: none;
     text-align: center;
+  }
+  .quote-flex-con {
+    gap: 4rem;
   }
 }
 #contact-hero {
