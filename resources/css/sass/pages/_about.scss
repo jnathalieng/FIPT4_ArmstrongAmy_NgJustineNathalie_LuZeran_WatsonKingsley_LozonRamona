@@ -1,9 +1,28 @@
 @use '../abstracts/' as a;
 
+.quote-flex-con {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-flex-con-item {
+    flex: 1;
+}
+
 @media screen and (min-width: 768px) {
     #about-video-section {
         .text-box {
+
             columns: 1;
+
+            p {
+                max-width: none;
+                text-align: center;
+            }
         }
     }
 }
