@@ -2303,43 +2303,9 @@ p.typewriter-quote {
     transform: none;
   }
 }
-#about-hero {
-  background-image: url("{../../../public/images/general-images/AboutHero_Mobile.png}");
-}
-
-#about-mike {
-  background-color: #91B8D9;
-  position: relative;
-}
-
 @media screen and (min-width: 768px) {
-  #about-hero {
-    background-image: url("../../../public/mages/general-images/AboutHero_Tablet.png");
-  }
-  #about-video-section {
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #about-video-section h2 {
-    color: #B3262E;
-    margin: 10px;
-  }
-  #about-video-section p {
-    color: black;
-    margin: 10px;
-  }
-  #about-mike {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10rem;
-  }
-}
-@media (min-width: 1200px) {
-  #about-hero {
-    background-image: url("../../../public/images/general-images/AboutHero_Desktop.png");
+  #about-video-section .text-box {
+    columns: 1;
   }
 }
 #contact-hero {
