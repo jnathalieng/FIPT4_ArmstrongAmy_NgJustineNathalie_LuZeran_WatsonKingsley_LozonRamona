@@ -901,9 +901,8 @@ button {
 }
 .caption {
   text-align: center;
-  font-size: 75%;
-  margin: 0;
-  padding: 0;
+  font-size: 0.75rem;
+  margin: 0.75rem;
 }
 
 .quote {
@@ -911,14 +910,12 @@ button {
   font-weight: bold;
   color: #B3262E;
   text-align: center;
-  width: 80%;
   margin: auto;
-  padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
   .quote {
-    font-size: 150%;
+    font-size: 1.5rem;
   }
 }
 .dynamic-gallery-con {
@@ -2303,9 +2300,25 @@ p.typewriter-quote {
     transform: none;
   }
 }
+.quote-flex-con {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-flex-con-item {
+  flex: 1;
+}
+
 @media screen and (min-width: 768px) {
   #about-video-section .text-box {
     columns: 1;
+  }
+  #about-video-section .text-box p {
+    max-width: none;
+    text-align: center;
   }
 }
 #contact-hero {
