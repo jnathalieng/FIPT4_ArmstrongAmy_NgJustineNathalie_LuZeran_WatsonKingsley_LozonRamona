@@ -1,78 +1,33 @@
 @use '../abstracts/' as a;
 
-// #about-video-section {
-    
-//     margin: 1rem;
+.quote-flex-con {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 
-//     h2 {
-//         color: a.$primary-color;
-
-//         margin: 1rem;
-//     }
-
-//     p {
-//         color: a.$black;
-
-//         margin: 1rem;
-//     }
-// }
-
-// #about-video-con {
-//     border-radius: a.$borderrad;
-//     border: 1px solid a.$black;
-//     overflow: hidden;
-// }
-
-// #about-video {
-//     border-radius: a.$borderrad;
-//     padding: 1rem;
-// }
-
-#about-hero {
-    background-image: url("{../../../public/images/general-images/AboutHero_Mobile.png}");
+    align-items: center;
+    justify-content: center;
 }
 
-#about-mike {
-    background-color: a.$secondary-color;
-    position: relative;
+.quote-flex-con-item {
+    flex: 1;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-
-#about-hero {
-    background-image: url("../../../public/mages/general-images/AboutHero_Tablet.png");
-}
-
     #about-video-section {
-        margin: 10px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h2 {
-            color: a.$primary-color;
-            margin: 10px;
-        }
-        p {
-            color: black;
-            margin: 10px;
+        .text-box {
+
+            columns: 1;
+
+            p {
+                max-width: none;
+                text-align: center;
+            }
         }
     }
 
-    // #about-video-con {
-    //     margin: 10px 50px;;
-    // }
-
-    #about-mike {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 10rem;
+    .quote-flex-con {
+        gap: 4rem;
     }
-}
-
-@media (min-width:1200px) {
-    
-    #about-hero {
-    background-image: url("../../../public/images/general-images/AboutHero_Desktop.png");
-}
 }

@@ -901,24 +901,19 @@ button {
 }
 .caption {
   text-align: center;
-  font-size: 75%;
-  margin: 0;
-  padding: 0;
+  font-size: 0.75rem;
+  margin: 0.75rem;
 }
 
 .quote {
   font-style: italic;
-  font-weight: bold;
+  font-weight: normal;
   color: #B3262E;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
   .quote {
-    font-size: 150%;
+    font-size: 1.25rem;
   }
 }
 .dynamic-gallery-con {
@@ -2303,43 +2298,29 @@ p.typewriter-quote {
     transform: none;
   }
 }
-#about-hero {
-  background-image: url("{../../../public/images/general-images/AboutHero_Mobile.png}");
+.quote-flex-con {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-#about-mike {
-  background-color: #91B8D9;
-  position: relative;
+.quote-flex-con-item {
+  flex: 1;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  #about-hero {
-    background-image: url("../../../public/mages/general-images/AboutHero_Tablet.png");
+  #about-video-section .text-box {
+    columns: 1;
   }
-  #about-video-section {
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #about-video-section .text-box p {
+    max-width: none;
+    text-align: center;
   }
-  #about-video-section h2 {
-    color: #B3262E;
-    margin: 10px;
-  }
-  #about-video-section p {
-    color: black;
-    margin: 10px;
-  }
-  #about-mike {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10rem;
-  }
-}
-@media (min-width: 1200px) {
-  #about-hero {
-    background-image: url("../../../public/images/general-images/AboutHero_Desktop.png");
+  .quote-flex-con {
+    gap: 4rem;
   }
 }
 #contact-hero {

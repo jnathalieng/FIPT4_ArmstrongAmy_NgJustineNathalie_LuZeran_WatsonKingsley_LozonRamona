@@ -191,37 +191,40 @@
         </div>
 
     <!-- About Video Section -->
-    <section class="grid-con" id="about-video-section">
-        
-        <h2>Preserving London Aviation's History</h2>
-
-        <p>
-            <br>
-            Inside the 427 Wing Museum, exploring the people, stories, and vision behind London's aviation legacy.
-            <br>
-        </p>
-
-        <div class="col-span-full m-col-start-2 m-col-span-10" id="about-video-con">
-            <video controls playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" id="about-video">
-                <source src="{{ asset('videos/website-video.mp4') }}" type="video/mp4">
-            </video>
-        </div>
-
-        <p class="caption col-span-full">A Conversation with Museum Curator Sir Mike Baker</p>
-        
-    </section>
-
-    <!-- About Mike Section -->
-    <section class="text-con">
+    <section class="text-con" id="about-video-section">
         
         <div class="text-box">
-            <p class="quote">“The losses in training are really just as much as a sacrifice in winning the war as losses on the battlefield.” - Mike</p>
+            <h3>Preserving London Aviation's History</h3>
 
-            <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('images/about-images/about-mike.png') }}">
+            <p>
+                <br>
+                Inside the 427 Wing Museum, exploring the people, stories, and vision behind London's aviation legacy.
+                <br>
+                <br>
+            </p>
 
-                <img class="footer-selection-image" src="{{ asset('images/about-images/about-mike.png') }}" alt="picture of mike">
-            </picture>
+            <div class="about-video-con">
+                <video controls playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" id="about-video">
+                    <source src="{{ asset('videos/website-video.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+
+            <p class="caption">A Conversation with Museum Curator Sir Mike Baker</p>
+
+            <div class="quote-flex-con">
+                <p class="quote-flex-con-item">
+                    <span class="quote">“The losses in training are really just as much as a sacrifice in winning the war as losses on the battlefield.”</span>
+                    <br>
+                    - Mike
+                </p>
+
+                <picture class="quote-flex-con-item">
+                    <source media="(min-width: 768px)" srcset="{{ asset('images/about-images/about-mike.png') }}">
+
+                    <img class="footer-selection-image" src="{{ asset('images/about-images/about-mike.png') }}" alt="picture of mike">
+                </picture>
+            </div>
+
         </div>
     </section>
 
