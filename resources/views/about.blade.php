@@ -194,11 +194,12 @@
     <section class="text-con" id="about-video-section">
         
         <div class="text-box">
-            <h2>Preserving London Aviation's History</h2>
+            <h3>Preserving London Aviation's History</h3>
 
             <p>
                 <br>
                 Inside the 427 Wing Museum, exploring the people, stories, and vision behind London's aviation legacy.
+                <br>
                 <br>
             </p>
 
