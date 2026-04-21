@@ -311,49 +311,77 @@
             </h3>
         </section>
 
-        <div class="deaths-section">
+        <div class="text-con">
             <h2 class="hidden">Losses Section</h2>
 
-            <div class="deaths-info-con">
+            <div class="text-box">
+                <h3>RAF FIGHTER COMMAND:</h3>
 
-                <div class="deaths-info">
-                    <h3>RAF FIGHTER COMMAND:</h3>
-
-                    <p>
-                        RAF Fighter Command:
+                <ul>
+                    <li>
                         544 pilots killed
+                    </li>
+                    <li>
                         422 wounded
+                    </li>
+                    <li>
                         1,547 aircraft destroyed
-                    </p>
+                    </li>
+                </ul>
 
-                    <h3>Luftwaffe:</h3>
+                <h3>Luftwaffe:</h3>
 
-                    <p>
+                <ul>
+                    <li>
                         2,698 aircrew killed
+                    </li>
+                    <li>
                         1,887 aircraft lost
-                        Foreign pilots in RAF service:
-                        595 non-British pilots flew in the Battle, including:
+                    </li>
+                </ul>
+
+                <h3>Foreign pilots in RAF service:</h3>
+
+                <ul>
+                    <li>
+                        595 non-British pilots flew in the Battle
+                    </li>
+                    <li>
                         145 from Poland
+                    </li>
+                    <li>
                         127 from New Zealand
-                    </p>
-                </div>
-
-                <div class="deaths-info">
-
-                    <p>
+                    </li>
+                    <li>
                         112 from Canada
+                    </li>
+                    <li>
                         88 from Czechoslovakia
+                    </li>
+                    <li>
                         32 from Australia
+                    </li>
+                    <li>
                         28 from Belgium
+                    </li>
+                    <li>
                         25 from South Africa
+                    </li>
+                    <li>
                         13 from France
+                    </li>
+                    <li>
                         10 from Ireland
+                    </li>
+                    <li>
                         7 from United States
+                    </li>
+                    <li>
                         1 each from Jamaica, Palestine, and Rhodesia
-                    </p>
-
-                </div>
+                    </li>
+                </ul>
             </div>
+        </div>
 
             <div class="deaths-info-bot">
                 <p class="typewriter-quote">
