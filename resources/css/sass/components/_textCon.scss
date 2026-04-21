@@ -13,6 +13,11 @@
 
     // has to match column gap below
     padding: 4rem;
+
+    p {
+        // max character length for readability
+        max-width: 65ch;
+    }
 }
 
 @media screen and (min-width: 768px) {
