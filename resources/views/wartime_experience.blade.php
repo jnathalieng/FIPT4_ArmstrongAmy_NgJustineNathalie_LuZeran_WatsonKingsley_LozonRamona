@@ -209,13 +209,9 @@
                 <br>
                 <br>
                 Several airmen and civilian instructors lost their lives while training at London's No. 3 Elementary Flying Training School and No. 4 Air Observer School.
-                <br>
-                <br>
             </p>
 
-            <h3>Accidental Deaths During Training</h3>
-
-            <ul class="content-box-text">
+            <ul>
                 <li>Leading Aircraftman J.E. Higginbotham</li>
                 <li>Leading Aircraftman Lewis Duff</li>
                 <li>Civilian Pilot Robert Wilfred Reain</li>
