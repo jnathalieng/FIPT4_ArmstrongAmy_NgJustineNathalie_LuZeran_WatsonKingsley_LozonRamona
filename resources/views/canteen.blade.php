@@ -140,69 +140,76 @@
 
 <!-- Canteen About Section -->
 
-        <div class="text-con" id="canteen-about-section">
-            <div class="col-span-full">
+        <div class="text-con">
+            <h2 class="hidden">Canteen Introduciton</h2>
+            <div class="text-box">
 
                 <h3>The Airman's Canteen</h3>
 
                 <p>
+                    <br>
                     This canteen was built during WWII to serve London's RCAF base located here at what was then known as the Crumlin Airport which had just opened in June of 1940. The canteen had a wet and dry side - (alcohol and non-alcohol). It also had a three-chair barbershop and a tuck shop for such things as soft drinks, ice cream, chocolate bars and cigarettes.
+                    <br>
+                    <br>
                 </p>
-            </div>
-
-            <div class="canteen-gallery-container">
-                <div class="img-con backg">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-1.png') }}">
-                        <!-- NEED MOBILE IMAGES -->
-                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-1.png') }}" alt="image of newsletters">
-                    </picture>
-                </div>
-
-                <div class="img-con foreg">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-2.png') }}">
-                        <!-- NEED MOBILE IMAGES -->
-                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-2.png') }}" alt="image of newsletters">
-                    </picture>
-                </div>
-
-                <div class="img-con backg">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}">
-                        <!-- NEED MOBILE IMAGES -->
-                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}" alt="image of newsletters">
-                    </picture>
-                </div>
-            </div>
-
-            <div>
-                <p>
-                    During WWII, two aircrew instruction schools operated on the base: #3 Elementary Flying School (1940-42) and #4 Air Observer School (1940-44) which trained navigators and bomb aimers. The air observers (navigators) went on to receive more training in Fingal, east of St. Thomas, at #4 Bombing and Gunnery School.
-                </p>
-
-                <p>
-                    These schools were part of the British Commonwealth Air Training Plan (BCATP) which trained pilots, air observers, navigators, bomb aimers, gunners, flight engineers, ground crew and wireless operators at over hundred bases across Canada. Most of the trainees were Canadian, though there were others from the Royal Air Force and from the air forces of Australia and New Zealand. Most would serve overseas.
-                </p>
-            </div>
-
-            <div class="canteen-image-con">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-420-squad.png') }}">
-
-                        <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-420-squad.png') }}" alt="image of 420 squad">
-                    </picture>
-
-                    <p class="caption">
-                        After the war an RCAF Auxiliary unit - 420 Squadron, the Snowy Owls - trained here (1948-56).
-                    </p>
             </div>
         </div>
 
-        <div class="text-con-b" id="canteen-today-section">
-            
-            <div>
+        <div class="canteen-gallery-container">
+            <h2 class="hidden">Gallery Section</h2>
+            <div class="img-con backg">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-1.png') }}">
+                    <!-- NEED MOBILE IMAGES -->
+                    <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-1.png') }}" alt="image of newsletters">
+                </picture>
+            </div>
 
+            <div class="img-con foreg">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-2.png') }}">
+                    <!-- NEED MOBILE IMAGES -->
+                    <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-2.png') }}" alt="image of newsletters">
+                </picture>
+            </div>
+
+            <div class="img-con backg">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}">
+                    <!-- NEED MOBILE IMAGES -->
+                    <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/desktop/d-airmans-paper-3.png') }}" alt="image of newsletters">
+                </picture>
+            </div>
+        </div>
+
+        <div class="text-con">
+            <h2 class="hidden">Body Text Section</h2>
+            <div class="text-box">
+                <p>
+                    During WWII, two aircrew instruction schools operated on the base: #3 Elementary Flying School (1940-42) and #4 Air Observer School (1940-44) which trained navigators and bomb aimers. The air observers (navigators) went on to receive more training in Fingal, east of St. Thomas, at #4 Bombing and Gunnery School.
+                    <br>
+                    <br>
+                    These schools were part of the British Commonwealth Air Training Plan (BCATP) which trained pilots, air observers, navigators, bomb aimers, gunners, flight engineers, ground crew and wireless operators at over hundred bases across Canada. Most of the trainees were Canadian, though there were others from the Royal Air Force and from the air forces of Australia and New Zealand. Most would serve overseas.
+                </p>
+            </div>
+        </div>
+
+        <div class="color-content-box canteen-image-con">
+            <h2 class="hidden">Image Break Section</h2>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-420-squad.png') }}">
+
+                    <img class="canteen-gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-420-squad.png') }}" alt="image of 420 squad">
+                </picture>
+
+                <p class="caption">
+                    After the war an RCAF Auxiliary unit - 420 Squadron, the Snowy Owls - trained here (1948-56).
+                </p>
+        </div>
+
+        <div class="text-con">
+            <h2 class="hidden">This Building Today Section</h2>
+            <div class="text-box">
                 <h3>This Building Today</h3>
 
                 <div class="canteen-image-con">
@@ -218,61 +225,42 @@
                 </div>
 
                 <p>
-                    A Wing (427) of the RCAF Association bought the building in 1959 and have maintained it since as a club house.
-                </p>
-
-                <p>
+                    A Wing (427) of the RCAF Association bought the building in 1959 and have maintained it since as a club house. A permanent exhibition on the base can be found in the adjoining ball room.
+                    <br>
+                    <br>
                     The RCAF Association's main objectives are: to support the present-day RCAF, to memorialize the veterans of the force, and to support the area's several air cadet units. The Wing maintains a museum as a memorial to our veterans, to the airmen and airwomen who trained and served on the base, and to the over 250 Londoners who gave their lives during WWII while serving in the RCAF.
+                    <br>
+                    <br>
                 </p>
-
-                <p>
-                    A permanent exhibition on the base can be found in the adjoining ball room.
-                </p>
-
-            </div>
-
-        </div>
-
-<!-- Canteen Gallery Section -->
-
-        <section>
-        <div class="dynamic-gallery-con">
-
-            <div class="dynamic-gallery-box">
-
-                <div class="dynamic-gallery-text-content">
-                    <h2>Canteen Archives</h2>
-                    <p>Photographs documenting life and community during wartime.</p>
-                </div>
-
-                <div class="gallery-box-con">
-                    <div class="gallery-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-gallery-1.png') }}">
-
-                            <img class="gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-gallery-1.png') }}" alt="image of canteen dining room">
-                        </picture>
-                    </div>
-
-                    <div class="gallery-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-gallery-3.png') }}">
-
-                            <img class="gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-gallery-3.png') }}" alt="image of civilian military efforts">
-                        </picture>
-                    </div>
-
-                    <div class="gallery-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/canteen-images/desktop/d-airmans-gallery-4.png') }}">
-
-                            <img class="gallery-image" src="{{ asset('images/canteen-images/mobile/m-airmans-gallery-4.png') }}" alt="image of vintage plane">
-                        </picture>
-                    </div>
-                </div>
             </div>
         </div>
 
+        <!-- Canteen Gallery Section -->
+        <section class="color-content-box white-background" id="wte-gallery">
+
+            <h3 class="content-box-title">Upcoming Events</h3>
+            <p class="content-box-text">Check out some upcoming events happening around London!</p>
+   
+            <section class="card-carousel" id="events-photo-gallery-1">
+
+                <div class="carousel">
+                    <div class="event-card" id="photo-1"></div>
+                    <div class="event-card" id="photo-2"></div>
+                    <div class="event-card" id="photo-3"></div>
+                    <div class="event-card" id="photo-4"></div>
+                    <div class="event-card" id="photo-5"></div>
+                    <div class="event-card" id="photo-6"></div>
+                    <div class="event-card" id="photo-7"></div>
+                    <div class="event-card" id="photo-8"></div>
+                    <div class="event-card" id="photo-9"></div>
+                    <div class="event-card" id="photo-10"></div>
+                    <div class="event-card" id="photo-11"></div>
+                    <div class="event-card" id="photo-12"></div>
+                <div class="carousel-background"></div>
+                </div>
+            </section>
+        </section>
+        
         <div class="read-more">
             <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
         </div>
