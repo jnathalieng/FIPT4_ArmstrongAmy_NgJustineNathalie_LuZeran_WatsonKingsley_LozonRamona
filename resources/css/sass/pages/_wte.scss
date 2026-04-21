@@ -9,9 +9,8 @@
 
 #training-pic {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    border-bottom: solid 5px v.$primary-color;
 }
 
 .blurry-backdrop {
@@ -50,7 +49,8 @@
     background-position: center;
     display: flex;
     height: 60vw;
-    width:  100vw;
+    width:  100%;
+    margin: auto;
 }
 
 #explore-remembrance {

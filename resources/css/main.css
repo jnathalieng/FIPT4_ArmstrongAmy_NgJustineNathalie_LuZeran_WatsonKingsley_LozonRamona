@@ -394,7 +394,7 @@ button {
 .hero-card video {
   transition: all 0.3s ease;
   transform: scale(100%);
-  filter: grayscale(80%);
+  filter: grayscale(100%);
 }
 
 .hero-card-a:hover h3 {
@@ -2611,9 +2611,8 @@ p.typewriter-quote {
 
 #training-pic {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  border-bottom: solid 5px #B3262E;
 }
 
 .blurry-backdrop {
@@ -2652,7 +2651,8 @@ p.typewriter-quote {
   background-position: center;
   display: flex;
   height: 60vw;
-  width: 100vw;
+  width: 100%;
+  margin: auto;
 }
 
 #explore-remembrance {
