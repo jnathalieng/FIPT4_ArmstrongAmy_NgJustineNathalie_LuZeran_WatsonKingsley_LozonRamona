@@ -7,7 +7,7 @@
 }
 
 .hero-card-con {
-    margin-top: 70px;
+    // margin-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,19 +16,39 @@
 .hero-card {
     position: relative;
     overflow: hidden;
-    flex: 50%;
+    flex: 0 0 50%;
     aspect-ratio: 1 / 1;
 
+    h3 {
+        transition: a.$t-time;
+        color: a.$white;
+    }
+
+    video {
+        transition: a.$t-time;
+
+        transform: scale(100%);
+        filter: grayscale(80%);
+    }
+}
+
+.hero-card-a:hover {
+    h3 {
+        color: a.$primary-color;
+    }
+
+    video {
+        filter: grayscale(0);
+        transform: a.$scale-up;
+    }
 }
 
 .hero-card h3 {
     position: absolute;
     bottom: 10%;
     left: 5%;
-    font-size: 200%;
     z-index: 2;
-    font-size: 150%;
-    width: 60%;
+    width: 90%;
 }
 
 .hero-card-video {
@@ -67,51 +87,36 @@
 
     .hero-CTA-con {
 
-        bottom: 15%;
+        bottom: 5%;
+
         a {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            text-decoration: none;
+
+            transition: a.$t-time;
 
             h4 {
                 display: block;
                 color: a.$white;
-                margin: 1rem;
-                font-size: 120%;
-            }
-        }
-
-        a:hover {
-            transform-origin: right;
-            transform: a.$scale-up;
-            transition: a.$t-time;
-
-            h4 {
-                transition: a.$t-time;
-                transform: a.$scale-up;
-            }
-
-            svg {
-                transition: a.$t-time;
-                fill: a.$primary-color;
-                transform: translateX(-25%);
-                transform: scale(150%);
-
+                font-size: 1rem;
             }
         }
     }
 
     .hero-card h3 {
-        top: 65%;
-        font-size: 200%;
+        top: 85%;
         width: 90%;
+        font-size: 2rem;
     }
 
-    .hero-card-image:hover {
-        transition: a.$t-time;
-        transform: a.$scale-up;
+    .hero-card:hover {
+        .hero-CTA-con {
+            a {
+                padding-right: 0.5rem;
+            }
+        }
     }
 }
 

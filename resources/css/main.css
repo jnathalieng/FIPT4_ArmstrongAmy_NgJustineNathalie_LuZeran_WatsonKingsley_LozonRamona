@@ -376,7 +376,6 @@ button {
 }
 
 .hero-card-con {
-  margin-top: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -385,18 +384,33 @@ button {
 .hero-card {
   position: relative;
   overflow: hidden;
-  flex: 50%;
+  flex: 0 0 50%;
   aspect-ratio: 1/1;
+}
+.hero-card h3 {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.hero-card video {
+  transition: all 0.3s ease;
+  transform: scale(100%);
+  filter: grayscale(80%);
+}
+
+.hero-card-a:hover h3 {
+  color: #B3262E;
+}
+.hero-card-a:hover video {
+  filter: grayscale(0);
+  transform: scale(110%);
 }
 
 .hero-card h3 {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  font-size: 200%;
   z-index: 2;
-  font-size: 150%;
-  width: 60%;
+  width: 90%;
 }
 
 .hero-card-video {
@@ -430,44 +444,27 @@ button {
     aspect-ratio: unset;
   }
   .hero-CTA-con {
-    bottom: 15%;
+    bottom: 5%;
   }
   .hero-CTA-con a {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    transition: all 0.3s ease;
   }
   .hero-CTA-con a h4 {
     display: block;
     color: #fff;
-    margin: 1rem;
-    font-size: 120%;
-  }
-  .hero-CTA-con a:hover {
-    transform-origin: right;
-    transform: scale(110%);
-    transition: all 0.3s ease;
-  }
-  .hero-CTA-con a:hover h4 {
-    transition: all 0.3s ease;
-    transform: scale(110%);
-  }
-  .hero-CTA-con a:hover svg {
-    transition: all 0.3s ease;
-    fill: #B3262E;
-    transform: translateX(-25%);
-    transform: scale(150%);
+    font-size: 1rem;
   }
   .hero-card h3 {
-    top: 65%;
-    font-size: 200%;
+    top: 85%;
     width: 90%;
+    font-size: 2rem;
   }
-  .hero-card-image:hover {
-    transition: all 0.3s ease;
-    transform: scale(110%);
+  .hero-card:hover .hero-CTA-con a {
+    padding-right: 0.5rem;
   }
 }
 @media (min-width: 1200px) {
