@@ -136,79 +136,104 @@
             </div>
         </section>
     
-    <section class="color-content-box gray-background">
+        <section class="text-con">
+            <h2 class="hidden">Wartime Experiences Introduction</h2>
+            <div class="text-box">
+                <h3>British Commonwealth Air Training Plan (BCATP)</h3>
 
-        <h3 class="content-box-title">Overview</h1>
+                <p>
+                    <br>
+                    The BCATP has been called Canada's most significant contribution to WWII. President Roosevelt called it the "aerodrome of democracy".
+                    <br>
+                    <br>
+                    Essentially it was a plan to train thousands of airmen from the Commonwealth - mainly England, New Zealand and Australia as well as Canada at roughly <span class="text-highlight">200 bases located across the country</span> and manned by air force and civilian personnel.
+                    <br>
+                    <br>
+                    <span class="text-highlight">Sixteen sites</span> were eventually located in Southwestern Ontario thanks to its miles of flat farmland and its proximity to three lakes. There was always the potential for crashes during training, and the sparsely populated rural areas made ground casualties less likely, and the lakes were always handy if the pilot needed to ditch for some reason. As well, the farms in the rural areas would provide the bases with food.
+                    <br>
+                    <br>
+                    The schools at these locations focussed on providing the airman with the skills needed to graduate as <span class="text-highlight">bomb aimers, navigators, pilots, wireless operators, or air gunners</span>. Several of the bases are now municipal airports such as Goderich and Brantford. Even the relief fields - airfields with full runways and a hanger which provided a place for pilots to land in emergencies - are now municipal airports, including St. Thomas and Tillsonburg.
+                    <br>
+                    <br>
+                    The only ground crew school in the country was also in this group, housed in the psychiatric hospital south of St. Thomas which had been turned over to the government for the duration of the war. Over <span class="text-highlight">40,000 ground crew were trained here and also graduated a total of 130,000 airmen</span>.
+                </p>
+            </div>
+        </section>
 
-        <h3 class="content-box-subtitle">British Commonwealth Air Training Plan (BCATP)</h3>
+        <section id="training-pic">
+            <div  class="blurry-backdrop"></div>
+            <div class="focused-pic"></div>
+        </section>
 
-        <p class="content-box-text">The BCATP has been called Canada’s most significant contribution to WWII. President Roosevelt called it the “aerodrome of democracy.”</p>
+        <section class="text-con">
+            <h2 class="hidden">Types of Training Bases</h2>
+            <div class="text-box">
+                <h3>#3 Elementary Flying Training School</h3>
 
-        <p class="content-box-text">Essentially it was a plan to train thousands of airmen from the Commonwealth – mainly England, New Zealand and Australia as well as Canada at roughly 200 bases located across the country and manned by air force and civilian personnel.</p>
+                <p>
+                    <br>
+                    An Elementary Flying Training School (EFTS) gave a trainee 50 hours of basic flying instruction on a simple trainer like the De Havilland Tiger Moth, Fleet Finch, or Fairchild Cornell over 8 weeks. Elementary schools were operated by civilian flying clubs under contract to the RCAF and most of the instructors were civilians.
+                    <br>
+                    <br>
+                </p>
 
-        <p class="content-box-text">Sixteen sites were eventually located in Southwestern Ontario thanks to its miles of flat farmland and its proximity to three lakes. There was always the potential for crashes during training, and the sparsely populated rural areas made ground casualties less likely, and the lakes were always handy if the pilot needed to ditch for some reason. As well, the farms in the rural areas would provide the bases with food.</p>
+                <h3>#4 Air Observers School</h3>
 
-        <p class="content-box-text">The schools at these locations focussed on providing the airman with the skills needed to graduate as bomb aimers, navigators, pilots, wireless operators, or air gunners.
-        Several of the bases are now municipal airports such as Goderich and Brantford. Even the relief fields - airfields with full runways and a hanger which provided a place for pilots to land in emergencies - are now municipal airports, including St. Thomas and Tillsonburg.</p>
-
-        <p class="content-box-text">The only ground crew school in the country was also in this group, housed in the psychiatric hospital south of St. Thomas which had been turned over to the government for the duration of the war. Over 40,000 ground crew were trained here. The plan also graduated a total of 130,000 airmen.</p>
+                <p>
+                    <br>
+                    Air Observers were later called "navigators". For recruits in this stream, the training path after the Initial Training School was 8 weeks at an Air Observer School (AOS), 1 month at a Bombing & Gunnery School, and finally 1 month at a Navigation School. The Air Observer schools were operated by civilians under contract to the RCAF. However, the instructors were RCAF. They trained in the Avro Anson.
+                </p>
+            </div>
     </section>
 
-        <section class="color-content-box gray-background">
-
-        <h3 class="content-box-title">School Types & Training Path</h3>
-
-        <h3 class="content-box-subtitle">#3 Elementary Flying Training School</h3>
-
-        <p class="content-box-text">An Elementary Flying Training School (EFTS) gave a trainee 50 hours of basic flying instruction on a simple trainer like the De Havilland Tiger Moth, Fleet Finch, or Fairchild Cornell over 8 weeks.
-Elementary schools were operated by civilian flying clubs under contract to the RCAF and most of the instructors were civilians.</p>
-
-        <h3 class="content-box-subtitle">#4 Air Observers School</h3>
-
-        <p class="content-box-text">Air Observers were later called "navigators". For recruits in this stream, the training path after the Initial Training School was 8 weeks at an Air Observer School (AOS), 1 month at a Bombing & Gunnery School, and finally 1 month at a Navigation School.
-The Air Observer schools were operated by civilians under contract to the RCAF. However, the instructors were RCAF. They trained in the Avro Anson.</p>
+    <section class="color-content-box white-background">
+            <h3 class="content-box-title">BCATP Training Sites</h3>
+            <p class="content-box-text">Explore the interactive map of sixteen training sites across Southwestern Ontario.</p>
     </section>
-    
 
-<section id="training-pic">
-    <div  class="blurry-backdrop"></div>
-    <div class="focused-pic"></div>
-</section>
+    <section id='wte-map'>
+        
+    </section>
 
-<section class="color-content-box white-background">
-        <h3 class="content-box-title">BCATP Training Sites</h3>
-        <p class="content-box-text">Explore the interactive map of sixteen training sites across Southwestern Ontario.</p>
-</section>
+    <div class="read-more">
+        <a class="read-more-button" href="{{ route('training_bases') }}">Explore the Map <span class="cta-arrow">&#8594</span></a>
+    </div>
 
-<section id='wte-map'></section>
+    <section class="text-con">
+        <h2 class="hidden">Accidental Deaths During Training</h2>
+        <div class="text-box">
+            <h3>Accidental Deaths During Training</h3>
+            <p>
+                <br>
+                Training under the British Commonwealth Air Training Plan carried risks. While Southwestern Ontario provided open farmland and nearby lakes to reduce ground casualties, accidents still occurred during instruction and night navigation exercises.
+                <br>
+                <br>
+                Several airmen and civilian instructors lost their lives while training at London's No. 3 Elementary Flying Training School and No. 4 Air Observer School.
+                <br>
+                <br>
+            </p>
 
-        <div class="read-more">
-            <a class="read-more-button" href="{{ route('training_bases') }}">Explore the Map <span class="cta-arrow">&#8594</span></a>
+            <h3>Accidental Deaths During Training</h3>
+
+            <ul class="content-box-text">
+                <li>Leading Aircraftman J.E. Higginbotham</li>
+                <li>Leading Aircraftman Lewis Duff</li>
+                <li>Civilian Pilot Robert Wilfred Reain</li>
+                <li>Civilian Pilot Oscar A. Lutken</li>
+                <li>Leading Aircraftman Kenneth Gerald Spooner, GC</li>
+            </ul>
+
+            <p class="subtle-text">These individuals are honoured in our Remembrance section.</p>      
         </div>
+    </section>
 
-<section class="color-content-box white-background">
-        <h3 class="content-box-title">Accidental Deaths During Training</h3>
-        <p class="content-box-text">Training under the British Commonwealth Air Training Plan carried risks. While Southwestern Ontario provided open farmland and nearby lakes to reduce ground casualties, accidents still occurred during instruction and night navigation exercises.</p>
-        <p class="content-box-text">Several airmen and civilian instructors lost their lives while training at London’s No. 3 Elementary Flying Training School and No. 4 Air Observer School.</p>
-        <h3 class="content-box-subtitle">Accidental Deaths During Training</h3>
-        <ul  class="content-box-text">
-            <li>Leading Aircraftman J.E. Higginbotham</li>
-            <li>Leading Aircraftman Lewis Duff</li>
-            <li>Civilian Pilot Robert Wilfred Reain</li>
-            <li>Civilian Pilot Oscar A. Lutken</li>
-            <li>Leading Aircraftman Kenneth Gerald Spooner, GC</li>
-        </ul>
+    <div class="read-more">
+        <a class="read-more-button" id="explore-remembrance">Explore the Remembrance Page <span class="cta-arrow">&#8594</span></a>
+    </div>
 
-        <p class="subtle-text">These individuals are honoured in our Remembrance section.</p>
-</section>
-
-        <div class="read-more">
-            <a class="read-more-button" id="explore-remembrance">Explore the Remembrance Page <span class="cta-arrow">&#8594</span></a>
-        </div>
-
-   <section class="color-content-box white-background" id="wte-gallery">
+    <section class="color-content-box white-background" id="wte-gallery">
         <h3 class="content-box-title">Scenes from Wartime Training</h3>
-        <p class="content-box-text">A visual record of the airfields, aircraft, instructors, and trainees who shaped Canada’s wartime aviation efforts.</p>
+        <p class="content-box-text">A visual record of the airfields, aircraft, instructors, and trainees who shaped Canada's wartime aviation efforts.</p>
    
         <section class="card-carousel" id="events-photo-gallery-1">
 
@@ -228,12 +253,11 @@ The Air Observer schools were operated by civilians under contract to the RCAF. 
             <div class="carousel-background"></div>
             </div>
         </section>
-        </section>
+    </section>
 
-        <div class="read-more">
-            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
-        </div>
-</section>
+    <div class="read-more">
+        <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
+    </div>
 </main>     
 <footer id="main-footer">
 
