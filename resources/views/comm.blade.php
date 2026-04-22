@@ -27,7 +27,7 @@
 <body id="commemoration-page" data-page="comm">
 
     <header class="header">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -170,20 +170,19 @@
 
         </section>
 
-<!-- Commemoration Text Section -->
+        <!-- Commemoration Text Section -->
+        <section class="text-con">
+            <div class="text-box-full">
+                <h3>
+                    Commemorating the Fallen
+                </h3>
 
-    <section class="text-con">
-        
-        <div>
-            <h3>
-                Honouring Those Connected to London's Aviation History
-            </h3>
-
-            <p>
-                This section recognizes airmen connected to London, Ontario, including members of the 420 Snowy Owl Auxiliary Fighter Squadron, those who served in the Battle of Britain, and those who lost their lives during training under the British Commonwealth Air Training Plan. Their names are preserved through historical records and the Book of Remembrance.
-            </p>
-        </div>
-    </section>
+                <p>
+                    <br>
+                    This section recognizes airmen connected to London, Ontario, including members of the 420 Snowy Owl Auxiliary Fighter Squadron, those who served in the Battle of Britain, and those who lost their lives during training under the British Commonwealth Air Training Plan. Their names are preserved through historical records and the Book of Remembrance.
+                </p>
+            </div>
+        </section>
 
 <!-- Commemoration Expandable Selection -->
     
