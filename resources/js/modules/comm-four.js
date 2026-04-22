@@ -16,24 +16,29 @@ export default {
         }
     },
     template: `   
-                    <div class="comm-delta-con" v-for="item in trainingFour" :key="item.id">
-                        <div class="comm-delta-img-con">
-                            <picture>
-                                <source media="(min-width: 768px)" :srcset="getImagePath(item.picture)">
-                                <img class="comm-delta-img" :src="getImagePath(item.picture, true)" :alt="item.name">
-                            </picture>
-                        </div>
-                        <div class="comm-delta-text-con">
-                            <span class="title-span">{{ item.rank }}</span>
-                            <h2>{{ item.name }}</h2>
-                            <p>{{ item.info}}</p>
-                            
-                            <p class="unit"><span class="label-span">UNIT: </span>{{ item.unit }}</p>
-                            <p class="incident"><span class="label-span">DATE: </span>{{ item.date }}</p>
-                            <p class="location"><span class="label-span">AIRCRAFT: </span>{{ item.aircraft }}</p>
-                            <p class="location"><span class="label-span">INCIDENT: </span>{{ item.incident }}</p>
-                            <p class="location"><span class="label-span">LOCATION: </span>{{ item.location }}</p>
-                            <p class="details"><span class="label-span">DETAILS: </span>{{ item.details }}</p>
+                    <div class="comm-card-box" v-for="item in trainingFour" :key="item.id">
+                        <div class="comm-card">
+
+                            <h4 class="comm-card-rank">{{ item.rank }}</h4>
+                            <h3 class="comm-card-name">{{ item.name }}</h3>
+
+                            <div class="comm-card-img-con">
+                                <picture class="comm-card-img-box">
+                                    <source media="(min-width: 768px)" :srcset="getImagePath(item.picture)">
+                                    <img class="comm-card-img" :src="getImagePath(item.picture, true)" :alt="item.name">
+                                </picture>
+                            </div>
+
+                            <div class="comm-text-section">
+                                <p>{{ item.info}}</p>
+                                
+                                <p class="unit"><span class="label-span">UNIT: </span>{{ item.unit }}</p>
+                                <p class="incident"><span class="label-span">DATE: </span>{{ item.date }}</p>
+                                <p class="location"><span class="label-span">AIRCRAFT: </span>{{ item.aircraft }}</p>
+                                <p class="location"><span class="label-span">INCIDENT: </span>{{ item.incident }}</p>
+                                <p class="location"><span class="label-span">LOCATION: </span>{{ item.location }}</p>
+                                <p class="details"><span class="label-span">DETAILS: </span>{{ item.details }}</p>
+                            </div>
                         </div>
                     </div>`
 }
