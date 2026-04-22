@@ -16,15 +16,15 @@ export default {
         }
     },
     template: `
-        <div class="comm-entries-list">
-            <div v-for="member in commMembers" :key="member.id" class="comm-gamma-con">
-                <div class="comm-gamma-img-con">
+        <div class="comm-card-con">
+            <div v-for="member in commMembers" :key="member.id" class="comm-card-box">
+                <div class="comm-card-img-con">
                     <picture>
                         <source media="(min-width: 768px)" :srcset="getImagePath(member.picture)">
-                        <img class="comm-gamma-img" :src="getImagePath(member.picture, true)" :alt="member.name">
+                        <img class="comm-card-img" :src="getImagePath(member.picture, true)" :alt="member.name">
                     </picture>
                 </div>
-                <div class="comm-gamma-text-con">
+                <div class="comm-card">
                     <span class="title-span">{{ member.rank.toUpperCase() }}</span>
                     <h2>{{ member.name.toUpperCase() }}</h2>
                     <p>{{ member.info.toUpperCase() }}</p>
