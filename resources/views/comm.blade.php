@@ -186,57 +186,52 @@
 
         <!-- Commemoration Expandable Selection -->
         <section class="comm-selection-section">
-            
-            <div class="comm-alpha-con">
+        
+            <!-- COMM CARD SECTION 1 -->
+            <div class="comm-card-section">
                 
-                <!-- COMM CARD SECTION 1 -->
-                <div class="comm-card-section">
-                    
-                    <div class="comm-intro-section">
-                        <h2>
-                            420 Snowy Owl Auxiliary Fighter Squadron (1948-1956)
-                        </h2>
+                <div class="comm-intro-section">
+                    <h2>
+                        420 Snowy Owl Auxiliary Fighter Squadron (1948-1956)
+                    </h2>
 
-                        <p>
-                            Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
-                        </p>
-                    </div>
-
-                    <div class="comm-card-con" id="comm-app"></div>
-
-                    <div class="read-more">
-                        <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
-                    </div>
+                    <p>
+                        Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
+                    </p>
                 </div>
 
-                <!-- COMM CARD SECTION 2 -->
-                <div class="comm-card-section">
-                    
-                    <div class="comm-intro-section">
-                        <h2>
-                            BCATP - British Commonwealth Air Training Plan (1940-1943)
-                        </h2>
+                <div class="comm-card-con" id="comm-app"></div>
 
-                        <p>
-                            Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
-                        </p>
-                    </div>
-
-                    <div class="comm-delta-con-wrapper">
-                        <h2>NO.3 AIR OBSERVER SCHOOL</h2>
-                    <div id="comm-training-three"></div>
-                    </div>
-                    <div class="comm-delta-con-wrapper">
-                        <h2>NO. 4  AIR OBSERVER SCHOOL</h2>
-                    <div id="comm-training-four"></div>
-                    </div>
-
-                    <div class="read-more">
-                        <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
-                    </div>
+                <div class="read-more">
+                    <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
                 </div>
-            
             </div>
+
+            <!-- COMM CARD SECTION 2 -->
+                
+            <div class="comm-intro-section">
+                <h2>
+                    BCATP - British Commonwealth Air Training Plan (1940-1943)
+                </h2>
+
+                <p>
+                    Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
+                </p>
+            </div>
+
+            <div class="comm-delta-con-wrapper">
+                <h2>NO.3 AIR OBSERVER SCHOOL</h2>
+            <div id="comm-training-three"></div>
+            </div>
+            <div class="comm-delta-con-wrapper">
+                <h2>NO. 4  AIR OBSERVER SCHOOL</h2>
+            <div id="comm-training-four"></div>
+            </div>
+
+            <div class="read-more">
+                <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
+            </div>
+            
         </section>
 </main>
 
