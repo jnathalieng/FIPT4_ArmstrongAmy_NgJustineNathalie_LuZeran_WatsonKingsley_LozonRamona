@@ -235,39 +235,6 @@
                         <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
                     </div>
                 </div>
-
-                <!-- COMM CARD SECTION 3 -->
-                <div class="comm-card-section">
-                    
-                    <div class="comm-intro-section">
-                        <h2>
-                            Five London Airmen in the Battle of Britain
-                        </h2>
-
-                        <h3>
-                            (1940)
-                        </h3>
-                    </div>
-
-                    <div class="comm-beta-img-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
-                            <!-- NEEDS IMAGES -->
-                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-grant-thomas-stewart.png') }}" alt="picture of John Allan Smith recieving a medal">
-                            
-                            <p class="comm-beta-p">
-                                In 1940, five airmen connected to London served during the Battle of Britain, one of the most significant air campaigns of the Second World War. Their participation formed part of Canada's contribution to the defence of Britain during this critical period.
-                            </p>
-                        </picture>
-
-                        <div class="comm-beta-bg">
-                        </div>
-                    </div>
-
-                    <div class="read-more">
-                        <a href="{{ route('BOB') }}" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
-                    </div>
-                </div>
             
             </div>
         </section>
