@@ -388,6 +388,10 @@
             </div>
         </div>
 
+        <div class="read-more">
+            <a class="read-more-button" href="{{ route('comm') }}">Learn More<span class="cta-arrow">&#8594</span></a>
+        </div>
+
         <section class="comm-card-section">
             <h2 class="hidden">Commemorating 5 London Pilots Section</h2>
             <div class="comm-intro-section">
@@ -563,6 +567,10 @@
                 </div>
             </div>
         </section>
+
+        <div class="read-more">
+            <a class="read-more-button" href="{{ route('comm') }}">Learn More<span class="cta-arrow">&#8594</span></a>
+        </div>
         
         <div class="text-con">
             <div class="text-box-full">
@@ -577,7 +585,7 @@
         </div>
 
         <div class="read-more">
-            <a class="read-more-button" id="view-remembrance">View The Remembrance Page<span class="cta-arrow">&#8594</span></a>
+            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
         </div>
 
         <section class="color-content-box white-background" id="discover-aircraft-cta">
@@ -604,8 +612,8 @@
             </div>
         </section>
 
-                <div class="read-more">
-            <a class="read-more-button" id="explore-aircraft-button">Explore the Aircraft<span class="cta-arrow">&#8594</span></a>
+        <div class="read-more">
+            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
         </div>
 
 

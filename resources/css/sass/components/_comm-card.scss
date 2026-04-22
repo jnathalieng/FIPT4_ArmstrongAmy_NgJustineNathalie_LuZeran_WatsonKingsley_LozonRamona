@@ -8,10 +8,10 @@
 
 .comm-intro-section {
     // spacing text
-    padding: 4rem 4rem 0 4rem;
+    padding: 4rem;
     
     p {
-        margin: 1rem 0;
+        margin-top: 1rem;
     }
 }
 
@@ -21,14 +21,23 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 1rem;
+
+    background-color: a.$primary-color;
 }
 
 .comm-card-box {
     margin: 1rem auto;
     box-shadow: a.$shadow;
+    background-color: a.$white;
 
     // 2 cards per flex row
     max-width: 45%;
+
+    transition: a.$t-time;
+
+    &:hover {
+        transform: a.$scale-up;
+    }
 }
 
 .comm-card-box.active {

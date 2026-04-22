@@ -1210,10 +1210,10 @@ button {
 }
 
 .comm-intro-section {
-  padding: 4rem 4rem 0 4rem;
+  padding: 4rem;
 }
 .comm-intro-section p {
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .comm-card-con {
@@ -1222,12 +1222,18 @@ button {
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem;
+  background-color: #B3262E;
 }
 
 .comm-card-box {
   margin: 1rem auto;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   max-width: 45%;
+  transition: all 0.3s ease;
+}
+.comm-card-box:hover {
+  transform: scale(110%);
 }
 
 .comm-card-box.active {
