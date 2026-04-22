@@ -35,7 +35,7 @@ mounted() {
             window.location.href = `/api/blog-post/${blogId}`;
         },
         goBackToBlog() {
-            window.location.href = '/blogs';
+            window.location.href = '/blog';
         }
     },
   template: `
