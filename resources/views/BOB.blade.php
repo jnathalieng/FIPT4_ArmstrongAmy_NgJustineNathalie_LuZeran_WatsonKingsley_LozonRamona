@@ -381,26 +381,16 @@
                         127 from New Zealand
                     </li>
                 </ul>
-            </div>
 
-            <div class="text-box-full">
                 <p>
                     Of the nearly 3000 names on the Battle of Britain monument, <span class="text-highlight">112 are those of Canadians</span>. Among them are five airmen from <span class="text-highlight">London, Ontario</span>. Many other Canadians had a part in the battle as well including ground crew and nurses.
                     <br>
                     <br>
                 </p>
-                <p class="typewriter-quote">
-                    “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
-                </p>
-
-                <p>
-                    <br>
-                    - Winston Churchill, in the House of Commons, August 15, 1940
-                </p>
             </div>
         </div>
 
-        <div class="canadian-pilots-section  color-content-box white-background">
+        <div class="canadian-pilots-section color-content-box">
 
             <h3 class="content-box-title">Five London Airmen in the Battle of Britain</h3>
 
@@ -572,7 +562,16 @@
                     </div>
                 </div>
             </div>
-        
+            
+            <div class="text-box-full">
+                <p class="typewriter-quote">
+                    “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
+                </p>
+                <p>
+                    <br>
+                    - Winston Churchill, in the House of Commons, August 15, 1940
+                </p>
+            </div>
         </div>
 
         <div class="read-more">
