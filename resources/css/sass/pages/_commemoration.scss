@@ -10,6 +10,19 @@
 
 // EXPANDABLE SELECTION STYLING
 
+// PRFESERVE SHOWHIDE FUNCTIONALITY
+#comm-app.comm-card-con,
+.comm-delta-con-wrapper {
+    display: none;
+}
+
+#comm-app.comm-card-con.commShowHide,
+.comm-delta-con-wrapper.commShowHide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 // BetaCon Styling
 .comm-beta-con {
     position: relative;
