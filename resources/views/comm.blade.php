@@ -208,7 +208,7 @@
             </div>
 
             <!-- COMM CARD SECTION 2 -->
-                
+            <div class="comm-card-section">
             <div class="comm-intro-section">
                 <h2>
                     BCATP - British Commonwealth Air Training Plan (1940-1943)
@@ -221,17 +221,18 @@
 
             <div class="comm-delta-con-wrapper">
                 <h2>NO.3 AIR OBSERVER SCHOOL</h2>
-            <div id="comm-training-three"></div>
+                <div class="comm-card-con" id="comm-training-three"></div>
             </div>
+
             <div class="comm-delta-con-wrapper">
                 <h2>NO. 4  AIR OBSERVER SCHOOL</h2>
-            <div id="comm-training-four"></div>
+                <div class="comm-card-con" id="comm-training-four"></div>
             </div>
 
             <div class="read-more">
                 <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
             </div>
-            
+            </div>
         </section>
 </main>
 
