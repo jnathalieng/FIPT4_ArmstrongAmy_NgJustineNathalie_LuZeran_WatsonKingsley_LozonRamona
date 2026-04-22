@@ -794,6 +794,13 @@ button {
   max-width: 65ch;
 }
 
+.text-box-full {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding: 0 4rem 4rem 4rem;
+}
+
 @media screen and (min-width: 768px) {
   .text-box {
     columns: 2;

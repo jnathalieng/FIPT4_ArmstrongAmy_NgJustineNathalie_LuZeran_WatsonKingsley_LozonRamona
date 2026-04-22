@@ -20,29 +20,19 @@
     }
 }
 
+.text-box-full {
+    width: 80%;
+    margin: auto;
+    background-color: a.$white;
+
+    padding: 0 4rem 4rem 4rem;
+}
+
 @media screen and (min-width: 768px) {
 
     .text-box {
         columns: 2;
         column-gap: 4rem;
     }
-    // .text-con {
-    //     h3 {
-    //         font-size: 300%;
-    //     }
-
-    //     p {
-    //         margin-bottom: 4rem;
-    //     }
-    // }
-
-    // .text-con-b {
-    //     h3 {
-    //         font-size: 300%;
-    //     }
-
-    //     p {
-    //         margin-bottom: 4rem;
-    //     }
-    // }
+    
 }
