@@ -189,7 +189,7 @@
                 
                 <div class="hero-card" id="TIME-hero-card">
                     <a href="{{ route('timeline') }}" class="hero-card-a">
-                        <h3>London Aviation timeline</h3>
+                        <h3>London Aviation Timeline</h3>
                         <video class="hero-card-video" muted loop playsinline poster="{{ asset('images/hero-video-poster-images/Desktop/gas-poster.png') }}" preload="metadata" onmouseover="this.play()" onmouseout="this.pause()">
                             
                             <source class="responsive-source" data-desktop="{{ asset('videos/hero-videos/hero-gas-480x1080.mp4') }}" data-mobile="{{ asset('videos/hero-videos/hero-gas-768x768.mp4') }}" type="video/mp4">
