@@ -264,7 +264,8 @@
             <h3 class="content-box-title">Upcoming Events</h3>
             <p class="content-box-text">Check out some upcoming events happening around London!</p>
    
-            <section class="card-carousel" id="events-photo-gallery-1">
+            <section id="carousel-app"></section>
+            <!-- <section class="card-carousel" id="events-photo-gallery-1">
 
                 <div class="carousel">
                     <div class="event-card" id="photo-1"></div>
@@ -281,7 +282,7 @@
                     <div class="event-card" id="photo-12"></div>
                 <div class="carousel-background"></div>
                 </div>
-            </section>
+            </section> -->
         </section>
 
         <div class="read-more">

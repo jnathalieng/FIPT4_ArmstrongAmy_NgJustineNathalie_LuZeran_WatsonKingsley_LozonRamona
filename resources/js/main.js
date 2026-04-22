@@ -16,6 +16,7 @@ import blogManager from "./modules/blogManager.js";
 import commManager from "./modules/commManager.js";
 import commFormAdd from "./modules/commFormAdd.js";
 import commFormEdit from "./modules/commFormEdit.js";
+import contentCarousel from "./modules/contentCarousel.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
@@ -40,6 +41,9 @@ footerSearch();
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
     videoQuery();
+    const appCarousel = createApp(contentCarousel);
+    appCarousel.mount('#carousel-app');
+    
 } else if (document.body.dataset.page === "about") {
     console.log('about us!');
 }
