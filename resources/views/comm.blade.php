@@ -189,33 +189,13 @@
             
             <div class="comm-alpha-con">
                 
-                <!-- BetaCon 1 -->
-                <div class="comm-beta-con">
+                <!-- COMM CARD SECTION 1 -->
+                <div class="comm-card-section">
                     
-                    <div class="comm-beta-headers">
+                    <div class="comm-intro-section">
                         <h2>
-                            420 Snowy Owl Auxiliary Fighter Squadron
+                            420 Snowy Owl Auxiliary Fighter Squadron (1948-1956)
                         </h2>
-
-                        <h3>
-                            (1948-1956)
-                        </h3>
-                    </div>
-
-                    <div class="comm-beta-img-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
-                            <!-- NEEDS IMAGES -->
-                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-john-allan-smith.png') }}" alt="picture of John Allan Smith recieving a medal">
-                            
-                            <p class="comm-beta-p">
-                                Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
-                            </p>
-                        </picture>
-
-                        <div class="comm-beta-bg">
-                        </div>
-
                     </div>
 
                     <div class="comm-card-con" id="comm-app"></div>
