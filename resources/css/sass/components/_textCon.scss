@@ -24,8 +24,9 @@
     width: 80%;
     margin: auto;
     background-color: a.$white;
+    box-shadow: a.$shadow;
 
-    padding: 0 4rem 4rem 4rem;
+    padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
