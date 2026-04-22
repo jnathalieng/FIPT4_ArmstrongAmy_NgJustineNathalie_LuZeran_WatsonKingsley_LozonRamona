@@ -1203,6 +1203,62 @@ button {
   margin: 1rem 0;
 }
 
+.BOB-img-con {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.BOB-img {
+  object-fit: contain;
+}
+
+.canadian-pilots-section .canadian-pilots-card {
+  width: 100vw;
+  margin: 20px 0px;
+}
+.canadian-pilots-section .pilots-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(60, 60, 60, 0.3);
+  height: fit-content;
+  align-items: center;
+}
+.canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
+  width: 90%;
+  color: #B3262E;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
+  margin-left: 10%;
+  padding: 10px 0px;
+  border-bottom: solid 5px #91B8D9;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #B3262E;
+  font-size: 20px;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-img-con {
+  display: flex;
+  width: 75%;
+  height: 90vw;
+  text-align: center;
+  background-size: cover;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-text-con {
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+.canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
+  margin: 2rem;
+  font-size: 120%;
+  color: black;
+}
+
 .map-svg-element {
   position: fixed;
   top: 0;
@@ -1890,62 +1946,6 @@ p.typewriter-quote {
 
 #cover-tag {
   width: 60vw;
-}
-
-.canadian-pilots-section .canadian-pilots-card {
-  width: 100vw;
-  margin: 20px 0px;
-}
-.canadian-pilots-section .pilots-card-content {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background-color: rgba(60, 60, 60, 0.3);
-  height: fit-content;
-  align-items: center;
-}
-.canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
-  width: 90%;
-  color: #B3262E;
-  font-size: 16px;
-  margin: 10px 0px;
-}
-.canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
-  margin-left: 10%;
-  padding: 10px 0px;
-  border-bottom: solid 5px #91B8D9;
-  margin-bottom: 10px;
-  width: 100%;
-  color: #B3262E;
-  font-size: 20px;
-}
-.canadian-pilots-section .pilots-card-content .pilots-card-img-con {
-  display: flex;
-  width: 75%;
-  height: 90vw;
-  text-align: center;
-  background-size: cover;
-}
-.canadian-pilots-section .pilots-card-content .pilots-card-text-con {
-  width: 90%;
-  align-items: center;
-  margin: auto;
-}
-.canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
-  margin: 2rem;
-  font-size: 120%;
-  color: black;
-}
-
-.BOB-img-con {
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  overflow: hidden;
-}
-
-.BOB-img {
-  object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {

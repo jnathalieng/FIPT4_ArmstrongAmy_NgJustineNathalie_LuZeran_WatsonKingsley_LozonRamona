@@ -1,0 +1,68 @@
+@use '../abstracts' as a;
+
+.BOB-img-con {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.BOB-img {
+    object-fit: contain;
+}
+
+.canadian-pilots-section {
+    // border-top: solid 5px a.$primary-color;
+    .canadian-pilots-card {
+        width: 100vw;
+        margin: 20px 0px;
+    }
+
+    .pilots-card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: rgba(a.$dark-background, 0.3);
+        height: fit-content;
+        align-items: center;
+
+        .pilot-card-rank-mobile {
+            width: 90%;
+            color: a.$primary-color;
+            font-size: 16px;
+            margin: 10px 0px;
+        }
+
+        .pilot-card-name-mobile {
+            margin-left: 10%;
+            padding: 10px 0px;
+            border-bottom: solid 5px a.$secondary-color;
+            margin-bottom: 10px;
+            width: 100%;
+            color: a.$primary-color;
+            font-size: 20px;
+        }
+
+        .pilots-card-img-con {
+            display: flex;
+            width: 75%;
+            height: 90vw;
+            text-align: center;
+
+            background-size: cover;
+
+        }
+
+        .pilots-card-text-con {
+            width: 90%;
+            align-items: center;
+            margin: auto;
+
+            p {
+                margin: 2rem;
+                font-size: 120%;
+                color: black
+            }
+        }
+    }
+}
