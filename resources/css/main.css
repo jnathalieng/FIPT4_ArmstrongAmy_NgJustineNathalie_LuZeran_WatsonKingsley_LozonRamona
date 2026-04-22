@@ -1274,7 +1274,7 @@ button {
   height: 35vh;
 }
 .comm-card-img-con .comm-card-img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .comm-p {
@@ -1282,6 +1282,17 @@ button {
 }
 
 .comm-p.active {
+  display: block;
+  border: 1px solid #91B8D9;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.comm-text-section {
+  display: none;
+}
+
+.comm-text-section.active {
   display: block;
   border: 1px solid #91B8D9;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
@@ -1626,189 +1637,31 @@ body {
   overflow-x: hidden;
 }
 
-.comm-beta-con {
-  position: relative;
-}
-.comm-beta-con .comm-beta-headers h2, .comm-beta-con .comm-beta-headers h3 {
-  color: #B3262E;
-  margin: 2rem;
-  z-index: 2;
-}
-.comm-beta-con .comm-beta-img-box {
-  position: relative;
-}
-.comm-beta-con .comm-beta-img-box picture {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-.comm-beta-con .comm-beta-img-box picture img {
-  width: 50%;
-  height: auto;
-  z-index: 2;
-}
-.comm-beta-con .comm-beta-img-box .comm-beta-p {
-  position: block;
-  color: #000;
-  padding: 2rem 1rem;
-  z-index: 2;
-}
-.comm-beta-con .comm-beta-img-box .comm-beta-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-color: #f7f7f7;
-}
-
-.comm-gamma-con {
-  display: none;
-  background-color: #f7f7f7;
-  flex-direction: column;
-  align-items: center;
-  margin: 4rem 0;
-  padding: 4rem;
-}
-.comm-gamma-con .comm-gamma-img-con {
-  width: 60%;
-}
-.comm-gamma-con .comm-gamma-img-con .comm-gamma-img {
-  width: 100%;
-}
-.comm-gamma-con .comm-gamma-text-con {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-}
-.comm-gamma-con .comm-gamma-text-con .title-span, .comm-gamma-con .comm-gamma-text-con h2, .comm-gamma-con .comm-gamma-text-con h3 {
-  color: #B3262E;
-}
-.comm-gamma-con .comm-gamma-text-con .label-span {
-  font-weight: bold;
-}
-.comm-gamma-con .comm-gamma-text-con h2 {
-  border-bottom: 2px solid #91B8D9;
-  width: fit-content;
-}
-.comm-gamma-con .comm-gamma-text-con p {
-  color: #000;
-}
-
+#comm-app.comm-card-con,
 .comm-delta-con-wrapper {
   display: none;
 }
-.comm-delta-con-wrapper h2 {
-  color: #B3262E;
-  margin: 5%;
-  border-top: 2px solid #B3262E;
-}
 
-.comm-delta-con {
-  background-color: #f7f7f7;
-  flex-direction: column;
-  align-items: center;
-  margin: 4rem 0;
-  padding: 4rem;
-}
-.comm-delta-con .comm-delta-img-con {
-  width: 60%;
-}
-.comm-delta-con .comm-delta-img-con .comm-delta-img {
-  width: 100%;
-}
-.comm-delta-con .comm-delta-text-con {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-}
-.comm-delta-con .comm-delta-text-con .title-span, .comm-delta-con .comm-delta-text-con h2, .comm-delta-con .comm-delta-text-con h3 {
-  color: #B3262E;
-}
-.comm-delta-con .comm-delta-text-con .label-span {
-  font-weight: bold;
-}
-.comm-delta-con .comm-delta-text-con h2 {
-  border-bottom: 2px solid #91B8D9;
-  width: fit-content;
-}
-.comm-delta-con .comm-delta-text-con p {
-  color: #000;
-}
-
-.comm-gamma-con.commShowHide {
-  display: flex;
-}
-
+#comm-app.comm-card-con.commShowHide,
 .comm-delta-con-wrapper.commShowHide {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-@media screen and (min-width: 768px) {
-  #comm-hero {
-    background-image: url("/images/hero-images/tablet/AboutHero_Tablet.png");
-  }
-  .comm-beta-con .comm-beta-headers h2, .comm-beta-con .comm-beta-headers h3 {
-    margin: 4rem 4rem 0 4rem;
-  }
-  .comm-beta-con .comm-beta-headers h3 {
-    font-size: 200%;
-  }
-  .comm-beta-con .comm-beta-img-box picture {
-    flex-direction: row;
-  }
-  .comm-beta-con .comm-beta-img-box picture img {
-    width: 30%;
-    margin: 2rem 6rem;
-  }
-  .comm-beta-con .comm-beta-img-box .comm-beta-p {
-    font-size: 150%;
-  }
-  .comm-beta-con .comm-beta-img-box .comm-beta-bg {
-    inset: 30% 0;
-  }
-  .comm-gamma-con {
-    flex-direction: row;
-    padding: 5% 10%;
-  }
-  .comm-gamma-con .comm-gamma-img-con {
-    width: 30%;
-  }
-  .comm-gamma-con .comm-gamma-img-con .comm-gamma-img {
-    width: 100%;
-  }
-  .comm-gamma-con .comm-gamma-text-con {
-    margin: 5%;
-  }
-  .comm-gamma-con .comm-gamma-text-con h3 {
-    font-size: 150%;
-    margin: 1rem 0;
-  }
-  .comm-gamma-con .comm-gamma-text-con p {
-    margin: 0.25rem 0;
-  }
-  .comm-delta-con {
-    display: flex;
-    flex-direction: row;
-    padding: 5% 10%;
-  }
-  .comm-delta-con .comm-delta-img-con {
-    width: 30%;
-  }
-  .comm-delta-con .comm-delta-img-con .comm-delta-img {
-    width: 100%;
-  }
-  .comm-delta-con .comm-delta-text-con {
-    margin: 5%;
-  }
-  .comm-delta-con .comm-delta-text-con h3 {
-    font-size: 150%;
-    margin: 1rem 0;
-  }
-  .comm-delta-con .comm-delta-text-con p {
-    margin: 0.25rem 0;
-  }
+.comm-delta-con-wrapper {
+  background-color: #B3262E;
 }
+
+.comm-delta-con-wrapper > h2 {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  color: #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
 @media (min-width: 1200px) {
   #comm-hero {
     background-image: url("/images/hero-images/desktop/AboutHero_Desktop.png");
