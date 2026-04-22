@@ -1,68 +1,68 @@
 @use '../abstracts' as a;
 
-.BOB-img-con {
-    margin: 0;
-    margin-left: 20px;
-    padding: 0;
-    overflow: hidden;
+.comm-card-section {
+    background-color: a.$primary-color;
+    width: 100%;
+    box-shadow: a.$shadow;
 }
 
-.BOB-img {
-    object-fit: contain;
+.comm-card-con {
+    width: 80%;
+    margin: auto;
+    background-color: a.$white;
+    padding: 2rem;
 }
 
-.canadian-pilots-section {
-    // border-top: solid 5px a.$primary-color;
-    .canadian-pilots-card {
-        width: 100vw;
-        margin: 20px 0px;
+.comm-card-box {
+    margin: 2rem 0;
+    box-shadow: a.$shadow;
+}
+
+.comm-card {
+    padding: 2rem;
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0;
+        border-top: 2px solid a.$primary-color;
+        border-bottom: 2px solid a.$primary-color;
+        color: a.$secondary-color;
+    }
+}
+
+.comm-card-img-con {
+    background-color: a.$tertiary-color;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+    .comm-card-img-box {
+        border: 1px solid a.$primary-color;
+        border-radius: a.$borderrad;
+        box-shadow: a.$shadow;
+        margin: auto;
+        
+        display: block;
+        overflow: hidden;
+        width: 30vw;
+        height: 35vh;
     }
 
-    .pilots-card-content {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: rgba(a.$dark-background, 0.3);
-        height: fit-content;
-        align-items: center;
-
-        .pilot-card-rank-mobile {
-            width: 90%;
-            color: a.$primary-color;
-            font-size: 16px;
-            margin: 10px 0px;
-        }
-
-        .pilot-card-name-mobile {
-            margin-left: 10%;
-            padding: 10px 0px;
-            border-bottom: solid 5px a.$secondary-color;
-            margin-bottom: 10px;
-            width: 100%;
-            color: a.$primary-color;
-            font-size: 20px;
-        }
-
-        .pilots-card-img-con {
-            display: flex;
-            width: 75%;
-            height: 90vw;
-            text-align: center;
-
-            background-size: cover;
-
-        }
-
-        .pilots-card-text-con {
-            width: 90%;
-            align-items: center;
-            margin: auto;
-
-            p {
-                margin: 2rem;
-                font-size: 120%;
-                color: black
-            }
-        }
+    .comm-card-img {
+        object-fit: cover;
     }
+    
+    .comm-card-caption {
+        font-size: 0.75rem;
+        margin: 0.75rem auto;
+        text-align: center;
+    }
+}
+
+.comm-p {
+    border: 1px solid a.$secondary-color;
+    border-radius: a.$borderrad;
+    padding: 1rem;
 }

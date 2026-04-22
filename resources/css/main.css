@@ -1203,60 +1203,66 @@ button {
   margin: 1rem 0;
 }
 
-.BOB-img-con {
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  overflow: hidden;
+.comm-card-section {
+  background-color: #B3262E;
+  width: 100%;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.BOB-img {
-  object-fit: contain;
+.comm-card-con {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
 }
 
-.canadian-pilots-section .canadian-pilots-card {
-  width: 100vw;
-  margin: 20px 0px;
+.comm-card-box {
+  margin: 2rem 0;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
 }
-.canadian-pilots-section .pilots-card-content {
+
+.comm-card {
+  padding: 2rem;
+}
+.comm-card h4 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  border-top: 2px solid #B3262E;
+  border-bottom: 2px solid #B3262E;
+  color: #91B8D9;
+}
+
+.comm-card-img-con {
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  background-color: rgba(60, 60, 60, 0.3);
-  height: fit-content;
-  align-items: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
-.canadian-pilots-section .pilots-card-content .pilot-card-rank-mobile {
-  width: 90%;
-  color: #B3262E;
-  font-size: 16px;
-  margin: 10px 0px;
-}
-.canadian-pilots-section .pilots-card-content .pilot-card-name-mobile {
-  margin-left: 10%;
-  padding: 10px 0px;
-  border-bottom: solid 5px #91B8D9;
-  margin-bottom: 10px;
-  width: 100%;
-  color: #B3262E;
-  font-size: 20px;
-}
-.canadian-pilots-section .pilots-card-content .pilots-card-img-con {
-  display: flex;
-  width: 75%;
-  height: 90vw;
-  text-align: center;
-  background-size: cover;
-}
-.canadian-pilots-section .pilots-card-content .pilots-card-text-con {
-  width: 90%;
-  align-items: center;
+.comm-card-img-con .comm-card-img-box {
+  border: 1px solid #B3262E;
+  border-radius: 2rem;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   margin: auto;
+  display: block;
+  overflow: hidden;
+  width: 30vw;
+  height: 35vh;
 }
-.canadian-pilots-section .pilots-card-content .pilots-card-text-con p {
-  margin: 2rem;
-  font-size: 120%;
-  color: black;
+.comm-card-img-con .comm-card-img {
+  object-fit: cover;
+}
+.comm-card-img-con .comm-card-caption {
+  font-size: 0.75rem;
+  margin: 0.75rem auto;
+  text-align: center;
+}
+
+.comm-p {
+  border: 1px solid #91B8D9;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .map-svg-element {
