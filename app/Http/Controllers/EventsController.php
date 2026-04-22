@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\EventImage;
 use Illuminate\Http\Request;
 use App\Models\Events;
+use Illuminate\Support\Facades\File;
 
 class EventsController extends Controller
 {
@@ -15,7 +16,12 @@ class EventsController extends Controller
         $events = Events::with('images')
             ->orderBy('events_start_datetime', 'asc')
             ->get();
-        return response()->json($events);
+
+        //new method
+        return response()->json($events->map(fn($event) => $this->formatEventResponse($event)));
+
+        //old method    
+        //return response()->json($events);
 
     }
     
@@ -24,7 +30,11 @@ class EventsController extends Controller
         // fetch a single event by it's ID
         $event = Events::findOrFail($id);
 
-        return response()->json($event->load('images'));
+        //old method
+        //return response()->json($event->load('images'));
+
+        //new method
+        return response()->json($this->formatEventResponse($event->load('images')));
     }
 
     public function store(Request $request)
@@ -51,14 +61,23 @@ class EventsController extends Controller
 
                 foreach ([1,2,3] as $slot) {
             if ($request->hasFile("events_image_$slot")) {
-
                 $file = $request->file("events_image_$slot");
+                $filename = time() . '_' . $slot . '_' . $file->getClientOriginalName();
+                //new method
+                $file->move(public_path('images/event-images'), $filename);
 
-                $path = $file->store('events', 'public');
+                //old method
+                // $path = $file->store('events', 'public');
 
                 EventImage::create([
                     'event_id' => $event->id,
-                    'path' => $path,
+
+                    //old method
+                    //'path' => $path,
+
+                    //new method
+                    'path' => $filename,
+
                     'alt_text' => $request->input("events_image_alt_$slot"),
                     'is_featured' => $slot === 1,
                     'order' => $slot
@@ -66,7 +85,11 @@ class EventsController extends Controller
             }
         }
 
-        return response()->json($event);
+        //old method
+        // return response()->json($event);
+
+        //new method
+       return response()->json($this->formatEventResponse($event->load('images')));
     }
 
     public function update(Request $request, $id)
@@ -86,26 +109,48 @@ foreach ([1,2,3] as $slot) {
 
     $existing = $event->images()->where('order', $slot)->first();
 
-    // REMOVE IMAGE
-    if ($request->input("events_image_remove_$slot") && $existing) {
-        Storage::disk('public')->delete($existing->path);
-        $existing->delete();
-        continue;
-    }
+    // REMOVE IMAGE - old method
+    // if ($request->input("events_image_remove_$slot") && $existing) {
+    //     Storage::disk('public')->delete($existing->path);
+    //     $existing->delete();
+    //     continue;
+    // }
+
+    //REMOVE IMAGE - new method
+        if ($request->input("events_image_remove_$slot") && $existing) {
+            $imagePath = public_path('images/event-images/' . $existing->path);
+            if (File::exists($imagePath)) {
+                File::delete($imagePath);
+            }
+            $existing->delete();
+            continue;
+        }
 
     // NEW IMAGE UPLOAD
     if ($request->hasFile("events_image_$slot")) {
 
-        if ($existing) {
-            Storage::disk('public')->delete($existing->path);
-            $existing->delete();
+        //new method
+        if ($request->input("events_image_remove_$slot") && $existing) {
+        $imagePath = public_path('images/event-images/' . $existing->path);
+        if (File::exists($imagePath)) {
+            File::delete($imagePath);
         }
-
+        $existing->delete();
+        continue;
+    }
+        //old method
+        if ($existing) {Storage::disk('public')->delete($existing->path);$existing->delete();}
         $path = $request->file("events_image_$slot")->store('events', 'public');
 
         EventImage::create([
             'event_id' => $event->id,
-            'path' => $path,
+            
+            //old method
+            //'path' => $path,
+
+            //new method
+            'path' => $filename,
+            
             'alt_text' => $request->input("events_image_alt_$slot"),
             'is_featured' => $slot === 1,
             'order' => $slot
@@ -121,20 +166,45 @@ foreach ([1,2,3] as $slot) {
         ]);
     }
 }
-
+//new method
+return response()->json($this->formatEventResponse($event->load('images')));
     }
 
     public function destroy($id)
     {
         $event = Events::findOrFail($id);
 
+        //new method
         foreach ($event->images as $image) {
-            Storage::disk('public')->delete($image->path);
+        $imagePath = public_path('images/event-images/' . $image->path);
+        if (File::exists($imagePath)) {
+            File::delete($imagePath);
         }
+    }
+
+        //old method
+        //foreach ($event->images as $image) {Storage::disk('public')->delete($image->path);}
 
         $event->delete();
 
         return response()->json(['message' => 'You have successfully deleted this event.']);
     }
+
+        //Format event response with correct image paths
+    private function formatEventResponse(Events $event)
+    {
+        $data = $event->toArray();
+        
+        // Convert image paths to full URLs
+        if (isset($data['images']) && is_array($data['images'])) {
+            $data['images'] = collect($data['images'])->map(function ($image) {
+                $image['path'] = asset('images/event-images/' . $image['path']);
+                return $image;
+            })->toArray();
+        }
+        
+        return $data;
+    }
+
 
 }
