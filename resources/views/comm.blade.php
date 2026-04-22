@@ -217,11 +217,9 @@
                         </div>
 
                     </div>
-                    <!-- list of 420 squad airmen -->
 
-                
-
-                    <div id="comm-app"></div>
+                    // Mouting #comm-app container that also shares a class to adopt card styling(s)
+                    <div class="comm-card-con" id="comm-app"></div>
 
                     <div class="read-more">
                         <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
