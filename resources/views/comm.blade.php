@@ -218,7 +218,6 @@
 
                     </div>
 
-                    // Mouting #comm-app container that also shares a class to adopt card styling(s)
                     <div class="comm-card-con" id="comm-app"></div>
 
                     <div class="read-more">
