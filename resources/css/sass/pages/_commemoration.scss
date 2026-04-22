@@ -23,6 +23,20 @@
     flex-direction: row;
 }
 
+.comm-delta-con-wrapper {
+    background-color: a.$primary-color;
+}
+
+.comm-delta-con-wrapper > h2 {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    color: a.$white;
+
+    border-top: 2px solid a.$white;
+    border-bottom: 2px solid a.$white;
+}
+
 // // BetaCon Styling
 // .comm-beta-con {
 //     position: relative;
