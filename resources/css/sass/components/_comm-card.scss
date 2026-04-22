@@ -1,25 +1,54 @@
 @use '../abstracts' as a;
 
 .comm-card-section {
-    background-color: a.$primary-color;
+    background-color: a.$white;
     width: 100%;
     box-shadow: a.$shadow;
 }
 
+.comm-intro-section {
+    // spacing text
+    padding: 4rem;
+    box-shadow: a.$shadow;
+    
+    p {
+        margin-top: 1rem;
+    }
+}
+
 .comm-card-con {
-    width: 80%;
-    margin: auto;
-    background-color: a.$white;
-    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    background-color: a.$primary-color;
 }
 
 .comm-card-box {
-    margin: 2rem 0;
+    margin: 1rem auto;
     box-shadow: a.$shadow;
+    background-color: a.$white;
+    cursor: pointer;
+
+    // 2 cards per flex row
+    max-width: 45%;
+
+    transition: a.$t-time;
+
+    &:hover {
+        transform: a.$scale-up;
+    }
+}
+
+.comm-card-box.active {
+    margin: auto;
+    width: 80%;
 }
 
 .comm-card {
-    padding: 2rem;
+    padding: 1rem;
 
     h4 {
         font-size: 1.5rem;
@@ -29,13 +58,16 @@
         border-bottom: 2px solid a.$primary-color;
         color: a.$secondary-color;
     }
+
+    h3 {
+        font-size: 2rem;
+    }
 }
 
 .comm-card-img-con {
-    background-color: a.$tertiary-color;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    // padding: 1rem 0;
     margin: 1rem 0;
 
     .comm-card-img-box {
@@ -53,16 +85,37 @@
     .comm-card-img {
         object-fit: cover;
     }
-    
-    .comm-card-caption {
-        font-size: 0.75rem;
-        margin: 0.75rem auto;
-        text-align: center;
-    }
 }
 
 .comm-p {
+    display: none;
+}
+
+.comm-p.active {
+    display: block;
     border: 1px solid a.$secondary-color;
-    border-radius: a.$borderrad;
+    box-shadow: a.$shadow;
     padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .comm-card-con {
+        gap: 0;
+    }
+
+    .comm-card-box {
+        // 3 cards per flex row
+        width: 30%;
+        height: 85vh;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .comm-card-img-con {
+        .comm-card-img-box {
+            width: 30vw;
+            height: 50vh;
+        }
+    }
 }

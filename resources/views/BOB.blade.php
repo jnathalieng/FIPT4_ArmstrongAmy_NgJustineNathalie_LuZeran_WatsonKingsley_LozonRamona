@@ -388,9 +388,13 @@
             </div>
         </div>
 
+        <div class="read-more">
+            <a class="read-more-button" href="{{ route('comm') }}">Learn More<span class="cta-arrow">&#8594</span></a>
+        </div>
+
         <section class="comm-card-section">
             <h2 class="hidden">Commemorating 5 London Pilots Section</h2>
-            <div class="comm-card-con">
+            <div class="comm-intro-section">
                 <h2>
                     Five London Airmen in the Battle of Britain
                 </h2>
@@ -398,7 +402,11 @@
                 <p>
                     Commemorating those from our city who served in 1940.
                 </p>
+            </div>
 
+            <div class="comm-card-con">
+
+                <!-- CARD 1 -->
                 <div class="comm-card-box">
                     <div class="comm-card">
                         <h4 class="comm-card-rank">FLYING OFFICER</h4>
@@ -409,9 +417,6 @@
                                 <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-ross-smither.png') }}">
                                 <img class="comm-card-img" src="{{ asset('images/BOB-images/mobile/m-bob-ross-smither.png') }}" alt="picture of Bob Ross Smither">
                             </picture>
-                            <span class="comm-card-caption">
-                                Bob Ross Smither
-                            </span>
                         </div>
 
                         <p class="comm-p">
@@ -429,155 +434,158 @@
                         </p>
                     </div>
                 </div>
-            
-                <div class="canadian-pilots-card">
-                    <div class="pilots-card-content">
-                    <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
-                    <h2 class="pilot-card-name-mobile">HUGH RILEY</h2>
+                <!-- CARD 2 -->
+                <div class="comm-card-box">
+                    <div class="comm-card">
+                    <h4 class="comm-card-rank">PILOT OFFICER</h4>
+                    <h3 class="comm-card-name">HUGH RILEY</h3>
 
-                        <div class="pilots-card-img-con" id="hugh-riley">
-                            <picture class="BOB-img-con">
+                        <div class="comm-card-img-con" id="hugh-riley">
+                            <picture class="comm-card-img-box">
                                 <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-hugh-reilley.png') }}">
-                                <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-hugh-reilley.png') }}" alt="">
+                                <img class="comm-card-img" src="{{ asset('images/BOB-images/mobile/m-bob-hugh-reilley.png') }}" alt="picture of hugh reilley">
                             </picture>
                         </div>
-                        <div class="pilots-card-text-con">
-                        <h2 class="pilot-card-rank-desk">PILOTOFFICER</h2>
-                        <h2 class="pilot-card-name-desk">HUGH RILEY</h2>
-                            <p>
-                                Born London, May 26, 1918.
-                            </p>
 
-                            <p>
-                                After finishing his schooling in 1938 he worked at the Highland Golf Club and the London Winery before leaving for England in May 1939 with a friend to enlist in the RAF.
-
-                                He was awarded a short service commission (five years) qualifying in August, 1940.
-
-                                Conversion to Spitfires at 7 OTU Hawarden was followed by a posting to 64 Squadron at Leconfield in early September. His last move was on September 15th to 66 Squadron at Gravesend. On September 27th, he claimed a Me109 destroyed and this was confirmed.
-                                He was shot down near Crockham Hill, Sevenoaks, on October 17th, flying Spitfire R6800 and died in the ensuing crash.
-
-                                He is buried in Gravesend Cemetery.
-                            </p>
-                        </div>
+                        <p class="comm-p">
+                            Born London, May 26, 1918.
+                            <br>
+                            <br>
+                            After finishing his schooling in 1938 he worked at the Highland Golf Club and the London Winery before leaving for England in May 1939 with a friend to enlist in the RAF.
+                            <br>
+                            <br>
+                            He was awarded a short service commission (five years) qualifying in August, 1940.
+                            <br>
+                            <br>
+                            Conversion to Spitfires at 7 OTU Hawarden was followed by a posting to 64 Squadron at Leconfield in early September. His last move was on September 15th to 66 Squadron at Gravesend. On September 27th, he claimed a Me109 destroyed and this was confirmed.
+                            He was shot down near Crockham Hill, Sevenoaks, on October 17th, flying Spitfire R6800 and died in the ensuing crash.
+                            <br>
+                            <br>
+                            He is buried in Gravesend Cemetery.
+                        </p>
                     </div>
                 </div>
-                <div class="canadian-pilots-card">
-                    <div class="pilots-card-content">
-                    <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
-                    <h2 class="pilot-card-name-mobile">ROBERT GRASSICK</h2>
+                <!-- CARD 3 -->
+                <div class="comm-card-box">
+                    <div class="comm-card">
+                    <h4 class="comm-card-rank">FLYING OFFICER</h4>
+                    <h3 class="comm-card-name">ROBERT GRASSICK</h3>
 
-                    <div class="pilots-card-img-con" id="robert-grassik">
-                        <picture class="BOB-img-con">
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-grassick.png') }}">
-                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-grassick.png') }}" alt="">
-                        </picture>
-                    </div>
-                    <div class="pilots-card-text-con">
-
-                        <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
-                        <h2 class="pilot-card-name-desk">ROBERT GRASSICK</h2>
-                            <p>
-                                Born London, May 22, 1917.
-                            </p>
-
-                            <p>
-                                He joined the RAF on a short service commission in November, 1938. Following training, he joined 242 Squadron, then reforming at Church Fenton, on November 5th, 1939.
-
-                                Grassick went to France on May 14th, 1940, on attachment to 607 Squadron.
-
-                                Whilst in France he destroyed two Me109's and a Ju88 on 15th and 16th May. He destroyed two Me109's over Dunkirk. 242 was posted to France on the 8th of June to reinforce 1, 73 and 501 Squadrons and returned on the 16th.
-
-                                While no actions from the Battle of Britain period appear in his record, Ted Barris mentions him while describing the action the men from 242 Squadron saw in France:
-
-                                “During the climax of the Dunkirk air battle, Stan Turner shot down two more enemy fighters. His fellow No. 242 P/O's Robert Grassick, Willie McKnight and John Latta also turned in remarkable combat records. Grassick chased and fired at an Me109 until it crashed and then claimed a second enemy fighter.”
-
-                                He survived the war.
-                            </p>
+                        <div class="comm-card-img-con" id="robert-grassik">
+                            <picture class="comm-card-img-box">
+                                <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-grassick.png') }}">
+                                <img class="comm-card-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-grassick.png') }}" alt="picture of Bob Robert Grassick">
+                            </picture>
                         </div>
+
+                        <p class="comm-p">
+                            Born London, May 22, 1917.
+                            <br>
+                            <br>
+                            He joined the RAF on a short service commission in November, 1938. Following training, he joined 242 Squadron, then reforming at Church Fenton, on November 5th, 1939.
+                            <br>
+                            <br>
+                            Grassick went to France on May 14th, 1940, on attachment to 607 Squadron.
+                            <br>
+                            <br>
+                            Whilst in France he destroyed two Me109's and a Ju88 on 15th and 16th May. He destroyed two Me109's over Dunkirk. 242 was posted to France on the 8th of June to reinforce 1, 73 and 501 Squadrons and returned on the 16th.
+                            <br>
+                            <br>
+                            While no actions from the Battle of Britain period appear in his record, Ted Barris mentions him while describing the action the men from 242 Squadron saw in France:
+                            <br>
+                            <br>
+                            “During the climax of the Dunkirk air battle, Stan Turner shot down two more enemy fighters. His fellow No. 242 P/O's Robert Grassick, Willie McKnight and John Latta also turned in remarkable combat records. Grassick chased and fired at an Me109 until it crashed and then claimed a second enemy fighter.”
+                            <br>
+                            <br>
+                            He survived the war.
+                        </p>
                     </div>
                 </div>
+                <!-- CARD 4 -->
+                <div class="comm-card-box">
+                    <div class="comm-card">
+                    <h4 class="comm-card-rank">PILOT OFFICER</h4>
+                    <h3 class="comm-card-name">NIEL CAMPBELL</h3>
 
-                <div class="canadian-pilots-card">
-                    <div class="pilots-card-content">
-                    <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
-                    <h2 class="pilot-card-name-mobile">NIEL CAMPBELL</h2>
-
-                    <div class="pilots-card-img-con" id="niel-campbell">
-                        <picture class="BOB-img-con">
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-neil-campbell.png') }}">
-                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-neil-campbell.png') }}" alt="">
-                        </picture>
-                    </div>
-                    <div class="pilots-card-text-con">
-                        <h2 class="pilot-card-rank-desk">PILOT OFFICER</h2>
-                        <h2 class="pilot-card-name-desk">NIEL CAMPBELL</h2>
-                            <p>
-                                Born St. Thomas, June 24, 1916.
-                            </p>
-
-                            <p>
-                                AIn 1938 Campbell began flying at the London, Ontario Flying Club and obtained his civil pilot's licence. He applied for a short service commission in the RAF in late 1938.
-
-                                Following training, he was posted to 32 Squadron at Wittering, arriving on May 24th. On June 3rd, he moved to 242 Squadron at Biggin Hill. Five days later he flew to France with the squadron; to help cover the rearguard actions being fought by the British Army as it retreated to the Atlantic coast.
-
-                                By mid-July, 242 was operational again and on September 15th, Campbell damaged a Do17 and on the 18th he claimed two Ju88s destroyed, shared in shooting down another, and damaged a fourth.
-                                On 17th October 1940 Campbell was in Hurricane V6575 which crashed into the sea after possibly being hit by return fire from a Do17 engaged off Yarmouth.
-
-                                His body was later recovered, and buried on October 31st in Scottow Cemetery, Norfolk.
-                            </p>
+                        <div class="comm-card-img-con" id="niel-campbell">
+                            <picture class="comm-card-img-box">
+                                <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-neil-campbell.png') }}">
+                                <img class="comm-card-img" src="{{ asset('images/BOB-images/mobile/m-bob-neil-campbell.png') }}" alt="picture of Bob Neil Campbell">
+                            </picture>
                         </div>
+                    
+                        <p class="comm-p">
+                            Born St. Thomas, June 24, 1916.
+                            <br>
+                            <br>
+                            In 1938 Campbell began flying at the London, Ontario Flying Club and obtained his civil pilot's licence. He applied for a short service commission in the RAF in late 1938.
+                            <br>
+                            <br>
+                            Following training, he was posted to 32 Squadron at Wittering, arriving on May 24th. On June 3rd, he moved to 242 Squadron at Biggin Hill. Five days later he flew to France with the squadron; to help cover the rearguard actions being fought by the British Army as it retreated to the Atlantic coast.
+                            <br>
+                            <br>
+                            By mid-July, 242 was operational again and on September 15th, Campbell damaged a Do17 and on the 18th he claimed two Ju88s destroyed, shared in shooting down another, and damaged a fourth.
+                            On 17th October 1940 Campbell was in Hurricane V6575 which crashed into the sea after possibly being hit by return fire from a Do17 engaged off Yarmouth.
+                            <br>
+                            <br>
+                            His body was later recovered, and buried on October 31st in Scottow Cemetery, Norfolk.
+                        </p>
                     </div>
                 </div>
+                <!-- CARD 5 -->
+                <div class="comm-card-box">
+                    <div class="comm-card">
+                    <h4 class="comm-card-rank">FLYING OFFICER</h4>
+                    <h3 class="comm-card-name">ROBERT R. SMITH, DFC</h3>
 
-                <div class="canadian-pilots-card">
-                    <div class="pilots-card-content">
-                    <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
-                    <h2 class="pilot-card-name-mobile">ROBERT R. SMITH, DFC</h2>
-
-                    <div class="pilots-card-img-con" id="robert-smith">
-                        <picture class="BOB-img-con">
+                    <div class="comm-card-img-con" id="robert-smith">
+                        <picture class="comm-card-img-box">
                             <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-robert-smith.png') }}">
-                            <img class="BOB-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-smith.png') }}" alt="">
+                            <img class="comm-card-img" src="{{ asset('images/BOB-images/mobile/m-bob-robert-smith.png') }}" alt="">
                         </picture>
                     </div>
-                    <div class="pilots-card-text-con">
-                    <h2 class="pilot-card-rank-desk">FLYING OFFICER</h2>
-                    <h2 class="pilot-card-name-desk">ROBERT R. SMITH, DFC</h2>
-                            <p>
-                                Born London, August 17, 1915.
-                            </p>
 
-                            <p>
-                                Smith joined the RAF on a short service commission in May, 1938.
-
-                                He joined 229 Squadron when it was reformed at Digby on October 6th, 1939. Over Dunkirk, on May 29th, 1940, Smith probably destroyed a Me109 and, on June 1st, one Ju87 and probably a second.
-                                
-                                On September 11th, he claimed a He111 probably destroyed. On the 15th, he was shot down in an attack on Do17s and Me110s over Sevenoaks and baled out, with leg wounds, from Hurricane V6616.
-                                On this day he damaged a Me109.
-                                
-                                Smith later flew a Kittyhawk with 112 Squadron in the Western Desert campaign in North Africa where he was shot down, becoming a Prisoner of War.
-
-                                He survived the war.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-box-full">
-                    <p class="typewriter-quote">
-                        “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
-                    </p>
-                    <p>
+                    <p class="comm-p">
+                        Born London, August 17, 1915.
                         <br>
-                        - Winston Churchill, in the House of Commons, August 15, 1940
+                        <br>
+                        Smith joined the RAF on a short service commission in May, 1938.
+                        <br>
+                        <br>
+                        He joined 229 Squadron when it was reformed at Digby on October 6th, 1939. Over Dunkirk, on May 29th, 1940, Smith probably destroyed a Me109 and, on June 1st, one Ju87 and probably a second.
+                        <br>
+                        <br>
+                        On September 11th, he claimed a He111 probably destroyed. On the 15th, he was shot down in an attack on Do17s and Me110s over Sevenoaks and baled out, with leg wounds, from Hurricane V6616.
+                        On this day he damaged a Me109.
+                        <br>
+                        <br>
+                        Smith later flew a Kittyhawk with 112 Squadron in the Western Desert campaign in North Africa where he was shot down, becoming a Prisoner of War.
+                        <br>
+                        <br>
+                        He survived the war.
                     </p>
                 </div>
             </div>
         </section>
 
+        <div class="read-more">
+            <a class="read-more-button" href="{{ route('comm') }}">Learn More<span class="cta-arrow">&#8594</span></a>
+        </div>
+        
+        <div class="text-con">
+            <div class="text-box-full">
+                <p class="typewriter-quote">
+                    “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
+                </p>
+                <p>
+                    <br>
+                    - Winston Churchill, in the House of Commons, August 15, 1940
+                </p>
+            </div>
+        </div>
 
         <div class="read-more">
-            <a class="read-more-button" id="view-remembrance">View The Remembrance Page<span class="cta-arrow">&#8594</span></a>
+            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
         </div>
 
         <section class="color-content-box white-background" id="discover-aircraft-cta">
@@ -604,11 +612,9 @@
             </div>
         </section>
 
-                <div class="read-more">
-            <a class="read-more-button" id="explore-aircraft-button">Explore the Aircraft<span class="cta-arrow">&#8594</span></a>
+        <div class="read-more">
+            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
         </div>
-
-
 
     </main>
 <!-- FOOTER SECTION -->

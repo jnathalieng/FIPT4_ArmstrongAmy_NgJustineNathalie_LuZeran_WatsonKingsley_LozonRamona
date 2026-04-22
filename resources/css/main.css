@@ -1204,25 +1204,47 @@ button {
 }
 
 .comm-card-section {
-  background-color: #B3262E;
+  background-color: #fff;
   width: 100%;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.comm-intro-section {
+  padding: 4rem;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.comm-intro-section p {
+  margin-top: 1rem;
+}
+
 .comm-card-con {
-  width: 80%;
-  margin: auto;
-  background-color: #fff;
-  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #B3262E;
 }
 
 .comm-card-box {
-  margin: 2rem 0;
+  margin: 1rem auto;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+  max-width: 45%;
+  transition: all 0.3s ease;
+}
+.comm-card-box:hover {
+  transform: scale(110%);
+}
+
+.comm-card-box.active {
+  margin: auto;
+  width: 80%;
 }
 
 .comm-card {
-  padding: 2rem;
+  padding: 1rem;
 }
 .comm-card h4 {
   font-size: 1.5rem;
@@ -1232,12 +1254,13 @@ button {
   border-bottom: 2px solid #B3262E;
   color: #91B8D9;
 }
+.comm-card h3 {
+  font-size: 2rem;
+}
 
 .comm-card-img-con {
-  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
   margin: 1rem 0;
 }
 .comm-card-img-con .comm-card-img-box {
@@ -1253,18 +1276,33 @@ button {
 .comm-card-img-con .comm-card-img {
   object-fit: cover;
 }
-.comm-card-img-con .comm-card-caption {
-  font-size: 0.75rem;
-  margin: 0.75rem auto;
-  text-align: center;
-}
 
 .comm-p {
+  display: none;
+}
+
+.comm-p.active {
+  display: block;
   border: 1px solid #91B8D9;
-  border-radius: 2rem;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .comm-card-con {
+    gap: 0;
+  }
+  .comm-card-box {
+    width: 30%;
+    height: 85vh;
+    max-width: none;
+    box-sizing: border-box;
+  }
+  .comm-card-img-con .comm-card-img-box {
+    width: 30vw;
+    height: 50vh;
+  }
+}
 .map-svg-element {
   position: fixed;
   top: 0;

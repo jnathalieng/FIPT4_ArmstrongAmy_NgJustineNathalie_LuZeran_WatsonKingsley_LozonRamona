@@ -229,8 +229,7 @@
             
         </div>
 
-
-<!-- museum intro mobile-->
+        <!-- museum intro mobile-->
         <div class="text-con" id="home-intro">
             
             <div class="text-box">
