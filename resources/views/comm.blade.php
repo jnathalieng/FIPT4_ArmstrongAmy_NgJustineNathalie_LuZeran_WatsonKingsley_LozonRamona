@@ -268,39 +268,6 @@
                         <a href="{{ route('BOB') }}" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
                     </div>
                 </div>
-
-                <!-- COMM CARD SECTION 4 -->
-                <div class="comm-card-section">
-                    
-                    <div class="comm-intro-section">
-                        <h2>
-                            The Book of Rememberance
-                        </h2>
-
-                        <h3>
-                            (1940) CHANGE DATE
-                        </h3>
-                    </div>
-
-                    <div class="comm-beta-img-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}">
-                            <!-- NEEDS IMAGES -->
-                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
-                            
-                            <p class="comm-beta-p">
-                                The Book of Remembrance preserves the names of those connected to London's aviation history whose service and sacrifice are recorded for future generations. It stands as a lasting record within the museum and 427 Wing.
-                            </p>
-                        </picture>
-
-                        <div class="comm-beta-bg">
-                        </div>
-                    </div>
-
-                    <div class="read-more">
-                        <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
-                    </div>
-                </div>
             
             </div>
         </section>
