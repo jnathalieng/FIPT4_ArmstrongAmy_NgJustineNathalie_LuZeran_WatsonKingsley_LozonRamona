@@ -1274,7 +1274,7 @@ button {
   height: 35vh;
 }
 .comm-card-img-con .comm-card-img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .comm-p {
@@ -1282,6 +1282,17 @@ button {
 }
 
 .comm-p.active {
+  display: block;
+  border: 1px solid #91B8D9;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.comm-text-section {
+  display: none;
+}
+
+.comm-text-section.active {
   display: block;
   border: 1px solid #91B8D9;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
