@@ -184,165 +184,164 @@
             </div>
         </section>
 
-<!-- Commemoration Expandable Selection -->
-    
-    <section class="comm-selection-section">
-        
-        <div class="comm-alpha-con">
+        <!-- Commemoration Expandable Selection -->
+        <section class="comm-selection-section">
             
-            <!-- BetaCon 1 -->
-            <div class="comm-beta-con">
+            <div class="comm-alpha-con">
                 
-                <div class="comm-beta-headers">
-                    <h2>
-                        420 Snowy Owl Auxiliary Fighter Squadron
-                    </h2>
+                <!-- BetaCon 1 -->
+                <div class="comm-beta-con">
+                    
+                    <div class="comm-beta-headers">
+                        <h2>
+                            420 Snowy Owl Auxiliary Fighter Squadron
+                        </h2>
 
-                    <h3>
-                        (1948-1956)
-                    </h3>
-                </div>
-
-                <div class="comm-beta-img-box">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
-                        <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-john-allan-smith.png') }}" alt="picture of John Allan Smith recieving a medal">
-                        
-                        <p class="comm-beta-p">
-                            Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
-                        </p>
-                    </picture>
-
-                    <div class="comm-beta-bg">
+                        <h3>
+                            (1948-1956)
+                        </h3>
                     </div>
 
-                </div>
-                <!-- list of 420 squad airmen -->
+                    <div class="comm-beta-img-box">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-john-allan-smith.png') }}">
+                            <!-- NEEDS IMAGES -->
+                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-john-allan-smith.png') }}" alt="picture of John Allan Smith recieving a medal">
+                            
+                            <p class="comm-beta-p">
+                                Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
+                            </p>
+                        </picture>
 
-              
+                        <div class="comm-beta-bg">
+                        </div>
 
-                <div id="comm-app"></div>
+                    </div>
+                    <!-- list of 420 squad airmen -->
 
-                <div class="read-more">
-                    <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
-                </div>
-            </div>
-
-            <!-- BetaCon 2 -->
-            <div class="comm-beta-con">
                 
-                <div class="comm-beta-headers">
-                    <h2>
-                        Losses during Training
-                    </h2>
 
-                    <h3>
-                        British Commonwealth Air Training Plan (BCATP)
-                    </h3>
+                    <div id="comm-app"></div>
 
-                    <h3>
-                        (1940-1943)
-                    </h3>
-                </div>
-
-                <div class="comm-beta-img-box">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
-                        <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-robert-clinton-bailey.png') }}" alt="picture of John Allan Smith recieving a medal">
-                        
-                        <p class="comm-beta-p">
-                            Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
-                        </p>
-                    </picture>
-
-                    <div class="comm-beta-bg">
+                    <div class="read-more">
+                        <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
                     </div>
                 </div>
 
-                <div class="comm-delta-con-wrapper">
-                    <h2>NO.3 AIR OBSERVER SCHOOL</h2>
-                <div id="comm-training-three"></div>
-                </div>
-                <div class="comm-delta-con-wrapper">
-                    <h2>NO. 4  AIR OBSERVER SCHOOL</h2>
-                <div id="comm-training-four"></div>
-                </div>
+                <!-- BetaCon 2 -->
+                <div class="comm-beta-con">
+                    
+                    <div class="comm-beta-headers">
+                        <h2>
+                            Losses during Training
+                        </h2>
 
-                <div class="read-more">
-                    <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
-                </div>
-            </div>
+                        <h3>
+                            British Commonwealth Air Training Plan (BCATP)
+                        </h3>
 
-            <!-- BetaCon 3 -->
-            <div class="comm-beta-con">
-                
-                <div class="comm-beta-headers">
-                    <h2>
-                        Five London Airmen in the Battle of Britain
-                    </h2>
+                        <h3>
+                            (1940-1943)
+                        </h3>
+                    </div>
 
-                    <h3>
-                        (1940)
-                    </h3>
-                </div>
+                    <div class="comm-beta-img-box">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
+                            <!-- NEEDS IMAGES -->
+                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-robert-clinton-bailey.png') }}" alt="picture of John Allan Smith recieving a medal">
+                            
+                            <p class="comm-beta-p">
+                                Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
+                            </p>
+                        </picture>
 
-                <div class="comm-beta-img-box">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
-                        <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-grant-thomas-stewart.png') }}" alt="picture of John Allan Smith recieving a medal">
-                        
-                        <p class="comm-beta-p">
-                            In 1940, five airmen connected to London served during the Battle of Britain, one of the most significant air campaigns of the Second World War. Their participation formed part of Canada's contribution to the defence of Britain during this critical period.
-                        </p>
-                    </picture>
+                        <div class="comm-beta-bg">
+                        </div>
+                    </div>
 
-                    <div class="comm-beta-bg">
+                    <div class="comm-delta-con-wrapper">
+                        <h2>NO.3 AIR OBSERVER SCHOOL</h2>
+                    <div id="comm-training-three"></div>
+                    </div>
+                    <div class="comm-delta-con-wrapper">
+                        <h2>NO. 4  AIR OBSERVER SCHOOL</h2>
+                    <div id="comm-training-four"></div>
+                    </div>
+
+                    <div class="read-more">
+                        <a class="read-more-button comm-CTA-button">Expand <span class="cta-arrow">&#8594</span></a>
                     </div>
                 </div>
 
-                <div class="read-more">
-                    <a href="{{ route('BOB') }}" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
-                </div>
-            </div>
+                <!-- BetaCon 3 -->
+                <div class="comm-beta-con">
+                    
+                    <div class="comm-beta-headers">
+                        <h2>
+                            Five London Airmen in the Battle of Britain
+                        </h2>
 
-            <!-- BetaCon 4 -->
-            <div class="comm-beta-con">
-                
-                <div class="comm-beta-headers">
-                    <h2>
-                        The Book of Rememberance
-                    </h2>
+                        <h3>
+                            (1940)
+                        </h3>
+                    </div>
 
-                    <h3>
-                        (1940) CHANGE DATE
-                    </h3>
-                </div>
+                    <div class="comm-beta-img-box">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-grant-thomas-stewart.png') }}">
+                            <!-- NEEDS IMAGES -->
+                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-grant-thomas-stewart.png') }}" alt="picture of John Allan Smith recieving a medal">
+                            
+                            <p class="comm-beta-p">
+                                In 1940, five airmen connected to London served during the Battle of Britain, one of the most significant air campaigns of the Second World War. Their participation formed part of Canada's contribution to the defence of Britain during this critical period.
+                            </p>
+                        </picture>
 
-                <div class="comm-beta-img-box">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}">
-                        <!-- NEEDS IMAGES -->
-                        <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
-                        
-                        <p class="comm-beta-p">
-                            The Book of Remembrance preserves the names of those connected to London's aviation history whose service and sacrifice are recorded for future generations. It stands as a lasting record within the museum and 427 Wing.
-                        </p>
-                    </picture>
+                        <div class="comm-beta-bg">
+                        </div>
+                    </div>
 
-                    <div class="comm-beta-bg">
+                    <div class="read-more">
+                        <a href="{{ route('BOB') }}" class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
                     </div>
                 </div>
 
-                <div class="read-more">
-                    <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+                <!-- BetaCon 4 -->
+                <div class="comm-beta-con">
+                    
+                    <div class="comm-beta-headers">
+                        <h2>
+                            The Book of Rememberance
+                        </h2>
+
+                        <h3>
+                            (1940) CHANGE DATE
+                        </h3>
+                    </div>
+
+                    <div class="comm-beta-img-box">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}">
+                            <!-- NEEDS IMAGES -->
+                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-420-badge.png') }}" alt="picture of John Allan Smith recieving a medal">
+                            
+                            <p class="comm-beta-p">
+                                The Book of Remembrance preserves the names of those connected to London's aviation history whose service and sacrifice are recorded for future generations. It stands as a lasting record within the museum and 427 Wing.
+                            </p>
+                        </picture>
+
+                        <div class="comm-beta-bg">
+                        </div>
+                    </div>
+
+                    <div class="read-more">
+                        <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
+                    </div>
                 </div>
+            
             </div>
-        
-        </div>
-    </section>
+        </section>
 </main>
 
 <footer id="main-footer">
