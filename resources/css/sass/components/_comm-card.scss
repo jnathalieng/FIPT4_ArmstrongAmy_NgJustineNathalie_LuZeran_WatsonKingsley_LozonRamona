@@ -1,21 +1,29 @@
 @use '../abstracts' as a;
 
 .comm-card-section {
-    background-color: a.$primary-color;
+    background-color: a.$white;
     width: 100%;
     box-shadow: a.$shadow;
-}
-
-.comm-card-con {
-    width: 80%;
-    margin: auto;
-    background-color: a.$white;
     padding: 2rem;
 }
 
+.comm-card-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .comm-card-box {
-    margin: 2rem 0;
+    margin: 1rem 0;
     box-shadow: a.$shadow;
+
+    // 2 cards per flex row
+    width: 50%;
+}
+
+.comm-card-box.active {
+    margin: auto;
+    width: 80%;
 }
 
 .comm-card {
@@ -29,13 +37,16 @@
         border-bottom: 2px solid a.$primary-color;
         color: a.$secondary-color;
     }
+
+    h3 {
+        font-size: 2rem;
+    }
 }
 
 .comm-card-img-con {
-    background-color: a.$tertiary-color;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    // padding: 1rem 0;
     margin: 1rem 0;
 
     .comm-card-img-box {
@@ -53,16 +64,10 @@
     .comm-card-img {
         object-fit: cover;
     }
-    
-    .comm-card-caption {
-        font-size: 0.75rem;
-        margin: 0.75rem auto;
-        text-align: center;
-    }
 }
 
 .comm-p {
     border: 1px solid a.$secondary-color;
-    border-radius: a.$borderrad;
+    box-shadow: a.$shadow;
     padding: 1rem;
 }

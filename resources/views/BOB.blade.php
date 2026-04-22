@@ -390,7 +390,6 @@
 
         <section class="comm-card-section">
             <h2 class="hidden">Commemorating 5 London Pilots Section</h2>
-            <div class="comm-card-con">
                 <h2>
                     Five London Airmen in the Battle of Britain
                 </h2>
@@ -398,7 +397,7 @@
                 <p>
                     Commemorating those from our city who served in 1940.
                 </p>
-
+            <div class="comm-card-con">
                 <div class="comm-card-box">
                     <div class="comm-card">
                         <h4 class="comm-card-rank">FLYING OFFICER</h4>
@@ -409,9 +408,6 @@
                                 <source media="(min-width: 768px)" srcset="{{ asset('images/BOB-images/desktop/d-bob-ross-smither.png') }}">
                                 <img class="comm-card-img" src="{{ asset('images/BOB-images/mobile/m-bob-ross-smither.png') }}" alt="picture of Bob Ross Smither">
                             </picture>
-                            <span class="comm-card-caption">
-                                Bob Ross Smither
-                            </span>
                         </div>
 
                         <p class="comm-p">
