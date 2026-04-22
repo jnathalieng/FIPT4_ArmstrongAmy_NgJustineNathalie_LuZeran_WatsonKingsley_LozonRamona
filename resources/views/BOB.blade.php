@@ -170,11 +170,17 @@
             </p>
 
             <p class="typewriter-quote">
-                Let us therefore brace ourselves to our duties, and so bear ourselves that if the British Empire and its Commonwealth last for a thousand years, men will still say, 'This was their finest hour.' "
+                Let us therefore brace ourselves to our duties, and so bear ourselves that if the British Empire and its Commonwealth last for a thousand years, men will still say, 
+                <br>
+                <span class="quote-highlight">this was their finest hour</span>"
+                <br>
+                <br>
             </p>
 
-            <p class="typewriter-quote">
-                Winston Churchill, in the House of Commons, June 18, 1940
+            <p class="reveal-text">
+                - Winston Churchill, in the House of Commons, June 18, 1940
+                <br>
+                <br>
             </p>
 
             <button id="skipQuote">
@@ -302,14 +308,14 @@
             </div>
         </div>
 
-        <section class="big-red">
+        <!-- <section class="big-red">
 
             <h2 class="hidden">Red separator section</h2>
 
             <h3 class="big-red-text">
                 Cumulative Battle of Britain Losses (July - October 1940)
             </h3>
-        </section>
+        </section> -->
 
         <div class="text-con">
             <h2 class="hidden">Losses Section</h2>
@@ -326,31 +332,6 @@
                     </li>
                     <li>
                         1,547 aircraft destroyed
-                    </li>
-                </ul>
-
-                <h3>Luftwaffe:</h3>
-
-                <ul>
-                    <li>
-                        2,698 aircrew killed
-                    </li>
-                    <li>
-                        1,887 aircraft lost
-                    </li>
-                </ul>
-
-                <h3>Foreign pilots in RAF service:</h3>
-
-                <ul>
-                    <li>
-                        595 non-British pilots flew in the Battle
-                    </li>
-                    <li>
-                        145 from Poland
-                    </li>
-                    <li>
-                        127 from New Zealand
                     </li>
                     <li>
                         112 from Canada
@@ -380,20 +361,41 @@
                         1 each from Jamaica, Palestine, and Rhodesia
                     </li>
                 </ul>
-            </div>
-        </div>
 
-            <div class="deaths-info-bot">
+                <h3>Luftwaffe:</h3>
+
+                <ul>
+                    <li>
+                        2,698 aircrew killed
+                    </li>
+                    <li>
+                        1,887 aircraft lost
+                    </li>
+                    <li>
+                        595 non-British pilots flew in the Battle
+                    </li>
+                    <li>
+                        145 from Poland
+                    </li>
+                    <li>
+                        127 from New Zealand
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-box-full">
+                <p>
+                    Of the nearly 3000 names on the Battle of Britain monument, <span class="text-highlight">112 are those of Canadians</span>. Among them are five airmen from <span class="text-highlight">London, Ontario</span>. Many other Canadians had a part in the battle as well including ground crew and nurses.
+                    <br>
+                    <br>
+                </p>
                 <p class="typewriter-quote">
                     “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
                 </p>
 
-                <p class="typewriter-quote">
-                    Prime Minister Churchill in the House of Commons, August 15, 1940
-                </p>
-
-                <p class="appear-text">
-                    Of the nearly 3000 names on the Battle of Britain monument, 112 are those of Canadians. Among them are five airmen from this region. Many other Canadians had a part in the battle as well including ground crew and nurses.
+                <p>
+                    <br>
+                    - Winston Churchill, in the House of Commons, August 15, 1940
                 </p>
             </div>
         </div>
