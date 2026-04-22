@@ -583,10 +583,6 @@
                 </p>
             </div>
         </div>
-
-        <div class="read-more">
-            <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
-        </div>
         
         <!-- BOB Gallery Carousel -->
         <section class="color-content-box white-background" id="BOB-gallery">
