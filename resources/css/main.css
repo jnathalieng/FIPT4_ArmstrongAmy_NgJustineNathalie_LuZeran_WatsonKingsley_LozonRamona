@@ -1211,6 +1211,7 @@ button {
 
 .comm-intro-section {
   padding: 4rem;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
 }
 .comm-intro-section p {
   margin-top: 1rem;
@@ -1229,6 +1230,7 @@ button {
   margin: 1rem auto;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  cursor: pointer;
   max-width: 45%;
   transition: all 0.3s ease;
 }
@@ -1286,6 +1288,21 @@ button {
   padding: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .comm-card-con {
+    gap: 0;
+  }
+  .comm-card-box {
+    width: 30%;
+    height: 85vh;
+    max-width: none;
+    box-sizing: border-box;
+  }
+  .comm-card-img-con .comm-card-img-box {
+    width: 30vw;
+    height: 50vh;
+  }
+}
 .map-svg-element {
   position: fixed;
   top: 0;

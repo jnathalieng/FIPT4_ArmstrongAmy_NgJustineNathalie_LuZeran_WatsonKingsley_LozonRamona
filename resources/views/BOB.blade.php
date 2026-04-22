@@ -616,8 +616,6 @@
             <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>
         </div>
 
-
-
     </main>
 <!-- FOOTER SECTION -->
 

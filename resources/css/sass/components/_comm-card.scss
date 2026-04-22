@@ -9,6 +9,7 @@
 .comm-intro-section {
     // spacing text
     padding: 4rem;
+    box-shadow: a.$shadow;
     
     p {
         margin-top: 1rem;
@@ -29,6 +30,7 @@
     margin: 1rem auto;
     box-shadow: a.$shadow;
     background-color: a.$white;
+    cursor: pointer;
 
     // 2 cards per flex row
     max-width: 45%;
@@ -94,4 +96,26 @@
     border: 1px solid a.$secondary-color;
     box-shadow: a.$shadow;
     padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .comm-card-con {
+        gap: 0;
+    }
+
+    .comm-card-box {
+        // 3 cards per flex row
+        width: 30%;
+        height: 85vh;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .comm-card-img-con {
+        .comm-card-img-box {
+            width: 30vw;
+            height: 50vh;
+        }
+    }
 }
