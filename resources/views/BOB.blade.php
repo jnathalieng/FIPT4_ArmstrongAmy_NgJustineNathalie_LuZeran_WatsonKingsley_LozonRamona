@@ -390,6 +390,7 @@
 
         <section class="comm-card-section">
             <h2 class="hidden">Commemorating 5 London Pilots Section</h2>
+            <div class="comm-intro-section">
                 <h2>
                     Five London Airmen in the Battle of Britain
                 </h2>
@@ -397,7 +398,8 @@
                 <p>
                     Commemorating those from our city who served in 1940.
                 </p>
-                
+            </div>
+
             <div class="comm-card-con">
 
                 <!-- CARD 1 -->

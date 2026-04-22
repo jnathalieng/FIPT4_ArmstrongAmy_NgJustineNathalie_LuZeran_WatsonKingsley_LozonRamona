@@ -4,21 +4,31 @@
     background-color: a.$white;
     width: 100%;
     box-shadow: a.$shadow;
-    padding: 2rem;
+}
+
+.comm-intro-section {
+    // spacing text
+    padding: 4rem 4rem 0 4rem;
+    
+    p {
+        margin: 1rem 0;
+    }
 }
 
 .comm-card-con {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
 }
 
 .comm-card-box {
-    margin: 1rem 0;
+    margin: 1rem auto;
     box-shadow: a.$shadow;
 
     // 2 cards per flex row
-    width: 50%;
+    max-width: 45%;
 }
 
 .comm-card-box.active {
@@ -27,7 +37,7 @@
 }
 
 .comm-card {
-    padding: 2rem;
+    padding: 1rem;
 
     h4 {
         font-size: 1.5rem;
@@ -67,6 +77,11 @@
 }
 
 .comm-p {
+    display: none;
+}
+
+.comm-p.active {
+    display: block;
     border: 1px solid a.$secondary-color;
     box-shadow: a.$shadow;
     padding: 1rem;

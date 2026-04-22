@@ -1207,19 +1207,27 @@ button {
   background-color: #fff;
   width: 100%;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+}
+
+.comm-intro-section {
+  padding: 4rem 4rem 0 4rem;
+}
+.comm-intro-section p {
+  margin: 1rem 0;
 }
 
 .comm-card-con {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
 .comm-card-box {
-  margin: 1rem 0;
+  margin: 1rem auto;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  max-width: 45%;
 }
 
 .comm-card-box.active {
@@ -1228,7 +1236,7 @@ button {
 }
 
 .comm-card {
-  padding: 2rem;
+  padding: 1rem;
 }
 .comm-card h4 {
   font-size: 1.5rem;
@@ -1262,6 +1270,11 @@ button {
 }
 
 .comm-p {
+  display: none;
+}
+
+.comm-p.active {
+  display: block;
   border: 1px solid #91B8D9;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
