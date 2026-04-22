@@ -196,6 +196,10 @@
                         <h2>
                             420 Snowy Owl Auxiliary Fighter Squadron (1948-1956)
                         </h2>
+
+                        <p>
+                            Many Londoners see their first aircraft - a Curtiss Model E - flown by Beckwith Havens who took off from Carling Heights, near Wolseley Barracks (now the Royal Canadian Regiment Museum) for a 20-minute flight over the city.
+                        </p>
                     </div>
 
                     <div class="comm-card-con" id="comm-app"></div>
@@ -205,36 +209,17 @@
                     </div>
                 </div>
 
-                <!-- BetaCon 2 -->
-                <div class="comm-beta-con">
+                <!-- COMM CARD SECTION 2 -->
+                <div class="comm-card-section">
                     
-                    <div class="comm-beta-headers">
+                    <div class="comm-intro-section">
                         <h2>
-                            Losses during Training
+                            BCATP - British Commonwealth Air Training Plan (1940-1943)
                         </h2>
 
-                        <h3>
-                            British Commonwealth Air Training Plan (BCATP)
-                        </h3>
-
-                        <h3>
-                            (1940-1943)
-                        </h3>
-                    </div>
-
-                    <div class="comm-beta-img-box">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('images/comm-images/desktop/d-comm-robert-clinton-bailey.png') }}">
-                            <!-- NEEDS IMAGES -->
-                            <img class="comm-beta-img" src="{{ asset('images/comm-images/mobile/m-comm-robert-clinton-bailey.png') }}" alt="picture of John Allan Smith recieving a medal">
-                            
-                            <p class="comm-beta-p">
-                                Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
-                            </p>
-                        </picture>
-
-                        <div class="comm-beta-bg">
-                        </div>
+                        <p>
+                            Between 1940 and 1943, several airmen connected to training schools in and around London, Ontario, lost their lives while preparing for service under the British Commonwealth Air Training Plan. Accidents occurred during solo flights, mid-air collisions, navigation exercises, and routine training operations involving aircraft such as the Fleet Finch and Avro Anson. These losses form part of the historical record of Canada's wartime air training program.
+                        </p>
                     </div>
 
                     <div class="comm-delta-con-wrapper">
@@ -251,10 +236,10 @@
                     </div>
                 </div>
 
-                <!-- BetaCon 3 -->
-                <div class="comm-beta-con">
+                <!-- COMM CARD SECTION 3 -->
+                <div class="comm-card-section">
                     
-                    <div class="comm-beta-headers">
+                    <div class="comm-intro-section">
                         <h2>
                             Five London Airmen in the Battle of Britain
                         </h2>
@@ -284,10 +269,10 @@
                     </div>
                 </div>
 
-                <!-- BetaCon 4 -->
-                <div class="comm-beta-con">
+                <!-- COMM CARD SECTION 4 -->
+                <div class="comm-card-section">
                     
-                    <div class="comm-beta-headers">
+                    <div class="comm-intro-section">
                         <h2>
                             The Book of Rememberance
                         </h2>
