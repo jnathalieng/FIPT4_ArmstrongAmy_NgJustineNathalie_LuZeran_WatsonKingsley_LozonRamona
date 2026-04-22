@@ -18,6 +18,10 @@ export default {
     template: `
             <div v-for="member in commMembers" :key="member.id" class="comm-card-box">
                 <div class="comm-card">
+                
+                    <h4 class="comm-card-rank">{{ member.rank.toUpperCase() }}</h4>
+                    <h3 class="comm-card-name">{{ member.name.toUpperCase() }}</h3>
+
                     <div class="comm-card-img-con">
                         <picture>
                             <source media="(min-width: 768px)" :srcset="getImagePath(member.picture)">
@@ -26,8 +30,6 @@ export default {
                     </div>
 
                     <div class="comm-text-section">
-                        <span class="title-span">{{ member.rank.toUpperCase() }}</span>
-                        <h2>{{ member.name.toUpperCase() }}</h2>
                         <p>{{ member.info.toUpperCase() }}</p>
                         
                         <p class="service-number"><span class="label-span">SERVICE NUMBER: </span>{{ member.service_number.toLowerCase() }}</p>
