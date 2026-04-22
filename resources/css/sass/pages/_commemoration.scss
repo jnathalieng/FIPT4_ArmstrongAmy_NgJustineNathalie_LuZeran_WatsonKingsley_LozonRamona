@@ -23,252 +23,252 @@
     flex-direction: row;
 }
 
-// BetaCon Styling
-.comm-beta-con {
-    position: relative;
+// // BetaCon Styling
+// .comm-beta-con {
+//     position: relative;
     
-    .comm-beta-headers {
-        // BetaText Styling
-        h2, h3 {
-            color: a.$primary-color;
-            margin: 2rem;
-            z-index: 2;
-        }
-    }
+//     .comm-beta-headers {
+//         // BetaText Styling
+//         h2, h3 {
+//             color: a.$primary-color;
+//             margin: 2rem;
+//             z-index: 2;
+//         }
+//     }
 
-    .comm-beta-img-box {
-        position: relative;
+//     .comm-beta-img-box {
+//         position: relative;
 
-        picture {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+//         picture {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
 
-            // adjust this for image padding
-            padding: 2rem;
+//             // adjust this for image padding
+//             padding: 2rem;
 
-            img {
-                width: 50%;
-                height: auto;
-                z-index: 2;
-            }
-        }
+//             img {
+//                 width: 50%;
+//                 height: auto;
+//                 z-index: 2;
+//             }
+//         }
 
-        .comm-beta-p {
-            position: block;
-            color: a.$black;
-            padding: 2rem 1rem;    
-            z-index: 2;
-        }
+//         .comm-beta-p {
+//             position: block;
+//             color: a.$black;
+//             padding: 2rem 1rem;    
+//             z-index: 2;
+//         }
 
-        .comm-beta-bg {
-            position: absolute;
-            inset: 0;
-            z-index: 1;
-            background-color: a.$tertiary-color;
-        }
-    }
-}
+//         .comm-beta-bg {
+//             position: absolute;
+//             inset: 0;
+//             z-index: 1;
+//             background-color: a.$tertiary-color;
+//         }
+//     }
+// }
 
-// GammaCon Styling
-.comm-gamma-con {
+// // GammaCon Styling
+// .comm-gamma-con {
 
-    display: none;
+//     display: none;
     
-    // formatting
-    background-color: a.$tertiary-color;
-    flex-direction: column;
-    align-items: center;
-    margin: 4rem 0;
-    padding: 4rem;
+//     // formatting
+//     background-color: a.$tertiary-color;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 4rem 0;
+//     padding: 4rem;
 
-    .comm-gamma-img-con {
-        width: 60%;
-        .comm-gamma-img {
-            width: 100%;
-        }
-    }
+//     .comm-gamma-img-con {
+//         width: 60%;
+//         .comm-gamma-img {
+//             width: 100%;
+//         }
+//     }
 
-    .comm-gamma-text-con {
+//     .comm-gamma-text-con {
 
-        display: flex;
-        flex-direction: column;
-        padding-top: 2rem;
+//         display: flex;
+//         flex-direction: column;
+//         padding-top: 2rem;
 
-        .title-span, h2, h3 {
-            color: a.$primary-color;
-        }
+//         .title-span, h2, h3 {
+//             color: a.$primary-color;
+//         }
 
-        .label-span {
-            font-weight: bold;
-        }
+//         .label-span {
+//             font-weight: bold;
+//         }
 
-        h2 {
-            border-bottom: 2px solid a.$secondary-color;
-            width: fit-content;
-        }
+//         h2 {
+//             border-bottom: 2px solid a.$secondary-color;
+//             width: fit-content;
+//         }
 
-        p {
-            color: a.$black;
-        }
-    }
-}
+//         p {
+//             color: a.$black;
+//         }
+//     }
+// }
 
-// DeltaCon Styling
-.comm-delta-con-wrapper {
-    display: none;
+// // DeltaCon Styling
+// .comm-delta-con-wrapper {
+//     display: none;
 
-    h2 {
-        color: a.$primary-color;
-        margin: 5%;
-        border-top: 2px solid a.$primary-color;
-    }
-}
+//     h2 {
+//         color: a.$primary-color;
+//         margin: 5%;
+//         border-top: 2px solid a.$primary-color;
+//     }
+// }
 
-.comm-delta-con {
+// .comm-delta-con {
     
-    // formatting
-    background-color: a.$tertiary-color;
-    flex-direction: column;
-    align-items: center;
-    margin: 4rem 0;
-    padding: 4rem;
+//     // formatting
+//     background-color: a.$tertiary-color;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 4rem 0;
+//     padding: 4rem;
 
-    .comm-delta-img-con {
-        width: 60%;
-        .comm-delta-img {
-            width: 100%;
-        }
-    }
+//     .comm-delta-img-con {
+//         width: 60%;
+//         .comm-delta-img {
+//             width: 100%;
+//         }
+//     }
 
-    .comm-delta-text-con {
+//     .comm-delta-text-con {
 
-        display: flex;
-        flex-direction: column;
-        padding-top: 2rem;
+//         display: flex;
+//         flex-direction: column;
+//         padding-top: 2rem;
 
-        .title-span, h2, h3 {
-            color: a.$primary-color;
-        }
+//         .title-span, h2, h3 {
+//             color: a.$primary-color;
+//         }
 
-        .label-span {
-            font-weight: bold;
-        }
+//         .label-span {
+//             font-weight: bold;
+//         }
 
-        h2 {
-            border-bottom: 2px solid a.$secondary-color;
-            width: fit-content;
-        }
+//         h2 {
+//             border-bottom: 2px solid a.$secondary-color;
+//             width: fit-content;
+//         }
 
-        p {
-            color: a.$black;
-        }
-    }
-}
+//         p {
+//             color: a.$black;
+//         }
+//     }
+// }
 
-.comm-gamma-con.commShowHide {
-    display: flex;
-}
+// .comm-gamma-con.commShowHide {
+//     display: flex;
+// }
 
-.comm-delta-con-wrapper.commShowHide  {
-    display: block;
-}
+// .comm-delta-con-wrapper.commShowHide  {
+//     display: block;
+// }
 
-@media screen and (min-width: 768px) {
+// @media screen and (min-width: 768px) {
     
-#comm-hero {
-    background-image: url("/images/hero-images/tablet/AboutHero_Tablet.png");
-}
+// #comm-hero {
+//     background-image: url("/images/hero-images/tablet/AboutHero_Tablet.png");
+// }
     
-    // BetaCon styling
-    .comm-beta-con {
+//     // BetaCon styling
+//     .comm-beta-con {
         
-        .comm-beta-headers {
-            // BetaText Styling
-            h2, h3 {
-                margin: 4rem 4rem 0 4rem;
-            }
+//         .comm-beta-headers {
+//             // BetaText Styling
+//             h2, h3 {
+//                 margin: 4rem 4rem 0 4rem;
+//             }
 
-            h3 {
-                font-size: 200%;
-            }
-        }
+//             h3 {
+//                 font-size: 200%;
+//             }
+//         }
 
-        .comm-beta-img-box {
+//         .comm-beta-img-box {
 
-            picture {
-                flex-direction: row;
-                img {
-                    width: 30%;
-                    // internal margin between img and p
-                    margin: 2rem 6rem;
-                }
-            }
+//             picture {
+//                 flex-direction: row;
+//                 img {
+//                     width: 30%;
+//                     // internal margin between img and p
+//                     margin: 2rem 6rem;
+//                 }
+//             }
 
-            .comm-beta-p {
-                font-size: 150%;
-            }
+//             .comm-beta-p {
+//                 font-size: 150%;
+//             }
 
-            .comm-beta-bg {
-                inset: 30% 0;
-            }
-        }
-    }
+//             .comm-beta-bg {
+//                 inset: 30% 0;
+//             }
+//         }
+//     }
 
-    // GammaCon styling
-    .comm-gamma-con {
-        flex-direction: row;
-        padding: 5% 10%;
+//     // GammaCon styling
+//     .comm-gamma-con {
+//         flex-direction: row;
+//         padding: 5% 10%;
 
-        .comm-gamma-img-con {
-            width: 30%;
-            .comm-gamma-img {
-                width: 100%;
-            }
-        }
+//         .comm-gamma-img-con {
+//             width: 30%;
+//             .comm-gamma-img {
+//                 width: 100%;
+//             }
+//         }
 
-        .comm-gamma-text-con {
-            margin: 5%;
+//         .comm-gamma-text-con {
+//             margin: 5%;
 
-            h3 {
-                font-size: 150%;
-                margin: 1rem 0;
-            }
+//             h3 {
+//                 font-size: 150%;
+//                 margin: 1rem 0;
+//             }
 
-            p {
-                margin: 0.25rem 0;
-            }
-        }
-    }
+//             p {
+//                 margin: 0.25rem 0;
+//             }
+//         }
+//     }
 
-    // DeltaCon styling
-    .comm-delta-con {
-        display: flex;
-        flex-direction: row;
-        padding: 5% 10%;
+//     // DeltaCon styling
+//     .comm-delta-con {
+//         display: flex;
+//         flex-direction: row;
+//         padding: 5% 10%;
 
-        .comm-delta-img-con {
-            width: 30%;
-            .comm-delta-img {
-                width: 100%;
-            }
-        }
+//         .comm-delta-img-con {
+//             width: 30%;
+//             .comm-delta-img {
+//                 width: 100%;
+//             }
+//         }
 
-        .comm-delta-text-con {
-            margin: 5%;
+//         .comm-delta-text-con {
+//             margin: 5%;
 
-            h3 {
-                font-size: 150%;
-                margin: 1rem 0;
-            }
+//             h3 {
+//                 font-size: 150%;
+//                 margin: 1rem 0;
+//             }
 
-            p {
-                margin: 0.25rem 0;
-            }
-        }
-    }
-}
+//             p {
+//                 margin: 0.25rem 0;
+//             }
+//         }
+//     }
+// }
 
 @media (min-width:1200px) {
     #comm-hero {
