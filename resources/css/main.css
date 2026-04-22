@@ -1649,6 +1649,19 @@ body {
   flex-direction: row;
 }
 
+.comm-delta-con-wrapper {
+  background-color: #B3262E;
+}
+
+.comm-delta-con-wrapper > h2 {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  color: #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
 @media (min-width: 1200px) {
   #comm-hero {
     background-image: url("/images/hero-images/desktop/AboutHero_Desktop.png");
