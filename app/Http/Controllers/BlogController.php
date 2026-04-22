@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use Illuminate\Support\Facades\File;
 
 class BlogController extends Controller
 {
@@ -24,7 +25,13 @@ class BlogController extends Controller
         if ($request->hasFile('featured_image')) {
             $file = $request->file('featured_image');
             $filename = time() . '_' . $file->getClientOriginalName();
-            $file->storeAs('blog-images', $filename, 'public');
+
+            //save to storage
+            //$file->storeAs('blog-images', $filename, 'public');
+            
+            //save to pulic/images
+            $file->move(public_path('/images/blog-images/'), $filename);
+            
             $validated['featured_image'] = $filename;
         }
 
@@ -51,14 +58,31 @@ class BlogController extends Controller
         // Handle image upload and deletion of old image
         if ($request->hasFile('featured_image')) {
             // Delete old image if exists
-            if ($blog->featured_image && \Storage::disk('public')->exists('blog-images/' . $blog->featured_image)) {
-                \Storage::disk('public')->delete('blog-images/' . $blog->featured_image);
+
+            //delete from public/images
+            if ($blog->featured_image) {
+                $oldImagePath = public_path('/images/blog-images/' . $blog->featured_image);
+                if (File::exists($oldImagePath)) {
+                    File::delete($oldImagePath);
+                }
             }
+
+            //delete from storage
+            // if ($blog->featured_image && \Storage::disk('public')->exists('blog-images/' . $blog->featured_image)) {
+            //     \Storage::disk('public')->delete('blog-images/' . $blog->featured_image);
+            // }
             
             $file = $request->file('featured_image');
             $filename = time() . '_' . $file->getClientOriginalName();
-            $file->storeAs('blog-images', $filename, 'public');
-            $validated['featured_image'] = $filename;
+            
+            //store in public/images
+            $file->move(public_path('/images/blog-images/'), $filename);
+            //store in storage
+            //$file->storeAs('blog-images', $filename, 'public');
+
+            //part of old method
+            //$validated['featured_image'] = $filename;
+            
             $blog->featured_image = $filename;
             $blog->save();  
         }
@@ -70,9 +94,19 @@ class BlogController extends Controller
     public function destroy(Blog $blog)
     {
         // Delete featured image if exists
-        if ($blog->featured_image && \Storage::disk('public')->exists('blog-images/' . $blog->featured_image)) {
-            \Storage::disk('public')->delete('blog-images/' . $blog->featured_image);
+
+        //delete from public/images
+        if ($blog->featured_image) {
+            $imagePath = public_path('/images/blog-images/' . $blog->featured_image);
+            if (File::exists($imagePath)) {
+                File::delete($imagePath);
+            }
         }
+
+        //delete from storage
+        // if ($blog->featured_image && \Storage::disk('public')->exists('blog-images/' . $blog->featured_image)) {
+        //     \Storage::disk('public')->delete('blog-images/' . $blog->featured_image);
+        // }
 
         $blog->delete();
         
@@ -82,21 +116,34 @@ class BlogController extends Controller
     //Get a single blog for editing
     public function edit(Blog $blog)
     {
-        return response()->json($blog);
+        //return response()->json($blog);
+        
+        //changed w images source change
+        return response()->json($this->formatBlogResponse($blog));
     }
 
     //Get all blogs
     public function index()
     {
+        //old method
+        // $blogs = Blog::orderBy('created_at', 'desc')->get();
+        // return response()->json($blogs);
+    
+        //new method
         $blogs = Blog::orderBy('created_at', 'desc')->get();
-        return response()->json($blogs);
+        return response()->json($blogs->map(fn($blog) => $this->formatBlogResponse($blog)));
+
     }
 
     //Get a single blog post for viewing
 
     public function show(Blog $blog)
     {
-        return response()->json($blog);
+        //old method
+        //return response()->json($blog);
+
+        //new method
+        return response()->json($this->formatBlogResponse($blog));
     }
 
     public function showPost(Blog $blog)
@@ -108,7 +155,26 @@ class BlogController extends Controller
     //Get the 3 most recent blogs
     public function getLatest()
     {
+        //new method        
+        $blogs = Blog::orderBy('created_at', 'desc')->limit(3)->get();
+        return response()->json($blogs->map(fn($blog) => $this->formatBlogResponse($blog)));
+
+        //old method
         $blogs = Blog::orderBy('created_at', 'desc')->limit(3)->get();
         return response()->json($blogs);
     }
+
+    //Format blog response with correct image paths
+    private function formatBlogResponse(Blog $blog)
+    {
+        $data = $blog->toArray();
+        
+        // Convert featured_image to full URL if it exists
+        if ($blog->featured_image) {
+            $data['featured_image'] = asset('images/blog-images/' . $blog->featured_image);
+        }
+        
+        return $data;
+    }
+
 }

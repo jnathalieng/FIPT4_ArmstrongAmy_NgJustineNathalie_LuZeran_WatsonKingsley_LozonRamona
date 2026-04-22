@@ -18,7 +18,7 @@ class BlogSeeder extends Seeder
                 'title' => 'The History of London Aviation',
                 'excerpt' => 'Discover the fascinating history of aviation in London...',
                 'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-                'featured_image' => 'blog-1.jpg',
+                'featured_image' => 'lancaster.jpg',
                 'featured_image_alt' => 'Historical aircraft'
             ],
             [
