@@ -398,6 +398,8 @@
                     Commemorating those from our city who served in 1940.
                 </p>
             <div class="comm-card-con">
+
+                <!-- CARD 1 -->
                 <div class="comm-card-box">
                     <div class="comm-card">
                         <h4 class="comm-card-rank">FLYING OFFICER</h4>
@@ -425,7 +427,7 @@
                         </p>
                     </div>
                 </div>
-            
+                <!-- CARD 2 -->
                 <div class="canadian-pilots-card">
                     <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
@@ -457,6 +459,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- CARD 3 -->
                 <div class="canadian-pilots-card">
                     <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
@@ -492,7 +495,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- CARD 4 -->
                 <div class="canadian-pilots-card">
                     <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">PILOT OFFICER</h2>
@@ -524,7 +527,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- CARD 5 -->
                 <div class="canadian-pilots-card">
                     <div class="pilots-card-content">
                     <h2 class="pilot-card-rank-mobile">FLYING OFFICER</h2>
@@ -558,19 +561,20 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="text-box-full">
-                    <p class="typewriter-quote">
-                        “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
-                    </p>
-                    <p>
-                        <br>
-                        - Winston Churchill, in the House of Commons, August 15, 1940
-                    </p>
-                </div>
             </div>
         </section>
-
+        
+        <div class="text-con">
+            <div class="text-box-full">
+                <p class="typewriter-quote">
+                    “The gratitude of every home in our Island, in our Empire, and indeed throughout the world, except in the abodes of the guilty, goes out to the British airmen who, undaunted by odds, unwearied in their constant challenge and mortal danger, are turning the tide of world war by their prowess and by their devotion. Never in the field of human conflict was so much owed by so many to so few.”
+                </p>
+                <p>
+                    <br>
+                    - Winston Churchill, in the House of Commons, August 15, 1940
+                </p>
+            </div>
+        </div>
 
         <div class="read-more">
             <a class="read-more-button" id="view-remembrance">View The Remembrance Page<span class="cta-arrow">&#8594</span></a>
