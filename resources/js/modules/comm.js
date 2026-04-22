@@ -18,12 +18,12 @@ export default {
     template: `
             <div v-for="member in commMembers" :key="member.id" class="comm-card-box">
                 <div class="comm-card">
-                
+
                     <h4 class="comm-card-rank">{{ member.rank.toUpperCase() }}</h4>
                     <h3 class="comm-card-name">{{ member.name.toUpperCase() }}</h3>
 
                     <div class="comm-card-img-con">
-                        <picture>
+                        <picture class="comm-card-img-box">
                             <source media="(min-width: 768px)" :srcset="getImagePath(member.picture)">
                             <img class="comm-card-img" :src="getImagePath(member.picture, true)" :alt="member.name">
                         </picture>
