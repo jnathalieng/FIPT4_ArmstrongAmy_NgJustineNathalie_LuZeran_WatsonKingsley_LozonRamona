@@ -1222,7 +1222,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 1rem 1rem 4rem 1rem;
   align-items: flex-start;
   background-color: #B3262E;
 }
