@@ -23,6 +23,13 @@ export function cardShowHide() {
 
             if (textContent) {
                 textContent.classList.toggle('active');
+
+                if (this.classList.contains('active')) {
+                    textContent.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest'
+                    });
+                }
             }
         });
 
