@@ -83,7 +83,7 @@
     }
 
     .comm-card-img {
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
@@ -92,6 +92,17 @@
 }
 
 .comm-p.active {
+    display: block;
+    border: 1px solid a.$secondary-color;
+    box-shadow: a.$shadow;
+    padding: 1rem;
+}
+
+.comm-text-section {
+    display: none;
+}
+
+.comm-text-section.active {
     display: block;
     border: 1px solid a.$secondary-color;
     box-shadow: a.$shadow;

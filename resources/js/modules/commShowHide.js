@@ -4,10 +4,10 @@ export function commShowHide() {
         button.addEventListener('click', function() {
             
             // applying "closest" method again
-            const commBeta = this.closest('.comm-beta-con');
+            const commBeta = this.closest('.comm-card-section');
 
             // reference closest parent ^^ again
-            const commGammaCons = commBeta.querySelectorAll('.comm-gamma-con, .comm-delta-con-wrapper');
+            const commGammaCons = commBeta.querySelectorAll('.comm-card-con, .comm-delta-con-wrapper');
 
             commGammaCons.forEach(commGamma => {
                 commGamma.classList.toggle('commShowHide');
