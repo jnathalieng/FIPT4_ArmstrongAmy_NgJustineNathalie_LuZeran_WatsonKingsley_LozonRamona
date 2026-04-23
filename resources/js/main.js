@@ -33,6 +33,7 @@ import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
 import { tlScrollTo } from "./modules/tlScrollTo.js";
 import { tlSVG } from "./modules/tlSVG.js";
 import { cardShowHide } from "./modules/cardShowHide.js";
+import { cardSkew } from "./modules/cardSkew.js";
 
 navbar_showhide();
 navDropDown();
@@ -71,6 +72,7 @@ else if(document.body.dataset.page === "BOB") {
     
     videoQuery();
     cardShowHide();
+    cardSkew();
     typeWriter();
     // dossierOpen();
 }
@@ -94,6 +96,7 @@ else if(document.body.dataset.page === "comm") {
 
     setTimeout(() => {
         cardShowHide();
+        cardSkew();
     }, 0); 
 }
 else if(document.body.dataset.page === "events") {
