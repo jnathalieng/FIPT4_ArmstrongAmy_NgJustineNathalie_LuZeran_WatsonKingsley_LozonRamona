@@ -41,15 +41,6 @@ button {
     font-family: a.$font-h;
 }
 
-ul, li {
-    font-family: a.$font-p;
-    list-style: square;
-}
-
-li {
-    padding-left: 1rem;
-}
-
 // SPAN STYLING
 .text-highlight {
     color: a.$primary-color;

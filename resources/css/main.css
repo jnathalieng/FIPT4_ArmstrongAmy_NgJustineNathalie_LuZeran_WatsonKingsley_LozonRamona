@@ -57,15 +57,6 @@ button {
   font-family: "montserrat", sans-serif;
 }
 
-ul, li {
-  font-family: "inter", sans-serif;
-  list-style: square;
-}
-
-li {
-  padding-left: 1rem;
-}
-
 .text-highlight {
   color: #B3262E;
   font-weight: bold;
@@ -809,6 +800,14 @@ li {
   background-color: #fff;
   box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 4rem;
+}
+
+.text-box ul, .text-box li {
+  font-family: "inter", sans-serif;
+  list-style: square;
+}
+.text-box li {
+  padding-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
