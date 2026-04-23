@@ -27,7 +27,7 @@ export function cardSkew() {
     });
 
     gsap.set(".comm-card-box", {
-        transformOrigin: "right center",
+        transformOrigin: "center",
         force3D: true
     });
     // gsap.to(".comm-card-box", {
