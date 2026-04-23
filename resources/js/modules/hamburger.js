@@ -2,6 +2,7 @@ export function navbar_showhide() {
   const hamburger = document.querySelector('.hamburger');
   const menu = document.querySelector(".hamburger-nav");
   const header = document.querySelector(".header");
+  const desktopNav = document.querySelector(".desktop-nav");
 
 function closeMenu() {
     if (menu.classList.contains('open')) {
@@ -32,7 +33,7 @@ function closeMenu() {
         menu.classList.add("open");
         menu.classList.add("slide-out");
         hamburger.classList.add('X');
-        header.classList.remove('slideUp');
+        slideDown();
 
         menu.addEventListener('animationend', function() {
             document.addEventListener('click', docClick);
@@ -41,23 +42,33 @@ function closeMenu() {
 }
     hamburger.addEventListener('click', toggleMenu);
 
-let lastScroll = 0;
+    let lastScroll = 0;
 
-window.addEventListener('scroll', () => {
-  const current = window.scrollY;
+    function slideUp() {
+        header.classList.add('slideUp');
+        desktopNav.classList.add('slideUp');
+    }
 
-  if (current > lastScroll && current > 80 && !menu.classList.contains('open')) {
-    header.classList.add('slideUp');
-  } else if (current < lastScroll) {
-    header.classList.remove('slideUp');
-  }
+    function slideDown() {
+        header.classList.remove('slideUp');
+        desktopNav.classList.remove('slideUp');
+    }
 
-  lastScroll = current;
-});
+    window.addEventListener('scroll', () => {
+        const current = window.scrollY;
 
-document.addEventListener('mousemove', (e) => {
-  if (e.clientY < 80) {   
-    header.classList.remove('slideUp');
-  }
-});
+        if (current > lastScroll && current > 80 && !menu.classList.contains('open')) {
+            slideUp();
+        } else if (current < lastScroll) {
+            slideDown();
+        }
+
+        lastScroll = current;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (e.clientY < 80) {
+            slideDown();
+        }
+    });
 }
