@@ -135,7 +135,7 @@ p.typewriter-quote {
 
     &:hover {
         box-shadow: -8px -8px 16px rgb(0, 0, 0, 0.25);
-        transform: translateY(-20vh);
+        transform: translateY(-10vh);
     }
 }
 
@@ -149,7 +149,7 @@ p.typewriter-quote {
     padding: 0 2rem;
     background-image: url(/public/images/BOB-images/folder-texture.png);
     border-radius: 1rem 1rem 0 0;
-    // box-shadow: a.$shadow;
+    box-shadow: -4px -2px 8px rgb(0, 0, 0, 0.10);
     color: a.$black;
     text-align: center;
     font-size: 1.5rem;
