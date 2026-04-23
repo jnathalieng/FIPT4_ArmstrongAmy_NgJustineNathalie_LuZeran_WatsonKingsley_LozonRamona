@@ -14,7 +14,7 @@ export function commShowHide() {
 
                 if (commGamma.classList.contains('commShowHide')) {
                     window.scrollBy({
-                        top: 200,
+                        top: 250,
                         behavior: 'smooth'
                     })
                 }
