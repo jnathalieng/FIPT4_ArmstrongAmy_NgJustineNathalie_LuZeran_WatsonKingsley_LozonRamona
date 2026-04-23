@@ -394,7 +394,7 @@ button {
 .hero-card video {
   transition: all 0.3s ease;
   transform: scale(100%);
-  filter: grayscale(100%);
+  filter: brightness(45%);
 }
 
 .hero-card-a:hover h3 {
