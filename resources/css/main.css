@@ -90,6 +90,7 @@ button {
 
 .desktop-nav {
   display: none;
+  transition: all 0.3s ease;
 }
 
 .hamburger-bar {
