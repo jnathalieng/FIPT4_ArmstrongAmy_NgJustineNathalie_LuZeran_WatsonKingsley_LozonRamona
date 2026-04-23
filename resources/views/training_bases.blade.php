@@ -21,7 +21,7 @@
 <body data-page="trainingBases" id="bases-page">
 
     <header class="header">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav class="desktop-nav">
             <ul>
                 <li class="desktop-logo-con m-l-nav-item">
@@ -64,9 +64,20 @@
                     </ul>
                 </li>
 
-                <li class="m-l-nav-item">
-                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+                <li class="m-l-nav-item drop-down-wrap" id="events-nav">
+                    
+                    <a class="nav-anchor" href="{{ route('gallery') }}">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-anchor" href="{{ route('blog') }}">Blogs</a>
+                        </li>
+                    </ul>
                 </li>
+
                 <li class="m-l-nav-item">
                     <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
@@ -74,10 +85,15 @@
         </nav>
 
         <!-- mobile hamburger menu -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="hamburger-bar">
+            <a href="{{ route('home') }}" class="ham-logo-con">
+                <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <nav class="hamburger-nav">
@@ -113,6 +129,12 @@
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blogs</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
