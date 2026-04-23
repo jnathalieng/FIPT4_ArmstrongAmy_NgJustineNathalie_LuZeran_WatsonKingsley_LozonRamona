@@ -189,126 +189,123 @@
             </button>
         </section>
 
-        <div class="dossier-wrapper">
-            <h2 class="hidden">BOB Dossier Wartime Section</h2>
-            <div class="dossier-con">
+        <div class="dossier-con">
 
-                <div class="dossier" id="july" data-lift="500">
-                    
-                    <h3 class="dossier-tag" id="july-tag">JULY</h3>
+            <div class="dossier" id="july" data-lift="500">
+                
+                <h3 class="dossier-tag" id="july-tag">JULY</h3>
 
-                        <div class="dossier-content">
-                            <p class="dossier-p">
-                                The Battle of Britain (July 10 - October 31, 1940)
-                                
-                                The Battle of Britain was the first major military campaign fought entirely in the air. Over 82 days, the Royal Air Force defended the skies over southern England against sustained attacks by the German Luftwaffe. Germany's objective was to gain air superiority in preparation for Operation Sea Lion, the planned invasion of Britain. Despite being outnumbered, RAF Fighter Command successfully resisted the assault, preventing invasion and marking a major turning point in World War II.
-                            </p>
-
-                            <p class="dossier-p c-quote">
-                                “Never in the field of human conflict was so much owed by so many to so few.”
-                                — Winston Churchill, House of Commons, August 15, 1940
-                            </p>
-
-                            <p class="dossier-p">
-                                Phase 1 — Channel Battles (July to early August)
-                                German attacks focused on shipping convoys and fighter sweeps over southern England to disrupt supplies and draw RAF fighters into combat.
-                            </p>
-
-                            <p class="dossier-p">
-                                July 10, 1940
-                                Recognized as the start of the Battle of Britain. The Luftwaffe launched major attacks on English Channel shipping convoys. Over 100 aircraft clashed in large air battles over Dover.
-                            </p>
-                        </div>
-                </div>
-
-                <div class="dossier" id="august"  data-lift="300">
-                    
-                    <h3 class="dossier-tag" id="aug-tag">AUGUST</h3>
-
-                        <div class="dossier-content">
-                            <p class="dossier-p">
-                                Phase 2 — Airfields & Radar (Mid-August)
-                                Luftwaffe targeted radar stations and RAF airfields to cripple Fighter Command. This was the most dangerous period for the RAF.
-                            </p>
-
-                            <p class="dossier-p">
-                                August 12, 1940
-                                First focused German attacks on Britain's coastal radar stations. Most installations remained operational.
-                                
-                            </p>
-
-                            <p class="dossier-p">
-                                August 13, 1940 — Adler Tag (Eagle Day)
-                                Large-scale attacks targeted RAF airfields. Germany lost 39 aircraft and 66 men, while Britain lost 15 aircraft and 4 pilots.
-                            </p>
-
-                            <p class="dossier-p">
-                                August 15, 1940
-                                The Luftwaffe launched its most widespread assault, attacking airfields and factories across southern and northeastern England. Nearly 1,800 German sorties were flown. Despite heavy damage, RAF Fighter Command remained operational.
-                            </p>
-
-                            <p class="dossier-p">
-                                August 18, 1940 — The Hardest Day
-                                Over 850 German sorties were flown. Intense air battles involved up to 300 aircraft at once. Despite heavy attacks, no RAF sector stations were destroyed.
-                            </p>
-                        </div>
-                </div>
-
-                <div class="dossier" id="september"  data-lift="350">
-                    
-                    <h3 class="dossier-tag" id="sept-tag">SEPTEMBER</h3>
-
-                        <div class="dossier-content">
-                            <p class="p">
-                                Phase 3 — London Blitz (From September 7)
-                                Attacks shifted to London and major cities. Daylight raids were combined with heavy night bombing, reducing pressure on RAF airfields.
-                            </p>
-
-                            <p class="dossier-p">
-                                September 7, 1940 — Start of the London Blitz
-                                Nearly 1,000 German aircraft attacked London's docks and East End. Over 400 civilians were killed. Attacks on RAF airfields decreased, allowing squadrons time to recover.
-                            </p>
+                    <div class="dossier-content">
+                        <p class="dossier-p">
+                            The Battle of Britain (July 10 - October 31, 1940)
                             
-                            <p class="dossier-p">
-                                September 15, 1940 — Battle of Britain Day
-                                Two massive German attacks were repelled over London. Losses were so severe that Germany's belief the RAF was near collapse was proven wrong. Plans for invasion were postponed indefinitely.
-                            </p>
-                        </div>
-                </div>
+                            The Battle of Britain was the first major military campaign fought entirely in the air. Over 82 days, the Royal Air Force defended the skies over southern England against sustained attacks by the German Luftwaffe. Germany's objective was to gain air superiority in preparation for Operation Sea Lion, the planned invasion of Britain. Despite being outnumbered, RAF Fighter Command successfully resisted the assault, preventing invasion and marking a major turning point in World War II.
+                        </p>
 
-                <div class="dossier" id="october"  data-lift="400">
-                    
-                    <h3 class="dossier-tag" id="oct-tag">OCTOBER</h3>
+                        <p class="dossier-p c-quote">
+                            “Never in the field of human conflict was so much owed by so many to so few.”
+                            — Winston Churchill, House of Commons, August 15, 1940
+                        </p>
 
-                        <div class="dossier-content">
-                            <p class="dossier-p">
-                                Phase 4 — Night Bombing Campaign (Late September onward)
-                                After invasion plans were cancelled, Germany focused mainly on night raids, with fewer daytime operations.
-                            </p>
+                        <p class="dossier-p">
+                            Phase 1 — Channel Battles (July to early August)
+                            German attacks focused on shipping convoys and fighter sweeps over southern England to disrupt supplies and draw RAF fighters into combat.
+                        </p>
 
-                            <p class="dossier-p">
-                                October 31, 1940
+                        <p class="dossier-p">
+                            July 10, 1940
+                            Recognized as the start of the Battle of Britain. The Luftwaffe launched major attacks on English Channel shipping convoys. Over 100 aircraft clashed in large air battles over Dover.
+                        </p>
+                    </div>
+            </div>
 
-                                Later designated as the official end of the Battle of Britain. German forces failed to achieve air superiority.
-                            </p>
+            <div class="dossier" id="august"  data-lift="300">
+                
+                <h3 class="dossier-tag" id="aug-tag">AUGUST</h3>
 
-                            <p class="dossier-p">
-                                WHY THE BATTLE MATTERED
-                                Germany needed control of the skies before launching a ground invasion of Britain. Achieving air superiority would have allowed German forces to cross the English Channel safely. When the Luftwaffe failed to destroy RAF Fighter Command, invasion plans were postponed and eventually abandoned.
-                            </p>
+                    <div class="dossier-content">
+                        <p class="dossier-p">
+                            Phase 2 — Airfields & Radar (Mid-August)
+                            Luftwaffe targeted radar stations and RAF airfields to cripple Fighter Command. This was the most dangerous period for the RAF.
+                        </p>
 
-                            <p class="dossier-p">
-                                This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain's air defence network.
-                            </p>
-                        </div>
-                </div>
+                        <p class="dossier-p">
+                            August 12, 1940
+                            First focused German attacks on Britain's coastal radar stations. Most installations remained operational.
+                            
+                        </p>
 
-                <div class="dossier" id="cover">
-                    <h3 class="dossier-tag" id="cover-tag">
-                        THE BATTLE OF BRITAIN
-                    </h3>
-                    <img srcset="{{ asset('images/BOB-images/classified.png') }}" alt="">
-                </div>
+                        <p class="dossier-p">
+                            August 13, 1940 — Adler Tag (Eagle Day)
+                            Large-scale attacks targeted RAF airfields. Germany lost 39 aircraft and 66 men, while Britain lost 15 aircraft and 4 pilots.
+                        </p>
+
+                        <p class="dossier-p">
+                            August 15, 1940
+                            The Luftwaffe launched its most widespread assault, attacking airfields and factories across southern and northeastern England. Nearly 1,800 German sorties were flown. Despite heavy damage, RAF Fighter Command remained operational.
+                        </p>
+
+                        <p class="dossier-p">
+                            August 18, 1940 — The Hardest Day
+                            Over 850 German sorties were flown. Intense air battles involved up to 300 aircraft at once. Despite heavy attacks, no RAF sector stations were destroyed.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="dossier" id="september"  data-lift="350">
+                
+                <h3 class="dossier-tag" id="sept-tag">SEPTEMBER</h3>
+
+                    <div class="dossier-content">
+                        <p class="p">
+                            Phase 3 — London Blitz (From September 7)
+                            Attacks shifted to London and major cities. Daylight raids were combined with heavy night bombing, reducing pressure on RAF airfields.
+                        </p>
+
+                        <p class="dossier-p">
+                            September 7, 1940 — Start of the London Blitz
+                            Nearly 1,000 German aircraft attacked London's docks and East End. Over 400 civilians were killed. Attacks on RAF airfields decreased, allowing squadrons time to recover.
+                        </p>
+                        
+                        <p class="dossier-p">
+                            September 15, 1940 — Battle of Britain Day
+                            Two massive German attacks were repelled over London. Losses were so severe that Germany's belief the RAF was near collapse was proven wrong. Plans for invasion were postponed indefinitely.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="dossier" id="october"  data-lift="400">
+                
+                <h3 class="dossier-tag" id="oct-tag">OCTOBER</h3>
+
+                    <div class="dossier-content">
+                        <p class="dossier-p">
+                            Phase 4 — Night Bombing Campaign (Late September onward)
+                            After invasion plans were cancelled, Germany focused mainly on night raids, with fewer daytime operations.
+                        </p>
+
+                        <p class="dossier-p">
+                            October 31, 1940
+
+                            Later designated as the official end of the Battle of Britain. German forces failed to achieve air superiority.
+                        </p>
+
+                        <p class="dossier-p">
+                            WHY THE BATTLE MATTERED
+                            Germany needed control of the skies before launching a ground invasion of Britain. Achieving air superiority would have allowed German forces to cross the English Channel safely. When the Luftwaffe failed to destroy RAF Fighter Command, invasion plans were postponed and eventually abandoned.
+                        </p>
+
+                        <p class="dossier-p">
+                            This victory was not only due to pilots in the air, but also to radar operators, ground crews, controllers, engineers, and commanders who coordinated Britain's air defence network.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="dossier" id="cover">
+                <h3 class="dossier-tag" id="cover-tag">
+                    THE BATTLE OF BRITAIN
+                </h3>
+                <img srcset="{{ asset('images/BOB-images/classified.png') }}" alt="">
             </div>
         </div>
 
