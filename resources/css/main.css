@@ -1786,7 +1786,7 @@ p.typewriter-quote {
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
-  transform: translateY(-60vh);
+  transform: translateY(-20vh);
 }
 
 .dossier-tag {
@@ -1797,7 +1797,6 @@ p.typewriter-quote {
   padding: 0 2rem;
   background-image: url(/public/images/BOB-images/folder-texture.png);
   border-radius: 1rem 1rem 0 0;
-  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1), 4px 2px 8px rgba(0, 0, 0, 0.1);
   color: #000;
   text-align: center;
   font-size: 1.5rem;
