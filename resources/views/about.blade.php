@@ -30,6 +30,10 @@
                     <a class="nav-anchor" href="{{ route('home') }}">Home</a>
                 </li>
 
+                <li class="m-l-nav-item" id="about-nav">
+                    <a class="nav-anchor" href="{{ route('about') }}">About</a>
+                </li>
+
                 <li class="m-l-nav-item drop-down-wrap" id="history-nav">
                     
                     <a class="nav-anchor">History</a>
@@ -99,7 +103,7 @@
 
                 </li>
                 <li class="mobile-nav-li">
-                    <a class="mobile-nav-item" href="{{ route('home') }}">Home</a>
+                    <a class="mobile-nav-item" href="{{ route('about') }}">About</a>
                 </li>             
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('timeline') }}">London's Air Page</a>
@@ -133,8 +137,7 @@
                 </li>
             </ul>
         </nav>
-    </header> 
-
+    </header>
     
     <main>
 
