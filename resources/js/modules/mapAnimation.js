@@ -16,7 +16,7 @@ export function mapAnimation() {
     },
     {
         scale: 1,
-        duration: 1,
+        duration: 0.3,
         ease: "back.out(1.5)",
         transformOrigin: "center center",
         stagger: 0.2
