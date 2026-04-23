@@ -42,9 +42,13 @@ export function cardSkew() {
 
     document.querySelectorAll(".comm-card-box").forEach(card => {
         card.addEventListener("mouseenter", () => {
+            if (card.classList.contains("active")) return;
+
             gsap.to(card, { scale: 1.1, duration: 0.2, ease: "ease" });
         });
         card.addEventListener("mouseleave", () => {
+            if (card.classList.contains("active")) return;
+            
             gsap.to(card, { scale: 1, duration: 0.2, ease: "ease" });
         });
     });
