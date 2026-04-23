@@ -80,10 +80,6 @@ else if(document.body.dataset.page === "canteen") {
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
 
-    videoQuery();
-    cardShowHide();
-    commShowHide();
-    
     const appComm = createApp(commForm);
     appComm.mount('#comm-app');
     
@@ -92,6 +88,10 @@ else if(document.body.dataset.page === "comm") {
     
     const appFour = createApp(commFour);
     appFour.mount('#comm-training-four');
+
+    videoQuery();
+    cardShowHide();
+    commShowHide();
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
