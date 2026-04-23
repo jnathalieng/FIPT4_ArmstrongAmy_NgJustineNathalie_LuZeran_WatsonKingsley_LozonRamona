@@ -70,7 +70,7 @@ async loadEvent() {
                 const slot = img.order;
 
                 this.images[slot].existing = img;
-                this.images[slot].preview = `/storage/${img.path}`;
+                this.images[slot].preview = img.path;
                 this.images[slot].alt = img.alt_text;
             });
         }

@@ -16,6 +16,7 @@ import blogManager from "./modules/blogManager.js";
 import commManager from "./modules/commManager.js";
 import commFormAdd from "./modules/commFormAdd.js";
 import commFormEdit from "./modules/commFormEdit.js";
+import contentCarousel from "./modules/contentCarousel.js";
 import { createApp } from 'vue';
 import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
@@ -38,10 +39,13 @@ import { cardSkew } from "./modules/cardSkew.js";
 navbar_showhide();
 navDropDown();
 footerSearch();
+    const appCarousel = createApp(contentCarousel);
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
     videoQuery();
+    appCarousel.mount('#carousel-app');
+
 } else if (document.body.dataset.page === "about") {
     console.log('about us!');
 }
@@ -75,9 +79,11 @@ else if(document.body.dataset.page === "BOB") {
     cardSkew();
     typeWriter();
     dossierOpen();
+    appCarousel.mount('#carousel-app');
 }
 else if(document.body.dataset.page === "canteen") {
     console.log('drink up!');
+    appCarousel.mount('#carousel-app');
 }
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');

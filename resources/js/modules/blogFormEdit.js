@@ -56,7 +56,7 @@ mounted() {
                 };
 
                 if (blog.featured_image) {
-                    this.currentImage = `/storage/blog-images/${blog.featured_image}`;
+                    this.currentImage = `${blog.featured_image}`;
                 }
 
                 this.loading = false;

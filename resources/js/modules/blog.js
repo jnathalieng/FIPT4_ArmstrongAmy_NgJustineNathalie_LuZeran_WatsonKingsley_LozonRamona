@@ -13,7 +13,7 @@ mounted() {
         this.currentBlog = JSON.parse(el.dataset.blog);
         this.isPostPage = true;
     } else {
-        fetch('http://127.0.0.1:8000/api/blogs')
+        fetch('/api/blogs')
         .then(res => {
             if(!res.ok) throw new Error("failed to Fetch the Blogs");
             return res.json();
@@ -35,7 +35,7 @@ mounted() {
             window.location.href = `/api/blog-post/${blogId}`;
         },
         goBackToBlog() {
-            window.location.href = '/blogs';
+            window.location.href = '/blog';
         }
     },
   template: `
@@ -79,7 +79,7 @@ mounted() {
             <article class="blog-post">
                 <img 
                     v-if="currentBlog.featured_image"
-                    :src="'/storage/blog-images/' + currentBlog.featured_image" 
+                    :src="'/images/blog-images/' + currentBlog.featured_image" 
                     :alt="currentBlog.featured_image_alt"
                     class="featured-image"
                 >
