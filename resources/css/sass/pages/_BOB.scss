@@ -83,8 +83,12 @@ p.typewriter-quote {
     align-items: center;
     position: relative;
     height: 160vh;
+    width: 100vw;
 
     background-image: url(/public/images/BOB-images/folder-texture.png);
+
+    // prevents clipping, adjust value for more top height
+    clip-path: inset(-100vh 0 0 0);
 }
 
 .dossier {
@@ -126,14 +130,28 @@ p.typewriter-quote {
     background-repeat: repeat;
     background-position: center;
     
-    padding: 4rem 4rem;
+    padding: 4rem 4rem 10vh 4rem;
 
     font-size: 1.25rem;
 
     &:hover {
         box-shadow: -8px -8px 16px rgb(0, 0, 0, 0.25);
-        transform: translateY(-60vh);
+        transform: translateY(-10vh);
     }
+}
+
+// EXPANDED CLASS SECTION
+#july .dossier-content.expanded,
+#august .dossier-content.expanded {
+    transform: translateY(-110vh);
+}
+
+#september .dossier-content.expanded {
+    transform: translateY(-70vh);
+}
+
+#october .dossier-content.expanded {
+    transform: translateY(-70vh);
 }
 
 .dossier-tag {
@@ -146,7 +164,7 @@ p.typewriter-quote {
     padding: 0 2rem;
     background-image: url(/public/images/BOB-images/folder-texture.png);
     border-radius: 1rem 1rem 0 0;
-    box-shadow: a.$shadow;
+    box-shadow: -4px -2px 8px rgb(0, 0, 0, 0.10);
     color: a.$black;
     text-align: center;
     font-size: 1.5rem;
@@ -226,6 +244,11 @@ p.typewriter-quote {
 
     .dossier-content {
         padding: 4rem 6rem 50vh 6rem;
+    }
+
+    #july .dossier-content.expanded,
+    #august .dossier-content.expanded, #september .dossier-content.expanded, #october .dossier-content.expanded {
+        transform: translateY(-65vh);
     }
 
     .dossier-tag {

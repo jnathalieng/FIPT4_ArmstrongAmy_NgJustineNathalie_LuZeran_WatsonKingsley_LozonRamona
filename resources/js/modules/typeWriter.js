@@ -19,9 +19,9 @@ export function typeWriter() {
     });
 
     typeTL.from(typedText.chars, {
-        duration: 0.1,
+        duration: 0.01,
         opacity: 0,
-        stagger: 0.06,
+        stagger: 0.03,
         y: -1,
         ease: 'back.inOut'
     });

@@ -191,7 +191,7 @@
 
         <div class="dossier-con">
 
-            <div class="dossier" id="july" data-lift="500">
+            <div class="dossier" id="july">
                 
                 <h3 class="dossier-tag" id="july-tag">JULY</h3>
 
@@ -202,7 +202,7 @@
                             The Battle of Britain was the first major military campaign fought entirely in the air. Over 82 days, the Royal Air Force defended the skies over southern England against sustained attacks by the German Luftwaffe. Germany's objective was to gain air superiority in preparation for Operation Sea Lion, the planned invasion of Britain. Despite being outnumbered, RAF Fighter Command successfully resisted the assault, preventing invasion and marking a major turning point in World War II.
                         </p>
 
-                        <p class="dossier-p c-quote">
+                        <p class="dossier-p typewriter-text">
                             “Never in the field of human conflict was so much owed by so many to so few.”
                             — Winston Churchill, House of Commons, August 15, 1940
                         </p>
@@ -219,7 +219,7 @@
                     </div>
             </div>
 
-            <div class="dossier" id="august"  data-lift="300">
+            <div class="dossier" id="august">
                 
                 <h3 class="dossier-tag" id="aug-tag">AUGUST</h3>
 
@@ -252,7 +252,7 @@
                     </div>
             </div>
 
-            <div class="dossier" id="september"  data-lift="350">
+            <div class="dossier" id="september">
                 
                 <h3 class="dossier-tag" id="sept-tag">SEPTEMBER</h3>
 
@@ -274,7 +274,7 @@
                     </div>
             </div>
 
-            <div class="dossier" id="october"  data-lift="400">
+            <div class="dossier" id="october">
                 
                 <h3 class="dossier-tag" id="oct-tag">OCTOBER</h3>
 
@@ -308,15 +308,6 @@
                 <img srcset="{{ asset('images/BOB-images/classified.png') }}" alt="">
             </div>
         </div>
-
-        <!-- <section class="big-red">
-
-            <h2 class="hidden">Red separator section</h2>
-
-            <h3 class="big-red-text">
-                Cumulative Battle of Britain Losses (July - October 1940)
-            </h3>
-        </section> -->
 
         <div class="text-con">
             <h2 class="hidden">Losses Section</h2>
