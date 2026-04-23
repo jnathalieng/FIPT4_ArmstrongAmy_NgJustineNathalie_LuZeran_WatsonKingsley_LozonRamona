@@ -43,8 +43,14 @@
 }
 
 .comm-card-box.active {
-    margin: auto;
+    max-width: none;
     width: 80%;
+    flex-basis: 80%;
+    margin: auto;
+
+    &:hover {
+        transform: none;
+    }
 }
 
 .comm-card {
@@ -118,9 +124,13 @@
     .comm-card-box {
         // 3 cards per flex row
         width: 30%;
-        height: 85vh;
         max-width: none;
         box-sizing: border-box;
+    }
+
+    .comm-card-box.active {
+        width: 50%;
+        flex-basis: 50%;
     }
 
     .comm-card-img-con {
