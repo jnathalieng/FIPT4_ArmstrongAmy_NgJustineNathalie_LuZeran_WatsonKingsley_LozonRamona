@@ -37,13 +37,13 @@ import { tlSVG } from "./modules/tlSVG.js";
 navbar_showhide();
 navDropDown();
 footerSearch();
+    const appCarousel = createApp(contentCarousel);
 
 if(document.body.dataset.page === "home") {
     console.log('welcome home');
     videoQuery();
-    const appCarousel = createApp(contentCarousel);
     appCarousel.mount('#carousel-app');
-    
+
 } else if (document.body.dataset.page === "about") {
     console.log('about us!');
 }
@@ -76,9 +76,11 @@ else if(document.body.dataset.page === "BOB") {
     
     typeWriter();
     // dossierOpen();
+    appCarousel.mount('#carousel-app');
 }
 else if(document.body.dataset.page === "canteen") {
     console.log('drink up!');
+    appCarousel.mount('#carousel-app');
 }
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');

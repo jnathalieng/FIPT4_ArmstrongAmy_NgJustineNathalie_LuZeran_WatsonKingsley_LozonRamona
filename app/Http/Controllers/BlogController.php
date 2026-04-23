@@ -126,12 +126,12 @@ class BlogController extends Controller
     public function index()
     {
         //old method
-        // $blogs = Blog::orderBy('created_at', 'desc')->get();
-        // return response()->json($blogs);
+         $blogs = Blog::orderBy('created_at', 'desc')->get();
+         return response()->json($blogs);
     
         //new method
-        $blogs = Blog::orderBy('created_at', 'desc')->get();
-        return response()->json($blogs->map(fn($blog) => $this->formatBlogResponse($blog)));
+        //$blogs = Blog::orderBy('created_at', 'desc')->get();
+        //return response()->json($blogs->map(fn($blog) => $this->formatBlogResponse($blog)));
 
     }
 
