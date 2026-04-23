@@ -18,6 +18,7 @@
 }
 html {
   font-size: 16px;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -3449,6 +3450,7 @@ p.typewriter-quote {
   text-align: center;
   position: sticky;
   top: 0;
+  opacity: 60%;
 }
 
 .tls-content-con {
@@ -3534,11 +3536,11 @@ p.typewriter-quote {
 }
 
 .tbox-a2 {
-  grid-column: 4/span 5;
+  grid-column: 3/span 6;
 }
 
 .tbox-a3 {
-  grid-column: 8/span 5;
+  grid-column: 6/span 5;
 }
 
 .tbox-a4 {
@@ -3555,7 +3557,7 @@ p.typewriter-quote {
 }
 
 .ibox-a2 {
-  grid-column: 3/span 5;
+  grid-column: 8/span 4;
   grid-row: 2;
 }
 
@@ -3596,7 +3598,7 @@ p.typewriter-quote {
 }
 
 .tbox-b10 {
-  grid-column: 5/span 4;
+  grid-column: 6/span 4;
 }
 
 .ibox-b1 {
