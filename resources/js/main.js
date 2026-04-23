@@ -32,6 +32,7 @@ import { tlScrollProgress } from "./modules/tlScrollProgress.js";
 import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
 import { tlScrollTo } from "./modules/tlScrollTo.js";
 import { tlSVG } from "./modules/tlSVG.js";
+import { cardShowHide } from "./modules/cardShowHide.js";
 
 navbar_showhide();
 navDropDown();
@@ -69,7 +70,7 @@ else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
     
     videoQuery();
-    
+    cardShowHide();
     typeWriter();
     // dossierOpen();
 }
@@ -80,7 +81,7 @@ else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
 
     videoQuery();
-
+    cardShowHide();
     commShowHide();
     
     const appComm = createApp(commForm);
