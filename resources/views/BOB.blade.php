@@ -589,11 +589,13 @@
         </div>
 
         <section class="color-content-box white-background" id="discover-aircraft-cta">
-            <h3 class="content-box-title">The Skies of 1940</h3>
-            <p class="content-box-text">Discover the aircraft used during the Battle of Britain</p>
+            <h3 class="content-box-title">Events</h3>
+            <p class="content-box-text">Check out some upcoming events happening around London!</p>
         </section>
 
-        <section class="card-carousel" id="events-photo-gallery-1">
+            <section id="carousel-app"></section>
+
+        <!-- <section class="card-carousel" id="events-photo-gallery-1">
 
             <div class="carousel" id="aircraft-carousel">
                 <div class="event-card" id="photo-1"></div>
@@ -610,7 +612,7 @@
                 <div class="event-card" id="photo-12"></div>
             <div class="carousel-background"></div>
             </div>
-        </section>
+        </section> -->
 
         <div class="read-more">
             <a class="read-more-button" href="{{ route('gallery') }}">View More<span class="cta-arrow">&#8594</span></a>

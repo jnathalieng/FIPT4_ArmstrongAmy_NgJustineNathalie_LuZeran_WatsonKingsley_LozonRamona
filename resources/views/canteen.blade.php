@@ -241,25 +241,7 @@
             <h3 class="content-box-title">Upcoming Events</h3>
             <p class="content-box-text">Check out some upcoming events happening around London!</p>
    
-            <section class="card-carousel" id="events-photo-gallery-1">
-
-                <div class="carousel">
-                    <div class="event-card" id="photo-1"></div>
-                    <div class="event-card" id="photo-2"></div>
-                    <div class="event-card" id="photo-3"></div>
-                    <div class="event-card" id="photo-4"></div>
-                    <div class="event-card" id="photo-5"></div>
-                    <div class="event-card" id="photo-6"></div>
-                    <div class="event-card" id="photo-7"></div>
-                    <div class="event-card" id="photo-8"></div>
-                    <div class="event-card" id="photo-9"></div>
-                    <div class="event-card" id="photo-10"></div>
-                    <div class="event-card" id="photo-11"></div>
-                    <div class="event-card" id="photo-12"></div>
-                <div class="carousel-background"></div>
-                </div>
-            </section>
-        </section>
+            <section id="carousel-app"></section>
         
         <div class="read-more">
             <a class="read-more-button">Read More <span class="cta-arrow">&#8594</span></a>
