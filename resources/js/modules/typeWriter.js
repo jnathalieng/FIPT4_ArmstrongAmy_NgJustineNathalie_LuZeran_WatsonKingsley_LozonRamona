@@ -2,14 +2,21 @@ export function typeWriter() {
     
     gsap.registerPlugin(SplitText);
     gsap.registerPlugin(ScrollToPlugin);
+    gsap.registerPlugin(ScrollTrigger); 
 
     const typedText = new SplitText('.typewriter-quote', {
-        type: 'chars'
+        type: 'chars, words'
     });
 
     const skipBtn = document.querySelector('#skipQuote');
 
-    const typeTL = gsap.timeline();
+    const typeTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.typewriter-quote',
+            start: 'top 80%',
+            once: true
+        }
+    });
 
     typeTL.from(typedText.chars, {
         duration: 0.1,
@@ -17,7 +24,7 @@ export function typeWriter() {
         stagger: 0.06,
         y: -1,
         ease: 'back.inOut'
-    })
+    });
 
     skipBtn.addEventListener('click', () => {
         typeTL.progress(1);
