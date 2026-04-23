@@ -394,7 +394,7 @@ button {
 .hero-card video {
   transition: all 0.3s ease;
   transform: scale(100%);
-  filter: grayscale(100%);
+  filter: brightness(45%);
 }
 
 .hero-card-a:hover h3 {
@@ -1376,6 +1376,7 @@ button {
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem;
+  align-items: flex-start;
   background-color: #B3262E;
 }
 
@@ -1385,6 +1386,8 @@ button {
   background-color: #fff;
   cursor: pointer;
   max-width: 45%;
+  width: 40vw;
+  height: 80vh;
   transition: all 0.3s ease;
 }
 .comm-card-box:hover {
@@ -1392,8 +1395,14 @@ button {
 }
 
 .comm-card-box.active {
-  margin: auto;
+  max-width: none;
   width: 80%;
+  height: auto;
+  flex-basis: 80%;
+  margin: auto;
+}
+.comm-card-box.active:hover {
+  transform: none;
 }
 
 .comm-card {
@@ -1458,9 +1467,12 @@ button {
   }
   .comm-card-box {
     width: 30%;
-    height: 85vh;
     max-width: none;
     box-sizing: border-box;
+  }
+  .comm-card-box.active {
+    width: 50%;
+    flex-basis: 50%;
   }
   .comm-card-img-con .comm-card-img-box {
     width: 30vw;

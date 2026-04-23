@@ -22,7 +22,7 @@ export default {
                             <h3 class="comm-card-name">{{ item.name }}</h3>
 
                             <div class="comm-card-img-con">
-                                <picture class="comm-card-img-box>
+                                <picture class="comm-card-img-box">
                                     <source media="(min-width: 768px)" :srcset="getImagePath(item.picture)">
                                     <img class="comm-card-img" :src="getImagePath(item.picture, true)" :alt="item.name">
                                 </picture>

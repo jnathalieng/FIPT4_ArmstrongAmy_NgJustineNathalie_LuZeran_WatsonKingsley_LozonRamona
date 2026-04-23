@@ -33,6 +33,7 @@ import { tlScrollProgress } from "./modules/tlScrollProgress.js";
 import { tlMarkerScaling } from "./modules/tlMarkerScaling.js";
 import { tlScrollTo } from "./modules/tlScrollTo.js";
 import { tlSVG } from "./modules/tlSVG.js";
+import { cardShowHide } from "./modules/cardShowHide.js";
 
 navbar_showhide();
 navDropDown();
@@ -73,7 +74,7 @@ else if(document.body.dataset.page === "BOB") {
     console.log('the battle for britain!');
     
     videoQuery();
-    
+    cardShowHide();
     typeWriter();
     // dossierOpen();
     appCarousel.mount('#carousel-app');
@@ -85,10 +86,6 @@ else if(document.body.dataset.page === "canteen") {
 else if(document.body.dataset.page === "comm") {
     console.log('lest we forget');
 
-    videoQuery();
-
-    commShowHide();
-    
     const appComm = createApp(commForm);
     appComm.mount('#comm-app');
     
@@ -97,6 +94,13 @@ else if(document.body.dataset.page === "comm") {
     
     const appFour = createApp(commFour);
     appFour.mount('#comm-training-four');
+
+    videoQuery();
+    commShowHide();
+
+    setTimeout(() => {
+        cardShowHide();
+    }, 0); 
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
