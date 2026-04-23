@@ -77,7 +77,7 @@
 
                 <li class="m-l-nav-item drop-down-wrap" id="events-nav">
                     
-                    <a class="nav-anchor" href="{{ route('events') }}">Events</a>
+                    <a class="nav-anchor" href="{{ route('gallery') }}">Events</a>
 
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
@@ -88,17 +88,23 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="m-l-nav-item">
-                    <a class="nav-anchor" href="{{ route('gallery') }}">Gallery</a>
+                    <a class="nav-anchor" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
         </nav>
 
         <!-- mobile hamburger menu -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="hamburger-bar">
+            <a href="{{ route('home') }}" class="ham-logo-con">
+                <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="image of logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <nav class="hamburger-nav">
@@ -134,6 +140,12 @@
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('events') }}">Events</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('blog') }}">Blogs</a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a class="mobile-nav-item" href="{{ route('gallery') }}">Gallery</a>
                 </li>
                 <li class="mobile-nav-li">
                     <a class="mobile-nav-item" href="{{ route('contact') }}">Contact</a>
