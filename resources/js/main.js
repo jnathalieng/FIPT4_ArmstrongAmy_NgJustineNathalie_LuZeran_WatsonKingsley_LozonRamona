@@ -21,7 +21,7 @@ import { mapScroll } from "./modules/mapScroll.js";
 import { mapAnimation } from "./modules/mapAnimation.js";
 import { mapHotSpots } from "./modules/mapHotSpots.js";
 import { footerSearch } from "./modules/footer.js";
-// import { dossierOpen } from "./modules/dossierOpen.js";
+import { dossierOpen } from "./modules/dossierOpen.js";
 import { typeWriter } from "./modules/typeWriter.js";
 import { commShowHide } from "./modules/commShowHide.js";
 import { parallaxObj } from "./modules/tlParallaxObj.js";
@@ -74,7 +74,7 @@ else if(document.body.dataset.page === "BOB") {
     cardShowHide();
     cardSkew();
     typeWriter();
-    // dossierOpen();
+    dossierOpen();
 }
 else if(document.body.dataset.page === "canteen") {
     console.log('drink up!');

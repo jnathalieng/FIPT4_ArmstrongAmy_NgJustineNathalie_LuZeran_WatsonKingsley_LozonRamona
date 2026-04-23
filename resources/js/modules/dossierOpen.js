@@ -1,110 +1,113 @@
 export function dossierOpen() {
-    // const liftConfig = {
-    //     july: {
-    //         mobile:  -890,
-    //         tablet:  -500,
-    //         desktop: -340
-    //     },
-    //     august: {
-    //         mobile:  -500,
-    //         tablet:  -300,
-    //         desktop: -240
-    //     },
-    //     september: {
-    //         mobile:  -500,
-    //         tablet:  -200,
-    //         desktop: -140
-    //     },
-    //     october: {
-    //         mobile:  -300,
-    //         tablet:  -200,
-    //         desktop: -140
-    //     }
-    // };
-    // function getBreakpoint() {
-    //     const w = window.innerWidth;
-    //     if (w < 768)  return 'mobile';
-    //     if (w < 1200) return 'tablet';
-    //     return 'desktop';
-    // }
 
-    // function getLift(dossier) {
-    //     const config = liftConfig[dossier.id];
-    //     if (!config) return -400;
-    //     return config[getBreakpoint()];
-    // }
+    console.log("click on dossier");
 
-    // const dossiers = document.querySelectorAll('.dossier');
-    // const dossierCon = document.querySelector('.dossier-con');
-    // let activeDossier = null;
+    const liftConfig = {
+        july: {
+            mobile:  -890,
+            tablet:  -500,
+            desktop: -340
+        },
+        august: {
+            mobile:  -500,
+            tablet:  -300,
+            desktop: -240
+        },
+        september: {
+            mobile:  -500,
+            tablet:  -200,
+            desktop: -140
+        },
+        october: {
+            mobile:  -300,
+            tablet:  -200,
+            desktop: -140
+        }
+    };
+    function getBreakpoint() {
+        const w = window.innerWidth;
+        if (w < 768)  return 'mobile';
+        if (w < 1200) return 'tablet';
+        return 'desktop';
+    }
 
-    // const originalPositions = {
-    //     'july':      -80,
-    //     'august':    -20,
-    //     'september':  40,
-    //     'october':   100
-    // };
+    function getLift(dossier) {
+        const config = liftConfig[dossier.id];
+        if (!config) return -400;
+        return config[getBreakpoint()];
+    }
 
-    // dossiers.forEach(dossier => {
-    //     dossier.addEventListener('click', () => {
+    const dossiers = document.querySelectorAll('.dossier');
+    const dossierCon = document.querySelector('.dossier-con');
+    let activeDossier = null;
 
-    //         if (activeDossier === dossier) {
-    //             gsap.to(dossier, {
-    //                 top: originalPositions[dossier.id],
-    //                 height: 200,
-    //                 duration: 0.4,
-    //                 ease: 'power2.inOut'
-    //             });
-    //             activeDossier = null;
-    //             return;
-    //         }
+    const originalPositions = {
+        'july':      -80,
+        'august':    -20,
+        'september':  40,
+        'october':   100
+    };
 
-    //         if (activeDossier) {
-    //             gsap.to(activeDossier, {
-    //                 top: originalPositions[activeDossier.id],
-    //                 height: 200,
-    //                 duration: 0.4,
-    //                 ease: 'power2.inOut'
-    //             });
-    //         }
+    dossiers.forEach(dossier => {
+        dossier.addEventListener('click', () => {
 
-    //         gsap.set(dossier, { height: 'auto' });
-    //         const contentHeight = dossier.scrollHeight;
-    //         gsap.set(dossier, { height: 200 });
+            if (activeDossier === dossier) {
+                gsap.to(dossier, {
+                    top: originalPositions[dossier.id],
+                    height: 200,
+                    duration: 0.4,
+                    ease: 'power2.inOut'
+                });
+                activeDossier = null;
+                return;
+            }
 
-    //         const lastDossier = document.querySelector('#october');
-    //         const lastRect = lastDossier.getBoundingClientRect();
-    //         const conRect = dossierCon.getBoundingClientRect();
-    //         const bottomEdge = lastRect.bottom - conRect.top;
+            if (activeDossier) {
+                gsap.to(activeDossier, {
+                    top: originalPositions[activeDossier.id],
+                    height: 200,
+                    duration: 0.4,
+                    ease: 'power2.inOut'
+                });
+            }
 
-    //         const targetTop = getLift(dossier);
-    //         const totalHeight = bottomEdge - targetTop;
+            gsap.set(dossier, { height: 'auto' });
+            const contentHeight = dossier.scrollHeight;
+            gsap.set(dossier, { height: 200 });
 
-    //         gsap.to(dossier, {
-    //             top: targetTop,
-    //             height: totalHeight,
-    //             duration: 0.4,
-    //             ease: 'power2.inOut'
-    //         });
+            const lastDossier = document.querySelector('#october');
+            const lastRect = lastDossier.getBoundingClientRect();
+            const conRect = dossierCon.getBoundingClientRect();
+            const bottomEdge = lastRect.bottom - conRect.top;
 
-    //         activeDossier = dossier;
-    //     });
-    // });
+            const targetTop = getLift(dossier);
+            const totalHeight = bottomEdge - targetTop;
 
-    // window.addEventListener('resize', () => {
-    //     if (activeDossier) {
-    //         const lastDossier = document.querySelector('#october');
-    //         const lastRect = lastDossier.getBoundingClientRect();
-    //         const conRect = dossierCon.getBoundingClientRect();
-    //         const bottomEdge = lastRect.bottom - conRect.top;
+            gsap.to(dossier, {
+                top: targetTop,
+                height: totalHeight,
+                duration: 0.4,
+                ease: 'power2.inOut'
+            });
 
-    //         const targetTop = getLift(activeDossier);
-    //         const totalHeight = bottomEdge - targetTop;
+            activeDossier = dossier;
+        });
+    });
 
-    //         gsap.set(activeDossier, {
-    //             top: targetTop,
-    //             height: totalHeight
-    //         });
-    //     }
-    // });
+    window.addEventListener('resize', () => {
+        if (activeDossier) {
+            const lastDossier = document.querySelector('#october');
+            const lastRect = lastDossier.getBoundingClientRect();
+            const conRect = dossierCon.getBoundingClientRect();
+            const bottomEdge = lastRect.bottom - conRect.top;
+
+            const targetTop = getLift(activeDossier);
+            const totalHeight = bottomEdge - targetTop;
+
+            gsap.set(activeDossier, {
+                top: targetTop,
+                height: totalHeight
+            });
+        }
+    });
 }

@@ -191,7 +191,7 @@
 
         <div class="dossier-con">
 
-            <div class="dossier" id="july" data-lift="500">
+            <div class="dossier" id="july">
                 
                 <h3 class="dossier-tag" id="july-tag">JULY</h3>
 
@@ -219,7 +219,7 @@
                     </div>
             </div>
 
-            <div class="dossier" id="august"  data-lift="300">
+            <div class="dossier" id="august">
                 
                 <h3 class="dossier-tag" id="aug-tag">AUGUST</h3>
 
@@ -252,7 +252,7 @@
                     </div>
             </div>
 
-            <div class="dossier" id="september"  data-lift="350">
+            <div class="dossier" id="september">
                 
                 <h3 class="dossier-tag" id="sept-tag">SEPTEMBER</h3>
 
@@ -274,7 +274,7 @@
                     </div>
             </div>
 
-            <div class="dossier" id="october"  data-lift="400">
+            <div class="dossier" id="october">
                 
                 <h3 class="dossier-tag" id="oct-tag">OCTOBER</h3>
 
