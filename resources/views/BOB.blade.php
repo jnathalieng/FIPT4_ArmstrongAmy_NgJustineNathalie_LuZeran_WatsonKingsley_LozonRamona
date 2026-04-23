@@ -309,14 +309,6 @@
             </div>
         </div>
 
-        <!-- <section class="big-red">
-
-            <h2 class="hidden">Red separator section</h2>
-
-            <h3 class="big-red-text">
-                Cumulative Battle of Britain Losses (July - October 1940)
-            </h3>
-        </section> -->
 
         <div class="text-con">
             <h2 class="hidden">Losses Section</h2>
