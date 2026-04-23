@@ -90,8 +90,11 @@ else if(document.body.dataset.page === "comm") {
     appFour.mount('#comm-training-four');
 
     videoQuery();
-    cardShowHide();
     commShowHide();
+
+    setTimeout(() => {
+        cardShowHide();
+    }, 0); 
 }
 else if(document.body.dataset.page === "events") {
     console.log('see whats happening!');
