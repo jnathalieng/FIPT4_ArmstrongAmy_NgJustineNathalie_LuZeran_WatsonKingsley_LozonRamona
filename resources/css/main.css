@@ -1247,6 +1247,7 @@ button {
   height: auto;
   flex-basis: 80%;
   margin: auto;
+  z-index: 10;
 }
 .comm-card-box.active:hover {
   transform: none;
