@@ -39,4 +39,13 @@ export function cardSkew() {
     //         scrub: true 
     //     }
     // });
+
+    document.querySelectorAll(".comm-card-box").forEach(card => {
+        card.addEventListener("mouseenter", () => {
+            gsap.to(card, { scale: 1.1, duration: 0.2, ease: "ease" });
+        });
+        card.addEventListener("mouseleave", () => {
+            gsap.to(card, { scale: 1, duration: 0.2, ease: "ease" });
+        });
+    });
 }
