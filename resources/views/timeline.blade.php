@@ -1803,6 +1803,11 @@
                                                 </p>
                                             </div>
 
+                                            <div class="parallax-con-text tbox-e2">
+                                                <p>
+                                                    Work commences on the construction of a new airport on the Crumlin sideroad. The Lambeth airport will continue in use until 1942. The Crumlin site is now part of the present London International Airport. The site was soon added to a list of over 100 locations where training schools were to be built as part of the British Commonwealth Air Training Plan. The schools would train men from throughout the Commonwealth in preparation for service as either air or groundcrew wherever they were needed during the war.
+                                                </p>
+                                            </div>
                                         </div>
 
                                         <div class="image-grid-overlay">
@@ -1847,49 +1852,6 @@
                                                 <div class="tl-ibox-text-con">
                                                     <h3>1934</h3>
                                                     <h4>JULY 06</h4>
-                                                </div>
-                                            </div>
-
-                                            <div class="parallax-con-img ibox-e3">
-                                                <div class="tl-ibox-img-con">
-                                                    <picture class="tl-ibox-pic-con">
-                                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
-                                                        <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
-                                                    </picture>
-
-                                                    <p class="tl-ibox-p">
-                                                        Council votes to accept Federal support for a new airport.
-                                                    </p>
-
-                                                    <div class="tl-ibox-bg">
-                                                    </div>
-                                                </div>
-
-                                                <div class="tl-ibox-text-con">
-                                                    <h3>1939</h3>
-                                                    <h4>JULY 24</h4>
-                                                </div>
-                                            </div>
-
-                                            <div class="parallax-con-img ibox-e4">
-                                                <div class="tl-ibox-img-con">
-                                                    <picture class="tl-ibox-pic-con">
-                                                        <source media="(min-width: 768px)" srcset="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}">
-                                                        <!-- NEEDS BOTH IMAGES / PLACEHOLDER -->
-                                                        <img  class="tl-ibox-img" src="{{ asset('images/timeline-images/mobile/m-timeline-hero.png') }}" alt="picture of Curtiss Model E training plane">
-                                                    </picture>
-
-                                                    <p class="tl-ibox-p">
-                                                        Work commences on the construction of a new airport on the Crumlin sideroad. The Lambeth airport will continue in use until 1942. The Crumlin site is now part of the present London International Airport. The site was soon added to a list of over 100 locations where training schools were to be built as part of the British Commonwealth Air Training Plan. The schools would train men from throughout the Commonwealth in preparation for service as either air or groundcrew wherever they were needed during the war.
-                                                    </p>
-
-                                                    <div class="tl-ibox-bg">
-                                                    </div>
-                                                </div>
-
-                                                <div class="tl-ibox-text-con">
-                                                    <h4>SEPTEMBER 09</h4>
                                                 </div>
                                             </div>
                                         </div>
