@@ -57,6 +57,15 @@ button {
   font-family: "montserrat", sans-serif;
 }
 
+ul, li {
+  font-family: "inter", sans-serif;
+  list-style: square;
+}
+
+li {
+  padding-left: 1rem;
+}
+
 .text-highlight {
   color: #B3262E;
   font-weight: bold;
