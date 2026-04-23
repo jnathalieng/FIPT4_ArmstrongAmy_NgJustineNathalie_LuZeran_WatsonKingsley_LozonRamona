@@ -2077,13 +2077,14 @@
             <!-- END OF TIMELINE SECTION -->
         </section>
     </main>
+
+    
 <footer id="main-footer">
 
     <div id="footer-inner">
 
         <div class="footer-col" id="footer-logo">
-            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGOWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
-            <p id="footer-logo-name">LONDON AVIATION<br>MUSEUM</p>
+            <img src="{{ asset('images/icons/logos/SVG_FILES_WHITE/FINAL_LOGO_TEXTWHITE.svg') }}" alt="London Aviation Museum Logo" id="footer-logo-img">
             <p id="footer-logo-tagline">A PROJECT OF 427 WING RCAF ASSOCIATION</p>
             <a href="https://www.427wing.com" id="footer-logo-url">www.427wing.com</a>
             <p class="footer-contact-line">Contact: 519-455-0430</p>
@@ -2148,9 +2149,7 @@
                     </a>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <!-- FOOTER BOTTOM BAR -->
