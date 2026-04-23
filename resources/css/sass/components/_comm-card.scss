@@ -21,7 +21,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 1rem 1rem 4rem 1rem;
     align-items: flex-start;
 
     background-color: a.$primary-color;
@@ -51,6 +51,7 @@
     height: auto;
     flex-basis: 80%;
     margin: auto;
+    z-index: 10;
 
     &:hover {
         transform: none;
