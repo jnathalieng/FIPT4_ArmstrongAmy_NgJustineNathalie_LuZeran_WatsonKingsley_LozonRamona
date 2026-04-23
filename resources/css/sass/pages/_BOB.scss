@@ -85,6 +85,9 @@ p.typewriter-quote {
     height: 160vh;
 
     background-image: url(/public/images/BOB-images/folder-texture.png);
+
+    // prevents clipping, adjust value for more top height
+    clip-path: inset(-30vh 0 0 0);
 }
 
 .dossier {
