@@ -14,9 +14,11 @@ export function tlSVG() {
         const svgTL = gsap.timeline({
             scrollTrigger: {
                 trigger: section,
-                start: "top 80%",
-                end: "bottom 80%",
-                toggleActions: "play reverse play reverse"
+                start: "center center",
+                end: "+=600",
+                scrub: 1,
+                pin: true,
+                pinSpacing: true,
             }
         });
 
