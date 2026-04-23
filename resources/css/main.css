@@ -1755,7 +1755,7 @@ p.typewriter-quote {
   height: 160vh;
   width: 100vw;
   background-image: url(/public/images/BOB-images/folder-texture.png);
-  clip-path: inset(-30vh 0 0 0);
+  clip-path: inset(-100vh 0 0 0);
 }
 
 .dossier {
@@ -1791,12 +1791,25 @@ p.typewriter-quote {
   background-image: url(/public/images/BOB-images/paper-texture.jpg);
   background-repeat: repeat;
   background-position: center;
-  padding: 4rem 4rem;
+  padding: 4rem 4rem 10vh 4rem;
   font-size: 1.25rem;
 }
 .dossier-content:hover {
   box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25);
   transform: translateY(-10vh);
+}
+
+#july .dossier-content.expanded,
+#august .dossier-content.expanded {
+  transform: translateY(-110vh);
+}
+
+#september .dossier-content.expanded {
+  transform: translateY(-70vh);
+}
+
+#october .dossier-content.expanded {
+  transform: translateY(-70vh);
 }
 
 .dossier-tag {
@@ -1884,6 +1897,10 @@ p.typewriter-quote {
   }
   .dossier-content {
     padding: 4rem 6rem 50vh 6rem;
+  }
+  #july .dossier-content.expanded,
+  #august .dossier-content.expanded, #september .dossier-content.expanded, #october .dossier-content.expanded {
+    transform: translateY(-65vh);
   }
   .dossier-tag {
     font-size: 2rem;

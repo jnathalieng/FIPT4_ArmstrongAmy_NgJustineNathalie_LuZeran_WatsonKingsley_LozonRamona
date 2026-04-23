@@ -202,7 +202,7 @@
                             The Battle of Britain was the first major military campaign fought entirely in the air. Over 82 days, the Royal Air Force defended the skies over southern England against sustained attacks by the German Luftwaffe. Germany's objective was to gain air superiority in preparation for Operation Sea Lion, the planned invasion of Britain. Despite being outnumbered, RAF Fighter Command successfully resisted the assault, preventing invasion and marking a major turning point in World War II.
                         </p>
 
-                        <p class="dossier-p c-quote">
+                        <p class="dossier-p typewriter-text">
                             “Never in the field of human conflict was so much owed by so many to so few.”
                             — Winston Churchill, House of Commons, August 15, 1940
                         </p>
