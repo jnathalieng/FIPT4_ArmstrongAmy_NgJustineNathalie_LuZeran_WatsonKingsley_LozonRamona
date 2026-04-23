@@ -1233,6 +1233,8 @@ button {
   background-color: #fff;
   cursor: pointer;
   max-width: 45%;
+  width: 40vw;
+  height: 80vh;
   transition: all 0.3s ease;
 }
 .comm-card-box:hover {
@@ -1242,6 +1244,7 @@ button {
 .comm-card-box.active {
   max-width: none;
   width: 80%;
+  height: auto;
   flex-basis: 80%;
   margin: auto;
 }
