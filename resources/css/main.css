@@ -2201,6 +2201,7 @@ p.typewriter-quote {
 .map-content-box:hover p {
   transform: scale(120%);
   font-weight: bold;
+  background-color: #fff;
 }
 
 .map-image-box {
